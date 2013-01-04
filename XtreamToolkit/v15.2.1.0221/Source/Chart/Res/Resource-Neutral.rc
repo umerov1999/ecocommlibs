@@ -1,0 +1,83 @@
+// Resource.rc
+//
+// --------------------------------------------------------------------------
+// COPYRIGHT NOTICE:
+// --------------------------------------------------------------------------
+//
+// "Codejock Chart" is a MFC extension library for creating modern charting
+// applications. This file and the code herein are part of the Codejock Chart
+// MFC extension library.
+//
+// This code is protected under U.S. Copyright Law and International treaties
+// and is intended for registered and licensed use only. Any other use is
+// strictly prohibited. This code is subject to the terms and conditions
+// outlined in the "Codejock Chart" End User License Agreement (EULA).
+//
+// Copyright (c) 1998-2012 Codejock Technologies LLC, All Rights Reserved.
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#include "Chart/Resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(_XTP_NO_BINARY_RESOURCES)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#endif //_WIN32
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+XTP_IDC_CHART_NORMALHAND       CURSOR  DISCARDABLE     "Chart/res/NormalHand.cur"
+XTP_IDC_CHART_DRAGHAND         CURSOR  DISCARDABLE     "Chart/res/DragHand.cur"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+CHART_APPEARANCE_NATURE       HTML    DISCARDABLE     "Chart/Appearance/Appearance/Nature.xml"
+CHART_APPEARANCE_BLACK        HTML    DISCARDABLE     "Chart/Appearance/Appearance/Black.xml"
+CHART_APPEARANCE_GRAY         HTML    DISCARDABLE     "Chart/Appearance/Appearance/Gray.xml"
+
+CHART_PALETTE_BLUE            HTML    DISCARDABLE     "Chart/Appearance/Palettes/blue.xml"
+CHART_PALETTE_BLUEGRAY        HTML    DISCARDABLE     "Chart/Appearance/Palettes/bluegray.xml"
+CHART_PALETTE_CAPPUCCINO      HTML    DISCARDABLE     "Chart/Appearance/Palettes/cappuccino.xml"
+CHART_PALETTE_CARIBBEAN       HTML    DISCARDABLE     "Chart/Appearance/Palettes/caribbean.xml"
+CHART_PALETTE_DANVILLE        HTML    DISCARDABLE     "Chart/Appearance/Palettes/danville.xml"
+CHART_PALETTE_EARTHTONE       HTML    DISCARDABLE     "Chart/Appearance/Palettes/earthtone.xml"
+CHART_PALETTE_FIRE            HTML    DISCARDABLE     "Chart/Appearance/Palettes/fire.xml"
+CHART_PALETTE_FOURCOLOR       HTML    DISCARDABLE     "Chart/Appearance/Palettes/fourcolor.xml"
+CHART_PALETTE_GRAY            HTML    DISCARDABLE     "Chart/Appearance/Palettes/gray.xml"
+CHART_PALETTE_GREEN           HTML    DISCARDABLE     "Chart/Appearance/Palettes/green.xml"
+CHART_PALETTE_GREENBLUE       HTML    DISCARDABLE     "Chart/Appearance/Palettes/greenblue.xml"
+CHART_PALETTE_GREENBROWN      HTML    DISCARDABLE     "Chart/Appearance/Palettes/greenbrown.xml"
+CHART_PALETTE_HARVEST         HTML    DISCARDABLE     "Chart/Appearance/Palettes/harvest.xml"
+CHART_PALETTE_ILLUSTRATION    HTML    DISCARDABLE     "Chart/Appearance/Palettes/illustration.xml"
+CHART_PALETTE_IMPRESIONISM    HTML    DISCARDABLE     "Chart/Appearance/Palettes/impresionism.xml"
+CHART_PALETTE_NATURAL         HTML    DISCARDABLE     "Chart/Appearance/Palettes/natural.xml"
+CHART_PALETTE_NATURE          HTML    DISCARDABLE     "Chart/Appearance/Palettes/nature.xml"
+CHART_PALETTE_OFFICE          HTML    DISCARDABLE     "Chart/Appearance/Palettes/office.xml"
+CHART_PALETTE_ORANGEGREEN     HTML    DISCARDABLE     "Chart/Appearance/Palettes/orangegreen.xml"
+CHART_PALETTE_PASTEL          HTML    DISCARDABLE     "Chart/Appearance/Palettes/pastel.xml"
+CHART_PALETTE_PHOTODESIGN     HTML    DISCARDABLE     "Chart/Appearance/Palettes/photodesign.xml"
+CHART_PALETTE_POSTMODERN      HTML    DISCARDABLE     "Chart/Appearance/Palettes/postmodern.xml"
+CHART_PALETTE_PRIMARYCOLORS   HTML    DISCARDABLE     "Chart/Appearance/Palettes/primarycolors.xml"
+CHART_PALETTE_PURPLE          HTML    DISCARDABLE     "Chart/Appearance/Palettes/purple.xml"
+CHART_PALETTE_RAINBOW         HTML    DISCARDABLE     "Chart/Appearance/Palettes/rainbow.xml"
+CHART_PALETTE_SPRINGTIME      HTML    DISCARDABLE     "Chart/Appearance/Palettes/springtime.xml"
+CHART_PALETTE_SUMMER          HTML    DISCARDABLE     "Chart/Appearance/Palettes/summer.xml"
+CHART_PALETTE_TROPICAL        HTML    DISCARDABLE     "Chart/Appearance/Palettes/tropical.xml"
+CHART_PALETTE_VIBRANT         HTML    DISCARDABLE     "Chart/Appearance/Palettes/vibrant.xml"
+CHART_PALETTE_VIBRANTPASTEL   HTML    DISCARDABLE     "Chart/Appearance/Palettes/vibrantpastel.xml"
+CHART_PALETTE_VICTORIAN       HTML    DISCARDABLE     "Chart/Appearance/Palettes/victorian.xml"
+
+#endif // !defined(_XTP_NO_BINARY_RESOURCES)

@@ -1,0 +1,201 @@
+//=======================================================================
+//================ Lex class support ====================================
+//=======================================================================
+// 	lexClass:
+//		name		= c_CPPString
+//		parent		= c_CPP
+//		parent:dyn	= c_CPP
+//
+//		children		= 0
+//		children		= class1, class2, ...
+//
+//		previous:class			=	
+//		previous:tag			=	
+//		previous:tag:separators	=	
+//
+//		start:class		= 
+//		start:Tag		= '"'
+//
+//		skip:Tag		= '\"'
+//
+//		end:class		= //
+//		end:Tag			= '"'
+//		end:separators	= ' '
+//
+//		Token:tag		= 'if', 'for', 'while', 'do'
+//		Token:start:separators	= 
+//		Token:end:separators	= 
+//-----------------------------------------------------------------------
+//---------------- Attributes -------------------------------------------
+//-----------------------------------------------------------------------
+//	txt:colorFG	= 0xffc0c0 // color value in hex format. default: black	
+//	txt:colorBK	= 0xffc0c0 // color value in hex format. default: white		
+//
+//	txt:colorSelFG	= 0xffc0c0 // color value in hex format. default: white
+//	txt:colorSelBK	= 0xffc0c0 // color value in hex format. default: black
+//
+//	txt:Bold	= 1 // {1,0} default: 0
+//	txt:Italic	= 1 // {1,0} default: 0
+//	txt:Underline	= 1 // {1,0} default: 0
+//
+//	caseSensitive	= 1 // {1,0} default: 0
+//
+//	Collapsable	= 1 // {1,0} default: 0
+//	CollapsedText	= '/*...*/' // quoted string value. default: '[..]'	
+//
+//	ParseOnScreen	= 1 // {1,0} default: 0
+// 	
+//-----------------------------------------------------------------------
+//* Global attributes ***************************************************
+//-----------------------------------------------------------------------
+// 	global:FirstParseInSeparateThread	= 1		// {0,1} default=1
+// 	global:EditReparceInSeparateThread	= 1		// {0,1} default=1
+// 	global:ConfigChangedReparceInSeparateThread= 1 // {0,1} default=1
+// 	global:EditReparceTimeout_ms	= 500		// default= 500 ms; time out for start reparse after last key was pressed.
+// 	global:MaxBackParseOffset		= 100		// default= 100 chars; maximum back buffer size. Some times parser look back for the text from current position.
+// 	global:OnScreenSchCacheLifeTime_sec = 180	// default= 180 sec; -1 and 0 means infinite; time out for on screen parsed pices of text. for memory using optimization.
+// 	global:ParserThreadIdleLifeTime_sec = 60	// default=60 sec; -1 and 0 means infinite; time out for existing of parser thread when parser idle (no parse requests).
+	
+/////////////////////////////////////////////////////////////////////////
+
+//=======================================================================
+//================ Variables support ====================================
+//=======================================================================
+// NON operation - example:   @alpha:not
+//
+// @alpha	= a-z, A-Z
+// @digit	= 0-9
+// @HexDdigit	= 0-9, a-f, A-F
+// @specs	= "~`!@#$%^&*()_-+=\\|{}[];:'\",.<>/?"
+// @EOL		= End Of Line
+//---------------------------------------------
+// special tags:  '\\', '\'', '\t', '\r', '\n'
+/////////////////////////////////////////////////////////////////////////
+
+/// JScript ///	
+lexClass:
+	parent:file	= <*.js>
+	name			= c_JScript
+	DisplayName	= 'Normal Text'
+	//caseSensitive	= 0
+	txt:colorFG	= 0x000000
+	
+//:lexClass
+
+lexClass: 	
+	name		= c_JSCodeBlock
+	parent	= c_JScript, c_JSCodeBlock
+	DisplayName	= 'Curly Braces'
+	start:Tag		= '{'
+	end:tag		= '}'
+	Collapsable	= 1 
+	CollapsedText	= '...'
+	
+//:lexClass
+
+lexClass:
+	name		= c_JScriptCommentSL
+	parent		= c_JScript, c_JSCodeBlock
+	DisplayName	= 'Java Script Comment (single line)'
+	children		= 0
+	start:Tag		= '//'
+	end:separators = @EOL
+	txt:colorFG	= 0x008200
+	
+//:lexClass
+
+lexClass:
+	name		= c_JScriptCommentML
+	parent		= c_JScript, c_JSCodeBlock
+	DisplayName	= 'Java Script Comment (multi-line)'
+	children		= 0
+	start:Tag		= '/*'
+	end:Tag		= '*/'
+	txt:colorFG	= 0x008200
+	
+//:lexClass
+
+lexClass:
+	name		= c_JScriptStr1
+	parent		= c_JScript, c_JSCodeBlock
+	DisplayName	= 'Java Script String (double quote)'
+	start:Tag		='"'
+	end:Tag		='"', @EOL
+	txt:colorFG	= 0x840000
+
+//:lexClass
+
+lexClass:
+	name		= c_JScriptStr
+	parent		= c_JScript, c_JSCodeBlock
+	DisplayName	= 'Java Script String (single quote)'
+//	ParseOnScreen	= 0
+	start:Tag		='\''
+	end:Tag		='\'', @EOL
+	txt:colorFG	= 0x840000	
+//:lexClass
+
+lexClass:
+	name			= c_JScriptNumber10
+	parent		= c_JScript, c_JSCodeBlock
+ 	DisplayName	= 'Java Script Number'    	
+//	ParseOnScreen	= 0
+	previous:tag	= @specs, ' ', '\t', @EOL	
+	start:Tag		= @digit
+	end:separators	= @digit:not
+	txt:colorFG	= 0x008284
+//:lexClass
+
+lexClass: 
+	name		= c_JScript_Language_Keywords0
+	parent		= c_JScript, c_JSCodeBlock
+//	ParseOnScreen	= 1
+	DisplayName	= 'Java Script Keywords'	
+	token:start:separators	= ' ', '\t', @specs, @eol 
+	token:end:separators	= ' ', '\t', @specs, @eol 
+	
+	txt:colorFG	= 0x0000FF
+//	txt:Bold		= 1
+	
+	token:tag = 'break'
+	token:tag = 'case'
+	token:tag = 'catch'
+	token:tag = 'const'
+	token:tag = 'continue'
+	token:tag = 'do'
+	token:tag = 'else'
+	token:tag = 'finally'
+	token:tag = 'for'
+	token:tag = 'function'
+	token:tag = 'if'
+	token:tag = 'in'
+	token:tag = 'instanceof'
+	token:tag = 'new'
+	token:tag = 'return'
+	token:tag = 'switch'
+	token:tag = 'this'
+	token:tag = 'throw'
+	token:tag = 'try'
+	token:tag = 'typeof'
+	token:tag = 'var'
+	token:tag = 'while'
+	token:tag = 'with'
+	token:tag = 'try'
+	token:tag = 'catch'
+
+lexClass: 
+	name		= c_JScript_Language_Constants0
+	parent		= c_JScript, c_JSCodeBlock
+	DisplayName	= 'Java Script Constants'
+	token:start:separators	= ' ', '\t', @specs, @eol 
+	token:end:separators	= ' ', '\t', @specs, @eol 
+	
+	txt:colorFG	= 0x0000FF
+	txt:Bold		= 1
+	
+	token:tag = 'True'
+	token:tag = 'False'
+	token:tag = 'null'
+
+//:lexClass
+

@@ -1,0 +1,293 @@
+// SyntaxEdit resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2012 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#include "SyntaxEdit/Resource.h"
+#include "SyntaxEdit/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_CZECH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_EDIT_PAGEEDITOR DIALOGEX DISCARDABLE  0, 0, 260, 180
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Editor"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX        "Nastavení okna ",IDC_STATIC,7,7,246,76
+    CONTROL         "&Zobrazit svislý posuvník",XTP_IDC_EDIT_CHK_VERT_SCROLLBAR,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,21,105,10
+    CONTROL         "Zo&brazit vodorovný posuvník",XTP_IDC_EDIT_CHK_HORZ_SCROLLBAR,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,32,105,10
+    CONTROL         "È&íslo øádku",XTP_IDC_EDIT_CHK_LINE_NUMBERS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,43,105,10
+    CONTROL         "&Okraj výbìru",XTP_IDC_EDIT_CHK_SELMARGIN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,54,105,10
+    CONTROL         "C&ollapsible Nodes",XTP_IDC_EDIT_CHK_COLLAPSIBLE_NODES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,65,105,10
+    CONTROL         "&Automatické odsazení",XTP_IDC_EDIT_CHK_AUTO_INDENT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,130,20,115,10
+    CONTROL         "Virtual &space",XTP_IDC_EDIT_CHK_VIRTUAL_SPACE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,130,35,115,10
+    CONTROL         "Barva synta&xe",XTP_IDC_EDIT_CHK_SYNTAX_COLOR,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,130,50,115,10
+    GROUPBOX        "Tabulátory",IDC_STATIC,7,88,162,43
+    LTEXT           "&Velikost tabulátoru:",IDC_STATIC,15,103,30,8
+    EDITTEXT        XTP_IDC_EDIT_TABS_SIZE,50,100,46,14,ES_AUTOHSCROLL
+    CONTROL         "Vložit m&ezery",XTP_IDC_EDIT_RAD_TABS_SPACES,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,102,102,58,10
+    CONTROL         "Za&chovat tabulátory",XTP_IDC_EDIT_RAD_TABS_TAB,"Button",
+                    BS_AUTORADIOBUTTON,102,113,51,10
+    GROUPBOX        "Pøepsat vsuvku",XTP_IDC_EDIT_GBOX_CARET,175,88,78,43,
+                    WS_GROUP
+    CONTROL         "&Tenké",XTP_IDC_EDIT_RAD_CARET_THIN,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,181,102,31,10
+    CONTROL         "S&ilné",XTP_IDC_EDIT_RAD_CARET_THICK,"Button",
+                    BS_AUTORADIOBUTTON,181,113,36,10
+    GROUPBOX        "Možnosti ukládání ",IDC_STATIC,7,135,246,37
+    CONTROL         "Automaticky znovu &naèíst externì upravené soubory",
+                    XTP_IDC_EDIT_CHK_AUTO_RELOAD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,151,155,10
+END
+XTP_IDD_EDIT_PAGEFONT DIALOGEX 0, 0, 260, 180
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Písmo editoru"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Pís&mo:",XTP_IDC_EDIT_TXT_FONTNAMES,7,7,40,9
+    COMBOBOX        XTP_IDC_EDIT_COMB_NAMES,7,18,119,55,CBS_SIMPLE | 
+                    CBS_AUTOHSCROLL | CBS_SORT | CBS_DISABLENOSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "St&yl písma:",XTP_IDC_EDIT_TXT_FONTSTYLES,134,7,45,9
+    COMBOBOX        XTP_IDC_EDIT_COMB_STYLES,134,18,75,55,CBS_SIMPLE | 
+                    CBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Ve&likost:",XTP_IDC_EDIT_TXT_FONTSIZES,217,7,30,9
+    COMBOBOX        XTP_IDC_EDIT_COMB_SIZES,217,18,36,55,CBS_SIMPLE | 
+                    CBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Normální &text:",IDC_STATIC,7,68,100,8
+    COMBOBOX        XTP_IDC_EDIT_COMB_TEXT,7,78,103,100,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "...",XTP_IDC_EDIT_BTN_CUSTOM_TEXT,113,78,13,12
+    LTEXT           "Normální &pozadí:",IDC_STATIC,7,95,100,8
+    COMBOBOX        XTP_IDC_EDIT_COMB_BACK,7,105,103,100,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "...",XTP_IDC_EDIT_BTN_CUSTOM_BACK,113,105,13,12
+    LTEXT           "Vybraný te&xt:",IDC_STATIC,7,122,100,8
+    COMBOBOX        XTP_IDC_EDIT_COMB_TEXTSEL,7,132,103,100,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "...",XTP_IDC_EDIT_BTN_CUSTOM_TEXTSEL,113,132,13,12
+    LTEXT           "Vybrané p&ozadí:",IDC_STATIC,7,149,100,8
+    COMBOBOX        XTP_IDC_EDIT_COMB_BACKSEL,7,159,103,100,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "...",XTP_IDC_EDIT_BTN_CUSTOM_BACKSEL,113,159,13,12
+    LTEXT           "In&dex:",XTP_IDC_EDIT_TXT_FONTSCRIPT,135,69,100,9
+    COMBOBOX        XTP_IDC_EDIT_COMB_SCRIPT,134,78,119,115,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_BORDER | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Ukázka normální / vybraný:",XTP_IDC_EDIT_GRP_SAMPLE,135,128,
+                    118,44,WS_GROUP
+    CTEXT           "AaBbCc",XTP_IDC_EDIT_TXT_SAMPLE,143,140,49,26,
+                    SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    CTEXT           "XxYyZz",XTP_IDC_EDIT_TXT_SAMPLESEL,196,140,49,26,
+                    SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+END
+
+XTP_IDD_EDIT_PAGECOLOR DIALOGEX 0, 0, 260, 180
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Barva syntaxe"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "T&yp souboru:",XTP_IDC_EDIT_TXT_SCHEMANAMES,7,7,123,9
+    LISTBOX         XTP_IDC_EDIT_LBOX_SCHEMANAMES,7,17,123,64,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Atributy:",XTP_IDC_EDIT_TXT_SCHEMAPROP,7,85,123,9
+    LISTBOX         XTP_IDC_EDIT_LBOX_SCHEMAPROP,7,95,123,77,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Normální &text:",IDC_STATIC,135,7,100,8
+    COMBOBOX        XTP_IDC_EDIT_COMB_TEXT,135,17,100,100,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "...",XTP_IDC_EDIT_BTN_CUSTOM_TEXT,238,17,13,12
+    LTEXT           "Normální &pozadí:",IDC_STATIC,135,33,100,8
+    COMBOBOX        XTP_IDC_EDIT_COMB_BACK,135,43,100,100,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "...",XTP_IDC_EDIT_BTN_CUSTOM_BACK,238,43,13,12
+    LTEXT           "Vybraný te&xt:",IDC_STATIC,135,59,100,8
+    COMBOBOX        XTP_IDC_EDIT_COMB_TEXTSEL,135,69,100,100,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "...",XTP_IDC_EDIT_BTN_CUSTOM_TEXTSEL,238,69,13,12
+    LTEXT           "Vybrané p&ozadí:",IDC_STATIC,135,85,100,8
+    COMBOBOX        XTP_IDC_EDIT_COMB_BACKSEL,135,95,100,100,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "...",XTP_IDC_EDIT_BTN_CUSTOM_BACKSEL,238,95,13,12
+    CONTROL         "T&uèné",XTP_IDC_EDIT_CHK_BOLD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,135,114,30,10
+    CONTROL         "&Kurzíva",XTP_IDC_EDIT_CHK_ITALIC,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,170,114,31,10
+    CONTROL         "Po&dtržení",XTP_IDC_EDIT_CHK_UNDERLINE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,206,114,46,10
+    GROUPBOX        "Ukázka normální / vybraný:",XTP_IDC_EDIT_GRP_SAMPLE,135,128,
+                    118,44,WS_GROUP
+    CTEXT           "AaBbCc",XTP_IDC_EDIT_TXT_SAMPLE,143,140,49,26,
+                    SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    CTEXT           "XxYyZz",XTP_IDC_EDIT_TXT_SAMPLESEL,196,140,49,26,
+                    SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+END
+
+XTP_IDD_EDIT_SEARCH_FIND DIALOGEX DISCARDABLE  0, 0, 271, 82
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Najít"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Najít",IDC_STATIC,7,9,43,8,NOT WS_GROUP
+    COMBOBOX        XTP_IDC_EDIT_COMBO_FIND,51,6,154,153,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Možnosti",IDC_STATIC,7,30,113,45 
+    CONTROL         "Pouze celá slova",XTP_IDC_EDIT_CHK_MATCH_WHOLE_WORD,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,43,100,10
+    CONTROL         "Rozlišovat malá a velká písmena",XTP_IDC_EDIT_CHK_MATCH_CASE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,58,100,10
+    GROUPBOX        "Smìr",IDC_STATIC,126,30,80,45
+    CONTROL         "Nahoru",XTP_IDC_EDIT_RADIO_UP,"Button",
+                    BS_AUTORADIOBUTTON,134,43,65,10
+    CONTROL         "Dolù",XTP_IDC_EDIT_RADIO_DOWN,"Button",
+                    BS_AUTORADIOBUTTON,134,58,65,10
+    PUSHBUTTON      "Najít &další",XTP_IDC_EDIT_BTN_FIND_NEXT,214,7,50,14,
+                    WS_DISABLED | WS_TABSTOP
+    PUSHBUTTON      "Zavøít",IDCANCEL,214,26,50,14, WS_TABSTOP
+END
+
+XTP_IDD_EDIT_SEARCH_REPLACE DIALOGEX DISCARDABLE  0, 0, 271, 86
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Najít a nahradit"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Najít text",IDC_STATIC,7,9,50,8,NOT WS_GROUP
+    COMBOBOX        XTP_IDC_EDIT_COMBO_FIND,61,6,143,154,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Nahradit èím",IDC_STATIC,7,25,50,8,NOT WS_GROUP
+    COMBOBOX        XTP_IDC_EDIT_COMBO_REPLACE,61,23,143,135,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Možnosti",IDC_STATIC,7,38,113,41
+    CONTROL         "Pouze celá slova",XTP_IDC_EDIT_CHK_MATCH_WHOLE_WORD,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,51,100,10
+    CONTROL         "Rozlišovat malá a velká písmena",XTP_IDC_EDIT_CHK_MATCH_CASE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,64,100,10
+    GROUPBOX        "Smìr",IDC_STATIC,126,38,80,41
+    CONTROL         "Nahoru",XTP_IDC_EDIT_RADIO_UP,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,134,51,65,10
+    CONTROL         "Dolù",XTP_IDC_EDIT_RADIO_DOWN,"Button",
+                    BS_AUTORADIOBUTTON,134,64,65,10
+    PUSHBUTTON      "Najít &další",XTP_IDC_EDIT_BTN_FIND_NEXT,214,7,50,14,
+                    WS_DISABLED | WS_TABSTOP
+    PUSHBUTTON      "Na&hradit",XTP_IDC_EDIT_BTN_REPLACE,214,23,50,14,
+                    WS_DISABLED | WS_TABSTOP
+    PUSHBUTTON      "Nahradit vš&e",XTP_IDC_EDIT_BTN_REPLACE_ALL,214,39,50,14,
+                    WS_DISABLED | WS_TABSTOP
+    PUSHBUTTON      "Zavøít",IDCANCEL,214,65,50,14, WS_TABSTOP
+END
+
+XTP_IDD_EDIT_GOTOLINE DIALOGEX DISCARDABLE  0, 0, 165, 55
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Pøejít na øádek"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "&Zadejte èíslo øádku:",XTP_IDC_EDIT_TXT_LINENO,5,5,155,8
+    EDITTEXT        XTP_IDC_EDIT_LINENO,5,17,155,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    PUSHBUTTON      "&Pøejít na",XTP_IDC_EDIT_BTN_GOTO,56,36,50,14
+    PUSHBUTTON      "Storno",IDCANCEL,110,36,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_EDIT_UNDEFINED     "Nedefinovaný pøíkaz"
+    XTP_IDS_EDIT_MULTIPLE      "Více operací"
+    XTP_IDS_EDIT_DELETE        "Odstranit: "
+    XTP_IDS_EDIT_INSERT        "Vložit: "
+    XTP_IDS_EDIT_TYPING        "Psaní"
+    XTP_IDS_EDIT_PASTE         "Vložit"
+    XTP_IDS_EDIT_MOVE          "Pøesunout"
+    XTP_IDS_EDIT_COPY          "Kopírovat"
+    XTP_IDS_EDIT_INDENTATION   "Odsazení"
+    XTP_IDS_EDIT_INDENT_DECREASE "Zmenšit odsazení"
+    XTP_IDS_EDIT_FORMAT        "Formát"
+    XTP_IDS_EDIT_TABIFY        "Použít tabulátory"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_EDIT_UNTABIFY      "Zrušit tabulátory"
+    XTP_IDS_EDIT_REPLACE_ALL   "Nahradit vše"
+    XTP_IDS_EDIT_CASE          "Zmìnit velikost textu"
+    XTP_IDS_EDIT_DELETE_TEXT_BLOCK "Odstranit blok textu"
+    XTP_IDS_EDIT_MOVE_HERE     "&Pøesunout sem"
+    XTP_IDS_EDIT_COPY_HERE     "&Kopírovat sem"
+    XTP_IDS_EDIT_CANCEL        "&Storno"
+    XTP_IDS_EDIT_MSG_WARN_RELOAD 
+                            "Soubor ‚%s‘ byl upraven vnìjším zdrojem!\nChcete jej naèíst znovu?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_EDIT_CUSTOM        "Vlastní"
+    XTP_IDS_EDIT_REGULAR       "Obyèejné"
+    XTP_IDS_EDIT_BOLD          "Tuèné"
+    XTP_IDS_EDIT_ITALIC        "Kurzíva"
+    XTP_IDS_EDIT_BOLDITALIC    "Tuèné Kurzíva"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDD_EDIT_OPTIONS       "Možnosti úprav"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_EDIT_MSG_FREPLACED "Byly nalezeny a nahrazeny výskyty: %d."
+    XTP_IDS_EDIT_MSG_FSEARCH   "Hledání bylo dokonèeno."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_EDIT_LINENO        "Èísl&o øádku (1 - %d):"
+    XTP_IDS_EDIT_OPENSCHEMACMD "Otevøít soubor schématu"
+    XTP_IDS_EDIT_OPENSCHEMAMSG "Chcete zavøít dialogové okno Možnosti a otevøít soubor schématu „%s%s“ v oknì editoru?"
+END
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)

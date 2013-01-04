@@ -1,0 +1,194 @@
+// Ribbon resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2012 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#include "Ribbon/Resource.h"
+#include "Ribbon/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XTP_IDR_RIBBONCUSTOMIZEMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "Symbolleiste für den Schnellzugriff"
+    BEGIN
+        MENUITEM "&Aus Symbolleiste für den Schnellzugriff entfernen",               XTP_ID_RIBBONCUSTOMIZE_REMOVE
+        MENUITEM "&Zu Symbolleiste für den Schnellzugriff hinzufügen",                    XTP_ID_RIBBONCUSTOMIZE_ADD
+        MENUITEM SEPARATOR
+        MENUITEM "&Symbolleiste für den Schnellzugriff anpassen...",              XTP_ID_RIBBONCUSTOMIZE
+        MENUITEM "Symbolleiste für den Schnellzugriff unter der &Multifunktionsleiste anzeigen",     XTP_ID_RIBBONCUSTOMIZE_QUICKACCESSBELOW
+        MENUITEM "&Symbolleiste für den Schnellzugriff über der Multifunktionsleiste anzeigen",     XTP_ID_RIBBONCUSTOMIZE_QUICKACCESSABOVE
+        MENUITEM SEPARATOR
+        MENUITEM "Multifunktionsleiste mi&nimieren",              XTP_ID_RIBBONCUSTOMIZE_MINIMIZE
+    END
+END
+
+XTP_IDR_RIBBONCUSTOMIZEMENUMORE MENU DISCARDABLE 
+BEGIN
+    POPUP "Symbolleiste für den Schnellzugriff"
+    BEGIN
+        MENUITEM "Symbolleiste für den Schnellzugriff anpassen",                 XTP_ID_RIBBONCUSTOMIZE_LABEL
+        MENUITEM "[Befehle]",                                      XTP_ID_RIBBONCUSTOMIZE_COMMANDS
+        MENUITEM SEPARATOR
+        MENUITEM "&Weitere Befehle...",                               XTP_ID_RIBBONCUSTOMIZE_MORE
+        MENUITEM "&Unter der Multifunktionsleiste anzeigen",                          XTP_ID_RIBBONCUSTOMIZE_QUICKACCESSBELOW_MORE
+        MENUITEM "Ü&ber der Multifunktionsleiste anzeigen",                          XTP_ID_RIBBONCUSTOMIZE_QUICKACCESSABOVE_MORE
+        MENUITEM SEPARATOR
+        MENUITEM "Multifunktionsleiste mi&nimieren",                            XTP_ID_RIBBONCUSTOMIZE_MINIMIZE
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_RIBBONCUSTOMIZE_QUICKACCESS DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "&Schnellzugriff"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "&Befehle auswählen:",IDC_STATIC,4,5,106,8
+    COMBOBOX        XTP_IDC_RIBBONCOMBO_CATEGORIES,4,15,91,85,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         XTP_IDC_RIBBONLIST_COMMANDS,4,32,91,101,LBS_SORT | 
+                    LBS_OWNERDRAWFIXED | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "&>>",XTP_IDC_RIBBONBUTTON_ADD,99,61,31,14
+    PUSHBUTTON      "&<<",XTP_IDC_RIBBONBUTTON_REMOVE,99,78,31,14
+    LISTBOX         XTP_IDC_RIBBONLIST_QUICKACCESS,134,32,91,84,LBS_SORT | 
+                    LBS_OWNERDRAWFIXED | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Zurück&setzen",XTP_IDC_RIBBONBUTTON_RESET,134,119,52,14
+    CONTROL         "Symbolleiste für den Schnellzugriff unter &der Multifunktionsleiste anzeigen",
+                    XTP_IDC_RIBBONCHECK_SHOWQUICKACCESSBELOW,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,4,136,221,12
+END
+
+XTP_IDD_RIBBONCUSTOMIZE_QUICKACCESS_LARGE DIALOGEX DISCARDABLE  0, 0, 452, 227
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "&Quick Access Toolbar"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Customize the Quick Acess Toolbar.",
+                    XTP_IDC_RIBBONPAGE_TITLE,14,7,284,22
+    LTEXT           "&Choose commands from:",IDC_STATIC,18,34,106,8
+    COMBOBOX        XTP_IDC_RIBBONCOMBO_CATEGORIES,18,45,164,85,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         XTP_IDC_RIBBONLIST_COMMANDS,18,65,164,119,LBS_SORT | 
+                    LBS_OWNERDRAWFIXED | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "&Add >>",XTP_IDC_RIBBONBUTTON_ADD,190,109,52,14
+    PUSHBUTTON      "<< &Remove",XTP_IDC_RIBBONBUTTON_REMOVE,190,126,52,14
+    LISTBOX         XTP_IDC_RIBBONLIST_QUICKACCESS,249,65,164,119,LBS_SORT | 
+                    LBS_OWNERDRAWFIXED | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Re&set",XTP_IDC_RIBBONBUTTON_RESET,249,189,52,14
+    CONTROL         "S&how Quick Access Toolbar below the Ribbon",
+                    XTP_IDC_RIBBONCHECK_SHOWQUICKACCESSBELOW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,190,161,14
+END
+
+XTP_IDD_RIBBONCUSTOMIZE_RIBBON DIALOGEX DISCARDABLE 0, 0, 452, 227
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Customize &Ribbon"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Customize the Ribbon",XTP_IDC_RIBBONPAGE_TITLE,14,7,284,
+                    22
+    LTEXT           "&Choose commands from:",IDC_STATIC,18,34,106,8
+    COMBOBOX        XTP_IDC_RIBBONCOMBO_CATEGORIES,18,45,164,85,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",XTP_IDC_RIBBONLIST_COMMANDS,"XTPCoreTree",WS_TABSTOP,
+                    18,65,164,145,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "&Add >>",XTP_IDC_RIBBONBUTTON_ADD,190,109,52,14
+    PUSHBUTTON      "<< &Remove",XTP_IDC_RIBBONBUTTON_REMOVE,190,126,52,14
+    LTEXT           "&Customize the Ribbon:",XTP_IDC_RIBBONSTATIC_CUSTOMIZE,
+                    249,34,106,8
+    COMBOBOX        XTP_IDC_RIBBONCOMBO_TABGROUP,248,45,164,85,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",XTP_IDC_RIBBONLIST_QUICKACCESS,"XTPCoreTree",
+                    WS_TABSTOP,249,65,164,98,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Ne&w Tab",XTP_IDC_RIBBONBUTTON_NEWTAB,249,168,52,14
+    PUSHBUTTON      "&New Group",XTP_IDC_RIBBONBUTTON_NEWGROUP,305,168,52,14
+    PUSHBUTTON      "Rena&me",XTP_IDC_RIBBONBUTTON_RENAME,361,168,52,14
+    PUSHBUTTON      "",XTP_IDC_RIBBONBUTTON_UP,422,109,21,14
+    PUSHBUTTON      "",XTP_IDC_RIBBONBUTTON_DOWN,422,126,21,14
+    LTEXT           "Customizations:",XTP_IDC_RIBBONSTATIC_CUSTOMIZATIONS,
+                    251,188,50,8
+    PUSHBUTTON      "Re&set",XTP_IDC_RIBBONBUTTON_RESET,305,186,52,14
+    PUSHBUTTON      "Im&port/Export",XTP_IDC_RIBBONBUTTON_IMPORT,305,203,77,
+                    14
+END
+
+XTP_IDD_RIBBONCUSTOMIZE_RENAME  DIALOGEX DISCARDABLE 0, 0, 228, 56
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Rename"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Display Name:",IDC_STATIC,7,8,46,8
+    EDITTEXT        XTP_IDC_RIBBONEDIT_RENAME,61,7,160,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,117,35,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,171,35,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+
+XTP_IDM_RIBBONCUSTOMIZE_IMPORT MENU DISCARDABLE 
+BEGIN
+    POPUP "Import and Export"
+    BEGIN
+        MENUITEM "Import customization file",                XTP_ID_RIBBONCUSTOMIZE_IMPORT
+        MENUITEM "Export all customizations",                XTP_ID_RIBBONCUSTOMIZE_EXPORT
+    END
+END
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_RIBBONCONTROLQUICKACCESS     "\nSymbolleiste für den Schnellzugriff anpassen"
+    XTP_ID_RIBBONCONTROLQUICKACCESSMORE "\nWeitere Steuerelemente"
+    XTP_IDS_RIBBONCUSTOMIZE_CONFIRMRESET "Möchten Sie für die Symbolleiste für den Schnellzugriff wirklich die Standardinhalte wiederherstellen?"
+
+    XTP_IDS_RIBBONCUSTOMIZE_MAINTABS   "Main Tabs"
+    XTP_IDS_RIBBONCUSTOMIZE_NEWTAB     "New Tab (Custom)"
+    XTP_IDS_RIBBONCUSTOMIZE_NEWGROUP   "New Group (Custom)"
+    XTP_IDS_RIBBONCUSTOMIZE_CONFIRMRIBBONRESET "Delete all Ribbon and Quick Access Toolbar customization for this program?"
+END
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)

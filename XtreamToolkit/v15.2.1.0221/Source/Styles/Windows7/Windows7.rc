@@ -1,0 +1,240 @@
+//Microsoft Developer Studio generated resource script.
+//
+//
+#include "afxres.h"
+
+
+WINDOWS7BLUE_INI      TEXTFILE MOVEABLE PURE  "Styles\\Windows7\\res\\BlueTheme.ini"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+WINDOWS7BLUE_WORKSPACETOPLEFT_BMP   PNG  MOVEABLE PURE  "Styles\\Windows7\\res\\Blue_WorkspaceTopLeft.png"                    
+WINDOWS7BLUE_FRAMESYSTEMBUTTON_BMP   PNG  MOVEABLE PURE  "Styles\\Windows7\\res\\Blue_FrameSystemButton.png"                    
+WINDOWS7BLUE_FILEBUTTON_BMP   PNG  MOVEABLE PURE  "Styles\\Windows7\\res\\Blue_FileButton.png"                    
+WINDOWS7BLUE_FRAMESYSTEMBUTTON52_BMP   PNG  MOVEABLE PURE  "Styles\\Windows7\\res\\Blue_FrameSystemButton52.png"                    
+WINDOWS7BLUE_TOOLBARFACEHORIZONTAL_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ToolbarFaceHorizontal.png"
+WINDOWS7BLUE_TOOLBARFACEVERTICAL_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ToolbarFaceVertical.png"
+WINDOWS7BLUE_TOOLBAREXPANDBUTTONHORIZONTAL_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ToolbarExpandButtonHorizontal.png"
+WINDOWS7BLUE_TOOLBAREXPANDBUTTONVERTICAL_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ToolbarExpandButtonVertical.png"
+WINDOWS7BLUE_TOOLBARBUTTONS50_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ToolbarButtons50.png"
+WINDOWS7BLUE_TOOLBARBUTTONSSPLIT50_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ToolbarButtonsSplit50.png"
+WINDOWS7BLUE_CONTEXTTABGREENGROUPBUTTON_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ContextTabGreenGroupButton.png"
+WINDOWS7BLUE_CONTEXTTABORANGEGROUPBUTTON_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ContextTabOrangeGroupButton.png"
+WINDOWS7BLUE_CONTEXTTABBLUEGROUPBUTTON_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ContextTabBlueGroupButton.png"
+WINDOWS7BLUE_CONTEXTTABCYANGROUPBUTTON_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ContextTabCyanGroupButton.png"
+WINDOWS7BLUE_CONTEXTTABPURPLEGROUPBUTTON_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ContextTabPurpleGroupButton.png"
+WINDOWS7BLUE_CONTEXTTABREDGROUPBUTTON_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ContextTabRedGroupButton.png"
+WINDOWS7BLUE_CONTEXTTABYELLOWGROUPBUTTON_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ContextTabYellowGroupButton.png"
+WINDOWS7BLUE_TOOLBARBUTTONSSPLITDROPDOWN50_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ToolbarButtonsSplitDropDown50.png"
+WINDOWS7BLUE_RIBBONTAB_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_RibbonTab.png"
+WINDOWS7BLUE_CONTEXTTABPURPLE_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ContextTabPurple.png"
+WINDOWS7BLUE_CONTEXTTABORANGE_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ContextTabOrange.png"
+WINDOWS7BLUE_CONTEXTTABGREEN_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ContextTabGreen.png"
+WINDOWS7BLUE_RIBBONGROUPBUTTON_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_RibbonGroupButton.png"
+WINDOWS7BLUE_CONTEXTTABCYAN_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ContextTabCyan.png"
+WINDOWS7BLUE_CONTEXTTABYELLOW_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ContextTabYellow.png"
+WINDOWS7BLUE_CONTEXTTABWINDOWS7BLUE_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ContextTabBlue.png"
+WINDOWS7BLUE_CONTEXTTABRED_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ContextTabRed.png"
+WINDOWS7BLUE_TOOLBARBUTTONSSPLIT22_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ToolbarButtonsSplit22.png"
+WINDOWS7BLUE_TOOLBARBUTTONS22_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ToolbarButtons22.png"
+WINDOWS7BLUE_TOOLBARBUTTONCHECKBOX_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ToolbarButtonCheckBox.png"
+WINDOWS7BLUE_TOOLBARBUTTONSPINARROWSVERTICAL_BMP PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ToolbarButtonSpinArrowsVertical.png"
+WINDOWS7BLUE_TOOLBARBUTTONSPINARROWSHORIZONTAL_BMP PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ToolbarButtonSpinArrowsHorizontal.png"
+WINDOWS7BLUE_TOOLBARBUTTONSPINARROWGLYPHS_BMP  PNG MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ToolbarButtonSpinArrowGlyphs.png"
+WINDOWS7BLUE_TOOLBARBUTTONRADIOBUTTON_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ToolbarButtonRadioButton.png"
+WINDOWS7BLUE_MENUSELECTEDITEM54_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_MenuSelectedItem54.png"
+WINDOWS7BLUE_CONTROLGALLERYPOPUP_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ControlGalleryPopup.png"
+WINDOWS7BLUE_CONTROLGALLERYUP_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ControlGalleryUp.png"
+WINDOWS7BLUE_CONTROLGALLERYDOWN_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ControlGalleryDown.png"
+WINDOWS7BLUE_RIBBONGROUPS_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_RibbonGroups.png"
+WINDOWS7BLUE_RIBBONGROUPSEPARATOR_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_RibbonGroupSeparator.png"
+WINDOWS7BLUE_RIBBONQUICKACCESSBUTTON_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_RibbonQuickAccessButton.png"
+WINDOWS7BLUE_TOOLBARBUTTONSSPLITDROPDOWN22_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ToolbarButtonsSplitDropDown22.png"
+WINDOWS7BLUE_TOOLBARBUTTONSSPECIALSPLITLEFT_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ToolbarButtonsSpecialSplitLeft.png"
+WINDOWS7BLUE_RIBBONQUICKACCESSMORE_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_RibbonQuickAccessMore.png"
+WINDOWS7BLUE_MENUSELECTEDDISABLEDITEM54_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_MenuSelectedDisabledItem54.png"
+WINDOWS7BLUE_TOOLBARBUTTONSSPECIALSPLITDROPDOWNRIGHT_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ToolbarButtonsSpecialSplitDropDownRight.png"
+WINDOWS7BLUE_TOOLBARBUTTONSSPECIALSINGLE_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ToolbarButtonsSpecialSingle.png"
+WINDOWS7BLUE_TOOLBARBUTTONSSPECIALSPLITCENTER_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ToolbarButtonsSpecialSplitCenter.png"
+WINDOWS7BLUE_FRAMECAPTIONBUTTON_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_FrameCaptionButton.png"
+WINDOWS7BLUE_TOOLBARBUTTONSSPECIALSPLITRIGHT_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ToolbarButtonsSpecialSplitRight.png"
+WINDOWS7BLUE_CONTROLGALLERYSCROLLTHUMBVERTICAL_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ControlGalleryScrollThumbVertical.png"
+WINDOWS7BLUE_CONTEXTTABGROUPCLIENT_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ContextTabGroupClient.png"
+WINDOWS7BLUE_TOOLBARBUTTONSSPECIALLEFT_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ToolbarButtonsSpecialLeft.png"
+WINDOWS7BLUE_TOOLBARBUTTONSSPECIALSPLITDROPDOWNCENTER_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ToolbarButtonsSpecialSplitDropDownCenter.png"
+WINDOWS7BLUE_CONTEXTTABORANGECLIENT_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ContextTabOrangeClient.png"
+WINDOWS7BLUE_TOOLBARBUTTONSSPECIALSPLITDROPDOWNLEFT_BMP   PNG  MOVEABLE  PURE "Styles\\Windows7\\res\\Blue_ToolbarButtonsSpecialSplitDropDownLeft.png"
+WINDOWS7BLUE_TOOLBARBUTTONSSPECIALRIGHT_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ToolbarButtonsSpecialRight.png"
+WINDOWS7BLUE_CONTEXTTABCYANCLIENT_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ContextTabCyanClient.png"
+WINDOWS7BLUE_CONTEXTTABGREENCLIENT_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ContextTabGreenClient.png"
+WINDOWS7BLUE_CONTEXTTABYELLOWCLIENT_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ContextTabYellowClient.png"
+WINDOWS7BLUE_CONTEXTTABPURPLECLIENT_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ContextTabPurpleClient.png"
+WINDOWS7BLUE_CONTEXTTABREDCLIENT_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ContextTabRedClient.png"
+WINDOWS7BLUE_CONTEXTTABPURPLEHEADER_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ContextTabPurpleHeader.png"
+WINDOWS7BLUE_CONTEXTTABBLUECLIENT_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ContextTabBlueClient.png"
+WINDOWS7BLUE_MENUSELECTEDITEM22_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_MenuSelectedItem22.png"
+WINDOWS7BLUE_CONTEXTTABGREENHEADER_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ContextTabGreenHeader.png"
+WINDOWS7BLUE_CONTEXTTABBLUEHEADER_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ContextTabBlueHeader.png"
+WINDOWS7BLUE_RIBBONGROUPCLIENT_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_RibbonGroupClient.png"
+WINDOWS7BLUE_TOOLBARBUTTONSSPECIALCENTER_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ToolbarButtonsSpecialCenter.png"
+WINDOWS7BLUE_CONTEXTTABORANGEHEADER_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ContextTabOrangeHeader.png"
+WINDOWS7BLUE_RIBBONOPTIONBUTTON_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_RibbonOptionButton.png"
+WINDOWS7BLUE_CONTEXTTABREDHEADER_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ContextTabRedHeader.png"
+WINDOWS7BLUE_CONTEXTTABCYANHEADER_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ContextTabCyanHeader.png"
+WINDOWS7BLUE_CONTEXTTABYELLOWHEADER_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ContextTabYellowHeader.png"
+WINDOWS7BLUE_MENUSELECTEDDISABLEDITEM22_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_MenuSelectedDisabledItem22.png"
+WINDOWS7BLUE_TOOLBARBUTTONSCOMBODROPDOWN_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ToolbarButtonsComboDropDown.png"
+WINDOWS7BLUE_FRAMECAPTIONCLOSE23_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_FrameCaptionClose23.png"
+WINDOWS7BLUE_MENUCHECKEDITEMMARK_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_MenuCheckedItemMark.png"
+WINDOWS7BLUE_FRAMECAPTIONRESTORE23_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_FrameCaptionRestore23.png"
+WINDOWS7BLUE_CONTEXTTABGROUPCAPTION_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ContextTabGroupCaption.png"
+WINDOWS7BLUE_CONTROLGALLERYSCROLLARROWGLYPHS_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ControlGalleryScrollArrowGlyphs.png"
+WINDOWS7BLUE_CONTROLGALLERYSCROLLARROWSVERTICALLIGHT_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ControlGalleryScrollArrowsVerticalLight.png"
+WINDOWS7BLUE_CONTROLGALLERYSCROLLARROWSHORIZONTALDARK_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ControlGalleryScrollArrowsHorizontalDark.png"
+WINDOWS7BLUE_CONTROLGALLERYSCROLLARROWSHORIZONTALLIGHT_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ControlGalleryScrollArrowsHorizontalLight.png"
+WINDOWS7BLUE_CONTROLGALLERYSCROLLHORIZONTALDARK_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ControlGalleryScrollHorizontalDark.png"
+WINDOWS7BLUE_CONTROLGALLERYSCROLLHORIZONTALLIGHT_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ControlGalleryScrollHorizontalLight.png"
+WINDOWS7BLUE_CONTROLGALLERYSCROLLTHUMBGRIPPERHORIZONTAL_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ControlGalleryScrollThumbGripperHorizontal.png"
+WINDOWS7BLUE_CONTROLGALLERYSCROLLTHUMBHORIZONTAL_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ControlGalleryScrollThumbHorizontal.png"
+WINDOWS7BLUE_FRAMECAPTIONCLOSE17_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_FrameCaptionClose17.png"
+WINDOWS7BLUE_RIBBONGROUPCAPTION_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_RibbonGroupCaption.png"
+WINDOWS7BLUE_FRAMETOPLEFT_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_FrameTopLeft.png"
+WINDOWS7BLUE_RIBBONGROUPBUTTONICON_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_RibbonGroupButtonIcon.png"
+WINDOWS7BLUE_FRAMECAPTIONMAXIMIZE23_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_FrameCaptionMaximize23.png"
+WINDOWS7BLUE_FRAMECAPTIONCLOSE13_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_FrameCaptionClose13.png"
+WINDOWS7BLUE_FRAMECAPTIONRESTORE17_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_FrameCaptionRestore17.png"
+WINDOWS7BLUE_FRAMECAPTIONRESTORE13_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_FrameCaptionRestore13.png"
+WINDOWS7BLUE_FRAMECAPTIONMAXIMIZE17_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_FrameCaptionMaximize17.png"
+WINDOWS7BLUE_MENUCHECKEDITEM_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_MenuCheckedItem.png"
+WINDOWS7BLUE_FRAMETOPRIGHT_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_FrameTopRight.png"
+WINDOWS7BLUE_RIBBONGROUPQUICKACCESS_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_RibbonGroupQuickAccess.png"
+WINDOWS7BLUE_RIBBONQUICKACCESSFRAME_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_RibbonQuickAccessFrame.png"
+WINDOWS7BLUE_RIBBONQUICKACCESSAREA_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_RibbonQuickAccessArea.png"
+WINDOWS7BLUE_FRAMECAPTIONMAXIMIZE13_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_FrameCaptionMaximize13.png"
+WINDOWS7BLUE_STATUSBARDEVIDER_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_StatusBarDevider.png"
+WINDOWS7BLUE_STATUSBARSWITCHES_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_StatusBarSwitches.png"
+WINDOWS7BLUE_STATUSBARSEPARATOR_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_StatusBarSeparator.png"
+WINDOWS7BLUE_STATUSBARGRIPPER_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_StatusBarGripper.png"
+WINDOWS7BLUE_STATUSBARLIGHT_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_StatusBarLight.png"
+WINDOWS7BLUE_STATUSBARDARK_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_StatusBarDark.png"
+WINDOWS7BLUE_FRAMECAPTIONMINIMIZE23_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_FrameCaptionMinimize23.png"
+WINDOWS7BLUE_TOOLBARBUTTONDROPDOWNGLYPH_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ToolbarButtonDropDownGlyph.png"
+WINDOWS7BLUE_POPUPBARFRAME_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_PopupBarFrame.png"
+WINDOWS7BLUE_MOREPOPUPBARFRAME_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_MorePopupBarFrame.png"
+WINDOWS7BLUE_FRAMECAPTIONMINIMIZE17_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_FrameCaptionMinimize17.png"
+WINDOWS7BLUE_FRAMECAPTIONMINIMIZE13_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_FrameCaptionMinimize13.png"
+WINDOWS7BLUE_FRAMEBOTTOMRIGHT_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_FrameBottomRight.png"
+WINDOWS7BLUE_FRAMEBOTTOMLEFT_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_FrameBottomLeft.png"
+WINDOWS7BLUE_RIBBONTABSEPARATOR_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_RibbonTabSeparator.png"
+WINDOWS7BLUE_CONTEXTTABSEPARATOR_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ContextTabSeparator.png"
+WINDOWS7BLUE_CONTROLGALLERYSCROLLTHUMBGRIPPERVERTICAL_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ControlGalleryScrollThumbGripperVertical.png"
+WINDOWS7BLUE_CONTROLGALLERYSCROLLVERTICALLIGHT_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ControlGalleryScrollVerticalLight.png"
+WINDOWS7BLUE_CONTROLGALLERYSCROLLARROWSVERTICALDARK_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ControlGalleryScrollArrowsVerticalDark.png"
+WINDOWS7BLUE_CONTROLGALLERYSCROLLVERTICALDARK_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ControlGalleryScrollVerticalDark.png"
+WINDOWS7BLUE_FRAMETOPCENTER_BMP PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_FrameTopCenter.png"
+WINDOWS7BLUE_RIBBONSYSTEMMENU_BMP PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_RibbonSystemMenu.png"
+WINDOWS7BLUE_RIBBONSYSTEMMENUBUTTON_BMP PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_RibbonSystemMenuButton.png"
+WINDOWS7BLUE_MENUSPLITDROPDOWN_BMP PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_MenuSplitDropDown.png"
+WINDOWS7BLUE_MENUSPLITITEM_BMP PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_MenuSplitItem.png"
+WINDOWS7BLUE_MENUPOPUPGLYPH_BMP PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_MenuPopupGlyph.png"
+WINDOWS7BLUE_RIBBONGROUPSSCROLLLEFT_BMP PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_RibbonGroupsScrollLeft.png"
+WINDOWS7BLUE_RIBBONGROUPSSCROLLLEFTGLYPH_BMP PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_RibbonGroupsScrollLeftGlyph.png"
+WINDOWS7BLUE_RIBBONGROUPSSCROLLRIGHT_BMP PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_RibbonGroupsScrollRight.png"
+WINDOWS7BLUE_RIBBONGROUPSSCROLLRIGHTGLYPH_BMP PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_RibbonGroupsScrollRightGlyph.png"
+WINDOWS7BLUE_SHORTCUTBARITEMS_BMP PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ShortcutBarItems.png"
+WINDOWS7BLUE_SHORTCUTBARSMALLITEMS_BMP PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ShortcutBarSmallItems.png"
+WINDOWS7BLUE_SHORTCUTBARNAVIGATEITEM_BMP PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ShortcutBarNavigateItem.png"
+WINDOWS7BLUE_RIBBONQUICKACCESSAREADWM_BMP PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_RibbonQuickAccessAreaDwm.png"
+WINDOWS7BLUE_POPUPBARRESIZEGRIPPERFACE_BMP PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_PopupBarResizeGripperFace.png"
+WINDOWS7BLUE_POPUPBARRESIZEGRIPPERWIDTH_BMP PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_PopupBarResizeGripperWidth.png"
+WINDOWS7BLUE_POPUPBARRESIZEGRIPPERHEIGHT_BMP PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_PopupBarResizeGripperHeight.png"
+WINDOWS7BLUE_PUSHBUTTON_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_PushButton.png"
+WINDOWS7BLUE_TOOLTIPFRAME_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_TooltipFrame.png"
+WINDOWS7BLUE_LISTBOX_BMP PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ListBox.png"
+WINDOWS7BLUE_SLIDERDOWN_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_SliderDown.png"
+WINDOWS7BLUE_SLIDERTHUMB_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_SliderThumb.png"
+WINDOWS7BLUE_SLIDERTICK_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_SliderTick.png"
+WINDOWS7BLUE_SLIDERTRACK_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_SliderTrack.png"
+WINDOWS7BLUE_SLIDERUP_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_SliderUp.png"
+WINDOWS7BLUE_SHORTCUTBARGLYPHS_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ShortcutBarGlyphs.png"
+WINDOWS7BLUE_SHORTCUTBARGRIPPER_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ShortcutBarGripper.png"
+WINDOWS7BLUE_PROGRESSTRACK_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ProgressTrack.png"
+WINDOWS7BLUE_PROGRESSCHUNK_BMP   PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_ProgressChunk.png"
+
+WINDOWS7BLUE_CALENDARHEADER_BMP			PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_CalendarHeader.png"
+WINDOWS7BLUE_CALENDARTODAYHEADER_BMP			PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_CalendarTodayHeader.png"
+WINDOWS7BLUE_CALENDARTODAYHEADERMVDAY_BMP			PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_CalendarTodayHeaderMVDay.png"
+WINDOWS7BLUE_CALENDARHEADERDVGROUP_BMP	PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_CalendarHeaderDVGroup.png"
+WINDOWS7BLUE_CALENDARHEADERMVDAY_BMP		PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_CalendarHeaderMVDay.png"
+WINDOWS7BLUE_CALENDARHEADERMVWEEK_BMP	PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_CalendarHeaderMVWeek.png"
+WINDOWS7BLUE_CALENDARHEADERWVDAY_BMP		PNG  MOVEABLE PURE "Styles\\Windows7\\res\\Blue_CalendarHeaderWVDay.png"
+
+WINDOWS7BLUE_CALENDARCAPTIONBARSWITCHVIEWBUTTON_BMP   PNG  MOVEABLE PURE  "Styles\\Windows7\\res\\Blue_CalendarCaptionBarSwitchViewButton.png"
+WINDOWS7BLUE_CALENDARCAPTIONBARPREVDATEBUTTON_BMP   PNG  MOVEABLE PURE  "Styles\\Windows7\\res\\Blue_CalendarCaptionBarPrevDateButton.png"
+WINDOWS7BLUE_CALENDARCAPTIONBARNEXTDATEBUTTON_BMP   PNG  MOVEABLE PURE  "Styles\\Windows7\\res\\Blue_CalendarCaptionBarNextDateButton.png"
+WINDOWS7BLUE_CALENDARCAPTIONBAREXPANDBUTTON_BMP   PNG  MOVEABLE PURE  "Styles\\Windows7\\res\\Blue_CalendarCaptionBarExpandButton.png"
+WINDOWS7BLUE_CALENDARPREVNEXTEVENTBUTTON_BMP	PNG  MOVEABLE PURE  "Styles\\Windows7\\res\\Blue_CalendarPrevNextEventButton.png"
+WINDOWS7BLUE_CALENDARPREVNEXTEVENTBUTTONARR_BMP	PNG  MOVEABLE PURE  "Styles\\Windows7\\res\\Blue_CalendarPrevNextEventButtonArr.png"
+WINDOWS7BLUE_ACCESSTAB_BMP	PNG  MOVEABLE PURE  "Styles\\Windows7\\res\\Blue_AccessTab.png"
+WINDOWS7BLUE_SYSTEMICONSEPARATOR_BMP	PNG  MOVEABLE PURE  "Styles\\Windows7\\res\\Blue_SystemIconSeparator.png"
+
+WINDOWS7BLUE_BACKSTAGEMENUBACKGROUND_BMP	PNG  MOVEABLE PURE  "Styles\\Windows7\\res\\Blue_BackstageMenuBackground.png"
+WINDOWS7BLUE_BACKSTAGEMENUCOMMAND_BMP	PNG  MOVEABLE PURE  "Styles\\Windows7\\res\\Blue_BackstageMenuCommand.png"
+WINDOWS7BLUE_BACKSTAGEMENUPAGE_BMP	PNG  MOVEABLE PURE  "Styles\\Windows7\\res\\Blue_BackstageMenuPage.png"
+WINDOWS7BLUE_BACKSTAGEMENUPAGEGLYPH_BMP	PNG  MOVEABLE PURE  "Styles\\Windows7\\res\\Blue_BackstageMenuPageGlyph.png"
+WINDOWS7BLUE_BACKSTAGETOPBORDER_BMP	PNG  MOVEABLE PURE  "Styles\\Windows7\\res\\Blue_BackstageTopBorder.png"
+
+WINDOWS7BLUE_REPORTEXPANDBUTTON_BMP	PNG  MOVEABLE PURE  "Styles\\Windows7\\res\\Blue_ReportExpandButton.png"
+
+
+WINDOWS7COMMON_BACKSTAGEBUTTON_BMP	PNG  MOVEABLE PURE  "Styles\\Windows7\\res\\Common_BackstageButton.png"
+WINDOWS7COMMON_BACKSTAGEBUTTONSHADOW_BMP	PNG  MOVEABLE PURE  "Styles\\Windows7\\res\\Common_BackstageButtonShadow.png"
+WINDOWS7COMMON_BACKSTAGEBUTTONGLYPH_BMP	PNG  MOVEABLE PURE  "Styles\\Windows7\\res\\Common_BackstageButtonGlyph.png"
+WINDOWS7COMMON_BACKSTAGEPANESEPARATOR_BMP	PNG  MOVEABLE PURE  "Styles\\Windows7\\res\\Common_BackstagePaneSeparator.png"
+
+#ifdef _XTP_INCLUDE_VERSION
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 15,2,1,0221
+ PRODUCTVERSION 15,2,1,0221
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "February 21, 2012\0"
+            VALUE "CompanyName", "Codejock Software\0"
+            VALUE "FileDescription", "Windows 7 Ribbon Style\0"
+            VALUE "FileVersion", "15, 2, 1, 0221\0"
+            VALUE "InternalName", "Windows7.dll\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Windows7.dll\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Windows 7 Style for Codejock RibbonBar\0"
+            VALUE "ProductVersion", "15, 2, 1, 0221\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // _XTP_INCLUDE_VERSION

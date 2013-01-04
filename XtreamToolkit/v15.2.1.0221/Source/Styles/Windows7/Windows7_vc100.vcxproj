@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>Windows7</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release/vc100\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release/vc100\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\Release/vc100x64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\Release/vc100x64\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <TypeLibraryName>.\Release/vc100/Windows7.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;_USRDLL;XTPRESOURCE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeaderOutputFile>.\Release/vc100/Windows7.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/vc100/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/vc100/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/vc100/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;_AFXDLL;_XTP_INCLUDE_VERSION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../Windows7.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <ProgramDatabaseFile>.\Release/vc100/Windows7.pdb</ProgramDatabaseFile>
+      <NoEntryPoint>true</NoEntryPoint>
+      <ImportLibrary>.\Release/vc100/Windows7.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\Release/vc100/Windows7.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;_USRDLL;XTPRESOURCE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeaderOutputFile>.\Release/vc100x64/Windows7.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/vc100x64/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/vc100x64/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/vc100x64/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;_AFXDLL;_XTP_INCLUDE_VERSION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../Windows7.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <ProgramDatabaseFile>.\Release/vc100x64/Windows7.pdb</ProgramDatabaseFile>
+      <NoEntryPoint>true</NoEntryPoint>
+      <ImportLibrary>.\Release/vc100x64/Windows7.lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Windows7.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Blue_ContextTabBlue.png" />
+    <None Include="res\Blue_ContextTabBlueClient.png" />
+    <None Include="res\Blue_ContextTabBlueGroupButton.png" />
+    <None Include="res\Blue_ContextTabBlueHeader.png" />
+    <None Include="res\Blue_ContextTabCyan.png" />
+    <None Include="res\Blue_ContextTabCyanClient.png" />
+    <None Include="res\Blue_ContextTabCyanGroupButton.png" />
+    <None Include="res\Blue_ContextTabCyanHeader.png" />
+    <None Include="res\Blue_ContextTabGreen.png" />
+    <None Include="res\Blue_ContextTabGreenClient.png" />
+    <None Include="res\Blue_ContextTabGreenGroupButton.png" />
+    <None Include="res\Blue_ContextTabGreenHeader.png" />
+    <None Include="res\Blue_ContextTabGroupCaption.png" />
+    <None Include="res\Blue_ContextTabGroupClient.png" />
+    <None Include="res\Blue_ContextTabOrange.png" />
+    <None Include="res\Blue_ContextTabOrangeClient.png" />
+    <None Include="res\Blue_ContextTabOrangeGroupButton.png" />
+    <None Include="res\Blue_ContextTabOrangeHeader.png" />
+    <None Include="res\Blue_ContextTabPurple.png" />
+    <None Include="res\Blue_ContextTabPurpleClient.png" />
+    <None Include="res\Blue_ContextTabPurpleGroupButton.png" />
+    <None Include="res\Blue_ContextTabPurpleHeader.png" />
+    <None Include="res\Blue_ContextTabRed.png" />
+    <None Include="res\Blue_ContextTabRedClient.png" />
+    <None Include="res\Blue_ContextTabRedGroupButton.png" />
+    <None Include="res\Blue_ContextTabRedHeader.png" />
+    <None Include="res\Blue_ContextTabSeparator.png" />
+    <None Include="res\Blue_ContextTabYellow.png" />
+    <None Include="res\Blue_ContextTabYellowClient.png" />
+    <None Include="res\Blue_ContextTabYellowGroupButton.png" />
+    <None Include="res\Blue_ContextTabYellowHeader.png" />
+    <None Include="res\Blue_ControlGalleryDown.png" />
+    <None Include="res\Blue_ControlGalleryPopup.png" />
+    <None Include="res\Blue_ControlGalleryScrollArrowGlyphs.png" />
+    <None Include="res\Blue_ControlGalleryScrollArrowsVerticalDark.png" />
+    <None Include="res\Blue_ControlGalleryScrollArrowsVerticalLight.png" />
+    <None Include="res\Blue_ControlGalleryScrollThumbGripperVertical.png" />
+    <None Include="res\Blue_ControlGalleryScrollThumbVertical.png" />
+    <None Include="res\Blue_ControlGalleryScrollVerticalDark.png" />
+    <None Include="res\Blue_ControlGalleryScrollVerticalLight.png" />
+    <None Include="res\Blue_ControlGalleryUp.png" />
+    <None Include="res\Blue_FrameBottomLeft.png" />
+    <None Include="res\Blue_FrameBottomRight.png" />
+    <None Include="res\Blue_FrameCaptionButton.png" />
+    <None Include="res\Blue_FrameCaptionClose13.png" />
+    <None Include="res\Blue_FrameCaptionClose17.png" />
+    <None Include="res\Blue_FrameCaptionClose23.png" />
+    <None Include="res\Blue_FrameCaptionMaximize13.png" />
+    <None Include="res\Blue_FrameCaptionMaximize17.png" />
+    <None Include="res\Blue_FrameCaptionMaximize23.png" />
+    <None Include="res\Blue_FrameCaptionMinimize13.png" />
+    <None Include="res\Blue_FrameCaptionMinimize17.png" />
+    <None Include="res\Blue_FrameCaptionMinimize23.png" />
+    <None Include="res\Blue_FrameCaptionRestore13.png" />
+    <None Include="res\Blue_FrameCaptionRestore17.png" />
+    <None Include="res\Blue_FrameCaptionRestore23.png" />
+    <None Include="res\Blue_FrameGripper.png" />
+    <None Include="res\Blue_FrameSimpleTopRight.png" />
+    <None Include="res\Blue_FrameSystemButton.png" />
+    <None Include="res\Blue_FrameTopCenter.png" />
+    <None Include="res\Blue_FrameTopLeft.png" />
+    <None Include="res\Blue_FrameTopRight.png" />
+    <None Include="res\Blue_MenuCheckedItem.png" />
+    <None Include="res\Blue_MenuCheckedItemMark.png" />
+    <None Include="res\Blue_MenuSelectedDisabledItem22.png" />
+    <None Include="res\Blue_MenuSelectedDisabledItem54.png" />
+    <None Include="res\Blue_MenuSelectedItem22.png" />
+    <None Include="res\Blue_MenuSelectedItem54.png" />
+    <None Include="res\Blue_PopupBarFrame.png" />
+    <None Include="res\Blue_ReportExpandButton.png" />
+    <None Include="res\Blue_RibbonGroupButton.png" />
+    <None Include="res\Blue_RibbonGroupButtonIcon.png" />
+    <None Include="res\Blue_RibbonGroupCaption.png" />
+    <None Include="res\Blue_RibbonGroupClient.png" />
+    <None Include="res\Blue_RibbonGroupQuickAccess.png" />
+    <None Include="res\Blue_RibbonGroups.png" />
+    <None Include="res\Blue_RibbonGroupsScrollLeft.png" />
+    <None Include="res\Blue_RibbonGroupsScrollLeftGlyph.png" />
+    <None Include="res\Blue_RibbonGroupsScrollRight.png" />
+    <None Include="res\Blue_RibbonGroupsScrollRightGlyph.png" />
+    <None Include="res\Blue_RibbonOptionButton.png" />
+    <None Include="res\Blue_RibbonQuickAccessButton.png" />
+    <None Include="res\Blue_RibbonQuickAccessFrame.png" />
+    <None Include="res\Blue_RibbonQuickAccessMore.png" />
+    <None Include="res\Blue_RibbonTab.png" />
+    <None Include="res\Blue_RibbonTabSeparator.png" />
+    <None Include="res\Blue_StatusBarDark.png" />
+    <None Include="res\Blue_StatusBarDevider.png" />
+    <None Include="res\Blue_StatusBarGripper.png" />
+    <None Include="res\Blue_StatusBarLight.png" />
+    <None Include="res\Blue_StatusBarSeparator.png" />
+    <None Include="res\Blue_ToolbarButtonCheckBox.png" />
+    <None Include="res\Blue_ToolbarButtonDropDownGlyph.png" />
+    <None Include="res\Blue_ToolbarButtons22.png" />
+    <None Include="res\Blue_ToolbarButtons50.png" />
+    <None Include="res\Blue_ToolbarButtonsComboDropDown.png" />
+    <None Include="res\Blue_ToolbarButtonsSpecialCenter.png" />
+    <None Include="res\Blue_ToolbarButtonsSpecialLeft.png" />
+    <None Include="res\Blue_ToolbarButtonsSpecialRight.png" />
+    <None Include="res\Blue_ToolbarButtonsSpecialSingle.png" />
+    <None Include="res\Blue_ToolbarButtonsSpecialSplitCenter.png" />
+    <None Include="res\Blue_ToolbarButtonsSpecialSplitDropDownCenter.png" />
+    <None Include="res\Blue_ToolbarButtonsSpecialSplitDropDownLeft.png" />
+    <None Include="res\Blue_ToolbarButtonsSpecialSplitDropDownRight.png" />
+    <None Include="res\Blue_ToolbarButtonsSpecialSplitLeft.png" />
+    <None Include="res\Blue_ToolbarButtonsSpecialSplitRight.png" />
+    <None Include="res\Blue_ToolbarButtonsSplit22.png" />
+    <None Include="res\Blue_ToolbarButtonsSplit50.png" />
+    <None Include="res\Blue_ToolbarButtonsSplitDropDown22.png" />
+    <None Include="res\Blue_ToolbarButtonsSplitDropDown50.png" />
+    <None Include="res\Blue_WorkspaceTopLeft.png" />
+    <None Include="res\BlueTheme.ini" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

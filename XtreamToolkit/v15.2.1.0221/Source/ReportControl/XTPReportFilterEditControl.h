@@ -1,0 +1,163 @@
+// XTPReportFilterEditControl.h: interface for the CXTPReportFilterEditControl class.
+//
+// This file is a part of the XTREME REPORTCONTROL MFC class library.
+// (c)1998-2012 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+//{{AFX_CODEJOCK_PRIVATE
+#if !defined(__XTPREPORTFILTEREDITCONTROL_H__)
+#define __XTPREPORTFILTEREDITCONTROL_H__
+//}}AFX_CODEJOCK_PRIVATE
+
+#if _MSC_VER > 1000
+#pragma once
+#endif // _MSC_VER > 1000
+
+
+//===========================================================================
+// Summary:
+//     The CXTPReportFilterEditControl class provides the functionality of the
+//     filter string edit control, associated to the main Report control window.
+// Remarks:
+//     It has all the functionality of the CEdit control, as well as some
+//     specific additions.
+//
+//     This control should be instantiated in the user's application.
+//     To use a field chooser in an existing dialog box of your application,
+//     add a standard list box to your dialog template using the dialog
+//     editor and then initialize your CXTPReportSubListControl object
+//     inside dialog OnInitialUpdate handler. See example below:
+// <code>
+// // CXTPReportFilterEditControl wndFilter;
+// wndFilter.SubclassDlgItem(IDC_FILTEREDIT, &pFilterDialog);
+// // CXTPReportControl wndReport;
+// wndReport.GetColumns()->GetReportHeader()->SetFilterEditCtrl(&wndFilter);
+// </code>
+// See Also: CEdit, CXTPReportHeader::SetFilterEditCtrl
+//===========================================================================
+class _XTP_EXT_CLASS CXTPReportFilterEditControl : public CEdit
+{
+
+public:
+	//-----------------------------------------------------------------------
+	// Summary:
+	//     Constructs a CXTPReportFilterEditControl object.
+	// Remarks:
+	//     You construct a CXTPReportFilterEditControl object in two steps.
+	//     First, call the constructor CXTPReportFilterEditControl and
+	//     then call Create, which initializes the Windows edit box and
+	//     attaches it to the CXTPReportFilterEditControl.
+	// Example:
+	// <code>
+	// // Declare a local CXTPReportFilterEditControl object.
+	// CXTPReportFilterEditControl myFilterEdit;
+	//
+	// // Declare a dynamic CXTPReportFilterEditControl object.
+	// CXTPReportFilterEditControl* pMyFilterEdit = new CXTPReportFilterEditControl;
+	// </code>
+	//
+	// See Also: CEdit, SetReportCtrl, CXTPReportHeader::SetFilterEditCtrl
+	//-----------------------------------------------------------------------
+	CXTPReportFilterEditControl();
+
+	//-----------------------------------------------------------------------
+	// Summary:
+	//     Destroys CXTPReportFilterEditControl object, handles its cleanup.
+	//-----------------------------------------------------------------------
+	~CXTPReportFilterEditControl();
+
+public:
+	//-----------------------------------------------------------------------
+	// Summary:
+	//     Sets the associated report control.
+	// Parameters:
+	//     pReportCtrl - Pointer to the associated report control.
+	// Remarks:
+	//     Usually this method should not be called by the user, instead
+	//     should call CXTPReportHeader::SetFilterEditCtrl.
+	// Returns:
+	//     TRUE if set successfully, FALSE otherwise.
+	// See Also: CXTPReportHeader::SetFilterEditCtrl, GetReportCtrl
+	//-----------------------------------------------------------------------
+	BOOL SetReportCtrl(CXTPReportControl* pReportCtrl);
+
+	//-----------------------------------------------------------------------
+	// Summary:
+	//     Returns a pointer to the associated report control.
+	// Returns:
+	//     An associated report control.
+	// See Also: CXTPReportHeader::SetFilterEditCtrl, SetReportCtrl
+	//-----------------------------------------------------------------------
+	CXTPReportControl* GetReportCtrl();
+
+	//-----------------------------------------------------------------------
+	// Summary:
+	//     Call this member to set the edit control text.
+	// Parameters:
+	//     lpszText    - New text of the edit control.
+	//-----------------------------------------------------------------------
+	void SetText(const CString& lpszText);
+
+	//-----------------------------------------------------------------------
+	// Summary:
+	//     Call this member to get the edit text.
+	// Returns:
+	//     The Edit control text.
+	//-----------------------------------------------------------------------
+	CString GetText() const;
+
+	//-----------------------------------------------------------------------
+	// Summary:
+	//     Call this member to set grayed-out text displayed in the edit control
+	//     that displayed a helpful description of what the control is used for.
+	// Parameters:
+	//     lpszHint - Edit hint to be set
+	// Example:
+	//     <code>pEdit->SetHint(_T("Click to find a contact");</code>
+	// See Also: GetHint
+	//-----------------------------------------------------------------------
+	void SetHint(LPCTSTR lpszHint);
+
+	//-----------------------------------------------------------------------
+	// Summary:
+	//     Call this member to get grayed-out text displayed in the edit control
+	//     that displayed a helpful description of what the control is used for.
+	// Returns:
+	//     Edit hint of the control
+	// See Also: SetHint
+	//-----------------------------------------------------------------------
+	CString GetHint() const;
+
+protected:
+
+//{{AFX_CODEJOCK_PRIVATE
+	DECLARE_MESSAGE_MAP()
+
+	//{{AFX_MSG(CXTPReportFilterEditControl)
+	afx_msg BOOL OnChange();
+	afx_msg void OnPaint();
+	//}}AFX_MSG
+//}}AFX_CODEJOCK_PRIVATE
+
+
+protected:
+	CXTPReportControl* m_pReportCtrl;   // Pointer to the main report control.
+	CString             m_strHint;      // Grayed-out text displayed in the edit control to show a helpful description like "Enter filter text here".
+};
+
+
+#endif //#if !defined(__XTPREPORTFILTEREDITCONTROL_H__)

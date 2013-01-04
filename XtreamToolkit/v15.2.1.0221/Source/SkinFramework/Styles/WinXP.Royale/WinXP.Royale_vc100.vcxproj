@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>WinXP.Royale</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release/vc100\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release/vc100\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\Release/vc100x64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\Release/vc100x64\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <TypeLibraryName>.\Release/vc100/WinXP.Royale.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../../../Source;../../../Source/Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;_USRDLL;XTPRESOURCE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeaderOutputFile>.\Release/vc100/WinXP.Royale.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/vc100/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/vc100/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/vc100/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;_AFXDLL;_XTP_INCLUDE_VERSION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>../../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../WinXP.Royale.cjstyles</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <ProgramDatabaseFile>.\Release/vc100/WinXP.Royale.pdb</ProgramDatabaseFile>
+      <NoEntryPoint>true</NoEntryPoint>
+      <ImportLibrary>.\Release/vc100/WinXP.Royale.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\Release/vc100/WinXP.Royale.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../../../Source;../../../Source/Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;_USRDLL;XTPRESOURCE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeaderOutputFile>.\Release/vc100x64/WinXP.Royale.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/vc100x64/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/vc100x64/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/vc100x64/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;_AFXDLL;_XTP_INCLUDE_VERSION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>../../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../WinXP.Royale.cjstyles</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <ProgramDatabaseFile>.\Release/vc100x64/WinXP.Royale.pdb</ProgramDatabaseFile>
+      <NoEntryPoint>true</NoEntryPoint>
+      <ImportLibrary>.\Release/vc100x64/WinXP.Royale.lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WinXP.Royale.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Royale_Button.png" />
+    <None Include="res\Royale_CaptionButton.png" />
+    <None Include="res\Royale_CheckBox13.png" />
+    <None Include="res\Royale_CheckBox16.png" />
+    <None Include="res\Royale_CheckBox25.png" />
+    <None Include="res\Royale_Chevron.png" />
+    <None Include="res\Royale_CloseButton.png" />
+    <None Include="res\Royale_CloseGlyph.png" />
+    <None Include="res\Royale_CloseGlyph19.png" />
+    <None Include="res\Royale_CloseGlyph23.png" />
+    <None Include="res\Royale_CloseGlyph6.png" />
+    <None Include="res\Royale_CloseGlyph9.png" />
+    <None Include="res\Royale_ComboButton.png" />
+    <None Include="res\Royale_ComboButtonGlyph.png" />
+    <None Include="res\Royale_ExplorerBarHeaderClose.png" />
+    <None Include="res\Royale_ExplorerBarHeaderPin.png" />
+    <None Include="res\Royale_FieldOutlineBlue.png" />
+    <None Include="res\Royale_FrameBottom.png" />
+    <None Include="res\Royale_FrameCaption.png" />
+    <None Include="res\Royale_FrameCaptionMin.png" />
+    <None Include="res\Royale_FrameCaptionSizing.png" />
+    <None Include="res\Royale_FrameLeft.png" />
+    <None Include="res\Royale_FrameMaximized.png" />
+    <None Include="res\Royale_FrameRight.png" />
+    <None Include="res\Royale_Gripper.png" />
+    <None Include="res\Royale_GripperVert.png" />
+    <None Include="res\Royale_GroupBox.png" />
+    <None Include="res\Royale_HelpGlyph.png" />
+    <None Include="res\Royale_HelpGlyph19.png" />
+    <None Include="res\Royale_HelpGlyph23.png" />
+    <None Include="res\Royale_HelpGlyph6.png" />
+    <None Include="res\Royale_HelpGlyph9.png" />
+    <None Include="res\Royale_ListViewHeader.png" />
+    <None Include="res\Royale_ListviewHeaderBackground.png" />
+    <None Include="res\Royale_MaximizeGlyph.png" />
+    <None Include="res\Royale_MaximizeGlyph19.png" />
+    <None Include="res\Royale_MaximizeGlyph23.png" />
+    <None Include="res\Royale_MaximizeGlyph6.png" />
+    <None Include="res\Royale_MaximizeGlyph9.png" />
+    <None Include="res\Royale_MDICaptionButton.png" />
+    <None Include="res\Royale_MDIGlyphClose.png" />
+    <None Include="res\Royale_MDIGlyphMinimize.png" />
+    <None Include="res\Royale_MDIGlyphRestore.png" />
+    <None Include="res\Royale_MinimizeGlyph.png" />
+    <None Include="res\Royale_MinimizeGlyph19.png" />
+    <None Include="res\Royale_MinimizeGlyph23.png" />
+    <None Include="res\Royale_MinimizeGlyph6.png" />
+    <None Include="res\Royale_MinimizeGlyph9.png" />
+    <None Include="res\Royale_NormalGroupBackground.png" />
+    <None Include="res\Royale_NormalGroupCollapse.png" />
+    <None Include="res\Royale_NormalGroupExpand.png" />
+    <None Include="res\Royale_NormalGroupHead.png" />
+    <None Include="res\Royale_PlaceBarBackground.png" />
+    <None Include="res\Royale_PlaceBarButtons.png" />
+    <None Include="res\Royale_ProgressChunk.png" />
+    <None Include="res\Royale_ProgressChunkVert.png" />
+    <None Include="res\Royale_ProgressTrack.png" />
+    <None Include="res\Royale_ProgressTrackVert.png" />
+    <None Include="res\Royale_RadioButton13.png" />
+    <None Include="res\Royale_RadioButton16.png" />
+    <None Include="res\Royale_RadioButton25.png" />
+    <None Include="res\Royale_ResizeGrip2.png" />
+    <None Include="res\Royale_RestoreGlyph.png" />
+    <None Include="res\Royale_RestoreGlyph19.png" />
+    <None Include="res\Royale_RestoreGlyph23.png" />
+    <None Include="res\Royale_RestoreGlyph6.png" />
+    <None Include="res\Royale_RestoreGlyph9.png" />
+    <None Include="res\Royale_ScrollArrowGlyphs.png" />
+    <None Include="res\Royale_ScrollArrowGlyphsSmall.png" />
+    <None Include="res\Royale_ScrollArrows.png" />
+    <None Include="res\Royale_ScrollShaftHorizontal.png" />
+    <None Include="res\Royale_ScrollShaftVertical.png" />
+    <None Include="res\Royale_ScrollThumbGripperHorizontal.png" />
+    <None Include="res\Royale_ScrollThumbGripperVertical.png" />
+    <None Include="res\Royale_ScrollThumbHorizontal.png" />
+    <None Include="res\Royale_ScrollThumbVertical.png" />
+    <None Include="res\Royale_Separator.png" />
+    <None Include="res\Royale_SeparatorVert.png" />
+    <None Include="res\Royale_SliderTrack.png" />
+    <None Include="res\Royale_SmallCloseButton.png" />
+    <None Include="res\Royale_SmallCloseGlyph.png" />
+    <None Include="res\Royale_SmallFrameCaption.png" />
+    <None Include="res\Royale_SmallFrameCaptionSizing.png" />
+    <None Include="res\Royale_SpecialGroupBackground.png" />
+    <None Include="res\Royale_SpecialGroupCollapse.png" />
+    <None Include="res\Royale_SpecialGroupExpand.png" />
+    <None Include="res\Royale_SpecialGroupHead.png" />
+    <None Include="res\Royale_SpinButtonBackgroundDown.png" />
+    <None Include="res\Royale_SpinButtonBackgroundLeft.png" />
+    <None Include="res\Royale_SpinButtonBackgroundRight.png" />
+    <None Include="res\Royale_SpinButtonBackgroundUp.png" />
+    <None Include="res\Royale_SpinDownGlyph.png" />
+    <None Include="res\Royale_SpinLeftGlyph.png" />
+    <None Include="res\Royale_SpinRightGlyph.png" />
+    <None Include="res\Royale_SpinUpGlyph.png" />
+    <None Include="res\Royale_StatusBackground.png" />
+    <None Include="res\Royale_StatusPane.png" />
+    <None Include="res\Royale_TabBackground.png" />
+    <None Include="res\Royale_TabBackground133.png" />
+    <None Include="res\Royale_TabItem.png" />
+    <None Include="res\Royale_TabItemBoth.png" />
+    <None Include="res\Royale_TabItemLeft.png" />
+    <None Include="res\Royale_TabItemRight.png" />
+    <None Include="res\Royale_TabItemTop.png" />
+    <None Include="res\Royale_TabItemTopBoth.png" />
+    <None Include="res\Royale_TabItemTopLeft.png" />
+    <None Include="res\Royale_TabItemTopRight.png" />
+    <None Include="res\Royale_TabPaneEdge.png" />
+    <None Include="res\Royale_ToolbarBackground.png" />
+    <None Include="res\Royale_ToolbarButtons.png" />
+    <None Include="res\Royale_ToolbarButtonsSplit.png" />
+    <None Include="res\Royale_ToolbarButtonsSplitDropdown.png" />
+    <None Include="res\Royale_ToolbarButtonsSplitDropdownGlyph.png" />
+    <None Include="res\Royale_ToolbarGripper.png" />
+    <None Include="res\Royale_ToolbarGripperVert.png" />
+    <None Include="res\Royale_TrackBarDown13.png" />
+    <None Include="res\Royale_TrackBarDown16.png" />
+    <None Include="res\Royale_TrackBarDown25.png" />
+    <None Include="res\Royale_TrackbarHorizontal.png" />
+    <None Include="res\Royale_TrackBarLeft13.png" />
+    <None Include="res\Royale_TrackBarLeft16.png" />
+    <None Include="res\Royale_TrackBarLeft25.png" />
+    <None Include="res\Royale_TrackbarRight13.png" />
+    <None Include="res\Royale_TrackBarRight16.png" />
+    <None Include="res\Royale_TrackBarRight25.png" />
+    <None Include="res\Royale_TrackBarUp13.png" />
+    <None Include="res\Royale_TrackBarUp16.png" />
+    <None Include="res\Royale_TrackBarUp25.png" />
+    <None Include="res\Royale_TrackbarVertical.png" />
+    <None Include="res\Royale_TreeExpandCollapse.png" />
+    <None Include="res\Royale_TreeExpandCollapse10.png" />
+    <None Include="res\Royale_TreeExpandCollapse15.png" />
+    <None Include="res\Royale_ExtraLarge.ini" />
+    <None Include="res\Royale_LargeFonts.ini" />
+    <None Include="res\Royale_Normal.ini" />
+    <None Include="res\Themes.ini" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

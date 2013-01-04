@@ -1,0 +1,258 @@
+// Controls resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2012 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#include "Controls/Resource.h"
+#include "Controls/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) && !defined(_XTP_NO_STANDARDCONTROLS_RES)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_TIPOFTHEDAY DIALOGEX 0, 0, 279, 127
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "每日提示"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "关闭(&C)",IDOK,224,108,50,14
+    CONTROL         "启动时显示“日积月累”(&S)",XTP_IDC_CHK_DAYTIP_SHOW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,110,140,10
+    PUSHBUTTON      "下一个提示(&N)",XTP_IDC_BTN_DAYTIP_NEXT,164,108,58,14
+    CONTROL         "",XTP_IDC_BTN_DAYTIP_BORDER,"Static",SS_GRAYFRAME | NOT WS_VISIBLE,0,0,279,103
+END
+
+XTP_IDD_COLORCUSTOM DIALOGEX DISCARDABLE  0, 0, 147, 161
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "自定义"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "颜色(&C):",XTP_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XTP_IDC_CLR_WND,"Static",SS_BLACKFRAME | WS_TABSTOP,4,
+                    15,116,86
+    CONTROL         "",XTP_IDC_CLR_LUM,"Static",SS_BLACKFRAME | WS_TABSTOP,
+                    126,15,17,86
+    LTEXT           "色调(&H):",XTP_IDC_TXT_HUE,4,108,33,8
+    EDITTEXT        XTP_IDC_EDIT_HUE,45,106,32,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XTP_IDC_SPIN_HUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,67,105,
+                    10,14
+    LTEXT           "饱和度(&S):",XTP_IDC_TXT_SAT,4,125,41,8
+    EDITTEXT        XTP_IDC_EDIT_SAT,45,122,32,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin2",XTP_IDC_SPIN_SAT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,67,122,
+                    10,14
+    LTEXT           "亮度(&L):",XTP_IDC_TXT_LUM,4,140,33,8
+    EDITTEXT        XTP_IDC_EDIT_LUM,45,138,32,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XTP_IDC_SPIN_LUM,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,67,137,
+                    10,14
+    LTEXT           "红色(&R):",XTP_IDC_TXT_RED,81,108,30,8
+    EDITTEXT        XTP_IDC_EDIT_RED,111,106,32,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XTP_IDC_SPIN_RED,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,132,105,
+                    11,14
+    LTEXT           "绿色(&G):",XTP_IDC_TXT_GREEN,81,125,30,8
+    EDITTEXT        XTP_IDC_EDIT_GREEN,111,122,32,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin2",XTP_IDC_SPIN_GREEN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,132,122,
+                    11,14
+    LTEXT           "蓝色(&B):",XTP_IDC_TXT_BLUE,81,140,30,8
+    EDITTEXT        XTP_IDC_EDIT_BLUE,111,138,32,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XTP_IDC_SPIN_BLUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,132,137,
+                    11,14
+END
+
+XTP_IDD_COLORSTANDARD DIALOGEX DISCARDABLE  0, 0, 147, 161
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "常用"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "颜色(&C):",XTP_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XTP_IDC_CLR_HEX,"Static",SS_BLACKFRAME | WS_TABSTOP,0,
+                    15,147,145
+END
+
+XTP_IDD_WINDOWLIST DIALOGEX DISCARDABLE  0, 0, 301, 164
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "重排窗口"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "选择窗口(&W):",IDC_STATIC,7,7,147,8
+    LISTBOX         XTP_IDC_LBOX_WINDOWS,7,17,216,140,LBS_SORT | 
+                    LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "激活(&A)",XTP_IDC_BTN_ACTIVATE,233,7,62,14
+    PUSHBUTTON      "确定(&O)",IDOK,233,24,62,14
+    PUSHBUTTON      "保存(&S)",XTP_IDC_BTN_SAVE,233,41,62,14
+    PUSHBUTTON      "关闭窗口(&C)",XTP_IDC_BTN_CLOSEWINDOWS,233,58,62,14
+    PUSHBUTTON      "层叠窗口(&D)",XTP_IDC_BTN_CASCADE,233,75,62,14
+    PUSHBUTTON      "水平平铺(&H)",XTP_IDC_BTN_TILEHORZ,233,92,62,14
+    PUSHBUTTON      "垂直平铺(&V)",XTP_IDC_BTN_TILEVERT,233,109,62,14
+    PUSHBUTTON      "最小化(&Z)",XTP_IDC_BTN_MINIMIZE,233,126,62,14
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XTP_IDM_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "RClickOutlookBar"
+    BEGIN
+        MENUITEM "小图标(&M)",                XTP_IDC_SMALLICON
+        MENUITEM "大图标(&G)",                XTP_IDC_LARGEICON
+    END
+    POPUP "RClickHexEdit"
+    BEGIN
+        MENUITEM "撤消(&U)",                       ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)",                        ID_EDIT_CUT
+        MENUITEM "复制(&C)",                       ID_EDIT_COPY
+        MENUITEM "粘贴(&P)",                      ID_EDIT_PASTE
+        MENUITEM "删除(&D)",                     ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "全选(&A)",                 ID_EDIT_SELECT_ALL
+    END
+    POPUP "RClickHeader"
+    BEGIN
+        MENUITEM "升序排序",              XTP_IDC_SORTASC
+        MENUITEM "降序排序",             XTP_IDC_SORTDSC
+        MENUITEM SEPARATOR
+        POPUP "对齐方式"
+        BEGIN
+            MENUITEM "左对齐",                  XTP_IDC_ALIGNLEFT
+            MENUITEM "居中",                XTP_IDC_ALIGNCENTER
+            MENUITEM "右对齐",                 XTP_IDC_ALIGNRIGHT
+        END
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDC_BTN_NEW          "新建"
+    XTP_IDC_BTN_DELETE       "删除"
+    XTP_IDC_BTN_UP           "上移"
+    XTP_IDC_BTN_DOWN         "下移"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_NAME             "名称"
+    XTP_IDS_SIZE             "尺寸"
+    XTP_IDS_TYPE             "类型"
+    XTP_IDS_MODIFIED         "修改"
+    XTP_IDS_COLOR_AUTO       "自动"
+    XTP_IDS_COLOR_CUST       "自定义..."
+    XTP_IDS_SELDIR           "选择目录:"
+    XTP_IDS_DOT              "..."
+    XTP_IDS_DEFEXT           "*.*"
+    XTP_IDS_DEFFILT          "所有文件(*.*)|*.*||"
+    XTP_IDS_DEFTITLE         "目录名称:"
+    XTP_IDS_CLICKKEEPOPEN    "单击按钉保持打开状态"
+    XTP_IDS_SE_0             "操作系统内存或资源已耗尽."
+    XTP_IDS_SE_ERR_FNF       "指定的文件未发现."
+    XTP_IDS_SE_ERR_PNF       "指定的路径未发现."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_SE_ERR_ACCESSDENIED 
+                            "操作系统拒绝访问指定的文件。"
+    XTP_IDS_SE_ERR_OOM       "已经没有足够的内存完成操作。"
+    XTP_IDS_SE_ERR_BAD_FORMAT 
+                            ".exe 文件无效 (不是Win32可执行文件或.exe映象错误)."
+    XTP_IDS_SE_ERR_SHARE     "发生了共享冲突。"
+    XTP_IDS_SE_ERR_ASSOCINCOMPLETE 
+                            "相关的文件名不完全或无效。"
+    XTP_IDS_SE_ERR_DDETIMEOUT 
+                            "指定的 DDE 任务因为超时而没有完成。"
+    XTP_IDS_SE_ERR_DDEFAIL   "指定的 DDE 任务失败。"
+    XTP_IDS_SE_ERR_DDEBUSY   "指定的 DDE 任务没有完成，因为另一个 DDE 任务正在进行中。"
+    XTP_IDS_SE_ERR_NOASSOC   "没有应用程序与指定的文件扩展名相关联。"
+    XTP_IDS_SE_ERR_DLLNOTFOUND 
+                            "没找到指定的动态链接库。"
+    XTP_IDS_SE_ERR_UNKOWN    "一个编号为 %d 错误发生。"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDC_SORTASC          "升序排序\n升序排序"
+    XTP_IDC_SORTDSC          "降序排序\n降序排序"
+    XTP_IDC_ALIGNLEFT        "将段落中各行的左边距对齐\n左对齐"
+    XTP_IDC_ALIGNCENTER      "使段落位于两边距之间的正中\n水平居中"
+    XTP_IDC_ALIGNRIGHT       "将段落中各行的右边距对齐\n右对齐"
+    XTP_IDC_LARGEICON        "显示大图标\n大图标"
+    XTP_IDC_SMALLICON        "显示小图标\n小图标"
+    XTP_IDC_REMOVEITEM       "从 Outlook 栏删除"
+    XTP_IDC_RENAMEITEM       "重命名快捷方式"
+    XTP_IDC_REMOVEGROUP      "移除组"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDC_RENAMEGROUP      "重命名组"
+    XTP_IDS_HEX              "十六进制"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_STD_COLORS       "标准色"
+    XTP_IDS_TIPTEXT          "提示文字"
+    XTP_IDS_DIDYOUKNOW       "您是否知道..."
+    XTP_IDS_FILE_ABSENT      "指定的文件不存在。"
+    XTP_IDS_FILE_CORRUPT     "读取文件时出错。"
+    XTP_IDS_COLOR_CAPTION    "颜色"
+    XTP_IDS_NEW              "新增"
+    XTP_IDS_CURRENT          "当前"
+    XTP_IDS_DIRECTORIES      "目录:"
+    XTP_IDS_FILES            "文件数:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_TASK_OK           "确定"
+    XTP_IDS_TASK_YES          "是"
+    XTP_IDS_TASK_NO           "否"
+    XTP_IDS_TASK_RETRY        "重试"
+    XTP_IDS_TASK_CANCEL       "取消"
+    XTP_IDS_TASK_CLOSE        "关闭"
+    XTP_IDS_TASK_APPLY        "应用(&A)"
+    XTP_IDS_TASK_HELP         "帮助"
+    XTP_IDS_TASK_SEE_DETAILS  "显示明细数据"
+    XTP_IDS_TASK_HIDE_DETAILS "隐藏明细数据"
+END
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)

@@ -1,0 +1,258 @@
+// Controls resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2012 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#include "Controls/Resource.h"
+#include "Controls/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) && !defined(_XTP_NO_STANDARDCONTROLS_RES)
+#ifdef _WIN32
+LANGUAGE LANG_LATVIAN, SUBLANG_DEFAULT
+#pragma code_page(1257)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_TIPOFTHEDAY DIALOGEX 0, 0, 279, 127
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dienas padoms"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "Aizvçrt",IDOK,224,108,50,14
+    CONTROL         "Râdît padomus par",XTP_IDC_CHK_DAYTIP_SHOW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,110,140,10
+    PUSHBUTTON      "Nâkamais padoms",XTP_IDC_BTN_DAYTIP_NEXT,151,108,69,14
+    CONTROL         "",XTP_IDC_BTN_DAYTIP_BORDER,"Static",SS_GRAYFRAME | NOT WS_VISIBLE,0,0,279,103
+END
+
+XTP_IDD_COLORCUSTOM DIALOGEX DISCARDABLE  0, 0, 147, 161
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "Pielâgota"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Krâsas:",XTP_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XTP_IDC_CLR_WND,"Static",SS_BLACKFRAME | WS_TABSTOP,3,
+                    15,119,86
+    CONTROL         "",XTP_IDC_CLR_LUM,"Static",SS_BLACKFRAME | WS_TABSTOP,
+                    126,15,20,86
+    LTEXT           "Tonis:",XTP_IDC_TXT_HUE,1,108,20,8
+    EDITTEXT        XTP_IDC_EDIT_HUE,43,106,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XTP_IDC_SPIN_HUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,67,105,
+                    10,14
+    LTEXT           "Piesâtinâjums:",XTP_IDC_TXT_SAT,1,125,41,8
+    EDITTEXT        XTP_IDC_EDIT_SAT,43,122,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin2",XTP_IDC_SPIN_SAT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,67,122,
+                    10,14
+    LTEXT           "Spîdums:",XTP_IDC_TXT_LUM,1,140,30,8
+    EDITTEXT        XTP_IDC_EDIT_LUM,43,138,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XTP_IDC_SPIN_LUM,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,67,137,
+                    10,14
+    LTEXT           "Sarkana:",XTP_IDC_TXT_RED,80,108,29,8
+    EDITTEXT        XTP_IDC_EDIT_RED,110,106,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XTP_IDC_SPIN_RED,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,134,105,
+                    11,14
+    LTEXT           "Zaïa:",XTP_IDC_TXT_GREEN,80,125,23,8
+    EDITTEXT        XTP_IDC_EDIT_GREEN,110,122,33,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin2",XTP_IDC_SPIN_GREEN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,134,122,
+                    11,14
+    LTEXT           "Zila:",XTP_IDC_TXT_BLUE,80,140,23,8
+    EDITTEXT        XTP_IDC_EDIT_BLUE,110,138,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XTP_IDC_SPIN_BLUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,134,137,
+                    11,14
+END
+
+XTP_IDD_COLORSTANDARD DIALOGEX DISCARDABLE  0, 0, 147, 161
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "Standard"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Krâsas:",XTP_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XTP_IDC_CLR_HEX,"Static",SS_BLACKFRAME | WS_TABSTOP,0,
+                    15,147,145
+END
+
+XTP_IDD_WINDOWLIST DIALOGEX DISCARDABLE  0, 0, 301, 164
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Sakârtot visus"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Loga atlase:",IDC_STATIC,7,7,147,8
+    LISTBOX         XTP_IDC_LBOX_WINDOWS,7,17,216,140,LBS_SORT | 
+                    LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Aktivizçðana",XTP_IDC_BTN_ACTIVATE,228,7,70,14
+    PUSHBUTTON      "Labi",IDOK,228,24,70,14
+    PUSHBUTTON      "Saglabât",XTP_IDC_BTN_SAVE,228,41,70,14
+    PUSHBUTTON      "Aizvçrt logu",XTP_IDC_BTN_CLOSEWINDOWS,228,58,70,14
+    PUSHBUTTON      "Kaskâde",XTP_IDC_BTN_CASCADE,228,75,70,14
+    PUSHBUTTON      "Mozaîkot horizontâli",XTP_IDC_BTN_TILEHORZ,228,92,70,14
+    PUSHBUTTON      "Mozaîkot vertikâli",XTP_IDC_BTN_TILEVERT,228,109,70,14
+    PUSHBUTTON      "Minimizçt",XTP_IDC_BTN_MINIMIZE,228,126,70,14
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XTP_IDM_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "RClickOutlookBar"
+    BEGIN
+        MENUITEM "Mazas ikonas",                XTP_IDC_SMALLICON
+        MENUITEM "Lielas ikonas",                XTP_IDC_LARGEICON
+    END
+    POPUP "RClickHexEdit"
+    BEGIN
+        MENUITEM "Atsaukt",                       ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cut",                        ID_EDIT_CUT
+        MENUITEM "Copy",                       ID_EDIT_COPY
+        MENUITEM "Paste",                      ID_EDIT_PASTE
+        MENUITEM "Dzçst",                     ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "Atlasît visu",                 ID_EDIT_SELECT_ALL
+    END
+    POPUP "RClickHeader"
+    BEGIN
+        MENUITEM "Kârtot augoðâ secîbâ",              XTP_IDC_SORTASC
+        MENUITEM "Kârtot dilstoðâ secîbâ",             XTP_IDC_SORTDSC
+        MENUITEM SEPARATOR
+        POPUP "Lîdzinâjums"
+        BEGIN
+            MENUITEM "Lîdzinât pa kreisi",                  XTP_IDC_ALIGNLEFT
+            MENUITEM "Lîdzinât uz centru",                XTP_IDC_ALIGNCENTER
+            MENUITEM "Lîdzinât pa labi",                 XTP_IDC_ALIGNRIGHT
+        END
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDC_BTN_NEW          "Jauna faila izveidoðana"
+    XTP_IDC_BTN_DELETE       "Dzçst"
+    XTP_IDC_BTN_UP           "Pârvietot augðup"
+    XTP_IDC_BTN_DOWN         "Pârvietot lejup"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_NAME             "Vârds"
+    XTP_IDS_SIZE             "Izmçri"
+    XTP_IDS_TYPE             "Tips"
+    XTP_IDS_MODIFIED         "Modificçts"
+    XTP_IDS_COLOR_AUTO       "Automâtiski"
+    XTP_IDS_COLOR_CUST       "Pielâgot..."
+    XTP_IDS_SELDIR           "Atlasît mapi:"
+    XTP_IDS_DOT              "..."
+    XTP_IDS_DEFEXT           "*.*"
+    XTP_IDS_DEFFILT          "Visi faili (*.*)|*.*||"
+    XTP_IDS_DEFTITLE         "Mapes nosaukums:"
+    XTP_IDS_CLICKKEEPOPEN    "Noklikðíiniet uz spraudîtes"
+    XTP_IDS_SE_0             "Trûkst atmiòas."
+    XTP_IDS_SE_ERR_FNF       "Fails nepastâv."
+    XTP_IDS_SE_ERR_PNF       "Ceïð nepastâv. Pârliecinieties"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_SE_ERR_ACCESSDENIED 
+                            "Piekïuve liegta"
+    XTP_IDS_SE_ERR_OOM       "Trûkst vietas atmiòâ vai uz diska"
+    XTP_IDS_SE_ERR_BAD_FORMAT 
+                            "Ðis fails nav derîgs vai ir bojâts."
+    XTP_IDS_SE_ERR_SHARE     "Koplietoðanas pârkâpums."
+    XTP_IDS_SE_ERR_ASSOCINCOMPLETE 
+                            "Nav saistîjumu"
+    XTP_IDS_SE_ERR_DDETIMEOUT 
+                            "The DDE transaction could not be completed because the request timed out."
+    XTP_IDS_SE_ERR_DDEFAIL   "The DDE transaction failed."
+    XTP_IDS_SE_ERR_DDEBUSY   "The DDE transaction could not be completed because other DDE transactions were being processed."
+    XTP_IDS_SE_ERR_NOASSOC   "There is no application associated with the given file name extension."
+    XTP_IDS_SE_ERR_DLLNOTFOUND 
+                            "Fails nav atrasts"
+    XTP_IDS_SE_ERR_UNKOWN    "Tika norâdîts kïûdas numurs %d"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDC_SORTASC          "Kârtot augoðâ secîbâ\nKârtot augoðâ secîbâ"
+    XTP_IDC_SORTDSC          "Kârtot dilstoðâ secîbâ\nKârtot dilstoðâ secîbâ"
+    XTP_IDC_ALIGNLEFT        "Taisno rindkopu pa kreisi.\nLîdzinâðana pa kreisi"
+    XTP_IDC_ALIGNCENTER      "Taisno rindkopu uz centru.\nCentrâ"
+    XTP_IDC_ALIGNRIGHT       "Taisno rindkopu pa labi.\nLîdzinâðana pa labi"
+    XTP_IDC_LARGEICON        "Lielas ikonas\nLielas ikonas"
+    XTP_IDC_SMALLICON        "Mazas ikonas\nMazas ikonas"
+    XTP_IDC_REMOVEITEM       "Noòemt no Outlook joslas"
+    XTP_IDC_RENAMEITEM       "Pârdçvçt saîsni"
+    XTP_IDC_REMOVEGROUP      "Noòemt grupu"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDC_RENAMEGROUP      "Pârdçvçt grupu"
+    XTP_IDS_HEX              "Heks"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_STD_COLORS       "Standarta krâsas"
+    XTP_IDS_TIPTEXT          "Padoma teksts"
+    XTP_IDS_DIDYOUKNOW       "Vai jûs zinâjât..."
+    XTP_IDS_FILE_ABSENT      "Ðis fails nepastâv."
+    XTP_IDS_FILE_CORRUPT     "Lasot no faila"
+    XTP_IDS_COLOR_CAPTION    "Krâsas"
+    XTP_IDS_NEW              "Jauna faila izveidoðana"
+    XTP_IDS_CURRENT          "Paðreizçjais"
+    XTP_IDS_DIRECTORIES      "Direktoriji:"
+    XTP_IDS_FILES            "Faili:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_TASK_OK           "Labi"
+    XTP_IDS_TASK_YES          "Jâ"
+    XTP_IDS_TASK_NO           "Nç"
+    XTP_IDS_TASK_RETRY        "Mçìinât vçlreiz"
+    XTP_IDS_TASK_CANCEL       "Atcelt"
+    XTP_IDS_TASK_CLOSE        "Aizvçrt"
+    XTP_IDS_TASK_APPLY        "&Apply"
+    XTP_IDS_TASK_HELP         "Help"
+    XTP_IDS_TASK_SEE_DETAILS  "Râdît detaïas"
+    XTP_IDS_TASK_HIDE_DETAILS "Paslçpt detaïas"
+END
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)

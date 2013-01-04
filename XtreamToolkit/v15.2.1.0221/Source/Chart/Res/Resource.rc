@@ -1,0 +1,29 @@
+// Resource.rc
+//
+// --------------------------------------------------------------------------
+// COPYRIGHT NOTICE:
+// --------------------------------------------------------------------------
+//
+// "Codejock Chart" is a MFC extension library for creating modern charting
+// applications. This file and the code herein are part of the Codejock Chart
+// MFC extension library.
+//
+// This code is protected under U.S. Copyright Law and International treaties
+// and is intended for registered and licensed use only. Any other use is
+// strictly prohibited. This code is subject to the terms and conditions
+// outlined in the "Codejock Chart" End User License Agreement (EULA).
+//
+// Copyright (c) 1998-2012 Codejock Technologies LLC, All Rights Reserved.
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#include "Chart/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)

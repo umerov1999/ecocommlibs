@@ -1,0 +1,258 @@
+// Controls resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2012 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#include "Controls/Resource.h"
+#include "Controls/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) && !defined(_XTP_NO_STANDARDCONTROLS_RES)
+#ifdef _WIN32
+LANGUAGE LANG_HUNGARIAN, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_TIPOFTHEDAY DIALOGEX 0, 0, 279, 127
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Egyéni"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "Bezárás",IDOK,224,108,50,14
+    CONTROL         "Tippek mutatása induláskor",XTP_IDC_CHK_DAYTIP_SHOW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,110,140,10
+    PUSHBUTTON      "Következõ tipp",XTP_IDC_BTN_DAYTIP_NEXT,164,108,56,14
+    CONTROL         "",XTP_IDC_BTN_DAYTIP_BORDER,"Static",SS_GRAYFRAME | NOT WS_VISIBLE,0,0,279,103
+END
+
+XTP_IDD_COLORCUSTOM DIALOGEX DISCARDABLE  0, 0, 147, 161
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "Szokásos"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Színek:",XTP_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XTP_IDC_CLR_WND,"Static",SS_BLACKFRAME | WS_TABSTOP,3,
+                    15,119,86
+    CONTROL         "",XTP_IDC_CLR_LUM,"Static",SS_BLACKFRAME | WS_TABSTOP,
+                    126,15,20,86
+    LTEXT           "Árny:",XTP_IDC_TXT_HUE,7,108,17,8
+    EDITTEXT        XTP_IDC_EDIT_HUE,27,106,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XTP_IDC_SPIN_HUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,51,105,
+                    10,14
+    LTEXT           "Telít:",XTP_IDC_TXT_SAT,7,125,17,8
+    EDITTEXT        XTP_IDC_EDIT_SAT,27,122,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin2",XTP_IDC_SPIN_SAT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,51,122,
+                    10,14
+    LTEXT           "Fény:",XTP_IDC_TXT_LUM,7,140,18,8
+    EDITTEXT        XTP_IDC_EDIT_LUM,27,138,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XTP_IDC_SPIN_LUM,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,51,137,
+                    10,14
+    LTEXT           "Piros:",XTP_IDC_TXT_RED,65,108,23,8
+    EDITTEXT        XTP_IDC_EDIT_RED,89,106,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XTP_IDC_SPIN_RED,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,113,105,
+                    11,14
+    LTEXT           "Zöld:",XTP_IDC_TXT_GREEN,65,125,23,8
+    EDITTEXT        XTP_IDC_EDIT_GREEN,89,122,33,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin2",XTP_IDC_SPIN_GREEN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,113,122,
+                    11,14
+    LTEXT           "Kék:",XTP_IDC_TXT_BLUE,65,140,23,8
+    EDITTEXT        XTP_IDC_EDIT_BLUE,89,138,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XTP_IDC_SPIN_BLUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,113,137,
+                    11,14
+END
+
+XTP_IDD_COLORSTANDARD DIALOGEX DISCARDABLE  0, 0, 147, 161
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "Ablakok elrendezése"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Színek:",XTP_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XTP_IDC_CLR_HEX,"Static",SS_BLACKFRAME | WS_TABSTOP,0,
+                    15,147,145
+END
+
+XTP_IDD_WINDOWLIST DIALOGEX DISCARDABLE  0, 0, 301, 164
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Ablakok elrendezése"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Ablak kiválasztása:",IDC_STATIC,7,7,147,8
+    LISTBOX         XTP_IDC_LBOX_WINDOWS,7,17,203,140,LBS_SORT | 
+                    LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Aktivizálandó:",XTP_IDC_BTN_ACTIVATE,216,7,80,14
+    PUSHBUTTON      "OK",IDOK,216,24,80,14
+    PUSHBUTTON      "Mentés",XTP_IDC_BTN_SAVE,216,41,80,14
+    PUSHBUTTON      "Ablak bezárása",XTP_IDC_BTN_CLOSEWINDOWS,216,58,80,14
+    PUSHBUTTON      "Lépcsõzetes elrendezés",XTP_IDC_BTN_CASCADE,216,75,80,14
+    PUSHBUTTON      "Egymás alatt",XTP_IDC_BTN_TILEHORZ,216,92,80,14
+    PUSHBUTTON      "Egymás mellett",XTP_IDC_BTN_TILEVERT,216,109,80,14
+    PUSHBUTTON      "Ikonállapot",XTP_IDC_BTN_MINIMIZE,216,126,80,14
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XTP_IDM_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "RClickOutlookBar"
+    BEGIN
+        MENUITEM "Kicsi ikonok",                XTP_IDC_SMALLICON
+        MENUITEM "Nagy gombok",                XTP_IDC_LARGEICON
+    END
+    POPUP "RClickHexEdit"
+    BEGIN
+        MENUITEM "Visszavonás",                       ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Kivágás",                        ID_EDIT_CUT
+        MENUITEM "Másolás",                       ID_EDIT_COPY
+        MENUITEM "Beillesztés",                      ID_EDIT_PASTE
+        MENUITEM "Törlés",                     ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "Mindet kijelöli",                 ID_EDIT_SELECT_ALL
+    END
+    POPUP "RClickHeader"
+    BEGIN
+        MENUITEM "Rendezés - növekvõ",              XTP_IDC_SORTASC
+        MENUITEM "Rendezés - csökkenõ",             XTP_IDC_SORTDSC
+        MENUITEM SEPARATOR
+        POPUP "Igazítás"
+        BEGIN
+            MENUITEM "Balra zárás",                  XTP_IDC_ALIGNLEFT
+            MENUITEM "Igazítás középre",                XTP_IDC_ALIGNCENTER
+            MENUITEM "Jobbra zárás",                 XTP_IDC_ALIGNRIGHT
+        END
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDC_BTN_NEW          "Új"
+    XTP_IDC_BTN_DELETE       "Törlés"
+    XTP_IDC_BTN_UP           "Feljebb"
+    XTP_IDC_BTN_DOWN         "Lejjebb"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_NAME             "Bal"
+    XTP_IDS_SIZE             "Méret"
+    XTP_IDS_TYPE             "Típus"
+    XTP_IDS_MODIFIED         "Módosított"
+    XTP_IDS_COLOR_AUTO       "Automatikus"
+    XTP_IDS_COLOR_CUST       "Testreszabás..."
+    XTP_IDS_SELDIR           "Könyvtár választása:"
+    XTP_IDS_DOT              "..."
+    XTP_IDS_DEFEXT           "*.*"
+    XTP_IDS_DEFFILT          "Minden fájl (*.*)|*.*||"
+    XTP_IDS_DEFTITLE         "Könyvtárnév:"
+    XTP_IDS_CLICKKEEPOPEN    "A folyamatos megjelenítéshez kattintson a rajzszög gombra."
+    XTP_IDS_SE_0             "Kevés a memória."
+    XTP_IDS_SE_ERR_FNF       "A megadott fájl nem található."
+    XTP_IDS_SE_ERR_PNF       "A megadott elérési út nem található."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_SE_ERR_ACCESSDENIED 
+                            "hozzáférése megtagadva"
+    XTP_IDS_SE_ERR_OOM       "Nincs elég memória a feladat végrehajtásához."
+    XTP_IDS_SE_ERR_BAD_FORMAT 
+                            "Az importfájl számára megadott név érvénytelen."
+    XTP_IDS_SE_ERR_SHARE     "Megosztásmegsértés történt."
+    XTP_IDS_SE_ERR_ASSOCINCOMPLETE 
+                            "A fájlnévtársítás nem teljes vagy érvénytelen."
+    XTP_IDS_SE_ERR_DDETIMEOUT 
+                            "A DDE-tranzakciót nem sikerült befejezni"
+    XTP_IDS_SE_ERR_DDEFAIL   "A DDE-tranzakció nem sikerült."
+    XTP_IDS_SE_ERR_DDEBUSY   "A DDE-tranzakciót nem sikerült befejezni"
+    XTP_IDS_SE_ERR_NOASSOC   "Nincs a fájllal alkalmazás társítva."
+    XTP_IDS_SE_ERR_DLLNOTFOUND 
+                            "A megadott könyvtár nem található."
+    XTP_IDS_SE_ERR_UNKOWN    "Ismeretlen hibakód %d."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDC_SORTASC          "Növekvõ rendezés\nNövekvõ rendezés"
+    XTP_IDC_SORTDSC          "Csökkenõ rendezés\nCsökkenõ rendezés"
+    XTP_IDC_ALIGNLEFT        "Bekezdés balra igazítása\nIgazítás balra"
+    XTP_IDC_ALIGNCENTER      "Bekezdés középre igazítása\nKözépre"
+    XTP_IDC_ALIGNRIGHT       "Bekezdés igazítása jobbra\nIgazítás jobbra"
+    XTP_IDC_LARGEICON        "Nagy ikonok megjelenítése\nNagy ikonok"
+    XTP_IDC_SMALLICON        "Kis ikonok megjelenítése\nKis ikonok"
+    XTP_IDC_REMOVEITEM       "Levétel az Outlook pultról"
+    XTP_IDC_RENAMEITEM       "Hivatkozás átnevezése"
+    XTP_IDC_REMOVEGROUP      "Csoport törlése"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDC_RENAMEGROUP      "Csoport átnevezése"
+    XTP_IDS_HEX              "Hexadecimális"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_STD_COLORS       "Alapszínek"
+    XTP_IDS_TIPTEXT          "Tipp"
+    XTP_IDS_DIDYOUKNOW       "Tudta-e"
+    XTP_IDS_FILE_ABSENT      "A megadott fájl nem létezik."
+    XTP_IDS_FILE_CORRUPT     "Hiba a fájl olvasása közben."
+    XTP_IDS_COLOR_CAPTION    "Színek"
+    XTP_IDS_NEW              "Új"
+    XTP_IDS_CURRENT          "Jelenlegi"
+    XTP_IDS_DIRECTORIES      "Könyvtárak:"
+    XTP_IDS_FILES            "Fájlok:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_TASK_OK           "OK"
+    XTP_IDS_TASK_YES          "Igen"
+    XTP_IDS_TASK_NO           "Nem"
+    XTP_IDS_TASK_RETRY        "Ismét"
+    XTP_IDS_TASK_CANCEL       "Mégse"
+    XTP_IDS_TASK_CLOSE        "Bezárás"
+    XTP_IDS_TASK_APPLY        "&Alkalmaz"
+    XTP_IDS_TASK_HELP         "Súgó"
+    XTP_IDS_TASK_SEE_DETAILS  "Részletek"
+    XTP_IDS_TASK_HIDE_DETAILS "Részletek elrejtése"
+END
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)

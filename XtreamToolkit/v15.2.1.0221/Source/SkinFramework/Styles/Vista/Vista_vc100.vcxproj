@@ -1,0 +1,548 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>Vista</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release/vc100\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release/vc100\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\Release/vc100x64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\Release/vc100x64\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <TypeLibraryName>.\Release/vc100/Vista.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../../../Source;../../../Source/Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;_USRDLL;XTPRESOURCE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeaderOutputFile>.\Release/vc100/Vista.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/vc100/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/vc100/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/vc100/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;_AFXDLL;_XTP_INCLUDE_VERSION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>../../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../Vista.cjstyles</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <ProgramDatabaseFile>.\Release/vc100/Vista.pdb</ProgramDatabaseFile>
+      <NoEntryPoint>true</NoEntryPoint>
+      <ImportLibrary>.\Release/vc100/Vista.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\Release/vc100/Vista.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../../../Source;../../../Source/Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;_USRDLL;XTPRESOURCE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeaderOutputFile>.\Release/vc100x64/Vista.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/vc100x64/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/vc100x64/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/vc100x64/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;_AFXDLL;_XTP_INCLUDE_VERSION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>../../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../Vista.cjstyles</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <ProgramDatabaseFile>.\Release/vc100x64/Vista.pdb</ProgramDatabaseFile>
+      <NoEntryPoint>true</NoEntryPoint>
+      <ImportLibrary>.\Release/vc100x64/Vista.lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Vista.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Blue_Button.png" />
+    <None Include="res\Blue_CaptionButton.png" />
+    <None Include="res\Blue_CheckBox13.png" />
+    <None Include="res\Blue_CheckBox16.png" />
+    <None Include="res\Blue_CheckBox25.png" />
+    <None Include="res\Blue_Chevron.png" />
+    <None Include="res\Blue_CloseButton.png" />
+    <None Include="res\Blue_CloseGlyph.png" />
+    <None Include="res\Blue_CloseGlyph19.png" />
+    <None Include="res\Blue_CloseGlyph23.png" />
+    <None Include="res\Blue_CloseGlyph6.png" />
+    <None Include="res\Blue_CloseGlyph9.png" />
+    <None Include="res\Blue_ComboButton.png" />
+    <None Include="res\Blue_ComboButtonGlyph.png" />
+    <None Include="res\Blue_ExplorerBarHeaderClose.png" />
+    <None Include="res\Blue_ExplorerBarHeaderPin.png" />
+    <None Include="res\Blue_FieldOutlineBlue.png" />
+    <None Include="res\Blue_FrameBottom.png" />
+    <None Include="res\Blue_FrameCaption.png" />
+    <None Include="res\Blue_FrameCaptionMin.png" />
+    <None Include="res\Blue_FrameCaptionSizing.png" />
+    <None Include="res\Blue_FrameLeft.png" />
+    <None Include="res\Blue_FrameMaximized.png" />
+    <None Include="res\Blue_FrameRight.png" />
+    <None Include="res\Blue_Gripper.png" />
+    <None Include="res\Blue_GripperVert.png" />
+    <None Include="res\Blue_GroupBox.png" />
+    <None Include="res\Blue_HelpGlyph.png" />
+    <None Include="res\Blue_HelpGlyph19.png" />
+    <None Include="res\Blue_HelpGlyph23.png" />
+    <None Include="res\Blue_HelpGlyph6.png" />
+    <None Include="res\Blue_HelpGlyph9.png" />
+    <None Include="res\Blue_ListViewHeader.png" />
+    <None Include="res\Blue_ListviewHeaderBackground.png" />
+    <None Include="res\Blue_MaximizeGlyph.png" />
+    <None Include="res\Blue_MaximizeGlyph19.png" />
+    <None Include="res\Blue_MaximizeGlyph23.png" />
+    <None Include="res\Blue_MaximizeGlyph6.png" />
+    <None Include="res\Blue_MaximizeGlyph9.png" />
+    <None Include="res\Blue_MDICaptionButton.png" />
+    <None Include="res\Blue_MDIGlyphClose.png" />
+    <None Include="res\Blue_MDIGlyphMinimize.png" />
+    <None Include="res\Blue_MDIGlyphRestore.png" />
+    <None Include="res\Blue_MinimizeGlyph.png" />
+    <None Include="res\Blue_MinimizeGlyph19.png" />
+    <None Include="res\Blue_MinimizeGlyph23.png" />
+    <None Include="res\Blue_MinimizeGlyph6.png" />
+    <None Include="res\Blue_MinimizeGlyph9.png" />
+    <None Include="res\Blue_NormalGroupBackground.png" />
+    <None Include="res\Blue_NormalGroupCollapse.png" />
+    <None Include="res\Blue_NormalGroupExpand.png" />
+    <None Include="res\Blue_NormalGroupHead.png" />
+    <None Include="res\Blue_PlaceBarBackground.png" />
+    <None Include="res\Blue_PlaceBarButtons.png" />
+    <None Include="res\Blue_ProgressChunk.png" />
+    <None Include="res\Blue_ProgressChunkVert.png" />
+    <None Include="res\Blue_ProgressTrack.png" />
+    <None Include="res\Blue_ProgressTrackVert.png" />
+    <None Include="res\Blue_RadioButton13.png" />
+    <None Include="res\Blue_RadioButton16.png" />
+    <None Include="res\Blue_RadioButton25.png" />
+    <None Include="res\Blue_ResizeGrip2.png" />
+    <None Include="res\Blue_RestoreGlyph.png" />
+    <None Include="res\Blue_RestoreGlyph19.png" />
+    <None Include="res\Blue_RestoreGlyph23.png" />
+    <None Include="res\Blue_RestoreGlyph6.png" />
+    <None Include="res\Blue_RestoreGlyph9.png" />
+    <None Include="res\Blue_ScrollArrowGlyphs.png" />
+    <None Include="res\Blue_ScrollArrowGlyphsSmall.png" />
+    <None Include="res\Blue_ScrollArrows.png" />
+    <None Include="res\Blue_ScrollShaftHorizontal.png" />
+    <None Include="res\Blue_ScrollShaftVertical.png" />
+    <None Include="res\Blue_ScrollThumbGripperHorizontal.png" />
+    <None Include="res\Blue_ScrollThumbGripperVertical.png" />
+    <None Include="res\Blue_ScrollThumbHorizontal.png" />
+    <None Include="res\Blue_ScrollThumbVertical.png" />
+    <None Include="res\Blue_Separator.png" />
+    <None Include="res\Blue_SeparatorVert.png" />
+    <None Include="res\Blue_SliderTrack.png" />
+    <None Include="res\Blue_SmallCloseButton.png" />
+    <None Include="res\Blue_SmallCloseGlyph.png" />
+    <None Include="res\Blue_SmallFrameCaption.png" />
+    <None Include="res\Blue_SmallFrameCaptionSizing.png" />
+    <None Include="res\Blue_SpecialGroupBackground.png" />
+    <None Include="res\Blue_SpecialGroupCollapse.png" />
+    <None Include="res\Blue_SpecialGroupExpand.png" />
+    <None Include="res\Blue_SpecialGroupHead.png" />
+    <None Include="res\Blue_SpinButtonBackgroundDown.png" />
+    <None Include="res\Blue_SpinButtonBackgroundLeft.png" />
+    <None Include="res\Blue_SpinButtonBackgroundRight.png" />
+    <None Include="res\Blue_SpinButtonBackgroundUp.png" />
+    <None Include="res\Blue_SpinDownGlyph.png" />
+    <None Include="res\Blue_SpinLeftGlyph.png" />
+    <None Include="res\Blue_SpinRightGlyph.png" />
+    <None Include="res\Blue_SpinUpGlyph.png" />
+    <None Include="res\Blue_StatusBackground.png" />
+    <None Include="res\Blue_StatusPane.png" />
+    <None Include="res\Blue_TabBackground.png" />
+    <None Include="res\Blue_TabBackground133.png" />
+    <None Include="res\Blue_TabItem.png" />
+    <None Include="res\Blue_TabItemBoth.png" />
+    <None Include="res\Blue_TabItemLeft.png" />
+    <None Include="res\Blue_TabItemRight.png" />
+    <None Include="res\Blue_TabItemTop.png" />
+    <None Include="res\Blue_TabItemTopBoth.png" />
+    <None Include="res\Blue_TabItemTopLeft.png" />
+    <None Include="res\Blue_TabItemTopRight.png" />
+    <None Include="res\Blue_TabPaneEdge.png" />
+    <None Include="res\Blue_ToolbarBackground.png" />
+    <None Include="res\Blue_ToolbarButtons.png" />
+    <None Include="res\Blue_ToolbarButtonsSplit.png" />
+    <None Include="res\Blue_ToolbarButtonsSplitDropdown.png" />
+    <None Include="res\Blue_ToolbarButtonsSplitDropdownGlyph.png" />
+    <None Include="res\Blue_ToolbarGripper.png" />
+    <None Include="res\Blue_ToolbarGripperVert.png" />
+    <None Include="res\Blue_TrackBarDown13.png" />
+    <None Include="res\Blue_TrackBarDown16.png" />
+    <None Include="res\Blue_TrackBarDown25.png" />
+    <None Include="res\Blue_TrackbarHorizontal.png" />
+    <None Include="res\Blue_TrackBarLeft13.png" />
+    <None Include="res\Blue_TrackBarLeft16.png" />
+    <None Include="res\Blue_TrackBarLeft25.png" />
+    <None Include="res\Blue_TrackbarRight13.png" />
+    <None Include="res\Blue_TrackBarRight16.png" />
+    <None Include="res\Blue_TrackBarRight25.png" />
+    <None Include="res\Blue_TrackBarUp13.png" />
+    <None Include="res\Blue_TrackBarUp16.png" />
+    <None Include="res\Blue_TrackBarUp25.png" />
+    <None Include="res\Blue_TrackbarVertical.png" />
+    <None Include="res\Blue_TreeExpandCollapse.png" />
+    <None Include="res\Blue_TreeExpandCollapse10.png" />
+    <None Include="res\Blue_TreeExpandCollapse15.png" />
+    <None Include="res\Homestead_button.png" />
+    <None Include="res\Homestead_CaptionButton.png" />
+    <None Include="res\Homestead_CheckBox13.png" />
+    <None Include="res\Homestead_CheckBox16.png" />
+    <None Include="res\Homestead_CheckBox25.png" />
+    <None Include="res\Homestead_Chevron.png" />
+    <None Include="res\Homestead_CloseButton.png" />
+    <None Include="res\Homestead_CloseGlyph.png" />
+    <None Include="res\Homestead_CloseGlyph19.png" />
+    <None Include="res\Homestead_CloseGlyph23.png" />
+    <None Include="res\Homestead_CloseGlyph6.png" />
+    <None Include="res\Homestead_CloseGlyph9.png" />
+    <None Include="res\Homestead_ComboButton.png" />
+    <None Include="res\Homestead_ComboButtonGlyph.png" />
+    <None Include="res\Homestead_ExplorerBarHeaderClose.png" />
+    <None Include="res\Homestead_ExplorerBarHeaderPin.png" />
+    <None Include="res\Homestead_FieldOutlineBlue.png" />
+    <None Include="res\Homestead_frameBottom.png" />
+    <None Include="res\Homestead_FrameCaption.png" />
+    <None Include="res\Homestead_FrameCaptionMin.png" />
+    <None Include="res\Homestead_FrameCaptionSizing.png" />
+    <None Include="res\Homestead_frameLeft.png" />
+    <None Include="res\Homestead_FrameMaximized.png" />
+    <None Include="res\Homestead_frameRight.png" />
+    <None Include="res\Homestead_Gripper.png" />
+    <None Include="res\Homestead_GripperVert.png" />
+    <None Include="res\Homestead_GroupBox.png" />
+    <None Include="res\Homestead_HelpGlyph.png" />
+    <None Include="res\Homestead_HelpGlyph19.png" />
+    <None Include="res\Homestead_HelpGlyph23.png" />
+    <None Include="res\Homestead_HelpGlyph6.png" />
+    <None Include="res\Homestead_HelpGlyph9.png" />
+    <None Include="res\Homestead_ListViewHeader.png" />
+    <None Include="res\Homestead_ListviewHeaderBackground.png" />
+    <None Include="res\Homestead_MaximizeGlyph.png" />
+    <None Include="res\Homestead_MaximizeGlyph19.png" />
+    <None Include="res\Homestead_MaximizeGlyph23.png" />
+    <None Include="res\Homestead_MaximizeGlyph6.png" />
+    <None Include="res\Homestead_MaximizeGlyph9.png" />
+    <None Include="res\Homestead_MDICaptionButton.png" />
+    <None Include="res\Homestead_MDIGlyphClose.png" />
+    <None Include="res\Homestead_MDIGlyphMinimize.png" />
+    <None Include="res\Homestead_MDIGlyphRestore.png" />
+    <None Include="res\Homestead_MinimizeGlyph.png" />
+    <None Include="res\Homestead_MinimizeGlyph19.png" />
+    <None Include="res\Homestead_MinimizeGlyph23.png" />
+    <None Include="res\Homestead_MinimizeGlyph6.png" />
+    <None Include="res\Homestead_MinimizeGlyph9.png" />
+    <None Include="res\Homestead_NormalGroupBackground.png" />
+    <None Include="res\Homestead_NormalGroupCollapse.png" />
+    <None Include="res\Homestead_NormalGroupExpand.png" />
+    <None Include="res\Homestead_NormalGroupHead.png" />
+    <None Include="res\Homestead_PlaceBarBackground.png" />
+    <None Include="res\Homestead_PlaceBarButtons.png" />
+    <None Include="res\Homestead_ProgressChunk.png" />
+    <None Include="res\Homestead_ProgressChunkVert.png" />
+    <None Include="res\Homestead_ProgressTrack.png" />
+    <None Include="res\Homestead_ProgressTrackVert.png" />
+    <None Include="res\Homestead_RadioButton13.png" />
+    <None Include="res\Homestead_RadioButton16.png" />
+    <None Include="res\Homestead_RadioButton25.png" />
+    <None Include="res\Homestead_ResizeGrip2.png" />
+    <None Include="res\Homestead_RestoreGlyph.png" />
+    <None Include="res\Homestead_RestoreGlyph19.png" />
+    <None Include="res\Homestead_RestoreGlyph23.png" />
+    <None Include="res\Homestead_RestoreGlyph6.png" />
+    <None Include="res\Homestead_RestoreGlyph9.png" />
+    <None Include="res\Homestead_ScrollArrowGlyphs.png" />
+    <None Include="res\Homestead_ScrollArrowGlyphsSmall.png" />
+    <None Include="res\Homestead_ScrollArrows.png" />
+    <None Include="res\Homestead_ScrollShaftHorizontal.png" />
+    <None Include="res\Homestead_ScrollShaftVertical.png" />
+    <None Include="res\Homestead_ScrollThumbGripperHorizontal.png" />
+    <None Include="res\Homestead_ScrollThumbGripperVertical.png" />
+    <None Include="res\Homestead_ScrollThumbHorizontal.png" />
+    <None Include="res\Homestead_ScrollThumbVertical.png" />
+    <None Include="res\Homestead_Separator.png" />
+    <None Include="res\Homestead_SeparatorVert.png" />
+    <None Include="res\Homestead_sliderTrack.png" />
+    <None Include="res\Homestead_SmallCloseButton.png" />
+    <None Include="res\Homestead_SmallCloseGlyph.png" />
+    <None Include="res\Homestead_SmallFrameCaption.png" />
+    <None Include="res\Homestead_SmallFrameCaptionSizing.png" />
+    <None Include="res\Homestead_SpecialGroupBackground.png" />
+    <None Include="res\Homestead_SpecialGroupCollapse.png" />
+    <None Include="res\Homestead_SpecialGroupExpand.png" />
+    <None Include="res\Homestead_SpecialGroupHead.png" />
+    <None Include="res\Homestead_SpinButtonBackgroundDown.png" />
+    <None Include="res\Homestead_SpinButtonBackgroundLeft.png" />
+    <None Include="res\Homestead_SpinButtonBackgroundRight.png" />
+    <None Include="res\Homestead_SpinButtonBackgroundUp.png" />
+    <None Include="res\Homestead_SpinDownGlyph.png" />
+    <None Include="res\Homestead_SpinLeftGlyph.png" />
+    <None Include="res\Homestead_SpinRightGlyph.png" />
+    <None Include="res\Homestead_SpinUpGlyph.png" />
+    <None Include="res\Homestead_StatusBackground.png" />
+    <None Include="res\Homestead_StatusPane.png" />
+    <None Include="res\Homestead_TabBackground.png" />
+    <None Include="res\Homestead_TabBackground133.png" />
+    <None Include="res\Homestead_tabItem.png" />
+    <None Include="res\Homestead_tabItemBoth.png" />
+    <None Include="res\Homestead_tabItemLeft.png" />
+    <None Include="res\Homestead_tabItemRight.png" />
+    <None Include="res\Homestead_tabItemTop.png" />
+    <None Include="res\Homestead_tabItemTopBoth.png" />
+    <None Include="res\Homestead_tabItemTopLeft.png" />
+    <None Include="res\Homestead_tabItemTopRight.png" />
+    <None Include="res\Homestead_TabPaneEdge.png" />
+    <None Include="res\Homestead_ToolbarBackground.png" />
+    <None Include="res\Homestead_ToolbarButtons.png" />
+    <None Include="res\Homestead_ToolbarButtonsSplit.png" />
+    <None Include="res\Homestead_ToolbarButtonsSplitDropdown.png" />
+    <None Include="res\Homestead_ToolbarButtonsSplitDropdownGlyph.png" />
+    <None Include="res\Homestead_ToolbarGripper.png" />
+    <None Include="res\Homestead_ToolbarGripperVert.png" />
+    <None Include="res\Homestead_TrackBarDown13.png" />
+    <None Include="res\Homestead_TrackBarDown16.png" />
+    <None Include="res\Homestead_TrackBarDown25.png" />
+    <None Include="res\Homestead_TrackbarHorizontal.png" />
+    <None Include="res\Homestead_TrackBarLeft13.png" />
+    <None Include="res\Homestead_TrackBarLeft16.png" />
+    <None Include="res\Homestead_TrackBarLeft25.png" />
+    <None Include="res\Homestead_TrackbarRight13.png" />
+    <None Include="res\Homestead_TrackBarRight16.png" />
+    <None Include="res\Homestead_TrackBarRight25.png" />
+    <None Include="res\Homestead_TrackBarUp13.png" />
+    <None Include="res\Homestead_TrackBarUp16.png" />
+    <None Include="res\Homestead_TrackBarUp25.png" />
+    <None Include="res\Homestead_TrackbarVertical.png" />
+    <None Include="res\Homestead_treeExpandCollapse.png" />
+    <None Include="res\Homestead_treeExpandCollapse10.png" />
+    <None Include="res\Homestead_treeExpandCollapse15.png" />
+    <None Include="res\Metallic_button.png" />
+    <None Include="res\Metallic_CaptionButton.png" />
+    <None Include="res\Metallic_CheckBox13.png" />
+    <None Include="res\Metallic_CheckBox16.png" />
+    <None Include="res\Metallic_CheckBox25.png" />
+    <None Include="res\Metallic_Chevron.png" />
+    <None Include="res\Metallic_CloseButton.png" />
+    <None Include="res\Metallic_CloseGlyph.png" />
+    <None Include="res\Metallic_CloseGlyph19.png" />
+    <None Include="res\Metallic_CloseGlyph23.png" />
+    <None Include="res\Metallic_CloseGlyph6.png" />
+    <None Include="res\Metallic_CloseGlyph9.png" />
+    <None Include="res\Metallic_ComboButton.png" />
+    <None Include="res\Metallic_ComboButtonGlyph.png" />
+    <None Include="res\Metallic_ExplorerBarHeaderClose.png" />
+    <None Include="res\Metallic_ExplorerBarHeaderPin.png" />
+    <None Include="res\Metallic_FieldOutlineBlue.png" />
+    <None Include="res\Metallic_frameBottom.png" />
+    <None Include="res\Metallic_FrameCaption.png" />
+    <None Include="res\Metallic_FrameCaptionMin.png" />
+    <None Include="res\Metallic_FrameCaptionSizing.png" />
+    <None Include="res\Metallic_frameLeft.png" />
+    <None Include="res\Metallic_FrameMaximized.png" />
+    <None Include="res\Metallic_frameRight.png" />
+    <None Include="res\Metallic_Gripper.png" />
+    <None Include="res\Metallic_GripperVert.png" />
+    <None Include="res\Metallic_GroupBox.png" />
+    <None Include="res\Metallic_HelpGlyph.png" />
+    <None Include="res\Metallic_HelpGlyph19.png" />
+    <None Include="res\Metallic_HelpGlyph23.png" />
+    <None Include="res\Metallic_HelpGlyph6.png" />
+    <None Include="res\Metallic_HelpGlyph9.png" />
+    <None Include="res\Metallic_ListViewHeader.png" />
+    <None Include="res\Metallic_ListviewHeaderBackground.png" />
+    <None Include="res\Metallic_MaximizeGlyph.png" />
+    <None Include="res\Metallic_MaximizeGlyph19.png" />
+    <None Include="res\Metallic_MaximizeGlyph23.png" />
+    <None Include="res\Metallic_MaximizeGlyph6.png" />
+    <None Include="res\Metallic_MaximizeGlyph9.png" />
+    <None Include="res\Metallic_MDICaptionButton.png" />
+    <None Include="res\Metallic_MDIGlyphClose.png" />
+    <None Include="res\Metallic_MDIGlyphMinimize.png" />
+    <None Include="res\Metallic_MDIGlyphRestore.png" />
+    <None Include="res\Metallic_MinimizeGlyph.png" />
+    <None Include="res\Metallic_MinimizeGlyph19.png" />
+    <None Include="res\Metallic_MinimizeGlyph23.png" />
+    <None Include="res\Metallic_MinimizeGlyph6.png" />
+    <None Include="res\Metallic_MinimizeGlyph9.png" />
+    <None Include="res\Metallic_NormalGroupBackground.png" />
+    <None Include="res\Metallic_NormalGroupCollapse.png" />
+    <None Include="res\Metallic_NormalGroupExpand.png" />
+    <None Include="res\Metallic_NormalGroupHead.png" />
+    <None Include="res\Metallic_PlaceBarBackground.png" />
+    <None Include="res\Metallic_PlaceBarButtons.png" />
+    <None Include="res\Metallic_ProgressChunk.png" />
+    <None Include="res\Metallic_ProgressChunkVert.png" />
+    <None Include="res\Metallic_ProgressTrack.png" />
+    <None Include="res\Metallic_ProgressTrackVert.png" />
+    <None Include="res\Metallic_RadioButton13.png" />
+    <None Include="res\Metallic_RadioButton16.png" />
+    <None Include="res\Metallic_RadioButton25.png" />
+    <None Include="res\Metallic_ResizeGrip2.png" />
+    <None Include="res\Metallic_RestoreGlyph.png" />
+    <None Include="res\Metallic_RestoreGlyph19.png" />
+    <None Include="res\Metallic_RestoreGlyph23.png" />
+    <None Include="res\Metallic_RestoreGlyph6.png" />
+    <None Include="res\Metallic_RestoreGlyph9.png" />
+    <None Include="res\Metallic_ScrollArrowGlyphs.png" />
+    <None Include="res\Metallic_ScrollArrowGlyphsSmall.png" />
+    <None Include="res\Metallic_ScrollArrows.png" />
+    <None Include="res\Metallic_ScrollShaftHorizontal.png" />
+    <None Include="res\Metallic_ScrollShaftVertical.png" />
+    <None Include="res\Metallic_ScrollThumbGripperHorizontal.png" />
+    <None Include="res\Metallic_ScrollThumbGripperVertical.png" />
+    <None Include="res\Metallic_ScrollThumbHorizontal.png" />
+    <None Include="res\Metallic_ScrollThumbVertical.png" />
+    <None Include="res\Metallic_Separator.png" />
+    <None Include="res\Metallic_SeparatorVert.png" />
+    <None Include="res\Metallic_sliderTrack.png" />
+    <None Include="res\Metallic_SmallCloseButton.png" />
+    <None Include="res\Metallic_SmallCloseGlyph.png" />
+    <None Include="res\Metallic_SmallFrameCaption.png" />
+    <None Include="res\Metallic_SmallFrameCaptionSizing.png" />
+    <None Include="res\Metallic_SpecialGroupBackground.png" />
+    <None Include="res\Metallic_SpecialGroupCollapse.png" />
+    <None Include="res\Metallic_SpecialGroupExpand.png" />
+    <None Include="res\Metallic_SpecialGroupHead.png" />
+    <None Include="res\Metallic_SpinButtonBackgroundDown.png" />
+    <None Include="res\Metallic_SpinButtonBackgroundLeft.png" />
+    <None Include="res\Metallic_SpinButtonBackgroundRight.png" />
+    <None Include="res\Metallic_SpinButtonBackgroundUp.png" />
+    <None Include="res\Metallic_SpinDownGlyph.png" />
+    <None Include="res\Metallic_SpinLeftGlyph.png" />
+    <None Include="res\Metallic_SpinRightGlyph.png" />
+    <None Include="res\Metallic_SpinUpGlyph.png" />
+    <None Include="res\Metallic_StatusBackground.png" />
+    <None Include="res\Metallic_StatusPane.png" />
+    <None Include="res\Metallic_TabBackground.png" />
+    <None Include="res\Metallic_TabBackground133.png" />
+    <None Include="res\Metallic_tabItem.png" />
+    <None Include="res\Metallic_tabItemBoth.png" />
+    <None Include="res\Metallic_tabItemLeft.png" />
+    <None Include="res\Metallic_tabItemRight.png" />
+    <None Include="res\Metallic_tabItemTop.png" />
+    <None Include="res\Metallic_tabItemTopBoth.png" />
+    <None Include="res\Metallic_tabItemTopLeft.png" />
+    <None Include="res\Metallic_tabItemTopRight.png" />
+    <None Include="res\Metallic_TabPaneEdge.png" />
+    <None Include="res\Metallic_ToolbarBackground.png" />
+    <None Include="res\Metallic_ToolbarButtons.png" />
+    <None Include="res\Metallic_ToolbarButtonsSplit.png" />
+    <None Include="res\Metallic_ToolbarButtonsSplitDropdown.png" />
+    <None Include="res\Metallic_ToolbarButtonsSplitDropdownGlyph.png" />
+    <None Include="res\Metallic_ToolbarGripper.png" />
+    <None Include="res\Metallic_ToolbarGripperVert.png" />
+    <None Include="res\Metallic_TrackBarDown13.png" />
+    <None Include="res\Metallic_TrackBarDown16.png" />
+    <None Include="res\Metallic_TrackBarDown25.png" />
+    <None Include="res\Metallic_TrackbarHorizontal.png" />
+    <None Include="res\Metallic_TrackBarLeft13.png" />
+    <None Include="res\Metallic_TrackBarLeft16.png" />
+    <None Include="res\Metallic_TrackBarLeft25.png" />
+    <None Include="res\Metallic_TrackbarRight13.png" />
+    <None Include="res\Metallic_TrackBarRight16.png" />
+    <None Include="res\Metallic_TrackBarRight25.png" />
+    <None Include="res\Metallic_TrackBarUp13.png" />
+    <None Include="res\Metallic_TrackBarUp16.png" />
+    <None Include="res\Metallic_TrackBarUp25.png" />
+    <None Include="res\Metallic_TrackbarVertical.png" />
+    <None Include="res\Metallic_treeExpandCollapse.png" />
+    <None Include="res\Metallic_treeExpandCollapse10.png" />
+    <None Include="res\Metallic_treeExpandCollapse15.png" />
+    <None Include="res\Blue_ExtraLarge.ini" />
+    <None Include="res\Blue_LargeFonts.ini" />
+    <None Include="res\Blue_Normal.ini" />
+    <None Include="res\Homestead_ExtraLarge.ini" />
+    <None Include="res\Homestead_LargeFonts.ini" />
+    <None Include="res\Homestead_Normal.ini" />
+    <None Include="res\Metallic_ExtraLarge.ini" />
+    <None Include="res\Metallic_LargeFonts.ini" />
+    <None Include="res\Metallic_Normal.ini" />
+    <None Include="res\Themes.ini" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

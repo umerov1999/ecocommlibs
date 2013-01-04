@@ -1,0 +1,258 @@
+// Controls resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2012 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#include "Controls/Resource.h"
+#include "Controls/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) && !defined(_XTP_NO_STANDARDCONTROLS_RES)
+#ifdef _WIN32
+LANGUAGE LANG_SWEDISH, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_TIPOFTHEDAY DIALOGEX 0, 0, 279, 127
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dagens tips"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "Stäng",IDOK,224,108,50,14
+    CONTROL         "&Visa tips vid start",XTP_IDC_CHK_DAYTIP_SHOW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,110,140,10
+    PUSHBUTTON      "Nästa tips",XTP_IDC_BTN_DAYTIP_NEXT,170,108,50,14
+    CONTROL         "",XTP_IDC_BTN_DAYTIP_BORDER,"Static",SS_GRAYFRAME | NOT WS_VISIBLE,0,0,279,103
+END
+
+XTP_IDD_COLORCUSTOM DIALOGEX DISCARDABLE  0, 0, 147, 161
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "Anpassade"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Färger:",XTP_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XTP_IDC_CLR_WND,"Static",SS_BLACKFRAME | WS_TABSTOP,3,
+                    15,119,86
+    CONTROL         "",XTP_IDC_CLR_LUM,"Static",SS_BLACKFRAME | WS_TABSTOP,
+                    126,15,20,86
+    LTEXT           "Nyans:",XTP_IDC_TXT_HUE,4,108,23,8
+    EDITTEXT        XTP_IDC_EDIT_HUE,40,106,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XTP_IDC_SPIN_HUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,64,105,
+                    10,14
+    LTEXT           "Mättnad:",XTP_IDC_TXT_SAT,4,125,29,8
+    EDITTEXT        XTP_IDC_EDIT_SAT,40,122,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin2",XTP_IDC_SPIN_SAT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,64,122,
+                    10,14
+    LTEXT           "Ljusstyrka:",XTP_IDC_TXT_LUM,4,140,34,8
+    EDITTEXT        XTP_IDC_EDIT_LUM,40,138,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XTP_IDC_SPIN_LUM,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,64,137,
+                    10,14
+    LTEXT           "Röd:",XTP_IDC_TXT_RED,80,108,23,8
+    EDITTEXT        XTP_IDC_EDIT_RED,104,106,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XTP_IDC_SPIN_RED,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,128,105,
+                    11,14
+    LTEXT           "Grön:",XTP_IDC_TXT_GREEN,80,125,23,8
+    EDITTEXT        XTP_IDC_EDIT_GREEN,104,122,33,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin2",XTP_IDC_SPIN_GREEN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,128,122,
+                    11,14
+    LTEXT           "Blå:",XTP_IDC_TXT_BLUE,80,140,23,8
+    EDITTEXT        XTP_IDC_EDIT_BLUE,104,138,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XTP_IDC_SPIN_BLUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,128,137,
+                    11,14
+END
+
+XTP_IDD_COLORSTANDARD DIALOGEX DISCARDABLE  0, 0, 147, 161
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "Standard"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Färger:",XTP_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XTP_IDC_CLR_HEX,"Static",SS_BLACKFRAME | WS_TABSTOP,0,
+                    15,147,145
+END
+
+XTP_IDD_WINDOWLIST DIALOGEX DISCARDABLE  0, 0, 301, 164
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Ordna fönster"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Välj &fönster:",IDC_STATIC,7,7,147,8
+    LISTBOX         XTP_IDC_LBOX_WINDOWS,7,17,216,140,LBS_SORT | 
+                    LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Aktivera",XTP_IDC_BTN_ACTIVATE,233,7,62,14
+    PUSHBUTTON      "OK",IDOK,233,24,62,14
+    PUSHBUTTON      "Spara",XTP_IDC_BTN_SAVE,233,41,62,14
+    PUSHBUTTON      "Stäng fönster",XTP_IDC_BTN_CLOSEWINDOWS,233,58,62,14
+    PUSHBUTTON      "Kaskad",XTP_IDC_BTN_CASCADE,233,75,62,14
+    PUSHBUTTON      "Över och under",XTP_IDC_BTN_TILEHORZ,233,92,62,14
+    PUSHBUTTON      "Sida vid sida",XTP_IDC_BTN_TILEVERT,233,109,62,14
+    PUSHBUTTON      "Minimera",XTP_IDC_BTN_MINIMIZE,233,126,62,14
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XTP_IDM_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "RClickOutlookBar"
+    BEGIN
+        MENUITEM "Små ikoner",                XTP_IDC_SMALLICON
+        MENUITEM "Stora ikoner",                XTP_IDC_LARGEICON
+    END
+    POPUP "RClickHexEdit"
+    BEGIN
+        MENUITEM "Ångra",                       ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Klipp ut",                        ID_EDIT_CUT
+        MENUITEM "Kopiera",                       ID_EDIT_COPY
+        MENUITEM "KlistraIn",                      ID_EDIT_PASTE
+        MENUITEM "Ta bort",                     ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "Markera allt",                 ID_EDIT_SELECT_ALL
+    END
+    POPUP "RClickHeader"
+    BEGIN
+        MENUITEM "Stigande",              XTP_IDC_SORTASC
+        MENUITEM "Fallande",             XTP_IDC_SORTDSC
+        MENUITEM SEPARATOR
+        POPUP "Justera text"
+        BEGIN
+            MENUITEM "Vänsterjustera",                  XTP_IDC_ALIGNLEFT
+            MENUITEM "Centrera vågrätt",                XTP_IDC_ALIGNCENTER
+            MENUITEM "Högerjustera",                 XTP_IDC_ALIGNRIGHT
+        END
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDC_BTN_NEW          "Nytt"
+    XTP_IDC_BTN_DELETE       "Ta bort"
+    XTP_IDC_BTN_UP           "Flytta upp"
+    XTP_IDC_BTN_DOWN         "Flytta ned"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_NAME             "Namn"
+    XTP_IDS_SIZE             "Storlek"
+    XTP_IDS_TYPE             "Typ"
+    XTP_IDS_MODIFIED         "Ändrad"
+    XTP_IDS_COLOR_AUTO       "Automatisk"
+    XTP_IDS_COLOR_CUST       "Anpassa..."
+    XTP_IDS_SELDIR           "Välj katalog:"
+    XTP_IDS_DOT              "..."
+    XTP_IDS_DEFEXT           "*.*"
+    XTP_IDS_DEFFILT          "Alla filer (*.*)|*.*||"
+    XTP_IDS_DEFTITLE         "Katalognamn:"
+    XTP_IDS_CLICKKEEPOPEN    "Klicka på häftstiftet för att behålla öppet"
+    XTP_IDS_SE_0             "Operativsystemet har inte tillräckligt med ledigt minne."
+    XTP_IDS_SE_ERR_FNF       "Det gick inte att hitta den angivna filen."
+    XTP_IDS_SE_ERR_PNF       "Det gick inte att hitta den angivna sökvägen."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_SE_ERR_ACCESSDENIED 
+                            "Operativsystemet nekade åtkomst till filen."
+    XTP_IDS_SE_ERR_OOM       "Otillräckligt minne för att avsluta åtgärden."
+    XTP_IDS_SE_ERR_BAD_FORMAT 
+                            "Ogiltig .exe-fil (icke-Win32® .exe eller fel i .exe-bild)."
+    XTP_IDS_SE_ERR_SHARE     "Ett fildelningsfel inträffade."
+    XTP_IDS_SE_ERR_ASSOCINCOMPLETE 
+                            "Ofullständig eller ogiltig filnamnsassociation."
+    XTP_IDS_SE_ERR_DDETIMEOUT 
+                            "Det gick inte att slutföra DDE-transaktion eftersom begäran gjorde time-out."
+    XTP_IDS_SE_ERR_DDEFAIL   "DDE-transaktionen misslyckades."
+    XTP_IDS_SE_ERR_DDEBUSY   "Det gick inte att slutföra DDE-transaktion eftersom andra DDE-transaktioner behandlades."
+    XTP_IDS_SE_ERR_NOASSOC   "Det finns inget program som är associerat med angivet filnamnstillägg."
+    XTP_IDS_SE_ERR_DLLNOTFOUND 
+                            "Det gick inte att hitta angiven dll-fil."
+    XTP_IDS_SE_ERR_UNKOWN    "Okänt felnummer %d"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDC_SORTASC          "Stigande\nStigande"
+    XTP_IDC_SORTDSC          "Fallande\nFallande"
+    XTP_IDC_ALIGNLEFT        "Vänsterjusterar stycket.\nVänsterjustera"
+    XTP_IDC_ALIGNCENTER      "Centrerar stycket.\nCentrera"
+    XTP_IDC_ALIGNRIGHT       "Högerjusterar stycket.\nHögerjustera"
+    XTP_IDC_LARGEICON        "Stora ikoner\nStora ikoner"
+    XTP_IDC_SMALLICON        "Små ikoner\nSmå ikoner"
+    XTP_IDC_REMOVEITEM       "Ta bort från Outlook-fältet"
+    XTP_IDC_RENAMEITEM       "Byt namn på genväg"
+    XTP_IDC_REMOVEGROUP      "Ta bort grupp"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDC_RENAMEGROUP      "Byt namn på grupp"
+    XTP_IDS_HEX              "Hex"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_STD_COLORS       "Standardfärger"
+    XTP_IDS_TIPTEXT          "Knappbeskrivning"
+    XTP_IDS_DIDYOUKNOW       "Visste du att..."
+    XTP_IDS_FILE_ABSENT      "Den angivna filen finns inte."
+    XTP_IDS_FILE_CORRUPT     "Fel vid läsning av filen."
+    XTP_IDS_COLOR_CAPTION    "Färger"
+    XTP_IDS_NEW              "Nytt"
+    XTP_IDS_CURRENT          "Aktuell"
+    XTP_IDS_DIRECTORIES      "Kataloger:"
+    XTP_IDS_FILES            "Filer:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_TASK_OK           "OK"
+    XTP_IDS_TASK_YES          "Ja"
+    XTP_IDS_TASK_NO           "Nej"
+    XTP_IDS_TASK_RETRY        "Försök igen"
+    XTP_IDS_TASK_CANCEL       "Avbryt"
+    XTP_IDS_TASK_CLOSE        "Sista"
+    XTP_IDS_TASK_APPLY        "&Apply"
+    XTP_IDS_TASK_HELP         "Help"
+    XTP_IDS_TASK_SEE_DETAILS  "Visa information"
+    XTP_IDS_TASK_HIDE_DETAILS "Dölj information"
+END
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)

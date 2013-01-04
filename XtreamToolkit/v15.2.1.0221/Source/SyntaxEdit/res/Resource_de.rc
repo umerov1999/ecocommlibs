@@ -1,0 +1,293 @@
+// SyntaxEdit resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2012 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#include "SyntaxEdit/Resource.h"
+#include "SyntaxEdit/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_EDIT_PAGEEDITOR DIALOGEX DISCARDABLE  0, 0, 260, 180
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Editor"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX        "Fenster Einstellungen",IDC_STATIC,7,7,246,76
+    CONTROL         "&Vertikale Bildlaufleiste",XTP_IDC_EDIT_CHK_VERT_SCROLLBAR,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,21,105,10
+    CONTROL         "&Horizontale Bildlaufleiste",XTP_IDC_EDIT_CHK_HORZ_SCROLLBAR,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,32,105,10
+    CONTROL         "Zeilennummer",XTP_IDC_EDIT_CHK_LINE_NUMBERS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,43,105,10
+    CONTROL         "Auswahl-Marge",XTP_IDC_EDIT_CHK_SELMARGIN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,54,105,10
+    CONTROL         "Faltbare Knoten",XTP_IDC_EDIT_CHK_COLLAPSIBLE_NODES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,65,105,10
+    CONTROL         "Auto-Einzug",XTP_IDC_EDIT_CHK_AUTO_INDENT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,130,20,115,10
+    CONTROL         "Virtueller Raum",XTP_IDC_EDIT_CHK_VIRTUAL_SPACE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,130,35,115,10
+    CONTROL         "Syntax Einfärben",XTP_IDC_EDIT_CHK_SYNTAX_COLOR,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,130,50,115,10
+    GROUPBOX        "Tabs",IDC_STATIC,7,88,162,43
+    LTEXT           "Leerzeichen einfügen:",IDC_STATIC,15,103,30,8
+    EDITTEXT        XTP_IDC_EDIT_TABS_SIZE,50,100,46,14,ES_AUTOHSCROLL
+    CONTROL         "Im Auge behalten",XTP_IDC_EDIT_RAD_TABS_SPACES,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,102,102,58,10
+    CONTROL         "&Keep Tabs",XTP_IDC_EDIT_RAD_TABS_TAB,"Button",
+                    BS_AUTORADIOBUTTON,102,113,51,10
+    GROUPBOX        "Overwrite Caret",XTP_IDC_EDIT_GBOX_CARET,175,88,78,43,
+                    WS_GROUP
+    CONTROL         "Dünn",XTP_IDC_EDIT_RAD_CARET_THIN,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,181,102,31,10
+    CONTROL         "Dick",XTP_IDC_EDIT_RAD_CARET_THICK,"Button",
+                    BS_AUTORADIOBUTTON,181,113,36,10
+    GROUPBOX        "Speicheroptionen",IDC_STATIC,7,135,246,37
+    CONTROL         "Automatisch neu laden extern geänderte Dateien",
+                    XTP_IDC_EDIT_CHK_AUTO_RELOAD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,151,232,10
+END
+XTP_IDD_EDIT_PAGEFONT DIALOGEX 0, 0, 260, 180
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Editor-Schriftart"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "&Schriftart:",XTP_IDC_EDIT_TXT_FONTNAMES,7,7,40,9
+    COMBOBOX        XTP_IDC_EDIT_COMB_NAMES,7,18,119,55,CBS_SIMPLE | 
+                    CBS_AUTOHSCROLL | CBS_SORT | CBS_DISABLENOSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Schriftschnitt:",XTP_IDC_EDIT_TXT_FONTSTYLES,134,7,45,9
+    COMBOBOX        XTP_IDC_EDIT_COMB_STYLES,134,18,75,55,CBS_SIMPLE | 
+                    CBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Größe:",XTP_IDC_EDIT_TXT_FONTSIZES,217,7,30,9
+    COMBOBOX        XTP_IDC_EDIT_COMB_SIZES,217,18,36,55,CBS_SIMPLE | 
+                    CBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Normaler &Text:",IDC_STATIC,7,68,100,8
+    COMBOBOX        XTP_IDC_EDIT_COMB_TEXT,7,78,103,100,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "...",XTP_IDC_EDIT_BTN_CUSTOM_TEXT,113,78,13,12
+    LTEXT           "&Normaler Texthintergrund:",IDC_STATIC,7,95,100,8
+    COMBOBOX        XTP_IDC_EDIT_COMB_BACK,7,105,103,100,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "...",XTP_IDC_EDIT_BTN_CUSTOM_BACK,113,105,13,12
+    LTEXT           "Markierter Text:",IDC_STATIC,7,122,100,8
+    COMBOBOX        XTP_IDC_EDIT_COMB_TEXTSEL,7,132,103,100,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "...",XTP_IDC_EDIT_BTN_CUSTOM_TEXTSEL,113,132,13,12
+    LTEXT           "Markierter Texthintergrund:",IDC_STATIC,7,149,100,8
+    COMBOBOX        XTP_IDC_EDIT_COMB_BACKSEL,7,159,103,100,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "...",XTP_IDC_EDIT_BTN_CUSTOM_BACKSEL,113,159,13,12
+    LTEXT           "Sk&ript:",XTP_IDC_EDIT_TXT_FONTSCRIPT,135,69,100,9
+    COMBOBOX        XTP_IDC_EDIT_COMB_SCRIPT,134,78,119,115,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_BORDER | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Beispiel Normal / Markiert:",XTP_IDC_EDIT_GRP_SAMPLE,135,128,
+                    118,44,WS_GROUP
+    CTEXT           "AaBbCc",XTP_IDC_EDIT_TXT_SAMPLE,143,140,49,26,
+                    SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    CTEXT           "XxYyZz",XTP_IDC_EDIT_TXT_SAMPLESEL,196,140,49,26,
+                    SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+END
+
+XTP_IDD_EDIT_PAGECOLOR DIALOGEX 0, 0, 260, 180
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Syntax-Farben"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Dateityp:",XTP_IDC_EDIT_TXT_SCHEMANAMES,7,7,123,9
+    LISTBOX         XTP_IDC_EDIT_LBOX_SCHEMANAMES,7,17,123,64,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Eigenschaften:",XTP_IDC_EDIT_TXT_SCHEMAPROP,7,85,123,9
+    LISTBOX         XTP_IDC_EDIT_LBOX_SCHEMAPROP,7,95,123,77,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Normaler &Text:",IDC_STATIC,135,7,100,8
+    COMBOBOX        XTP_IDC_EDIT_COMB_TEXT,135,17,100,100,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "...",XTP_IDC_EDIT_BTN_CUSTOM_TEXT,238,17,13,12
+    LTEXT           "&Normaler Texthintergrund:",IDC_STATIC,135,33,100,8
+    COMBOBOX        XTP_IDC_EDIT_COMB_BACK,135,43,100,100,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "...",XTP_IDC_EDIT_BTN_CUSTOM_BACK,238,43,13,12
+    LTEXT           "Markierter Text:",IDC_STATIC,135,59,100,8
+    COMBOBOX        XTP_IDC_EDIT_COMB_TEXTSEL,135,69,100,100,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "...",XTP_IDC_EDIT_BTN_CUSTOM_TEXTSEL,238,69,13,12
+    LTEXT           "Markierter Texthintergrund:",IDC_STATIC,135,85,100,8
+    COMBOBOX        XTP_IDC_EDIT_COMB_BACKSEL,135,95,100,100,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "...",XTP_IDC_EDIT_BTN_CUSTOM_BACKSEL,238,95,13,12
+    CONTROL         "&Fett",XTP_IDC_EDIT_CHK_BOLD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,135,114,30,10
+    CONTROL         "&Kursiv",XTP_IDC_EDIT_CHK_ITALIC,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,170,114,31,10
+    CONTROL         "&Unterstr.",XTP_IDC_EDIT_CHK_UNDERLINE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,206,114,46,10
+    GROUPBOX        "Beispiel Normal / Markiert:",XTP_IDC_EDIT_GRP_SAMPLE,135,128,
+                    118,44,WS_GROUP
+    CTEXT           "AaBbCc",XTP_IDC_EDIT_TXT_SAMPLE,143,140,49,26,
+                    SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    CTEXT           "XxYyZz",XTP_IDC_EDIT_TXT_SAMPLESEL,196,140,49,26,
+                    SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+END
+
+XTP_IDD_EDIT_SEARCH_FIND DIALOGEX DISCARDABLE  0, 0, 271, 82
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Suchen"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Suchen nach",IDC_STATIC,7,9,43,8,NOT WS_GROUP
+    COMBOBOX        XTP_IDC_EDIT_COMBO_FIND,51,6,154,153,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Bedingungen",IDC_STATIC,7,30,113,45 
+    CONTROL         "Nur ganzes Wort suchen",XTP_IDC_EDIT_CHK_MATCH_WHOLE_WORD,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,43,100,10
+    CONTROL         "Groß-/Kleinschreibung",XTP_IDC_EDIT_CHK_MATCH_CASE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,58,100,10
+    GROUPBOX        "Suchrichtung",IDC_STATIC,126,30,80,45
+    CONTROL         "Aufwärts",XTP_IDC_EDIT_RADIO_UP,"Button",
+                    BS_AUTORADIOBUTTON,134,43,65,10
+    CONTROL         "Abwärts",XTP_IDC_EDIT_RADIO_DOWN,"Button",
+                    BS_AUTORADIOBUTTON,134,58,65,10
+    PUSHBUTTON      "Weitersuchen",XTP_IDC_EDIT_BTN_FIND_NEXT,214,7,50,14,
+                    WS_DISABLED | WS_TABSTOP
+    PUSHBUTTON      "Schließen",IDCANCEL,214,26,50,14, WS_TABSTOP
+END
+
+XTP_IDD_EDIT_SEARCH_REPLACE DIALOGEX DISCARDABLE  0, 0, 271, 86
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Ersetzen"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Suchen nach",IDC_STATIC,7,9,50,8,NOT WS_GROUP
+    COMBOBOX        XTP_IDC_EDIT_COMBO_FIND,61,6,143,154,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Ersetzen mit",IDC_STATIC,7,25,50,8,NOT WS_GROUP
+    COMBOBOX        XTP_IDC_EDIT_COMBO_REPLACE,61,23,143,135,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Bedingungen",IDC_STATIC,7,38,113,41
+    CONTROL         "Nur ganzes Wort suchen",XTP_IDC_EDIT_CHK_MATCH_WHOLE_WORD,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,51,100,10
+    CONTROL         "Groß-/Kleinschreibung",XTP_IDC_EDIT_CHK_MATCH_CASE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,64,100,10
+    GROUPBOX        "Suchrichtung",IDC_STATIC,126,38,80,41
+    CONTROL         "Aufwärts",XTP_IDC_EDIT_RADIO_UP,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,134,51,65,10
+    CONTROL         "Abwärts",XTP_IDC_EDIT_RADIO_DOWN,"Button",
+                    BS_AUTORADIOBUTTON,134,64,65,10
+    PUSHBUTTON      "Weitersuchen",XTP_IDC_EDIT_BTN_FIND_NEXT,214,7,50,14,
+                    WS_DISABLED | WS_TABSTOP
+    PUSHBUTTON      "Ersetzen",XTP_IDC_EDIT_BTN_REPLACE,214,23,50,14,
+                    WS_DISABLED | WS_TABSTOP
+    PUSHBUTTON      "Alle ersetzen",XTP_IDC_EDIT_BTN_REPLACE_ALL,214,39,50,14,
+                    WS_DISABLED | WS_TABSTOP
+    PUSHBUTTON      "Schließen",IDCANCEL,214,65,50,14, WS_TABSTOP
+END
+
+XTP_IDD_EDIT_GOTOLINE DIALOGEX DISCARDABLE  0, 0, 165, 55
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Gehe zu"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "&Zeilennummer:",XTP_IDC_EDIT_TXT_LINENO,5,5,155,8
+    EDITTEXT        XTP_IDC_EDIT_LINENO,5,17,155,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    PUSHBUTTON      "&Gehe zu",XTP_IDC_EDIT_BTN_GOTO,56,36,50,14
+    PUSHBUTTON      "Abbrechen",IDCANCEL,110,36,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_EDIT_UNDEFINED     "Undefinierter Befehl"
+    XTP_IDS_EDIT_MULTIPLE      "Mehrere Vorgänge"
+    XTP_IDS_EDIT_DELETE        "Löschen: "
+    XTP_IDS_EDIT_INSERT        "Einfügen: "
+    XTP_IDS_EDIT_TYPING        "Eingeben"
+    XTP_IDS_EDIT_PASTE         "Einfügen"
+    XTP_IDS_EDIT_MOVE          "Umstellen"
+    XTP_IDS_EDIT_COPY          "Kopieren"
+    XTP_IDS_EDIT_INDENTATION   "Einrückung"
+    XTP_IDS_EDIT_INDENT_DECREASE "Einrücken verringern"
+    XTP_IDS_EDIT_FORMAT        "Format"
+    XTP_IDS_EDIT_TABIFY        "Tabify"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_EDIT_UNTABIFY      "Untabify"
+    XTP_IDS_EDIT_REPLACE_ALL   "Alle ersetzen"
+    XTP_IDS_EDIT_CASE          "Groß-Kleinschreibung ändern"
+    XTP_IDS_EDIT_DELETE_TEXT_BLOCK "Textblock löschen"
+    XTP_IDS_EDIT_MOVE_HERE     "&Nach hier verschieben"
+    XTP_IDS_EDIT_COPY_HERE     "&Hier kopieren"
+    XTP_IDS_EDIT_CANCEL        "&Abbrechen"
+    XTP_IDS_EDIT_MSG_WARN_RELOAD 
+                            "Die Datei '%s' ist von einer außeren Quelle verändert!\nWollen Sie wieder laden?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_EDIT_CUSTOM        "Benutzerdefiniert"
+    XTP_IDS_EDIT_REGULAR       "Regulär"
+    XTP_IDS_EDIT_BOLD          "Fett"
+    XTP_IDS_EDIT_ITALIC        "Kursiv"
+    XTP_IDS_EDIT_BOLDITALIC    "Fett kursiv"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDD_EDIT_OPTIONS       "Optionen bearbeiten"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_EDIT_MSG_FREPLACED "%d Übereinstimmung gefunden und ersetzt!"
+    XTP_IDS_EDIT_MSG_FSEARCH   "Durchsuchen beendet!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_EDIT_LINENO        "&Zeilennummer (1 - %d):"
+    XTP_IDS_EDIT_OPENSCHEMACMD "Schemadatei öffnen"
+    XTP_IDS_EDIT_OPENSCHEMAMSG "Wollen Sie das ""Dialogfeld Optionen"" schließen und die Schemadatei ""%s%s"" im Fenster-Editor öffnen?"
+END
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)

@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Grep CompactMode="1">
+
+	<!--enumerators-->
+	<Match FindString="xtpButtonThemeStandard" ReplaceString="xtpControlThemeDefault"/>
+	<Match FindString="xtpButtonThemeFlat" ReplaceString="xtpControlThemeFlat"/>
+	<Match FindString="xtpButtonThemeUltraFlat" ReplaceString="xtpControlThemeUltraFlat"/>
+	<Match FindString="xtpButtonThemeOffice2000" ReplaceString="xtpControlThemeOffice2000"/>
+	<Match FindString="xtpButtonThemeOfficeXP" ReplaceString="xtpControlThemeOfficeXP"/>
+	<Match FindString="xtpButtonThemeOffice2003" ReplaceString="xtpControlThemeOffice2003"/>
+	<Match FindString="xtpButtonThemeOffice2007" ReplaceString="xtpControlThemeResource"/>
+
+	<Match FindString="XTAnimationType" ReplaceString="XTPAnimationDCType"/>
+	<Match FindString="xtWindowsDefault" ReplaceString="xtpAniDefault"/>
+	<Match FindString="xtRandom" ReplaceString="xtpAniRandom"/>
+	<Match FindString="xtUnfold" ReplaceString="xtpAniUnfold"/>
+	<Match FindString="xtSlide" ReplaceString="xtpAniSlide"/>
+	<Match FindString="xtFade" ReplaceString="xtpAniFade"/>
+	<Match FindString="xtNone" ReplaceString="xtpAniNone"/>
+
+	<Match FindString="XTResize" ReplaceString="XTPResize"/>
+	<Match FindString="xtResizeNoSizeIcon" ReplaceString="xtpResizeNoSizeIcon"/>
+	<Match FindString="xtResizeNoHorizontal" ReplaceString="xtpResizeNoHorizontal"/>
+	<Match FindString="xtResizeNoVertical" ReplaceString="xtpResizeNoVertical"/>
+	<Match FindString="xtResizeNoMinsize" ReplaceString="xtpResizeNoMinsize"/>
+	<Match FindString="xtResizeNoClipChildren" ReplaceString="xtpResizeNoClipChildren"/>
+	<Match FindString="xtResizeNoTransparentGroup" ReplaceString="xtpResizeNoTransparentGroup"/>
+
+	<Match FindString="xtpControlThemeOffice2007" ReplaceString="xtpControlThemeResource"/>
+
+	<Match FindString="XTArrowIcon" ReplaceString="XTPArrowIcon"/>
+	<Match FindString="xtArrowIconLeft" ReplaceString="xtpArrowIconLeft"/>
+	<Match FindString="xtArrowIconLeftHome" ReplaceString="xtpArrowIconLeftHome"/>
+	<Match FindString="xtArrowIconRight" ReplaceString="xtpArrowIconRight"/>
+	<Match FindString="xtArrowIconRightHome" ReplaceString="xtpArrowIconRightHome"/>
+
+	<Match FindString="XTFontStyle" ReplaceString="XTPFontStyle"/>
+	<Match FindString="xtFontUnknown" ReplaceString="xtpFontUnknown"/>
+	<Match FindString="xtFontGUI" ReplaceString="xtpFontGUI"/>
+	<Match FindString="xtFontSample" ReplaceString="xtpFontSample"/>
+	<Match FindString="xtFontBoth" ReplaceString="xtpFontBoth"/>
+
+	<Match FindString="XTListBoxStyle" ReplaceString="XTPListBoxStyle"/>
+	<Match FindString="xtListBoxStandard" ReplaceString="xtpListBoxStandard"/>
+	<Match FindString="xtListBoxOfficeXP" ReplaceString="xtpListBoxOfficeXP"/>
+	<Match FindString="xtListBoxOffice2007" ReplaceString="xtpListBoxOffice2007"/>
+
+	<Match FindString="XTFindType" ReplaceString="XTPFindType"/>
+	<Match FindString="xtFindTypeDrive" ReplaceString="xtpFindTypeDrive"/>
+	<Match FindString="xtFindTypeFolder" ReplaceString="xtpFindTypeFolder"/>
+	<Match FindString="xtFindTypeRoot" ReplaceString="xtpFindTypeRoot"/>
+	<Match FindString="xtFindTypeShare" ReplaceString="xtpFindTypeShare"/>
+
+	<Match FindString="XTSortType" ReplaceString="XTPSortType"/>
+	<Match FindString="xtSortInt" ReplaceString="xtpSortInt"/>
+	<Match FindString="xtSortString" ReplaceString="xtpSortString"/>
+	<Match FindString="xtSortDateTime" ReplaceString="xtpSortDateTime"/>
+	<Match FindString="xtSortDecimal" ReplaceString="xtpSortDecimal"/>
+
+	<Match FindString="XTNavBtnState" ReplaceString="XTPNavBtnState"/>
+	<Match FindString="xtNavBtnArrows" ReplaceString="xtpNavBtnArrows"/>
+	<Match FindString="xtNavBtnClose" ReplaceString="xtpNavBtnClose"/>
+	<Match FindString="xtNavBtnShowAll" ReplaceString="xtpNavBtnShowAll"/>
+
+	<!--types-->
+
+	<Match FindString="XT_RESIZE" ReplaceString="XTP_RESIZE"/>
+
+	<!--structs-->
+
+	<Match FindString="XT_RESIZERECT" ReplaceString="XTP_RESIZERECT"/>
+	<Match FindString="XT_RESIZEPOINT" ReplaceString="XTP_RESIZEPOINT"/>
+	<Match FindString="XT_LVITEMDATA" ReplaceString="XTP_LVITEMDATA"/>
+	<Match FindString="XT_TVITEMDATA" ReplaceString="XTP_TVITEMDATA"/>
+
+	<!--classes-->
+
+	<Match FindString="CXTAnimationMemDC" ReplaceString="CXTPAnimationDC"/>
+	<Match FindString="CXTBrowseDialog" ReplaceString="CXTPBrowseDialog"/>
+	<Match FindString="CXTBrowseButton" ReplaceString="CXTPBrowseButton"/>
+	<Match FindString="CXTEdit" ReplaceString="CXTPEdit"/>                
+	<Match FindString="CXTBrowseEdit" ReplaceString="CXTPBrowseEdit"/>
+	<Match FindString="CXTItemEdit" ReplaceString="CXTPItemEdit"/>
+	<Match FindString="CXTCaptionButton" ReplaceString="CXTPCaptionButton"/>
+	<Match FindString="CXTCaption" ReplaceString="CXTPCaption"/>
+	<Match FindString="CXTCaptionPopupWnd" ReplaceString="CXTPCaptionPopupWnd"/>
+	<Match FindString="CXTCaptionTheme" ReplaceString="CXTPCaptionTheme"/>
+	<Match FindString="CXTCaptionThemeOfficeXP" ReplaceString="CXTPCaptionThemeOfficeXP"/>
+	<Match FindString="CXTCaptionThemeOffice2003" ReplaceString="CXTPCaptionThemeOffice2003"/>
+	<Match FindString="CXTCaptionButtonTheme" ReplaceString="CXTPCaptionButtonTheme"/>
+	<Match FindString="CXTCaptionButtonThemeOfficeXP" ReplaceString="CXTPCaptionButtonThemeOfficeXP"/>
+	<Match FindString="CXTCaptionButtonThemeOffice2003" ReplaceString="CXTPCaptionButtonThemeOffice2003"/>
+	<Match FindString="CXTCheckListBox" ReplaceString="CXTPCheckListBox"/>
+	<Match FindString="CXTEyeDropper" ReplaceString="CXTPEyeDropper"/>
+	<Match FindString="CXTColorDialog" ReplaceString="CXTPColorDialog"/>
+	<Match FindString="CXTColorBase" ReplaceString="CXTPColorBase"/>
+	<Match FindString="CXTColorWnd" ReplaceString="CXTPColorWnd"/>
+	<Match FindString="CXTColorLum" ReplaceString="CXTPColorLum"/>
+	<Match FindString="CXTColorPageCustom" ReplaceString="CXTPColorPageCustom"/>
+	<Match FindString="CXTColorHex" ReplaceString="CXTPColorHex"/>
+	<Match FindString="CXTColorPageStandard" ReplaceString="CXTPColorPageStandard"/>
+	<Match FindString="CXTColorPicker" ReplaceString="CXTPColorPicker"/>
+	<Match FindString="CXTColorPopup" ReplaceString="CXTPColorPopup"/>
+	<Match FindString="CXTColorSelectorCtrl" ReplaceString="CXTPColorSelectorCtrl"/>
+	<Match FindString="CXTColorSelectorCtrlTheme" ReplaceString="CXTPColorSelectorCtrlTheme"/>
+	<Match FindString="CXTColorSelectorCtrlThemeOfficeXP" ReplaceString="CXTPColorSelectorCtrlThemeOfficeXP"/>
+	<Match FindString="CXTColorSelectorCtrlThemeOffice2003" ReplaceString="CXTPColorSelectorCtrlThemeOffice2003"/>
+	<Match FindString="CXTColorSelectorCtrlThemeOffice2007" ReplaceString="CXTPColorSelectorCtrlThemeResource"/>
+	<Match FindString="CXTDirWatcher" ReplaceString="CXTPDirWatcher"/>
+	<Match FindString="CXTDropSource" ReplaceString="CXTPDropSource"/>
+	<Match FindString="CXTEditListBoxToolBar" ReplaceString="CXTPEditListBoxToolBar"/>
+	<Match FindString="CXTEditListBox" ReplaceString="CXTPEditListBox"/>
+	<Match FindString="CXTExcelTabCtrlButtonState" ReplaceString="CXTPExcelTabCtrlButtonState"/>
+	<Match FindString="CXTExcelTabCtrl" ReplaceString="CXTPExcelTabCtrl"/>
+	<Match FindString="CXTExcelTabCtrlTheme" ReplaceString="CXTPExcelTabCtrlTheme"/>
+	<Match FindString="CXTExcelTabCtrlThemeOfficeXP" ReplaceString="CXTPExcelTabCtrlThemeOfficeXP"/>
+	<Match FindString="CXTExcelTabCtrlThemeOffice2003" ReplaceString="CXTPExcelTabCtrlThemeOffice2003"/>
+	<Match FindString="CXTFontList" ReplaceString="CXTPFontList"/>
+	<Match FindString="CXTFontEnum" ReplaceString="CXTPFontEnum"/>
+	<Match FindString="CXTFontListBox" ReplaceString="CXTPFontListBox"/>
+	<Match FindString="CXTFontCombo" ReplaceString="CXTPFontComboBox"/>
+	<Match FindString="CXTTcbItem" ReplaceString="CXTPTcbItem"/>
+	<Match FindString="CXTNonClientMetrics" ReplaceString="CXTPNonClientMetrics"/>
+	<Match FindString="CXTLogFont" ReplaceString="CXTPLogFont"/>
+	<Match FindString="CXTAuxData" ReplaceString="CXTPAuxData"/>
+	<Match FindString="CXTHeaderCtrl" ReplaceString="CXTPHeaderCtrl"/>
+	<Match FindString="CXTHeaderCtrlTheme" ReplaceString="CXTPHeaderCtrlTheme"/>
+	<Match FindString="CXTHeaderCtrlThemeOfficeXP" ReplaceString="CXTPHeaderCtrlThemeOfficeXP"/>
+	<Match FindString="CXTHeaderCtrlThemeOffice2003" ReplaceString="CXTPHeaderCtrlThemeOffice2003"/>
+	<Match FindString="CXTHeaderCtrlThemeExplorer" ReplaceString="CXTPHeaderCtrlThemeExplorer"/>
+	<Match FindString="CXTContextObjectHandler" ReplaceString="CXTPContextObjectHandler"/>
+	<Match FindString="CXTContextBkModeHandler" ReplaceString="CXTPContextBkModeHandler"/>
+	<Match FindString="CXTContextTextColorHandler" ReplaceString="CXTPContextTextColorHandler"/>
+	<Match FindString="CXTContextBkColorHandler" ReplaceString="CXTPContextBkColorHandler"/>
+	<Match FindString="CXTContextViewPortOrgHandler" ReplaceString="CXTPContextViewPortOrgHandler"/>
+	<Match FindString="CXTHexEditBase" ReplaceString="CXTPHexEditBase"/>
+	<Match FindString="CXTHexEdit" ReplaceString="CXTPHexEdit"/>
+	<Match FindString="CXTHyperLink" ReplaceString="CXTPHyperLink"/>
+	<Match FindString="CXTListBase" ReplaceString="CXTPListBase"/>
+	<Match FindString="CXTListBox" ReplaceString="CXTPListBox"/>
+	<Match FindString="CXTListView" ReplaceString="CXTPListView"/>
+	<Match FindString="CXTListCtrl" ReplaceString="CXTPListCtrl"/>
+	<Match FindString="CXTMaskEdit" ReplaceString="CXTPMaskEdit"/>
+	<Match FindString="CXTDateEdit" ReplaceString="CXTPDateEdit"/>
+	<Match FindString="CXTTimeEdit" ReplaceString="CXTPTimeEdit"/>
+	<Match FindString="CXTMDIClientWnd" ReplaceString="CXTPMDIClientWnd"/>
+	<Match FindString="CXTMDIWndTab" ReplaceString="CXTPMDIWndTab"/>
+	<Match FindString="CXTMemFile" ReplaceString="CXTPMemFile"/>
+	<Match FindString="CXTMenuListBox" ReplaceString="CXTPShortcutListBox"/>
+	<Match FindString="CXTMenuListBoxTheme" ReplaceString="CXTPShortcutListBoxTheme"/>
+	<Match FindString="CXTMenuListBoxThemeOfficeXP" ReplaceString="CXTPShortcutListBoxThemeOfficeXP"/>
+	<Match FindString="CXTMenuListBoxThemeOffice2003" ReplaceString="CXTPShortcutListBoxThemeOffice2003"/>
+	<Match FindString="CXTPagerCtrl" ReplaceString="CXTPPageScroller"/>
+	<Match FindString="CXTRegistryManager" ReplaceString="CXTPRegistryManager"/>
+	<Match FindString="CXTResizeItem" ReplaceString="CXTPResizeItem"/>          
+	<Match FindString="CXTSizeIcon" ReplaceString="CXTPSizeIcon"/>            
+	<Match FindString="CXTResize" ReplaceString="CXTPResize"/>              
+	<Match FindString="CXTResizeDialog" ReplaceString="CXTPResizeDialog"/>        
+	<Match FindString="CXTResizePropertySheet" ReplaceString="CXTPResizePropertySheet"/> 
+	<Match FindString="CXTResizePropertyPage" ReplaceString="CXTPResizePropertyPage"/>  
+	<Match FindString="CXTResizeFormView" ReplaceString="CXTPResizeFormView"/>      
+	<Match FindString="CXTResizeGroupBox" ReplaceString="CXTPResizeGroupBox"/>      
+	<Match FindString="CXTResizeRect" ReplaceString="CXTPResizeRect"/>          
+	<Match FindString="CXTResizePoint" ReplaceString="CXTPResizePoint"/>         
+	<Match FindString="CXTSearchOptionsCtrl" ReplaceString="CXTPSearchOptionsCtrl"/>
+	<Match FindString="CXTSearchOptionsView" ReplaceString="CXTPSearchOptionsView"/>
+	<Match FindString="CXTShellListBase" ReplaceString="CXTPShellListBase"/>
+	<Match FindString="CXTShellListView" ReplaceString="CXTPShellListView"/>
+	<Match FindString="CXTShellListCtrl" ReplaceString="CXTPShellListCtrl"/>
+	<Match FindString="CXTShellListCtrlEx" ReplaceString="CXTPShellListCtrlEx"/>
+	<Match FindString="CXTShellPidl" ReplaceString="CXTPShellPidl"/>
+	<Match FindString="CXTShellSettings" ReplaceString="CXTPShellSettings"/>
+	<Match FindString="CXTShellTreeBase" ReplaceString="CXTPShellTreeBase"/>
+	<Match FindString="CXTShellTreeView" ReplaceString="CXTPShellTreeView"/>
+	<Match FindString="CXTShellTreeCtrl" ReplaceString="CXTPShellTreeCtrl"/>
+	<Match FindString="CXTSortClass" ReplaceString="CXTPSortClass"/>
+	<Match FindString="CXTSplitterWnd" ReplaceString="CXTPSplitterWnd"/>
+	<Match FindString="CXTSplitterWndEx" ReplaceString="CXTPSplitterWndEx"/>
+	<Match FindString="CXTSplitterWndTheme" ReplaceString="CXTPSplitterWndTheme"/>
+	<Match FindString="CXTSplitterWndThemeOfficeXP" ReplaceString="CXTPSplitterWndThemeOfficeXP"/>
+	<Match FindString="CXTSplitterWndThemeOffice2003" ReplaceString="CXTPSplitterWndThemeOffice2003"/>
+	<Match FindString="CXTTabBase" ReplaceString="CXTPTabBase"/>
+	<Match FindString="CXTTabExBase" ReplaceString="CXTPTabExBase"/>
+	<Match FindString="CXTTabCtrlBaseEx" ReplaceString="CXTPTabCtrlBaseEx"/>
+	<Match FindString="CXTTabBaseTheme" ReplaceString="CXTPTabBaseTheme"/>
+	<Match FindString="CXTTabBaseThemeOfficeXP" ReplaceString="CXTPTabBaseThemeOfficeXP"/>
+	<Match FindString="CXTTabBaseThemeOffice2003" ReplaceString="CXTPTabBaseThemeOffice2003"/>
+	<Match FindString="CXTTabCtrl" ReplaceString="CXTPTabCtrl"/>
+	<Match FindString="CXTTabCtrlButton" ReplaceString="CXTPTabCtrlButton"/>
+	<Match FindString="CXTTabCtrlButtons" ReplaceString="CXTPTabCtrlButtons"/>
+	<Match FindString="CXTCtrlView" ReplaceString="CXTPCtrlView"/>
+	<Match FindString="CXTTabView" ReplaceString="CXTPTabView"/>
+	<Match FindString="CXTTipOfTheDay" ReplaceString="CXTPTipOfTheDay"/>
+	<Match FindString="CXTTipWindow" ReplaceString="CXTPTipWindow"/>
+	<Match FindString="CXTTrayIcon" ReplaceString="CXTPTrayIcon"/>
+	<Match FindString="CXTTreeBase" ReplaceString="CXTPTreeBase"/>
+	<Match FindString="CXTTreeView" ReplaceString="CXTPTreeView"/>
+	<Match FindString="CXTTreeCtrl" ReplaceString="CXTPTreeCtrl"/>
+	<Match FindString="CXTIconHandle" ReplaceString="CXTPIconHandle"/>
+	<Match FindString="CXTNoFlickerWnd" ReplaceString="CXTPNoFlickerWnd"/>
+	<Match FindString="CXTSplitPath" ReplaceString="CXTPSplitPath"/>
+	<Match FindString="CXTWindowList" ReplaceString="CXTPWindowList"/>
+	<Match FindString="CXTWindowPos" ReplaceString="CXTPWindowPos"/>
+	<Match FindString="CXTFlatHeaderCtrl" ReplaceString="CXTPHeaderCtrl"/>
+
+	<!--functions-->
+
+	<Match FindString="XTFuncInitDLL" ReplaceString="XTPInitDLL"/>
+	<Match FindString="XTFuncChangeWindowFont" ReplaceString="XTPChangeWindowFont"/>
+	<Match FindString="XTFuncDrawEmbossed" ReplaceString="XTPDrawEmbossed"/>
+	<Match FindString="XTFuncDrawShadedRect" ReplaceString="XTPDrawShadedRect"/>
+	<Match FindString="XTFuncChildWindowFromPoint" ReplaceString="XTPChildWindowFromPoint"/>
+	<Match FindString="XTFuncPathExists" ReplaceString="XTPPathExists"/>
+	<Match FindString="XTFuncCreateView" ReplaceString="XTPCreateView"/>
+	<Match FindString="XTFuncContextMenu" ReplaceString="XTPContextMenu"/>
+	<Match FindString="XTAuxData" ReplaceString="XTPAuxData"/>
+
+	<!--DDX-->
+
+	<Match FindString="DDX_XTColorPicker" ReplaceString="DDX_XTPColorPicker"/>
+	<Match FindString="DDX_XTOleDateTime" ReplaceString="DDX_XTPOleDateTime"/>
+
+	<!--defines-->
+
+	<Match FindString="SZ_RESIZE" ReplaceString="XTP_ATTR_RESIZE"/>
+	<Match FindString="SZ_REPOS" ReplaceString="XTP_ATTR_REPOS"/>
+	<Match FindString="SZ_HORRESIZE" ReplaceString="XTP_ATTR_HORRESIZE"/>
+	<Match FindString="SZ_HORREPOS" ReplaceString="XTP_ATTR_HORREPOS"/>
+	<Match FindString="SZ_VERRESIZE" ReplaceString="XTP_ATTR_VERRESIZE"/>
+	<Match FindString="SZ_VERREPOS" ReplaceString="XTP_ATTR_VERREPOS"/>
+	<Match FindString="SZ_BOTTOM_CENTER" ReplaceString="XTP_ANCHOR_BOTTOMCENTER"/>
+	<Match FindString="SZ_BOTTOM_LEFT" ReplaceString="XTP_ANCHOR_BOTTOMLEFT"/>
+	<Match FindString="SZ_BOTTOM_RIGHT" ReplaceString="XTP_ANCHOR_BOTTOMRIGHT"/>
+	<Match FindString="SZ_MIDDLE_CENTER" ReplaceString="XTP_ANCHOR_MIDDLECENTER"/>
+	<Match FindString="SZ_MIDDLE_LEFT" ReplaceString="XTP_ANCHOR_MIDDLELEFT"/>
+	<Match FindString="SZ_MIDDLE_RIGHT" ReplaceString="XTP_ANCHOR_MIDDLERIGHT"/>
+	<Match FindString="SZ_TOP_LEFT" ReplaceString="XTP_ANCHOR_TOPLEFT"/>
+	<Match FindString="SZ_TOP_RIGHT" ReplaceString="XTP_ANCHOR_TOPRIGHT"/>
+	<Match FindString="SZ_TOP_CENTER" ReplaceString="XTP_ANCHOR_TOPCENTER"/>
+
+	<Match FindString="XT_IDC_LBOX_EDIT" ReplaceString="XTP_IDC_LBOX_EDIT"/>
+	<Match FindString="XT_IDC_BTN_CLOSE" ReplaceString="XTP_IDC_BTN_CLOSE"/>
+	<Match FindString="XT_IDC_TAB_CLOSE" ReplaceString="XTP_IDC_TAB_CLOSE"/> 
+	<Match FindString="XT_IDB_BTN_OUT" ReplaceString="XTP_IDB_BTN_OUT"/>
+
+	<Match FindString="BES_XT_CHOOSEDIR" ReplaceString="BES_XTP_CHOOSEDIR"/>
+	<Match FindString="BES_XT_CHOOSEFILE" ReplaceString="BES_XTP_CHOOSEFILE"/>
+	<Match FindString="BES_XT_POPUPMENU" ReplaceString="BES_XTP_POPUPMENU"/>
+	<Match FindString="BES_XT_BROWSE" ReplaceString="BES_XTP_BROWSE"/>
+	<Match FindString="CPS_XT_NOFILL" ReplaceString="CPS_XTP_NOFILL"/>
+	<Match FindString="CPS_XT_EXTENDED" ReplaceString="CPS_XTP_EXTENDED"/>
+	<Match FindString="CPS_XT_MORECOLORS" ReplaceString="CPS_XTP_MORECOLORS"/>
+	<Match FindString="CPS_XT_SHOW3DSELECTION" ReplaceString="CPS_XTP_SHOW3DSELECTION"/>
+	<Match FindString="CPS_XT_SHOWHEXVALUE" ReplaceString="CPS_XTP_SHOWHEXVALUE"/>
+	<Match FindString="CPS_XT_SHOWEYEDROPPER" ReplaceString="CPS_XTP_SHOWEYEDROPPER"/>
+	<Match FindString="LBS_XT_DEFAULT" ReplaceString="LBS_XTP_DEFAULT"/>
+	<Match FindString="LBS_XT_CHOOSEDIR" ReplaceString="LBS_XTP_CHOOSEDIR"/>
+	<Match FindString="LBS_XT_CHOOSEFILE" ReplaceString="LBS_XTP_CHOOSEFILE"/>
+	<Match FindString="LBS_XT_NOTOOLBAR" ReplaceString="LBS_XTP_NOTOOLBAR"/>
+	<Match FindString="LBS_XT_BROWSE" ReplaceString="LBS_XTP_BROWSE"/>
+	<Match FindString="LBS_XT_HIDE_UP_DOWN" ReplaceString="LBS_XTP_HIDE_UP_DOWN"/>
+	<Match FindString="LBS_XT_ONLY_UP_DOWN" ReplaceString="LBS_XTP_ONLY_UP_DOWN"/>
+	<Match FindString="LBS_XT_BROWSE_ONLY" ReplaceString="LBS_XTP_BROWSE_ONLY"/>
+	<Match FindString="FTS_XT_BOTTOM" ReplaceString="FTS_XTP_BOTTOM"/>
+	<Match FindString="FTS_XT_HASARROWS" ReplaceString="FTS_XTP_HASARROWS"/>
+	<Match FindString="FTS_XT_HASHOMEEND" ReplaceString="FTS_XTP_HASHOMEEND"/>
+	<Match FindString="FTS_XT_TOOLTIPS" ReplaceString="FTS_XTP_TOOLTIPS"/>
+	<Match FindString="FTS_XT_DEFAULT" ReplaceString="FTS_XTP_DEFAULT"/>
+	<Match FindString="FTS_XT_HSCROLL" ReplaceString="FTS_XTP_HSCROLL"/>
+	<Match FindString="FTS_XT_MASK" ReplaceString="FTS_XTP_MASK"/>
+
+	<Match FindString="CPN_XT_SELCHANGE" ReplaceString="CPN_XTP_SELCHANGE"/>
+	<Match FindString="ON_CPN_XT_SELCHANGE" ReplaceString="ON_CPN_XTP_SELCHANGE"/>
+	<Match FindString="CPN_XT_DROPDOWN" ReplaceString="CPN_XTP_DROPDOWN"/>
+	<Match FindString="ON_CPN_XT_DROPDOWN" ReplaceString="ON_CPN_XTP_DROPDOWN"/>
+	<Match FindString="CPN_XT_CLOSEUP" ReplaceString="CPN_XTP_CLOSEUP"/>
+	<Match FindString="ON_CPN_XT_CLOSEUP" ReplaceString="ON_CPN_XTP_CLOSEUP"/>
+	<Match FindString="CPN_XT_SELENDOK" ReplaceString="CPN_XTP_SELENDOK"/>
+	<Match FindString="ON_CPN_XT_SELENDOK" ReplaceString="ON_CPN_XTP_SELENDOK"/>
+	<Match FindString="CPN_XT_SELENDCANCEL" ReplaceString="CPN_XTP_SELENDCANCEL"/>
+	<Match FindString="ON_CPN_XT_SELENDCANCEL" ReplaceString="ON_CPN_XTP_SELENDCANCEL"/>
+	<Match FindString="CPN_XT_SELNOFILL" ReplaceString="CPN_XTP_SELNOFILL"/>
+	<Match FindString="ON_CPN_XT_SELNOFILL" ReplaceString="ON_CPN_XTP_SELNOFILL"/>
+	<Match FindString="BEN_XT_LABELEDITEND" ReplaceString="BEN_XTP_LABELEDITEND"/>
+	<Match FindString="ON_BEN_XT_LABELEDITEND" ReplaceString="ON_BEN_XTP_LABELEDITEND"/>
+	<Match FindString="BEN_XT_LABELEDITCANCEL" ReplaceString="BEN_XTP_LABELEDITCANCEL"/>
+	<Match FindString="ON_BEN_XT_LABELEDITCANCEL" ReplaceString="ON_BEN_XTP_LABELEDITCANCEL"/>
+	<Match FindString="LBN_XT_LABELEDITEND" ReplaceString="LBN_XTP_LABELEDITEND"/>
+	<Match FindString="ON_LBN_XT_LABELEDITEND" ReplaceString="ON_LBN_XTP_LABELEDITEND"/>
+	<Match FindString="LBN_XT_LABELEDITCANCEL" ReplaceString="LBN_XTP_LABELEDITCANCEL"/>
+	<Match FindString="ON_LBN_XT_LABELEDITCANCEL" ReplaceString="ON_LBN_XTP_LABELEDITCANCEL"/>
+	<Match FindString="LBN_XT_NEWITEM" ReplaceString="LBN_XTP_NEWITEM"/>
+	<Match FindString="ON_LBN_XT_NEWITEM" ReplaceString="ON_LBN_XTP_NEWITEM"/>
+	<Match FindString="LBN_XT_PREDELETEITEM" ReplaceString="LBN_XTP_PREDELETEITEM"/>
+	<Match FindString="ON_LBN_XT_PREDELETEITEM" ReplaceString="ON_LBN_XTP_PREDELETEITEM"/>
+	<Match FindString="LBN_XT_DELETEITEM" ReplaceString="LBN_XTP_DELETEITEM"/>
+	<Match FindString="ON_LBN_XT_DELETEITEM" ReplaceString="ON_LBN_XTP_DELETEITEM"/>
+	<Match FindString="LBN_XT_MOVEITEMUP" ReplaceString="LBN_XTP_MOVEITEMUP"/>
+	<Match FindString="ON_LBN_XT_MOVEITEMUP" ReplaceString="ON_LBN_XTP_MOVEITEMUP"/>
+	<Match FindString="LBN_XT_MOVEITEMDOWN" ReplaceString="LBN_XTP_MOVEITEMDOWN"/>
+	<Match FindString="ON_LBN_XT_MOVEITEMDOWN" ReplaceString="ON_LBN_XTP_MOVEITEMDOWN"/>
+	<Match FindString="LBN_XT_PRENEWITEM" ReplaceString="LBN_XTP_PRENEWITEM"/>
+	<Match FindString="ON_LBN_XT_PRENEWITEM" ReplaceString="ON_LBN_XTP_PRENEWITEM"/>
+	<Match FindString="LBN_XT_ONBROWSE" ReplaceString="LBN_XTP_ONBROWSE"/>
+	<Match FindString="ON_LBN_XT_ONBROWSE" ReplaceString="ON_LBN_XTP_ONBROWSE"/>
+	<Match FindString="SON_XT_ITEMEXPANDING" ReplaceString="SON_XTP_ITEMEXPANDING"/>
+	<Match FindString="ON_SON_XT_ITEMEXPANDING" ReplaceString="ON_SON_XTP_ITEMEXPANDING"/>
+	<Match FindString="SON_XT_ITEMEXPAND" ReplaceString="SON_XTP_ITEMEXPAND"/>
+	<Match FindString="ON_SON_XT_ITEMEXPAND" ReplaceString="ON_SON_XTP_ITEMEXPAND"/>
+	<Match FindString="SON_XT_ITEMCONTRACTING" ReplaceString="SON_XTP_ITEMCONTRACTING"/>
+	<Match FindString="ON_SON_XT_ITEMCONTRACTING" ReplaceString="ON_SON_XTP_ITEMCONTRACTING"/>
+	<Match FindString="SON_XT_ITEMCONTRACT" ReplaceString="SON_XTP_ITEMCONTRACT"/>
+	<Match FindString="ON_SON_XT_ITEMCONTRACT" ReplaceString="ON_SON_XTP_ITEMCONTRACT"/>
+
+	<Match FindString="XTWM_OUTBAR_NOTIFY" ReplaceString="XTWM_OUTBAR_NOTIFY"/>
+	<Match FindString="OBN_XT_ITEMCLICK" ReplaceString="OBN_XTP_ITEMCLICK"/>     
+	<Match FindString="OBN_XT_ONLABELENDEDIT" ReplaceString="OBN_XTP_ONLABELENDEDIT"/>
+	<Match FindString="OBN_XT_ONGROUPENDEDIT" ReplaceString="OBN_XTP_ONGROUPENDEDIT"/>
+	<Match FindString="OBN_XT_DRAGITEM" ReplaceString="OBN_XTP_DRAGITEM"/>      
+	<Match FindString="OBN_XT_FOLDERCHANGE" ReplaceString="OBN_XTP_FOLDERCHANGE"/>  
+	<Match FindString="OBN_XT_ITEMHOVER" ReplaceString="OBN_XTP_ITEMHOVER"/>     
+	<Match FindString="OBN_XT_DELETEITEM" ReplaceString="OBN_XTP_DELETEITEM"/>    
+	<Match FindString="OBN_XT_DELETEFOLDER" ReplaceString="OBN_XTP_DELETEFOLDER"/>  
+	<Match FindString="OBN_XT_BEGINDRAG" ReplaceString="OBN_XTP_BEGINDRAG"/>     
+	<Match FindString="OBN_XT_ITEMRCLICK" ReplaceString="OBN_XTP_ITEMRCLICK"/>    
+
+	<Match FindString="XTWM_SHELL_NOTIFY" ReplaceString="WM_XTP_SHELL_NOTIFY"/>
+	<Match FindString="SHN_XT_SHELLMENU" ReplaceString="SHN_XTP_SHELLMENU"/>
+	<Match FindString="SHN_XT_TREESELCHANGE" ReplaceString="SHN_XTP_TREESELCHANGE"/>
+	<Match FindString="SHN_XT_SELECTCHILD" ReplaceString="SHN_XTP_SELECTCHILD"/>
+	<Match FindString="SHN_XT_NOFOLDER" ReplaceString="SHN_XTP_NOFOLDER"/>
+	<Match FindString="SHN_XT_INETFOLDER" ReplaceString="SHN_XTP_INETFOLDER"/>
+	<Match FindString="SHN_XT_CONTENTSCHANGED" ReplaceString="SHN_XTP_CONTENTSCHANGED"/>
+	<Match FindString="SHN_XT_REFRESHFOLDER" ReplaceString="SHN_XTP_REFRESHFOLDER"/>
+	<Match FindString="SHN_XT_REFRESHTREE" ReplaceString="SHN_XTP_REFRESHTREE"/>
+
+	<Match FindString="TIN_XT_TRAYICON" ReplaceString="TIN_XTP_TRAYICON"/>
+	<Match FindString="CPWN_XT_PUSHPINBUTTON" ReplaceString="CPN_XTP_PUSHPINBUTTON"/>
+	<Match FindString="CPWN_XT_PUSHPINCANCEL" ReplaceString="CPN_XTP_PUSHPINCANCEL"/>
+	<Match FindString="TCN_XT_SELCHANGE" ReplaceString="TCN_SELCHANGE"/>  
+	<Match FindString="TCN_XT_SELCHANGING" ReplaceString="TCN_SELCHANGING"/>
+	<Match FindString="XTWM_UPDATECOLOR" ReplaceString="WM_XTP_UPDATECOLOR"/>
+	<Match FindString="XTWM_COLORDBLCLK" ReplaceString="WM_XTP_COLORDBLCLK"/>
+	<Match FindString="XTWM_EYEDROPPER_MOVING" ReplaceString="WM_XTP_EYEDROPPER_MOVING"/>
+	<Match FindString="XTWM_EYEDROPPER_SELECT" ReplaceString="WM_XTP_EYEDROPPER_SELECT"/>
+
+	<Match FindString="XTTHEME_WINXPTHEMES" ReplaceString="HDR_XTP_WINDEF"/>
+	<Match FindString="XTTHEME_HOTTRACKING" ReplaceString="HDR_XTP_HOTTRACKING"/>
+	<Match FindString="XTTHEME_SORTARROW" ReplaceString="HDR_XTP_SORTARROW"/>
+
+	<Match FindString="XT_SPLIT_DOTTRACKER" ReplaceString="XTP_SPLIT_DOTTRACKER"/>
+	<Match FindString="XT_SPLIT_NOFULLDRAG" ReplaceString="XTP_SPLIT_NOFULLDRAG"/>
+	<Match FindString="XT_SPLIT_NOBORDER" ReplaceString="XTP_SPLIT_NOBORDER"/>  
+	<Match FindString="XT_SPLIT_NOSIZE" ReplaceString="XTP_SPLIT_NOSIZE"/>    
+
+	<Match FindString="TWS_XT_THICKBORDER" ReplaceString="TWS_XTP_THICKBORDER"/> 
+	<Match FindString="TWS_XT_DROPSHADOW" ReplaceString="TWS_XTP_DROPSHADOW"/>  
+	<Match FindString="TWS_XT_ALPHASHADOW" ReplaceString="TWS_XTP_ALPHASHADOW"/> 
+</Grep>
