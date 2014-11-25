@@ -10,10 +10,10 @@
 #include <atldbcli.h>
 #import "C:\Program Files (x86)\Common Files\System\ado\msado60.tlb" no_namespace rename("EOF", "adoEOF")// rename( "EOF", "adoEOF" )
 
-#include "EcoDatabaseRecordSet.h"
+#include "EcoWASDatabaseRecordSet.h"
 #include "EcoDatabaseManagerDefine.h"
 
-class AFX_EXT_API CDataBaseManager
+class AFX_EXT_API CEcoWASDataBaseManager
 {
 public:
 	int							m_nCurDB;
@@ -41,9 +41,9 @@ public:
 	_CommandPtr m_pComm;
 	CString m_strConnDBName;
 public:
-	CDataBaseManager(int nCurDB = DB_MYSQL);
+	CEcoWASDataBaseManager(int nCurDB = DB_MYSQL);
 public:
-	~CDataBaseManager(void);
+	~CEcoWASDataBaseManager(void);
 
 public:
 	void SetDatabase(int nCurDB);
