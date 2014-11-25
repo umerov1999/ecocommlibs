@@ -48,6 +48,10 @@ public:
 public:
 	void SetDatabase(int nCurDB);
 
+private:
+	BOOL FileToCString(CString strFilePathName, CString& strRetData, DWORD& nRetLen);
+	BOOL CStringToFile(CString& strData, CString strFilePathName);
+
 public:
 	//유틸
 	void Compress(CString lpcsSrcFile, CString lpcsDesFile, bool bCompress, int nBitsPerSample = 18);
@@ -103,7 +107,7 @@ public:
 
 public:
 //DB생성
-	int CreateDatabase(CString db_name, CString group);
+	int CreateDatabase(CString strDBName, CString strShipNo, CString group);
 	int CreateUpdateInfoDB();
 	int CreateShipNoDB();
 	int	CreateConCurrentInfoDB();
@@ -174,7 +178,7 @@ public:
 	int SelectShipNoInfoTB_WithOut_Blob(CString where_condition, CArray<CShipNoInfoRecordSet, CShipNoInfoRecordSet&> *record_list);
 	int SelectShipNoInfoTB_With_Blob(CString where_condition, CArray<CShipNoInfoRecordSet, CShipNoInfoRecordSet&> *record_list);
 	int GetGenTab(CString file_path, UINT groupID, UINT shipnoID, CArray<CString, CString&>* arrGenTabPath = NULL);
-	int UpdateToGenTab(CString file_path, CString project_group, CString ship_no);
+	int UpdateToGenTab(CString file_path, CString project_group, CString ship_no, DWORD* fileSize = NULL);
 	int GetShipNoID(CString project_group, CString ship_no, UINT* groupID, UINT* shipnoID);
 	int GetShipNoList(CArray<CShipNoInfoRecordSet, CShipNoInfoRecordSet&> *record_list);
 	CArray<SHIP_NO_INFO, SHIP_NO_INFO> m_ship_no_list;

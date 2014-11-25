@@ -3641,8 +3641,8 @@ public:
 			ar & stdStr;
 			m_edge_list_up_down_path = CStringConverter::CStringAToCStringW(stdStr.c_str());
 			ar & m_edge_list_size;
-			m_projection_type = CStringConverter::CStringAToCStringW(stdStr.c_str());
 			ar & stdStr;
+			m_projection_type = CStringConverter::CStringAToCStringW(stdStr.c_str());
 		}
 	}
 
