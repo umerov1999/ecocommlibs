@@ -663,5 +663,14 @@ public:
 	int SelectHierarchytreeTB(CString project_group, CString ship_no, CString where_str, CArray<CEcoModelHierarchytreeRecordSet, CEcoModelHierarchytreeRecordSet&>* record_list);
 	int InsertHierarchytreeTB(CString project_group, CString ship_no, CEcoModelHierarchytreeRecordSet* record_list);
 
+//-->2014-11-20 최조영 JT관련 코드 추가 (현대전용)
+public:
+	int SelectJTModelShipNoInfoTB_HHI(CArray<CString, CString&>* arryship_no);
+	int SelectJTModelListInfoTB_HHI(CString ship_no, CMap<CString, LPCTSTR, CString, LPCTSTR>* model_list_map);
+	int SelectJTFilePathLIstTB_HHT(CString strShip_no, CArray<CString, CString&>* arrModelList, CArray<CString, CString&>* arrModelPathList);
+//<--2014-11-20 최조영 JT관련 코드 추가
+
+
+
 };
 
