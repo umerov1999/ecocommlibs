@@ -56,8 +56,8 @@ public:
 	void TokenizeMmatrixString(CString stream, double* matrix);	//-->하남국-20120826-03-584
 	CString MakeStringFromPosition(HPoint val);
 	void complete_log(CString strlog);
-	//CString ConvertUsrVarPropIDToString(UINT nIdentifier);
-	//UINT ConvertUsrVarPropStringToID(CString strIdentifier);
+	CString ConvertUsrVarPropIDToString(UINT nIdentifier);
+	UINT ConvertUsrVarPropStringToID(CString strIdentifier);
 
 public:
 	//테이블 스킴 변경관련
