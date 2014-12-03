@@ -309,7 +309,9 @@ class CPKUserIDWhere
 public:
 	CPKUserIDWhere(void)
 	{
-
+		m_strUserID = _T("");
+		m_strPwd = _T("");
+		m_strWhere = _T("");
 	}
 	~CPKUserIDWhere(void)
 	{
@@ -319,6 +321,7 @@ public:
 	CPKUserIDWhere& operator = (const CPKUserIDWhere &other)
 	{
 		m_strUserID = other.m_strUserID;
+		m_strPwd = other.m_strPwd;
 		m_strWhere = other.m_strWhere;
 		return *this;
 	}
@@ -336,6 +339,8 @@ public:
 		{
 			stdStr = CStringConverter::CStringWToCStringA(m_strUserID);
 			ar & stdStr;
+			stdStr = CStringConverter::CStringWToCStringA(m_strPwd);
+			ar & stdStr;
 			stdStr = CStringConverter::CStringWToCStringA(m_strWhere);
 			ar & stdStr;
 		}
@@ -343,6 +348,8 @@ public:
 		{
 			ar & stdStr;
 			m_strUserID = CStringConverter::CStringAToCStringW(stdStr.c_str());
+			ar & stdStr;
+			m_strPwd = CStringConverter::CStringAToCStringW(stdStr.c_str());
 			ar & stdStr;
 			m_strWhere = CStringConverter::CStringAToCStringW(stdStr.c_str());
 		}
@@ -352,11 +359,13 @@ public:
 	void Init(void)
 	{
 		m_strUserID = _T("");
+		m_strPwd = _T("");
 		m_strWhere = _T("");
 	}
 
 public:
 	CString m_strUserID;
+	CString m_strPwd;
 	CString m_strWhere;
 };
 
@@ -804,6 +813,8 @@ public:
 		CPKUserIDWhere::serialize(ar, version, bSendNRecv);
 		if(bSendNRecv == TRUE)
 		{
+			ar & m_bAdmin;
+
 			m_userInfoRS.serialize(ar, version, bSendNRecv);
 
 			m_nUserInfoRSCnt = m_arrUserInfoRS.GetCount();
@@ -813,6 +824,8 @@ public:
 		}
 		else
 		{
+			ar & m_bAdmin;
+
 			m_userInfoRS.serialize(ar, version, bSendNRecv);
 
 			ar & m_nUserInfoRSCnt;
@@ -829,6 +842,7 @@ public:
 	void Init(void)
 	{
 		CPKUserIDWhere::Init();
+		m_bAdmin = FALSE;
 		m_nUserInfoRSCnt = 0;
 		m_arrUserInfoRS.RemoveAll();
 	}
@@ -837,6 +851,7 @@ private:
 	int m_nUserInfoRSCnt;
 
 public:
+	BOOL m_bAdmin;
 	CUserInfoRecordSet m_userInfoRS;
 	CArray<CUserInfoRecordSet, CUserInfoRecordSet&> m_arrUserInfoRS;
 };
@@ -3754,6 +3769,8 @@ public:
 			other.m_mapPanelList.GetNextAssoc(pos, key, val);
 			m_mapPanelList.SetAt(key, val);
 		}
+
+		m_arrModelRS.Copy(other.m_arrModelRS);
 		
 		return *this;
 	}
@@ -3836,6 +3853,12 @@ public:
 				ar & stdStr;
 				ar & val;
 			}
+
+			m_nModelRSCnt = m_arrModelRS.GetCount();
+			ar & m_nModelRSCnt;
+			for(int i = 0; i < m_nModelRSCnt; i++)
+				m_arrModelRS.GetAt(i).serialize(ar, version, bSendNRecv);
+
 		}
 		else
 		{
@@ -3907,6 +3930,15 @@ public:
 				ar & val;
 				m_mapPanelList.SetAt(key, val);
 			}
+
+			ar & m_nModelRSCnt;
+			CEcoModelRecordSet modelRS;
+			m_arrModelRS.RemoveAll();
+			for(int i = 0; i < m_nModelRSCnt; i++)
+			{
+				modelRS.serialize(ar, version, bSendNRecv);
+				m_arrModelRS.Add(modelRS);
+			}
 		}
 	}
 
@@ -3938,6 +3970,8 @@ public:
 		m_arrPanelList.RemoveAll();
 		m_nMapPanelListCnt = 0;
 		m_mapPanelList.RemoveAll();
+		m_nModelRSCnt = 0;
+		m_arrModelRS.RemoveAll();
 	}
 
 private:
@@ -3945,6 +3979,7 @@ private:
 	int m_nExceptionListCnt;
 	int m_nPanelListCnt;
 	int m_nMapPanelListCnt;
+	int m_nModelRSCnt;
 
 public:
 	CString m_strModelType;
@@ -3967,6 +4002,7 @@ public:
 	CArray<CString, CString&> m_arrExceptionList;
 	CArray<UPDATE_MODEL_INFO, UPDATE_MODEL_INFO&> m_arrPanelList;
 	CMap<CString, LPCTSTR, int, int> m_mapPanelList;
+	CArray<CEcoModelRecordSet, CEcoModelRecordSet&> m_arrModelRS;
 };
 
 class CPKTribonToEcoModel : public CPKShipNo

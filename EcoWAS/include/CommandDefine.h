@@ -74,6 +74,8 @@
 #define				PKCMD_DeleteUserInfoTB						702
 #define				PKCMD_SelectUserInfoTB						703
 #define				PKCMD_CheckUserPriv							704
+#define				PKCMD_CheckUserPriv_PWD						705
+#define				PKCMD_CheckSuperAdmin						706
 
 //tb_shipno_info
 #define				PKCMD_DeleteShipNoInfoTB					800
@@ -316,6 +318,7 @@
 #define				PKCMD_InsertBlockPropertyTB						4701
 #define				PKCMD_UpdateBlockPropertyTB						4702
 #define				PKCMD_SelectBlockPropertyTB						4703
+#define				PKCMD_DeleteAllBlockPropertyTB					4704
 
 // tb_shipno_property
 #define				PKCMD_DeleteShipnoPropertyTB					4800
@@ -370,14 +373,16 @@
 #define				PKCMD_DeleteAllModel							5504
 //select
 #define				PKCMD_GetModelFromModelServer					5505
-#define				PKCMD_GetOtherCadModelFromModelServer			5506
-#define				PKCMD_GetModelListFromModelServer				5507
-#define				PKCMD_ModelTypetoQindex							5508
+#define				PKCMD_GetModelFromModelServerByHsf				5506
+#define				PKCMD_GetOtherCadModelFromModelServer			5507
+#define				PKCMD_GetModelListFromModelServer				5508
+#define				PKCMD_ModelTypetoQindex							5509
+
 //insert
-#define				PKCMD_InsertModelAfterDeleteByQIndex			5509
+#define				PKCMD_InsertModelAfterDeleteByQIndex			5510
 //Revision
-#define				PKCMD_CompareRevisionDate						5510
-#define				PKCMD_DeleteModelByRevision						5511
+#define				PKCMD_CompareRevisionDate						5511
+#define				PKCMD_DeleteModelByRevision						5512
 
 
 // table복사관련 함수 추가
