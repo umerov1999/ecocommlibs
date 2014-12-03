@@ -7,9 +7,14 @@
 /*-----------------------------------------------------------------------
 
 /* Definition of Data Prototype */
-//#include "HGlobals.h"
-//#include "StdAfx.h"
+//
+//
+#if defined(ECOTERMINALTBCLIENT) || defined(ECO_SERVER_MANAGER)
+#include "StdAfx.h"
+#include "HUtility.h"
+#else
 #include "HPoint.h"
+#endif
 
 typedef struct _object_property
 {

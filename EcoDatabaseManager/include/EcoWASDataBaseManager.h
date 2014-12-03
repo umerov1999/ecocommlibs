@@ -51,6 +51,7 @@ public:
 private:
 	BOOL FileToCString(CString strFilePathName, CString& strRetData, DWORD& nRetLen);
 	BOOL CStringToFile(CString& strData, CString strFilePathName);
+	CString ConvertOneDBQuery(CString strWhere, UINT nShipNoID);
 
 public:
 	//À¯Æ¿
@@ -92,7 +93,7 @@ public:
 	//int SendQuery(const char* query, MYSQL_RES*& pRs);
 	int SendQuery(CString query, _RecordsetPtr& pRs);
 	int DoUpdateQuery(CString db_name, CString table_name, CString update_syntax, CString where_syntax);
-	int CheckSuperAdmin(CString id, bool* bSuperAdmin);
+	
 
 public:
 	//tb_ecomodel_error_list
@@ -170,6 +171,8 @@ public:
 	int DeleteUserInfoTB(CString user_id);
 	int SelectUserInfoTB(CString where_condition, CArray<CUserInfoRecordSet, CUserInfoRecordSet&> *user_info_record);
 	int CheckUserPriv(CString user_id, CUserInfoRecordSet* record);
+	int CheckUserPriv(CString user_id, CString strPwd, CUserInfoRecordSet* record);
+	int CheckSuperAdmin(CString id, BOOL* bSuperAdmin);
 
 	//tb_shipno_info
 public:
@@ -535,6 +538,7 @@ public:
 // tb_block_property
 public:
 	int DeleteBlockPropertyTB(CString project_group, CString ship_no, UINT id);
+	int DeleteAllBlockPropertyTB(CString project_group, CString ship_no, CString strWhere);
 	int InsertBlockPropertyTB(CString project_group, CString ship_no,
 		CArray<CBlockPropertyRecordSet, CBlockPropertyRecordSet&> *record_list);
 	int UpdateBlockPropertyTB(CString project_group, CString ship_no,
@@ -621,6 +625,7 @@ public:
 
 	//select
 	int GetModelFromModelServer(CString project_group, CString ship_no, CString model_type, CString side, CString query_str, CArray<CString, CString&>* exception_list, CString query_type, CString download_path, CArray<CString, CString&>* pArrcontourPath = NULL);
+	int GetModelFromModelServerByHsf(CString project_group, CString ship_no, CString model_type, CString side, CString query_str, CArray<CString, CString&>* exception_list, CString query_type, CString download_path, CArray<CEcoModelRecordSet, CEcoModelRecordSet&>* model_record_list);
 	int GetOtherCadModelFromModelServer(CString project_group, CString ship_no, CString query_str, CString download_path);
 	int GetModelListFromModelServer(CString project_group, CString ship_no, CString model_type, CString side, CString query_str, CString query_type, CArray<CString, CString&>* model_list);
 
