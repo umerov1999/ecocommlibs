@@ -1,5 +1,5 @@
 #pragma once
-class CEcoServerBinary
+class AFX_EXT_API CEcoServerBinary
 {
 public:
 	CEcoServerBinary(void);
@@ -226,6 +226,10 @@ public:
 	CString GetNasVentilationContourPathName(CString strModelName);
 	CString GetNasVentilationDataPathName(CString strModelName);
 	CString GetNasMEIModelPathName(int iNicktable, CString strModelName);
+
+
+public:
+	BOOL CreateDirectory(CString strLocalDir);
 	
 };
 

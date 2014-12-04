@@ -378,7 +378,8 @@ class CPKCreateTable : public CPKShipNo
 public:
 	CPKCreateTable(void)
 	{
-
+		m_strDB = _T("");
+		m_bExistShipNo = FALSE;
 	}
 	~CPKCreateTable(void)
 	{
@@ -388,7 +389,8 @@ public:
 	CPKCreateTable& operator = (const CPKCreateTable &other)
 	{
 		CPKShipNo::operator=(other);
-
+		m_strDB = other.m_strDB;
+		m_bExistShipNo = other.m_bExistShipNo;
 		return *this;
 	}
 
@@ -402,13 +404,34 @@ public:
 	{
 		CPKShipNo::serialize(ar, version, bSendNRecv);
 
+		std::string stdStr;
+		if(bSendNRecv == TRUE)
+		{
+			stdStr = CStringConverter::CStringWToCStringA(m_strDB);
+			ar & stdStr;
+
+			ar & m_bExistShipNo;
+		}
+		else
+		{
+			ar & stdStr;
+			m_strDB = CStringConverter::CStringAToCStringW(stdStr.c_str());
+
+			ar & m_bExistShipNo;
+		}
 	}
 
 public:
 	void Init(void)
 	{
 		CPKShipNo::Init();
+		m_strDB = _T("");
+		m_bExistShipNo = FALSE;
 	}
+
+public:
+	CString m_strDB;
+	BOOL m_bExistShipNo;
 };
 
 class CPKDuplicateData : public CPKWhere
@@ -558,6 +581,7 @@ public:
 		CPKIDInherit::operator=(other);
 		m_nShipNoGroup = other.m_nShipNoGroup;
 		m_nShipNo = other.m_nShipNo;
+		m_bActive = other.m_bActive;
 		m_strFilePath = other.m_strFilePath;
 		m_arrShipNoInfo.Copy(other.m_arrShipNoInfo);
 		return *this;
@@ -578,6 +602,7 @@ public:
 		{
 			ar & m_nShipNoGroup;
 			ar & m_nShipNo;
+			ar & m_bActive;
 			stdStr = CStringConverter::CStringWToCStringA(m_strFilePath);
 			ar & stdStr;
 
@@ -590,6 +615,7 @@ public:
 		{
 			ar & m_nShipNoGroup;
 			ar & m_nShipNo;
+			ar & m_bActive;
 			ar & stdStr;
 			m_strFilePath = CStringConverter::CStringAToCStringW(stdStr.c_str());
 
@@ -609,6 +635,7 @@ public:
 		CPKIDInherit::Init();
 		m_nShipNoGroup = 0;
 		m_nShipNo = 0;
+		m_bActive = FALSE;
 		m_strFilePath = _T("");
 		m_nShipNoInfoCnt = 0;
 		m_arrShipNoInfo.RemoveAll();
@@ -620,6 +647,7 @@ private:
 public:
 	UINT m_nShipNoGroup;
 	UINT m_nShipNo;
+	BOOL m_bActive;
 	CString m_strFilePath;
 	CArray<CShipNoInfoRecordSet, CShipNoInfoRecordSet&> m_arrShipNoInfo;
 };
@@ -872,6 +900,7 @@ public:
 	{
 		CPKWhere::operator=(other);
 		m_strFileName = other.m_strFileName;
+		m_strPlatform = other.m_strPlatform;
 		m_arrAutoUpdateFileRS.Copy(other.m_arrAutoUpdateFileRS);
 		return *this;
 	}
@@ -892,6 +921,9 @@ public:
 			stdStr = CStringConverter::CStringWToCStringA(m_strFileName);
 			ar & stdStr;
 
+			stdStr = CStringConverter::CStringWToCStringA(m_strPlatform);
+			ar & stdStr;
+
 			m_nAutoUpdateFileRSCnt = m_arrAutoUpdateFileRS.GetCount();
 			ar & m_nAutoUpdateFileRSCnt;
 			for(int i = 0; i < m_nAutoUpdateFileRSCnt; i++)
@@ -901,6 +933,9 @@ public:
 		{
 			ar & stdStr;
 			m_strFileName = CStringConverter::CStringAToCStringW(stdStr.c_str());
+
+			ar & stdStr;
+			m_strPlatform = CStringConverter::CStringAToCStringW(stdStr.c_str());
 
 			ar & m_nAutoUpdateFileRSCnt;
 			CAutoUpdateFileRercordSet rs; m_arrAutoUpdateFileRS.RemoveAll();
@@ -917,6 +952,7 @@ public:
 	{
 		CPKWhere::Init();
 		m_strFileName = _T("");
+		m_strPlatform = _T("");
 		m_nAutoUpdateFileRSCnt = 0;
 		m_arrAutoUpdateFileRS.RemoveAll();
 	}
@@ -926,6 +962,7 @@ private:
 
 public:
 	CString m_strFileName;
+	CString m_strPlatform;
 	CArray<CAutoUpdateFileRercordSet, CAutoUpdateFileRercordSet&> m_arrAutoUpdateFileRS;
 };
 

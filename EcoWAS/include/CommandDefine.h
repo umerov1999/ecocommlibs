@@ -84,10 +84,11 @@
 #define				PKCMD_SelectShipNoInfoTB_With_Blob			803
 #define				PKCMD_GetGenTab								804
 #define				PKCMD_UpdateToGenTab						805
-#define				PKCMD_GetShipNoID							806
-#define				PKCMD_GetShipNoList							807
-#define				PKCMD_GetTbShipNoData						808
-#define				PKCMD_ExistShipInfo							809
+#define				PKCMD_UpdateToActive						806
+#define				PKCMD_GetShipNoID							807
+#define				PKCMD_GetShipNoList							808
+#define				PKCMD_GetTbShipNoData						809
+#define				PKCMD_ExistShipInfo							810
 
 // tb_drawing_template
 #define				PKCMD_UpdateTemplateTB						900
@@ -297,6 +298,7 @@
 #define				PKCMD_InsertVariableOfGroupTB					4403
 #define				PKCMD_UpdateVariableOfGroupTB					4404
 #define				PKCMD_SelectVariableOfGroupTB					4405
+#define				PKCMD_SelectLastInsertIDVariableOfGroupTB		4406
 
 // tb_user_variable
 #define				PKCMD_DeleteUserVariableTB						4500
@@ -347,9 +349,10 @@
 
 // tb_auto_update_file
 #define				PKCMD_DeleteAutoUpdateFileTB					5200
-#define				PKCMD_InsertAutoUpdateFileTB					5201
-#define				PKCMD_SelectAutoUpdateFileTB_WithOut_Blob		5202
-#define				PKCMD_SelectAutoUpdateFileTB_With_Blob			5203
+#define				PKCMD_DeleteAutoUpdateFileTB_Platform			5201
+#define				PKCMD_InsertAutoUpdateFileTB					5202
+#define				PKCMD_SelectAutoUpdateFileTB_WithOut_Blob		5203
+#define				PKCMD_SelectAutoUpdateFileTB_With_Blob			5204
 
 //tb_concurrent_info ฐüทร
 #define				PKCMD_GetFeatureID								5300

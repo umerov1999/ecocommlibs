@@ -26,9 +26,10 @@ private:
 	int m_nSocketPort;
 
 private:
-	CEcoServerBinary m_ecoServerBinary;
 	CEcoSocketClientManager m_ecoSocketClient;
 	CEcoWebConnector m_ecoWebConnector;
+public:
+	CEcoServerBinary m_ecoServerBinary;
 
 private:
 	BOOL SendCommand(CEcoPacket& sendPacket, CEcoPacket& recvPacket);
@@ -94,7 +95,7 @@ public:
 
 public:
 //DB생성
-	int CreateDatabase(CString db_name, CString group);
+	int CreateDatabase(CString strDBName, CString strShipNo, CString strGroup);
 	int CreateUpdateInfoDB();
 	int CreateShipNoDB();
 	int	CreateConCurrentInfoDB();
@@ -168,13 +169,13 @@ public:
 	int SelectShipNoInfoTB_With_Blob(CString where_condition, CArray<CShipNoInfoRecordSet, CShipNoInfoRecordSet&> *record_list);
 	int GetGenTab(CString file_path, UINT groupID, UINT shipnoID);
 	int UpdateToGenTab(CString file_path, CString project_group, CString ship_no);
+	int UpdateToActive(CString strWhere, BOOL bActive);
 	int GetShipNoID(CString project_group, CString ship_no, UINT* groupID, UINT* shipnoID);
 	int GetShipNoList(CArray<CShipNoInfoRecordSet, CShipNoInfoRecordSet&> *record_list);
 	CArray<SHIP_NO_INFO, SHIP_NO_INFO> m_ship_no_list;
 	int GetTbShipNoData();
 	bool ExistShipInfo(CString project_group, CString ship_no);
-	//	int GetEmProjectInfo(CString project_group, CString ship_no, CString model_type, CString* active, CString* create_date, CString* update_date);
-	//	int GetEmProjectInfo(UINT nShipNoID, CString project_group, CString ship_no, CString model_type, CString* active, CString* create_date, CString* update_date);
+	//int GetEmProjectInfo(UINT nShipNoID, CString project_group, CString ship_no, CString model_type, CString* active, CString* create_date, CString* update_date);
 
 	// tb_drawing_template
 public:
@@ -486,6 +487,7 @@ public:
 		CArray<CVariableOfGroupRecordSet, CVariableOfGroupRecordSet&> *record_list);
 	int SelectVariableOfGroupTB(CString project_group, CString ship_no, 
 		CString where_condition, CArray<CVariableOfGroupRecordSet, CVariableOfGroupRecordSet&> *record_list);
+	int SelectLastInsertIDVariableOfGroupTB(CString project_group, CString ship_no, UINT& id);
 //<--하남국-20131113
 
 
@@ -569,6 +571,7 @@ public:
 // tb_auto_update_file
 public:
 	int DeleteAutoUpdateFileTB(CString file_name);
+	int DeleteAutoUpdateFileTB(CString file_name, CString strPlatform);
 	int InsertAutoUpdateFileTB(CArray<CAutoUpdateFileRercordSet, CAutoUpdateFileRercordSet&> *record_list);
 	int SelectAutoUpdateFileTB_WithOut_Blob(CString where_str, CArray<CAutoUpdateFileRercordSet, CAutoUpdateFileRercordSet&> *record_list);
 	int SelectAutoUpdateFileTB_With_Blob(CString where_str, CArray<CAutoUpdateFileRercordSet, CAutoUpdateFileRercordSet&> *record_list);
