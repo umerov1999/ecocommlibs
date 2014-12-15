@@ -9,7 +9,7 @@
 /* Definition of Data Prototype */
 //
 //
-#if defined(ECOTERMINALTBCLIENT) || defined(ECO_SERVER_MANAGER) || defined(ECO_BLOCK_G2_FOR_SERVER) || defined(ECO_OTS_G2_FOR_SERVER)
+#if defined(ECOTERMINALTBCLIENT) || defined(ECO_SERVER_MANAGER) || defined(ECO_BLOCK_G1) || defined(ECO_BLOCK_G2_FOR_CLIENT) || defined(ECO_BLOCK_G3_FOR_CLIENT) || defined(ECO_BLOCK_G2_FOR_SERVER) || defined(ECO_OTS_G1) || defined(ECO_OTS_G2_FOR_CLIENT) || defined(ECO_OTS_G3_FOR_CLIENT) || defined(ECO_OTS_G2_FOR_SERVER)
 #include "StdAfx.h"
 #include "HUtility.h"
 #else
