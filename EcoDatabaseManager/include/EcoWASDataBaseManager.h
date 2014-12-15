@@ -51,7 +51,10 @@ public:
 private:
 	BOOL FileToCString(CString strFilePathName, CString& strRetData, DWORD& nRetLen);
 	BOOL CStringToFile(CString& strData, CString strFilePathName);
+
+public:
 	CString ConvertOneDBQuery(CString strWhere, UINT nShipNoID);
+	CString ConvertOneDBQuery(CString strWhere, CArray<UINT, UINT>* arrFIDs);
 
 public:
 	//À¯Æ¿
@@ -168,6 +171,7 @@ public:
 public:
 	int InsertUserInfoTB(CArray<CUserInfoRecordSet, CUserInfoRecordSet&> *user_info_record);
 	int UpdateUserGrant(CArray<CUserInfoRecordSet, CUserInfoRecordSet&> *user_info_record);
+	int UpdateUserInfo(CArray<CUserInfoRecordSet, CUserInfoRecordSet&> *user_info_record);
 	int DeleteUserInfoTB(CString user_id);
 	int SelectUserInfoTB(CString where_condition, CArray<CUserInfoRecordSet, CUserInfoRecordSet&> *user_info_record);
 	int CheckUserPriv(CString user_id, CUserInfoRecordSet* record);
@@ -194,6 +198,7 @@ public:
 	// tb_drawing_template
 public:
 	int UpdateTemplateTB(CArray<CTemplateTbRecordSet, CTemplateTbRecordSet&> *template_record, CString user_id);
+	int UpdateTemplateTB_Description(CString strWhere, CString strDescription);
 	int SelectTemplateTB_WithOut_Blob(CString where_condition, CArray<CTemplateTbRecordSet, CTemplateTbRecordSet&> *template_record);
 	int SelectTemplateTB_With_Blob(CString where_condition, CArray<CTemplateTbRecordSet, CTemplateTbRecordSet&> *template_record);
 	int SelectTemplateTB_Category(CArray<CTemplateTbRecordSet, CTemplateTbRecordSet&> *template_record);
@@ -361,6 +366,7 @@ public:
 	int SelectEcoOtsProjectTB_With_Blob(CString project_group, CString ship_no, 
 		CString where_condition, CArray<CEcoOtsProjectRecordSet, CEcoOtsProjectRecordSet&> *record_list);
 	int SelectLastInsertIDEcoOtsProjectTB(CString project_group, CString ship_no, UINT& id);
+	int SelectLastInsertIDEcoOtsProjectTBByIdentCurrent(CString project_group, CString ship_no, UINT& id);
 
 // tb_ecoots_block_list
 public:

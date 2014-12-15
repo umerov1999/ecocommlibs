@@ -25,6 +25,9 @@ private:
 	CString m_strEcoTmpRootPath;
 	int m_nSocketPort;
 
+	BOOL m_bConnected;
+	BOOL m_bExternConnect;
+
 private:
 	CEcoSocketClientManager m_ecoSocketClient;
 	CEcoWebConnector m_ecoWebConnector;
@@ -36,7 +39,7 @@ private:
 
 public:
 	BOOL ConnectWAS();
-	void DisConnectWAS();
+	void DisConnectWAS(BOOL bMust = FALSE);
 	void SetUserInfo(CString strUserID, CString strPwd = _T(""));
 	void SetSocketPort(int nPort);
 	void SetEcoWASUrl(CString strWASUrl);
@@ -59,6 +62,7 @@ public:
 	void complete_log(CString strlog);
 	CString ConvertUsrVarPropIDToString(UINT nIdentifier);
 	UINT ConvertUsrVarPropStringToID(CString strIdentifier);
+	CString ConvertOneDBQuery(CString strWhere, CArray<UINT, UINT>* arrFIDs);
 
 public:
 	//테이블 스킴 변경관련
@@ -69,9 +73,9 @@ public:
 
 public:
 	//트렌젝션 관련
-// 	int BeginTransaction();
-// 	int RollBackTransaction();
-// 	int CommitTransaction();
+	int BeginTransaction();
+	int RollBackTransaction();
+	int CommitTransaction();
 
 public:
 	//DB 관련
@@ -155,6 +159,7 @@ public:
 public:
 	int InsertUserInfoTB(CArray<CUserInfoRecordSet, CUserInfoRecordSet&> *user_info_record);
 	int UpdateUserGrant(CArray<CUserInfoRecordSet, CUserInfoRecordSet&> *user_info_record);
+	int UpdateUserInfo(CArray<CUserInfoRecordSet, CUserInfoRecordSet&> *user_info_record);
 	int DeleteUserInfoTB(CString user_id);
 	int SelectUserInfoTB(CString where_condition, CArray<CUserInfoRecordSet, CUserInfoRecordSet&> *user_info_record);
 	int CheckUserPriv(CString user_id, CUserInfoRecordSet* record);
@@ -180,6 +185,7 @@ public:
 	// tb_drawing_template
 public:
 	int UpdateTemplateTB(CArray<CTemplateTbRecordSet, CTemplateTbRecordSet&> *template_record, CString user_id);
+	int UpdateTemplateTB_Description(CString strWhere, CString strDescription);
 	int SelectTemplateTB_WithOut_Blob(CString where_condition, CArray<CTemplateTbRecordSet, CTemplateTbRecordSet&> *template_record);
 	int SelectTemplateTB_With_Blob(CString where_condition, CArray<CTemplateTbRecordSet, CTemplateTbRecordSet&> *template_record);
 	int SelectTemplateTB_Category(CArray<CTemplateTbRecordSet, CTemplateTbRecordSet&> *template_record);
@@ -344,6 +350,7 @@ public:
 	int SelectEcoOtsProjectTB_With_Blob(CString project_group, CString ship_no, 
 		CString where_condition, CArray<CEcoOtsProjectRecordSet, CEcoOtsProjectRecordSet&> *record_list);
 	int SelectLastInsertIDEcoOtsProjectTB(CString project_group, CString ship_no, UINT& id);
+	int SelectLastInsertIDEcoOtsProjectTBByIdentCurrent(CString project_group, CString ship_no, UINT& id);
 
 // tb_ecoots_block_list
 public:

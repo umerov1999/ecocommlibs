@@ -148,7 +148,9 @@ public:
 public:
 	CString GetTmpTempPathName(CString strFileName);
 	CString GetTmpTemplatePathName(CString strTplGroupName, CString strTplName);
+	CString GetTmpTemplatePathName(CString strTplName);
 	CString GetTmpThumbnailPathName(CString strTplGroupName, CString strTplName);
+	CString GetTmpThumbnailPathName(CString strTplName);
 	CString GetTmpAutoUpdatePathName(CString strFileName);
 
 	CString GetTmpSystemDrawingPathName(CString strFileName);
@@ -188,7 +190,9 @@ public:
 	CString GetTmpMEIModelPathName(int iNicktable, CString strModelName);
 
 	CString GetNasTemplatePathName(CString strTplGroupName, CString strTplName);
+	CString GetNasTemplatePathName(CString strTplName);
 	CString GetNasThumbnailPathName(CString strTplGroupName, CString strTplName);
+	CString GetNasThumbnailPathName(CString strTplName);
 	CString GetNasAutoUpdatePathName(CString strFileName);
 
 	CString GetNasSystemDrawingPathName(CString strFileName);

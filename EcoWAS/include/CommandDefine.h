@@ -71,11 +71,12 @@
 // tb_user_info
 #define				PKCMD_InsertUserInfoTB						700
 #define				PKCMD_UpdateUserGrant						701
-#define				PKCMD_DeleteUserInfoTB						702
-#define				PKCMD_SelectUserInfoTB						703
-#define				PKCMD_CheckUserPriv							704
-#define				PKCMD_CheckUserPriv_PWD						705
-#define				PKCMD_CheckSuperAdmin						706
+#define				PKCMD_UpdateUserInfo						702
+#define				PKCMD_DeleteUserInfoTB						703
+#define				PKCMD_SelectUserInfoTB						704
+#define				PKCMD_CheckUserPriv							705
+#define				PKCMD_CheckUserPriv_PWD						706
+#define				PKCMD_CheckSuperAdmin						707
 
 //tb_shipno_info
 #define				PKCMD_DeleteShipNoInfoTB					800
@@ -92,10 +93,11 @@
 
 // tb_drawing_template
 #define				PKCMD_UpdateTemplateTB						900
-#define				PKCMD_SelectTemplateTB_WithOut_Blob			901
-#define				PKCMD_SelectTemplateTB_With_Blob			902
-#define				PKCMD_SelectTemplateTB_Category				903
-#define				PKCMD_DeleteTemplate						904
+#define				PKCMD_UpdateTemplateTB_Description			901
+#define				PKCMD_SelectTemplateTB_WithOut_Blob			902
+#define				PKCMD_SelectTemplateTB_With_Blob			903
+#define				PKCMD_SelectTemplateTB_Category				904
+#define				PKCMD_DeleteTemplate						905
 
 // tb_system_drawing
 #define				PKCMD_DeleteSystemDrawing					1000
@@ -209,6 +211,7 @@
 #define				PKCMD_SelectEcoOtsProjectTB_WithOut_Blob		2803
 #define				PKCMD_SelectEcoOtsProjectTB_With_Blob			2804
 #define				PKCMD_SelectLastInsertIDEcoOtsProjectTB			2805
+#define				PKCMD_SelectLastInsertIDEcoOtsProjectTBByIdentCurrent 2806
 
 // tb_ecoots_block_list
 #define				PKCMD_DeleteEcoOtsBlockListTB					2900
