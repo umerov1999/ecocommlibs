@@ -31,6 +31,10 @@ private:
 	CString m_strFtpUserID;
 	CString m_strFtpPwd;
 	int m_nFtpPort;
+	//Client Network Connect Info
+	CString m_strClientNetFolUnc;
+	CString m_strClientNetFolUser;
+	CString m_strClientNetFolPwd;
 
 private:
 	CEcoServerBinary m_ecoServerBinary;
@@ -45,6 +49,9 @@ private:
 
 private:
 	BOOL CommandProcessing(CEcoPacket& recvPacket, CEcoPacket& sendPacket);
+
+	//서버 설정 정보
+	BOOL CmdProcEcoWASSettingInfo(CEcoPacket& recvPacket, CEcoPacket& sendPacket);
 
 	//tb_ecomodel_error_list
 	BOOL CmdProcEcoModelErrorList(CEcoPacket& recvPacket, CEcoPacket& sendPacket);
@@ -243,5 +250,6 @@ public:
 	void SetFtpInfo(CString strIP, CString strID, CString strPwd, int nPort = 21);
 	void SetEcoTmpRootPath(CString strPath);
 	void SetEcoNasRootPath(CString strPath);
+	void SetClientNetFolderInfo(CString strUnc, CString strUser, CString strPwd);
 };
 

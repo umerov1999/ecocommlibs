@@ -28,6 +28,8 @@ public:
 			m_strUserID = CStringConverter::CStringAToCStringW(stdStr.c_str());
 		}
 
+		ar & m_bNetFolderInfo;
+
 		ar & m_bCreateTable;
 		ar & m_bDuplicateData;
 		ar & m_bTableCopy;
@@ -92,6 +94,9 @@ public:
 		ar & m_bMEIEcoModel;
 		ar & m_bMEIEcoModelManager;
 		ar & m_bMEIHierarchyTree;
+
+		if(m_bNetFolderInfo == TRUE)
+			m_pkNetFolderInfo.serialize(ar, version, m_bSendRecvPacket);
 
 		if(m_bCreateTable == TRUE)
 			m_pkCreateTable.serialize(ar, version, m_bSendRecvPacket);
@@ -223,6 +228,9 @@ private:
 	CString m_strUserID;
 
 private:
+//설정정보
+	CPKNetFolderInfo	m_pkNetFolderInfo;
+
 //기타 Packet들
 	CPKCreateTable		m_pkCreateTable;
 	CPKDuplicateData	m_pkDuplicateData;
@@ -300,6 +308,8 @@ private:
 	//<--2014-11-20 최조영 JT관련 코드 추가
 
 private:
+	BOOL m_bNetFolderInfo;
+
 	BOOL m_bCreateTable;
 	BOOL m_bDuplicateData;
 	BOOL m_bTableCopy;
@@ -380,6 +390,11 @@ public:
 	void SetUser(CString strUserID);
 	CString GetUser(void);
 	void SetBSendNRecvPacket(BOOL bSendRecvPacket);
+
+public:
+//설정정보
+	void SetPKNetFolderInfo(CPKNetFolderInfo& pk);
+	void GetPKNetFolderInfo(CPKNetFolderInfo& pk);
 
 public:
 //기타

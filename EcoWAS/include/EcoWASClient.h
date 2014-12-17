@@ -28,6 +28,11 @@ private:
 	BOOL m_bConnected;
 	BOOL m_bExternConnect;
 
+	CString m_strNetFolderUserID;
+	CString m_strNetFolderPwd;
+	CString m_strNetFolderUnc;	//이 변수가 사용되면 m_strEcoTmpRootPath와 같은 값이 들어감.
+	HANDLE m_hNetFolderToken;
+
 private:
 	CEcoSocketClientManager m_ecoSocketClient;
 	CEcoWebConnector m_ecoWebConnector;
@@ -44,6 +49,11 @@ public:
 	void SetSocketPort(int nPort);
 	void SetEcoWASUrl(CString strWASUrl);
 	void SetEcoTmpRootPath(CString strPath);
+
+public:
+	BOOL GetNetFolderInfo();
+	BOOL LogonNetFolder();
+	void LogOffNetFolder();
 
 
 public:

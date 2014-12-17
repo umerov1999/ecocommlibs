@@ -373,6 +373,71 @@ public:
 /////////////////////////////////////////////////////////////////////////
 //±‚≈∏ PacketµÈ
 
+class CPKNetFolderInfo
+{
+public:
+	CPKNetFolderInfo(void)
+	{
+		m_strUserID = _T("");
+		m_strPwd = _T("");
+		m_strUnc = _T("");
+	}
+	~CPKNetFolderInfo(void)
+	{
+
+	}
+
+	CPKNetFolderInfo& operator = (const CPKNetFolderInfo &other)
+	{
+		m_strUserID = other.m_strUserID;
+		m_strPwd = other.m_strPwd;
+		m_strUnc = other.m_strUnc;
+		return *this;
+	}
+
+	CPKNetFolderInfo( const CPKNetFolderInfo &s )
+	{ 
+		*this = s; 
+	}
+
+	template <typename Archive>
+	void serialize(Archive& ar, const unsigned int version, BOOL bSendNRecv)
+	{
+		std::string stdStr;
+		if(bSendNRecv == TRUE)
+		{
+			stdStr = CStringConverter::CStringWToCStringA(m_strUserID);
+			ar & stdStr;
+			stdStr = CStringConverter::CStringWToCStringA(m_strPwd);
+			ar & stdStr;
+			stdStr = CStringConverter::CStringWToCStringA(m_strUnc);
+			ar & stdStr;
+		}
+		else
+		{
+			ar & stdStr;
+			m_strUserID = CStringConverter::CStringAToCStringW(stdStr.c_str());
+			ar & stdStr;
+			m_strPwd = CStringConverter::CStringAToCStringW(stdStr.c_str());
+			ar & stdStr;
+			m_strUnc = CStringConverter::CStringAToCStringW(stdStr.c_str());
+		}
+	}
+
+public:
+	void Init(void)
+	{
+		m_strUserID = _T("");
+		m_strPwd = _T("");
+		m_strUnc = _T("");
+	}
+
+public:
+	CString m_strUserID;
+	CString m_strPwd;
+	CString m_strUnc;
+};
+
 class CPKCreateTable : public CPKShipNo
 {
 public:
