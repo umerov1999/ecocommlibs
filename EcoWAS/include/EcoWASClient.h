@@ -216,6 +216,7 @@ public:
 	int SelectProjectTB(CString project_group, CString ship_no, CString where_condition, CArray<CProjectRecordSet, CProjectRecordSet&> *record);
 	int SelectProjectTB(CString project_group, CString ship_no, CString where_condition, CArray<PROJECT_WITH_PROPERTY, PROJECT_WITH_PROPERTY&> *record);
 	int SelectLastInsertIDProjectTB(CString project_group, CString ship_no, UINT& id);
+	int SelectLastInsertIDProjectTBByIdentCurrent(CString project_group, CString ship_no, UINT& id);
 
 	// tb_measure_point 관련
 public:
@@ -226,6 +227,7 @@ public:
 	int SelectMeasurePointTB_Without_Blob(CString project_group, CString ship_no, 
 		CString where_condition, CArray<CMeasurePointRecordSet, CMeasurePointRecordSet&> *measure_point_record);
 	int SelectLastInsertIDMeasurePointTB(CString project_group, CString ship_no, UINT& id);
+	int SelectLastInsertIDMeasurePointTBByIdentCurrent(CString project_group, CString ship_no, UINT& id);
 
 	// tb_EcoBlock_relation_info 관련
 public:
@@ -469,6 +471,8 @@ public:
 		CArray<CAssemblyLevelRecordSet, CAssemblyLevelRecordSet&> *record_list);
 	int SelectAssemblyLevelTB(CString project_group, CString ship_no, 
 		CString where_condition, CArray<CAssemblyLevelRecordSet, CAssemblyLevelRecordSet&> *record_list);
+	int SelectLastInsertIDAssemblyLevelTB(CString project_group, CString ship_no, UINT& id);
+	int SelectLastInsertIDAssemblyLevelTBByIdentCurrent(CString project_group, CString ship_no, UINT& id);
 
 // tb_assembly_tree
 public:
@@ -480,6 +484,7 @@ public:
 	int SelectAssemblyTreeTB(CString project_group, CString ship_no, 
 		CString where_condition, CArray<CAssemblyTreeRecordSet, CAssemblyTreeRecordSet&> *record_list);
 	int SelectLastInsertIDAssemblyTreeTB(CString project_group, CString ship_no, UINT& id);
+	int SelectLastInsertIDAssemblyTreeTBByIdentCurrent(CString project_group, CString ship_no, UINT& id);
 
 // tb_variable_group
 public:
@@ -491,6 +496,7 @@ public:
 	int SelectVariableGroupTB(CString project_group, CString ship_no, 
 		CString where_condition, CArray<CVariableGroupRecordSet, CVariableGroupRecordSet&> *record_list);
 	int SelectLastInsertIDVariableGroupTB(CString project_group, CString ship_no, UINT& id);
+	int SelectLastInsertIDVariableGroupTBByIdentCurrent(CString project_group, CString ship_no, UINT& id);
 
 //-->하남국-20131113
 	//tb_variable_of_group
@@ -505,6 +511,7 @@ public:
 	int SelectVariableOfGroupTB(CString project_group, CString ship_no, 
 		CString where_condition, CArray<CVariableOfGroupRecordSet, CVariableOfGroupRecordSet&> *record_list);
 	int SelectLastInsertIDVariableOfGroupTB(CString project_group, CString ship_no, UINT& id);
+	int SelectLastInsertIDVariableOfGroupTBByIdentCurrent(CString project_group, CString ship_no, UINT& id);
 //<--하남국-20131113
 
 
@@ -518,6 +525,7 @@ public:
 	int SelectUserVariableTB(CString project_group, CString ship_no, 
 											CString where_condition, CArray<CUserVariableRecordSet, CUserVariableRecordSet&> *record_list);
 	int SelectLastInsertIDUserVariableTB(CString project_group, CString ship_no, UINT& id);
+	int SelectLastInsertIDUserVariableTBByIdentCurrent(CString project_group, CString ship_no, UINT& id);
 
 	
 
@@ -542,6 +550,8 @@ public:
 		CArray<CBlockPropertyRecordSet, CBlockPropertyRecordSet&> *record_list);
 	int SelectBlockPropertyTB(CString project_group, CString ship_no, 
 		CString where_condition, CArray<CBlockPropertyRecordSet, CBlockPropertyRecordSet&> *record_list);
+	int SelectLastInsertIDBlockPropertyTB(CString project_group, CString ship_no, UINT& id);
+	int SelectLastInsertIDBlockPropertyTBByIdentCurrent(CString project_group, CString ship_no, UINT& id);
 
 // tb_shipno_property
 public:
@@ -561,6 +571,7 @@ public:
 	int SelectEcoblockProjectTreeTB(CString project_group, CString ship_no, 
 		CString where_condition, CArray<CEcoBlockProjectTreeRecordSet, CEcoBlockProjectTreeRecordSet&> *record_list);
 	int SelectLastInsertIDProjectTreeTB(CString project_group, CString ship_no, UINT& id);
+	int SelectLastInsertIDProjectTreeTBByIdentCurrent(CString project_group, CString ship_no, UINT& id);
 
 //-->하남국-20121219
 // tb_user_input_block_list

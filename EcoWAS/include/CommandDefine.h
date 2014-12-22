@@ -115,6 +115,7 @@
 #define				PKCMD_SelectProjectTB_CProjectRecordSet		1103
 #define				PKCMD_SelectProjectTB_PROJECT_WITH_PROPERTY	1104
 #define				PKCMD_SelectLastInsertIDProjectTB			1105
+#define				PKCMD_SelectLastInsertIDProjectTBByIdentCurrent 1106
 
 // tb_measure_point 관련
 #define				PKCMD_DeleteMeasurePointTB					1200
@@ -122,6 +123,7 @@
 #define				PKCMD_SelectMeasurePointTB_With_Blob		1202
 #define				PKCMD_SelectMeasurePointTB_Without_Blob		1203
 #define				PKCMD_SelectLastInsertIDMeasurePointTB		1204
+#define				PKCMD_SelectLastInsertIDMeasurePointTBByIdentCurrent 1205
 
 // tb_EcoBlock_relation_info 관련
 #define				PKCMD_DeleteEcoBlockRelationInfoTB			1300
@@ -282,6 +284,8 @@
 #define				PKCMD_InsertAssemblyLevelTB						4101
 #define				PKCMD_UpdateAssemblyLevelTB						4102
 #define				PKCMD_SelectAssemblyLevelTB						4103
+#define				PKCMD_SelectLastInsertIDAssemblyLevelTB			4104
+#define				PKCMD_SelectLastInsertIDAssemblyLevelTBByIdentCurrent 4105
 
 // tb_assembly_tree
 #define				PKCMD_DeleteAssemblyTreeTB						4200
@@ -289,6 +293,7 @@
 #define				PKCMD_UpdateAssemblyTreeTB						4202
 #define				PKCMD_SelectAssemblyTreeTB						4203
 #define				PKCMD_SelectLastInsertIDAssemblyTreeTB			4204
+#define				PKCMD_SelectLastInsertIDAssemblyTreeTBByIdentCurrent 4205
 
 // tb_variable_group
 #define				PKCMD_DeleteVariableGroupTB						4300
@@ -296,6 +301,7 @@
 #define				PKCMD_UpdateVariableGroupTB						4302
 #define				PKCMD_SelectVariableGroupTB						4303
 #define				PKCMD_SelectLastInsertIDVariableGroupTB			4304
+#define				PKCMD_SelectLastInsertIDVariableGroupTBByIdentCurrent 4305
 
 // tb_variable_of_group
 #define				PKCMD_DeleteVariableOfGroupTB					4400
@@ -305,6 +311,7 @@
 #define				PKCMD_UpdateVariableOfGroupTB					4404
 #define				PKCMD_SelectVariableOfGroupTB					4405
 #define				PKCMD_SelectLastInsertIDVariableOfGroupTB		4406
+#define				PKCMD_SelectLastInsertIDVariableOfGroupTBByIdentCurrent 4407
 
 // tb_user_variable
 #define				PKCMD_DeleteUserVariableTB						4500
@@ -312,6 +319,7 @@
 #define				PKCMD_UpdateUserVariableTB						4502
 #define				PKCMD_SelectUserVariableTB						4503
 #define				PKCMD_SelectLastInsertIDUserVariableTB			4504
+#define				PKCMD_SelectLastInsertIDUserVariableTBByIdentCurrent 4505
 
 
 // tb_project_property
@@ -327,6 +335,8 @@
 #define				PKCMD_UpdateBlockPropertyTB						4702
 #define				PKCMD_SelectBlockPropertyTB						4703
 #define				PKCMD_DeleteAllBlockPropertyTB					4704
+#define				PKCMD_SelectLastInsertIDBlockPropertyTB			4705
+#define				PKCMD_SelectLastInsertIDBlockPropertyTBByIdentCurrent 4706
 
 // tb_shipno_property
 #define				PKCMD_DeleteShipnoPropertyTB					4800
@@ -339,6 +349,7 @@
 #define				PKCMD_UpdateEcoblockProjectTreeTB				4902
 #define				PKCMD_SelectEcoblockProjectTreeTB				4903
 #define				PKCMD_SelectLastInsertIDProjectTreeTB			4904
+#define				PKCMD_SelectLastInsertIDProjectTreeTBByIdentCurrent 4905
 
 // tb_user_input_block_list
 #define				PKCMD_DeleteUserInputBlockListTB_ID				5000
