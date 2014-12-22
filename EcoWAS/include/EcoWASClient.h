@@ -210,6 +210,7 @@ public:
 
 	// tb_project
 public:
+	int DeleteAllProject(CString project_group, CString ship_no);
 	int DeleteProjectTB(CString project_group, CString ship_no, UINT id);
 	int InsertProjectTB(CString project_group, CString ship_no, CArray<CProjectRecordSet, CProjectRecordSet&> *record);
 	int UpdateProjectTB(CString project_group, CString ship_no, CArray<CProjectRecordSet, CProjectRecordSet&> *record_list);
@@ -464,6 +465,8 @@ public:
 
 // tb_assembly_level
 public:
+	int DeleteAllProductionInfo(CString project_group, CString ship_no);
+
 	int DeleteAssemblyLevelTB(CString project_group, CString ship_no, UINT id);
 	int InsertAssemblyLevelTB(CString project_group, CString ship_no,
 		CArray<CAssemblyLevelRecordSet, CAssemblyLevelRecordSet&> *record_list);

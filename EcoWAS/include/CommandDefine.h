@@ -109,13 +109,14 @@
 #define				PKCMD_SelectSystemDrawingTB_With_Blob		1003
 
 // tb_project
-#define				PKCMD_DeleteProjectTB						1100
-#define				PKCMD_InsertProjectTB						1101
-#define				PKCMD_UpdateProjectTB						1102
-#define				PKCMD_SelectProjectTB_CProjectRecordSet		1103
-#define				PKCMD_SelectProjectTB_PROJECT_WITH_PROPERTY	1104
-#define				PKCMD_SelectLastInsertIDProjectTB			1105
-#define				PKCMD_SelectLastInsertIDProjectTBByIdentCurrent 1106
+#define				PKCMD_DeleteAllProject						1100
+#define				PKCMD_DeleteProjectTB						1101
+#define				PKCMD_InsertProjectTB						1102
+#define				PKCMD_UpdateProjectTB						1103
+#define				PKCMD_SelectProjectTB_CProjectRecordSet		1104
+#define				PKCMD_SelectProjectTB_PROJECT_WITH_PROPERTY	1105
+#define				PKCMD_SelectLastInsertIDProjectTB			1106
+#define				PKCMD_SelectLastInsertIDProjectTBByIdentCurrent 1107
 
 // tb_measure_point ฐüทร
 #define				PKCMD_DeleteMeasurePointTB					1200
@@ -280,12 +281,13 @@
 #define				PKCMD_SelectEcoOtsProjectionFaceModelingMatrixListListTB	4002
 
 // tb_assembly_level
-#define				PKCMD_DeleteAssemblyLevelTB						4100
-#define				PKCMD_InsertAssemblyLevelTB						4101
-#define				PKCMD_UpdateAssemblyLevelTB						4102
-#define				PKCMD_SelectAssemblyLevelTB						4103
-#define				PKCMD_SelectLastInsertIDAssemblyLevelTB			4104
-#define				PKCMD_SelectLastInsertIDAssemblyLevelTBByIdentCurrent 4105
+#define				PKCMD_DeleteAllProductionInfo					4100
+#define				PKCMD_DeleteAssemblyLevelTB						4101
+#define				PKCMD_InsertAssemblyLevelTB						4102
+#define				PKCMD_UpdateAssemblyLevelTB						4103
+#define				PKCMD_SelectAssemblyLevelTB						4104
+#define				PKCMD_SelectLastInsertIDAssemblyLevelTB			4105
+#define				PKCMD_SelectLastInsertIDAssemblyLevelTBByIdentCurrent 4106
 
 // tb_assembly_tree
 #define				PKCMD_DeleteAssemblyTreeTB						4200

@@ -87,8 +87,9 @@ private:
 	CString GetFileDotExt(CString strFileName);
 	CString GetTmpGeneralHeadPath();
 	CString GetTmpCommonHeadPath();
-	CString GetNasGeneralHeadPath();
 	CString GetNasCommonHeadPath();
+public:
+	CString GetNasGeneralHeadPath();
 
 
 private:
