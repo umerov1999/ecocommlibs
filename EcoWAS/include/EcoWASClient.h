@@ -41,6 +41,7 @@ public:
 
 private:
 	BOOL SendCommand(CEcoPacket& sendPacket, CEcoPacket& recvPacket);
+	static UINT WebConnectThread(LPVOID pParam);
 
 public:
 	BOOL ConnectWAS();
