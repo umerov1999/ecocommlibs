@@ -4657,6 +4657,7 @@ public:
 			ar & stdStr;
 			m_strJtFileFTPPath = CStringConverter::CStringAToCStringW(stdStr.c_str());
 
+			ar & m_nShipNoCnt;
 			CString str; m_arrShipnoList.RemoveAll();
 			for(int i = 0; i < m_nShipNoCnt; i++)
 			{
@@ -4665,6 +4666,7 @@ public:
 				m_arrShipnoList.Add(str);
 			}
 
+			ar & m_nSelModelCnt;
 			CString str; m_arrSelModelName.RemoveAll();
 			for(int i = 0; i < m_nSelModelCnt; i++)
 			{
