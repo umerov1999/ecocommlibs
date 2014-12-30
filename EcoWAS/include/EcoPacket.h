@@ -95,6 +95,8 @@ public:
 		ar & m_bMEIEcoModelManager;
 		ar & m_bMEIHierarchyTree;
 
+		ar & m_bJTServerProperty;
+
 		if(m_bNetFolderInfo == TRUE)
 			m_pkNetFolderInfo.serialize(ar, version, m_bSendRecvPacket);
 
@@ -220,6 +222,9 @@ public:
 			m_pkMEIEcoModelManager.serialize(ar, version, m_bSendRecvPacket);
 		if(m_bMEIHierarchyTree == TRUE)
 			m_pkMEIHierarchyTree.serialize(ar, version, m_bSendRecvPacket);
+
+		if(m_bJTServerProperty == TRUE)
+			m_pkJTServerProperty.serialize(ar, version, m_bSendRecvPacket);
 	}
 
 private:

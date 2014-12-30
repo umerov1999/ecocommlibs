@@ -4634,18 +4634,17 @@ public:
 				ar & stdStr;
 			}
 
-
-
-			m_nMapListCnt = m_mapPanelList.GetCount();
+			m_nMapListCnt = m_mapJtList.GetCount();
 			ar & m_nMapListCnt;
-			CString key = _T(""); int val = 0;
+			CString key = _T(""); CString val = 0;
 			POSITION pos = m_mapJtList.GetStartPosition();
 			while(pos != NULL)
 			{
 				m_mapJtList.GetNextAssoc(pos, key, val);
 				stdStr = CStringConverter::CStringWToCStringA(key);
 				ar & stdStr;
-				ar & val;
+				stdStr = CStringConverter::CStringWToCStringA(val);
+				ar & stdStr;
 			}
 		}
 		else
@@ -4657,15 +4656,6 @@ public:
 			ar & stdStr;
 			m_strJtFileFTPPath = CStringConverter::CStringAToCStringW(stdStr.c_str());
 
-			ar & m_nShipNoCnt;
-			CString str; m_arrShipnoList.RemoveAll();
-			for(int i = 0; i < m_nShipNoCnt; i++)
-			{
-				ar & stdStr;
-				str = CStringConverter::CStringAToCStringW(stdStr.c_str());
-				m_arrShipnoList.Add(str);
-			}
-
 			ar & m_nSelModelCnt;
 			CString str; m_arrSelModelName.RemoveAll();
 			for(int i = 0; i < m_nSelModelCnt; i++)
@@ -4675,13 +4665,23 @@ public:
 				m_arrSelModelName.Add(str);
 			}
 
+			ar & m_nShipNoCnt;
+			m_arrShipnoList.RemoveAll();
+			for(int i = 0; i < m_nShipNoCnt; i++)
+			{
+				ar & stdStr;
+				str = CStringConverter::CStringAToCStringW(stdStr.c_str());
+				m_arrShipnoList.Add(str);
+			}
+
 			ar & m_nMapListCnt;
-			CString key = _T(""); int val = 0; m_mapJtList.RemoveAll();
+			CString key = _T(""); CString val = 0; m_mapJtList.RemoveAll();
 			for(int i = 0; i < m_nMapListCnt; i++)
 			{
 				ar & stdStr;
 				key = CStringConverter::CStringAToCStringW(stdStr.c_str());
-				ar & val;
+				ar & stdStr;
+				val = CStringConverter::CStringAToCStringW(stdStr.c_str());
 				m_mapJtList.SetAt(key, val);
 			}
 
