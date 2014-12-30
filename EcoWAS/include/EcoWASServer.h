@@ -36,6 +36,17 @@ private:
 	CString m_strClientNetFolUser;
 	CString m_strClientNetFolPwd;
 
+	//JT모델하이라키 PLM서버관련
+	CString m_strJTPLM_UserID;
+	CString m_strJTPLM_Pwd;
+	CString m_strJTPLM_IP;
+	int m_nJTPLM_port;
+
+	//JT모델서버 FTP관련
+	CString m_strJTFTPUserID;
+	CString m_strJTFTPPwd;
+	CString m_strJTFTPName;
+
 private:
 	CEcoServerBinary m_ecoServerBinary;
 	CEcoSocketServerManager m_ecoSocketServer;
@@ -252,5 +263,8 @@ public:
 	void SetEcoTmpRootPath(CString strPath);
 	void SetEcoNasRootPath(CString strPath);
 	void SetClientNetFolderInfo(CString strUnc, CString strUser, CString strPwd);
+	void SetJTPLMInfoForHHI(CString strIP, CString strID, CString strPwd, int nPort/* = 1541*/);
+	void SetJTFTPInfoForHHI(CString strIP, CString strID, CString strPwd);
+
 };
 
