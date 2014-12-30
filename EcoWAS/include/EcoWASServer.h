@@ -42,6 +42,12 @@ private:
 	CString m_strJTPLM_IP;
 	int m_nJTPLM_port;
 
+	//JT¸ðµ¨Path°æ·Î
+	CString m_strJTSAP_UserID;
+	CString m_strJTSAP_Pwd;
+	CString m_strJTSAP_IP;
+	int m_nJTSAP_port;
+
 	//JT¸ðµ¨¼­¹ö FTP°ü·Ã
 	CString m_strJTFTPUserID;
 	CString m_strJTFTPPwd;
@@ -264,6 +270,7 @@ public:
 	void SetEcoNasRootPath(CString strPath);
 	void SetClientNetFolderInfo(CString strUnc, CString strUser, CString strPwd);
 	void SetJTPLMInfoForHHI(CString strIP, CString strID, CString strPwd, int nPort/* = 1541*/);
+	void SetJTSAPInfoForHHI(CString strIP, CString strID, CString strPwd, int nPort/* = 1541*/);
 	void SetJTFTPInfoForHHI(CString strIP, CString strID, CString strPwd);
 
 };

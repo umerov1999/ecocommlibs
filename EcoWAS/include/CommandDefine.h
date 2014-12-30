@@ -433,6 +433,7 @@
 // HHI JT°ü·Ã
 #define				PKCMD_SelectJTShipNoListinfo					6100
 #define				PKCMD_SelectJTHierarchyinfo						6101
-#define				PKCMD_SelectandFTPTransferJTFile				6102
+
+#define				PKCMD_SelectandFTPTransferJTFile				6200
 
 
