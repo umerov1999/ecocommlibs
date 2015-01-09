@@ -38,6 +38,7 @@ private:
 	CEcoWebConnector m_ecoWebConnector;
 public:
 	CEcoServerBinary m_ecoServerBinary;
+	CString m_appRunPath;
 
 private:
 	BOOL SendCommand(CEcoPacket& sendPacket, CEcoPacket& recvPacket);

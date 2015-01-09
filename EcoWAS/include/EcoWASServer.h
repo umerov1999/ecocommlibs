@@ -63,7 +63,8 @@ private:
 private:
 	CString GetPath(CString strFilePath);
 	DWORD GetFileSize(CString strFilePathName);
-	void DisplayLog(bool bRedraw_all, CString log);
+	void DisplayLog(CString log);
+	void DisplayLog(int nErrorCode, CString strErrorMsg);
 
 private:
 	BOOL CommandProcessing(CEcoPacket& recvPacket, CEcoPacket& sendPacket);
