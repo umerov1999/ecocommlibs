@@ -48,7 +48,7 @@ public:
 public:
 	void SetDatabase(int nCurDB);
 
-private:
+public:
 	BOOL FileToCString(CString strFilePathName, CString& strRetData, DWORD& nRetLen);
 	BOOL CStringToFile(CString& strData, CString strFilePathName);
 
