@@ -9,6 +9,10 @@
 #include <atlplus.h>
 #include <atldbcli.h>
 #import "C:\Program Files (x86)\Common Files\System\ado\msado60.tlb" no_namespace rename("EOF", "adoEOF")// rename( "EOF", "adoEOF" )
+//#import "C:\oracle\odp.net\bin\4\Oracle.DataAccess.dll"
+// #using <System.dll>
+// #using <System.Data.dll>
+// #using <C:\Users\NG\Desktop\ODAC112030Xcopy_32bit\odp.net4\odp.net\bin\4\Oracle.DataAccess.dll>
 
 #include "EcoWASDatabaseRecordSet.h"
 #include "EcoDatabaseManagerDefine.h"
@@ -72,6 +76,8 @@ public:
 	void complete_log(CString strlog);
 	CString ConvertUsrVarPropIDToString(UINT nIdentifier);
 	UINT ConvertUsrVarPropStringToID(CString strIdentifier);
+	BOOL CheckExistTable(CString strTableName);
+	void DisplayLog(CString strLog);
 
 public:
 	//테이블 스킴 변경관련
