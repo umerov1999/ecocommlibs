@@ -96,6 +96,7 @@ public:
 public:
 	//DB ฐüทร
 	int ConnectToDatabase(CString host, CString user, CString pwd, CString db_name, unsigned int port);
+	void ConnectOracleOdp(CString strDBName, CString strUser, CString strPwd);
 	int DisConnectToDatabase(void);
 	int FlushUser();
 	//void DisplayError(MYSQL* db);
