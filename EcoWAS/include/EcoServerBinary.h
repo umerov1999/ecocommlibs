@@ -86,9 +86,9 @@ private:
 	CString ConvertModelFileNameRule(CString strFileName);
 	CString GetFileDotExt(CString strFileName);
 	CString GetTmpGeneralHeadPath();
-	CString GetTmpCommonHeadPath();
 	CString GetNasCommonHeadPath();
 public:
+	CString GetTmpCommonHeadPath();
 	CString GetNasGeneralHeadPath();
 
 
