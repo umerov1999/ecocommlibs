@@ -4575,19 +4575,20 @@ public:
 		m_arrShipnoList.Copy(other.m_arrShipnoList);
 		m_arrSelModelName.Copy(other.m_arrSelModelName);
 		m_nSelModelCnt = other.m_nSelModelCnt;
-		m_nMapListCnt = other.m_nMapListCnt;
+		m_nModelListCnt = other.m_nModelListCnt;
 		m_nShipNoCnt = other.m_nShipNoCnt;
 		m_strSelShipNo = other.m_strSelShipNo;
 		m_strJtFileFTPPath = other.m_strJtFileFTPPath;
+		m_arrModelList.Copy(other.m_arrModelList);
 
-		CString key;
-		CString val;
-		POSITION pos = other.m_mapJtList.GetStartPosition();
-		while(pos != NULL)
-		{
-			other.m_mapJtList.GetNextAssoc(pos, key, val);
-			m_mapJtList.SetAt(key, val);
-		}
+// 		CString key;
+// 		CString val;
+// 		POSITION pos = other.m_mapJtList.GetStartPosition();
+// 		while(pos != NULL)
+// 		{
+// 			other.m_mapJtList.GetNextAssoc(pos, key, val);
+// 			m_mapJtList.SetAt(key, val);
+// 		}
 
 		return *this;
 	}
@@ -4634,18 +4635,29 @@ public:
 				ar & stdStr;
 			}
 
-			m_nMapListCnt = m_mapJtList.GetCount();
-			ar & m_nMapListCnt;
-			CString key = _T(""); CString val = 0;
-			POSITION pos = m_mapJtList.GetStartPosition();
-			while(pos != NULL)
+			//
+			m_nModelListCnt = m_arrModelList.GetCount();
+			ar & m_nModelListCnt;
+
+
+			for(int i = 0; i < m_nModelListCnt; i++)
 			{
-				m_mapJtList.GetNextAssoc(pos, key, val);
-				stdStr = CStringConverter::CStringWToCStringA(key);
-				ar & stdStr;
-				stdStr = CStringConverter::CStringWToCStringA(val);
+				stdStr = CStringConverter::CStringWToCStringA(m_arrModelList.GetAt(i));
 				ar & stdStr;
 			}
+
+// 			m_nMapListCnt = m_mapJtList.GetCount();
+// 			ar & m_nMapListCnt;
+// 			CString key = _T(""); CString val = 0;
+// 			POSITION pos = m_mapJtList.GetStartPosition();
+// 			while(pos != NULL)
+// 			{
+// 				m_mapJtList.GetNextAssoc(pos, key, val);
+// 				stdStr = CStringConverter::CStringWToCStringA(key);
+// 				ar & stdStr;
+// 				stdStr = CStringConverter::CStringWToCStringA(val);
+// 				ar & stdStr;
+// 			}
 		}
 		else
 		{
@@ -4674,16 +4686,25 @@ public:
 				m_arrShipnoList.Add(str);
 			}
 
-			ar & m_nMapListCnt;
-			CString key = _T(""); CString val = 0; m_mapJtList.RemoveAll();
-			for(int i = 0; i < m_nMapListCnt; i++)
+			ar & m_nModelListCnt;
+			m_arrModelList.RemoveAll();
+			for(int i = 0; i < m_nModelListCnt; i++)
 			{
 				ar & stdStr;
-				key = CStringConverter::CStringAToCStringW(stdStr.c_str());
-				ar & stdStr;
-				val = CStringConverter::CStringAToCStringW(stdStr.c_str());
-				m_mapJtList.SetAt(key, val);
+				str = CStringConverter::CStringAToCStringW(stdStr.c_str());
+				m_arrModelList.Add(str);
 			}
+
+// 			ar & m_nMapListCnt;
+// 			CString key = _T(""); CString val = 0; m_mapJtList.RemoveAll();
+// 			for(int i = 0; i < m_nMapListCnt; i++)
+// 			{
+// 				ar & stdStr;
+// 				key = CStringConverter::CStringAToCStringW(stdStr.c_str());
+// 				ar & stdStr;
+// 				val = CStringConverter::CStringAToCStringW(stdStr.c_str());
+// 				m_mapJtList.SetAt(key, val);
+// 			}
 
 		}
 	}
@@ -4692,11 +4713,12 @@ public:
 	void Init(void)
 	{
 		CPKWhereInherit::Init();
-		m_mapJtList.RemoveAll();
+		//m_mapJtList.RemoveAll();
+		m_arrModelList.RemoveAll();
 		m_arrShipnoList.RemoveAll();
 		m_arrSelModelName.RemoveAll();
 		m_nShipNoCnt = 0;
-		m_nMapListCnt = 0;
+		m_nModelListCnt = 0;
 		m_nSelModelCnt = 0;
 		m_strSelShipNo = L"";
 		m_strJtFileFTPPath = L"";
@@ -4705,12 +4727,14 @@ public:
 public:
 	CString					  m_strJtFileFTPPath;
 	CString					  m_strSelShipNo;
-	int						  m_nMapListCnt;
+	int						  m_nModelListCnt;
 	int						  m_nShipNoCnt;
 	int						  m_nSelModelCnt;
 	CArray<CString, CString&> m_arrSelModelName;	
 	CArray<CString, CString&> m_arrShipnoList;
-	CMap<CString, LPCTSTR, CString, LPCTSTR> m_mapJtList;
+	CArray<CString, CString&> m_arrModelList;
+
+	//CMap<CString, LPCTSTR, CString, LPCTSTR> m_mapJtList;
 };
 
 

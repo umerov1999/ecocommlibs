@@ -683,7 +683,7 @@ public:
 
 	//-->2014-11-20 최조영 JT관련 코드 추가 (현대전용)
 	int SelectShipNoInfo_HHI(CArray<CString, CString&>* arrylist);
-	int SelectJTHierarchy_HHI(CString ship_no, CMap<CString, LPCTSTR, CString, LPCTSTR>* hierarchy_map);
+	int SelectJTHierarchy_HHI(CString ship_no, CArray<CString, CString&>* arrylist);
 	int SelectandFTPTransferJTFile_HHI(CString ship_no, CArray<CString, CString&>* arrylist);
 	//<--2014-11-20 최조영 JT관련 코드 추가
 

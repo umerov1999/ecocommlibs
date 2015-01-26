@@ -705,7 +705,7 @@ public:
 //-->2014-11-20 최조영 JT관련 코드 추가 (현대전용)
 public:
 	int SelectJTModelShipNoInfoTB_HHI(CArray<CString, CString&>* arryship_no);
-	int SelectJTModelListInfoTB_HHI(CString ship_no, CMap<CString, LPCTSTR, CString, LPCTSTR>* model_list_map);
+	int SelectJTModelListInfoTB_HHI(CString ship_no, CArray<CString, CString&>* arrymodel);
 	int SelectJTFilePathLIstTB_HHT(CString strShip_no, CArray<CString, CString&>* arrModelList, CArray<CString, CString&>* arrModelPathList);
 //<--2014-11-20 최조영 JT관련 코드 추가
 
