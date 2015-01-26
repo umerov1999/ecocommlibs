@@ -53,6 +53,9 @@ private:
 	CString m_strJTFTPPwd;
 	CString m_strJTFTPName;
 
+	CString m_strJTSAP_DBName;
+	CString	m_strJTPLM_DBName;
+
 private:
 	CEcoServerBinary m_ecoServerBinary;
 	CEcoSocketServerManager m_ecoSocketServer;
@@ -270,8 +273,8 @@ public:
 	void SetEcoTmpRootPath(CString strPath);
 	void SetEcoNasRootPath(CString strPath);
 	void SetClientNetFolderInfo(CString strUnc, CString strUser, CString strPwd);
-	void SetJTPLMInfoForHHI(CString strIP, CString strID, CString strPwd, int nPort/* = 1541*/);
-	void SetJTSAPInfoForHHI(CString strIP, CString strID, CString strPwd, int nPort/* = 1541*/);
+	void SetJTPLMInfoForHHI(CString strIP, CString strID, CString strPwd, CString strDB, int nPort/* = 1541*/);
+	void SetJTSAPInfoForHHI(CString strIP, CString strID, CString strPwd, CString strDB, int nPort/* = 1541*/);
 	void SetJTFTPInfoForHHI(CString strIP, CString strID, CString strPwd);
 
 };
