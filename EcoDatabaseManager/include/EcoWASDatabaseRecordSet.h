@@ -5385,3 +5385,127 @@ typedef struct _update_model_info
 		}
 	}
 } UPDATE_MODEL_INFO;
+
+/*-----------------------------------------------------------------------
+클래스명		: Ta510021
+기능			: Ta510021 테이블의 레코드 필드 값들의 입출력 데이터
+포맷을 가지고 있는 클래스
+
+작성일자		: 2014-06-10
+마지막 수정일자	: 2014-06-10
+작성자			: 손지훈
+-----------------------------------------------------------------------*/
+class AFX_EXT_API CJoinTa510021 : public CObject
+{
+private:
+
+	CString											m_shpno;
+	CString											m_shpKnd;
+	CString											m_blkno;
+	CString											m_blkType;
+	CString											m_blknoU;
+public:
+	CJoinTa510021();
+	~CJoinTa510021();
+
+	CJoinTa510021& operator = (const CJoinTa510021 &other);
+
+	template <typename Archive>
+	void serialize(Archive& ar, const unsigned int version, BOOL bSendNRecv)
+	{
+		std::string stdStr;
+		if(bSendNRecv == TRUE)
+		{
+			stdStr = CStringConverter::CStringWToCStringA(m_shpno);
+			ar & stdStr;
+			stdStr = CStringConverter::CStringWToCStringA(m_shpKnd);
+			ar & stdStr;
+			stdStr = CStringConverter::CStringWToCStringA(m_blkno);
+			ar & stdStr;
+			stdStr = CStringConverter::CStringWToCStringA(m_blkType);
+			ar & stdStr;
+			stdStr = CStringConverter::CStringWToCStringA(m_blknoU);
+			ar & stdStr;
+		}
+		else
+		{
+			m_shpno = CStringConverter::CStringAToCStringW(stdStr.c_str());
+			ar & stdStr;
+			m_shpKnd = CStringConverter::CStringAToCStringW(stdStr.c_str());
+			ar & stdStr;
+			m_blkno = CStringConverter::CStringAToCStringW(stdStr.c_str());
+			ar & stdStr;
+			m_blkType = CStringConverter::CStringAToCStringW(stdStr.c_str());
+			ar & stdStr;
+			m_blknoU = CStringConverter::CStringAToCStringW(stdStr.c_str());
+			ar & stdStr;
+		}
+	}
+
+public:
+
+	void SetSHPNo(CString shpno);
+	CString GetSHPNo();
+	void SetSHPKND(CString shpKnd);
+	CString GetSHPKND();
+	void SetBLKNo(CString blkno);
+	CString GetBLKNo();
+	void SetBLK_Type(CString blkType);
+	CString GetBLK_Type();
+	void SetBLKNo_U(CString blknoU);
+	CString GetBLKNo_U();
+
+};
+
+/*-----------------------------------------------------------------------
+클래스명		: CTa510020
+기능			: CTa510020 테이블의 레코드 필드 값들의 입출력 데이터
+포맷을 가지고 있는 클래스
+
+작성일자		: 2014-06-10
+마지막 수정일자	: 2014-06-10
+작성자			: 손지훈
+-----------------------------------------------------------------------*/
+class AFX_EXT_API CTa510020 : public CObject
+{
+private:
+
+	CString											m_shpno;
+	CString											m_shpKnd;
+
+public:
+	CTa510020();
+	~CTa510020();
+
+	CTa510020& operator = (const CTa510020 &other);
+
+	template <typename Archive>
+	void serialize(Archive& ar, const unsigned int version, BOOL bSendNRecv)
+	{
+		std::string stdStr;
+		if(bSendNRecv == TRUE)
+		{
+			stdStr = CStringConverter::CStringWToCStringA(m_shpno);
+			ar & stdStr;
+			stdStr = CStringConverter::CStringWToCStringA(m_shpKnd);
+			ar & stdStr;
+
+		}
+		else
+		{
+			m_shpno = CStringConverter::CStringAToCStringW(stdStr.c_str());
+			ar & stdStr;
+			m_shpKnd = CStringConverter::CStringAToCStringW(stdStr.c_str());
+			ar & stdStr;
+
+		}
+	}
+
+public:
+
+	void SetSHPNo(CString shpno);
+	CString GetSHPNo();
+	void SetSHPKND(CString shpKnd);
+	CString GetSHPKND();
+
+};

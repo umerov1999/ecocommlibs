@@ -707,6 +707,8 @@ public:
 	int SelectJTModelShipNoInfoTB_HHI(CArray<CString, CString&>* arryship_no);
 	int SelectJTModelListInfoTB_HHI(CString ship_no, CArray<CString, CString&>* arrymodel);
 	int SelectJTFilePathLIstTB_HHT(CString strShip_no, CArray<CString, CString&>* arrModelList, CArray<CString, CString&>* arrModelPathList);
+	int SelectJoinTa510021(CArray<CJoinTa510021, CJoinTa510021&>* arryship_no);
+	int SelectTa510020(CArray<CTa510020, CTa510020&>* arryship_no);
 //<--2014-11-20 최조영 JT관련 코드 추가
 
 
