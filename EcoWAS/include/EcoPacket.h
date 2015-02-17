@@ -312,6 +312,9 @@ private:
 	CPKJTServerProperty     m_pkJTServerProperty;
 	//<--2014-11-20 최조영 JT관련 코드 추가
 
+	//-->2015-02-12 손지훈 Assembly Tree 동기화 관련 코드 추가(현대전용)
+
+
 private:
 	BOOL m_bNetFolderInfo;
 
