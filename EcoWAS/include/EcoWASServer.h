@@ -66,7 +66,7 @@ private:
 private:
 	CString GetPath(CString strFilePath);
 	DWORD GetFileSize(CString strFilePathName);
-	void DisplayLog(CString log);
+	
 	void DisplayLog(int nErrorCode, CString strErrorMsg);
 
 private:
@@ -278,8 +278,9 @@ public:
 	void SetJTFTPInfoForHHI(CString strIP, CString strID, CString strPwd);
 	BOOL Start_AssemblyTreeSync(void);
 	void AssemblyTreeSyncUpdate(CString group,CString shipNo, CArray<CAssemblyLevelRecordSet, CAssemblyLevelRecordSet&> *arrAssemblyLevelRS,CArray<CAssemblyTreeRecordSet, CAssemblyTreeRecordSet&> *arrAssemblyTreeRS, CArray<CJoinTa510021, CJoinTa510021&> *arrTa510021);
-	void AssemblyTreeSyncInsert(CString group,CString shipNo, CArray<CAssemblyLevelRecordSet, CAssemblyLevelRecordSet&> *arrAssemblyLevelRS,CArray<CAssemblyTreeRecordSet, CAssemblyTreeRecordSet&> *arrAssemblyTreeRS, CArray<CJoinTa510021, CJoinTa510021&> *arrTa510021);
+	void AssemblyTreeSyncInsert(CString group,CString shipNo, CArray<CAssemblyLevelRecordSet, CAssemblyLevelRecordSet&> *arrAssemblyLevelRS, CString strAssemblyLevel, CArray<CAssemblyTreeRecordSet, CAssemblyTreeRecordSet&> *arrAssemblyTreeRS, CArray<CJoinTa510021, CJoinTa510021&> *arrTa510021);
 	void AssemblyTreeSyncInsert(CString group,CString shipNo, UINT lastLevelId,CArray<CAssemblyTreeRecordSet, CAssemblyTreeRecordSet&> *arrAssemblyTreeRS, CArray<CJoinTa510021, CJoinTa510021&> *arrTa510021);
+	void DisplayLog(CString log);
 
 };
 
