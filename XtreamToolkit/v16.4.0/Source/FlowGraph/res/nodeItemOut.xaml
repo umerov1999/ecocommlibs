@@ -1,0 +1,12 @@
+<Border x:Name='%CPNAME%' BorderThickness='1' BorderBrush='#717171'>
+   <Grid>
+      <Grid.ColumnDefinitions>
+         <ColumnDefinition />
+         <ColumnDefinition Width='12'/>
+      </Grid.ColumnDefinitions>
+      <WrapPanel Grid.Column ='0' HorizontalAlignment='Right'>
+         <Image x:Name='nodeItemImage' Margin='0,0,4,0'/><TextBlock x:Name='nodeItemCaption' TextAlignment='Right' Margin='10,0,10,0'>%CPCAPTION%</TextBlock>
+      </WrapPanel>
+      <Rectangle Width='12' Height='12' Margin='0, 0, -14, 0' CPName='%CPNAME%' CPType='2' Grid.Column = '1'/>
+   </Grid>
+</Border>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Palette CompactMode="1">
+	<Items>
+		<Item Color="110, 45, 1" Color2="187, 77, 2"/>
+		<Item Color="199, 100, 4" Color2="250, 142, 31"/>
+		<Item Color="227, 148, 36" Color2="236, 185, 106"/>
+		<Item Color="255, 210, 132" Color2="255, 239, 209"/>
+		<Item Color="28, 29, 12" Color2="81, 85, 34"/>
+		<Item Color="64, 66, 27" Color2="116, 121, 49"/>
+		<Item Color="97, 102, 41" Color2="150, 158, 63"/>
+	</Items>
+</Palette>

@@ -1,0 +1,276 @@
+// XTPChartDefines.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (ChartControl.tlb) that will become a resource in
+// ChartControl.ocx.
+
+
+[ uuid(C215CB9A-0AE1-499F-A101-48B3C370D3DF), control ]
+library XtremeChartControl
+{
+	typedef
+		[ uuid(97453312-A3F1-440b-A8BB-4235F3DE131A), 
+		helpstring("Chart Scale Type"), helpcontext(1012) ] 
+	//===========================================================================
+	// Summary:
+	//     Enumeration defines the various scale types used in the chart.
+	// Remarks:
+	//===========================================================================
+	enum XTPChartScaleType
+	{	
+		xtpChartScaleQualitative,    // Qualitative type.
+		xtpChartScaleNumerical,      // Numeric type.
+		xtpChartScaleDateTime,       // Date time type.
+		xtpChartScaleTime            // Time type
+	} XTPChartScaleType;
+
+	typedef XTPChartScaleType ChartScaleType; // COM name
+
+	typedef
+		[ uuid(63577712-A3F1-440b-A8BB-4235F3DE131A),
+		helpstring("Chart StringAlignment"), helpcontext(1012) ] 
+	//===========================================================================
+	// Summary:
+	//     Enumeration defines the various alignments for the chart title.
+	// Remarks:
+	//===========================================================================
+	enum XTPChartStringAlignment
+	{
+		xtpChartAlignNear,
+		xtpChartAlignCenter,
+		xtpChartAlignFar,
+	} XTPChartStringAlignment;
+
+	typedef XTPChartStringAlignment ChartStringAlignment; // COM name
+
+	typedef 
+		[ uuid(88433712-A3F1-440b-A8BB-4235F3DE131A),
+		helpstring("Chart Dash Style"), helpcontext(1012) ] 
+	//===========================================================================
+	// Summary:
+	//     Enumeration defines the various line styles for the charts.
+	// Remarks:
+	//===========================================================================
+	enum XTPChartDashStyle
+	{
+		xtpChartDashStyleEmpty,          //Empty style, invisible.
+		xtpChartDashStyleSolid,          //Solid line style.
+		xtpChartDashStyleDash,           //Dash line style.
+		xtpChartDashStyleDot,            //Dot line style.
+		xtpChartDashStyleDashDot,        //Alternate dash and dot line style.
+		xtpChartDashStyleDashDotDot,     //Dash dot dot line style.
+		xtpChartDashStyleCustom
+	} XTPChartDashStyle;
+
+	typedef XTPChartDashStyle ChartDashStyle; // COM name
+
+
+	typedef 
+		[ uuid(75673262-A3F1-440b-A8BB-4235F3DE131A),
+		helpstring("Chart Fill Mode"), helpcontext(1012) ] 
+	//===========================================================================
+	// Summary:
+	//     Enumeration defines the various background fill modes.
+	// Remarks:
+	//===========================================================================
+	enum XTPChartFillMode
+	{	
+		xtpChartFillEmpty,       //Empty style.
+		xtpChartFillSolid,       //Solid style.
+		xtpChartFillGradient,    //Gradient style.
+		xtpChartFillHatch        //Hatch style.
+	} XTPChartFillMode;
+
+	typedef XTPChartFillMode ChartFillMode; // COM name
+
+
+	typedef 
+		[ uuid(97894562-A3F1-440b-A8BB-4235F3DE131A),
+		helpstring("Chart Gradient Angle"), helpcontext(1012) ] 
+	//===========================================================================
+	// Summary:
+	//     Enumeration defines the different gradient angles used for background
+	//     filling.
+	// Remarks:
+	//===========================================================================
+	enum XTPChartGradientAngle
+	{	
+		xtpChartGradientAngle0   =   0,
+		xtpChartGradientAngle45  =  45,
+		xtpChartGradientAngle90  =  90,
+		xtpChartGradientAngle135 = 135,
+		xtpChartGradientAngle180 = 180,
+		xtpChartGradientAngle225 = 225,
+		xtpChartGradientAngle270 = 270,
+		xtpChartGradientAngle315 = 315
+	} XTPChartGradientAngle;
+
+	typedef XTPChartGradientAngle ChartGradientAngle; // COM name
+
+
+	typedef 
+		[ uuid(C391D97D-B189-4fb6-A55D-86FCE9BE2B18), // { 0xc391d97d, 0xb189, 0x4fb6, { 0xa5, 0x5d, 0x86, 0xfc, 0xe9, 0xbe, 0x2b, 0x18 } };
+		helpstring("Chart Gradient Angle"), helpcontext(1012) ] 
+	//===========================================================================
+	// Summary:
+	//     Enumerates the linear gradient mode.
+	// Remarks:
+	//===========================================================================
+	enum XTPChartLinearGradientMode
+	{
+		xtpChartLinearGradientModeHorizontal,        //The gradient mode horizontal
+		xtpChartLinearGradientModeVertical,          //The gradient mode vertical
+		xtpChartLinearGradientModeForwardDiagonal,   //The gradient mode forward diagonal
+		xtpChartLinearGradientModeBackwardDiagonal,  //The gradient mode backward diagonal
+		xtpChartLinearGradientModeCenterHorizontal,  //The gradient mode horizontal
+		xtpChartLinearGradientModeCenterVertical,    //The gradient mode vertical
+	} XTPChartLinearGradientMode;
+
+	typedef XTPChartLinearGradientMode ChartLinearGradientMode; // COM name
+
+
+	typedef 
+		[ uuid(64773262-A3F1-440b-A8BB-4235F3DE131A),
+		helpstring("Chart Hatch Style"), helpcontext(1012) ] 
+	//===========================================================================
+	// Summary:
+	//     Enumeration defines the various hatch styles used for background
+	//     filling.
+	// Remarks:
+	//===========================================================================
+	enum XTPChartHatchStyle
+	{	
+		xtpChartHatchStyleHorizontal,                   // 0
+		xtpChartHatchStyleVertical,                     // 1
+		xtpChartHatchStyleForwardDiagonal,              // 2
+		xtpChartHatchStyleBackwardDiagonal,             // 3
+		xtpChartHatchStyleCross,                        // 4
+		xtpChartHatchStyleDiagonalCross,                // 5
+		xtpChartHatchStyle05Percent,                    // 6
+		xtpChartHatchStyle10Percent,                    // 7
+		xtpChartHatchStyle20Percent,                    // 8
+		xtpChartHatchStyle25Percent,                    // 9
+		xtpChartHatchStyle30Percent,                    // 10
+		xtpChartHatchStyle40Percent,                    // 11
+		xtpChartHatchStyle50Percent,                    // 12
+		xtpChartHatchStyle60Percent,                    // 13
+		xtpChartHatchStyle70Percent,                    // 14
+		xtpChartHatchStyle75Percent,                    // 15
+		xtpChartHatchStyle80Percent,                    // 16
+		xtpChartHatchStyle90Percent,                    // 17
+		xtpChartHatchStyleLightDownwardDiagonal,        // 18
+		xtpChartHatchStyleLightUpwardDiagonal,          // 19
+		xtpChartHatchStyleDarkDownwardDiagonal,         // 20
+		xtpChartHatchStyleDarkUpwardDiagonal,           // 21
+		xtpChartHatchStyleWideDownwardDiagonal,         // 22
+		xtpChartHatchStyleWideUpwardDiagonal,           // 23
+		xtpChartHatchStyleLightVertical,                // 24
+		xtpChartHatchStyleLightHorizontal,              // 25
+		xtpChartHatchStyleNarrowVertical,               // 26
+		xtpChartHatchStyleNarrowHorizontal,             // 27
+		xtpChartHatchStyleDarkVertical,                 // 28
+		xtpChartHatchStyleDarkHorizontal,               // 29
+		xtpChartHatchStyleDashedDownwardDiagonal,       // 30
+		xtpChartHatchStyleDashedUpwardDiagonal,         // 31
+		xtpChartHatchStyleDashedHorizontal,             // 32
+		xtpChartHatchStyleDashedVertical,               // 33
+		xtpChartHatchStyleSmallConfetti,                // 34
+		xtpChartHatchStyleLargeConfetti,                // 35
+		xtpChartHatchStyleZigZag,                       // 36
+		xtpChartHatchStyleWave,                         // 37
+		xtpChartHatchStyleDiagonalBrick,                // 38
+		xtpChartHatchStyleHorizontalBrick,              // 39
+		xtpChartHatchStyleWeave,                        // 40
+		xtpChartHatchStylePlaid,                        // 41
+		xtpChartHatchStyleDivot,                        // 42
+		xtpChartHatchStyleDottedGrid,                   // 43
+		xtpChartHatchStyleDottedDiamond,                // 44
+		xtpChartHatchStyleShingle,                      // 45
+		xtpChartHatchStyleTrellis,                      // 46
+		xtpChartHatchStyleSphere,                       // 47
+		xtpChartHatchStyleSmallGrid,                    // 48
+		xtpChartHatchStyleSmallCheckerBoard,            // 49
+		xtpChartHatchStyleLargeCheckerBoard,            // 50
+		xtpChartHatchStyleOutlinedDiamond,              // 51
+		xtpChartHatchStyleSolidDiamond                  // 52
+	} XTPChartHatchStyle;
+
+	typedef XTPChartHatchStyle ChartHatchStyle; // COM name
+
+
+	typedef 
+		[ uuid(71034CDF-C69F-4dd0-9FBB-1BF9FECF5697), // { 0x71034cdf, 0xc69f, 0x4dd0, { 0x9f, 0xbb, 0x1b, 0xf9, 0xfe, 0xcf, 0x56, 0x97 } };
+		helpstring("Chart Hatch Style"), helpcontext(1012) ] 
+	//===========================================================================
+	// Summary:
+	//     This enumeration defines the various text position used in the XTP chart.
+	// Remarks:
+	//===========================================================================
+	enum XTPChartNearTextPosition
+	{
+		xtpChartTextNearLeft,    //The near left position.
+		xtpChartTextNearRight,   //The near right position.
+		xtpChartTextNearTop,     //The near top position.
+		xtpChartTextNearBottom   //The near bottom position.
+	} XTPChartNearTextPosition;
+
+	typedef XTPChartNearTextPosition ChartNearTextPosition; // COM name
+
+
+	typedef
+		[ uuid(EA22A7DC-EE62-4bad-BEFB-E369539BA918), // { 0xea22a7dc, 0xee62, 0x4bad, { 0xbe, 0xfb, 0xe3, 0x69, 0x53, 0x9b, 0xa9, 0x18 } };
+		helpstring("Chart Error Bar Type")] 
+	enum XTPChartErrorBarType
+	{
+		xtpChartErrorBarTypeNone              = 0,
+		xtpChartErrorBarTypeFixedValue        = 1,
+		xtpChartErrorBarTypePercentage        = 2,
+		xtpChartErrorBarTypeStandardDeviation = 3,
+		xtpChartErrorBarTypeStandardError     = 4,
+		xtpChartErrorBarTypeCustom            = 5,
+	} XTPChartErrorBarType;
+
+	typedef XTPChartErrorBarType ChartErrorBarType; // COM name
+
+
+	typedef
+		[ uuid(9CDB0933-C30C-4e61-899D-46042FF87E0D), // { 0x9cdb0933, 0xc30c, 0x4e61, { 0x89, 0x9d, 0x46, 0x4, 0x2f, 0xf8, 0x7e, 0xd } };
+		helpstring("Chart Error Bar Direction")] 
+	enum XTPChartErrorBarDirection
+	{
+		xtpChartErrorBarDirectionNone  = 0,
+		xtpChartErrorBarDirectionPlus  = 1,
+		xtpChartErrorBarDirectionMinus = 2,
+		xtpChartErrorBarDirectionBoth  = 3, // xtpChartErrorBarDirectionPlus | xtpChartErrorBarDirectionMinus
+	} XTPChartErrorBarDirection;
+
+	typedef XTPChartErrorBarDirection ChartErrorBarDirection; // COM name
+
+
+	typedef
+		[ uuid(67F6ED47-1CFB-43fd-85BC-D1747511A565), // { 0x67f6ed47, 0x1cfb, 0x43fd, { 0x85, 0xbc, 0xd1, 0x74, 0x75, 0x11, 0xa5, 0x65 } };
+		helpstring("Chart Error Bar End Style")] 
+	enum XTPChartErrorBarEndStyle
+	{
+		xtpChartErrorBarEndStyleNoCap = 0,
+		xtpChartErrorBarEndStyleCap   = 1,
+	} XTPChartErrorBarEndStyle;
+
+	typedef XTPChartErrorBarEndStyle ChartErrorBarEndStyle; // COM name
+
+
+	typedef
+		[ uuid(CE256835-6662-4d1e-A195-0CB1996DC742), // { 0xce256835, 0x6662, 0x4d1e, { 0xa1, 0x95, 0xc, 0xb1, 0x99, 0x6d, 0xc7, 0x42 } };
+		helpstring("Chart Error Bar Type")] 
+	enum XTPChartErrorBarPosition
+	{
+		xtpChartErrorBarPositionNone   = 0,
+		xtpChartErrorBarPositionTop    = 1,
+		xtpChartErrorBarPositionCenter = 2,
+	} XTPChartErrorBarPosition;
+
+	typedef XTPChartErrorBarPosition ChartErrorBarPosition; // COM name
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

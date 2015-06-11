@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{f1780feb-abb9-499e-9a9d-4381078e0485}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Image Files">
+      <UniqueIdentifier>{f03b0d3c-2609-490f-9448-1938a0aa0e48}</UniqueIdentifier>
+      <Extensions>bmp</Extensions>
+    </Filter>
+    <Filter Include="Ini Files">
+      <UniqueIdentifier>{a1eff850-571f-4ad5-9d8a-5bbfe77d6e93}</UniqueIdentifier>
+      <Extensions>ini</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WinXP.Royale.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Royale_Button.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_CaptionButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_CheckBox13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_CheckBox16.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_CheckBox25.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_Chevron.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_CloseButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_CloseGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_CloseGlyph19.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_CloseGlyph23.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_CloseGlyph6.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_CloseGlyph9.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_ComboButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_ComboButtonGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_ExplorerBarHeaderClose.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_ExplorerBarHeaderPin.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_FieldOutlineBlue.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_FrameBottom.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_FrameCaption.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_FrameCaptionMin.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_FrameCaptionSizing.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_FrameLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_FrameMaximized.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_FrameRight.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_Gripper.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_GripperVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_GroupBox.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_HelpGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_HelpGlyph19.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_HelpGlyph23.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_HelpGlyph6.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_HelpGlyph9.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_ListViewHeader.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_ListviewHeaderBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_MaximizeGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_MaximizeGlyph19.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_MaximizeGlyph23.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_MaximizeGlyph6.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_MaximizeGlyph9.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_MDICaptionButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_MDIGlyphClose.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_MDIGlyphMinimize.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_MDIGlyphRestore.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_MinimizeGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_MinimizeGlyph19.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_MinimizeGlyph23.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_MinimizeGlyph6.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_MinimizeGlyph9.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_NormalGroupBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_NormalGroupCollapse.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_NormalGroupExpand.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_NormalGroupHead.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_PlaceBarBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_PlaceBarButtons.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_ProgressChunk.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_ProgressChunkVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_ProgressTrack.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_ProgressTrackVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_RadioButton13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_RadioButton16.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_RadioButton25.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_ResizeGrip2.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_RestoreGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_RestoreGlyph19.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_RestoreGlyph23.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_RestoreGlyph6.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_RestoreGlyph9.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_ScrollArrowGlyphs.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_ScrollArrowGlyphsSmall.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_ScrollArrows.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_ScrollShaftHorizontal.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_ScrollShaftVertical.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_ScrollThumbGripperHorizontal.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_ScrollThumbGripperVertical.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_ScrollThumbHorizontal.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_ScrollThumbVertical.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_Separator.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_SeparatorVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_SliderTrack.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_SmallCloseButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_SmallCloseGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_SmallFrameCaption.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_SmallFrameCaptionSizing.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_SpecialGroupBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_SpecialGroupCollapse.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_SpecialGroupExpand.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_SpecialGroupHead.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_SpinButtonBackgroundDown.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_SpinButtonBackgroundLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_SpinButtonBackgroundRight.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_SpinButtonBackgroundUp.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_SpinDownGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_SpinLeftGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_SpinRightGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_SpinUpGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_StatusBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_StatusPane.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_TabBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_TabBackground133.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_TabItem.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_TabItemBoth.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_TabItemLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_TabItemRight.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_TabItemTop.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_TabItemTopBoth.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_TabItemTopLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_TabItemTopRight.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_TabPaneEdge.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_ToolbarBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_ToolbarButtons.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_ToolbarButtonsSplit.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_ToolbarButtonsSplitDropdown.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_ToolbarButtonsSplitDropdownGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_ToolbarGripper.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_ToolbarGripperVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_TrackBarDown13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_TrackBarDown16.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_TrackBarDown25.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_TrackbarHorizontal.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_TrackBarLeft13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_TrackBarLeft16.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_TrackBarLeft25.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_TrackbarRight13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_TrackBarRight16.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_TrackBarRight25.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_TrackBarUp13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_TrackBarUp16.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_TrackBarUp25.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_TrackbarVertical.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_TreeExpandCollapse.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_TreeExpandCollapse10.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_TreeExpandCollapse15.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Royale_ExtraLarge.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="res\Royale_LargeFonts.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="res\Royale_Normal.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="res\Themes.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

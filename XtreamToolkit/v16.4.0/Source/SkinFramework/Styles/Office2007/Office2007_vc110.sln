@@ -1,0 +1,4 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ffice2007"", ".\Office2007_vc110.vcxproj", "{85424952-9995-7135-3391-823799717672}"
+EndProject

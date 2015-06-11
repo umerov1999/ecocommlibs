@@ -1,0 +1,31 @@
+<Grid Margin = '0, 0, 0, 0' ClipToBounds='True'>
+  <Grid.ColumnDefinitions>
+    <ColumnDefinition Width='1' />
+    <ColumnDefinition Width='*' />
+    <ColumnDefinition Width='1' />
+  </Grid.ColumnDefinitions>
+  <Rectangle Grid.Column='0' Stretch='Fill'>
+    <Rectangle.Fill>
+      <LinearGradientBrush StartPoint='0,0' EndPoint='0,1'>
+        <GradientStop Offset='0.4' Color='Transparent'/>
+        <GradientStop Offset='0.8' Color='Gray'/>
+      </LinearGradientBrush>
+    </Rectangle.Fill>
+  </Rectangle>
+  <Rectangle Grid.Column='1' Stretch='Fill'>
+    <Rectangle.Fill>
+      <LinearGradientBrush StartPoint='0,0' EndPoint='0,1'>
+        <GradientStop Offset='0.2' Color='Transparent'/>
+        <GradientStop Offset='2.0' Color='Yellow'/>
+      </LinearGradientBrush>
+    </Rectangle.Fill>
+  </Rectangle>
+  <Rectangle Grid.Column='2' Stretch='Fill'>
+    <Rectangle.Fill>
+      <LinearGradientBrush StartPoint='0,0' EndPoint='0,1'>
+        <GradientStop Offset='0.2' Color='Transparent'/>
+        <GradientStop Offset='0.8' Color='Gray'/>
+      </LinearGradientBrush>
+    </Rectangle.Fill>
+  </Rectangle>
+</Grid>

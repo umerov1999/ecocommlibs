@@ -1,0 +1,1242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{75a1a102-ee9f-470c-89ba-309dbc2ecf14}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Image Files">
+      <UniqueIdentifier>{433d5a54-0d2b-4bef-b3ab-a5b1abff3bb7}</UniqueIdentifier>
+      <Extensions>bmp</Extensions>
+    </Filter>
+    <Filter Include="Ini Files">
+      <UniqueIdentifier>{7dad7ecd-444f-4824-ab4a-ba36d52b4b01}</UniqueIdentifier>
+      <Extensions>ini</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Vista.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Blue_Button.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_CaptionButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_CheckBox13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_CheckBox16.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_CheckBox25.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_Chevron.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_CloseButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_CloseGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_CloseGlyph19.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_CloseGlyph23.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_CloseGlyph6.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_CloseGlyph9.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ComboButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ComboButtonGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ExplorerBarHeaderClose.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ExplorerBarHeaderPin.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_FieldOutlineBlue.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_FrameBottom.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_FrameCaption.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_FrameCaptionMin.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_FrameCaptionSizing.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_FrameLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_FrameMaximized.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_FrameRight.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_Gripper.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_GripperVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_GroupBox.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_HelpGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_HelpGlyph19.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_HelpGlyph23.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_HelpGlyph6.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_HelpGlyph9.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ListViewHeader.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ListviewHeaderBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_MaximizeGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_MaximizeGlyph19.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_MaximizeGlyph23.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_MaximizeGlyph6.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_MaximizeGlyph9.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_MDICaptionButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_MDIGlyphClose.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_MDIGlyphMinimize.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_MDIGlyphRestore.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_MinimizeGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_MinimizeGlyph19.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_MinimizeGlyph23.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_MinimizeGlyph6.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_MinimizeGlyph9.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_NormalGroupBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_NormalGroupCollapse.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_NormalGroupExpand.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_NormalGroupHead.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_PlaceBarBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_PlaceBarButtons.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ProgressChunk.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ProgressChunkVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ProgressTrack.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ProgressTrackVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_RadioButton13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_RadioButton16.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_RadioButton25.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ResizeGrip2.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_RestoreGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_RestoreGlyph19.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_RestoreGlyph23.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_RestoreGlyph6.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_RestoreGlyph9.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ScrollArrowGlyphs.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ScrollArrowGlyphsSmall.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ScrollArrows.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ScrollShaftHorizontal.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ScrollShaftVertical.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ScrollThumbGripperHorizontal.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ScrollThumbGripperVertical.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ScrollThumbHorizontal.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ScrollThumbVertical.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_Separator.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_SeparatorVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_SliderTrack.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_SmallCloseButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_SmallCloseGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_SmallFrameCaption.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_SmallFrameCaptionSizing.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_SpecialGroupBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_SpecialGroupCollapse.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_SpecialGroupExpand.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_SpecialGroupHead.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_SpinButtonBackgroundDown.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_SpinButtonBackgroundLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_SpinButtonBackgroundRight.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_SpinButtonBackgroundUp.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_SpinDownGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_SpinLeftGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_SpinRightGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_SpinUpGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_StatusBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_StatusPane.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TabBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TabBackground133.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TabItem.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TabItemBoth.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TabItemLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TabItemRight.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TabItemTop.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TabItemTopBoth.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TabItemTopLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TabItemTopRight.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TabPaneEdge.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ToolbarBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ToolbarButtons.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ToolbarButtonsSplit.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ToolbarButtonsSplitDropdown.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ToolbarButtonsSplitDropdownGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ToolbarGripper.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ToolbarGripperVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TrackBarDown13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TrackBarDown16.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TrackBarDown25.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TrackbarHorizontal.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TrackBarLeft13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TrackBarLeft16.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TrackBarLeft25.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TrackbarRight13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TrackBarRight16.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TrackBarRight25.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TrackBarUp13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TrackBarUp16.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TrackBarUp25.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TrackbarVertical.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TreeExpandCollapse.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TreeExpandCollapse10.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TreeExpandCollapse15.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_button.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_CaptionButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_CheckBox13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_CheckBox16.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_CheckBox25.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_Chevron.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_CloseButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_CloseGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_CloseGlyph19.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_CloseGlyph23.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_CloseGlyph6.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_CloseGlyph9.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_ComboButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_ComboButtonGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_ExplorerBarHeaderClose.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_ExplorerBarHeaderPin.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_FieldOutlineBlue.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_frameBottom.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_FrameCaption.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_FrameCaptionMin.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_FrameCaptionSizing.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_frameLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_FrameMaximized.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_frameRight.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_Gripper.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_GripperVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_GroupBox.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_HelpGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_HelpGlyph19.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_HelpGlyph23.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_HelpGlyph6.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_HelpGlyph9.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_ListViewHeader.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_ListviewHeaderBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_MaximizeGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_MaximizeGlyph19.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_MaximizeGlyph23.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_MaximizeGlyph6.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_MaximizeGlyph9.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_MDICaptionButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_MDIGlyphClose.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_MDIGlyphMinimize.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_MDIGlyphRestore.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_MinimizeGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_MinimizeGlyph19.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_MinimizeGlyph23.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_MinimizeGlyph6.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_MinimizeGlyph9.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_NormalGroupBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_NormalGroupCollapse.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_NormalGroupExpand.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_NormalGroupHead.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_PlaceBarBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_PlaceBarButtons.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_ProgressChunk.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_ProgressChunkVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_ProgressTrack.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_ProgressTrackVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_RadioButton13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_RadioButton16.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_RadioButton25.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_ResizeGrip2.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_RestoreGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_RestoreGlyph19.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_RestoreGlyph23.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_RestoreGlyph6.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_RestoreGlyph9.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_ScrollArrowGlyphs.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_ScrollArrowGlyphsSmall.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_ScrollArrows.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_ScrollShaftHorizontal.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_ScrollShaftVertical.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_ScrollThumbGripperHorizontal.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_ScrollThumbGripperVertical.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_ScrollThumbHorizontal.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_ScrollThumbVertical.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_Separator.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_SeparatorVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_sliderTrack.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_SmallCloseButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_SmallCloseGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_SmallFrameCaption.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_SmallFrameCaptionSizing.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_SpecialGroupBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_SpecialGroupCollapse.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_SpecialGroupExpand.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_SpecialGroupHead.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_SpinButtonBackgroundDown.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_SpinButtonBackgroundLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_SpinButtonBackgroundRight.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_SpinButtonBackgroundUp.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_SpinDownGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_SpinLeftGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_SpinRightGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_SpinUpGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_StatusBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_StatusPane.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_TabBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_TabBackground133.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_tabItem.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_tabItemBoth.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_tabItemLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_tabItemRight.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_tabItemTop.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_tabItemTopBoth.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_tabItemTopLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_tabItemTopRight.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_TabPaneEdge.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_ToolbarBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_ToolbarButtons.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_ToolbarButtonsSplit.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_ToolbarButtonsSplitDropdown.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_ToolbarButtonsSplitDropdownGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_ToolbarGripper.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_ToolbarGripperVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_TrackBarDown13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_TrackBarDown16.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_TrackBarDown25.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_TrackbarHorizontal.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_TrackBarLeft13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_TrackBarLeft16.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_TrackBarLeft25.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_TrackbarRight13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_TrackBarRight16.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_TrackBarRight25.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_TrackBarUp13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_TrackBarUp16.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_TrackBarUp25.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_TrackbarVertical.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_treeExpandCollapse.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_treeExpandCollapse10.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Homestead_treeExpandCollapse15.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_button.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_CaptionButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_CheckBox13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_CheckBox16.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_CheckBox25.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_Chevron.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_CloseButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_CloseGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_CloseGlyph19.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_CloseGlyph23.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_CloseGlyph6.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_CloseGlyph9.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_ComboButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_ComboButtonGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_ExplorerBarHeaderClose.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_ExplorerBarHeaderPin.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_FieldOutlineBlue.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_frameBottom.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_FrameCaption.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_FrameCaptionMin.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_FrameCaptionSizing.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_frameLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_FrameMaximized.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_frameRight.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_Gripper.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_GripperVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_GroupBox.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_HelpGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_HelpGlyph19.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_HelpGlyph23.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_HelpGlyph6.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_HelpGlyph9.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_ListViewHeader.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_ListviewHeaderBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_MaximizeGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_MaximizeGlyph19.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_MaximizeGlyph23.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_MaximizeGlyph6.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_MaximizeGlyph9.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_MDICaptionButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_MDIGlyphClose.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_MDIGlyphMinimize.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_MDIGlyphRestore.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_MinimizeGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_MinimizeGlyph19.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_MinimizeGlyph23.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_MinimizeGlyph6.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_MinimizeGlyph9.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_NormalGroupBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_NormalGroupCollapse.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_NormalGroupExpand.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_NormalGroupHead.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_PlaceBarBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_PlaceBarButtons.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_ProgressChunk.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_ProgressChunkVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_ProgressTrack.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_ProgressTrackVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_RadioButton13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_RadioButton16.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_RadioButton25.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_ResizeGrip2.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_RestoreGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_RestoreGlyph19.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_RestoreGlyph23.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_RestoreGlyph6.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_RestoreGlyph9.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_ScrollArrowGlyphs.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_ScrollArrowGlyphsSmall.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_ScrollArrows.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_ScrollShaftHorizontal.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_ScrollShaftVertical.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_ScrollThumbGripperHorizontal.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_ScrollThumbGripperVertical.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_ScrollThumbHorizontal.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_ScrollThumbVertical.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_Separator.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_SeparatorVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_sliderTrack.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_SmallCloseButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_SmallCloseGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_SmallFrameCaption.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_SmallFrameCaptionSizing.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_SpecialGroupBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_SpecialGroupCollapse.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_SpecialGroupExpand.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_SpecialGroupHead.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_SpinButtonBackgroundDown.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_SpinButtonBackgroundLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_SpinButtonBackgroundRight.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_SpinButtonBackgroundUp.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_SpinDownGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_SpinLeftGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_SpinRightGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_SpinUpGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_StatusBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_StatusPane.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_TabBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_TabBackground133.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_tabItem.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_tabItemBoth.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_tabItemLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_tabItemRight.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_tabItemTop.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_tabItemTopBoth.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_tabItemTopLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_tabItemTopRight.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_TabPaneEdge.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_ToolbarBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_ToolbarButtons.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_ToolbarButtonsSplit.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_ToolbarButtonsSplitDropdown.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_ToolbarButtonsSplitDropdownGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_ToolbarGripper.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_ToolbarGripperVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_TrackBarDown13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_TrackBarDown16.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_TrackBarDown25.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_TrackbarHorizontal.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_TrackBarLeft13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_TrackBarLeft16.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_TrackBarLeft25.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_TrackbarRight13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_TrackBarRight16.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_TrackBarRight25.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_TrackBarUp13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_TrackBarUp16.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_TrackBarUp25.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_TrackbarVertical.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_treeExpandCollapse.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_treeExpandCollapse10.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Metallic_treeExpandCollapse15.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ExtraLarge.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="res\Blue_LargeFonts.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="res\Blue_Normal.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="res\Homestead_ExtraLarge.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="res\Homestead_LargeFonts.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="res\Homestead_Normal.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="res\Metallic_ExtraLarge.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="res\Metallic_LargeFonts.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="res\Metallic_Normal.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="res\Themes.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

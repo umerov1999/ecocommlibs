@@ -1,0 +1,76 @@
+// Resource.rc
+//
+// --------------------------------------------------------------------------
+// COPYRIGHT NOTICE:
+// --------------------------------------------------------------------------
+//
+// "Codejock FlowGraph" is a MFC extension library for creating graphing 
+// control used to display relationship graphs. This file and the code herein 
+// are part of the Codejock Chart MFC extension library.
+//
+// This code is protected under U.S. Copyright Law and International treaties
+// and is intended for registered and licensed use only. Any other use is
+// strictly prohibited. This code is subject to the terms and conditions
+// outlined in the "Codejock Chart" End User License Agreement (EULA).
+//
+// Copyright (c) 1998-2013 Codejock Technologies LLC, All Rights Reserved.
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#include "FlowGraph/Resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(_XTP_NO_BINARY_RESOURCES)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#endif //_WIN32
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+FLOWGRAPH_XAML_NODE              HTML    DISCARDABLE     "FlowGraph/res/node.xaml"
+FLOWGRAPH_XAML_NODE_ITEM         HTML    DISCARDABLE     "FlowGraph/res/nodeItem.xaml"
+FLOWGRAPH_XAML_NODE_ITEM_IN      HTML    DISCARDABLE     "FlowGraph/res/nodeItemIn.xaml"
+FLOWGRAPH_XAML_NODE_ITEM_OUT     HTML    DISCARDABLE     "FlowGraph/res/nodeItemOut.xaml"
+FLOWGRAPH_XAML_NODE_ITEM_INOUT   HTML    DISCARDABLE     "FlowGraph/res/nodeItemInOut.xaml"
+
+XTP_FLOWGRAPH_SHAPE_ARROW                           HTML    DISCARDABLE     "FlowGraph/res/arrow.xaml"
+XTP_FLOWGRAPH_SHAPE_ARROW_DOWN                      HTML    DISCARDABLE     "FlowGraph/res/arrow_down.xaml"
+XTP_FLOWGRAPH_SHAPE_ARROW_LEFT                      HTML    DISCARDABLE     "FlowGraph/res/arrow_left.xaml"
+XTP_FLOWGRAPH_SHAPE_ARROW_LEFTRIGHT                 HTML    DISCARDABLE     "FlowGraph/res/arrow_leftright.xaml"
+XTP_FLOWGRAPH_SHAPE_ARROW_RIGHT                     HTML    DISCARDABLE     "FlowGraph/res/arrow_right.xaml"
+XTP_FLOWGRAPH_SHAPE_ARROW_UP                        HTML    DISCARDABLE     "FlowGraph/res/arrow_up.xaml"
+XTP_FLOWGRAPH_SHAPE_ARROW_UPDOWN                    HTML    DISCARDABLE     "FlowGraph/res/arrow_updown.xaml"
+XTP_FLOWGRAPH_SHAPE_CALLOUT_ELLIPSE                 HTML    DISCARDABLE     "FlowGraph/res/callout_ellipse.xaml"
+XTP_FLOWGRAPH_SHAPE_CALLOUT_RECTANGLE               HTML    DISCARDABLE     "FlowGraph/res/callout_rectangle.xaml"
+XTP_FLOWGRAPH_SHAPE_CALLOUT_RECTANGLE_ROUNDED       HTML    DISCARDABLE     "FlowGraph/res/callout_rectangle_rounded.xaml"
+XTP_FLOWGRAPH_SHAPE_CHEVRON                         HTML    DISCARDABLE     "FlowGraph/res/chevron.xaml"
+XTP_FLOWGRAPH_SHAPE_CLOUD                           HTML    DISCARDABLE     "FlowGraph/res/cloud.xaml"
+XTP_FLOWGRAPH_SHAPE_CROSS                           HTML    DISCARDABLE     "FlowGraph/res/cross.xaml"
+XTP_FLOWGRAPH_SHAPE_DOCUMENT                        HTML    DISCARDABLE     "FlowGraph/res/document.xaml"
+XTP_FLOWGRAPH_SHAPE_ELLIPSE                         HTML    DISCARDABLE     "FlowGraph/res/ellipse.xaml"
+XTP_FLOWGRAPH_SHAPE_FLAG                            HTML    DISCARDABLE     "FlowGraph/res/flag.xaml"
+XTP_FLOWGRAPH_SHAPE_HEXAGON                         HTML    DISCARDABLE     "FlowGraph/res/hexagon.xaml"
+XTP_FLOWGRAPH_SHAPE_IMAGE                           HTML    DISCARDABLE     "FlowGraph/res/image.xaml"
+XTP_FLOWGRAPH_SHAPE_LIGHTNING                       HTML    DISCARDABLE     "FlowGraph/res/lightning.xaml"
+XTP_FLOWGRAPH_SHAPE_MOON                            HTML    DISCARDABLE     "FlowGraph/res/moon.xaml"
+XTP_FLOWGRAPH_SHAPE_PARALLELOGRAM                   HTML    DISCARDABLE     "FlowGraph/res/parallelogram.xaml"
+XTP_FLOWGRAPH_SHAPE_PENTAGON                        HTML    DISCARDABLE     "FlowGraph/res/pentagon.xaml"
+XTP_FLOWGRAPH_SHAPE_RECTANGLE                       HTML    DISCARDABLE     "FlowGraph/res/rectangle.xaml"
+XTP_FLOWGRAPH_SHAPE_RECTANGLE_ROUNDED               HTML    DISCARDABLE     "FlowGraph/res/rectangle_rounded.xaml"
+XTP_FLOWGRAPH_SHAPE_RHOMBUS                         HTML    DISCARDABLE     "FlowGraph/res/rhombus.xaml"
+XTP_FLOWGRAPH_SHAPE_RING                            HTML    DISCARDABLE     "FlowGraph/res/ring.xaml"
+XTP_FLOWGRAPH_SHAPE_RING_HALF                       HTML    DISCARDABLE     "FlowGraph/res/ring_half.xaml"
+XTP_FLOWGRAPH_SHAPE_STAR                            HTML    DISCARDABLE     "FlowGraph/res/star.xaml"
+XTP_FLOWGRAPH_SHAPE_TRAPEZOID                       HTML    DISCARDABLE     "FlowGraph/res/trapezoid.xaml"
+XTP_FLOWGRAPH_SHAPE_TRIANGLE                        HTML    DISCARDABLE     "FlowGraph/res/triangle.xaml"
+XTP_FLOWGRAPH_SHAPE_TRIANGLE_RIGHT                  HTML    DISCARDABLE     "FlowGraph/res/triangle_right.xaml"
+
+#endif // !defined(_XTP_NO_BINARY_RESOURCES)

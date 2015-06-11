@@ -1,0 +1,94 @@
+// Office 2013 style resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2013 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#include "afxres.h"
+
+#if !defined(_XTP_NO_BINARY_RESOURCES)
+
+XTP_IDR_OFFICE2013_STYLE STYLE DISCARDABLE "Styles/Office2013/Office2013.zip"
+
+// Theme specific .ini files
+OFFICE2013WHITE_INI     TEXTFILE MOVEABLE PURE "Styles/Office2013/Office2013White.ini"
+OFFICE2013GRAYLIGHT_INI TEXTFILE MOVEABLE PURE "Styles/Office2013/Office2013GrayLight.ini"
+OFFICE2013GRAYDARK_INI  TEXTFILE MOVEABLE PURE "Styles/Office2013/Office2013GrayDark.ini"
+
+// Application specific .ini files
+OFFICE2013WORD_INI  TEXTFILE MOVEABLE PURE "Styles/Office2013/Office2013Word.ini"
+OFFICE2013EXCEL_INI TEXTFILE MOVEABLE PURE "Styles/Office2013/Office2013Excel.ini"
+
+// Calendar images
+Office2013_CalendarCaptionBarExpandButton     PNG  MOVEABLE PURE "Styles/Office2013/res/CalendarCaptionBarExpandButton.png"
+Office2013_CalendarCaptionBarPrevDateButton   PNG  MOVEABLE PURE "Styles/Office2013/res/CalendarCaptionBarPrevDateButton.png"
+Office2013_CalendarCaptionBarNextDateButton   PNG  MOVEABLE PURE "Styles/Office2013/res/CalendarCaptionBarNextDateButton.png"
+Office2013_CalendarCaptionBarSwitchViewButton PNG  MOVEABLE PURE "Styles/Office2013/res/CalendarCaptionBarSwitchViewButton.png"
+Office2013_CalendarPrevNextEventButtons       PNG  MOVEABLE PURE "Styles/Office2013/res/CalendarPrevNextEventButtons.png"
+Office2013_CalendarPrevNextEventButtonArr     PNG  MOVEABLE PURE "Styles/Office2013/res/CalendarPrevNextEventButtonArr.png"
+
+// Shortcut bar images
+Office2013_ShortcutBarGripper      PNG  MOVEABLE PURE "Styles/Office2013/res/ShortcutBarGripper.png"
+Office2013_ShortcutBarGlyphs       PNG  MOVEABLE PURE "Styles/Office2013/res/ShortcutBarGlyphs.png"
+Office2013_ShortcutBarItems        PNG  MOVEABLE PURE "Styles/Office2013/res/ShortcutBarItems.png"
+Office2013_ShortcutBarNavigateItem PNG  MOVEABLE PURE "Styles/Office2013/res/ShortcutBarNavigateItem.png"
+
+#endif // !defined(_XTP_NO_BINARY_RESOURCES)
+
+#ifdef _XTP_INCLUDE_VERSION
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 16,4,0,0
+ PRODUCTVERSION 16,4,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "October 8, 2014\0"
+            VALUE "CompanyName", "Codejock Software\0"
+            VALUE "FileDescription", "Office 2013 Style\0"
+            VALUE "FileVersion", "16, 4, 0, 0\0"
+            VALUE "InternalName", "Office2013.dll\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Office2013.dll\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Office 2013 Style\0"
+            VALUE "ProductVersion", "16, 4, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // _XTP_INCLUDE_VERSION

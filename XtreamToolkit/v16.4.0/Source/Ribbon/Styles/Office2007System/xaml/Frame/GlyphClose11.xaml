@@ -1,0 +1,4 @@
+<Canvas>
+	<Line X2='11' Y2='11' StrokeThickness='2' Stroke='{x:Static SystemColors.ActiveCaptionTextBrush}'/>
+	<Line X1='11' Y2='11' StrokeThickness='2' Stroke='{x:Static SystemColors.ActiveCaptionTextBrush}'/>
+</Canvas>

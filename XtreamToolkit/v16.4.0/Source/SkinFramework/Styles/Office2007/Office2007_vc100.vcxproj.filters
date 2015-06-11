@@ -1,0 +1,1104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{9cb25e13-4fb1-4d27-bd69-0a50650a8e03}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Image Files">
+      <UniqueIdentifier>{20eb7c4f-2127-4f05-a5cc-403c08af1dae}</UniqueIdentifier>
+      <Extensions>bmp</Extensions>
+    </Filter>
+    <Filter Include="Ini Files">
+      <UniqueIdentifier>{af817e28-bda3-4e97-9431-108159128412}</UniqueIdentifier>
+      <Extensions>ini</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Office2007.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Aqua_Button.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_CaptionButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_CheckBox13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_CloseGlyph13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_CloseGlyph19.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_ComboButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_ComboButtonGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_FrameBottom.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_FrameCaption.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_FrameLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_FrameRight.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_GroupBox.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_HelpGlyph13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_HelpGlyph19.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_ListViewHeader.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_ListviewHeaderBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_MaximizeGlyph13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_MaximizeGlyph19.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_MinimizeGlyph13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_MinimizeGlyph19.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_ProgressChunk.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_ProgressChunkVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_ProgressTrack.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_ProgressTrackVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_RadioButton13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_ResizeGrip2.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_RestoreGlyph13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_RestoreGlyph19.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_Separator.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_SeparatorVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_sliderTrack.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_SmallFrameCaption.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_SpinButtonBackgroundDown.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_SpinButtonBackgroundLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_SpinButtonBackgroundRight.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_SpinButtonBackgroundUp.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_SpinDownGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_SpinLeftGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_SpinRightGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_SpinUpGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_StatusBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_StatusPane.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_TabBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_TabBackground133.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_TabItemTop.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_TabItemTopLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_TabPaneEdge.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_ToolbarBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_ToolbarButtons.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_ToolbarButtonsSplit.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_ToolbarButtonsSplitDropdown.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_ToolbarButtonsSplitDropdownGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_ToolbarGripper.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_ToolbarGripperVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_TrackBarDown13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_TrackbarHorizontal.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_TrackBarLeft13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_TrackbarRight13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_TrackBarUp13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_TrackbarVertical.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_TreeExpandCollapse.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_TreeExpandCollapse10.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Aqua_TreeExpandCollapse15.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_Button.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_CaptionButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_CheckBox13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_CloseGlyph13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_CloseGlyph17.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_ComboButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_ComboButtonGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_FrameBottom.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_FrameCaption.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_FrameCaptionMin.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_FrameCaptionSizing.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_FrameLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_FrameMaximized.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_FrameRight.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_GroupBox.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_HelpGlyph13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_HelpGlyph17.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_ListViewHeader.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_ListviewHeaderBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_MaximizeGlyph13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_MaximizeGlyph17.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_MinimizeGlyph13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_MinimizeGlyph17.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_ProgressChunk.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_ProgressChunkVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_ProgressTrack.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_ProgressTrackVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_RadioButton13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_ResizeGrip2.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_RestoreGlyph13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_RestoreGlyph17.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_ScrollArrowGlyphs.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_ScrollArrows.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_ScrollShaftHorizontal.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_ScrollShaftVertical.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_ScrollThumbGripperHorizontal.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_ScrollThumbGripperVertical.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_ScrollThumbHorizontal.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_ScrollThumbVertical.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_Separator.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_SeparatorVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_sliderTrack.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_SmallFrameCaption.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_SpinButtonBackgroundDown.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_SpinButtonBackgroundLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_SpinButtonBackgroundRight.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_SpinButtonBackgroundUp.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_SpinDownGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_SpinLeftGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_SpinRightGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_SpinUpGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_StatusBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_StatusPane.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_TabBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_TabItemTop.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_TabItemTopLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_TabPaneEdge.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_ToolbarBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_ToolbarButtons.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_ToolbarButtonsSplit.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_ToolbarButtonsSplitDropdown.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_ToolbarButtonsSplitDropdownGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_ToolbarGripper.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_ToolbarGripperVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_TrackBarDown13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_TrackbarHorizontal.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_TrackBarLeft13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_TrackbarRight13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_TrackBarUp13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_TrackbarVertical.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_TreeExpandCollapse.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_TreeExpandCollapse10.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Black_TreeExpandCollapse15.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_Button.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_CaptionButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_CheckBox13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_CloseGlyph13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_CloseGlyph17.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ComboButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ComboButtonGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_FrameBottom.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_FrameCaption.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_FrameCaptionMin.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_FrameCaptionSizing.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_FrameLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_FrameMaximized.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_FrameRight.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_GroupBox.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_HelpGlyph13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_HelpGlyph17.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ListViewHeader.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ListviewHeaderBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_MaximizeGlyph13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_MaximizeGlyph17.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_MinimizeGlyph13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_MinimizeGlyph17.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ProgressChunk.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ProgressChunkVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ProgressTrack.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ProgressTrackVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_RadioButton13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ResizeGrip2.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_RestoreGlyph13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_RestoreGlyph17.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ScrollArrowGlyphs.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ScrollArrows.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ScrollShaftHorizontal.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ScrollShaftVertical.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ScrollThumbGripperHorizontal.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ScrollThumbGripperVertical.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ScrollThumbHorizontal.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ScrollThumbVertical.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_Separator.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_SeparatorVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_sliderTrack.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_SmallFrameCaption.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_SpinButtonBackgroundDown.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_SpinButtonBackgroundLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_SpinButtonBackgroundRight.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_SpinButtonBackgroundUp.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_SpinDownGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_SpinLeftGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_SpinRightGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_SpinUpGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_StatusBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_StatusPane.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TabBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TabItemTop.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TabItemTopLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TabPaneEdge.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ToolbarBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ToolbarButtons.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ToolbarButtonsSplit.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ToolbarButtonsSplitDropdown.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ToolbarButtonsSplitDropdownGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ToolbarGripper.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ToolbarGripperVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TrackBarDown13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TrackbarHorizontal.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TrackBarLeft13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TrackbarRight13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TrackBarUp13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TrackbarVertical.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TreeExpandCollapse.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TreeExpandCollapse10.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_TreeExpandCollapse15.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_Button.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_CaptionButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_CheckBox13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_CloseGlyph13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_CloseGlyph17.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_ComboButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_ComboButtonGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_FrameBottom.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_FrameCaption.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_FrameCaptionMin.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_FrameCaptionSizing.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_FrameLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_FrameMaximized.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_FrameRight.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_GroupBox.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_HelpGlyph13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_HelpGlyph17.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_ListViewHeader.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_ListViewHeaderBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_MaximizeGlyph13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_MaximizeGlyph17.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_MinimizeGlyph13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_MinimizeGlyph17.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_ProgressChunk.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_ProgressChunkVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_ProgressTrack.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_ProgressTrackVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_RadioButton13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_ResizeGrip2.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_RestoreGlyph13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_RestoreGlyph17.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_ScrollArrowGlyphs.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_ScrollArrows.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_ScrollShaftHorizontal.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_ScrollShaftVertical.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_ScrollThumbGripperHorizontal.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_ScrollThumbGripperVertical.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_ScrollThumbHorizontal.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_ScrollThumbVertical.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_Separator.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_SeparatorVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_SliderTrack.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_SmallFrameCaption.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_SpinButtonBackgroundDown.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_SpinButtonBackgroundLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_SpinButtonBackgroundRight.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_SpinButtonBackgroundUp.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_SpinDownGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_SpinLeftGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_SpinRightGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_SpinUpGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_StatusBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_StatusPane.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_TabBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_TabItemTop.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_TabItemTopLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_TabPaneEdge.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_ToolbarBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_ToolbarButtons.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_ToolbarButtonsSplit.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_ToolbarButtonsSplitDropDown.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_ToolbarButtonsSplitDropDownGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_ToolbarGripper.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_ToolbarGripperVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_TrackbarDown13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_TrackbarHorizontal.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_TrackbarLeft13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_TrackbarRight13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_TrackbarUp13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_TrackbarVertical.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_TreeExpandCollapse.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_TreeExpandCollapse10.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Office2007_TreeExpandCollapse15.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_Button.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_CaptionButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_CheckBox13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_CloseGlyph13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_CloseGlyph17.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_ComboButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_ComboButtonGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_FrameBottom.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_FrameCaption.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_FrameCaptionMin.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_FrameCaptionSizing.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_FrameLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_FrameMaximized.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_FrameRight.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_GroupBox.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_HelpGlyph13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_HelpGlyph17.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_ListViewHeader.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_ListviewHeaderBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_MaximizeGlyph13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_MaximizeGlyph17.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_MinimizeGlyph13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_MinimizeGlyph17.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_ProgressChunk.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_ProgressChunkVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_ProgressTrack.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_ProgressTrackVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_RadioButton13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_ResizeGrip2.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_RestoreGlyph13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_RestoreGlyph17.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_ScrollArrowGlyphs.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_ScrollArrows.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_ScrollShaftHorizontal.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_ScrollShaftVertical.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_ScrollThumbGripperHorizontal.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_ScrollThumbGripperVertical.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_ScrollThumbHorizontal.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_ScrollThumbVertical.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_Separator.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_SeparatorVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_sliderTrack.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_SmallFrameCaption.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_SpinButtonBackgroundDown.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_SpinButtonBackgroundLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_SpinButtonBackgroundRight.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_SpinButtonBackgroundUp.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_SpinDownGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_SpinLeftGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_SpinRightGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_SpinUpGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_StatusBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_StatusPane.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_TabBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_TabItemTop.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_TabItemTopLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_TabPaneEdge.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_ToolbarBackground.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_ToolbarButtons.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_ToolbarButtonsSplit.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_ToolbarButtonsSplitDropdown.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_ToolbarButtonsSplitDropdownGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_ToolbarGripper.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_ToolbarGripperVert.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_TrackBarDown13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_TrackbarHorizontal.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_TrackBarLeft13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_TrackbarRight13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_TrackBarUp13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_TrackbarVertical.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_TreeExpandCollapse.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_TreeExpandCollapse10.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Silver_TreeExpandCollapse15.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\NormalAqua.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="res\NormalBlack.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="res\NormalBlue.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="res\NormalSilver.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="res\Themes.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

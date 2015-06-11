@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="VisualStudio2012"
+
+>
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory=".\Release/vc71"
+			IntermediateDirectory=".\Release/vc71"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="1"
+				InlineFunctionExpansion="1"
+				PreprocessorDefinitions="NDEBUG;WIN32;_WINDOWS;_USRDLL;XTPRESOURCE_EXPORTS"
+				StringPooling="TRUE"
+				RuntimeLibrary="2"
+				EnableFunctionLevelLinking="TRUE"
+				TreatWChar_tAsBuiltInType="TRUE"
+				PrecompiledHeaderFile=".\Release/vc71/VisualStudio2012.pch"
+				AssemblerListingLocation=".\Release/vc71/"
+				ObjectFile=".\Release/vc71/"
+				ProgramDataBaseFileName=".\Release/vc71/"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				IgnoreImportLibrary="TRUE"
+				AdditionalDependencies="odbc32.lib odbccp32.lib"
+				OutputFile="../VisualStudio2012.dll"
+				LinkIncremental="1"
+				SuppressStartupBanner="TRUE"
+				IgnoreAllDefaultLibraries="TRUE"
+				ProgramDatabaseFile=".\Release/vc71/VisualStudio2012vc71.pdb"
+				OptimizeForWindows98="1"
+				ResourceOnlyDLL="TRUE"
+				ImportLibrary=".\Release/vc71/VisualStudio2012vc71.lib"
+				TargetMachine="1"/>
+			<Tool
+				Name="VCMIDLTool"
+				TypeLibraryName=".\Release/vc71/VisualStudio2012.tlb"
+				HeaderFileName=""/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG,_AFXDLL,_XTP_INCLUDE_VERSION"
+				Culture="1033"
+				AdditionalIncludeDirectories="../../"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat">
+			<File
+				RelativePath="VisualStudio2012.rc">
+			</File>
+		</Filter>
+		<Filter
+			Name="Ini Files"
+			Filter="">
+			<File
+				RelativePath="VisualStudio2012Dark.ini">
+			</File>
+			<File
+				RelativePath="VisualStudio2012Light.ini">
+			</File>
+		</Filter>
+		<Filter
+			Name="Image Files"
+			Filter="">
+		</Filter>
+	</Files>
+</VisualStudioProject>

@@ -1,0 +1,324 @@
+// CommandBars resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2013 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#include "CommandBars/Resource.h"
+#include "CommandBars/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_TURKISH, SUBLANG_DEFAULT
+#pragma code_page(1254)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_IMAGEEDITOR_DIALOG DIALOGEX 0, 0, 253, 185
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Klavye"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Resim",IDC_STATIC,7,7,86,8
+    GROUPBOX        "Renkliler",IDC_STATIC,102,106,80,71
+    GROUPBOX        "Hareket",IDC_STATIC,101,72,81,31
+    GROUPBOX        "Önizleme",IDC_STATIC,7,106,86,71
+    GROUPBOX        "Araçlar",IDC_STATIC,101,9,81,60
+    DEFPUSHBUTTON   "Tamam",IDOK,193,7,50,14
+    PUSHBUTTON      "Iptal",IDCANCEL,193,25,50,14
+    CONTROL         "",XTP_IDC_STATIC_PICTURE,"Static",SS_BLACKFRAME | 
+                    SS_NOTIFY,7,17,86,80
+    CTEXT           "",XTP_IDC_STATIC_PREVIEW,14,117,73,54,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    LTEXT           "Þeffaf",IDC_STATIC,135,156,42,8
+    LTEXT           "",XTP_IDC_CLR_ERASE,116,153,15,15,SS_NOTIFY
+    CTEXT           "Araçlar",XTP_IDC_STATIC_TOOLS,112,21,60,43,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE | WS_BORDER
+    CTEXT           "Hareket",XTP_IDC_STATIC_MOVE,111,83,62,12,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE | WS_BORDER
+    CONTROL         "",XTP_IDC_CLR_PICKER,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_NOTIFY | WS_GROUP,109,144,15,15
+    CTEXT           "Renkliler",XTP_IDC_STATIC_COLORS,107,121,68,12,
+                    SS_CENTERIMAGE | NOT WS_VISIBLE | WS_BORDER
+END
+
+XTP_IDD_PAGE_KEYBOARD DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Klavye"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Kategori:",IDC_STATIC,4,5,89,8
+    COMBOBOX        XTP_IDC_COMBO_CATEGORY,4,15,91,147,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Komutlarý:",XTP_IDC_TXT_COMMANDS,4,28,89,8
+    LISTBOX         XTP_IDC_LBOX_ACCEL_COMMANDS,4,38,91,77,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Tuþ atamalarý:",XTP_IDC_TXT_ASSIGNMENTS,100,28,73,8
+    LISTBOX         XTP_IDC_LBOX_KEYS,100,38,75,51,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Yeni kýsayol tuþuna basýn:",XTP_IDC_TXT_NEWKEY,100,93,100,8
+    EDITTEXT        XTP_IDC_EDIT_SHORTCUTKEY,100,103,75,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Atama",XTP_IDC_BTN_ASSIGN,179,39,49,14
+    PUSHBUTTON      "Kaldýr",XTP_IDC_BTN_REMOVE,179,56,49,14
+    PUSHBUTTON      "Tümünü Sýfýrla",XTP_IDC_BTN_ACCEL_RESET,179,73,49,14
+    LTEXT           "Açýklama:",XTP_IDC_TXT_DESC_TITLE,4,117,89,8
+    LTEXT           "",XTP_IDC_TXT_DESC_OVERVIEW,4,127,224,19,0,
+                    WS_EX_STATICEDGE
+END
+
+XTP_IDD_PAGE_TOOLBARS DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Araç çubuklarý"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Araç çubuklarý:",IDC_STATIC,4,5,148,8
+    LISTBOX         XTP_IDC_LIST_TOOLBARS,4,15,150,131,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Yeni...",XTP_IDC_BUTTON_NEW,158,15,70,14
+    PUSHBUTTON      "Yeniden adlandýrma...",XTP_IDC_BUTTON_RENAME,158,33,70,14
+    PUSHBUTTON      "Sil",XTP_IDC_BUTTON_DELETE,158,51,70,14
+    PUSHBUTTON      "Sýfýrlama...",XTP_IDC_BUTTON_RESET,158,69,70,14
+END
+
+XTP_IDD_PAGE_OPTIONS DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Seçenekler"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Kiþiselleþtirilmiþ Menüler ve araç çubuklarý",XTP_IDC_GROUP_PERSONALIZED,4,5,222,8
+    CONTROL         "Her zaman menüleri tam göster",XTP_IDC_CHECK_FULL_MENUS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,17,216,10
+    CONTROL         "Kýsa bir gecikmeden sonra tam menüleri göster",
+                    XTP_IDC_CHECK_AFTERDELAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,22,29,204,10
+    PUSHBUTTON      "Menü ve araç çubuðu Kullaným verilerimi sýfýrla",
+                    XTP_IDC_BUTTON_RESETDATA,10,42,125,14
+    LTEXT           "Diðer", XTP_IDC_GROUP_OTHER,4,70,222,8
+    CONTROL         "Büyük simgeler",XTP_IDC_CHECK_LARGEICONS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,82,216,10
+    CONTROL         "Araç çubuklarýnda Ekran ipuçlarýný göster",XTP_IDC_CHECK_SCREENTTIPS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,93,216,10
+    CONTROL         "Ekran Ýpuçlarýnda kýsayol tuþlarýný göster",
+                    XTP_IDC_CHECK_SHORTCUTS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,22,104,204,10
+    LTEXT           "Menü animasyonlarý:",IDC_STATIC,10,117,56,8
+    COMBOBOX        XTP_IDC_COMBO_ANIMATION,70,115,79,65,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_PAGE_COMMANDS DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Komutlarý"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Araç çubuðuna bir komut eklemek: bir kategori seçin ve komutu bu iletiþim kutusunu bir araç çubuðuna sürükleyin.",
+                    IDC_STATIC,4,5,220,19
+    LTEXT           "Kategoriler:",IDC_STATIC,4,25,80,8
+    LISTBOX         XTP_IDC_LIST_CATEGORIES,4,35,81,111,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Commands:",IDC_STATIC,90,25,134,8
+    LISTBOX         XTP_IDC_LIST_COMMANDS,90,35,135,111,LBS_OWNERDRAWFIXED | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_PAGE_MENUS DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "&Menüler"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Uygulama menüleri",XTP_IDC_STATIC_APPLICATIONMENUS,4,5,222,
+                    8
+    LTEXT           "Baglam menüleri",XTP_IDC_STATIC_CONTEXTMENUS,4,80,222,8
+    LTEXT           "Menüyü göster:",IDC_STATIC,10,20,44,11
+    COMBOBOX        XTP_IDC_COMBO_APPMENUS,54,18,159,79,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Sifirlama",XTP_IDC_BUTTON_RESETAPP,10,57,70,14
+    LTEXT           "Varsayilan menü\nVarsayilan uygulama menüsü",XTP_IDC_STATIC_DESCRIPTION,37,34,181,18
+    ICON            0,XTP_IDC_STATIC_ICON,10,32,21,20
+    LTEXT           "Baglam menüsünü seçin:",IDC_STATIC,10,92,68,10
+    COMBOBOX        XTP_IDC_COMBO_CONTEXTMENUS,83,90,130,79,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Sifirlama",XTP_IDC_BUTTON_RESETCONTEXT,10,108,70,14
+END
+
+XTP_IDD_NEWTOOLBAR DIALOGEX DISCARDABLE  0, 0, 186, 52
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Yeni araç çubuðu"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Araç çubuðu adý:",IDC_STATIC,4,4,178,8
+    EDITTEXT        XTP_IDC_EDIT_TOOLBARNAME,4,15,178,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Tamam",IDOK,78,34,50,14
+    PUSHBUTTON      "Iptal",IDCANCEL,132,34,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XTP_IDR_CUSTOMIZEMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "Özelleþtir"
+    BEGIN
+        MENUITEM "Sifirlama",                      XTP_ID_CUSTOMIZE_RESET
+        MENUITEM "Sil",                     XTP_ID_CUSTOMIZE_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Adý:",                      XTP_ID_CUSTOMIZE_NAME
+        MENUITEM SEPARATOR
+        MENUITEM "Düðme resmini Kopyala",          XTP_ID_CUSTOMIZE_COPYBUTTONIMAGE
+
+        MENUITEM "Düðme Görüntüsünü Yapýþtýr",         XTP_ID_CUSTOMIZE_PASTEBUTTONIMAGE
+
+        MENUITEM "Düðme görüntüsünü Sýfýrla",         XTP_ID_CUSTOMIZE_RESETBUTTONIMAGE
+
+        MENUITEM "Düðme görüntüsünü Düzenle...",       XTP_ID_CUSTOMIZE_EDITBUTTONIMAGE
+
+        MENUITEM "Düðme Görüntüsünü Deðiþtir",        XTP_ID_CUSTOMIZE_CHANGEBUTTONIMAGE
+
+        MENUITEM SEPARATOR
+        MENUITEM "Varsayýlan stil",              XTP_ID_CUSTOMIZE_DEFAULTSTYLE
+
+        MENUITEM "Yalnýzca metin",                  XTP_ID_CUSTOMIZE_TEXTONLY
+        MENUITEM "Resim ve metin",             XTP_ID_CUSTOMIZE_IMAGEANDTEXT
+
+        MENUITEM SEPARATOR
+        MENUITEM "Grup Baþlat",              XTP_ID_CUSTOMIZE_BEGINAGROUP
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOMIZE_CLOSE "Kapat"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOMIZE       "Özelleþtir"
+    XTP_IDS_NEWMENU         "Yeni menü"
+    XTP_IDS_CUSTOMIZE_STATUSBAR "Durum çubugunu özellestirme"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CONFIRM_RESETDATA 
+                            "Bu komutlarý bu uygulamada kullandým ve menü ve araç çubuðu görünür komut varsayýlan kümesini geri kaydý siler. Bu açýk herhangi bir özelleþtirme geri almayacaktýr. Bunu yapmak istediðinden emin misin?"
+    XTP_IDS_INVALID_NUMBER  "Bu geçerli bir sayý deðil."
+    XTP_IDS_INVALID_FONTSIZE "Sayý 1 ile 1638 arasýnda olmalýdýr."
+    XTP_IDS_CONFIRM_RESET   "'%s' araç çubuðu'na yapýlan deðiþiklikleri sýfýrlamak istediðinizden emin misiniz?"
+    XTP_IDS_BUILTINMENUS    "Yerleþik menüleri"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOM_BAR      "Özel %d"
+    XTP_IDS_ERROR_BLANKNAME "Araç çubuðu adý boþ olamaz. Bir ad yazýn."
+    XTP_IDS_ERROR_LIMIT     "Üzgünüz, sinirina ulastiniz."
+    XTP_IDS_ERROR_EXISTS    "Zaten '%s' adýnda bir araç bulunmaktadýr. Baþka bir ad yazýn."
+    XTP_IDS_RENAMETOOLBAR   "Araç çubuðunu yeniden adlandýrma"
+    XTP_IDS_CONFIRM_DELETE  "'%s' araç çubuðunu silmek istediðinizden emin misiniz?"
+    XTP_IDS_ALLCOMMANDS     "Tüm komutlar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_CUSTOMIZE        "Uygulama görünümünü, araç çubuklarýný ve menüleri özelleþtirme\nÖzelleþtir..."
+    XTP_ID_CUSTOMIZE_RESET  "\nAraç çubuðunu yeniden ayarlama"
+    XTP_ID_CUSTOMIZE_ADDORREMOVE "\nDüðmeleri Ekle/Kaldýr"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CONFIRM_KEYBOARD 
+                            "Tus atamalarini sifirlamak istediginizden emin misiniz? Bu eylem metin düzeyinde tüm özel tus atamalarini kaldirir."
+    XTP_IDS_CONFIRM_REASSIGN 
+                            "Bu kisayol, geçerli olarak atanmis.\nDo you want to re-assign this shortcut?"
+    XTP_IDS_CONFIRM_UPDATE  "Bir yazilim güncellestirmesi '%s' araç degistirdi. Özellestirilmis araç sifirlamak ve yeni bir yüklemek ister misiniz?"
+    XTP_IDS_IMAGEEDITOR_FILTER 
+                            "Tüm resim dosyalari|*.bmp;*.wmf;*.emf;*.ico;*.dib;*.png;*.cur;*.gif;*.jpg|Bit eslemler (*.bmp;*.dib;*.png;*.gif;*.jpg)|*.bmp;*.dib;*.png;*.gif;*.jpg|Meta dosyalari (*.wmf;*.emf)|*.wmf;*.emf|Simgeler (*.ico;*.cur)|*.ico;*.cur|Tüm dosyalar (*.*)|*.*||"
+    XTP_ID_TOOLBAR_EXPAND   "\nAraç çubuðu seçenekleri"
+    XTP_ID_TOOLBAR_HIDE     "\nKapat"
+    XTP_ID_POPUPBAR_EXPAND  "\nGeniþletme"
+    XTP_ID_MENUBAR_CLOSE    "\nPencereyi Kapat"
+    XTP_ID_MENUBAR_RESTORE  "\nPencereyi önceki boyuta getirme"
+    XTP_ID_MENUBAR_MINIMIZE "\nPencereyi simge durumuna küçültme"
+
+    XTP_IDS_SHORTCUT_SECONDKEY "(%s) baski. Akor ikinci anahtar için bekleniyor..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_BUTTON_PENCIL    "\nKurþun kalem"
+    XTP_ID_BUTTON_FILL      "\nDolgu rengi"
+    XTP_ID_BUTTON_GETCOLOR  "\nRenk Seç"
+    XTP_ID_BUTTON_LINE      "\nÇizgi"
+    XTP_ID_BUTTON_RECTANGLE "\nDikdörtgen"
+    XTP_ID_BUTTON_CIRCLE    "\nElips"
+    XTP_ID_BUTTON_COPY      "\nKopyala"
+    XTP_ID_BUTTON_PASTE     "\nYapýþtýr"
+    XTP_ID_BUTTON_CLEAR     "\nAçýk"
+    XTP_ID_BUTTON_UNDO      "\nGeri alma"
+    XTP_ID_BUTTON_REDO      "\nYinele"
+    XTP_ID_BUTTON_OPEN      "\nDosyadan içe aktarma"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ANIMATION_SYSDEF "(Sistem varsayýlaný)"
+    XTP_IDS_ANIMATION_RANDOM "Rastgele"
+    XTP_IDS_ANIMATION_UNFOLD "Açýlmak"
+    XTP_IDS_ANIMATION_SLIDE "Slayt"
+    XTP_IDS_ANIMATION_FADE  "Fade"
+    XTP_IDS_ANIMATION_NONE  "Hiçbiri"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_WORKSPACE_MOVEPREVIOUS "\nÖnceki Sekme grubuna taþý"
+    XTP_ID_WORKSPACE_MOVENEXT "\nSonraki sekme grubuna taþý"
+    XTP_ID_WORKSPACE_NEWHORIZONTAL "\nYeni yatay sekme grubu"
+    XTP_ID_WORKSPACE_NEWVERTICAL "Yeni dikey sekme grubu"
+    XTP_ID_WORKSPACE_CANCEL "\nÝptal"
+    XTP_IDS_TABNAVIGATEBUTTON_ACTIVEFILES "Etkin dosyalar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_PREVIEW_PRINT    "Baski önizlemede görüntülenen öge\nYazdir"
+    XTP_ID_PREVIEW_PREV     "Önceki sayfaya git\nÖnceki sayfa"
+    XTP_ID_PREVIEW_NEXT     "Sonraki sayfaya git\nSonraki sayfa"
+    XTP_ID_PREVIEW_ZOOMIN   "Önizleme sayfasinin büyütmeyi\nYakinlastir"
+    XTP_ID_PREVIEW_ZOOMOUT  "Önizleme sayfasinin büyütmeyi azaltma\nVinlamak disari"
+    XTP_ID_PREVIEW_CLOSE    "Önizlemeyi Kapat\nÖnizlemeyi Kapat"
+    XTP_IDS_PREVIEW_WHOLEPAGE "Tam sayfa"
+    XTP_IDS_PREVIEW_PAGEWIDTH "Sayfa genisligi"
+    XTP_IDS_PREVIEW_PAGEI     "Sayfa %i"
+    XTP_IDS_PREVIEW_PAGEIOFI  "Sayfa %i in %i"
+END
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)

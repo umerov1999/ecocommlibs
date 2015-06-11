@@ -1,0 +1,73 @@
+// Visual Studio 2012 style resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2013 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#include "afxres.h"
+
+#if !defined(_XTP_NO_BINARY_RESOURCES)
+
+XTP_IDR_VS2012_STYLE STYLE DISCARDABLE "Styles/VisualStudio2012/VisualStudio2012.zip"
+VISUALSTUDIO2012DARK_INI TEXTFILE MOVEABLE PURE "Styles/VisualStudio2012/VisualStudio2012Dark.ini"
+VISUALSTUDIO2012LIGHT_INI TEXTFILE MOVEABLE PURE "Styles/VisualStudio2012/VisualStudio2012Light.ini"
+
+#endif // !defined(_XTP_NO_BINARY_RESOURCES)
+
+#ifdef _XTP_INCLUDE_VERSION
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 16,4,0,0
+ PRODUCTVERSION 16,4,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "October 8, 2014\0"
+            VALUE "CompanyName", "Codejock Software\0"
+            VALUE "FileDescription", "Visual Studio 2012 Style\0"
+            VALUE "FileVersion", "16, 4, 0, 0\0"
+            VALUE "InternalName", "VisualStudio2012.dll\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "VisualStudio2012.dll\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Visual Studio 2012 Style\0"
+            VALUE "ProductVersion", "16, 4, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // _XTP_INCLUDE_VERSION

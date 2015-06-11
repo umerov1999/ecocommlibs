@@ -1,0 +1,12 @@
+<Grid>
+	<Border x:Name='Border' Background='#FFFFFFFF' />
+	<Canvas x:Name='Canvas' HorizontalAlignment='Center' VerticalAlignment='Center'>
+		<Rectangle x:Name='Fill' Canvas.Top='0' Canvas.Left='3' Width='7' Height='2' Fill='#FF000000' />
+		<Line SmoothingMode='None' x:Name='Stroke' X1 ='3' Y1='0' X2='3' Y2='3' StrokeThickness='1' Stroke='#FF000000' />
+		<Line SmoothingMode='None' x:Name='Stroke' X1 ='9' Y1='0' X2='9' Y2='6' StrokeThickness='1' Stroke='#FF000000' />
+		<Line SmoothingMode='None' x:Name='Stroke' X1 ='7' Y1='6' X2='9' Y2='6' StrokeThickness='1' Stroke='#FF000000' />
+
+		<Rectangle x:Name='Fill' Canvas.Top='3' Width='7' Height='2' Fill='#FF000000' />
+		<Rectangle x:Name='Stroke' Canvas.Top='4' Width='7' Height='6' StrokeThickness='1' Stroke='#FF000000' />
+	</Canvas>
+</Grid>

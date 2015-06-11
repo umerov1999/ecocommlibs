@@ -1,0 +1,6 @@
+<Border x:Name='%CPNAME%' BorderThickness='1' BorderBrush='#717171'>
+   <WrapPanel HorizontalAlignment='Center'>
+	  <Rectangle Width='0' Height='0' CPName='%CPNAME%' CPType='0'/>
+      <Image x:Name='nodeItemImage' Margin='0,0,4,0'/><TextBlock x:Name='nodeItemCaption' VerticalAlignment='Center' Margin='10,0,10,0'>%CPCAPTION%</TextBlock>
+   </WrapPanel>
+</Border>

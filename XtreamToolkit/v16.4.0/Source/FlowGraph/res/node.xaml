@@ -1,0 +1,11 @@
+<Border x:Name='nodeFrame' VerticalAlignment='Center' HorizontalAlignment='Center' Padding='0' BorderThickness='1' BorderBrush='#717171' >
+   <StackPanel x:Name='nodeContent' VerticalAlignment='Center' HorizontalAlignment='Center' Background='#DCDCDC'>
+      <Border x:Name='nodeCaptionBorder' BorderThickness='1' BorderBrush='#717171' Background='#ACACAC' Padding='20, 0, 20, 0' CanSetColor='True'>
+         <WrapPanel>
+            <Image x:Name='nodeImage' Margin='-20,0,0,0'/><TextBlock x:Name='nodeCaption' FontWeight='Bold' VerticalAlignment='Center' HorizontalAlignment='Center'/>
+         </WrapPanel>
+      </Border>
+      <StackPanel x:Name='nodeCustomControl'/>
+		<StackPanel x:Name='nodeItemsCollection'/>
+	</StackPanel> <!-- nodeContent -->
+</Border> <!-- nodeFrame -->

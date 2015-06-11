@@ -1,0 +1,10 @@
+<Grid>
+  <Rectangle Stretch='Fill'>
+    <Rectangle.Fill>
+      <LinearGradientBrush StartPoint='0,1' EndPoint='0,0'>
+        <GradientStop Offset='1.5' Color='{x:Static SystemColors.ActiveCaptionColor}'/>
+        <GradientStop Offset='1.5' Color='{x:Static SystemColors.ActiveCaptionColor}'/>
+      </LinearGradientBrush>
+    </Rectangle.Fill>
+  </Rectangle>
+</Grid>

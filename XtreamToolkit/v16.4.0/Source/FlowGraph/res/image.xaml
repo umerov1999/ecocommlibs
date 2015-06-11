@@ -1,0 +1,4 @@
+<Canvas x:Name='nodeCanvas' Height='100' Width='100' ConnectionPointsIn='Center'>
+   <Image x:Name='nodeImage' Stretch='Fill'/>
+   <TextBlock x:Name='nodeCaption'/>
+</Canvas>

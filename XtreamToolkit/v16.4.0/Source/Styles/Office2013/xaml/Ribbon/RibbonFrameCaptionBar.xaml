@@ -1,0 +1,9 @@
+<Border BorderThickness='0,0,0,1' BorderBrush='{x:Static SystemColors.ActiveCaptionBrush}'>
+	<Border.Background>
+		<LinearGradientBrush StartPoint='0,0' EndPoint='0,1'>
+			<GradientStop Offset='0' Color='{x:Static SystemColors.GradientActiveCaptionColor}'/>
+			<GradientStop Offset='0.2' Color='{x:Static SystemColors.ActiveCaptionColor}'/>
+			<GradientStop Offset='1.5' Color='{x:Static SystemColors.GradientActiveCaptionColor}'/>
+		</LinearGradientBrush>
+	</Border.Background>
+</Border>

@@ -1,0 +1,354 @@
+//=======================================================================
+//================ Lex class support ====================================
+//=======================================================================
+// 	lexClass:
+//		name		= c_CPPString
+//		parent		= c_CPP
+//		parent:dyn	= c_CPP
+//		parent:file = <*.c|*.cpp|*.h|*.inl|*.tli|*.tlh|*.rc|*.rc2>	
+//
+//		children		= 0
+//		children		= class1, class2, ...
+//
+//		previous:class			=	
+//		previous:tag			=	
+//		previous:tag:separators	=	
+//
+//		start:class		= 
+//		start:Tag		= '"'
+//
+//		skip:Tag		= '\"'
+//
+//		end:class		= //
+//		end:Tag			= '"'
+//		end:separators	= ' '
+//
+//		Token:tag		= 'if', 'for', 'while', 'do'
+//		Token:start:separators	= 
+//		Token:end:separators	= 
+//-----------------------------------------------------------------------
+//---------------- Attributes -------------------------------------------
+//-----------------------------------------------------------------------
+//	txt:colorFG	= 0xffc0c0 // color value in hex format. default: black	
+//	txt:colorBK	= 0xffc0c0 // color value in hex format. default: white		
+//
+//	txt:colorSelFG	= 0xffc0c0 // color value in hex format. default: white
+//	txt:colorSelBK	= 0xffc0c0 // color value in hex format. default: black
+//
+//	txt:Bold	= 1 // {1,0} default: 0
+//	txt:Italic	= 1 // {1,0} default: 0
+//	txt:Underline	= 1 // {1,0} default: 0
+//
+//	caseSensitive	= 1 // {1,0} default: 0
+//
+//	Collapsable	= 1 // {1,0} default: 0
+//	CollapsedText	= '/*...*/' // quoted string value. default: '[..]'	
+//
+//	ParseOnScreen	= 1 // {1,0} default: 0
+// 	
+//-----------------------------------------------------------------------
+//* Global attributes ***************************************************
+//-----------------------------------------------------------------------
+// 	global:FirstParseInSeparateThread	= 1		// {0,1} default=1
+// 	global:EditReparceInSeparateThread	= 1		// {0,1} default=1
+// 	global:ConfigChangedReparceInSeparateThread= 1 // {0,1} default=1
+// 	global:EditReparceTimeout_ms	= 500		// default= 500 ms; time out for start reparse after last key was pressed.
+// 	global:MaxBackParseOffset		= 100		// default= 100 chars; maximum back buffer size. Some times parser look back for the text from current position.
+// 	global:OnScreenSchCacheLifeTime_sec = 180	// default= 180 sec; -1 and 0 means infinite; time out for on screen parsed pices of text. for memory using optimization.
+// 	global:ParserThreadIdleLifeTime_sec = 60	// default=60 sec; -1 and 0 means infinite; time out for existing of parser thread when parser idle (no parse requests).
+	
+/////////////////////////////////////////////////////////////////////////
+
+//=======================================================================
+//================ Variables support ====================================
+//=======================================================================
+// NON operation - example:   @alpha:not
+//
+// @alpha	= a-z, A-Z
+// @digit	= 0-9
+// @HexDdigit	= 0-9, a-f, A-F
+// @specs	= "~`!@#$%^&*()_-+=\\|{}[];:'\",.<>/?"
+// @EOL		= End Of Line
+//---------------------------------------------
+// special tags:  '\\', '\'', '\t', '\r', '\n'
+/////////////////////////////////////////////////////////////////////////
+
+lexClass: 
+	name			= c_LUA	
+	parent:file		= <*.lua>	
+	caseSensitive		= 1
+
+	//global:FirstParseInSeparateThread	= 0
+	global:EditReparceInSeparateThread	= 1
+
+	//global:EditReparceTimeout_ms	= 250
+	//global:MaxBackParseOffset		= 100
+	//global:OnScreenSchCacheLifeTime_sec = 60
+	//global:ParserThreadIdleLifeTime_sec = -1
+
+
+lexClass: 	
+	name		= c_LUACodeBlock
+	parent:dyn	= c_LUA, c_LUACodeBlock
+	start:Tag	= '{'
+	end:tag		= '}'
+// start:Tag	= 'do', 'for', 'function', 'if', 'while'
+// end:tag		= 'end'
+	Collapsable	= 1 
+	CollapsedText	= '{ ... }'
+	DisplayName		= 'Curly Braces'
+	
+lexClass: 	
+	name			= c_URL	
+	ParseOnScreen	= 0
+	parent:dyn		= c_LUA, c_LUACodeBlock
+	caseSensitive	= 0
+	children		= 0
+	previous:tag	= @specs, ' ', '\t', @eol
+	start:Tag		= 'http://'
+	end:separators	= ' ', '\t', @eol
+	DisplayName		= 'URL'
+
+lexClass: 	
+	name			= c_String	
+	parent:dyn		= c_LUA, c_LUACodeBlock
+	children		= c_URL
+	start:Tag		= '"'
+	skip:Tag		= '\\"', '\\\r\n', '\\\n\r', '\\\n', '\\\r'	
+	end:Tag			= '"', @eol
+	txt:colorFG		= 0x009090
+	//txt:colorFG	= 0xA31515
+	DisplayName		= 'String (Double Quotes)'
+
+lexClass: 	
+	name			= c_String_char	
+	parent:dyn		= c_LUA, c_LUACodeBlock
+	children		= 0
+	start:Tag		= '\''
+	//skip:Tag		= '\\"', '\\\r\n', '\\\n\r', '\\\n', '\\\r'	
+	end:Tag			= '\'', @eol
+	txt:colorFG		= 0x009090
+	//txt:colorFG	= 0xA31515
+	DisplayName		= 'String (Single Quotes)'
+
+lexClass:
+	name		= c_LUACommentML_Start
+	parent		= c_LUA, c_LUACodeBlock
+	children	= c_URL	
+	start:Tag	= '--[['
+	end:Separators	= @eol    
+	txt:colorFG	= 0x00A000
+
+lexClass:
+	name		= c_LUACommentML_End
+	parent		= c_LUA, c_LUACodeBlock, c_LUACommentML
+	children	= c_URL	
+	start:Tag	= '--]]'
+	end:Separators	= @eol    
+	txt:colorFG	= 0x00A000
+
+lexClass:
+	name		= c_LUACommentML
+	parent		= c_LUA, c_LUACodeBlock
+	children	= c_LUACommentML_End
+	start:CLASS	= c_LUACommentML_Start
+	end:CLASS	= c_LUACommentML_End
+	Collapsable	= 1
+	txt:colorFG	= 0x00A000
+	DisplayName	= 'Comment (Multi-Line)'
+
+lexClass:	
+	name		= c_LUACommentSL
+	parent		= c_LUA, c_LUACodeBlock
+	children	= c_URL		
+	start:tag	='--'
+	skip:Tag	= '\\\r\n', '\\\n\r', '\\\n', '\\\r'	
+	end:tag		= @eol
+	txt:colorFG	= 0x00A000
+	DisplayName	= 'Comment (Single-Line)'
+	
+lexClass:	
+	name		= c_LUAKeywords
+	ParseOnScreen	= 0
+	parent:Dyn	= c_LUA, c_LUACodeBlock
+	children	= 0
+	DisplayName	= 'Keyword'
+
+	token:tag	= 'and'
+	token:tag	= 'break'
+	token:tag	= 'do'
+	token:tag	= 'else'
+	token:tag	= 'elseif'
+	token:tag	= 'end'
+	token:tag	= 'false'
+	token:tag	= 'for'
+	token:tag	= 'function'
+	token:tag	= 'global'
+	token:tag	= 'if'
+	token:tag	= 'in'
+	token:tag	= 'local'
+	token:tag	= 'nil'
+	token:tag	= 'not'
+	token:tag	= 'or'
+	token:tag	= 'repeat'
+	token:tag	= 'return'
+	token:tag	= 'then'
+	token:tag	= 'true'
+	token:tag	= 'until'
+	token:tag	= 'while'
+
+	token:start:separators	= @specs, ' ', '\t', @eol
+	token:end:separators	= @specs, ' ', '\t', @eol
+	
+	txt:colorFG	= 0x000080
+	txt:bold = 1
+		
+lexClass:
+	name		= c_LUAFunctions
+	ParseOnScreen	= 0
+	parent:Dyn	= c_LUA, c_LUACodeBlock
+	children	= 0
+	DisplayName	= 'LUA Function'
+
+	token:tag	= '_G'
+	token:tag	= '_VERSION'
+	token:tag	= 'assert'
+	token:tag	= 'collectgarbage'
+	token:tag	= 'dofile'
+	token:tag	= 'error'
+	token:tag	= 'getfenv'
+	token:tag	= 'getmetatable'
+	token:tag	= 'ipairs'
+	token:tag	= 'load'
+	token:tag	= 'loadfile'
+	token:tag	= 'loadstring'
+	token:tag	= 'module'
+	token:tag	= 'next'
+	token:tag	= 'pairs'
+	token:tag	= 'pcall'
+	token:tag	= 'print'
+	token:tag	= 'rawequal'
+	token:tag	= 'rawget'
+	token:tag	= 'rawset'
+	token:tag	= 'require'
+	token:tag	= 'select'
+	token:tag	= 'setfenv'
+	token:tag	= 'setmetatable'
+	token:tag	= 'tonumber'
+	token:tag	= 'tostring'
+	token:tag	= 'type'
+	token:tag	= 'unpack'
+	token:tag	= 'xpcall'
+	
+	//token:tag	= 'coroutine.create'
+	//token:tag	= 'coroutine.resume'
+	//token:tag	= 'coroutine.running'
+	//token:tag	= 'coroutine.status'
+	//token:tag	= 'coroutine.wrap'
+	//token:tag	= 'coroutine.yield'
+	//token:tag	= 'debug.debug'
+	//token:tag	= 'debug.getfenv'
+	//token:tag	= 'debug.gethook'
+	//token:tag	= 'debug.getinfo'
+	//token:tag	= 'debug.getlocal'
+	//token:tag	= 'debug.getmetatable'
+	//token:tag	= 'debug.getregistry'
+	//token:tag	= 'debug.getupvalue'
+	//token:tag	= 'debug.setfenv'
+	//token:tag	= 'debug.sethook'
+	//token:tag	= 'debug.setlocal'
+	//token:tag	= 'debug.setmetatable'
+	//token:tag	= 'debug.setupvalue'
+	//token:tag	= 'debug.traceback'
+	//token:tag	= 'file:close'
+	//token:tag	= 'file:flush'
+	//token:tag	= 'file:lines'
+	//token:tag	= 'file:read'
+	//token:tag	= 'file:seek'
+	//token:tag	= 'file:setvbuf'
+	//token:tag	= 'file:write'
+	//token:tag	= 'io.close'
+	//token:tag	= 'io.flush'
+	//token:tag	= 'io.input'
+	//token:tag	= 'io.lines'
+	//token:tag	= 'io.open'
+	//token:tag	= 'io.output'
+	//token:tag	= 'io.popen'
+	//token:tag	= 'io.read'
+	//token:tag	= 'io.tmpfile'
+	//token:tag	= 'io.type'
+	//token:tag	= 'io.write'
+	//token:tag	= 'math.abs'
+	//token:tag	= 'math.acos'
+	//token:tag	= 'math.asin'
+	//token:tag	= 'math.atan2'
+	//token:tag	= 'math.atan'
+	//token:tag	= 'math.ceil'
+	//token:tag	= 'math.cosh'
+	//token:tag	= 'math.cos'
+	//token:tag	= 'math.deg'
+	//token:tag	= 'math.exp'
+	//token:tag	= 'math.floor'
+	//token:tag	= 'math.fmod'
+	//token:tag	= 'math.frexp'
+	//token:tag	= 'math.huge'
+	//token:tag	= 'math.ldexp'
+	//token:tag	= 'math.log10'
+	//token:tag	= 'math.log'
+	//token:tag	= 'math.max'
+	//token:tag	= 'math.min'
+	//token:tag	= 'math.modf'
+	//token:tag	= 'math.pi'
+	//token:tag	= 'math.pow'
+	//token:tag	= 'math.rad'
+	//token:tag	= 'math.random'
+	//token:tag	= 'math.randomseed'
+	//token:tag	= 'math.sinh'
+	//token:tag	= 'math.sin'
+	//token:tag	= 'math.sqrt'
+	//token:tag	= 'math.tanh'
+	//token:tag	= 'math.tan'
+	//token:tag	= 'os.clock'
+	//token:tag	= 'os.date'
+	//token:tag	= 'os.difftime'
+	//token:tag	= 'os.execute'
+	//token:tag	= 'os.exit'
+	//token:tag	= 'os.getenv'
+	//token:tag	= 'os.remove'
+	//token:tag	= 'os.rename'
+	//token:tag	= 'os.setlocale'
+	//token:tag	= 'os.time'
+	//token:tag	= 'os.tmpname'
+	//token:tag	= 'package.cpath'
+	//token:tag	= 'package.loaded'
+	//token:tag	= 'package.loadlib'
+	//token:tag	= 'package.path'
+	//token:tag	= 'package.preload'
+	//token:tag	= 'package.seeall'
+	//token:tag	= 'string.byte'
+	//token:tag	= 'string.char'
+	//token:tag	= 'string.dump'
+	//token:tag	= 'string.find'
+	//token:tag	= 'string.format'
+	//token:tag	= 'string.gmatch'
+	//token:tag	= 'string.gsub'
+	//token:tag	= 'string.len'
+	//token:tag	= 'string.lower'
+	//token:tag	= 'string.match'
+	//token:tag	= 'string.rep'
+	//token:tag	= 'string.reverse'
+	//token:tag	= 'string.sub'
+	//token:tag	= 'string.upper'
+	//token:tag	= 'table.concat'
+	//token:tag	= 'table.insert'
+	//token:tag	= 'table.maxn'
+	//token:tag	= 'table.remove'
+	//token:tag	= 'table.sort'
+ 
+
+	
+	token:start:separators	= @specs, ' ', '\t', @eol
+	token:end:separators	= @specs, ' ', '\t', @eol
+                   
+	txt:colorFG	= 0x900090
+	txt:bold = 0

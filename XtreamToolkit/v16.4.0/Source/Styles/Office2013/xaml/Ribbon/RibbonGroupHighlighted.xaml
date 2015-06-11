@@ -1,0 +1,7 @@
+<Grid>
+	<Border Margin='0,4,0,4' BorderThickness='0,0,1,0' BorderBrush='#E1E1E1' />
+
+	<Grid VerticalAlignment='Bottom'>
+		<TextBlock x:Name='CaptionText' Margin='0,1,0,3' FontFamily='Segoe UI' FontSize='11' FontQuality='ClearType' TextAlignment='Center' TextTrimming="CharacterEllipsis">Caption</TextBlock>
+	</Grid>
+</Grid>

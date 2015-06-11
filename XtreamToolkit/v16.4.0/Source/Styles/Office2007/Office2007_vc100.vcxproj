@@ -1,0 +1,738 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>Office2007</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release/vc100\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release/vc100\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\Release/vc100x64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\Release/vc100x64\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <TypeLibraryName>.\Release/vc100/Office2007.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;_USRDLL;XTPRESOURCE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeaderOutputFile>.\Release/vc100/Office2007.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/vc100/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/vc100/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/vc100/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;_AFXDLL;_XTP_INCLUDE_VERSION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../Office2007.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <ProgramDatabaseFile>.\Release/vc100/Office2007vc100.pdb</ProgramDatabaseFile>
+      <NoEntryPoint>true</NoEntryPoint>
+      <ImportLibrary>.\Release/vc100/Office2007vc100.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\Release/vc100/Office2007.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;_USRDLL;XTPRESOURCE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeaderOutputFile>.\Release/vc100x64/Office2007.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/vc100x64/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/vc100x64/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/vc100x64/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;_AFXDLL;_XTP_INCLUDE_VERSION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../Office2007.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <ProgramDatabaseFile>.\Release/vc100x64/Office2007vc100x64.pdb</ProgramDatabaseFile>
+      <NoEntryPoint>true</NoEntryPoint>
+      <ImportLibrary>.\Release/vc100x64/Office2007vc100x64.lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Office2007.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Aqua_ContextTabBlue.png" />
+    <None Include="res\Aqua_ContextTabBlueClient.png" />
+    <None Include="res\Aqua_ContextTabBlueGroupButton.png" />
+    <None Include="res\Aqua_ContextTabBlueHeader.png" />
+    <None Include="res\Aqua_ContextTabCyan.png" />
+    <None Include="res\Aqua_ContextTabCyanClient.png" />
+    <None Include="res\Aqua_ContextTabCyanGroupButton.png" />
+    <None Include="res\Aqua_ContextTabCyanHeader.png" />
+    <None Include="res\Aqua_ContextTabGreen.png" />
+    <None Include="res\Aqua_ContextTabGreenClient.png" />
+    <None Include="res\Aqua_ContextTabGreenGroupButton.png" />
+    <None Include="res\Aqua_ContextTabGreenHeader.png" />
+    <None Include="res\Aqua_ContextTabGroupCaption.png" />
+    <None Include="res\Aqua_ContextTabGroupClient.png" />
+    <None Include="res\Aqua_ContextTabOrange.png" />
+    <None Include="res\Aqua_ContextTabOrangeClient.png" />
+    <None Include="res\Aqua_ContextTabOrangeGroupButton.png" />
+    <None Include="res\Aqua_ContextTabOrangeHeader.png" />
+    <None Include="res\Aqua_ContextTabPurple.png" />
+    <None Include="res\Aqua_ContextTabPurpleClient.png" />
+    <None Include="res\Aqua_ContextTabPurpleGroupButton.png" />
+    <None Include="res\Aqua_ContextTabPurpleHeader.png" />
+    <None Include="res\Aqua_ContextTabRed.png" />
+    <None Include="res\Aqua_ContextTabRedClient.png" />
+    <None Include="res\Aqua_ContextTabRedGroupButton.png" />
+    <None Include="res\Aqua_ContextTabRedHeader.png" />
+    <None Include="res\Aqua_ContextTabSeparator.png" />
+    <None Include="res\Aqua_ContextTabYellow.png" />
+    <None Include="res\Aqua_ContextTabYellowClient.png" />
+    <None Include="res\Aqua_ContextTabYellowGroupButton.png" />
+    <None Include="res\Aqua_ContextTabYellowHeader.png" />
+    <None Include="res\Aqua_ControlGalleryDown.png" />
+    <None Include="res\Aqua_ControlGalleryPopup.png" />
+    <None Include="res\Aqua_ControlGalleryScrollArrowGlyphs.png" />
+    <None Include="res\Aqua_ControlGalleryScrollArrowsVerticalDark.png" />
+    <None Include="res\Aqua_ControlGalleryScrollArrowsVerticalLight.png" />
+    <None Include="res\Aqua_ControlGalleryScrollThumbGripperVertical.png" />
+    <None Include="res\Aqua_ControlGalleryScrollThumbVertical.png" />
+    <None Include="res\Aqua_ControlGalleryScrollVerticalDark.png" />
+    <None Include="res\Aqua_ControlGalleryScrollVerticalLight.png" />
+    <None Include="res\Aqua_ControlGalleryUp.png" />
+    <None Include="res\Aqua_FrameBottomLeft.png" />
+    <None Include="res\Aqua_FrameBottomRight.png" />
+    <None Include="res\Aqua_FrameCaptionButton.png" />
+    <None Include="res\Aqua_FrameCaptionClose13.png" />
+    <None Include="res\Aqua_FrameCaptionClose17.png" />
+    <None Include="res\Aqua_FrameCaptionClose23.png" />
+    <None Include="res\Aqua_FrameCaptionMaximize13.png" />
+    <None Include="res\Aqua_FrameCaptionMaximize17.png" />
+    <None Include="res\Aqua_FrameCaptionMaximize23.png" />
+    <None Include="res\Aqua_FrameCaptionMinimize13.png" />
+    <None Include="res\Aqua_FrameCaptionMinimize17.png" />
+    <None Include="res\Aqua_FrameCaptionMinimize23.png" />
+    <None Include="res\Aqua_FrameCaptionRestore13.png" />
+    <None Include="res\Aqua_FrameCaptionRestore17.png" />
+    <None Include="res\Aqua_FrameCaptionRestore23.png" />
+    <None Include="res\Aqua_FrameGripper.png" />
+    <None Include="res\Aqua_FrameSimpleTopRight.png" />
+    <None Include="res\Aqua_FrameSystemButton.png" />
+    <None Include="res\Aqua_FrameTopCenter.png" />
+    <None Include="res\Aqua_FrameTopLeft.png" />
+    <None Include="res\Aqua_FrameTopRight.png" />
+    <None Include="res\Aqua_MenuCheckedItem.png" />
+    <None Include="res\Aqua_MenuCheckedItemMark.png" />
+    <None Include="res\Aqua_MenuSelectedDisabledItem22.png" />
+    <None Include="res\Aqua_MenuSelectedDisabledItem54.png" />
+    <None Include="res\Aqua_MenuSelectedItem22.png" />
+    <None Include="res\Aqua_MenuSelectedItem54.png" />
+    <None Include="res\Aqua_PopupBarFrame.png" />
+    <None Include="res\Aqua_ReportExpandButton.png" />
+    <None Include="res\Aqua_RibbonGroupButton.png" />
+    <None Include="res\Aqua_RibbonGroupButtonIcon.png" />
+    <None Include="res\Aqua_RibbonGroupCaption.png" />
+    <None Include="res\Aqua_RibbonGroupClient.png" />
+    <None Include="res\Aqua_RibbonGroupQuickAccess.png" />
+    <None Include="res\Aqua_RibbonGroups.png" />
+    <None Include="res\Aqua_RibbonGroupsScrollLeft.png" />
+    <None Include="res\Aqua_RibbonGroupsScrollLeftGlyph.png" />
+    <None Include="res\Aqua_RibbonGroupsScrollRight.png" />
+    <None Include="res\Aqua_RibbonGroupsScrollRightGlyph.png" />
+    <None Include="res\Aqua_RibbonOptionButton.png" />
+    <None Include="res\Aqua_RibbonQuickAccessButton.png" />
+    <None Include="res\Aqua_RibbonQuickAccessFrame.png" />
+    <None Include="res\Aqua_RibbonQuickAccessMore.png" />
+    <None Include="res\Aqua_RibbonTab.png" />
+    <None Include="res\Aqua_RibbonTabSeparator.png" />
+    <None Include="res\Aqua_StatusBarDark.png" />
+    <None Include="res\Aqua_StatusBarDevider.png" />
+    <None Include="res\Aqua_StatusBarGripper.png" />
+    <None Include="res\Aqua_StatusBarLight.png" />
+    <None Include="res\Aqua_StatusBarSeparator.png" />
+    <None Include="res\Aqua_ToolbarButtonCheckBox.png" />
+    <None Include="res\Aqua_ToolbarButtonDropDownGlyph.png" />
+    <None Include="res\Aqua_ToolbarButtons22.png" />
+    <None Include="res\Aqua_ToolbarButtons50.png" />
+    <None Include="res\Aqua_ToolbarButtonsComboDropDown.png" />
+    <None Include="res\Aqua_ToolbarButtonsSpecialCenter.png" />
+    <None Include="res\Aqua_ToolbarButtonsSpecialLeft.png" />
+    <None Include="res\Aqua_ToolbarButtonsSpecialRight.png" />
+    <None Include="res\Aqua_ToolbarButtonsSpecialSingle.png" />
+    <None Include="res\Aqua_ToolbarButtonsSpecialSplitCenter.png" />
+    <None Include="res\Aqua_ToolbarButtonsSpecialSplitDropDownCenter.png" />
+    <None Include="res\Aqua_ToolbarButtonsSpecialSplitDropDownLeft.png" />
+    <None Include="res\Aqua_ToolbarButtonsSpecialSplitDropDownRight.png" />
+    <None Include="res\Aqua_ToolbarButtonsSpecialSplitLeft.png" />
+    <None Include="res\Aqua_ToolbarButtonsSpecialSplitRight.png" />
+    <None Include="res\Aqua_ToolbarButtonsSplit22.png" />
+    <None Include="res\Aqua_ToolbarButtonsSplit50.png" />
+    <None Include="res\Aqua_ToolbarButtonsSplitDropDown22.png" />
+    <None Include="res\Aqua_ToolbarButtonsSplitDropDown50.png" />
+    <None Include="res\Aqua_WorkspaceTopLeft.png" />
+    <None Include="res\Black_AccessTab.png" />
+    <None Include="res\Black_CalendarCaptionBarExpandButton.png" />
+    <None Include="res\Black_CalendarCaptionBarNextDateButton.png" />
+    <None Include="res\Black_CalendarCaptionBarPrevDateButton.png" />
+    <None Include="res\Black_CalendarCaptionBarSwitchViewButton.png" />
+    <None Include="res\Black_CalendarHeader.PNG" />
+    <None Include="res\Black_CalendarHeaderDVGroup.png" />
+    <None Include="res\Black_CalendarHeaderMVDay.png" />
+    <None Include="res\Black_CalendarHeaderMVWeek.png" />
+    <None Include="res\Black_CalendarHeaderWVDay.png" />
+    <None Include="res\Black_CalendarPrevNextEventButton.png" />
+    <None Include="res\Black_CalendarPrevNextEventButtonArr.PNG" />
+    <None Include="res\Black_ContextTabBlue.png" />
+    <None Include="res\Black_ContextTabBlueClient.png" />
+    <None Include="res\Black_ContextTabBlueGroupButton.png" />
+    <None Include="res\Black_ContextTabBlueHeader.png" />
+    <None Include="res\Black_ContextTabCyan.png" />
+    <None Include="res\Black_ContextTabCyanClient.png" />
+    <None Include="res\Black_ContextTabCyanGroupButton.png" />
+    <None Include="res\Black_ContextTabCyanHeader.png" />
+    <None Include="res\Black_ContextTabGreen.png" />
+    <None Include="res\Black_ContextTabGreenClient.png" />
+    <None Include="res\Black_ContextTabGreenGroupButton.png" />
+    <None Include="res\Black_ContextTabGreenHeader.png" />
+    <None Include="res\Black_ContextTabGroupCaption.png" />
+    <None Include="res\Black_ContextTabGroupClient.png" />
+    <None Include="res\Black_ContextTabOrange.png" />
+    <None Include="res\Black_ContextTabOrangeClient.png" />
+    <None Include="res\Black_ContextTabOrangeGroupButton.png" />
+    <None Include="res\Black_ContextTabOrangeHeader.png" />
+    <None Include="res\Black_ContextTabPurple.png" />
+    <None Include="res\Black_ContextTabPurpleClient.png" />
+    <None Include="res\Black_ContextTabPurpleGroupButton.png" />
+    <None Include="res\Black_ContextTabPurpleHeader.png" />
+    <None Include="res\Black_ContextTabRed.png" />
+    <None Include="res\Black_ContextTabRedClient.png" />
+    <None Include="res\Black_ContextTabRedGroupButton.png" />
+    <None Include="res\Black_ContextTabRedHeader.png" />
+    <None Include="res\Black_ContextTabSeparator.png" />
+    <None Include="res\Black_ContextTabYellow.png" />
+    <None Include="res\Black_ContextTabYellowClient.png" />
+    <None Include="res\Black_ContextTabYellowGroupButton.png" />
+    <None Include="res\Black_ContextTabYellowHeader.png" />
+    <None Include="res\Black_ControlGalleryDown.png" />
+    <None Include="res\Black_ControlGalleryPopup.png" />
+    <None Include="res\Black_ControlGalleryScrollArrowGlyphs.png" />
+    <None Include="res\Black_ControlGalleryScrollArrowsHorizontalDark.png" />
+    <None Include="res\Black_ControlGalleryScrollArrowsHorizontalLight.png" />
+    <None Include="res\Black_ControlGalleryScrollArrowsVerticalDark.png" />
+    <None Include="res\Black_ControlGalleryScrollArrowsVerticalLight.png" />
+    <None Include="res\Black_ControlGalleryScrollHorizontalDark.png" />
+    <None Include="res\Black_ControlGalleryScrollHorizontalLight.png" />
+    <None Include="res\Black_ControlGalleryScrollThumbGripperHorizontal.png" />
+    <None Include="res\Black_ControlGalleryScrollThumbGripperVertical.png" />
+    <None Include="res\Black_ControlGalleryScrollThumbHorizontal.png" />
+    <None Include="res\Black_ControlGalleryScrollThumbVertical.png" />
+    <None Include="res\Black_ControlGalleryScrollVerticalDark.png" />
+    <None Include="res\Black_ControlGalleryScrollVerticalLight.png" />
+    <None Include="res\Black_ControlGalleryUp.png" />
+    <None Include="res\Black_FileButton.png" />
+    <None Include="res\Black_FrameBottomLeft.png" />
+    <None Include="res\Black_FrameBottomRight.png" />
+    <None Include="res\Black_FrameCaptionButton.png" />
+    <None Include="res\Black_FrameCaptionClose13.png" />
+    <None Include="res\Black_FrameCaptionClose17.png" />
+    <None Include="res\Black_FrameCaptionClose23.png" />
+    <None Include="res\Black_FrameCaptionMaximize13.png" />
+    <None Include="res\Black_FrameCaptionMaximize17.png" />
+    <None Include="res\Black_FrameCaptionMaximize23.png" />
+    <None Include="res\Black_FrameCaptionMinimize13.png" />
+    <None Include="res\Black_FrameCaptionMinimize17.png" />
+    <None Include="res\Black_FrameCaptionMinimize23.png" />
+    <None Include="res\Black_FrameCaptionRestore13.png" />
+    <None Include="res\Black_FrameCaptionRestore17.png" />
+    <None Include="res\Black_FrameCaptionRestore23.png" />
+    <None Include="res\Black_FrameSystemButton.png" />
+    <None Include="res\Black_FrameSystemButton52.png" />
+    <None Include="res\Black_FrameTopCenter.png" />
+    <None Include="res\Black_FrameTopLeft.png" />
+    <None Include="res\Black_FrameTopRight.png" />
+    <None Include="res\Black_ListBox.png" />
+    <None Include="res\Black_MenuCheckedItem.png" />
+    <None Include="res\Black_MenuCheckedItemMark.png" />
+    <None Include="res\Black_MenuPopupGlyph.png" />
+    <None Include="res\Black_MenuSelectedDisabledItem22.png" />
+    <None Include="res\Black_MenuSelectedDisabledItem54.png" />
+    <None Include="res\Black_MenuSelectedItem22.png" />
+    <None Include="res\Black_MenuSelectedItem54.png" />
+    <None Include="res\Black_MenuSplitDropDown.png" />
+    <None Include="res\Black_MenuSplitItem.png" />
+    <None Include="res\Black_MorePopupBarFrame.png" />
+    <None Include="res\Black_PopupBarFrame.png" />
+    <None Include="res\Black_PopupBarResizeGripperFace.png" />
+    <None Include="res\Black_PopupBarResizeGripperHeight.png" />
+    <None Include="res\Black_PopupBarResizeGripperWidth.png" />
+    <None Include="res\Black_ProgressChunk.png" />
+    <None Include="res\Black_ProgressTrack.png" />
+    <None Include="res\Black_PushButton.png" />
+    <None Include="res\Black_ReportExpandButton.png" />
+    <None Include="res\Black_RibbonGroupButton.png" />
+    <None Include="res\Black_RibbonGroupButtonIcon.png" />
+    <None Include="res\Black_RibbonGroupCaption.png" />
+    <None Include="res\Black_RibbonGroupClient.png" />
+    <None Include="res\Black_RibbonGroupQuickAccess.png" />
+    <None Include="res\Black_RibbonGroups.png" />
+    <None Include="res\Black_RibbonGroupsScrollLeft.png" />
+    <None Include="res\Black_RibbonGroupsScrollLeftGlyph.png" />
+    <None Include="res\Black_RibbonGroupsScrollRight.png" />
+    <None Include="res\Black_RibbonGroupsScrollRightGlyph.png" />
+    <None Include="res\Black_RibbonOptionButton.png" />
+    <None Include="res\Black_RibbonQuickAccessArea.png" />
+    <None Include="res\Black_RibbonQuickAccessAreaDwm.png" />
+    <None Include="res\Black_RibbonQuickAccessButton.png" />
+    <None Include="res\Black_RibbonQuickAccessFrame.png" />
+    <None Include="res\Black_RibbonQuickAccessMore.png" />
+    <None Include="res\Black_RibbonSystemMenu.png" />
+    <None Include="res\Black_RibbonSystemMenuButton.png" />
+    <None Include="res\Black_RibbonTab.png" />
+    <None Include="res\Black_RibbonTabSeparator.png" />
+    <None Include="res\Black_ShortcutBarGlyphs.png" />
+    <None Include="res\Black_ShortcutBarGripper.png" />
+    <None Include="res\Black_ShortcutBarItems.png" />
+    <None Include="res\Black_ShortcutBarNavigateItem.png" />
+    <None Include="res\Black_SliderDown.png" />
+    <None Include="res\Black_SliderThumb.png" />
+    <None Include="res\Black_SliderTick.png" />
+    <None Include="res\Black_SliderTrack.png" />
+    <None Include="res\Black_SliderUp.png" />
+    <None Include="res\Black_StatusBarDark.png" />
+    <None Include="res\Black_StatusBarDevider.png" />
+    <None Include="res\Black_StatusBarGripper.png" />
+    <None Include="res\Black_StatusBarLight.png" />
+    <None Include="res\Black_StatusBarSeparator.png" />
+    <None Include="res\Black_StatusBarSwitches.png" />
+    <None Include="res\Black_ToolbarButtonCheckBox.png" />
+    <None Include="res\Black_ToolbarButtonDropDownGlyph.png" />
+    <None Include="res\Black_ToolbarButtonRadioButton.png" />
+    <None Include="res\Black_ToolbarButtons22.png" />
+    <None Include="res\Black_ToolbarButtons50.png" />
+    <None Include="res\Black_ToolbarButtonsComboDropDown.png" />
+    <None Include="res\Black_ToolbarButtonSpinArrowGlyphs.png" />
+    <None Include="res\Black_ToolbarButtonSpinArrowsHorizontal.png" />
+    <None Include="res\Black_ToolbarButtonSpinArrowsVertical.png" />
+    <None Include="res\Black_ToolbarButtonsSpecialCenter.png" />
+    <None Include="res\Black_ToolbarButtonsSpecialLeft.png" />
+    <None Include="res\Black_ToolbarButtonsSpecialRight.png" />
+    <None Include="res\Black_ToolbarButtonsSpecialSingle.png" />
+    <None Include="res\Black_ToolbarButtonsSpecialSplitCenter.png" />
+    <None Include="res\Black_ToolbarButtonsSpecialSplitDropDownCenter.png" />
+    <None Include="res\Black_ToolbarButtonsSpecialSplitDropDownLeft.png" />
+    <None Include="res\Black_ToolbarButtonsSpecialSplitDropDownRight.png" />
+    <None Include="res\Black_ToolbarButtonsSpecialSplitLeft.png" />
+    <None Include="res\Black_ToolbarButtonsSpecialSplitRight.png" />
+    <None Include="res\Black_ToolbarButtonsSplit22.png" />
+    <None Include="res\Black_ToolbarButtonsSplit50.png" />
+    <None Include="res\Black_ToolbarButtonsSplitDropDown22.png" />
+    <None Include="res\Black_ToolbarButtonsSplitDropDown50.png" />
+    <None Include="res\Black_ToolbarExpandButtonHorizontal.png" />
+    <None Include="res\Black_ToolbarExpandButtonVertical.png" />
+    <None Include="res\Black_ToolbarFaceHorizontal.png" />
+    <None Include="res\Black_ToolbarFaceVertical.png" />
+    <None Include="res\Black_TooltipFrame.png" />
+    <None Include="res\Black_WorkspaceTopLeft.png" />
+    <None Include="res\Blue_AccessTab.png" />
+    <None Include="res\Blue_CalendarCaptionBarExpandButton.png" />
+    <None Include="res\Blue_CalendarCaptionBarNextDateButton.png" />
+    <None Include="res\Blue_CalendarCaptionBarPrevDateButton.png" />
+    <None Include="res\Blue_CalendarCaptionBarSwitchViewButton.png" />
+    <None Include="res\Blue_CalendarPrevNextEventButton.png" />
+    <None Include="res\Blue_CalendarPrevNextEventButtonArr.PNG" />
+    <None Include="res\Blue_ContextTabBlue.png" />
+    <None Include="res\Blue_ContextTabBlueClient.png" />
+    <None Include="res\Blue_ContextTabBlueGroupButton.png" />
+    <None Include="res\Blue_ContextTabBlueHeader.png" />
+    <None Include="res\Blue_ContextTabCyan.png" />
+    <None Include="res\Blue_ContextTabCyanClient.png" />
+    <None Include="res\Blue_ContextTabCyanGroupButton.png" />
+    <None Include="res\Blue_ContextTabCyanHeader.png" />
+    <None Include="res\Blue_ContextTabGreen.png" />
+    <None Include="res\Blue_ContextTabGreenClient.png" />
+    <None Include="res\Blue_ContextTabGreenGroupButton.png" />
+    <None Include="res\Blue_ContextTabGreenHeader.png" />
+    <None Include="res\Blue_ContextTabGroupCaption.png" />
+    <None Include="res\Blue_ContextTabGroupClient.png" />
+    <None Include="res\Blue_ContextTabOrange.png" />
+    <None Include="res\Blue_ContextTabOrangeClient.png" />
+    <None Include="res\Blue_ContextTabOrangeGroupButton.png" />
+    <None Include="res\Blue_ContextTabOrangeHeader.png" />
+    <None Include="res\Blue_ContextTabPurple.png" />
+    <None Include="res\Blue_ContextTabPurpleClient.png" />
+    <None Include="res\Blue_ContextTabPurpleGroupButton.png" />
+    <None Include="res\Blue_ContextTabPurpleHeader.png" />
+    <None Include="res\Blue_ContextTabRed.png" />
+    <None Include="res\Blue_ContextTabRedClient.png" />
+    <None Include="res\Blue_ContextTabRedGroupButton.png" />
+    <None Include="res\Blue_ContextTabRedHeader.png" />
+    <None Include="res\Blue_ContextTabSeparator.png" />
+    <None Include="res\Blue_ContextTabYellow.png" />
+    <None Include="res\Blue_ContextTabYellowClient.png" />
+    <None Include="res\Blue_ContextTabYellowGroupButton.png" />
+    <None Include="res\Blue_ContextTabYellowHeader.png" />
+    <None Include="res\Blue_ControlGalleryDown.png" />
+    <None Include="res\Blue_ControlGalleryPopup.png" />
+    <None Include="res\Blue_ControlGalleryScrollArrowGlyphs.png" />
+    <None Include="res\Blue_ControlGalleryScrollArrowsHorizontalDark.png" />
+    <None Include="res\Blue_ControlGalleryScrollArrowsHorizontalLight.png" />
+    <None Include="res\Blue_ControlGalleryScrollArrowsVerticalDark.png" />
+    <None Include="res\Blue_ControlGalleryScrollArrowsVerticalLight.png" />
+    <None Include="res\Blue_ControlGalleryScrollHorizontalDark.png" />
+    <None Include="res\Blue_ControlGalleryScrollHorizontalLight.png" />
+    <None Include="res\Blue_ControlGalleryScrollThumbGripperHorizontal.png" />
+    <None Include="res\Blue_ControlGalleryScrollThumbGripperVertical.png" />
+    <None Include="res\Blue_ControlGalleryScrollThumbHorizontal.png" />
+    <None Include="res\Blue_ControlGalleryScrollThumbVertical.png" />
+    <None Include="res\Blue_ControlGalleryScrollVerticalDark.png" />
+    <None Include="res\Blue_ControlGalleryScrollVerticalLight.png" />
+    <None Include="res\Blue_ControlGalleryUp.png" />
+    <None Include="res\Blue_FileButton.png" />
+    <None Include="res\Blue_FrameBottomLeft.png" />
+    <None Include="res\Blue_FrameBottomRight.png" />
+    <None Include="res\Blue_FrameCaptionButton.png" />
+    <None Include="res\Blue_FrameCaptionClose13.png" />
+    <None Include="res\Blue_FrameCaptionClose17.png" />
+    <None Include="res\Blue_FrameCaptionClose23.png" />
+    <None Include="res\Blue_FrameCaptionMaximize13.png" />
+    <None Include="res\Blue_FrameCaptionMaximize17.png" />
+    <None Include="res\Blue_FrameCaptionMaximize23.png" />
+    <None Include="res\Blue_FrameCaptionMinimize13.png" />
+    <None Include="res\Blue_FrameCaptionMinimize17.png" />
+    <None Include="res\Blue_FrameCaptionMinimize23.png" />
+    <None Include="res\Blue_FrameCaptionRestore13.png" />
+    <None Include="res\Blue_FrameCaptionRestore17.png" />
+    <None Include="res\Blue_FrameCaptionRestore23.png" />
+    <None Include="res\Blue_FrameSystemButton.png" />
+    <None Include="res\Blue_FrameSystemButton52.png" />
+    <None Include="res\Blue_FrameTopCenter.png" />
+    <None Include="res\Blue_FrameTopLeft.png" />
+    <None Include="res\Blue_FrameTopRight.png" />
+    <None Include="res\Blue_ListBox.png" />
+    <None Include="res\Blue_MenuCheckedItem.png" />
+    <None Include="res\Blue_MenuCheckedItemMark.png" />
+    <None Include="res\Blue_MenuPopupGlyph.png" />
+    <None Include="res\Blue_MenuSelectedDisabledItem22.png" />
+    <None Include="res\Blue_MenuSelectedDisabledItem54.png" />
+    <None Include="res\Blue_MenuSelectedItem22.png" />
+    <None Include="res\Blue_MenuSelectedItem54.png" />
+    <None Include="res\Blue_MenuSplitDropDown.png" />
+    <None Include="res\Blue_MenuSplitItem.png" />
+    <None Include="res\Blue_MorePopupBarFrame.png" />
+    <None Include="res\Blue_PopupBarFrame.png" />
+    <None Include="res\Blue_PopupBarResizeGripperFace.png" />
+    <None Include="res\Blue_PopupBarResizeGripperHeight.png" />
+    <None Include="res\Blue_PopupBarResizeGripperWidth.png" />
+    <None Include="res\Blue_ProgressChunk.png" />
+    <None Include="res\Blue_ProgressTrack.png" />
+    <None Include="res\Blue_PushButton.png" />
+    <None Include="res\Blue_ReportExpandButton.png" />
+    <None Include="res\Blue_RibbonGroupButton.png" />
+    <None Include="res\Blue_RibbonGroupButtonIcon.png" />
+    <None Include="res\Blue_RibbonGroupCaption.png" />
+    <None Include="res\Blue_RibbonGroupClient.png" />
+    <None Include="res\Blue_RibbonGroupQuickAccess.png" />
+    <None Include="res\Blue_RibbonGroups.png" />
+    <None Include="res\Blue_RibbonGroupsScrollLeft.png" />
+    <None Include="res\Blue_RibbonGroupsScrollLeftGlyph.png" />
+    <None Include="res\Blue_RibbonGroupsScrollRight.png" />
+    <None Include="res\Blue_RibbonGroupsScrollRightGlyph.png" />
+    <None Include="res\Blue_RibbonOptionButton.png" />
+    <None Include="res\Blue_RibbonQuickAccessArea.png" />
+    <None Include="res\Blue_RibbonQuickAccessAreaDwm.png" />
+    <None Include="res\Blue_RibbonQuickAccessButton.png" />
+    <None Include="res\Blue_RibbonQuickAccessFrame.png" />
+    <None Include="res\Blue_RibbonQuickAccessMore.png" />
+    <None Include="res\Blue_RibbonSystemMenu.png" />
+    <None Include="res\Blue_RibbonSystemMenuButton.png" />
+    <None Include="res\Blue_RibbonTab.png" />
+    <None Include="res\Blue_RibbonTabSeparator.png" />
+    <None Include="res\Blue_ShortcutBarGlyphs.png" />
+    <None Include="res\Blue_ShortcutBarGripper.png" />
+    <None Include="res\Blue_ShortcutBarItems.png" />
+    <None Include="res\Blue_ShortcutBarNavigateItem.png" />
+    <None Include="res\Blue_SliderDown.png" />
+    <None Include="res\Blue_SliderThumb.png" />
+    <None Include="res\Blue_SliderTick.png" />
+    <None Include="res\Blue_SliderTrack.png" />
+    <None Include="res\Blue_SliderUp.png" />
+    <None Include="res\Blue_StatusBarDark.png" />
+    <None Include="res\Blue_StatusBarDevider.png" />
+    <None Include="res\Blue_StatusBarGripper.png" />
+    <None Include="res\Blue_StatusBarLight.png" />
+    <None Include="res\Blue_StatusBarSeparator.png" />
+    <None Include="res\Blue_StatusBarSwitches.png" />
+    <None Include="res\Blue_ToolbarButtonCheckBox.png" />
+    <None Include="res\Blue_ToolbarButtonDropDownGlyph.png" />
+    <None Include="res\Blue_ToolbarButtonRadioButton.png" />
+    <None Include="res\Blue_ToolbarButtons22.png" />
+    <None Include="res\Blue_ToolbarButtons50.png" />
+    <None Include="res\Blue_ToolbarButtonsComboDropDown.png" />
+    <None Include="res\Blue_ToolbarButtonSpinArrowGlyphs.png" />
+    <None Include="res\Blue_ToolbarButtonSpinArrowsHorizontal.png" />
+    <None Include="res\Blue_ToolbarButtonSpinArrowsVertical.png" />
+    <None Include="res\Blue_ToolbarButtonsSpecialCenter.png" />
+    <None Include="res\Blue_ToolbarButtonsSpecialLeft.png" />
+    <None Include="res\Blue_ToolbarButtonsSpecialRight.png" />
+    <None Include="res\Blue_ToolbarButtonsSpecialSingle.png" />
+    <None Include="res\Blue_ToolbarButtonsSpecialSplitCenter.png" />
+    <None Include="res\Blue_ToolbarButtonsSpecialSplitDropDownCenter.png" />
+    <None Include="res\Blue_ToolbarButtonsSpecialSplitDropDownLeft.png" />
+    <None Include="res\Blue_ToolbarButtonsSpecialSplitDropDownRight.png" />
+    <None Include="res\Blue_ToolbarButtonsSpecialSplitLeft.png" />
+    <None Include="res\Blue_ToolbarButtonsSpecialSplitRight.png" />
+    <None Include="res\Blue_ToolbarButtonsSplit22.png" />
+    <None Include="res\Blue_ToolbarButtonsSplit50.png" />
+    <None Include="res\Blue_ToolbarButtonsSplitDropDown22.png" />
+    <None Include="res\Blue_ToolbarButtonsSplitDropDown50.png" />
+    <None Include="res\Blue_ToolbarExpandButtonHorizontal.png" />
+    <None Include="res\Blue_ToolbarExpandButtonVertical.png" />
+    <None Include="res\Blue_ToolbarFaceHorizontal.png" />
+    <None Include="res\Blue_ToolbarFaceVertical.png" />
+    <None Include="res\Blue_TooltipFrame.png" />
+    <None Include="res\Blue_WorkspaceTopLeft.png" />
+    <None Include="res\Silver_AccessTab.png" />
+    <None Include="res\Silver_CalendarCaptionBarExpandButton.png" />
+    <None Include="res\Silver_CalendarCaptionBarNextDateButton.png" />
+    <None Include="res\Silver_CalendarCaptionBarPrevDateButton.png" />
+    <None Include="res\Silver_CalendarCaptionBarSwitchViewButton.png" />
+    <None Include="res\Silver_CalendarHeader.PNG" />
+    <None Include="res\Silver_CalendarHeaderDVGroup.png" />
+    <None Include="res\Silver_CalendarHeaderMVDay.png" />
+    <None Include="res\Silver_CalendarHeaderMVWeek.png" />
+    <None Include="res\Silver_CalendarHeaderWVDay.png" />
+    <None Include="res\Silver_CalendarPrevNextEventButton.png" />
+    <None Include="res\Silver_CalendarPrevNextEventButtonArr.PNG" />
+    <None Include="res\Silver_ContextTabBlue.png" />
+    <None Include="res\Silver_ContextTabBlueClient.png" />
+    <None Include="res\Silver_ContextTabBlueGroupButton.png" />
+    <None Include="res\Silver_ContextTabBlueHeader.png" />
+    <None Include="res\Silver_ContextTabCyan.png" />
+    <None Include="res\Silver_ContextTabCyanClient.png" />
+    <None Include="res\Silver_ContextTabCyanGroupButton.png" />
+    <None Include="res\Silver_ContextTabCyanHeader.png" />
+    <None Include="res\Silver_ContextTabGreen.png" />
+    <None Include="res\Silver_ContextTabGreenClient.png" />
+    <None Include="res\Silver_ContextTabGreenGroupButton.png" />
+    <None Include="res\Silver_ContextTabGreenHeader.png" />
+    <None Include="res\Silver_ContextTabGroupCaption.png" />
+    <None Include="res\Silver_ContextTabGroupClient.png" />
+    <None Include="res\Silver_ContextTabOrange.png" />
+    <None Include="res\Silver_ContextTabOrangeClient.png" />
+    <None Include="res\Silver_ContextTabOrangeGroupButton.png" />
+    <None Include="res\Silver_ContextTabOrangeHeader.png" />
+    <None Include="res\Silver_ContextTabPurple.png" />
+    <None Include="res\Silver_ContextTabPurpleClient.png" />
+    <None Include="res\Silver_ContextTabPurpleGroupButton.png" />
+    <None Include="res\Silver_ContextTabPurpleHeader.png" />
+    <None Include="res\Silver_ContextTabRed.png" />
+    <None Include="res\Silver_ContextTabRedClient.png" />
+    <None Include="res\Silver_ContextTabRedGroupButton.png" />
+    <None Include="res\Silver_ContextTabRedHeader.png" />
+    <None Include="res\Silver_ContextTabSeparator.png" />
+    <None Include="res\Silver_ContextTabYellow.png" />
+    <None Include="res\Silver_ContextTabYellowClient.png" />
+    <None Include="res\Silver_ContextTabYellowGroupButton.png" />
+    <None Include="res\Silver_ContextTabYellowHeader.png" />
+    <None Include="res\Silver_ControlGalleryDown.png" />
+    <None Include="res\Silver_ControlGalleryPopup.png" />
+    <None Include="res\Silver_ControlGalleryScrollArrowGlyphs.png" />
+    <None Include="res\Silver_ControlGalleryScrollArrowsHorizontalDark.png" />
+    <None Include="res\Silver_ControlGalleryScrollArrowsHorizontalLight.png" />
+    <None Include="res\Silver_ControlGalleryScrollArrowsVerticalDark.png" />
+    <None Include="res\Silver_ControlGalleryScrollArrowsVerticalLight.png" />
+    <None Include="res\Silver_ControlGalleryScrollHorizontalDark.png" />
+    <None Include="res\Silver_ControlGalleryScrollHorizontalLight.png" />
+    <None Include="res\Silver_ControlGalleryScrollThumbGripperHorizontal.png" />
+    <None Include="res\Silver_ControlGalleryScrollThumbGripperVertical.png" />
+    <None Include="res\Silver_ControlGalleryScrollThumbHorizontal.png" />
+    <None Include="res\Silver_ControlGalleryScrollThumbVertical.png" />
+    <None Include="res\Silver_ControlGalleryScrollVerticalDark.png" />
+    <None Include="res\Silver_ControlGalleryScrollVerticalLight.png" />
+    <None Include="res\Silver_ControlGalleryUp.png" />
+    <None Include="res\Silver_FileButton.png" />
+    <None Include="res\Silver_FrameBottomLeft.png" />
+    <None Include="res\Silver_FrameBottomRight.png" />
+    <None Include="res\Silver_FrameCaptionButton.png" />
+    <None Include="res\Silver_FrameCaptionClose13.png" />
+    <None Include="res\Silver_FrameCaptionClose17.png" />
+    <None Include="res\Silver_FrameCaptionClose23.png" />
+    <None Include="res\Silver_FrameCaptionMaximize13.png" />
+    <None Include="res\Silver_FrameCaptionMaximize17.png" />
+    <None Include="res\Silver_FrameCaptionMaximize23.png" />
+    <None Include="res\Silver_FrameCaptionMinimize13.png" />
+    <None Include="res\Silver_FrameCaptionMinimize17.png" />
+    <None Include="res\Silver_FrameCaptionMinimize23.png" />
+    <None Include="res\Silver_FrameCaptionRestore13.png" />
+    <None Include="res\Silver_FrameCaptionRestore17.png" />
+    <None Include="res\Silver_FrameCaptionRestore23.png" />
+    <None Include="res\Silver_FrameSystemButton.png" />
+    <None Include="res\Silver_FrameSystemButton52.png" />
+    <None Include="res\Silver_FrameTopCenter.png" />
+    <None Include="res\Silver_FrameTopLeft.png" />
+    <None Include="res\Silver_FrameTopRight.png" />
+    <None Include="res\Silver_ListBox.png" />
+    <None Include="res\Silver_MenuCheckedItem.png" />
+    <None Include="res\Silver_MenuCheckedItemMark.png" />
+    <None Include="res\Silver_MenuPopupGlyph.png" />
+    <None Include="res\Silver_MenuSelectedDisabledItem22.png" />
+    <None Include="res\Silver_MenuSelectedDisabledItem54.png" />
+    <None Include="res\Silver_MenuSelectedItem22.png" />
+    <None Include="res\Silver_MenuSelectedItem54.png" />
+    <None Include="res\Silver_MenuSplitDropDown.png" />
+    <None Include="res\Silver_MenuSplitItem.png" />
+    <None Include="res\Silver_MorePopupBarFrame.png" />
+    <None Include="res\Silver_PopupBarFrame.png" />
+    <None Include="res\Silver_PopupBarResizeGripperFace.png" />
+    <None Include="res\Silver_PopupBarResizeGripperHeight.png" />
+    <None Include="res\Silver_PopupBarResizeGripperWidth.png" />
+    <None Include="res\Silver_ProgressChunk.png" />
+    <None Include="res\Silver_ProgressTrack.png" />
+    <None Include="res\Silver_PushButton.png" />
+    <None Include="res\Silver_ReportExpandButton.png" />
+    <None Include="res\Silver_RibbonGroupButton.png" />
+    <None Include="res\Silver_RibbonGroupButtonIcon.png" />
+    <None Include="res\Silver_RibbonGroupCaption.png" />
+    <None Include="res\Silver_RibbonGroupClient.png" />
+    <None Include="res\Silver_RibbonGroupQuickAccess.png" />
+    <None Include="res\Silver_RibbonGroups.png" />
+    <None Include="res\Silver_RibbonGroupsScrollLeft.png" />
+    <None Include="res\Silver_RibbonGroupsScrollLeftGlyph.png" />
+    <None Include="res\Silver_RibbonGroupsScrollRight.png" />
+    <None Include="res\Silver_RibbonGroupsScrollRightGlyph.png" />
+    <None Include="res\Silver_RibbonOptionButton.png" />
+    <None Include="res\Silver_RibbonQuickAccessArea.png" />
+    <None Include="res\Silver_RibbonQuickAccessAreaDwm.png" />
+    <None Include="res\Silver_RibbonQuickAccessButton.png" />
+    <None Include="res\Silver_RibbonQuickAccessFrame.png" />
+    <None Include="res\Silver_RibbonQuickAccessMore.png" />
+    <None Include="res\Silver_RibbonSystemMenu.png" />
+    <None Include="res\Silver_RibbonSystemMenuButton.png" />
+    <None Include="res\Silver_RibbonTab.png" />
+    <None Include="res\Silver_RibbonTabSeparator.png" />
+    <None Include="res\Silver_ShortcutBarGlyphs.png" />
+    <None Include="res\Silver_ShortcutBarGripper.png" />
+    <None Include="res\Silver_ShortcutBarItems.png" />
+    <None Include="res\Silver_ShortcutBarNavigateItem.png" />
+    <None Include="res\Silver_SliderDown.png" />
+    <None Include="res\Silver_SliderThumb.png" />
+    <None Include="res\Silver_SliderTick.png" />
+    <None Include="res\Silver_SliderTrack.png" />
+    <None Include="res\Silver_SliderUp.png" />
+    <None Include="res\Silver_StatusBarDark.png" />
+    <None Include="res\Silver_StatusBarDevider.png" />
+    <None Include="res\Silver_StatusBarGripper.png" />
+    <None Include="res\Silver_StatusBarLight.png" />
+    <None Include="res\Silver_StatusBarSeparator.png" />
+    <None Include="res\Silver_StatusBarSwitches.png" />
+    <None Include="res\Silver_ToolbarButtonCheckBox.png" />
+    <None Include="res\Silver_ToolbarButtonDropDownGlyph.png" />
+    <None Include="res\Silver_ToolbarButtonRadioButton.png" />
+    <None Include="res\Silver_ToolbarButtons22.png" />
+    <None Include="res\Silver_ToolbarButtons50.png" />
+    <None Include="res\Silver_ToolbarButtonsComboDropDown.png" />
+    <None Include="res\Silver_ToolbarButtonSpinArrowGlyphs.png" />
+    <None Include="res\Silver_ToolbarButtonSpinArrowsHorizontal.png" />
+    <None Include="res\Silver_ToolbarButtonSpinArrowsVertical.png" />
+    <None Include="res\Silver_ToolbarButtonsSpecialCenter.png" />
+    <None Include="res\Silver_ToolbarButtonsSpecialLeft.png" />
+    <None Include="res\Silver_ToolbarButtonsSpecialRight.png" />
+    <None Include="res\Silver_ToolbarButtonsSpecialSingle.png" />
+    <None Include="res\Silver_ToolbarButtonsSpecialSplitCenter.png" />
+    <None Include="res\Silver_ToolbarButtonsSpecialSplitDropDownCenter.png" />
+    <None Include="res\Silver_ToolbarButtonsSpecialSplitDropDownLeft.png" />
+    <None Include="res\Silver_ToolbarButtonsSpecialSplitDropDownRight.png" />
+    <None Include="res\Silver_ToolbarButtonsSpecialSplitLeft.png" />
+    <None Include="res\Silver_ToolbarButtonsSpecialSplitRight.png" />
+    <None Include="res\Silver_ToolbarButtonsSplit22.png" />
+    <None Include="res\Silver_ToolbarButtonsSplit50.png" />
+    <None Include="res\Silver_ToolbarButtonsSplitDropDown22.png" />
+    <None Include="res\Silver_ToolbarButtonsSplitDropDown50.png" />
+    <None Include="res\Silver_ToolbarExpandButtonHorizontal.png" />
+    <None Include="res\Silver_ToolbarExpandButtonVertical.png" />
+    <None Include="res\Silver_ToolbarFaceHorizontal.png" />
+    <None Include="res\Silver_ToolbarFaceVertical.png" />
+    <None Include="res\Silver_TooltipFrame.png" />
+    <None Include="res\Silver_WorkspaceTopLeft.png" />
+    <None Include="res\AquaTheme.ini" />
+    <None Include="res\BlackTheme.ini" />
+    <None Include="res\BlueTheme.ini" />
+    <None Include="res\SilverTheme.ini" />
+    <None Include="Styles\Office2007\res\AquaTheme.ini" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

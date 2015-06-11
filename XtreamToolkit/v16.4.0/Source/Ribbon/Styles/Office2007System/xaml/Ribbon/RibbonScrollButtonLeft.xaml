@@ -1,0 +1,4 @@
+<Grid ClipToBounds='True' Background='{x:Static SystemColors.ControlBrush}' Margin='0, 0, 0, 2'>
+	<Border Margin='1, 0, -3, 0' Background='{x:Static SystemColors.ControlBrush}' BorderThickness='1' CornerRadius='3' BorderBrush='{x:Static SystemColors.ControlDarkBrush}'/>
+	<Border Margin='1, 0, 0, 0' BorderThickness='0, 0, 1, 0' BorderBrush='{x:Static SystemColors.ControlDarkBrush}'/>
+</Grid>

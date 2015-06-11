@@ -1,0 +1,277 @@
+//=======================================================================
+//================ Lex class support ====================================
+//=======================================================================
+// 	lexClass:
+//		name		= c_CPPString
+//		parent		= c_CPP
+//		parent:dyn	= c_CPP
+//
+//		children		= 0
+//		children		= class1, class2, ...
+//
+//		previous:class			=	
+//		previous:tag			=	
+//		previous:tag:separators	=	
+//
+//		start:class		= 
+//		start:Tag		= '"'
+//
+//		skip:Tag		= '\"'
+//
+//		end:class		= //
+//		end:Tag			= '"'
+//		end:separators	= ' '
+//
+//		Token:tag		= 'if', 'for', 'while', 'do'
+//		Token:start:separators	= 
+//		Token:end:separators	= 
+//-----------------------------------------------------------------------
+//---------------- Attributes -------------------------------------------
+//-----------------------------------------------------------------------
+//	txt:colorFG	= 0xffc0c0 // color value in hex format. default: black	
+//	txt:colorBK	= 0xffc0c0 // color value in hex format. default: white		
+//
+//	txt:colorSelFG	= 0xffc0c0 // color value in hex format. default: white
+//	txt:colorSelBK	= 0xffc0c0 // color value in hex format. default: black
+//
+//	txt:Bold	= 1 // {1,0} default: 0
+//	txt:Italic	= 1 // {1,0} default: 0
+//	txt:Underline	= 1 // {1,0} default: 0
+//
+//	caseSensitive	= 1 // {1,0} default: 0
+//
+//	Collapsable	= 1 // {1,0} default: 0
+//	CollapsedText	= '/*...*/' // quoted string value. default: '[..]'	
+//
+//	ParseOnScreen	= 1 // {1,0} default: 0
+// 	
+//-----------------------------------------------------------------------
+//* Global attributes ***************************************************
+//-----------------------------------------------------------------------
+// 	global:FirstParseInSeparateThread	= 1		// {0,1} default=1
+// 	global:EditReparceInSeparateThread	= 1		// {0,1} default=1
+// 	global:ConfigChangedReparceInSeparateThread= 1 // {0,1} default=1
+// 	global:EditReparceTimeout_ms	= 500		// default= 500 ms; time out for start reparse after last key was pressed.
+// 	global:MaxBackParseOffset		= 100		// default= 100 chars; maximum back buffer size. Some times parser look back for the text from current position.
+// 	global:OnScreenSchCacheLifeTime_sec = 180	// default= 180 sec; -1 and 0 means infinite; time out for on screen parsed pices of text. for memory using optimization.
+// 	global:ParserThreadIdleLifeTime_sec = 60	// default=60 sec; -1 and 0 means infinite; time out for existing of parser thread when parser idle (no parse requests).
+	
+/////////////////////////////////////////////////////////////////////////
+
+//=======================================================================
+//================ Variables support ====================================
+//=======================================================================
+// NON operation - example:   @alpha:not
+//
+// @alpha	= a-z, A-Z
+// @digit	= 0-9
+// @HexDdigit	= 0-9, a-f, A-F
+// @specs	= "~`!@#$%^&*()_-+=\\|{}[];:'\",.<>/?"
+// @EOL		= End Of Line
+//---------------------------------------------
+// special tags:  '\\', '\'', '\t', '\r', '\n'
+/////////////////////////////////////////////////////////////////////////
+
+/// HTML ///	
+lexClass:
+	parent:file		= <*.vb|*.vbs>
+	name			= c_VBS
+	//caseSensitive	= 0
+	txt:colorFG	= 0x000000
+	DisplayName = 'Normal Text'
+
+//=============================================================================
+//*** VB, VB Script colorization *** ==========================================
+//=============================================================================
+lexClass:
+	name		= c_VBScriptComment
+	parent		= c_VBS
+	start:Tag	= '\''
+	end:separators = @EOL
+	txt:colorFG	= 0x008200
+	DisplayName = 'VB Script Comment'
+//:lexClass
+
+lexClass:
+	name		= c_VBScriptStr
+	parent		= c_VBS
+	ParseOnScreen = 0	
+	start:Tag	='"'
+	end:Tag		='"', @EOL
+	txt:colorFG	= 0x840000
+	DisplayName = 'VB Script String'
+//:lexClass
+
+lexClass:
+	name			= c_VBScriptNumber10
+	parent			= c_VBS
+	ParseOnScreen	= 1
+	previous:tag	= @specs, ' ', '\t', @EOL	
+	start:Tag		= @digit
+	end:separators	= @digit:not
+	txt:colorFG	= 0x008284
+	DisplayName = 'VB Script Number'
+//:lexClass
+	
+lexClass: 
+	name		= c_VBScript_Language_Keywords
+	parent		= c_VBS
+	ParseOnScreen = 0
+
+	token:start:separators	= ' ', '\t', '=', '>', '<', '(', ')', @eol
+	token:end:separators	= ' ', '\t', '=', '>', '<', '(', ')', @eol
+	
+	txt:colorFG	= 0x0000FF
+	txt:Bold = 1
+		
+	token:tag = 'And'
+	token:tag = 'ByVal', 'ByRef'
+	token:tag = 'Call', 'Case'	
+	token:tag = 'Dim'
+    token:tag = 'Error', 'ElseIf', 'Else', 'End', 'Erase', 'Exit', 'Eqv', 'Explicit'
+	token:tag = 'For', 'Function'
+    token:tag = 'In', 'If', 'Is', 'Imp'
+	token:tag = 'Like'
+	token:tag = 'Mod'
+    token:tag = 'Nothing', 'New', 'Next', 'Not'
+	token:tag = 'Option', 'On', 'Or'
+    token:tag = 'Preserve', 'Private', 'Public'
+	token:tag = 'ReDim', 'Raise', 'Resume'
+    token:tag = 'Set', 'Step', 'Sub'
+	token:tag = 'Then', 'To'
+	token:tag = 'Until'
+	token:tag = 'Xor'
+	token:tag = 'With', 'Wend', 'While'
+
+	DisplayName = 'VB Script Keywords'
+//:lexClass
+
+lexClass: 
+	name		= c_VBScript_Functions
+	parent		= c_VBS
+	ParseOnScreen = 0
+
+	token:start:separators	= ' ', '\t', '<%=', '<%', '>', '(', @eol
+	token:end:separators	= ' ', '\t', '%>', '<', '(', ')', @eol
+	
+	txt:colorFG	= 0x8000FF
+		
+    token:tag = 'Abs'
+    token:tag = 'Array'
+    token:tag = 'Asc'
+    token:tag = 'Atn'
+    token:tag = 'CBool'
+    token:tag = 'CByte'
+    token:tag = 'CCur'
+    token:tag = 'CDate'
+    token:tag = 'CDbl'
+    token:tag = 'Chr'
+    token:tag = 'CInt'
+    token:tag = 'CLng'
+    token:tag = 'Const'
+    token:tag = 'Cos'
+    token:tag = 'CreateObject'
+    token:tag = 'CSng'
+    token:tag = 'CStr'
+    token:tag = 'Date'
+    token:tag = 'DateAdd'
+    token:tag = 'DateDiff'
+    token:tag = 'DatePart'
+    token:tag = 'DateSerial'
+    token:tag = 'DateValue'
+    token:tag = 'Day'
+    token:tag = 'Exp'
+    token:tag = 'Filter'
+    token:tag = 'Fix'
+    token:tag = 'FormatCurrency'
+    token:tag = 'FormatDateTime'
+    token:tag = 'FormatNumber'
+    token:tag = 'FormatPercent'
+    token:tag = 'GetObject'
+    token:tag = 'Hex'
+    token:tag = 'Hour'
+    token:tag = 'InputBox'
+    token:tag = 'InStr'
+    token:tag = 'InStrRev'
+    token:tag = 'Int'
+    token:tag = 'IsArray'
+    token:tag = 'IsDate'
+    token:tag = 'IsEmpty'
+    token:tag = 'IsNull'
+    token:tag = 'IsNumeric'
+    token:tag = 'IsObject'
+    token:tag = 'Join'
+    token:tag = 'LBound'
+    token:tag = 'LCase'
+    token:tag = 'Left'
+    token:tag = 'Len'
+    token:tag = 'LoadPicture'
+    token:tag = 'Log'
+    token:tag = 'LTrim'
+    token:tag = 'Mid'
+    token:tag = 'Minute'
+    token:tag = 'Month'
+    token:tag = 'MonthName'
+    token:tag = 'MsgBox'
+    token:tag = 'Now'
+    token:tag = 'Oct'
+    token:tag = 'Replace'
+    token:tag = 'Right'
+    token:tag = 'Rnd'
+    token:tag = 'Round'
+    token:tag = 'RTrim'
+    token:tag = 'ScriptEngine'
+    token:tag = 'ScriptEngineBuildVersion'
+    token:tag = 'ScriptEngineMajorVersion'
+    token:tag = 'ScriptEngineMinorVersion'
+    token:tag = 'Second'
+    token:tag = 'Sgn'
+    token:tag = 'Sin'
+    token:tag = 'Space'
+    token:tag = 'Split'
+    token:tag = 'Sqr'
+    token:tag = 'StrComp'
+    token:tag = 'StrReverse'
+    token:tag = 'String'
+    token:tag = 'Tan'
+    token:tag = 'Time'
+    token:tag = 'TimeSerial'
+    token:tag = 'TimeValue'
+    token:tag = 'Trim'
+    token:tag = 'TypeName'
+    token:tag = 'UBound'
+    token:tag = 'UCase'
+    token:tag = 'VarType'
+    token:tag = 'Weekday'
+    token:tag = 'WeekdayName'
+    token:tag = 'Year'
+
+    token:tag = 'empty'
+    token:tag = 'True'
+    token:tag = 'false'
+    token:tag = 'null'
+
+	DisplayName = 'VB Script Functions'
+//:lexClass
+
+/////////////////////////////////////////////////////////////
+// Operators Arithmetic 
+//            "^"
+//            "*"
+//            "/"
+//            "\"
+//            "+"
+//            "-"
+//            "&"
+// Operators Comparison 
+//            "="
+//            "<>"
+//            "<"
+//            "<="
+//            ">"
+//            ">="
+// Operators Logical
+//            "~"
+/////////////////////////////////////////////////////////////
+
+//=============================================================================

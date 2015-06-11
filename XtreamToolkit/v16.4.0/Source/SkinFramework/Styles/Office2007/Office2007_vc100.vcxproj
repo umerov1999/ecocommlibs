@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>Office2007</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release/vc100\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release/vc100\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\Release/vc100x64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\Release/vc100x64\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <TypeLibraryName>.\Release/vc100/Office2007.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../../../Source;../../../Source/Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;_USRDLL;XTPRESOURCE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeaderOutputFile>.\Release/vc100/Office2007.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/vc100/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/vc100/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/vc100/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;_AFXDLL;_XTP_INCLUDE_VERSION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>../../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../Office2007.cjstyles</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <ProgramDatabaseFile>.\Release/vc100/Office2007vc100.pdb</ProgramDatabaseFile>
+      <NoEntryPoint>true</NoEntryPoint>
+      <ImportLibrary>.\Release/vc100/Office2007vc100.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\Release/vc100/Office2007.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../../../Source;../../../Source/Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;_USRDLL;XTPRESOURCE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeaderOutputFile>.\Release/vc100x64/Office2007.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/vc100x64/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/vc100x64/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/vc100x64/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;_AFXDLL;_XTP_INCLUDE_VERSION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>../../../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../Office2007.cjstyles</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <ProgramDatabaseFile>.\Release/vc100x64/Office2007vc100x64.pdb</ProgramDatabaseFile>
+      <NoEntryPoint>true</NoEntryPoint>
+      <ImportLibrary>.\Release/vc100x64/Office2007vc100x64.lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Office2007.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Aqua_Button.png" />
+    <None Include="res\Aqua_CaptionButton.png" />
+    <None Include="res\Aqua_CheckBox13.png" />
+    <None Include="res\Aqua_CloseGlyph13.png" />
+    <None Include="res\Aqua_CloseGlyph19.png" />
+    <None Include="res\Aqua_ComboButton.png" />
+    <None Include="res\Aqua_ComboButtonGlyph.png" />
+    <None Include="res\Aqua_FrameBottom.png" />
+    <None Include="res\Aqua_FrameCaption.png" />
+    <None Include="res\Aqua_FrameLeft.png" />
+    <None Include="res\Aqua_FrameRight.png" />
+    <None Include="res\Aqua_GroupBox.png" />
+    <None Include="res\Aqua_HelpGlyph13.png" />
+    <None Include="res\Aqua_HelpGlyph19.png" />
+    <None Include="res\Aqua_ListViewHeader.png" />
+    <None Include="res\Aqua_ListviewHeaderBackground.png" />
+    <None Include="res\Aqua_MaximizeGlyph13.png" />
+    <None Include="res\Aqua_MaximizeGlyph19.png" />
+    <None Include="res\Aqua_MinimizeGlyph13.png" />
+    <None Include="res\Aqua_MinimizeGlyph19.png" />
+    <None Include="res\Aqua_ProgressChunk.png" />
+    <None Include="res\Aqua_ProgressChunkVert.png" />
+    <None Include="res\Aqua_ProgressTrack.png" />
+    <None Include="res\Aqua_ProgressTrackVert.png" />
+    <None Include="res\Aqua_RadioButton13.png" />
+    <None Include="res\Aqua_ResizeGrip2.png" />
+    <None Include="res\Aqua_RestoreGlyph13.png" />
+    <None Include="res\Aqua_RestoreGlyph19.png" />
+    <None Include="res\Aqua_Separator.png" />
+    <None Include="res\Aqua_SeparatorVert.png" />
+    <None Include="res\Aqua_sliderTrack.png" />
+    <None Include="res\Aqua_SmallFrameCaption.png" />
+    <None Include="res\Aqua_SpinButtonBackgroundDown.png" />
+    <None Include="res\Aqua_SpinButtonBackgroundLeft.png" />
+    <None Include="res\Aqua_SpinButtonBackgroundRight.png" />
+    <None Include="res\Aqua_SpinButtonBackgroundUp.png" />
+    <None Include="res\Aqua_SpinDownGlyph.png" />
+    <None Include="res\Aqua_SpinLeftGlyph.png" />
+    <None Include="res\Aqua_SpinRightGlyph.png" />
+    <None Include="res\Aqua_SpinUpGlyph.png" />
+    <None Include="res\Aqua_StatusBackground.png" />
+    <None Include="res\Aqua_StatusPane.png" />
+    <None Include="res\Aqua_TabBackground.png" />
+    <None Include="res\Aqua_TabBackground133.png" />
+    <None Include="res\Aqua_TabItemTop.png" />
+    <None Include="res\Aqua_TabItemTopLeft.png" />
+    <None Include="res\Aqua_TabPaneEdge.png" />
+    <None Include="res\Aqua_ToolbarBackground.png" />
+    <None Include="res\Aqua_ToolbarButtons.png" />
+    <None Include="res\Aqua_ToolbarButtonsSplit.png" />
+    <None Include="res\Aqua_ToolbarButtonsSplitDropdown.png" />
+    <None Include="res\Aqua_ToolbarButtonsSplitDropdownGlyph.png" />
+    <None Include="res\Aqua_ToolbarGripper.png" />
+    <None Include="res\Aqua_ToolbarGripperVert.png" />
+    <None Include="res\Aqua_TrackBarDown13.png" />
+    <None Include="res\Aqua_TrackbarHorizontal.png" />
+    <None Include="res\Aqua_TrackBarLeft13.png" />
+    <None Include="res\Aqua_TrackbarRight13.png" />
+    <None Include="res\Aqua_TrackBarUp13.png" />
+    <None Include="res\Aqua_TrackbarVertical.png" />
+    <None Include="res\Aqua_TreeExpandCollapse.png" />
+    <None Include="res\Aqua_TreeExpandCollapse10.png" />
+    <None Include="res\Aqua_TreeExpandCollapse15.png" />
+    <None Include="res\Black_Button.png" />
+    <None Include="res\Black_CaptionButton.png" />
+    <None Include="res\Black_CheckBox13.png" />
+    <None Include="res\Black_CloseGlyph13.png" />
+    <None Include="res\Black_CloseGlyph17.png" />
+    <None Include="res\Black_ComboButton.png" />
+    <None Include="res\Black_ComboButtonGlyph.png" />
+    <None Include="res\Black_FrameBottom.png" />
+    <None Include="res\Black_FrameCaption.png" />
+    <None Include="res\Black_FrameCaptionMin.png" />
+    <None Include="res\Black_FrameCaptionSizing.png" />
+    <None Include="res\Black_FrameLeft.png" />
+    <None Include="res\Black_FrameMaximized.png" />
+    <None Include="res\Black_FrameRight.png" />
+    <None Include="res\Black_GroupBox.png" />
+    <None Include="res\Black_HelpGlyph13.png" />
+    <None Include="res\Black_HelpGlyph17.png" />
+    <None Include="res\Black_ListViewHeader.png" />
+    <None Include="res\Black_ListviewHeaderBackground.png" />
+    <None Include="res\Black_MaximizeGlyph13.png" />
+    <None Include="res\Black_MaximizeGlyph17.png" />
+    <None Include="res\Black_MinimizeGlyph13.png" />
+    <None Include="res\Black_MinimizeGlyph17.png" />
+    <None Include="res\Black_ProgressChunk.png" />
+    <None Include="res\Black_ProgressChunkVert.png" />
+    <None Include="res\Black_ProgressTrack.png" />
+    <None Include="res\Black_ProgressTrackVert.png" />
+    <None Include="res\Black_RadioButton13.png" />
+    <None Include="res\Black_ResizeGrip2.png" />
+    <None Include="res\Black_RestoreGlyph13.png" />
+    <None Include="res\Black_RestoreGlyph17.png" />
+    <None Include="res\Black_ScrollArrowGlyphs.png" />
+    <None Include="res\Black_ScrollArrows.png" />
+    <None Include="res\Black_ScrollShaftHorizontal.png" />
+    <None Include="res\Black_ScrollShaftVertical.png" />
+    <None Include="res\Black_ScrollThumbGripperHorizontal.png" />
+    <None Include="res\Black_ScrollThumbGripperVertical.png" />
+    <None Include="res\Black_ScrollThumbHorizontal.png" />
+    <None Include="res\Black_ScrollThumbVertical.png" />
+    <None Include="res\Black_Separator.png" />
+    <None Include="res\Black_SeparatorVert.png" />
+    <None Include="res\Black_sliderTrack.png" />
+    <None Include="res\Black_SmallFrameCaption.png" />
+    <None Include="res\Black_SpinButtonBackgroundDown.png" />
+    <None Include="res\Black_SpinButtonBackgroundLeft.png" />
+    <None Include="res\Black_SpinButtonBackgroundRight.png" />
+    <None Include="res\Black_SpinButtonBackgroundUp.png" />
+    <None Include="res\Black_SpinDownGlyph.png" />
+    <None Include="res\Black_SpinLeftGlyph.png" />
+    <None Include="res\Black_SpinRightGlyph.png" />
+    <None Include="res\Black_SpinUpGlyph.png" />
+    <None Include="res\Black_StatusBackground.png" />
+    <None Include="res\Black_StatusPane.png" />
+    <None Include="res\Black_TabBackground.png" />
+    <None Include="res\Black_TabItemTop.png" />
+    <None Include="res\Black_TabItemTopLeft.png" />
+    <None Include="res\Black_TabPaneEdge.png" />
+    <None Include="res\Black_ToolbarBackground.png" />
+    <None Include="res\Black_ToolbarButtons.png" />
+    <None Include="res\Black_ToolbarButtonsSplit.png" />
+    <None Include="res\Black_ToolbarButtonsSplitDropdown.png" />
+    <None Include="res\Black_ToolbarButtonsSplitDropdownGlyph.png" />
+    <None Include="res\Black_ToolbarGripper.png" />
+    <None Include="res\Black_ToolbarGripperVert.png" />
+    <None Include="res\Black_TrackBarDown13.png" />
+    <None Include="res\Black_TrackbarHorizontal.png" />
+    <None Include="res\Black_TrackBarLeft13.png" />
+    <None Include="res\Black_TrackbarRight13.png" />
+    <None Include="res\Black_TrackBarUp13.png" />
+    <None Include="res\Black_TrackbarVertical.png" />
+    <None Include="res\Black_TreeExpandCollapse.png" />
+    <None Include="res\Black_TreeExpandCollapse10.png" />
+    <None Include="res\Black_TreeExpandCollapse15.png" />
+    <None Include="res\Blue_Button.png" />
+    <None Include="res\Blue_CaptionButton.png" />
+    <None Include="res\Blue_CheckBox13.png" />
+    <None Include="res\Blue_CloseGlyph13.png" />
+    <None Include="res\Blue_CloseGlyph17.png" />
+    <None Include="res\Blue_ComboButton.png" />
+    <None Include="res\Blue_ComboButtonGlyph.png" />
+    <None Include="res\Blue_FrameBottom.png" />
+    <None Include="res\Blue_FrameCaption.png" />
+    <None Include="res\Blue_FrameCaptionMin.png" />
+    <None Include="res\Blue_FrameCaptionSizing.png" />
+    <None Include="res\Blue_FrameLeft.png" />
+    <None Include="res\Blue_FrameMaximized.png" />
+    <None Include="res\Blue_FrameRight.png" />
+    <None Include="res\Blue_GroupBox.png" />
+    <None Include="res\Blue_HelpGlyph13.png" />
+    <None Include="res\Blue_HelpGlyph17.png" />
+    <None Include="res\Blue_ListViewHeader.png" />
+    <None Include="res\Blue_ListviewHeaderBackground.png" />
+    <None Include="res\Blue_MaximizeGlyph13.png" />
+    <None Include="res\Blue_MaximizeGlyph17.png" />
+    <None Include="res\Blue_MinimizeGlyph13.png" />
+    <None Include="res\Blue_MinimizeGlyph17.png" />
+    <None Include="res\Blue_ProgressChunk.png" />
+    <None Include="res\Blue_ProgressChunkVert.png" />
+    <None Include="res\Blue_ProgressTrack.png" />
+    <None Include="res\Blue_ProgressTrackVert.png" />
+    <None Include="res\Blue_RadioButton13.png" />
+    <None Include="res\Blue_ResizeGrip2.png" />
+    <None Include="res\Blue_RestoreGlyph13.png" />
+    <None Include="res\Blue_RestoreGlyph17.png" />
+    <None Include="res\Blue_ScrollArrowGlyphs.png" />
+    <None Include="res\Blue_ScrollArrows.png" />
+    <None Include="res\Blue_ScrollShaftHorizontal.png" />
+    <None Include="res\Blue_ScrollShaftVertical.png" />
+    <None Include="res\Blue_ScrollThumbGripperHorizontal.png" />
+    <None Include="res\Blue_ScrollThumbGripperVertical.png" />
+    <None Include="res\Blue_ScrollThumbHorizontal.png" />
+    <None Include="res\Blue_ScrollThumbVertical.png" />
+    <None Include="res\Blue_Separator.png" />
+    <None Include="res\Blue_SeparatorVert.png" />
+    <None Include="res\Blue_sliderTrack.png" />
+    <None Include="res\Blue_SmallFrameCaption.png" />
+    <None Include="res\Blue_SpinButtonBackgroundDown.png" />
+    <None Include="res\Blue_SpinButtonBackgroundLeft.png" />
+    <None Include="res\Blue_SpinButtonBackgroundRight.png" />
+    <None Include="res\Blue_SpinButtonBackgroundUp.png" />
+    <None Include="res\Blue_SpinDownGlyph.png" />
+    <None Include="res\Blue_SpinLeftGlyph.png" />
+    <None Include="res\Blue_SpinRightGlyph.png" />
+    <None Include="res\Blue_SpinUpGlyph.png" />
+    <None Include="res\Blue_StatusBackground.png" />
+    <None Include="res\Blue_StatusPane.png" />
+    <None Include="res\Blue_TabBackground.png" />
+    <None Include="res\Blue_TabItemTop.png" />
+    <None Include="res\Blue_TabItemTopLeft.png" />
+    <None Include="res\Blue_TabPaneEdge.png" />
+    <None Include="res\Blue_ToolbarBackground.png" />
+    <None Include="res\Blue_ToolbarButtons.png" />
+    <None Include="res\Blue_ToolbarButtonsSplit.png" />
+    <None Include="res\Blue_ToolbarButtonsSplitDropdown.png" />
+    <None Include="res\Blue_ToolbarButtonsSplitDropdownGlyph.png" />
+    <None Include="res\Blue_ToolbarGripper.png" />
+    <None Include="res\Blue_ToolbarGripperVert.png" />
+    <None Include="res\Blue_TrackBarDown13.png" />
+    <None Include="res\Blue_TrackbarHorizontal.png" />
+    <None Include="res\Blue_TrackBarLeft13.png" />
+    <None Include="res\Blue_TrackbarRight13.png" />
+    <None Include="res\Blue_TrackBarUp13.png" />
+    <None Include="res\Blue_TrackbarVertical.png" />
+    <None Include="res\Blue_TreeExpandCollapse.png" />
+    <None Include="res\Blue_TreeExpandCollapse10.png" />
+    <None Include="res\Blue_TreeExpandCollapse15.png" />
+    <None Include="res\Office2007_Button.png" />
+    <None Include="res\Office2007_CaptionButton.png" />
+    <None Include="res\Office2007_CheckBox13.png" />
+    <None Include="res\Office2007_CloseGlyph13.png" />
+    <None Include="res\Office2007_CloseGlyph17.png" />
+    <None Include="res\Office2007_ComboButton.png" />
+    <None Include="res\Office2007_ComboButtonGlyph.png" />
+    <None Include="res\Office2007_FrameBottom.png" />
+    <None Include="res\Office2007_FrameCaption.png" />
+    <None Include="res\Office2007_FrameCaptionMin.png" />
+    <None Include="res\Office2007_FrameCaptionSizing.png" />
+    <None Include="res\Office2007_FrameLeft.png" />
+    <None Include="res\Office2007_FrameMaximized.png" />
+    <None Include="res\Office2007_FrameRight.png" />
+    <None Include="res\Office2007_GroupBox.png" />
+    <None Include="res\Office2007_HelpGlyph13.png" />
+    <None Include="res\Office2007_HelpGlyph17.png" />
+    <None Include="res\Office2007_ListViewHeader.png" />
+    <None Include="res\Office2007_ListViewHeaderBackground.png" />
+    <None Include="res\Office2007_MaximizeGlyph13.png" />
+    <None Include="res\Office2007_MaximizeGlyph17.png" />
+    <None Include="res\Office2007_MinimizeGlyph13.png" />
+    <None Include="res\Office2007_MinimizeGlyph17.png" />
+    <None Include="res\Office2007_ProgressChunk.png" />
+    <None Include="res\Office2007_ProgressChunkVert.png" />
+    <None Include="res\Office2007_ProgressTrack.png" />
+    <None Include="res\Office2007_ProgressTrackVert.png" />
+    <None Include="res\Office2007_RadioButton13.png" />
+    <None Include="res\Office2007_ResizeGrip2.png" />
+    <None Include="res\Office2007_RestoreGlyph13.png" />
+    <None Include="res\Office2007_RestoreGlyph17.png" />
+    <None Include="res\Office2007_ScrollArrowGlyphs.png" />
+    <None Include="res\Office2007_ScrollArrows.png" />
+    <None Include="res\Office2007_ScrollShaftHorizontal.png" />
+    <None Include="res\Office2007_ScrollShaftVertical.png" />
+    <None Include="res\Office2007_ScrollThumbGripperHorizontal.png" />
+    <None Include="res\Office2007_ScrollThumbGripperVertical.png" />
+    <None Include="res\Office2007_ScrollThumbHorizontal.png" />
+    <None Include="res\Office2007_ScrollThumbVertical.png" />
+    <None Include="res\Office2007_Separator.png" />
+    <None Include="res\Office2007_SeparatorVert.png" />
+    <None Include="res\Office2007_SliderTrack.png" />
+    <None Include="res\Office2007_SmallFrameCaption.png" />
+    <None Include="res\Office2007_SpinButtonBackgroundDown.png" />
+    <None Include="res\Office2007_SpinButtonBackgroundLeft.png" />
+    <None Include="res\Office2007_SpinButtonBackgroundRight.png" />
+    <None Include="res\Office2007_SpinButtonBackgroundUp.png" />
+    <None Include="res\Office2007_SpinDownGlyph.png" />
+    <None Include="res\Office2007_SpinLeftGlyph.png" />
+    <None Include="res\Office2007_SpinRightGlyph.png" />
+    <None Include="res\Office2007_SpinUpGlyph.png" />
+    <None Include="res\Office2007_StatusBackground.png" />
+    <None Include="res\Office2007_StatusPane.png" />
+    <None Include="res\Office2007_TabBackground.png" />
+    <None Include="res\Office2007_TabItemTop.png" />
+    <None Include="res\Office2007_TabItemTopLeft.png" />
+    <None Include="res\Office2007_TabPaneEdge.png" />
+    <None Include="res\Office2007_ToolbarBackground.png" />
+    <None Include="res\Office2007_ToolbarButtons.png" />
+    <None Include="res\Office2007_ToolbarButtonsSplit.png" />
+    <None Include="res\Office2007_ToolbarButtonsSplitDropDown.png" />
+    <None Include="res\Office2007_ToolbarButtonsSplitDropDownGlyph.png" />
+    <None Include="res\Office2007_ToolbarGripper.png" />
+    <None Include="res\Office2007_ToolbarGripperVert.png" />
+    <None Include="res\Office2007_TrackbarDown13.png" />
+    <None Include="res\Office2007_TrackbarHorizontal.png" />
+    <None Include="res\Office2007_TrackbarLeft13.png" />
+    <None Include="res\Office2007_TrackbarRight13.png" />
+    <None Include="res\Office2007_TrackbarUp13.png" />
+    <None Include="res\Office2007_TrackbarVertical.png" />
+    <None Include="res\Office2007_TreeExpandCollapse.png" />
+    <None Include="res\Office2007_TreeExpandCollapse10.png" />
+    <None Include="res\Office2007_TreeExpandCollapse15.png" />
+    <None Include="res\Silver_Button.png" />
+    <None Include="res\Silver_CaptionButton.png" />
+    <None Include="res\Silver_CheckBox13.png" />
+    <None Include="res\Silver_CloseGlyph13.png" />
+    <None Include="res\Silver_CloseGlyph17.png" />
+    <None Include="res\Silver_ComboButton.png" />
+    <None Include="res\Silver_ComboButtonGlyph.png" />
+    <None Include="res\Silver_FrameBottom.png" />
+    <None Include="res\Silver_FrameCaption.png" />
+    <None Include="res\Silver_FrameCaptionMin.png" />
+    <None Include="res\Silver_FrameCaptionSizing.png" />
+    <None Include="res\Silver_FrameLeft.png" />
+    <None Include="res\Silver_FrameMaximized.png" />
+    <None Include="res\Silver_FrameRight.png" />
+    <None Include="res\Silver_GroupBox.png" />
+    <None Include="res\Silver_HelpGlyph13.png" />
+    <None Include="res\Silver_HelpGlyph17.png" />
+    <None Include="res\Silver_ListViewHeader.png" />
+    <None Include="res\Silver_ListviewHeaderBackground.png" />
+    <None Include="res\Silver_MaximizeGlyph13.png" />
+    <None Include="res\Silver_MaximizeGlyph17.png" />
+    <None Include="res\Silver_MinimizeGlyph13.png" />
+    <None Include="res\Silver_MinimizeGlyph17.png" />
+    <None Include="res\Silver_ProgressChunk.png" />
+    <None Include="res\Silver_ProgressChunkVert.png" />
+    <None Include="res\Silver_ProgressTrack.png" />
+    <None Include="res\Silver_ProgressTrackVert.png" />
+    <None Include="res\Silver_RadioButton13.png" />
+    <None Include="res\Silver_ResizeGrip2.png" />
+    <None Include="res\Silver_RestoreGlyph13.png" />
+    <None Include="res\Silver_RestoreGlyph17.png" />
+    <None Include="res\Silver_ScrollArrowGlyphs.png" />
+    <None Include="res\Silver_ScrollArrows.png" />
+    <None Include="res\Silver_ScrollShaftHorizontal.png" />
+    <None Include="res\Silver_ScrollShaftVertical.png" />
+    <None Include="res\Silver_ScrollThumbGripperHorizontal.png" />
+    <None Include="res\Silver_ScrollThumbGripperVertical.png" />
+    <None Include="res\Silver_ScrollThumbHorizontal.png" />
+    <None Include="res\Silver_ScrollThumbVertical.png" />
+    <None Include="res\Silver_Separator.png" />
+    <None Include="res\Silver_SeparatorVert.png" />
+    <None Include="res\Silver_sliderTrack.png" />
+    <None Include="res\Silver_SmallFrameCaption.png" />
+    <None Include="res\Silver_SpinButtonBackgroundDown.png" />
+    <None Include="res\Silver_SpinButtonBackgroundLeft.png" />
+    <None Include="res\Silver_SpinButtonBackgroundRight.png" />
+    <None Include="res\Silver_SpinButtonBackgroundUp.png" />
+    <None Include="res\Silver_SpinDownGlyph.png" />
+    <None Include="res\Silver_SpinLeftGlyph.png" />
+    <None Include="res\Silver_SpinRightGlyph.png" />
+    <None Include="res\Silver_SpinUpGlyph.png" />
+    <None Include="res\Silver_StatusBackground.png" />
+    <None Include="res\Silver_StatusPane.png" />
+    <None Include="res\Silver_TabBackground.png" />
+    <None Include="res\Silver_TabItemTop.png" />
+    <None Include="res\Silver_TabItemTopLeft.png" />
+    <None Include="res\Silver_TabPaneEdge.png" />
+    <None Include="res\Silver_ToolbarBackground.png" />
+    <None Include="res\Silver_ToolbarButtons.png" />
+    <None Include="res\Silver_ToolbarButtonsSplit.png" />
+    <None Include="res\Silver_ToolbarButtonsSplitDropdown.png" />
+    <None Include="res\Silver_ToolbarButtonsSplitDropdownGlyph.png" />
+    <None Include="res\Silver_ToolbarGripper.png" />
+    <None Include="res\Silver_ToolbarGripperVert.png" />
+    <None Include="res\Silver_TrackBarDown13.png" />
+    <None Include="res\Silver_TrackbarHorizontal.png" />
+    <None Include="res\Silver_TrackBarLeft13.png" />
+    <None Include="res\Silver_TrackbarRight13.png" />
+    <None Include="res\Silver_TrackBarUp13.png" />
+    <None Include="res\Silver_TrackbarVertical.png" />
+    <None Include="res\Silver_TreeExpandCollapse.png" />
+    <None Include="res\Silver_TreeExpandCollapse10.png" />
+    <None Include="res\Silver_TreeExpandCollapse15.png" />
+    <None Include="res\NormalAqua.ini" />
+    <None Include="res\NormalBlack.ini" />
+    <None Include="res\NormalBlue.ini" />
+    <None Include="res\NormalSilver.ini" />
+    <None Include="res\Themes.ini" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

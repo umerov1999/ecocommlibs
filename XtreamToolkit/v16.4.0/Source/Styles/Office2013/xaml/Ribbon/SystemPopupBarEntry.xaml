@@ -1,0 +1,26 @@
+<Grid>
+	<Border BorderThickness='1' BorderBrush='{x:Static SystemColors.ControlDarkBrush}' Background='{x:Static SystemColors.WindowBrush}'/>
+	<Border Margin='1' BorderThickness='5, 17, 5, 28' BorderBrush='{x:Static SystemColors.ControlBrush}'/>
+
+	<Border Margin='1, 1, 1, 0' Height = '10' VerticalAlignment='Top'>
+		<Border.Background>
+			<LinearGradientBrush StartPoint='0,0' EndPoint='0,1'>
+				<GradientStop Offset='0' Color='{x:Static SystemColors.ControlLightLightColor}'/>
+				<GradientStop Offset='1' Color='{x:Static SystemColors.ControlColor}'/>
+			</LinearGradientBrush>
+		</Border.Background>
+	</Border>
+
+	<Border Margin='5, 17, 5, 28' BorderThickness='1' BorderBrush='{x:Static SystemColors.ControlDarkBrush}' />
+	<Border Margin='4, 16, 4, 27' BorderThickness='1' BorderBrush='{x:Static SystemColors.ControlLightLightBrush}' />
+
+	<Border Margin='1, 0, 1, 1' Height = '26' VerticalAlignment='Bottom'>
+		<Border.Background>
+			<LinearGradientBrush StartPoint='0,0' EndPoint='0,1'>
+				<GradientStop Offset='0' Color='{x:Static SystemColors.ControlColor}'/>
+				<GradientStop Offset='1' Color='{x:Static SystemColors.ControlDarkColor}'/>
+			</LinearGradientBrush>
+		</Border.Background>
+	</Border>
+
+</Grid>

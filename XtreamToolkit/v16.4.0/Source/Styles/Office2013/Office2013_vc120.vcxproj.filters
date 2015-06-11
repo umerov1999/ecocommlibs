@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{895c444a-cfb6-4b4b-b6a1-01b24bcc9c19}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Ini Files">
+      <UniqueIdentifier>{1cd0a3ac-ab61-45fa-a35a-2dd533740843}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Image Files">
+      <UniqueIdentifier>{4cfe8cc3-6787-4301-909e-27dc79785adc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Office2013.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Office2013Excel.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="Office2013GrayDark.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="Office2013GrayLight.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="Office2013White.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="Office2013Word.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

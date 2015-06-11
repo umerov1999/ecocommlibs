@@ -1,0 +1,3 @@
+<Border x:Name='Button' Margin='0,0,0,0' Padding='3,4,3,4' BorderThickness='1,1,1,1' BorderBrush='#FFABABAB' Background='#FFFFFFFF'>
+	<Path x:Name='Arrow' Data="F1 M1,1 L0,0 L0,2 z" Fill="#FF777777" Stretch="Fill" />
+</Border>

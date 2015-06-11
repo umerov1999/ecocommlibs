@@ -1,0 +1,21 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: VisualStudio2012 - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/VisualStudio2012.res" /i "../../" /d "NDEBUG" /d "_AFXDLL" /d "_XTP_INCLUDE_VERSION" "D:\Source\SVN\Trunk\ToolkitPro\Source\Styles\VisualStudio2012\VisualStudio2012.rc"" 
+Creating command line "link.exe /nologo /dll /incremental:no /pdb:"Release/VisualStudio2012.pdb" /machine:I386 /nodefaultlib /out:"../VisualStudio2012.dll" /implib:"Release/VisualStudio2012.lib" /opt:nowin98 /noentry  .\Release\VisualStudio2012.res "
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+
+
+
+<h3>Results</h3>
+VisualStudio2012.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

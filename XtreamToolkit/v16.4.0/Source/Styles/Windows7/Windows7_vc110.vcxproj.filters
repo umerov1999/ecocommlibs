@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{39644a4b-ccd8-4c41-809a-0c96e5b7cec5}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Image Files">
+      <UniqueIdentifier>{0f8316a2-0a52-4ea8-ac97-b7d413be09c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ini Files">
+      <UniqueIdentifier>{fc941182-3b59-4127-8eee-5c2defddcb9e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Windows7.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Blue_ContextTabBlue.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ContextTabBlueClient.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ContextTabBlueGroupButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ContextTabBlueHeader.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ContextTabCyan.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ContextTabCyanClient.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ContextTabCyanGroupButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ContextTabCyanHeader.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ContextTabGreen.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ContextTabGreenClient.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ContextTabGreenGroupButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ContextTabGreenHeader.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ContextTabGroupCaption.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ContextTabGroupClient.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ContextTabOrange.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ContextTabOrangeClient.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ContextTabOrangeGroupButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ContextTabOrangeHeader.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ContextTabPurple.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ContextTabPurpleClient.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ContextTabPurpleGroupButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ContextTabPurpleHeader.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ContextTabRed.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ContextTabRedClient.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ContextTabRedGroupButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ContextTabRedHeader.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ContextTabSeparator.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ContextTabYellow.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ContextTabYellowClient.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ContextTabYellowGroupButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ContextTabYellowHeader.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ControlGalleryDown.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ControlGalleryPopup.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ControlGalleryScrollArrowGlyphs.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ControlGalleryScrollArrowsVerticalDark.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ControlGalleryScrollArrowsVerticalLight.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ControlGalleryScrollThumbGripperVertical.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ControlGalleryScrollThumbVertical.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ControlGalleryScrollVerticalDark.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ControlGalleryScrollVerticalLight.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ControlGalleryUp.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_FrameBottomLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_FrameBottomRight.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_FrameCaptionButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_FrameCaptionClose13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_FrameCaptionClose17.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_FrameCaptionClose23.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_FrameCaptionMaximize13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_FrameCaptionMaximize17.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_FrameCaptionMaximize23.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_FrameCaptionMinimize13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_FrameCaptionMinimize17.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_FrameCaptionMinimize23.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_FrameCaptionRestore13.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_FrameCaptionRestore17.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_FrameCaptionRestore23.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_FrameGripper.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_FrameSimpleTopRight.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_FrameSystemButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_FrameTopCenter.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_FrameTopLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_FrameTopRight.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_MenuCheckedItem.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_MenuCheckedItemMark.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_MenuSelectedDisabledItem22.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_MenuSelectedDisabledItem54.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_MenuSelectedItem22.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_MenuSelectedItem54.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_PopupBarFrame.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ReportExpandButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_RibbonGroupButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_RibbonGroupButtonIcon.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_RibbonGroupCaption.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_RibbonGroupClient.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_RibbonGroupQuickAccess.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_RibbonGroups.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_RibbonGroupsScrollLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_RibbonGroupsScrollLeftGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_RibbonGroupsScrollRight.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_RibbonGroupsScrollRightGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_RibbonOptionButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_RibbonQuickAccessButton.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_RibbonQuickAccessFrame.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_RibbonQuickAccessMore.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_RibbonTab.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_RibbonTabSeparator.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_StatusBarDark.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_StatusBarDevider.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_StatusBarGripper.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_StatusBarLight.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_StatusBarSeparator.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ToolbarButtonCheckBox.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ToolbarButtonDropDownGlyph.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ToolbarButtons22.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ToolbarButtons50.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ToolbarButtonsComboDropDown.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ToolbarButtonsSpecialCenter.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ToolbarButtonsSpecialLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ToolbarButtonsSpecialRight.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ToolbarButtonsSpecialSingle.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ToolbarButtonsSpecialSplitCenter.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ToolbarButtonsSpecialSplitDropDownCenter.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ToolbarButtonsSpecialSplitDropDownLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ToolbarButtonsSpecialSplitDropDownRight.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ToolbarButtonsSpecialSplitLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ToolbarButtonsSpecialSplitRight.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ToolbarButtonsSplit22.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ToolbarButtonsSplit50.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ToolbarButtonsSplitDropDown22.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_ToolbarButtonsSplitDropDown50.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\Blue_WorkspaceTopLeft.png">
+      <Filter>Image Files</Filter>
+    </None>
+    <None Include="res\BlueTheme.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

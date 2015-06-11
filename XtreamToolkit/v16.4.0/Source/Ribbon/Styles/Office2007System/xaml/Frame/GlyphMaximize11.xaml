@@ -1,0 +1,4 @@
+<Canvas Margin='0, 1, 0, 0'>
+	<Line X1 ='0' X2='11'  StrokeThickness='3' Stroke='{x:Static SystemColors.ActiveCaptionTextBrush}'/>
+	<Rectangle Width='11' Height='10'  StrokeThickness='1' Stroke='{x:Static SystemColors.ActiveCaptionTextBrush}'/>
+</Canvas>

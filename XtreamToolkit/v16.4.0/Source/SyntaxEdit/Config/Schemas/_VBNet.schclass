@@ -1,0 +1,528 @@
+//=======================================================================
+//================ Lex class support ====================================
+//=======================================================================
+// 	lexClass:
+//		name		= c_CPPString
+//		parent		= c_CPP
+//		parent:dyn	= c_CPP
+//
+//		children		= 0
+//		children		= class1, class2, ...
+//
+//		previous:class			=	
+//		previous:tag			=	
+//		previous:tag:separators	=	
+//
+//		start:class		= 
+//		start:Tag		= '"'
+//
+//		skip:Tag		= '\"'
+//
+//		end:class		= //
+//		end:Tag			= '"'
+//		end:separators	= ' '
+//
+//		Token:tag		= 'if', 'for', 'while', 'do'
+//		Token:start:separators	= 
+//		Token:end:separators	= 
+//-----------------------------------------------------------------------
+//---------------- Attributes -------------------------------------------
+//-----------------------------------------------------------------------
+//	txt:colorFG	= 0xffc0c0 // color value in hex format. default: black	
+//	txt:colorBK	= 0xffc0c0 // color value in hex format. default: white		
+//
+//	txt:colorSelFG	= 0xffc0c0 // color value in hex format. default: white
+//	txt:colorSelBK	= 0xffc0c0 // color value in hex format. default: black
+//
+//	txt:Bold	= 1 // {1,0} default: 0
+//	txt:Italic	= 1 // {1,0} default: 0
+//	txt:Underline	= 1 // {1,0} default: 0
+//
+//	caseSensitive	= 1 // {1,0} default: 0
+//
+//	Collapsable	= 1 // {1,0} default: 0
+//	CollapsedText	= '/*...*/' // quoted string value. default: '[..]'	
+//
+//	ParseOnScreen	= 1 // {1,0} default: 0
+// 	
+//-----------------------------------------------------------------------
+//* Global attributes ***************************************************
+//-----------------------------------------------------------------------
+// 	global:FirstParseInSeparateThread	= 1		// {0,1} default=1
+// 	global:EditReparceInSeparateThread	= 1		// {0,1} default=1
+// 	global:ConfigChangedReparceInSeparateThread= 1 // {0,1} default=1
+// 	global:EditReparceTimeout_ms	= 500		// default= 500 ms; time out for start reparse after last key was pressed.
+// 	global:MaxBackParseOffset		= 100		// default= 100 chars; maximum back buffer size. Some times parser look back for the text from current position.
+// 	global:OnScreenSchCacheLifeTime_sec = 180	// default= 180 sec; -1 and 0 means infinite; time out for on screen parsed pices of text. for memory using optimization.
+// 	global:ParserThreadIdleLifeTime_sec = 60	// default=60 sec; -1 and 0 means infinite; time out for existing of parser thread when parser idle (no parse requests).
+	
+/////////////////////////////////////////////////////////////////////////
+
+//=======================================================================
+//================ Variables support ====================================
+//=======================================================================
+// NON operation - example:   @alpha:not
+//
+// @alpha	= a-z, A-Z
+// @digit	= 0-9
+// @HexDdigit	= 0-9, a-f, A-F
+// @specs	= "~`!@#$%^&*()_-+=\\|{}[];:'\",.<>/?"
+// @EOL		= End Of Line
+//---------------------------------------------
+// special tags:  '\\', '\'', '\t', '\r', '\n'
+/////////////////////////////////////////////////////////////////////////
+
+/// HTML ///	
+lexClass:
+	name			= c_VBS
+	parent:file		= <*.vb|*.vbs>
+	//caseSensitive	= 0
+	txt:colorFG	= 0x000000
+	DisplayName = 'Normal Text'
+
+	//global:FirstParseInSeparateThread	= 0
+	global:EditReparceInSeparateThread	= 1
+
+	//global:EditReparceTimeout_ms	= 250
+	//global:MaxBackParseOffset		= 100
+	//global:OnScreenSchCacheLifeTime_sec = 60
+	//global:ParserThreadIdleLifeTime_sec = -1
+
+
+//=============================================================================
+//*** VB, VB Script Code Blocks  *** ==========================================
+//=============================================================================
+
+// Subs ///////////////////////////////////////////////////////////////////////
+
+lexClass:
+    name  = c_Sub_CodeBlock_Start  
+    Parent  = c_VBS, c_CodeBlock_Namespace, c_CodeBlock_Class,  c_CodeRegion, c_CodeBlock_Subs
+    children = 0 
+    start:Tag = 'Private Sub', 'Public Sub', 'Shared Sub', 'Protected Sub'
+    end:Separators = '\t', ' ', @eol
+    txt:colorFG = 0x0000FF
+//:lexClass
+ 
+lexClass:
+    name  = c_Sub_CodeBlock_End  
+    Parent  = c_VBS, c_CodeBlock_Namespace, c_CodeBlock_Class,  c_CodeRegion, c_CodeBlock_Subs
+    children = 0 
+    previous:tag = @specs, ' ', '\t', @eol
+    start:Tag = 'End Sub' 
+    end:Separators = @specs, @eol
+    txt:colorFG = 0x0000FF
+//:lexClass
+
+lexClass:
+    name  = c_CodeBlock_Subs 
+    Parent  = c_VBS, c_CodeBlock_Namespace, c_CodeBlock_Class,  c_CodeRegion, c_CodeBlock_Subs
+    start:CLASS = c_Sub_CodeBlock_Start 
+    end:CLASS = c_Sub_CodeBlock_End 
+    Collapsable = 1 
+    CollapsedText = 'Sub ...'
+    DisplayName	= 'Sub Block'
+
+// Functions ///////////////////////////////////////////////////////////////////////
+
+lexClass:
+    name  = c_Function_CodeBlock_Start  
+    Parent  = c_VBS, c_CodeBlock_Namespace, c_CodeBlock_Class,  c_CodeRegion, c_CodeBlock_Functions 
+    children = 0 
+    start:Tag = 'Private Function', 'Public Function', 'Shared Function', 'Protected Function'
+    end:Separators = '\t', ' ', @eol
+    txt:colorFG = 0x0000FF
+//:lexClass
+ 
+lexClass:
+    name  = c_Function_CodeBlock_End  
+    Parent  = c_VBS, c_CodeBlock_Namespace, c_CodeBlock_Class,  c_CodeRegion, c_CodeBlock_Functions
+    children = 0 
+    previous:tag = @specs, ' ', '\t', @eol
+    start:Tag = 'End Function' 
+    end:Separators = @specs, @eol
+    txt:colorFG = 0x0000FF
+//:lexClass
+
+lexClass:
+    name  = c_CodeBlock_Functions 
+    Parent  = c_VBS, c_CodeBlock_Namespace, c_CodeBlock_Class,  c_CodeRegion, c_CodeBlock_Functions
+    start:CLASS = c_Function_CodeBlock_Start 
+    end:CLASS = c_Function_CodeBlock_End 
+    Collapsable = 1 
+    CollapsedText = 'Function ...'
+    DisplayName	= 'Function Block'
+//:lexClass
+
+// Region ///////////////////////////////////////////////////////////////////////
+
+lexClass:
+    name  = c_Region_CodeBlock_Start  
+    Parent:  = c_VBS, c_CodeBlock_Namespace, c_CodeBlock_Class,  c_CodeRegion//, c_CodeBlock_Functions, c_CodeBlock_Subs
+    children = 0 
+    start:Tag = '#Region'
+    end:Separators = '\t', ' ', @eol
+    txt:colorFG = 0x0000FF
+//:lexClass
+ 
+lexClass:
+    name  = c_Region_CodeBlock_End  
+    Parent  = c_VBS, c_CodeBlock_Namespace, c_CodeBlock_Class,  c_CodeRegion//, c_CodeBlock_Functions, c_CodeBlock_Subs
+    children = 0 
+    previous:tag = @specs, ' ', '\t', @eol
+    start:Tag = '#End Region' 
+    end:Separators = @specs, @eol
+    txt:colorFG = 0x0000FF
+//:lexClass
+
+lexClass:
+    name  = C_CodeRegion
+    Parent  = c_VBS, c_CodeBlock_Namespace, c_CodeBlock_Class,  c_CodeRegion//, c_CodeBlock_Functions, c_CodeBlock_Subs
+    start:CLASS = c_Region_CodeBlock_Start 
+    end:CLASS = c_Region_CodeBlock_End 
+    Collapsable = 1 
+    CollapsedText = 'Windows Form Designer generated code'  
+    DisplayName	= 'Region Block'
+//:lexClass
+
+// NameSpace ///////////////////////////////////////////////////////////////////////
+
+lexClass:
+    name  = c_NameSpace_CodeBlock_Start  
+    Parent  = c_VBS, c_CodeBlock_Namespace
+    children = 0 
+    start:Tag = 'NameSpace'
+    end:Separators = '\t', ' ', @eol
+    txt:colorFG = 0x0000FF
+//:lexClass
+ 
+lexClass:
+    name  = c_NameSpace_CodeBlock_End  
+    Parent  = c_VBS, c_CodeBlock_Namespace
+    children = 0 
+    previous:tag = @specs, ' ', '\t', @eol
+    start:Tag = 'End NameSpace' 
+    end:Separators = @specs, @eol
+    txt:colorFG = 0x0000FF
+//:lexClass
+
+lexClass:
+    name  = c_CodeBlock_Namespace
+    Parent = c_VBS, c_CodeBlock_Namespace
+    start:CLASS = c_NameSpace_CodeBlock_Start 
+    end:CLASS = c_NameSpace_CodeBlock_End 
+    Collapsable = 1 
+    CollapsedText = 'NameSpace ...'  
+    DisplayName	= 'NameSpace Block'
+//:lexClass
+
+// Class ///////////////////////////////////////////////////////////////////////
+
+lexClass:
+    name  = c_CodeBlock_Class_Start  
+    Parent  = c_VBS, c_CodeBlock_Class, c_CodeBlock_Namespace
+    children = 0 
+    start:Tag = 'Public Class', 'Private Class'
+    end:Separators = '\t', ' ', @eol
+    txt:colorFG = 0x0000FF
+//:lexClass
+ 
+lexClass:
+    name  = c_CodeBlock_Class_End  
+    Parent  = c_VBS, c_CodeBlock_Class, c_CodeBlock_Namespace
+    children = 0 
+    previous:tag = @specs, ' ', '\t', @eol
+    start:Tag = 'End Class' 
+    end:Separators = @specs, @eol
+    txt:colorFG = 0x0000FF
+//:lexClass
+
+lexClass:
+    name  = c_CodeBlock_Class
+    Parent = c_VBS, c_CodeBlock_Class, c_CodeBlock_Namespace
+    start:CLASS = c_CodeBlock_Class_Start 
+    end:CLASS = c_CodeBlock_Class_End 
+    Collapsable = 1 
+    CollapsedText = 'Class ...'  
+    DisplayName	= 'Class Block'
+//:lexClass
+
+//=============================================================================
+//*** VB, VB Script colorization *** ==========================================
+//=============================================================================
+
+lexClass: 	
+	name		= c_URL	
+	ParseOnScreen	= 0
+	parent	= c_VBS, c_CodeBlock_Namespace, c_CodeBlock_Class,  c_CodeRegion, c_CodeBlock_Subs, c_CodeBlock_Functions
+	caseSensitive	= 0
+	children	= 0
+	previous:tag	= @specs, ' ', '\t', @eol
+	start:Tag	= 'http:'
+	end:separators	= ' ', '\t', '*', '"', @eol
+	txt:colorBK	= 0xC0FFC0
+	txt:Underline	= 1
+	DisplayName	= 'URL'
+//:lexClass
+
+lexClass:
+	name		= c_VBScriptNumber10
+	Parent	= c_VBS, c_CodeBlock_Namespace, c_CodeBlock_Class,  c_CodeRegion, c_CodeBlock_Subs, c_CodeBlock_Functions 
+	ParseOnScreen	= 1
+	previous:tag	= @specs, ' ', '\t', @EOL	
+	start:Tag		= @digit
+	end:separators	= @digit:not
+	txt:colorFG	= 0x008284
+	DisplayName = 'VB Script Number'
+//:lexClass
+
+lexClass: 	
+	name		= c_String
+	parent	= c_VBS, c_CodeBlock_Namespace, c_CodeBlock_Class,  c_CodeRegion, c_CodeBlock_Subs, c_CodeBlock_Functions
+	children	= c_URL
+	start:Tag	= '"'
+	skip:Tag	= '\\"', '\\\r\n', '\\\n\r', '\\\n', '\\\r'	
+	end:Tag		= '"', @eol
+	txt:colorFG	= 0x840000
+	DisplayName	= 'String (Double Quotes)'
+//:lexClass
+
+lexClass: 	
+	name		= c_Str_include
+	parent	= c_VBS, c_CodeBlock_Namespace, c_CodeBlock_Class,  c_CodeRegion, c_CodeBlock_Subs, c_CodeBlock_Functions
+	children	= 0
+	previous:tag	= '#include'
+	previous:tag:separators = ' ', '\t' 
+	start:Tag	= '<', '\"'	
+	end:Tag		= '>', '\"', @eol
+	txt:colorFG	= 0xE00000
+	DisplayName	= 'String (Include File)'
+//:lexClass
+
+lexClass:
+	name		= c_CommentML	
+	parent	= c_VBS, c_CodeBlock_Namespace, c_CodeBlock_Class,  c_CodeRegion, c_CodeBlock_Subs, c_CodeBlock_Functions
+	children	= c_URL		
+	start:Tag	= '<%'
+	end:Tag		= '%>'
+	Collapsable	= 1 
+	CollapsedText	= '***' 
+	
+	//txt:colorFG	= 0x00CF00
+	DisplayName	= 'Comment (Multi-Line)'
+//:lexClass
+
+lexClass:	
+	name		= c_CommentSL
+	parent		= c_VBS, c_CodeBlock_Namespace, c_CodeBlock_Class,  c_CodeRegion, c_CodeBlock_Subs, c_CodeBlock_Functions
+	children	= c_URL		
+	start:Tag	= '\''
+	end:separators = @EOL
+	txt:colorFG	= 0x008200
+	DisplayName = 'VB Script Comment'
+//:lexClass	
+
+lexClass:
+	name		= c_InsertBlock_Start		
+	parent		= c_VBS, c_CodeBlock_Namespace, c_CodeBlock_Class,  c_CodeRegion, c_CodeBlock_Subs, c_CodeBlock_Functions	
+	children	= 0	
+	start:Tag	= 'Start_Show'	
+	end:Separators	= @eol
+	txt:colorFG	= 0x00A0FF
+	DisplayName	= 'Show Comment Block (start)'
+//:lexClass	
+
+lexClass:
+	name		= c_InsertBlock_End		
+	parent		= c_VBS, c_CodeBlock, c_InsertBlock, c_CodeRegion, c_CodeBlock_Subs, c_CodeBlock_Functions, c_CodeBlock_Namespace	
+	children	= 0	
+	start:Tag	= 'End_Show'	
+	end:Separators	= @eol
+	txt:colorFG	= 0xFFA000
+	DisplayName	= 'Show Comment Block (end)'
+//:lexClass
+
+lexClass:
+	name		= c_InsertBlock	
+	parent		= c_VBS, c_CodeBlock_Namespace, c_CodeBlock_Class,  c_CodeRegion, c_CodeBlock_Subs, c_CodeBlock_Functions
+	children	= c_InsertBlock_End		
+	start:CLASS	= c_InsertBlock_Start	
+	end:CLASS	= c_InsertBlock_End	
+	Collapsable	= 1 
+	txt:colorFG	= 0xFFA0FF
+	DisplayName	= 'Show Comment Block'
+//:lexClass
+
+lexClass:	
+	name		= c_Keywords
+	ParseOnScreen	= 0
+	parent	= c_VBS, c_CodeBlock_Namespace, c_CodeBlock_Class,  c_CodeRegion, c_CodeBlock_Subs, c_CodeBlock_Functions
+	children	= 0
+	txt:colorFG	= 0x0000FF
+	DisplayName = 'VB Script Keywords'
+
+	token:tag = 'And', 'As'
+	token:tag = 'ByVal', 'ByRef', 'Begin'
+	token:tag = 'Call', 'Case', 'Class'
+	token:tag = 'Dim'
+	token:tag = 'Error', 'ElseIf', 'Else', 'End', 'Erase', 'Exit', 'Eqv', 'Explicit'
+	token:tag = 'For', 'Function'
+	token:tag = 'In', 'If', 'Is', 'Imp', 'Imports', 'Inherits'
+	token:tag = 'Like'
+	token:tag = 'Mod', 'Me'
+	token:tag = 'Nothing', 'New', 'Next', 'Not', 'Namespace'
+	token:tag = 'Option', 'On', 'Or', 'Overrides', 'Overloads', 'On Error Resume Next'
+	token:tag = 'Preserve', 'Private', 'Public', 'Sub', 'Protected'
+	token:tag = 'ReDim', 'Raise', 'Resume'
+	token:tag = 'Set', 'Step', 'Sub'
+	token:tag = 'Then', 'To', 'TypeOf', 'This'
+	token:tag = 'Until'
+	token:tag = 'Xor', '#End Region', '#Region'
+	token:tag = 'With', 'Wend', 'While', 'WithEvents'
+
+
+	token:start:separators	= '.', ' ', '\t', '<%=', '<%', '>', '(', @eol
+	token:end:separators	= '.', ' ', '\t', '%>', '<', '(', ')', @eol
+//:lexClass
+	
+lexClass:
+	name		= c_DataTypes
+	ParseOnScreen	= 0
+	parent	= c_VBS, c_CodeBlock_Namespace, c_CodeBlock_Class,  c_CodeRegion, c_CodeBlock_Subs, c_CodeBlock_Functions
+	children	= 0
+	txt:colorFG	= 0x0000FF
+	txt:bold = 0
+	DisplayName	= 'Data Type'
+
+	token:tag	= 'FALSE'
+	token:tag	= 'TRUE'
+	token:tag	= 'BOOL', 'Boolean'
+	token:tag	= 'BSTR'
+	token:tag	= 'BYTE'
+	token:tag	= 'COLORREF'
+	token:tag	= 'DWORD'
+	token:tag	= 'LONG'
+	token:tag	= 'LPARAM'
+	token:tag	= 'LPCSTR'
+	token:tag	= 'LPSTR'
+	token:tag	= 'LPCTSTR'
+	token:tag	= 'LPTSTR'
+	token:tag	= 'LPVOID'
+	token:tag	= 'LRESULT'
+	token:tag	= 'UINT', 'Integer'
+	token:tag	= 'WNDPROC'
+	token:tag	= 'WORD'
+	token:tag	= 'WPARAM'
+	token:tag	= 'POSITION'
+	token:tag	= 'LPCRECT'
+	token:tag	= 'Object'
+
+	token:start:separators	= ' ', '\t', ':', ';', '!', '(', ')', ',', '/', '{', '}', @eol
+	token:end:separators	= ' ', '\t', ':', ';', '!', '(', ')', '{', '}', @eol
+//:lexClass
+
+lexClass: 
+	name		= c_Functions
+	parent	= c_VBS, c_CodeBlock_Namespace, c_CodeBlock_Class,  c_CodeRegion, c_CodeBlock_Subs, c_CodeBlock_Functions
+	ParseOnScreen = 0
+	txt:colorFG	= 0x0000FF
+	DisplayName = 'VB Script Functions'
+		
+	token:start:separators	= ' ', '\t', '<%=', '<%', '>', '(', @eol
+	token:end:separators	= ' ', '\t', '%>', '<', '(', ')', @eol
+	
+    token:tag = 'Abs', 'AddHandler', 'AddressOf'
+    token:tag = 'Array'
+    token:tag = 'Asc'
+    token:tag = 'Atn'
+    token:tag = 'CBool'
+    token:tag = 'CByte'
+    token:tag = 'CCur', 'CType'
+    token:tag = 'CDate'
+    token:tag = 'CDbl'
+    token:tag = 'Chr'
+    token:tag = 'CInt'
+    token:tag = 'CLng'
+    token:tag = 'Const'
+    token:tag = 'Cos'
+    token:tag = 'CreateObject'
+    token:tag = 'CSng'
+    token:tag = 'CStr'
+    token:tag = 'Date'
+    token:tag = 'DateAdd'
+    token:tag = 'DateDiff'
+    token:tag = 'DatePart'
+    token:tag = 'DateSerial'
+    token:tag = 'DateValue'
+    token:tag = 'Day'
+    token:tag = 'Exp'
+    token:tag = 'Filter'
+    token:tag = 'Fix'
+    token:tag = 'FormatCurrency'
+    token:tag = 'FormatDateTime'
+    token:tag = 'FormatNumber'
+    token:tag = 'FormatPercent'
+    token:tag = 'GetObject', 'GetType', 'GetObject'
+    token:tag = 'Hex'
+    token:tag = 'Hour'
+    token:tag = 'InputBox'
+    token:tag = 'InStr'
+    token:tag = 'InStrRev'
+    token:tag = 'Int'
+    token:tag = 'IsArray'
+    token:tag = 'IsDate'
+    token:tag = 'IsEmpty'
+    token:tag = 'IsNull'
+    token:tag = 'IsNumeric'
+    token:tag = 'IsObject'
+    token:tag = 'Join'
+    token:tag = 'LBound'
+    token:tag = 'LCase'
+    token:tag = 'Left'
+    token:tag = 'Len'
+    token:tag = 'LoadPicture'
+    token:tag = 'Log'
+    token:tag = 'LTrim'
+    token:tag = 'Mid'
+    token:tag = 'Minute'
+    token:tag = 'Month'
+    token:tag = 'MonthName'
+    token:tag = 'MsgBox'
+    token:tag = 'Now'
+    token:tag = 'Oct'
+    token:tag = 'Replace'
+    token:tag = 'Right'
+    token:tag = 'Rnd'
+    token:tag = 'Round'
+    token:tag = 'RTrim'
+    token:tag = 'ScriptEngine'
+    token:tag = 'ScriptEngineBuildVersion'
+    token:tag = 'ScriptEngineMajorVersion'
+    token:tag = 'ScriptEngineMinorVersion'
+    token:tag = 'Second'
+    token:tag = 'Sgn'
+    token:tag = 'Sin'
+    token:tag = 'Space'
+    token:tag = 'Split'
+    token:tag = 'Sqr'
+    token:tag = 'StrComp'
+    token:tag = 'StrReverse'
+    token:tag = 'String'
+    token:tag = 'Tan'
+    token:tag = 'Time'
+    token:tag = 'TimeSerial'
+    token:tag = 'TimeValue'
+    token:tag = 'Trim'
+    token:tag = 'TypeName'
+    token:tag = 'UBound'
+    token:tag = 'UCase'
+    token:tag = 'VarType'
+    token:tag = 'Weekday'
+    token:tag = 'WeekdayName'
+    token:tag = 'Year'
+
+    token:tag = 'empty'
+    token:tag = 'True'
+    token:tag = 'false'
+    token:tag = 'null'
+//:lexClass	

@@ -1,0 +1,11 @@
+<Grid>
+	<Border Margin='1' BorderThickness='1' CornerRadius ='2' BorderBrush='{x:Static SystemColors.ActiveCaptionTextBrush}'>
+		<Border.Background>
+			<LinearGradientBrush StartPoint='0,0' EndPoint='1,1'>
+				<GradientStop Offset='-0.5' Color='{x:Static SystemColors.ControlLightLightColor}'/>
+				<GradientStop Offset='0.8' Color='Transparent'/>
+				<GradientStop Offset='1' Color='Transparent'/>
+			</LinearGradientBrush>
+		</Border.Background>
+	</Border>
+</Grid>

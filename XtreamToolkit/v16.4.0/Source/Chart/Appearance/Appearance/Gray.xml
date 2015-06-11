@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Appearance CompactMode="1">
+	<Content BackgroundColor="255, 255, 255" BorderColor="133,133,133">
+		<ChartTitle TextColor="0, 0, 0"/>
+		<Legend TextColor="0, 0, 0" BackgroundColor="255, 255, 255" BorderColor="192, 192, 192"/>
+	</Content>
+
+	<Diagram2D BackgroundColor="255, 255, 255" BackgroundColor2="255, 255, 255" BorderColor="192, 192, 192">
+		<Axis Color="119, 119, 119" InterlacedColor="233, 233, 233" InterlacedColor2="255, 255, 255">
+			<InterlacedFillStyle FillMode="Gradient" GradientAngle="BottomRightToTopLeft"/>
+			<GridLines Color="233, 233, 233" MinorColor="243, 243, 243"/>
+			<AxisLabel TextColor="0, 0, 0"/>
+			<AxisTitle TextColor="0, 0, 0"/>
+			<ConstantLine Color="0, 0, 0" TextColor="0, 0, 0"/>
+			<Strip Color="0, 0, 0"/>
+		</Axis>
+	</Diagram2D>
+
+	<SeriesStyle>
+		<Label BackgroundColor="255, 255, 255"/>
+	</SeriesStyle>
+
+	<FinanceSeriesStyle UpColor="0, 0, 0" DownColor="208, 0, 47">
+	</FinanceSeriesStyle>
+
+	<PieSeriesStyle BorderColor="130, 255, 255, 255">
+	</PieSeriesStyle>
+
+</Appearance>

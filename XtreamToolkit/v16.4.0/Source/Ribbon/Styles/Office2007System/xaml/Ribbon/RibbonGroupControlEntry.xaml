@@ -1,0 +1,11 @@
+<Grid ClipToBounds='True'>
+	<Border Margin='-2, 0, -2, 0' BorderThickness='1' CornerRadius='2' BorderBrush='{x:Static SystemColors.ControlDarkBrush}'>
+		<Border.Background>
+			<LinearGradientBrush StartPoint='0,0' EndPoint='0,1'>
+				<GradientStop Offset='0' Color='{x:Static SystemColors.ControlLightLightColor}'/>
+				<GradientStop Offset='1' Color='{x:Static SystemColors.ControlColor}'/>
+			</LinearGradientBrush>
+		</Border.Background>
+	</Border>
+	<Rectangle Width='1' Stretch='Fill' Fill = '{x:Static SystemColors.ControlDarkBrush}' HorizontalAlignment='Right' />
+</Grid>

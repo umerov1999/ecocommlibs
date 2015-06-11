@@ -1,0 +1,7 @@
+<Canvas Margin='0, 1, 0, 0'>
+	<Line X1 ='3' X2='9' Y1='1' Y2='1' StrokeThickness='2' Stroke='{x:Static SystemColors.ActiveCaptionTextBrush}'/>
+	<Line X1 ='9' X2='9' Y1='0' Y2 = '6' StrokeThickness='1' Stroke='{x:Static SystemColors.ActiveCaptionTextBrush}'/>
+	<Line X1 ='8' X2='9' Y1='6' Y2 = '6' StrokeThickness='1' Stroke='{x:Static SystemColors.ActiveCaptionTextBrush}'/>
+	<Line X1 ='0' Y1='4' X2='7' Y2='4'  StrokeThickness='2' Stroke='{x:Static SystemColors.ActiveCaptionTextBrush}'/>
+	<Rectangle Canvas.Top='4' Width='7' Height='6'  StrokeThickness='1' Stroke='{x:Static SystemColors.ActiveCaptionTextBrush}'/>
+</Canvas>

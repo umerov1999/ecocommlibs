@@ -1,0 +1,18 @@
+<Grid>
+	<Border Margin='1, 1, 0, 0' CornerRadius = '2' BorderThickness='1' BorderBrush='{x:Static SystemColors.ControlLightLightBrush}'/>
+	<Border Margin='0, 0, 1, 1' CornerRadius = '2' BorderThickness='1' BorderBrush='{x:Static SystemColors.ControlDarkBrush}'/>
+
+	<Grid VerticalAlignment='Bottom'>
+		<Border Margin='1, 0, 2, 2'>
+			<Border.Background>
+				<LinearGradientBrush StartPoint='0,-0.2' EndPoint='0,1.2'>
+					<GradientStop Offset='0' Color='{x:Static SystemColors.ControlColor}'/>
+					<GradientStop Offset='1' Color='{x:Static SystemColors.ControlDarkColor}'/>
+				</LinearGradientBrush>
+			</Border.Background>
+		</Border>
+
+		<TextBlock x:Name='CaptionText' Margin='0,1,0,3' FontFamily='Segoe UI' FontSize='11' FontQuality='ClearType' TextAlignment='Center' TextTrimming="CharacterEllipsis">Caption</TextBlock>
+
+	</Grid>
+</Grid>

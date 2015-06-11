@@ -1,0 +1,6 @@
+<Canvas x:Name='nodeCanvas' Height="100" Width="100" ConnectionPointsIn='Rhombus'>
+<Border x:Name='nodeBorder' BorderBrush="Black" BorderThickness="1,1,1,1" CornerRadius="10,10,10,10">
+<Path x:Name='nodePath' Height="100" Width="100" Stretch='Fill' Data="M 0,0 l 100,0 l 0,100 l -100,0 Z"/>    
+</Border>
+<TextBlock x:Name='nodeCaption'/>
+</Canvas>

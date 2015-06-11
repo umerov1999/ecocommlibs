@@ -1,0 +1,4 @@
+<Canvas x:Name='nodeCanvas' Width='100' Height='100'>
+    <Path x:Name="nodePath" Width="100" Height="100" Stretch="Fill" StrokeLineJoin="Round" Stroke="#FF000000" Data="F1 M 706.654,819.157L 673.497,786L 607.182,786L 640.339,819.157L 607.182,852.314L 673.497,852.314L 706.654,819.157 Z"/>
+<TextBlock x:Name='nodeCaption'/>
+</Canvas>

@@ -1,0 +1,6 @@
+<Grid>
+	<Border x:Name='Background' Background='#3E6DB8'>
+	</Border>
+
+	<TextBlock x:Name='Caption' HorizontalAlignment='Center' VerticalAlignment='Center' Foreground='#FFFFFF'>Caption</TextBlock>
+</Grid>

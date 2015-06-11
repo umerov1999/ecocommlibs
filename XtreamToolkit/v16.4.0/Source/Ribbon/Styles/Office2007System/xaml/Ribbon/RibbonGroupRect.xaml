@@ -1,0 +1,32 @@
+<Grid>
+	<Border>
+		<Border.Background>
+			<LinearGradientBrush StartPoint='0,0' EndPoint='0,1'>
+				<GradientStop Offset='0' Color='#00FFFFFF'/>
+				<GradientStop Offset='1.5' Color='{x:Static SystemColors.ControlDarkColor}'/>
+			</LinearGradientBrush>
+		</Border.Background>
+	</Border>
+	<Border Margin='1, 0, 1, 2' CornerRadius = '3' BorderThickness='1'>
+		<Border.Background>
+			<LinearGradientBrush StartPoint='0,0' EndPoint='0,1'>
+				<GradientStop Offset='0' Color='{x:Static SystemColors.ControlLightLightColor}'/>
+				<GradientStop Offset='0.2' Color='{x:Static SystemColors.ControlColor}'/>
+			</LinearGradientBrush></Border.Background><Border.BorderBrush>
+			<LinearGradientBrush StartPoint='0,0' EndPoint='0,1'>
+				<GradientStop Offset='0' Color='{x:Static SystemColors.ControlDarkColor}'/>
+				<GradientStop Offset='0.6' Color='{x:Static SystemColors.ControlDarkColor}'/>
+				<GradientStop Offset='1.2' Color='{x:Static SystemColors.ControlDarkDarkColor}'/>
+			</LinearGradientBrush>
+		</Border.BorderBrush>
+	</Border>
+	<Border Margin='2, 1, 2, 3' CornerRadius = '3' BorderThickness='1, 1, 1, 1'>
+		<Border.BorderBrush>
+			<LinearGradientBrush StartPoint='0,0' EndPoint='0,1'>
+				<GradientStop Offset='0' Color='#00FFFFFF'/>
+				<GradientStop Offset='0.2' Color='#00FFFFFF'/>
+				<GradientStop Offset='1' Color='#6FFFFFFF'/>
+			</LinearGradientBrush>
+		</Border.BorderBrush>
+	</Border>
+</Grid>

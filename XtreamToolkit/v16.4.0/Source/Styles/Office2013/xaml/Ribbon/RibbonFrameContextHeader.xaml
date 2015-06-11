@@ -1,0 +1,4 @@
+<Grid Background='#E6F3E6'>
+	<Border VerticalAlignment='Top' Background='#49A349' Height='4' /> <!-- 73, 163,  73 -->
+	<TextBlock VerticalAlignment='Center' x:Name='HeaderText' Margin='0,3,0,3' FontFamily='Segoe UI' FontSize='11' FontQuality='ClearType' Foreground='#49A349' TextAlignment='Center' TextTrimming="CharacterEllipsis">HEADER</TextBlock>
+</Grid>

@@ -1,0 +1,46 @@
+<Grid Margin='0, 2, 0, 0'>
+	<Ellipse Width='38' Height='38' Margin='0, 0, -1, -1'>
+		<Ellipse.Fill>
+			<LinearGradientBrush StartPoint='1, 1' EndPoint='0,0'>
+				<GradientStop Offset='0' Color='#32000000' />
+				<GradientStop Offset='0.95' Color='#01000000' />
+				<GradientStop Offset='1' Color='Transparent' />
+			</LinearGradientBrush>
+		</Ellipse.Fill>
+	</Ellipse>
+	
+	<Ellipse Width='37' Height='37'>
+		<Ellipse.Fill>
+			<SolidColorBrush Color='{x:Static SystemColors.HighlightColor}' />
+		</Ellipse.Fill>
+	</Ellipse>
+
+	<Ellipse Width='37' Height='37' StrokeThickness='1'>
+		<Ellipse.Fill>
+			<LinearGradientBrush StartPoint='0, 0' EndPoint='0, 1'>
+				<GradientStop Offset='0' Color='#FEFFFFFF' />
+				<GradientStop Offset='0.25' Color='#AAFFFFFF' />
+				<GradientStop Offset='0.5' Color='#55FFFFFF' />
+				<GradientStop Offset='0.5' Color='#00FFFFFF' />
+				<GradientStop Offset='1' Color='#66FFFFFF' />
+			</LinearGradientBrush>
+		</Ellipse.Fill>
+		<Ellipse.Stroke>
+			<LinearGradientBrush StartPoint='0,0' EndPoint='0,1'>
+				<GradientStop Offset='0' Color='{x:Static SystemColors.ControlDarkColor}' />
+				<GradientStop Offset='0.5' Color='{x:Static SystemColors.ControlDarkColor}' />
+				<GradientStop Offset='1' Color='{x:Static SystemColors.ControlDarkColor}' />
+			</LinearGradientBrush>
+		</Ellipse.Stroke>
+	</Ellipse>
+
+	<Ellipse Width='35' Height='35' StrokeThickness='1'>
+		<Ellipse.Stroke>
+			<LinearGradientBrush StartPoint='0,0' EndPoint='1,1'>
+				<GradientStop Offset='0' Color='#55E1E7EF' />
+				<GradientStop Offset='0.5' Color='#55BCC8DB' />
+				<GradientStop Offset='1' Color='#55FFFFFF' />
+			</LinearGradientBrush>
+		</Ellipse.Stroke>
+	</Ellipse>
+</Grid>

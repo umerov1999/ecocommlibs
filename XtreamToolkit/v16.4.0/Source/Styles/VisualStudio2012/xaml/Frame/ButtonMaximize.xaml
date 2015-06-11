@@ -1,0 +1,8 @@
+<Grid>
+	<Border x:Name='Border' Background='#FFFFFFFF' />
+	<Canvas x:Name='Canvas' HorizontalAlignment='Center' VerticalAlignment='Center'>
+		<!-- 9 x 9 -->
+		<Rectangle x:Name='Fill'   Width='9' Height='3' StrokeThickness='0' Fill='#FF000000' />
+		<Rectangle x:Name='Stroke' Width='9' Height='9' StrokeThickness='1' Stroke='#FF000000' />
+	</Canvas>
+</Grid>
