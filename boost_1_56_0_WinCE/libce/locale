@@ -1,0 +1,26 @@
+#pragma once 
+
+namespace std 
+{ 
+    class locale 
+    { 
+    public: 
+        static locale classic() 
+        { 
+            return locale(); 
+        } 
+    }; 
+
+    class codecvt_base 
+    { 
+    public: 
+        typedef int result; 
+    }; 
+
+    template<class T1, class T2, class T3> 
+    class codecvt : public codecvt_base 
+    { 
+    public: 
+        codecvt(size_t s){} 
+    }; 
+} 
