@@ -1,13 +1,18 @@
 #pragma once
 
 #include <windows.h>
-#include <fcntl.h>
-#include <io.h>
+#ifdef ECOMES_WAS
+	
+#else
+	#include <fcntl.h>
+	#include <io.h>
+	#include <atldbcli.h>
+	#include <afxoledb.h>
+#endif
 
 #include <atlbase.h>
-#include <afxoledb.h>
 #include <atlplus.h>
-#include <atldbcli.h>
+
 #import "C:\Program Files (x86)\Common Files\System\ado\msado60.tlb" no_namespace rename("EOF", "adoEOF")// rename( "EOF", "adoEOF" )
 //#import "C:\oracle\odp.net\bin\4\Oracle.DataAccess.dll"
 // #using <System.dll>
@@ -710,7 +715,12 @@ public:
 	int SelectJoinTa510021(CArray<CJoinTa510021, CJoinTa510021&>* arryship_no);
 	int SelectTa510020(CArray<CTa510020, CTa510020&>* arryship_no);
 //<--2014-11-20 최조영 JT관련 코드 추가
+	
 
+
+	//-->20150729-최조영, 
+	void CombinePath(LPTSTR lpszPath, LPCTSTR lpszFile);
+	//<--20150729-최조영
 
 
 };
