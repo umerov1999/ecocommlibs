@@ -1,7 +1,7 @@
 #pragma once
 
 #include <windows.h>
-#include <io.h>
+//#include <io.h>
 
 #include "EcoServerBinary.h"
 #include "EcoSocketClientManager.h"
@@ -687,6 +687,13 @@ public:
 	int SelectandFTPTransferJTFile_HHI(CString ship_no, CArray<CString, CString&>* arrylist);
 	//<--2014-11-20 최조영 JT관련 코드 추가
 
-
+	// tb_ecomes_measure_data 관련
+public:
+	int DeleteMESMeasurePointTB(CString project_group, CString ship_no, UINT id);
+	int UpdateMESMeasurePointTB(CArray<CMESMeasurePointRecordSet, CMESMeasurePointRecordSet&> *measure_point_record);
+	int SelectMESMeasurePointTB_With_Blob(CString project_group, CString ship_no, 
+		CString where_condition, CArray<CMESMeasurePointRecordSet, CMESMeasurePointRecordSet&> *measure_point_record);
+	int SelectMESMeasurePointTB_Without_Blob(CString project_group, CString ship_no, 
+		CString where_condition, CArray<CMESMeasurePointRecordSet, CMESMeasurePointRecordSet&> *measure_point_record);
 };
 

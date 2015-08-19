@@ -260,6 +260,9 @@ private:
 
 	// sample TEST
 	void TESTFUNC();
+
+	// tb_measure_point
+	BOOL CmdProcMESMeasurePoint(CEcoPacket& recvPacket, CEcoPacket& sendPacket);
 	
 
 

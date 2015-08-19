@@ -60,6 +60,7 @@ private:
 	CString m_strVentilationContourPath;
 	CString m_strVentilationDataPath;
 	CString m_strMEIModelDataPath;
+	CString m_strMES_MeasurePath;
 
 private:
 	BOOL TmpBasicSettingCheck();
@@ -74,6 +75,8 @@ private:
 	CString MakeTmpTemplateName(CString strTplGroupName, CString strTplName);
 	CString MakeTmpThumbnailName(CString strTplGroupName, CString strTplName);
 	CString MakeTmpModelName(CString strModelName);
+	CString MakeTmpMESMeasureName(CString strId, CString strf_id, CString strMsrName);
+
 
 	CString MakeNasSystemDrawingFileName(CString strFileName);
 	CString MakeNasShipNoGenTabFileName(CString strFileName);
@@ -82,6 +85,9 @@ private:
 	CString MakeNasTemplateName(CString strTplGroupName, CString strTplName);
 	CString MakeNasThumbnailName(CString strTplGroupName, CString strTplName);
 	CString MakeNasModelName(CString strModelName);
+	CString MakeNasMESMeasureName(CString strId, CString strf_id, CString strMsrName);
+	
+	
 	CString ConvertGeneralFileNameRule(CString strFileName);
 	CString ConvertModelFileNameRule(CString strFileName);
 	CString GetFileDotExt(CString strFileName);
@@ -127,6 +133,7 @@ private:
 	CString GetVentilationContourPath(void);
 	CString GetVentilationDataPath(void);
 	CString GetMEIModelDataPath(int iNickTable);
+	CString GetMESMeasurePath(void);
 
 
 public:
@@ -189,6 +196,8 @@ public:
 	CString GetTmpVentilationContourPathName(CString strModelName);
 	CString GetTmpVentilationDataPathName(CString strModelName);
 	CString GetTmpMEIModelPathName(int iNicktable, CString strModelName);
+	CString GetTmpMESMeasurePathName(CString strId, CString strf_id, CString strMsrName);
+	CString GetTmpMESMeasurePathName(CString strMsrName);
 
 	CString GetNasTemplatePathName(CString strTplGroupName, CString strTplName);
 	CString GetNasTemplatePathName(CString strTplName);
@@ -231,6 +240,8 @@ public:
 	CString GetNasVentilationContourPathName(CString strModelName);
 	CString GetNasVentilationDataPathName(CString strModelName);
 	CString GetNasMEIModelPathName(int iNicktable, CString strModelName);
+	CString GetNasMESMeasurePathName(CString strId, CString strf_id, CString strMsrName);
+	CString GetNasMESMeasurePathName(CString strMsrName);
 
 
 public:

@@ -437,3 +437,8 @@
 #define				PKCMD_SelectandFTPTransferJTFile				6200
 
 
+// tb_ecomes_measure_data
+#define				PKCMD_DeleteMESMeasurePointTB						6300
+#define				PKCMD_UpdateMESMeasurePointTB						6301
+#define				PKCMD_SelectMESMeasurePointTB_With_Blob				6302
+#define				PKCMD_SelectMESMeasurePointTB_Without_Blob			6303

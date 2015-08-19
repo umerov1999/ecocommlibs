@@ -4739,3 +4739,163 @@ public:
 
 
 //<--2014-11-20 최조영 JT관련 코드 추가
+
+
+class CPKMESMeasurePoint : public CPKIDInherit
+{
+public:
+	CPKMESMeasurePoint(void)
+	{
+
+	}
+	~CPKMESMeasurePoint(void)
+	{
+
+	}
+
+	CPKMESMeasurePoint& operator = (const CPKMESMeasurePoint &other)
+	{
+		CPKIDInherit::operator=(other);
+		m_arrMsrPtRS.Copy(other.m_arrMsrPtRS);
+		return *this;
+	}
+
+	CPKMESMeasurePoint( const CPKMESMeasurePoint &s )
+	{ 
+		*this = s; 
+	}
+
+	template <typename Archive>
+	void serialize(Archive& ar, const unsigned int version, BOOL bSendNRecv)
+	{
+		CPKIDInherit::serialize(ar, version, bSendNRecv);
+		if(bSendNRecv == TRUE)
+		{
+			m_nMsrPtRSCnt = m_arrMsrPtRS.GetCount();
+			ar & m_nMsrPtRSCnt;
+			for(int i = 0; i < m_nMsrPtRSCnt; i++)
+				m_arrMsrPtRS.GetAt(i).serialize(ar, version, bSendNRecv);
+		}
+		else
+		{
+			ar & m_nMsrPtRSCnt;
+			CMESMeasurePointRecordSet rs; m_arrMsrPtRS.RemoveAll();
+			for(int i = 0; i < m_nMsrPtRSCnt; i++)
+			{
+
+				rs.serialize(ar, version, bSendNRecv);
+				m_arrMsrPtRS.Add(rs);
+			}
+		}
+	}
+
+public:
+	void Init(void)
+	{
+		CPKIDInherit::Init();
+		m_nMsrPtRSCnt = 0;
+		m_arrMsrPtRS.RemoveAll();
+	}
+
+private:
+	int m_nMsrPtRSCnt;
+
+public:
+	CArray<CMESMeasurePointRecordSet, CMESMeasurePointRecordSet&> m_arrMsrPtRS;
+};
+
+
+//-->2014-11-20 최조영 JT관련 코드 추가 (현대전용)
+//class CPKMESMeasurePoint : public CPKWhereInherit
+//{
+//public:
+//	CPKMESMeasurePoint(void)
+//	{
+//
+//	}
+//	~CPKMESMeasurePoint(void)
+//	{
+//
+//	}
+//
+//	CPKMESMeasurePoint& operator = (const CPKMESMeasurePoint &other)
+//	{
+//		CPKWhereInherit::operator=(other);
+//
+//		m_id = other.m_id;
+//		m_f_id = other.m_f_id;
+//		m_name = other.m_name;
+//		m_user_id = other.m_user_id;
+//		m_measure_date = other.m_measure_date;
+//		m_measure_data_up_down_path = other.m_measure_data_up_down_path;
+//		m_measure_data_size = other.m_measure_data_size;
+//		m_measure_data_count = other.m_measure_data_count;
+//
+//		return *this;
+//	}
+//
+//	CPKMESMeasurePoint( const CPKMESMeasurePoint &s )
+//	{ 
+//		*this = s; 
+//	}
+//
+//	template <typename Archive>
+//	void serialize(Archive& ar, const unsigned int version, BOOL bSendNRecv)
+//	{
+//		CPKWhereInherit::serialize(ar, version, bSendNRecv);
+//
+//		std::string stdStr;
+//		if(bSendNRecv == TRUE)
+//		{
+//			ar & m_id;
+//			ar & m_f_id;
+//			stdStr = CStringConverter::CStringWToCStringA(m_name);
+//			ar & stdStr;
+//			stdStr = CStringConverter::CStringWToCStringA(m_user_id);
+//			ar & stdStr;
+//			ar & m_measure_date.m_dt;
+//			stdStr = CStringConverter::CStringWToCStringA(m_measure_data_up_down_path);
+//			ar & stdStr;
+//			ar & m_measure_data_size;
+//			ar & m_measure_data_count;
+//		}
+//		else
+//		{
+//			ar & m_id;
+//			ar & m_f_id;
+//			ar & stdStr;
+//			m_name = CStringConverter::CStringAToCStringW(stdStr.c_str());
+//			ar & stdStr;
+//			m_user_id = CStringConverter::CStringAToCStringW(stdStr.c_str());
+//			ar & m_measure_date.m_dt;
+//			ar & stdStr;
+//			m_measure_data_up_down_path = CStringConverter::CStringAToCStringW(stdStr.c_str());
+//			ar & m_measure_data_size;
+//			ar & m_measure_data_count;
+//		}
+//	}
+//
+//public:
+//	void Init(void)
+//	{
+//		CPKWhereInherit::Init();
+//		m_id = 0;
+//		m_f_id = 0;
+//		m_name = L"";
+//		m_user_id = L"";
+//		m_measure_date.m_dt = 0;
+//		m_measure_data_up_down_path = L"";
+//		m_measure_data_size = 0;
+//		m_measure_data_count = 0;
+//	}
+//
+//public:
+//	UINT											m_id;
+//	UINT											m_f_id;
+//	CString											m_name;
+//	CString											m_user_id;
+//	COleDateTime									m_measure_date;
+//	CString											m_measure_data_up_down_path;
+//	int												m_measure_data_size;
+//	int												m_measure_data_count;
+//};
