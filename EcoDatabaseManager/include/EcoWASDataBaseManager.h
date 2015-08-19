@@ -723,5 +723,14 @@ public:
 	//<--20150729-최조영
 
 
+	// tb_ecomes_measure_data 관련
+public:
+	int DeleteMESMeasurePointTB(CString project_group, CString ship_no, UINT id);
+	int UpdateMESMeasurePointTB(CArray<CMESMeasurePointRecordSet, CMESMeasurePointRecordSet&> *measure_point_record);
+	int SelectMESMeasurePointTB_With_Blob(CString project_group, CString ship_no, 
+		CString where_condition, CArray<CMESMeasurePointRecordSet, CMESMeasurePointRecordSet&> *measure_point_record);
+	int SelectMESMeasurePointTB_Without_Blob(CString project_group, CString ship_no, 
+		CString where_condition, CArray<CMESMeasurePointRecordSet, CMESMeasurePointRecordSet&> *measure_point_record);
+
 };
 

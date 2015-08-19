@@ -5509,3 +5509,106 @@ public:
 	CString GetSHPKND();
 
 };
+
+/*-----------------------------------------------------------------------
+클래스명		: CMeasurePointRecordSet
+기능			: MeasurePoint 테이블의 레코드 필드 값들의 입출력 데이터
+                  포맷을 가지고 있는 클래스(EcoSystem 2009 ERD 참조)
+
+작성일자		: 2015-08-06
+마지막 수정일자	: 2015-08-06
+작성자			: 최조영
+-----------------------------------------------------------------------*/
+class AFX_EXT_API CMESMeasurePointRecordSet : public CObject
+{
+private:
+	UINT											m_id;
+	UINT											m_f_id;
+	CString											m_name;
+	CString											m_user_id;
+	COleDateTime									m_measure_date;
+	CString											m_measure_data_up_down_path;
+	int												m_measure_data_size;
+	int												m_measure_data_count;
+	CString											m_project_group;
+	CString											m_ship_no;
+public:
+	CMESMeasurePointRecordSet();
+	~CMESMeasurePointRecordSet();
+
+	CMESMeasurePointRecordSet& operator = (const CMESMeasurePointRecordSet &other);
+
+	template <typename Archive>
+	void serialize(Archive& ar, const unsigned int version, BOOL bSendNRecv)
+	{
+		std::string stdStr;
+		if(bSendNRecv == TRUE)
+		{
+			ar & m_id;
+			ar & m_f_id;
+			stdStr = CStringConverter::CStringWToCStringA(m_name);
+			ar & stdStr;
+			stdStr = CStringConverter::CStringWToCStringA(m_user_id);
+			ar & stdStr;
+			ar & m_measure_date.m_dt;
+			stdStr = CStringConverter::CStringWToCStringA(m_measure_data_up_down_path);
+			ar & stdStr;
+			ar & m_measure_data_size;
+			ar & m_measure_data_count;
+			stdStr = CStringConverter::CStringWToCStringA(m_project_group);
+			ar & stdStr;
+			stdStr = CStringConverter::CStringWToCStringA(m_ship_no);
+			ar & stdStr;
+		}
+		else
+		{
+			ar & m_id;
+			ar & m_f_id;
+			ar & stdStr;
+			m_name = CStringConverter::CStringAToCStringW(stdStr.c_str());
+			ar & stdStr;
+			m_user_id = CStringConverter::CStringAToCStringW(stdStr.c_str());
+			ar & m_measure_date.m_dt;
+			ar & stdStr;
+			m_measure_data_up_down_path = CStringConverter::CStringAToCStringW(stdStr.c_str());
+			ar & m_measure_data_size;
+			ar & m_measure_data_count;
+			ar & stdStr;
+			m_project_group = CStringConverter::CStringAToCStringW(stdStr.c_str());
+			ar & stdStr;
+			m_ship_no = CStringConverter::CStringAToCStringW(stdStr.c_str());
+			
+		}
+	}
+
+public:
+	void SetId(UINT id);
+	UINT GetId();
+
+	void SetFId(UINT f_id);
+	UINT GetFId();
+
+	void SetName(CString name);
+	CString GetName();
+
+	void SetUserID(CString user_id);
+	CString GetUserID();
+
+	void SetMeasureDate(COleDateTime measure_date);
+	COleDateTime GetMeasureDate();
+
+	void SetMeasureData(CString measure_data);
+	CString GetMeasureData();
+
+	void SetMeasureDataSize(int measure_data_size);
+	int GetMeasureDataSize();
+
+	void SetMeasureDataCount(int measure_data_count);
+	int GetMeasureDataCount();
+
+	void SetProjectGorup(CString projectgroup);
+	CString GetProjectGorup();
+
+	void SetShipNo(CString shipno);
+	CString GetShipNo();
+};
