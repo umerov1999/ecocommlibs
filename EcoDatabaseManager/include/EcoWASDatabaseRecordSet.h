@@ -5519,19 +5519,16 @@ public:
 마지막 수정일자	: 2015-08-06
 작성자			: 최조영
 -----------------------------------------------------------------------*/
-class AFX_EXT_API CMESMeasurePointRecordSet : public CObject
+class AFX_EXT_API CMESMeasurePointRecordSet : public CEcoTreeBaseRecordSet
 {
-private:
-	UINT											m_id;
-	UINT											m_f_id;
-	CString											m_name;
+	CString											m_project_group;
+	CString											m_ship_no;
 	CString											m_user_id;
 	COleDateTime									m_measure_date;
 	CString											m_measure_data_up_down_path;
 	int												m_measure_data_size;
 	int												m_measure_data_count;
-	CString											m_project_group;
-	CString											m_ship_no;
+
 public:
 	CMESMeasurePointRecordSet();
 	~CMESMeasurePointRecordSet();
@@ -5541,12 +5538,14 @@ public:
 	template <typename Archive>
 	void serialize(Archive& ar, const unsigned int version, BOOL bSendNRecv)
 	{
+		CEcoTreeBaseRecordSet::serialize(ar, version, bSendNRecv);
+
 		std::string stdStr;
 		if(bSendNRecv == TRUE)
 		{
-			ar & m_id;
-			ar & m_f_id;
-			stdStr = CStringConverter::CStringWToCStringA(m_name);
+			stdStr = CStringConverter::CStringWToCStringA(m_project_group);
+			ar & stdStr;
+			stdStr = CStringConverter::CStringWToCStringA(m_ship_no);
 			ar & stdStr;
 			stdStr = CStringConverter::CStringWToCStringA(m_user_id);
 			ar & stdStr;
@@ -5555,17 +5554,13 @@ public:
 			ar & stdStr;
 			ar & m_measure_data_size;
 			ar & m_measure_data_count;
-			stdStr = CStringConverter::CStringWToCStringA(m_project_group);
-			ar & stdStr;
-			stdStr = CStringConverter::CStringWToCStringA(m_ship_no);
-			ar & stdStr;
 		}
 		else
 		{
-			ar & m_id;
-			ar & m_f_id;
 			ar & stdStr;
-			m_name = CStringConverter::CStringAToCStringW(stdStr.c_str());
+			m_project_group = CStringConverter::CStringAToCStringW(stdStr.c_str());
+			ar & stdStr;
+			m_ship_no = CStringConverter::CStringAToCStringW(stdStr.c_str());
 			ar & stdStr;
 			m_user_id = CStringConverter::CStringAToCStringW(stdStr.c_str());
 			ar & m_measure_date.m_dt;
@@ -5573,23 +5568,15 @@ public:
 			m_measure_data_up_down_path = CStringConverter::CStringAToCStringW(stdStr.c_str());
 			ar & m_measure_data_size;
 			ar & m_measure_data_count;
-			ar & stdStr;
-			m_project_group = CStringConverter::CStringAToCStringW(stdStr.c_str());
-			ar & stdStr;
-			m_ship_no = CStringConverter::CStringAToCStringW(stdStr.c_str());
-			
 		}
 	}
 
 public:
-	void SetId(UINT id);
-	UINT GetId();
+	void SetProjectGroup(CString project_group);
+	CString GetProjectGroup();
 
-	void SetFId(UINT f_id);
-	UINT GetFId();
-
-	void SetName(CString name);
-	CString GetName();
+	void SetShipNo(CString ship_no);
+	CString GetShipNo();
 
 	void SetUserID(CString user_id);
 	CString GetUserID();
@@ -5605,10 +5592,4 @@ public:
 
 	void SetMeasureDataCount(int measure_data_count);
 	int GetMeasureDataCount();
-
-	void SetProjectGorup(CString projectgroup);
-	CString GetProjectGorup();
-
-	void SetShipNo(CString shipno);
-	CString GetShipNo();
 };
