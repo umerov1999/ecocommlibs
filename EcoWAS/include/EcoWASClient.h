@@ -33,12 +33,19 @@ private:
 	CString m_strNetFolderUnc;	//이 변수가 사용되면 m_strEcoTmpRootPath와 같은 값이 들어감.
 	HANDLE m_hNetFolderToken;
 
+public:
+	CEcoPacket m_sendMESPacket;
+	CEcoPacket m_recvMESPacket;
+	BOOL m_bCommandRet;
+	
+
 private:
 	CEcoSocketClientManager m_ecoSocketClient;
 	CEcoWebConnector m_ecoWebConnector;
 public:
 	CEcoServerBinary m_ecoServerBinary;
 	CString m_appRunPath;
+	CWinThread *				m_thread;
 
 private:
 	BOOL SendCommand(CEcoPacket& sendPacket, CEcoPacket& recvPacket);
@@ -51,6 +58,7 @@ public:
 	void SetSocketPort(int nPort);
 	void SetEcoWASUrl(CString strWASUrl);
 	void SetEcoTmpRootPath(CString strPath);
+	void RunCommand();
 
 public:
 	BOOL GetNetFolderInfo();
@@ -695,5 +703,6 @@ public:
 		CString where_condition, CArray<CMESMeasurePointRecordSet, CMESMeasurePointRecordSet&> *measure_point_record);
 	int SelectMESMeasurePointTB_Without_Blob(CString project_group, CString ship_no, 
 		CString where_condition, CArray<CMESMeasurePointRecordSet, CMESMeasurePointRecordSet&> *measure_point_record);
+
 };
 
