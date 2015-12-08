@@ -99,6 +99,8 @@ public:
 
 		ar & m_bMESMeasurePoint;
 
+		ar & m_bMeasurePointData;
+
 		if(m_bNetFolderInfo == TRUE)
 			m_pkNetFolderInfo.serialize(ar, version, m_bSendRecvPacket);
 
@@ -230,6 +232,9 @@ public:
 
 		if(m_bMESMeasurePoint == TRUE)
 			m_pkMESMeasurePoint.serialize(ar, version, m_bSendRecvPacket);
+
+		if(m_bMeasurePointData == TRUE)
+			m_pkMeasurePointData.serialize(ar, version, m_bSendRecvPacket);
 	}
 
 private:
@@ -318,6 +323,8 @@ private:
 	//<--2014-11-20 최조영 JT관련 코드 추가
 
 	CPKMESMeasurePoint		m_pkMESMeasurePoint;
+	CPKMeasurePointData		m_pkMeasurePointData;
+
 	//-->2015-02-12 손지훈 Assembly Tree 동기화 관련 코드 추가(현대전용)
 
 
@@ -393,8 +400,9 @@ private:
 	BOOL m_bJTServerProperty;
 	//<--2014-11-20 최조영 JT관련 코드 추가
 
-	
 	BOOL m_bMESMeasurePoint;
+
+	BOOL m_bMeasurePointData;
 
 
 private:
@@ -458,6 +466,8 @@ public:
 	void SetPKSystemDrawing(CPKSystemDrawing& pk);
 	void SetPKSystemBlockList(CPKSystemBlockList& pk);
 	void SetPKMESMeasurePoint(CPKMESMeasurePoint& pk);
+	void SetPKMeasurePointData(CPKMeasurePointData& pk);
+	
 
 	void GetPKProject(CPKProject& pk);
 	void GetPKEcoBlockProjectTree(CPKEcoBlockProjectTree& pk);
@@ -479,6 +489,7 @@ public:
 	void GetPKSystemDrawing(CPKSystemDrawing& pk);
 	void GetPKSystemBlockList(CPKSystemBlockList& pk);
 	void GetPKMESMeasurePoint(CPKMESMeasurePoint& pk);
+	void GetPKMeasurePointData(CPKMeasurePointData& pk);
 
 //EcoOTS 프로젝트 관련
 	void SetPKEcoOtsBlockList(CPKEcoOtsBlockList& pk);

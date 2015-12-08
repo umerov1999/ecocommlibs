@@ -345,6 +345,35 @@ public:
 	CMeasurePointRecordSet* m_pRecordSet;
 };
 
+
+class CMESMeasureDataTreeTreeRecord : public CXTPReportRecord
+{
+	DECLARE_SERIAL(CMESMeasureDataTreeTreeRecord)
+public:
+
+	// Construct record object using empty values on each field
+	CMESMeasureDataTreeTreeRecord();
+
+	// Construct record object from detailed values on each field
+	CMESMeasureDataTreeTreeRecord(int nColumnCnt, CString strName, COleDateTime odtDate, UINT nMsrCnt, CMESMeasurePointRecordSet* pRecordSet);
+
+	// Clean up internal objects
+	virtual ~CMESMeasureDataTreeTreeRecord();
+
+	// Create record fields using empty values
+	virtual void CreateItems();
+
+	// Overridden callback method, where we can customize any drawing item metrics.
+	virtual void GetItemMetrics(XTP_REPORTRECORDITEM_DRAWARGS* pDrawArgs, XTP_REPORTRECORDITEM_METRICS* pItemMetrics);
+
+	virtual void DoPropExchange(CXTPPropExchange *pPX);
+
+public:
+	CXTPReportRecordItemText *m_pItemName;     // Sender
+	CMESMeasurePointRecordSet* m_pRecordSet;
+};
+
+
 class CProjectTreeRecord : public CXTPReportRecord
 {
 	DECLARE_SERIAL(CProjectTreeRecord)

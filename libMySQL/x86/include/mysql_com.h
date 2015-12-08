@@ -261,6 +261,8 @@ typedef struct st_vio Vio;
 #define MAX_CHAR_WIDTH		255	/* Max length for a CHAR colum */
 #define MAX_BLOB_WIDTH		16777216	/* Default width for blob */
 
+#include "winsock.h"
+
 typedef struct st_net {
 #if !defined(CHECK_EMBEDDED_DIFFERENCES) || !defined(EMBEDDED_LIBRARY)
   Vio *vio;

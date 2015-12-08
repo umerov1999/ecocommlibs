@@ -47,6 +47,65 @@ typedef struct _object_property
 	}
 } OBJECT_PROPERTY;
 
+//-->하남국-20151109, 부재이름 정보를 담는 구조체 생성[PROD-279]
+typedef struct _object_name_property
+{
+	_object_name_property& operator = (const _object_name_property &other)
+	{
+		strObjType = other.strObjType;
+		strObjName = other.strObjName;
+		strObjProductName = other.strObjProductName;
+		strObjSuperiorName = other.strObjSuperiorName;
+		strObjModelName = other.strObjModelName;
+		strObjModuleName = other.strObjModuleName;
+		return *this;
+	}
+
+	CString strObjType;
+	CString strObjName;
+	CString strObjProductName;
+	CString strObjSuperiorName;
+	CString strObjModelName;
+	CString strObjModuleName;
+
+	template <typename Archive>
+	void serialize(Archive& ar, const unsigned int version, BOOL bSendNRecv)
+	{
+		std::string stdStr;
+		if(bSendNRecv == TRUE)
+		{
+			stdStr = CStringConverter::CStringWToCStringA(strObjType);
+			ar & stdStr;
+			stdStr = CStringConverter::CStringWToCStringA(strObjName);
+			ar & stdStr;
+			stdStr = CStringConverter::CStringWToCStringA(strObjProductName);
+			ar & stdStr;
+			stdStr = CStringConverter::CStringWToCStringA(strObjSuperiorName);
+			ar & stdStr;
+			stdStr = CStringConverter::CStringWToCStringA(strObjModelName);
+			ar & stdStr;
+			stdStr = CStringConverter::CStringWToCStringA(strObjModuleName);
+			ar & stdStr;
+		}
+		else
+		{
+			ar & stdStr;
+			strObjType = CStringConverter::CStringAToCStringW(stdStr.c_str());
+			ar & stdStr;
+			strObjName = CStringConverter::CStringAToCStringW(stdStr.c_str());
+			ar & stdStr;
+			strObjProductName = CStringConverter::CStringAToCStringW(stdStr.c_str());
+			ar & stdStr;
+			strObjSuperiorName = CStringConverter::CStringAToCStringW(stdStr.c_str());
+			ar & stdStr;
+			strObjModelName = CStringConverter::CStringAToCStringW(stdStr.c_str());
+			ar & stdStr;
+			strObjModuleName = CStringConverter::CStringAToCStringW(stdStr.c_str());
+		}
+	}
+} OBJECT_NAME_PROPERTY;
+//<--하남국-20151109
+
 
 
 
@@ -1093,8 +1152,13 @@ private:
 	double											m_y_coord;
 	double											m_z_coord;
 	CString											m_create_method;
-	OBJECT_PROPERTY									m_parent_part_one;
-	OBJECT_PROPERTY									m_parent_part_two;
+	//-->하남국-20151109
+	OBJECT_NAME_PROPERTY									m_parent_part_one;
+	OBJECT_NAME_PROPERTY									m_parent_part_two;
+	//기존코드
+	//OBJECT_PROPERTY									m_parent_part_one;
+	//OBJECT_PROPERTY									m_parent_part_two;
+	//<--하남국-20151109
 	//-->하남국-20120719
 	//CString											m_project_type;
 	//<--하남국-20120719
@@ -1165,8 +1229,13 @@ public:
 	void SetCreateMethod(CString create_method);
 	CString GetCreateMethod();
 
-	void SetParentPart(OBJECT_PROPERTY one, OBJECT_PROPERTY two);
-	void GetParentPart(OBJECT_PROPERTY* one, OBJECT_PROPERTY* two);
+	//-->하남국-20151109
+	void SetParentPart(OBJECT_NAME_PROPERTY one, OBJECT_NAME_PROPERTY two);
+	void GetParentPart(OBJECT_NAME_PROPERTY* one, OBJECT_NAME_PROPERTY* two);
+	//기존코드
+	//void SetParentPart(OBJECT_PROPERTY one, OBJECT_PROPERTY two);
+	//void GetParentPart(OBJECT_PROPERTY* one, OBJECT_PROPERTY* two);
+	//<--하남국-20151109
 
 	//-->하남국-20120719
 // 	void SetProjectType(CString project_type);
@@ -5301,6 +5370,8 @@ typedef struct _ship_no_info
 	CString create_time;
 	CString update_time;
 	CString bActive;
+	CString str_original_group;
+	CString str_original_ship_no;
 } SHIP_NO_INFO;
 
 typedef struct _pe_info
@@ -5592,4 +5663,56 @@ public:
 
 	void SetMeasureDataCount(int measure_data_count);
 	int GetMeasureDataCount();
+};
+
+/*-----------------------------------------------------------------------
+기능			: 각각의 측정점 정보가 들어가는 tb_measure_point_data 테이블의 레코드 필드 값들의 입출력 데이터 포맷을 가지고 있는 클래스
+매개변수		:
+리턴			:
+작성내역		:
+하남국-20151118, 최초작성
+-----------------------------------------------------------------------*/
+class AFX_EXT_API CMeasurePointDataRecordSet : public CEcoRefBaseRecordSet
+{
+private:
+	CString m_strName;
+	double	m_dblCoordX;
+	double	m_dblCoordY;
+	double	m_dblCoordZ;
+public:
+	CMeasurePointDataRecordSet();
+	~CMeasurePointDataRecordSet();
+
+	CMeasurePointDataRecordSet& operator = (const CMeasurePointDataRecordSet &other);
+
+	template <typename Archive>
+	void serialize(Archive& ar, const unsigned int version, BOOL bSendNRecv)
+	{
+		CEcoRefBaseRecordSet::serialize(ar, version, bSendNRecv);
+
+		std::string stdStr;
+		if(bSendNRecv == TRUE)
+		{
+			stdStr = CStringConverter::CStringWToCStringA(m_strName);
+			ar & stdStr;
+			ar & m_dblCoordX;
+			ar & m_dblCoordY;
+			ar & m_dblCoordZ;
+		}
+		else
+		{
+			ar & stdStr;
+			m_strName = CStringConverter::CStringAToCStringW(stdStr.c_str());
+			ar & m_dblCoordX;
+			ar & m_dblCoordY;
+			ar & m_dblCoordZ;
+		}
+	}
+
+public:
+	void SetName(CString strName);
+	CString GetName();
+
+	void SetCoord(double dblX, double dblY, double dblZ);
+	void GetCoord(double& dblX, double& dblY, double& dblZ);
 };

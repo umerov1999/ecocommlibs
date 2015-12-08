@@ -44,7 +44,7 @@ extern "C" {
 #endif
 
 #ifndef _global_h				/* If not standard header */
-#include <sys/types.h>
+//#include <sys/types.h>
 #ifdef __LCC__
 #include <winsock2.h>				/* For windows */
 #endif

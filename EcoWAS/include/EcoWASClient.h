@@ -1,5 +1,7 @@
 #pragma once
 
+//#include "EcoWASClientApp.h"
+
 #include <windows.h>
 //#include <io.h>
 
@@ -9,16 +11,18 @@
 #include "EcoWASDatabaseRecordSet.h"
 #include "EcoDatabaseManagerDefine.h"
 
+class CEcoServerBinary;
+class CEcoSocketClientManager;
+class CEcoWebConnector;
+
+
 class AFX_EXT_API CEcoWASClient
 {
-
 public:
 	CEcoWASClient();
 	~CEcoWASClient(void);
 
 private:
-	CString m_strAppDataPath;
-
 	CString	m_strUserID;
 	CString	m_strPwd;
 	CString m_strEcoWASUrl;
@@ -42,9 +46,11 @@ public:
 private:
 	CEcoSocketClientManager m_ecoSocketClient;
 	CEcoWebConnector m_ecoWebConnector;
+
 public:
 	CEcoServerBinary m_ecoServerBinary;
 	CString m_appRunPath;
+	CString m_AppDataPath;
 	CWinThread *				m_thread;
 
 private:
@@ -83,6 +89,10 @@ public:
 	CString ConvertUsrVarPropIDToString(UINT nIdentifier);
 	UINT ConvertUsrVarPropStringToID(CString strIdentifier);
 	CString ConvertOneDBQuery(CString strWhere, CArray<UINT, UINT>* arrFIDs);
+	//-->하남국-20151109
+	CString MakeParentPartInfo(OBJECT_NAME_PROPERTY prop);
+	void ParseParentPartInfo(CString strPartInfo, OBJECT_NAME_PROPERTY& prop);
+	//<--하남국-20151109
 
 public:
 	//테이블 스킴 변경관련
@@ -704,5 +714,13 @@ public:
 	int SelectMESMeasurePointTB_Without_Blob(CString project_group, CString ship_no, 
 		CString where_condition, CArray<CMESMeasurePointRecordSet, CMESMeasurePointRecordSet&> *measure_point_record);
 
+	//-->하남국-20151118
+	// tb_measure_point_data 관련
+public:
+	int DeleteMeasurePointDataTB(CString project_group, CString ship_no, UINT f_id);
+	int InsertMeasurePointDataTB(CString project_group, CString ship_no, CArray<CMeasurePointDataRecordSet, CMeasurePointDataRecordSet&> *pMsrPtDataRS);
+	int SelectMeasurePointDataTB(CString project_group, CString ship_no, CString where_condition, CArray<CMeasurePointDataRecordSet, CMeasurePointDataRecordSet&> *pMsrPtDataRS);
+	BOOL IsExistMeasurePointDataTB(CString project_group, CString ship_no);
+	//<--하남국-20151118
 };
 

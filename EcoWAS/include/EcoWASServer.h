@@ -263,6 +263,9 @@ private:
 
 	// tb_measure_point
 	BOOL CmdProcMESMeasurePoint(CEcoPacket& recvPacket, CEcoPacket& sendPacket);
+
+	// tb_measure_point_data
+	BOOL CmdProcMeasurePointData(CEcoPacket& recvPacket, CEcoPacket& sendPacket);
 	
 
 

@@ -442,3 +442,9 @@
 #define				PKCMD_UpdateMESMeasurePointTB						6301
 #define				PKCMD_SelectMESMeasurePointTB_With_Blob				6302
 #define				PKCMD_SelectMESMeasurePointTB_Without_Blob			6303
+
+// tb_measure_point_data
+#define				PKCMD_DeleteMeasurePointDataTB						6400
+#define				PKCMD_InsertMeasurePointDataTB						6401
+#define				PKCMD_SelectMeasurePointDataTB						6402
+#define				PKCMD_IsExistMeasurePointDataTB						6403

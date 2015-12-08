@@ -83,6 +83,10 @@ public:
 	UINT ConvertUsrVarPropStringToID(CString strIdentifier);
 	BOOL CheckExistTable(CString strTableName);
 	void DisplayLog(CString strLog);
+	//-->하남국-20151109
+	CString MakeParentPartInfo(OBJECT_NAME_PROPERTY prop);
+	void ParseParentPartInfo(CString strPartInfo, OBJECT_NAME_PROPERTY& prop);
+	//<--하남국-20151109
 
 public:
 	//테이블 스킴 변경관련
@@ -244,6 +248,15 @@ public:
 		CString where_condition, CArray<CMeasurePointRecordSet, CMeasurePointRecordSet&> *measure_point_record);
 	int SelectLastInsertIDMeasurePointTB(CString project_group, CString ship_no, UINT& id);
 	int SelectLastInsertIDMeasurePointTBByIdentCurrent(CString project_group, CString ship_no, UINT& id);
+
+	//-->하남국-20151118
+	// tb_measure_point_data 관련
+public:
+	int DeleteMeasurePointDataTB(CString project_group, CString ship_no, UINT f_id);
+	int InsertMeasurePointDataTB(CString project_group, CString ship_no, CArray<CMeasurePointDataRecordSet, CMeasurePointDataRecordSet&> *pMsrPtDataRS);
+	int SelectMeasurePointDataTB(CString project_group, CString ship_no, CString where_condition, CArray<CMeasurePointDataRecordSet, CMeasurePointDataRecordSet&> *pMsrPtDataRS);
+	BOOL IsExistMeasurePointDataTB(CString project_group, CString ship_no);
+	//<--하남국-20151118
 
 	// tb_EcoBlock_relation_info 관련
 public:

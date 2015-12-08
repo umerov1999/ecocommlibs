@@ -4804,6 +4804,72 @@ public:
 	CArray<CMESMeasurePointRecordSet, CMESMeasurePointRecordSet&> m_arrMsrPtRS;
 };
 
+class CPKMeasurePointData : public CPKIDInherit
+{
+public:
+	CPKMeasurePointData(void)
+	{
+
+	}
+	~CPKMeasurePointData(void)
+	{
+
+	}
+
+	CPKMeasurePointData& operator = (const CPKMeasurePointData &other)
+	{
+		CPKIDInherit::operator=(other);
+		m_bExist = other.m_bExist;
+		m_arrMsrPtDataRS.Copy(other.m_arrMsrPtDataRS);
+		return *this;
+	}
+
+	CPKMeasurePointData( const CPKMESMeasurePoint &s )
+	{ 
+		*this = s; 
+	}
+
+	template <typename Archive>
+	void serialize(Archive& ar, const unsigned int version, BOOL bSendNRecv)
+	{
+		CPKIDInherit::serialize(ar, version, bSendNRecv);
+		if(bSendNRecv == TRUE)
+		{
+			ar & m_bExist;
+			m_nMsrPtDataRSCnt = m_arrMsrPtDataRS.GetCount();
+			ar & m_nMsrPtDataRSCnt;
+			for(int i = 0; i < m_nMsrPtDataRSCnt; i++)
+				m_arrMsrPtDataRS.GetAt(i).serialize(ar, version, bSendNRecv);
+		}
+		else
+		{
+			ar & m_bExist;
+			ar & m_nMsrPtDataRSCnt;
+			CMeasurePointDataRecordSet rs; m_arrMsrPtDataRS.RemoveAll();
+			for(int i = 0; i < m_nMsrPtDataRSCnt; i++)
+			{
+				rs.serialize(ar, version, bSendNRecv);
+				m_arrMsrPtDataRS.Add(rs);
+			}
+		}
+	}
+
+public:
+	void Init(void)
+	{
+		CPKIDInherit::Init();
+		m_bExist = FALSE;
+		m_nMsrPtDataRSCnt = 0;
+		m_arrMsrPtDataRS.RemoveAll();
+	}
+
+private:
+	int m_nMsrPtDataRSCnt;
+
+public:
+	BOOL m_bExist;
+	CArray<CMeasurePointDataRecordSet, CMeasurePointDataRecordSet&> m_arrMsrPtDataRS;
+};
 
 //-->2014-11-20 최조영 JT관련 코드 추가 (현대전용)
 //class CPKMESMeasurePoint : public CPKWhereInherit
