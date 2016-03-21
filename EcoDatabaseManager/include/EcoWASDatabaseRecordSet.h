@@ -108,7 +108,6 @@ typedef struct _object_name_property
 
 
 
-
 class AFX_EXT_API CEcoTreeBaseRecordSet : public CObject
 {
 
@@ -5715,4 +5714,26 @@ public:
 
 	void SetCoord(double dblX, double dblY, double dblZ);
 	void GetCoord(double& dblX, double& dblY, double& dblZ);
+};
+
+/*-----------------------------------------------------------------------
+기능			: CDimensionVariableRecordSet 테이블의 레코드 필드 값들의 입출력 데이터 포맷을 가지고 있는 클래스
+매개변수		: 
+리턴			: 
+작성내역  		: 
+하남국-20150824, 최초작성
+-----------------------------------------------------------------------*/
+class AFX_EXT_API CDimensionVariableRecordSet : public CEcoTreeBaseRecordSet
+{
+public:
+	CDimensionVariableRecordSet();
+	~CDimensionVariableRecordSet();
+
+	CDimensionVariableRecordSet& operator = (const CDimensionVariableRecordSet &other);
+
+	template <typename Archive>
+	void serialize(Archive& ar, const unsigned int version, BOOL bSendNRecv)
+	{
+		CEcoTreeBaseRecordSet::serialize(ar, version, bSendNRecv);
+	}
 };
