@@ -682,6 +682,16 @@ public:
 	int InsertUserTemplateInfo(CString UserID, CString temp_name);
 	int UpdateUserTemplateInfo(UINT used_count, CString where_str);
 
+	//-->하남국-20150824
+	// tb_dimension_variable
+public:
+	int CreateDimensionVariableTB();
+	int DeleteDimensionVariableTB(UINT id);
+	int InsertDimensionVariableTB(CArray<CDimensionVariableRecordSet, CDimensionVariableRecordSet&> *record_list);
+	int UpdateDimensionVariableTB(CArray<CDimensionVariableRecordSet, CDimensionVariableRecordSet&> *record_list);
+	int SelectDimensionVariableTB(CString where_condition, CArray<CDimensionVariableRecordSet, CDimensionVariableRecordSet&> *record_list);
+	//<--하남국-20150824
+
 
 //MEI관련
 public:
