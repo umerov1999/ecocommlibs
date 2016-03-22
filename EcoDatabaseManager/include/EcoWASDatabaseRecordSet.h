@@ -1340,6 +1340,7 @@ public:
 작성일자		: 2009-10-14
 마지막 수정일자	: 2009-10-14
 작성자			: 강경완
+하남국-20150930, 치수변수의 ID 값 저장하는 컬럼 추가에 따른 수정[PROD-278]
 -----------------------------------------------------------------------*/
 class AFX_EXT_API CEcoBlockControlPointCoordInfoRecordSet : public CEcoRefBaseRecordSet
 {
@@ -1354,6 +1355,7 @@ private:
 	//-->하남국-20120719
 	//CString											m_project_type;
 	//<--하남국-20120719
+	CArray<UINT, UINT&>								m_arrDimVarID;	//-->하남국-20150930
 public:
 	CEcoBlockControlPointCoordInfoRecordSet();
 	~CEcoBlockControlPointCoordInfoRecordSet();
@@ -1412,6 +1414,11 @@ public:
 // 	void SetProjectType(CString project_type);
 // 	CString GetProjectType();
 	//<--하남국-20120719
+
+	//-->하남국-20150930
+	void SetDimVarID(CArray<UINT, UINT&>& arrDimVarID);
+	void GetDimVarID(CArray<UINT, UINT&>& arrDimVarID);
+	//<--하남국-20150930
 };
 
 
@@ -1424,6 +1431,7 @@ public:
 작성일자		: 2009-10-14
 마지막 수정일자	: 2009-10-14
 작성자			: 강경완
+하남국-20150930, 치수변수의 ID 값 저장하는 컬럼 추가에 따른 수정[PROD-278]
 -----------------------------------------------------------------------*/
 class AFX_EXT_API CEcoBlockControlPointDistanceInfoRecordSet : public CEcoRefBaseRecordSet
 {
@@ -1438,6 +1446,7 @@ private:
 	//-->하남국-20120719
 	//CString											m_project_type;
 	//<--하남국-20120719
+	CArray<UINT, UINT&>								m_arrDimVarID;	//-->하남국-20150930
 
 private:
 	int m_nControlPointPairCnt;
@@ -1515,6 +1524,11 @@ public:
 // 	void SetProjectType(CString project_type);
 // 	CString GetProjectType();
 	//<--하남국-20120719
+
+	//-->하남국-20150930
+	void SetDimVarID(CArray<UINT, UINT&>& arrDimVarID);
+	void GetDimVarID(CArray<UINT, UINT&>& arrDimVarID);
+	//<--하남국-20150930
 };
 
 
@@ -1527,6 +1541,7 @@ public:
 작성일자		: 2011-02-25
 마지막 수정일자	: 2011-02-25
 작성자			: 강경완
+하남국-20150930, 치수변수의 ID 값 저장하는 컬럼 추가에 따른 수정[PROD-278]
 -----------------------------------------------------------------------*/
 class AFX_EXT_API CEcoBlockControlPointCurveInfoRecordSet : public CEcoRefBaseRecordSet
 {
@@ -1548,6 +1563,7 @@ private:
 	//-->하남국-20120719
 	//CString											m_project_type;
 	//<--하남국-20120719
+	CArray<UINT, UINT&>								m_arrDimVarID;	//-->하남국-20150930
 public:
 	CEcoBlockControlPointCurveInfoRecordSet();
 	~CEcoBlockControlPointCurveInfoRecordSet();
@@ -1631,6 +1647,10 @@ public:
 // 	CString GetProjectType();
 	//<--하남국-20120719
 
+	//-->하남국-20150930
+	void SetDimVarID(CArray<UINT, UINT&>& arrDimVarID);
+	void GetDimVarID(CArray<UINT, UINT&>& arrDimVarID);
+	//<--하남국-20150930
 };
 
 
@@ -1643,6 +1663,7 @@ public:
 작성일자		: 2010-01-08
 마지막 수정일자	: 2010-01-08
 작성자			: 강경완
+하남국-20150930, 치수변수의 ID 값 저장하는 컬럼 추가에 따른 수정[PROD-278]
 -----------------------------------------------------------------------*/
 class AFX_EXT_API CEcoBlockControlPointPerpInfoRecordSet : public CEcoRefBaseRecordSet
 {
@@ -1657,6 +1678,8 @@ private:
 	//-->하남국-20120719
 	//CString											m_project_type;
 	//<--하남국-20120719
+
+	CArray<UINT, UINT&>								m_arrDimVarID;	//-->하남국-20150930
 
 private:
 	int m_nControlPointPairCnt;
@@ -1735,6 +1758,10 @@ public:
 // 	CString GetProjectType();
 	//<--하남국-20120719
 
+	//-->하남국-20150930
+	void SetDimVarID(CArray<UINT, UINT&>& arrDimVarID);
+	void GetDimVarID(CArray<UINT, UINT&>& arrDimVarID);
+	//<--하남국-20150930
 };
 
 
@@ -1748,6 +1775,7 @@ public:
 작성일자		: 2009-10-14
 마지막 수정일자	: 2009-10-14
 작성자			: 강경완
+하남국-20150930, 치수변수의 ID 값 저장하는 컬럼 추가에 따른 수정[PROD-278]
 -----------------------------------------------------------------------*/
 class AFX_EXT_API CEcoBlockControlPointAngleInfoRecordSet : public CEcoRefBaseRecordSet
 {
@@ -1763,6 +1791,8 @@ private:
 	//-->하남국-20120719
 	//CString											m_project_type;
 	//<--하남국-20120719
+
+	CArray<UINT, UINT&>								m_arrDimVarID;	//-->하남국-20150930
 
 private:
 	int m_nControlPointPairCnt;
@@ -1848,6 +1878,10 @@ public:
 // 	CString GetProjectType();
 	//<--하남국-20120719
 
+	//-->하남국-20150930
+	void SetDimVarID(CArray<UINT, UINT&>& arrDimVarID);
+	void GetDimVarID(CArray<UINT, UINT&>& arrDimVarID);
+	//<--하남국-20150930
 };
 
 
@@ -3151,6 +3185,8 @@ private:
 	double											m_relation_box_size_ind;
 	double											m_relation_box_size_dep;
 	//<--최조영-20120703-03-460
+
+	CArray<UINT, UINT&>								m_arrDimVarID;	//-->하남국-20150930
 public:
 	CEcoOtsRelationByMsrMsrRecordSet();
 	~CEcoOtsRelationByMsrMsrRecordSet();
@@ -3254,6 +3290,11 @@ public:
 	void SetRelationBoxSizedep(double dsize);
 	double GetRelationBoxSizedep();
 	//<--최조영-20120703-03-460
+
+	//-->하남국-20151006
+	void SetDimVarID(CArray<UINT, UINT&>& arrDimVarID);
+	void GetDimVarID(CArray<UINT, UINT&>& arrDimVarID);
+	//<--하남국-20151006
 };
 
 
