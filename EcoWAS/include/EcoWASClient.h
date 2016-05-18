@@ -732,5 +732,40 @@ public:
 	int SelectMeasurePointDataTB(CString project_group, CString ship_no, CString where_condition, CArray<CMeasurePointDataRecordSet, CMeasurePointDataRecordSet&> *pMsrPtDataRS);
 	BOOL IsExistMeasurePointDataTB(CString project_group, CString ship_no);
 	//<--하남국-20151118
+
+public:
+	int SelectTribonAssemblyTreeTB(CString project_group, CString ship_no,
+		CString where_condition, CArray<CTribonAssemblyTreeRecordSet, CTribonAssemblyTreeRecordSet&> *record_list);
+	int InsertTribonAssemblyTreeTB(CString project_group, CString ship_no,
+		CArray<CTribonAssemblyTreeRecordSet, CTribonAssemblyTreeRecordSet&> *record_list);
+	int DeleteTribonAssemblyTreeTB(CString project_group, CString ship_no, CString where_condition);
+
+	// tb_EcoBlock_local_axis_info 관련
+public:
+	int DeleteEcoBlockLocalAxisInfoTB(CString project_group, CString ship_no, UINT id);
+	int InsertEcoBlockLocalAxisInfoTB(CString project_group, CString ship_no, CArray<CEcoBlockLocalAxisInfoRecordSet, CEcoBlockLocalAxisInfoRecordSet&> *arrEbLocalAxisRS);
+	int SelectEcoBlockLocalAxisInfoTB(CString project_group, CString ship_no,
+		CString where_condition, CArray<CEcoBlockLocalAxisInfoRecordSet, CEcoBlockLocalAxisInfoRecordSet&> *arrEbLocalAxisRS);
+
+	// tb_EcoBlock_masking 관련
+public:
+	int DeleteEcoBlockMaskingTB(CString project_group, CString ship_no, UINT id);
+	int InsertEcoBlockMaskingTB(CString project_group, CString ship_no, CArray<CEcoBlockMaskingRecordSet, CEcoBlockMaskingRecordSet&> *arrEbMaskingRS);
+	int SelectEcoBlockMaskingTB(CString project_group, CString ship_no,
+		CString where_condition, CArray<CEcoBlockMaskingRecordSet, CEcoBlockMaskingRecordSet&> *arrEbMaskingRS);
+
+	// tb_ecoots_masking 관련
+public:
+	int DeleteEcoOTSMaskingTB(CString project_group, CString ship_no, UINT id);
+	int InsertEcoOTSMaskingTB(CString project_group, CString ship_no, CArray<CEcoOTSMaskingRecordSet, CEcoOTSMaskingRecordSet&>* pArrRS);
+	int SelectEcoOTSMaskingTB(CString project_group, CString ship_no,
+		CString where_condition, CArray<CEcoOTSMaskingRecordSet, CEcoOTSMaskingRecordSet&>* pArrRS);
+
+	// tb_ecoots_local_axis 관련
+public:
+	int DeleteEcoOTSLocalAxisTB(CString project_group, CString ship_no, UINT id);
+	int InsertEcoOTSLocalAxisTB(CString project_group, CString ship_no, CArray<CEcoOTSLocalAxisRecordSet, CEcoOTSLocalAxisRecordSet&>* pArrRS);
+	int SelectEcoOTSLocalAxisTB(CString project_group, CString ship_no,
+		CString where_condition, CArray<CEcoOTSLocalAxisRecordSet, CEcoOTSLocalAxisRecordSet&> *pArrRS);
 };
 
