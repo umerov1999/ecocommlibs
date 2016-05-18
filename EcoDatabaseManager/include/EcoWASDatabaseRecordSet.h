@@ -9,12 +9,14 @@
 /* Definition of Data Prototype */
 //
 //
-#if defined(ECOTERMINALTBCLIENT) || defined(ECO_SERVER_MANAGER) || defined(ECO_BLOCK_G1) || defined(ECO_BLOCK_G2_FOR_CLIENT) || defined(ECO_BLOCK_G3_FOR_CLIENT) || defined(ECO_BLOCK_G2_FOR_SERVER) || defined(ECO_OTS_G1) || defined(ECO_OTS_G2_FOR_CLIENT) || defined(ECO_OTS_G3_FOR_CLIENT) || defined(ECO_OTS_G2_FOR_SERVER) || defined(ECO_PM_VIEWING)
+#if defined(ECOTERMINALTBCLIENT) || defined(ECO_SERVER_MANAGER) || defined(ECO_BLOCK_G1) || defined(ECO_BLOCK_G2_FOR_CLIENT) || defined(ECO_BLOCK_G3_FOR_CLIENT) || defined(ECO_BLOCK_G2_FOR_SERVER) || defined(ECO_OTS_G1) || defined(ECO_OTS_G2_FOR_CLIENT) || defined(ECO_OTS_G3_FOR_CLIENT) || defined(ECO_OTS_G2_FOR_SERVER) || defined(ECO_PM_VIEWING) || defined(ECO_BLOCK_G3_FOR_SERVER) || defined(ECO_OTS_G3_FOR_SERVER)
 #include "StdAfx.h"
 #include "HUtility.h"
 #else
 #include "HPoint.h"
 #endif
+
+#include "EcoStructDefine.h"
 
 typedef struct _object_property
 {
@@ -113,7 +115,10 @@ class AFX_EXT_API CEcoTreeBaseRecordSet : public CObject
 
 public:
 	CEcoTreeBaseRecordSet();
+	CEcoTreeBaseRecordSet(const CEcoTreeBaseRecordSet& s);
 	~CEcoTreeBaseRecordSet();
+
+	CEcoTreeBaseRecordSet& operator = (const CEcoTreeBaseRecordSet &other);
 
 	template <typename Archive>
 	void serialize(Archive& ar, const unsigned int version, BOOL bSendNRecv)
@@ -1161,6 +1166,8 @@ private:
 	//-->하남국-20120719
 	//CString											m_project_type;
 	//<--하남국-20120719
+
+	OBJECT_PIPE_PROPERTY							m_pipe_Property;
 public:
 	CEcoBlockDesignPointGeneralInfoRecordSet();
 	~CEcoBlockDesignPointGeneralInfoRecordSet();
@@ -1240,6 +1247,9 @@ public:
 // 	void SetProjectType(CString project_type);
 // 	CString GetProjectType();
 	//<--하남국-20120719
+
+	void SetPipeProperty(OBJECT_PIPE_PROPERTY one);
+	void GetPipeProperty(OBJECT_PIPE_PROPERTY* one);
 };
 
 /*-----------------------------------------------------------------------
@@ -1356,6 +1366,14 @@ private:
 	//CString											m_project_type;
 	//<--하남국-20120719
 	CArray<UINT, UINT&>								m_arrDimVarID;	//-->하남국-20150930
+
+	int m_nVisType;
+	BOOL m_bShowHide;
+	BOOL m_bLocalCoordView;
+	BOOL m_bTranCoordX;
+	BOOL m_bTranCoordY;
+	BOOL m_bTranCoordZ;
+
 public:
 	CEcoBlockControlPointCoordInfoRecordSet();
 	~CEcoBlockControlPointCoordInfoRecordSet();
@@ -1419,6 +1437,24 @@ public:
 	void SetDimVarID(CArray<UINT, UINT&>& arrDimVarID);
 	void GetDimVarID(CArray<UINT, UINT&>& arrDimVarID);
 	//<--하남국-20150930
+
+	void SetVisType(int nVisType);
+	int GetVisType();
+
+	void SetBShowHide(BOOL bShow);
+	BOOL GetBShowHide();
+
+	void SetBLocalCoordView(BOOL bLocal);
+	BOOL GetBLocalCoordView();
+
+	void SetBTransCoordX(BOOL bTransCoord);
+	BOOL GetBTransCoordX();
+
+	void SetBTransCoordY(BOOL bTransCoord);
+	BOOL GetBTransCoordY();
+
+	void SetBTransCoordZ(BOOL bTransCoord);
+	BOOL GetBTransCoordZ();
 };
 
 
@@ -1447,6 +1483,9 @@ private:
 	//CString											m_project_type;
 	//<--하남국-20120719
 	CArray<UINT, UINT&>								m_arrDimVarID;	//-->하남국-20150930
+
+	BOOL m_bShowHide;
+	BOOL m_bLocalCoordView;
 
 private:
 	int m_nControlPointPairCnt;
@@ -1529,6 +1568,12 @@ public:
 	void SetDimVarID(CArray<UINT, UINT&>& arrDimVarID);
 	void GetDimVarID(CArray<UINT, UINT&>& arrDimVarID);
 	//<--하남국-20150930
+
+	void SetBShowHide(BOOL bShow);
+	BOOL GetBShowHide();
+
+	void SetBLocalCoordView(BOOL bLocal);
+	BOOL GetBLocalCoordView();
 };
 
 
@@ -1564,6 +1609,9 @@ private:
 	//CString											m_project_type;
 	//<--하남국-20120719
 	CArray<UINT, UINT&>								m_arrDimVarID;	//-->하남국-20150930
+
+	BOOL m_bShowHide;
+
 public:
 	CEcoBlockControlPointCurveInfoRecordSet();
 	~CEcoBlockControlPointCurveInfoRecordSet();
@@ -1651,6 +1699,9 @@ public:
 	void SetDimVarID(CArray<UINT, UINT&>& arrDimVarID);
 	void GetDimVarID(CArray<UINT, UINT&>& arrDimVarID);
 	//<--하남국-20150930
+
+	void SetBShowHide(BOOL bShow);
+	BOOL GetBShowHide();
 };
 
 
@@ -1680,6 +1731,8 @@ private:
 	//<--하남국-20120719
 
 	CArray<UINT, UINT&>								m_arrDimVarID;	//-->하남국-20150930
+
+	BOOL m_bShowHide;
 
 private:
 	int m_nControlPointPairCnt;
@@ -1762,6 +1815,9 @@ public:
 	void SetDimVarID(CArray<UINT, UINT&>& arrDimVarID);
 	void GetDimVarID(CArray<UINT, UINT&>& arrDimVarID);
 	//<--하남국-20150930
+
+	void SetBShowHide(BOOL bShow);
+	BOOL GetBShowHide();
 };
 
 
@@ -1793,6 +1849,8 @@ private:
 	//<--하남국-20120719
 
 	CArray<UINT, UINT&>								m_arrDimVarID;	//-->하남국-20150930
+
+	BOOL m_bShowHide;
 
 private:
 	int m_nControlPointPairCnt;
@@ -1882,6 +1940,9 @@ public:
 	void SetDimVarID(CArray<UINT, UINT&>& arrDimVarID);
 	void GetDimVarID(CArray<UINT, UINT&>& arrDimVarID);
 	//<--하남국-20150930
+
+	void SetBShowHide(BOOL bShow);
+	BOOL GetBShowHide();
 };
 
 
@@ -3187,6 +3248,17 @@ private:
 	//<--최조영-20120703-03-460
 
 	CArray<UINT, UINT&>								m_arrDimVarID;	//-->하남국-20150930
+
+	CString m_strErectionType;
+	CString m_strBaseNSX;
+	CString m_strBaseNSY;
+	CString m_strBaseNSZ;
+	CString m_strErectionNSX;
+	CString m_strErectionNSY;
+	CString m_strErectionNSZ;
+	BOOL m_bErectionNormalX;
+	BOOL m_bErectionNormalY;
+	BOOL m_bErectionNormalZ;
 public:
 	CEcoOtsRelationByMsrMsrRecordSet();
 	~CEcoOtsRelationByMsrMsrRecordSet();
@@ -3295,6 +3367,18 @@ public:
 	void SetDimVarID(CArray<UINT, UINT&>& arrDimVarID);
 	void GetDimVarID(CArray<UINT, UINT&>& arrDimVarID);
 	//<--하남국-20151006
+
+	void SetErectionType(CString type);
+	CString GetErectionType();
+
+	void SetBaseNS(CString strNSX, CString strNSY, CString strNSZ);
+	void GetBaseNS(CString& strNSX, CString& strNSY, CString& strNSZ);
+
+	void SetErectionNS(CString strNSX, CString strNSY, CString strNSZ);
+	void GetErectionNS(CString& strNSX, CString& strNSY, CString& strNSZ);
+
+	void SetErectionNormal(BOOL bNormalX, BOOL bNormalY, BOOL bNormalZ);
+	void GetErectionNormal(BOOL& bNormalX, BOOL& bNormalY, BOOL& bNormalZ);
 };
 
 
@@ -3324,6 +3408,7 @@ private:
 	//-->최조영-20120703-03-460
 	double											m_element_box_size;
 	//<--최조영-20120703-03-460
+	BOOL m_bLocalCoordView;
 public:
 	CEcoOtsPointCondRecordSet();
 	~CEcoOtsPointCondRecordSet();
@@ -3383,6 +3468,9 @@ public:
 	double GetboxSize();
 	//<--최조영-20120703-03-460
 
+	void SetBLocalCoordView(BOOL bLocalCoordView);
+	BOOL GetBLocalCoordView();
+
 };
 
 
@@ -3413,6 +3501,8 @@ private:
 	//-->최조영-20120703-03-460
 	double											m_element_box_size;
 	//<--최조영-20120703-03-460
+
+	BOOL m_bLocalCoordView;
 public:
 	CEcoOtsDistanceCondRecordSet();
 	~CEcoOtsDistanceCondRecordSet();
@@ -3485,6 +3575,9 @@ public:
 	void SetboxSize(double dsize);
 	double GetboxSize();
 	//<--최조영-20120703-03-460
+
+	void SetBLocalCoordView(BOOL bLocalCoordView);
+	BOOL GetBLocalCoordView();
 
 };
 
@@ -5777,4 +5870,581 @@ public:
 	{
 		CEcoTreeBaseRecordSet::serialize(ar, version, bSendNRecv);
 	}
+};
+
+/*-----------------------------------------------------------------------
+기능			: CTribonAssemblyTreeRecordSet 테이블의 레코드 필드 값들의 입출력 데이터 포맷을 가지고 있는 클래스
+매개변수		:
+리턴			:
+작성내역  	:
+최조영-20160401, 함수 최초 작성
+-----------------------------------------------------------------------*/
+class AFX_EXT_API CTribonAssemblyTreeRecordSet : public CEcoTreeBaseRecordSet
+{
+private:
+	CString					m_type;
+	CString					m_side;
+	UINT					m_is_part;
+	CString					m_full_path;
+public:
+	CTribonAssemblyTreeRecordSet();
+	~CTribonAssemblyTreeRecordSet();
+
+	CTribonAssemblyTreeRecordSet& operator = (const CTribonAssemblyTreeRecordSet &other);
+
+	template <typename Archive>
+	void serialize(Archive& ar, const unsigned int version, BOOL bSendNRecv)
+	{
+		CEcoRefBaseRecordSet::serialize(ar, version, bSendNRecv);
+
+		std::string stdStr;
+		if(bSendNRecv == TRUE)
+		{
+			stdStr = CStringConverter::CStringWToCStringA(m_type);
+			ar & stdStr;
+			stdStr = CStringConverter::CStringWToCStringA(m_side);
+			ar & stdStr;
+			ar & m_is_part;
+			stdStr = CStringConverter::CStringWToCStringA(m_full_path);
+			ar & stdStr;
+		}
+		else
+		{
+			ar & stdStr;
+			m_type = CStringConverter::CStringAToCStringW(stdStr.c_str());
+			ar & stdStr;
+			m_side = CStringConverter::CStringAToCStringW(stdStr.c_str());
+			ar & m_is_part;
+			ar & stdStr;
+			m_full_path = CStringConverter::CStringAToCStringW(stdStr.c_str());
+		}
+	}
+
+public:
+	void SetType(CString data);
+	CString GetType();
+
+	void SetSide(CString data);
+	CString GetSide();
+
+	void SetIsPart(UINT data);
+	UINT GetIsPart();
+
+	void SetFullPath(CString data);
+	CString GetFullPath();
+};
+
+
+/*-----------------------------------------------------------------------
+기능			: CEcoBlockLocalAxisInfoRecordSet 테이블의 레코드 필드 값들의 입출력 데이터 포맷을 가지고 있는 클래스
+매개변수		:
+리턴			:
+작성내역  		:
+하남국-20160509, 최초작성[PROD-585]
+-----------------------------------------------------------------------*/
+class AFX_EXT_API CEcoBlockLocalAxisInfoRecordSet : public CEcoRefBaseRecordSet
+{
+private:
+	CString m_strName;
+	int m_nAxisIndex;
+	CString m_strDsnPtNo;
+	HPoint m_normalU;
+	HPoint m_normalV;
+	HPoint m_normalW;
+	double m_matrix[16];
+	CList<CString, LPCTSTR> m_listIncDsnPt;
+
+private:
+	int m_nIncDsnPtListCnt;
+
+public:
+	CEcoBlockLocalAxisInfoRecordSet();
+	~CEcoBlockLocalAxisInfoRecordSet();
+
+	CEcoBlockLocalAxisInfoRecordSet& operator = (const CEcoBlockLocalAxisInfoRecordSet &other);
+
+	template <typename Archive>
+	void serialize(Archive& ar, const unsigned int version, BOOL bSendNRecv)
+	{
+		CEcoRefBaseRecordSet::serialize(ar, version, bSendNRecv);
+
+		std::string stdStr;
+		if(bSendNRecv == TRUE)
+		{
+			stdStr = CStringConverter::CStringWToCStringA(m_strName);
+			ar & stdStr;
+			ar & m_nAxisIndex;
+			stdStr = CStringConverter::CStringWToCStringA(m_strDsnPtNo);
+			ar & stdStr;
+			m_normalU.serialize(ar, version, bSendNRecv);
+			m_normalV.serialize(ar, version, bSendNRecv);
+			m_normalW.serialize(ar, version, bSendNRecv);
+
+			for(int i = 0; i < 16; i++)
+				ar & m_matrix[i];
+
+			m_nIncDsnPtListCnt = m_listIncDsnPt.GetCount();
+			ar & m_nIncDsnPtListCnt;
+			POSITION pos = m_listIncDsnPt.GetHeadPosition();
+			while (pos)
+			{
+				stdStr = CStringConverter::CStringWToCStringA(m_listIncDsnPt.GetNext(pos));
+				ar & stdStr;
+			}
+		}
+		else
+		{
+			ar & stdStr;
+			m_strName = CStringConverter::CStringAToCStringW(stdStr.c_str());
+			ar & m_nAxisIndex;
+			ar & stdStr;
+			m_strDsnPtNo = CStringConverter::CStringAToCStringW(stdStr.c_str());
+			m_normalU.serialize(ar, version, bSendNRecv);
+			m_normalV.serialize(ar, version, bSendNRecv);
+			m_normalW.serialize(ar, version, bSendNRecv);
+
+			for(int i = 0; i < 16; i++)
+				ar & m_matrix[i];
+
+			ar & m_nIncDsnPtListCnt;
+			CString str = _T("");
+			m_listIncDsnPt.RemoveAll();
+			for(int i = 0; i < m_nIncDsnPtListCnt; i++)
+			{
+				ar & stdStr;
+				str = CStringConverter::CStringAToCStringW(stdStr.c_str());
+				m_listIncDsnPt.AddTail(str);
+			}
+		}
+	}
+
+public:
+	void SetName(CString strName);
+	CString GetName();
+
+	void SetAxisIndex(int nAxisIndex);
+	int GetAxisIndex();
+
+	void SetDsnPtNo(CString strDsnPtName);
+	CString GetDsnPtNo();
+
+	void SetNormal(HPoint normalU, HPoint normalV, HPoint normalW);
+	void GetNormal(HPoint& normalU, HPoint& normalV, HPoint& normalW);
+
+	void SetMatrix(double* pMatrix);
+	void GetMatrix(double* pMatrix);
+
+	void SetIncDsnPt(CList<CString, LPCTSTR>& listIncDsnPt);
+	void GetIncDsnPt(CList<CString, LPCTSTR>& listIncDsnPt);
+};
+
+/*-----------------------------------------------------------------------
+기능			: CEcoBlockMaskingRecordSet 테이블의 레코드 필드 값들의 입출력 데이터 포맷을 가지고 있는 클래스
+매개변수		:
+리턴			:
+작성내역  		:
+하남국-20160509, 최초작성[PROD-585]
+-----------------------------------------------------------------------*/
+class AFX_EXT_API CEcoBlockMaskingRecordSet : public CEcoRefBaseRecordSet
+{
+private:
+	CString m_strName;
+
+	HPoint m_boundUpper0;
+	HPoint m_boundUpper1;
+	HPoint m_boundUpper2;
+	HPoint m_boundUpper3;
+	HPoint m_boundUnder0;
+	HPoint m_boundUnder1;
+	HPoint m_boundUnder2;
+	HPoint m_boundUnder3;
+
+	HPoint m_cameraPos;
+	HPoint m_cameraTarget;
+	HPoint m_cameraUpVector;
+	float m_cameraFieldWidth;
+	float m_cameraFieldHeight;
+	CString m_strCameraProjectionMode;
+
+	BOOL m_bVisModel;
+	BOOL m_bVisDsnPt;
+	BOOL m_bVisMngPt;
+	BOOL m_bVisMsrPt;
+	BOOL m_bVisRelation;
+	BOOL m_bVisLocalAxis;
+	BOOL m_bVisAxis;
+	BOOL m_bVisBox;
+	BOOL m_bVisControl;
+
+public:
+	CEcoBlockMaskingRecordSet();
+	~CEcoBlockMaskingRecordSet();
+
+	CEcoBlockMaskingRecordSet& operator = (const CEcoBlockMaskingRecordSet &other);
+
+	template <typename Archive>
+	void serialize(Archive& ar, const unsigned int version, BOOL bSendNRecv)
+	{
+		CEcoRefBaseRecordSet::serialize(ar, version, bSendNRecv);
+
+		std::string stdStr;
+		if(bSendNRecv == TRUE)
+		{
+			stdStr = CStringConverter::CStringWToCStringA(m_strName);
+			ar & stdStr;
+			m_boundUpper0.serialize(ar, version, bSendNRecv);
+			m_boundUpper1.serialize(ar, version, bSendNRecv);
+			m_boundUpper2.serialize(ar, version, bSendNRecv);
+			m_boundUpper3.serialize(ar, version, bSendNRecv);
+			m_boundUnder0.serialize(ar, version, bSendNRecv);
+			m_boundUnder1.serialize(ar, version, bSendNRecv);
+			m_boundUnder2.serialize(ar, version, bSendNRecv);
+			m_boundUnder3.serialize(ar, version, bSendNRecv);
+
+			m_cameraPos.serialize(ar, version, bSendNRecv);
+			m_cameraTarget.serialize(ar, version, bSendNRecv);
+			m_cameraUpVector.serialize(ar, version, bSendNRecv);
+			ar & m_cameraFieldWidth;
+			ar & m_cameraFieldHeight;
+			stdStr = CStringConverter::CStringWToCStringA(m_strCameraProjectionMode);
+			ar & stdStr;
+
+			ar & m_bVisModel;
+			ar & m_bVisDsnPt;
+			ar & m_bVisMngPt;
+			ar & m_bVisMsrPt;
+			ar & m_bVisRelation;
+			ar & m_bVisLocalAxis;
+			ar & m_bVisAxis;
+			ar & m_bVisBox;
+			ar & m_bVisControl;
+		}
+		else
+		{
+			ar & stdStr;
+			m_strName = CStringConverter::CStringAToCStringW(stdStr.c_str());
+			m_boundUpper0.serialize(ar, version, bSendNRecv);
+			m_boundUpper1.serialize(ar, version, bSendNRecv);
+			m_boundUpper2.serialize(ar, version, bSendNRecv);
+			m_boundUpper3.serialize(ar, version, bSendNRecv);
+			m_boundUnder0.serialize(ar, version, bSendNRecv);
+			m_boundUnder1.serialize(ar, version, bSendNRecv);
+			m_boundUnder2.serialize(ar, version, bSendNRecv);
+			m_boundUnder3.serialize(ar, version, bSendNRecv);
+
+			m_cameraPos.serialize(ar, version, bSendNRecv);
+			m_cameraTarget.serialize(ar, version, bSendNRecv);
+			m_cameraUpVector.serialize(ar, version, bSendNRecv);
+			ar & m_cameraFieldWidth;
+			ar & m_cameraFieldHeight;
+			ar & stdStr;
+			m_strCameraProjectionMode = CStringConverter::CStringAToCStringW(stdStr.c_str());
+
+			ar & m_bVisModel;
+			ar & m_bVisDsnPt;
+			ar & m_bVisMngPt;
+			ar & m_bVisMsrPt;
+			ar & m_bVisRelation;
+			ar & m_bVisLocalAxis;
+			ar & m_bVisAxis;
+			ar & m_bVisBox;
+			ar & m_bVisControl;
+		}
+	}
+
+public:
+	void SetName(CString strName);
+	CString GetName();
+
+	void SetBoundUpper(HPoint boundUpper0, HPoint boundUpper1, HPoint boundUpper2, HPoint boundUpper3);
+	void GetBoundUpper(HPoint& boundUpper0, HPoint& boundUpper1, HPoint& boundUpper2, HPoint& boundUpper3);
+
+	void SetBoundUnder(HPoint boundUnder0, HPoint boundUnder1, HPoint boundUnder2, HPoint boundUnder3);
+	void GetBoundUnder(HPoint& boundUnder0, HPoint& boundUnder1, HPoint& boundUnder2, HPoint& boundUnder3);
+
+	void SetCamera(HPoint pos, HPoint target, HPoint upVector, float fieldWidth, float fieldHeight, CString strProjectionMode);
+	void GetCamera(HPoint& pos, HPoint& target, HPoint& upVector, float& fieldWidth, float& fieldHeight, CString& strProjectionMode);
+
+	void SetBVisible(BOOL bModel, BOOL bDsnPt, BOOL bMngPt, BOOL bMsrPt, BOOL bRelation, BOOL bLocAxis, BOOL bAxis, BOOL bBox, BOOL bCtrl);
+	void GetBVisible(BOOL& bModel, BOOL& bDsnPt, BOOL& bMngPt, BOOL& bMsrPt, BOOL& bRelation, BOOL& bLocAxis, BOOL& bAxis, BOOL& bBox, BOOL& bCtrl);
+};
+
+
+/*-----------------------------------------------------------------------
+기능			: CEcoOTSMaskingRecordSet 테이블의 레코드 필드 값들의 입출력 데이터 포맷을 가지고 있는 클래스
+매개변수		:
+리턴			:
+작성내역  		:
+하남국-20160509, 최초작성[PROD-585]
+-----------------------------------------------------------------------*/
+class AFX_EXT_API CEcoOTSMaskingRecordSet : public CEcoRefBaseRecordSet
+{
+private:
+	CString m_strName;
+
+	HPoint m_boundUpper0;
+	HPoint m_boundUpper1;
+	HPoint m_boundUpper2;
+	HPoint m_boundUpper3;
+	HPoint m_boundUnder0;
+	HPoint m_boundUnder1;
+	HPoint m_boundUnder2;
+	HPoint m_boundUnder3;
+
+	HPoint m_cameraPos;
+	HPoint m_cameraTarget;
+	HPoint m_cameraUpVector;
+	float m_cameraFieldWidth;
+	float m_cameraFieldHeight;
+	CString m_strCameraProjectionMode;
+
+	BOOL m_bVisModel;
+	BOOL m_bVisDsnPt;
+	BOOL m_bVisMngPt;
+	BOOL m_bVisMsrPt;
+	BOOL m_bVisRelation;
+	BOOL m_bVisLocalAxis;
+	BOOL m_bVisAxis;
+	BOOL m_bVisBox;
+	BOOL m_bVisControl;
+
+public:
+	CEcoOTSMaskingRecordSet();
+	~CEcoOTSMaskingRecordSet();
+
+	CEcoOTSMaskingRecordSet& operator = (const CEcoOTSMaskingRecordSet &other);
+
+	template <typename Archive>
+	void serialize(Archive& ar, const unsigned int version, BOOL bSendNRecv)
+	{
+		CEcoRefBaseRecordSet::serialize(ar, version, bSendNRecv);
+
+		std::string stdStr;
+		if(bSendNRecv == TRUE)
+		{
+			stdStr = CStringConverter::CStringWToCStringA(m_strName);
+			ar & stdStr;
+			m_boundUpper0.serialize(ar, version, bSendNRecv);
+			m_boundUpper1.serialize(ar, version, bSendNRecv);
+			m_boundUpper2.serialize(ar, version, bSendNRecv);
+			m_boundUpper3.serialize(ar, version, bSendNRecv);
+			m_boundUnder0.serialize(ar, version, bSendNRecv);
+			m_boundUnder1.serialize(ar, version, bSendNRecv);
+			m_boundUnder2.serialize(ar, version, bSendNRecv);
+			m_boundUnder3.serialize(ar, version, bSendNRecv);
+
+			m_cameraPos.serialize(ar, version, bSendNRecv);
+			m_cameraTarget.serialize(ar, version, bSendNRecv);
+			m_cameraUpVector.serialize(ar, version, bSendNRecv);
+			ar & m_cameraFieldWidth;
+			ar & m_cameraFieldHeight;
+			stdStr = CStringConverter::CStringWToCStringA(m_strCameraProjectionMode);
+			ar & stdStr;
+
+			ar & m_bVisModel;
+			ar & m_bVisDsnPt;
+			ar & m_bVisMngPt;
+			ar & m_bVisMsrPt;
+			ar & m_bVisRelation;
+			ar & m_bVisLocalAxis;
+			ar & m_bVisAxis;
+			ar & m_bVisBox;
+			ar & m_bVisControl;
+		}
+		else
+		{
+			ar & stdStr;
+			m_strName = CStringConverter::CStringAToCStringW(stdStr.c_str());
+			m_boundUpper0.serialize(ar, version, bSendNRecv);
+			m_boundUpper1.serialize(ar, version, bSendNRecv);
+			m_boundUpper2.serialize(ar, version, bSendNRecv);
+			m_boundUpper3.serialize(ar, version, bSendNRecv);
+			m_boundUnder0.serialize(ar, version, bSendNRecv);
+			m_boundUnder1.serialize(ar, version, bSendNRecv);
+			m_boundUnder2.serialize(ar, version, bSendNRecv);
+			m_boundUnder3.serialize(ar, version, bSendNRecv);
+
+			m_cameraPos.serialize(ar, version, bSendNRecv);
+			m_cameraTarget.serialize(ar, version, bSendNRecv);
+			m_cameraUpVector.serialize(ar, version, bSendNRecv);
+			ar & m_cameraFieldWidth;
+			ar & m_cameraFieldHeight;
+			ar & stdStr;
+			m_strCameraProjectionMode = CStringConverter::CStringAToCStringW(stdStr.c_str());
+
+			ar & m_bVisModel;
+			ar & m_bVisDsnPt;
+			ar & m_bVisMngPt;
+			ar & m_bVisMsrPt;
+			ar & m_bVisRelation;
+			ar & m_bVisLocalAxis;
+			ar & m_bVisAxis;
+			ar & m_bVisBox;
+			ar & m_bVisControl;
+		}
+	}
+
+public:
+	void SetName(CString strName);
+	CString GetName();
+
+	void SetBoundUpper(HPoint boundUpper0, HPoint boundUpper1, HPoint boundUpper2, HPoint boundUpper3);
+	void GetBoundUpper(HPoint& boundUpper0, HPoint& boundUpper1, HPoint& boundUpper2, HPoint& boundUpper3);
+
+	void SetBoundUnder(HPoint boundUnder0, HPoint boundUnder1, HPoint boundUnder2, HPoint boundUnder3);
+	void GetBoundUnder(HPoint& boundUnder0, HPoint& boundUnder1, HPoint& boundUnder2, HPoint& boundUnder3);
+
+	void SetCamera(HPoint pos, HPoint target, HPoint upVector, float fieldWidth, float fieldHeight, CString strProjectionMode);
+	void GetCamera(HPoint& pos, HPoint& target, HPoint& upVector, float& fieldWidth, float& fieldHeight, CString& strProjectionMode);
+
+	void SetBVisible(BOOL bModel, BOOL bDsnPt, BOOL bMngPt, BOOL bMsrPt, BOOL bRelation, BOOL bLocAxis, BOOL bAxis, BOOL bBox, BOOL bCtrl);
+	void GetBVisible(BOOL& bModel, BOOL& bDsnPt, BOOL& bMngPt, BOOL& bMsrPt, BOOL& bRelation, BOOL& bLocAxis, BOOL& bAxis, BOOL& bBox, BOOL& bCtrl);
+};
+
+/*-----------------------------------------------------------------------
+기능			: CEcoOTSLocalAxisRecordSet 테이블의 레코드 필드 값들의 입출력 데이터 포맷을 가지고 있는 클래스
+매개변수		:
+리턴			:
+작성내역		:
+하남국-20160509, 최초작성[PROD-585]
+-----------------------------------------------------------------------*/
+class AFX_EXT_API CEcoOTSLocalAxisRecordSet : public CEcoRefBaseRecordSet
+{
+private:
+	CString m_strBlockName;
+	CString m_strMsrPtNo;
+	BOOL m_bOriLocal;
+	WASNormalAxis m_oriAxis;
+	double m_dblOriMatrix[16];
+	CArray<WASNormalAxis, WASNormalAxis&> m_candiAxis;
+	CArray<WASAIRDIRECTION, WASAIRDIRECTION> m_airVec;
+	BOOL m_bChgLocal;
+	WASNormalAxis m_chgAxis;
+	double m_dblChgMatrix[16];
+	BOOL m_bOriginAxisExist;
+	BOOL m_bChangeAxisExist;
+
+private:
+	int m_nCandiAxisCnt;
+	int m_nAirVecCnt;
+
+public:
+	CEcoOTSLocalAxisRecordSet();
+	~CEcoOTSLocalAxisRecordSet();
+
+	CEcoOTSLocalAxisRecordSet& operator = (const CEcoOTSLocalAxisRecordSet &other);
+
+	template <typename Archive>
+	void serialize(Archive& ar, const unsigned int version, BOOL bSendNRecv)
+	{
+		CEcoRefBaseRecordSet::serialize(ar, version, bSendNRecv);
+
+		std::string stdStr;
+		if(bSendNRecv == TRUE)
+		{
+			stdStr = CStringConverter::CStringWToCStringA(m_strBlockName);
+			ar & stdStr;
+			stdStr = CStringConverter::CStringWToCStringA(m_strMsrPtNo);
+			ar & stdStr;
+
+			ar & m_bOriLocal;
+
+			m_oriAxis.serialize(ar, version, bSendNRecv);
+
+			for(int i = 0; i < 16; i++)
+				ar & m_dblOriMatrix[i];
+
+			m_nCandiAxisCnt = m_candiAxis.GetCount();
+			ar & m_nCandiAxisCnt;
+			for(int i = 0; i < m_nCandiAxisCnt; i++)
+			{
+				m_candiAxis.GetAt(i).serialize(ar, version, bSendNRecv);
+			}
+
+			m_nAirVecCnt = m_airVec.GetCount();
+			ar & m_nAirVecCnt;
+			for(int i = 0; i < m_nAirVecCnt; i++)
+			{
+				m_airVec.GetAt(i).serialize(ar, version, bSendNRecv);
+			}
+
+			ar & m_bChgLocal;
+
+			m_chgAxis..serialize(ar, version, bSendNRecv);
+			for(int i = 0; i < 16; i++)
+				ar & m_dblChgMatrix[i];
+
+			ar & m_bOriginAxisExist;
+			ar & m_bChangeAxisExist;
+
+		}
+		else
+		{
+			ar & stdStr;
+			m_strBlockName = CStringConverter::CStringAToCStringW(stdStr.c_str());
+			ar & stdStr;
+			m_strMsrPtNo = CStringConverter::CStringAToCStringW(stdStr.c_str());
+
+			ar & m_bOriLocal;
+
+			m_oriAxis.serialize(ar, version, bSendNRecv);
+
+			for(int i = 0; i < 16; i++)
+				ar & m_dblOriMatrix[i];
+
+			ar & m_nCandiAxisCnt;
+
+			m_candiAxis.RemoveAll();
+			WASNormalAxis tmpNormalAxis;
+			for(int i = 0 i < m_nCandiAxisCnt; i++)
+			{
+				ar & tmpNormalAxis;
+				m_candiAxis.Add(tmpNormalAxis);
+			}
+
+			ar & m_nAirVecCnt;
+			m_airVec.RemoveAll();
+			WASAIRDIRECTION tmpAirVec;
+			for(int i = 0 i < m_nAirVecCnt; i++)
+			{
+				ar & tmpAirVec;
+				m_airVec.Add(tmpAirVec);
+			}
+
+			ar & m_bChgLocal;
+
+			m_chgAxis.serialize(ar, version, bSendNRecv);
+
+			for(int i = 0; i < 16; i++)
+				ar & m_dblChgMatrix[i];
+
+			ar & m_bOriginAxisExist;
+			ar & m_bChangeAxisExist;
+		}
+	}
+
+public:
+	void SetBlockName(CString strBlockName);
+	CString GetBlockName();
+
+	void SetMsrPtNo(CString strMsrPtNo);
+	CString GetMsrPtNo();
+
+	void SetOriginAxisExist(BOOL bExist);
+	BOOL GetOriginAxisExist();
+
+	void SetOriginAxis(BOOL bLocal, WASNormalAxis axis, double* pMatrix);
+	void GetOriginAxis(BOOL& bLocal, WASNormalAxis& axis, double* pMatrix);
+
+	void SetAirVector(CArray<WASAIRDIRECTION, WASAIRDIRECTION>& arrAirVec);
+	void GetAirVector(CArray<WASAIRDIRECTION, WASAIRDIRECTION>& arrAirVec);
+
+	void SetCandidateAxis(CArray<WASNormalAxis, WASNormalAxis&>& arrCandiAxis);
+	void GetCandidateAxis(CArray<WASNormalAxis, WASNormalAxis&>& arrCandiAxis);
+
+	void SetChangeAxisExist(BOOL bExist);
+	BOOL GetChangeAxisExist();
+
+	void SetChangeAxis(BOOL bLocal, WASNormalAxis axis, double* pMatrix);
+	void GetChangeAxis(BOOL& bLocal, WASNormalAxis& axis, double* pMatrix);
 };

@@ -499,6 +499,7 @@ public:
 	int SelectEcoOtsProjectionFaceModelingMatrixListListTB(CString project_group, CString ship_no, 
 		CString where_condition, CArray<CEcoOtsProjectionFaceModelingMatrixListRecordSet, CEcoOtsProjectionFaceModelingMatrixListRecordSet&> *record_list);
 
+
 // tb_assembly_level
 public:
 	int DeleteAllProductionInfo(CString project_group, CString ship_no);
