@@ -16,7 +16,7 @@
 #include "HPoint.h"
 #endif
 
-#include "EcoStructDefine.h"
+#include "EcoWASStructDefine.h"
 
 typedef struct _object_property
 {
