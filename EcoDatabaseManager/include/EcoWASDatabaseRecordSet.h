@@ -16,7 +16,12 @@
 #include "HPoint.h"
 #endif
 
+
+#ifdef ECO_WAS_DATABASE_MANAGER
 #include "EcoWASStructDefine.h"
+#else
+#include "EcoStructDefine.h"
+#endif
 
 typedef struct _object_property
 {
@@ -865,6 +870,10 @@ private:
 	double											m_tolerance_y_max;
 	double											m_tolerance_z_min;
 	double											m_tolerance_z_max;
+	double											m_tolerance_xy_min;
+	double											m_tolerance_xy_max;
+	double											m_tolerance_xyz_min;
+	double											m_tolerance_xyz_max;
 	CArray<OBJECT_PROPERTY, OBJECT_PROPERTY>		m_related_msr_part_list;
 	int												m_related_msr_part_len;
 	CString											m_hsf_path;
@@ -1116,8 +1125,8 @@ public:
 	void SetSuccessInfoUpdateDate(COleDateTime date);
 	COleDateTime GetSuccessInfoUpdateDate();
 
-	void SetTolerance(double x_min, double x_max, double y_min, double y_max, double z_min, double z_max);
-	void GetTolerance(double* x_min, double* x_max, double* y_min, double* y_max, double* z_min, double* z_max);
+	void SetTolerance(double x_min, double x_max, double y_min, double y_max, double z_min, double z_max, double xy_min = -5.0, double xy_max = 5.0, double xyz_min = -5.0, double xyz_max = 5.0);
+	void GetTolerance(double* x_min, double* x_max, double* y_min, double* y_max, double* z_min, double* z_max, double* xy_min = NULL, double* xy_max = NULL, double* xyz_min = NULL, double* xyz_max = NULL);
 
 	void SetRelatedMsrPartList(CArray<OBJECT_PROPERTY, OBJECT_PROPERTY&>* related_msr_part_list);
 	void GetRelatedMsrPartList(CArray<OBJECT_PROPERTY, OBJECT_PROPERTY>* related_msr_part_list);

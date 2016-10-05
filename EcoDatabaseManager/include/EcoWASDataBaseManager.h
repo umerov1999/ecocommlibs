@@ -505,6 +505,7 @@ public:
 	int DeleteAllProductionInfo(CString project_group, CString ship_no);
 
 	int DeleteAssemblyLevelTB(CString project_group, CString ship_no, UINT id);
+	int DeleteAllAssemblyLevelTB(CString project_group, CString ship_no);
 	int InsertAssemblyLevelTB(CString project_group, CString ship_no,
 		CArray<CAssemblyLevelRecordSet, CAssemblyLevelRecordSet&> *record_list);
 	int UpdateAssemblyLevelTB(CString project_group, CString ship_no,
@@ -517,6 +518,7 @@ public:
 // tb_assembly_tree
 public:
 	int DeleteAssemblyTreeTB(CString project_group, CString ship_no, UINT id);
+	int DeleteAllAssemblyTreeTB(CString project_group, CString ship_no);
 	int InsertAssemblyTreeTB(CString project_group, CString ship_no,
 		CArray<CAssemblyTreeRecordSet, CAssemblyTreeRecordSet&> *record_list);
 	int UpdateAssemblyTreeTB(CString project_group, CString ship_no,
