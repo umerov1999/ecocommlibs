@@ -4,6 +4,8 @@
 #define				PKCMD_SUCCESS								0
 #define				PKCMD_ERROR									1
 #define				PKCMD_CLOSE									2
+#define				PKCMD_TEST									3
+#define				PKCMD_RECONNECT								4
 
 //네트워크 폴더 접근 정보
 #define				PKCMD_GetNetFolderInfo						50

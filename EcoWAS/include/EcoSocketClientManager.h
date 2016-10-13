@@ -21,7 +21,8 @@ public:
 	BOOL ConnectWait();
 	BOOL SendCommand(CEcoPacket& packet);
 	BOOL GetResponseData(CEcoPacket& packet);
-	BOOL Close();
+	BOOL Close(BOOL bDisconn = FALSE);
 	BOOL GetLastErrorCode(int& nError, CString& strMsg);
+	BOOL ReeeConnect();
 };
 

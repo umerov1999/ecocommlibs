@@ -18,7 +18,7 @@ private:
 public:
 	void SetHost(CString strIP, int nPort);
 	BOOL Connect();
-	BOOL SendResponseData(CEcoPacket& packet);
+	BOOL SendResponseData(CEcoPacket& packet, BOOL bNoRecv = FALSE);
 	BOOL GetCommandData(CEcoPacket& packet);
 	BOOL GetLastErrorCode(int& nError, CString& strMsg);
 	BOOL Close();

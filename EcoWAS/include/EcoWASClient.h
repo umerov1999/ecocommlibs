@@ -10,6 +10,7 @@
 #include "EcoWebConnector.h"
 #include "EcoWASDatabaseRecordSet.h"
 #include "EcoDatabaseManagerDefine.h"
+#include <afxmt.h>
 
 class CEcoServerBinary;
 class CEcoSocketClientManager;
@@ -41,11 +42,14 @@ public:
 	CEcoPacket m_sendMESPacket;
 	CEcoPacket m_recvMESPacket;
 	BOOL m_bCommandRet;
-	
+	BOOL m_bWrittingTest;
+	CWinThread* m_pTestThread;
 
 private:
 	CEcoSocketClientManager m_ecoSocketClient;
 	CEcoWebConnector m_ecoWebConnector;
+	UINT m_nConnCnt;
+	
 
 public:
 	CEcoServerBinary m_ecoServerBinary;
@@ -56,10 +60,13 @@ public:
 private:
 	BOOL SendCommand(CEcoPacket& sendPacket, CEcoPacket& recvPacket);
 	static UINT WebConnectThread(LPVOID pParam);
+	static UINT TestThread(LPVOID aParam);
+	BOOL SendTestCommand();
+	BOOL SendReConnectCommand();
 
 public:
 	BOOL ConnectWAS();
-	void DisConnectWAS(BOOL bMust = FALSE);
+	void DisConnectWAS(BOOL bMust = FALSE, BOOL bUseCloseComm = TRUE, BOOL bKillThread = TRUE);
 	void SetUserInfo(CString strUserID, CString strPwd = _T(""));
 	void SetSocketPort(int nPort);
 	void SetEcoWASUrl(CString strWASUrl);
