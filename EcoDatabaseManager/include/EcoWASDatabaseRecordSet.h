@@ -6457,3 +6457,131 @@ public:
 	void SetChangeAxis(BOOL bLocal, WASNormalAxis axis, double* pMatrix);
 	void GetChangeAxis(BOOL& bLocal, WASNormalAxis& axis, double* pMatrix);
 };
+
+/*-----------------------------------------------------------------------
+기능			: EcoBlockStdPointHistoryInfo 테이블의 레코드 필드 값들의 입출력 데이터
+작성일자		: 20160831
+작성자			: 윤덕현
+윤덕현-20160831, 최초작성 [PROD-579]
+-----------------------------------------------------------------------*/
+class AFX_EXT_API CEcoBlockStdPointHistoryInfoRecordSet : public CEcoRefBaseRecordSet
+{
+private:
+	CString							m_project_group;
+	CString							m_ship_no;
+	CString							m_name;
+	CArray<CString, CString&>		m_std_point_a;
+	CArray<CString, CString&>		m_std_point_b;
+	CArray<CString, CString&>		m_std_point_c;
+	CString							m_comment;
+
+private:
+	int m_nStdPointA;
+	int m_nStdPointB;
+	int m_nStdPointC;
+
+public:
+	CEcoBlockStdPointHistoryInfoRecordSet();
+	~CEcoBlockStdPointHistoryInfoRecordSet();
+
+	CEcoBlockStdPointHistoryInfoRecordSet& operator = (const CEcoBlockStdPointHistoryInfoRecordSet &other);
+
+	template <typename Archive>
+	void serialize(Archive& ar, const unsigned int version, BOOL bSendNRecv)
+	{
+		CEcoRefBaseRecordSet::serialize(ar, version, bSendNRecv);
+
+		std::string stdStr;
+		if (bSendNRecv == TRUE)
+		{
+			stdStr = CStringConverter::CStringWToCStringA(m_project_group);
+			ar & stdStr;
+			stdStr = CStringConverter::CStringWToCStringA(m_ship_no);
+			ar & stdStr;
+			stdStr = CStringConverter::CStringWToCStringA(m_name);
+			ar & stdStr;
+
+			m_nStdPointA = m_std_point_a.GetCount();
+			ar & m_nStdPointA;
+			for(int i = 0; i < m_nStdPointA; i++)
+			{
+				stdStr = CStringConverter::CStringWToCStringA(m_std_point_a.GetAt(i));
+				ar & stdStr;
+			}
+
+			m_nStdPointB = m_std_point_b.GetCount();
+			ar & m_nStdPointB;
+			for(int i = 0; i < m_nStdPointB; i++)
+			{
+				stdStr = CStringConverter::CStringWToCStringA(m_std_point_b.GetAt(i));
+				ar & stdStr;
+			}
+
+			m_nStdPointC = m_std_point_c.GetCount();
+			ar & m_nStdPointC;
+			for(int i = 0; i < m_nStdPointC; i++)
+			{
+				stdStr = CStringConverter::CStringWToCStringA(m_std_point_c.GetAt(i));
+				ar & stdStr;
+			}
+
+			stdStr = CStringConverter::CStringWToCStringA(m_comment);
+			ar & stdStr;
+		}
+		else
+		{
+			ar & stdStr;
+			m_project_group = CStringConverter::CStringAToCStringW(stdStr.c_str());
+			ar & stdStr;
+			m_ship_no = CStringConverter::CStringAToCStringW(stdStr.c_str());
+			ar & stdStr;
+			m_name = CStringConverter::CStringAToCStringW(stdStr.c_str());
+
+			ar & m_nStdPointA;
+			CString str; m_std_point_a.RemoveAll();
+			for(int i = 0; i < m_nStdPointA; i++)
+			{
+				ar & stdStr;
+				str = CStringConverter::CStringAToCStringW(stdStr.c_str());
+				m_std_point_a.Add(str);
+			}
+
+			ar & m_nStdPointB;
+			m_std_point_b.RemoveAll();
+			for(int i = 0; i < m_nStdPointB; i++)
+			{
+				ar & stdStr;
+				str = CStringConverter::CStringAToCStringW(stdStr.c_str());
+				m_std_point_b.Add(str);
+			}
+
+			ar & m_nStdPointC;
+			m_std_point_c.RemoveAll();
+			for(int i = 0; i < m_nStdPointC; i++)
+			{
+				ar & stdStr;
+				str = CStringConverter::CStringAToCStringW(stdStr.c_str());
+				m_std_point_c.Add(str);
+			}
+
+			ar & stdStr;
+			m_comment = CStringConverter::CStringAToCStringW(stdStr.c_str());
+		}
+	}
+
+public:
+	void SetProjectGroup(CString project_group);
+	CString GetProjectGroup();
+
+	void SetShipNo(CString ship_no);
+	CString GetShipNo();
+
+	void SetName(CString name);
+	CString GetName();
+
+	void SetStdPointHistory(CArray<CString, CString&>* std_point_a, CArray<CString, CString&>* std_point_b, CArray<CString, CString&>* std_point_c);
+	void GetStdPointHistory(CArray<CString, CString&>* std_point_a, CArray<CString, CString&>* std_point_b, CArray<CString, CString&>* std_point_c);
+
+	void SetComment(CString comment);
+	CString GetComment();
+};
