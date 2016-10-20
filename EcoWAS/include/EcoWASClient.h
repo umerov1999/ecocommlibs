@@ -774,5 +774,13 @@ public:
 	int InsertEcoOTSLocalAxisTB(CString project_group, CString ship_no, CArray<CEcoOTSLocalAxisRecordSet, CEcoOTSLocalAxisRecordSet&>* pArrRS);
 	int SelectEcoOTSLocalAxisTB(CString project_group, CString ship_no,
 		CString where_condition, CArray<CEcoOTSLocalAxisRecordSet, CEcoOTSLocalAxisRecordSet&> *pArrRS);
+
+	// tb_EcoBlock_local_axis_info ฐüทร
+public:
+	int CreateEcoBlockStdPtHistoryTB();
+	int DeleteEcoBlockStdPointHistoryTB(CString project_group, CString ship_no, UINT id);
+	int InsertEcoBlockStdPointHistoryTB(CArray<CEcoBlockStdPointHistoryInfoRecordSet, CEcoBlockStdPointHistoryInfoRecordSet&> *record_list);
+	int SelectEcoBlockStdPointHistoryTB(CString project_group, CString ship_no,
+		CString where_condition, CArray<CEcoBlockStdPointHistoryInfoRecordSet, CEcoBlockStdPointHistoryInfoRecordSet&> *record_list);
 };
 
