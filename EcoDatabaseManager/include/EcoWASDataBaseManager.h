@@ -581,6 +581,7 @@ public:
 		CArray<CProjectPropertyRecordSet, CProjectPropertyRecordSet&> *record_list);
 	int SelectProjectPropertyTB(CString project_group, CString ship_no, 
 		CString where_condition, CArray<CProjectPropertyRecordSet, CProjectPropertyRecordSet&> *record_list);
+	int SelectLastInsertIDProjectPropTBByIdentCurrent(CString project_group, CString ship_no, UINT& id);
 
 // tb_block_property
 public:
@@ -631,6 +632,7 @@ public:
 	int DeleteUploadFile(CString project_group, CString ship_no, UINT nID);
 	int DeleteUploadFile(CString project_group, CString ship_no, CString strWhereDelete);
 	int InsertUploadFile(CString project_group, CString ship_no, CUploadFileRecordSet* record);
+	int InsertUploadFile(CString project_group, CString ship_no, CArray<CUploadFileRecordSet, CUploadFileRecordSet&>* arrRecord);
 //	int UpdateUploadFile(CString project_group, CString ship_no, UINT nID, CUploadFileRecordSet* record);
 	int SelectUploadFile_With_Blob(CString project_group, CString ship_no, CString where_str,
 		CArray<CUploadFileRecordSet, CUploadFileRecordSet&>* record_list);
