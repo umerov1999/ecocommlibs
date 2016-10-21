@@ -450,3 +450,6 @@
 #define				PKCMD_InsertMeasurePointDataTB						6401
 #define				PKCMD_SelectMeasurePointDataTB						6402
 #define				PKCMD_IsExistMeasurePointDataTB						6403
+
+//호선복사기능
+#define				PKCMD_ShipNoCopy									6500

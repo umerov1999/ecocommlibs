@@ -4965,3 +4965,82 @@ public:
 //	int												m_measure_data_size;
 //	int												m_measure_data_count;
 //};
+
+//호선복사기능 실행 패킷
+class CPKShipNoCopy
+{
+public:
+	CPKShipNoCopy(void)
+	{
+
+	}
+	~CPKShipNoCopy(void)
+	{
+
+	}
+
+	CPKShipNoCopy& operator = (const CPKShipNoCopy &other)
+	{
+		m_strDB = other.m_strDB;
+		m_strOriGroup = other.m_strOriGroup;
+		m_strOriShipNo = other.m_strOriShipNo;
+		m_strResGroup = other.m_strResGroup;
+		m_strResShipNo = other.m_strResShipNo;
+
+		return *this;
+	}
+
+	CPKShipNoCopy( const CPKShipNoCopy &s )
+	{ 
+		*this = s; 
+	}
+
+	template <typename Archive>
+	void serialize(Archive& ar, const unsigned int version, BOOL bSendNRecv)
+	{
+		std::string stdStr;
+		if(bSendNRecv == TRUE)
+		{
+			stdStr = CStringConverter::CStringWToCStringA(m_strDB);
+			ar & stdStr;
+			stdStr = CStringConverter::CStringWToCStringA(m_strOriGroup);
+			ar & stdStr;
+			stdStr = CStringConverter::CStringWToCStringA(m_strOriShipNo);
+			ar & stdStr;
+			stdStr = CStringConverter::CStringWToCStringA(m_strResGroup);
+			ar & stdStr;
+			stdStr = CStringConverter::CStringWToCStringA(m_strResShipNo);
+			ar & stdStr;
+		}
+		else
+		{
+			ar & stdStr;
+			m_strDB = CStringConverter::CStringAToCStringW(stdStr.c_str());
+			ar & stdStr;
+			m_strOriGroup = CStringConverter::CStringAToCStringW(stdStr.c_str());
+			ar & stdStr;
+			m_strOriShipNo = CStringConverter::CStringAToCStringW(stdStr.c_str());
+			ar & stdStr;
+			m_strResGroup = CStringConverter::CStringAToCStringW(stdStr.c_str());
+			ar & stdStr;
+			m_strResShipNo = CStringConverter::CStringAToCStringW(stdStr.c_str());
+		}
+	}
+
+public:
+	void Init(void)
+	{
+		m_strDB = _T("");
+		m_strOriGroup = _T("");
+		m_strOriShipNo = _T("");
+		m_strResGroup = _T("");
+		m_strResShipNo = _T("");
+	}
+
+public:
+	CString m_strDB;
+	CString m_strOriGroup;
+	CString m_strOriShipNo;
+	CString m_strResGroup;
+	CString m_strResShipNo;
+};

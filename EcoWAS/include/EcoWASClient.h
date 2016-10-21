@@ -782,5 +782,9 @@ public:
 	int InsertEcoBlockStdPointHistoryTB(CArray<CEcoBlockStdPointHistoryInfoRecordSet, CEcoBlockStdPointHistoryInfoRecordSet&> *record_list);
 	int SelectEcoBlockStdPointHistoryTB(CString project_group, CString ship_no,
 		CString where_condition, CArray<CEcoBlockStdPointHistoryInfoRecordSet, CEcoBlockStdPointHistoryInfoRecordSet&> *record_list);
+
+public:
+	// 호선복사 기능
+	int ShipNoCopy(CString strDB, CString strOriGroup, CString strOriShipNo, CString strResGroup, CString strResShipNo);
 };
 

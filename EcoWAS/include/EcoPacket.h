@@ -101,6 +101,8 @@ public:
 
 		ar & m_bMeasurePointData;
 
+		ar & m_bShipNoCopy;
+
 		if(m_bNetFolderInfo == TRUE)
 			m_pkNetFolderInfo.serialize(ar, version, m_bSendRecvPacket);
 
@@ -235,6 +237,9 @@ public:
 
 		if(m_bMeasurePointData == TRUE)
 			m_pkMeasurePointData.serialize(ar, version, m_bSendRecvPacket);
+
+		if(m_bShipNoCopy == TRUE)
+			m_pkShipNoCopy.serialize(ar, version, m_bSendRecvPacket);
 	}
 
 private:
@@ -327,6 +332,8 @@ private:
 
 	//-->2015-02-12 손지훈 Assembly Tree 동기화 관련 코드 추가(현대전용)
 
+//호선복사 기능 Packet
+	CPKShipNoCopy			m_pkShipNoCopy;
 
 private:
 	BOOL m_bNetFolderInfo;
@@ -403,6 +410,8 @@ private:
 	BOOL m_bMESMeasurePoint;
 
 	BOOL m_bMeasurePointData;
+
+	BOOL m_bShipNoCopy;
 
 
 private:
@@ -567,6 +576,10 @@ public:
 	void GetPKJTHierarchyInfo_HHI(CPKJTServerProperty& pk);
 	
 //<--2014-11-20 최조영 JT관련 코드 추가
+
+//호선복사기능 관련
+	void SetPKShipNoCopy(CPKShipNoCopy& pk);
+	void GetPKShipNoCopy(CPKShipNoCopy& pk);
 
 };
 

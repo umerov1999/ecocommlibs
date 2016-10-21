@@ -66,8 +66,8 @@ private:
 private:
 	CString GetPath(CString strFilePath);
 	DWORD GetFileSize(CString strFilePathName);
-	
 	void DisplayLog(int nErrorCode, CString strErrorMsg);
+	BOOL TokenData(CString strData, CArray<CString, CString&>& arrTokenData);
 
 private:
 	BOOL CommandProcessing(CEcoPacket& recvPacket, CEcoPacket& sendPacket);
@@ -267,7 +267,8 @@ private:
 	// tb_measure_point_data
 	BOOL CmdProcMeasurePointData(CEcoPacket& recvPacket, CEcoPacket& sendPacket);
 	
-
+	//호선복사기능
+	BOOL CmdProcShipNoCopy(CEcoPacket& recvPacket, CEcoPacket& sendPacket);
 
 
 public:
