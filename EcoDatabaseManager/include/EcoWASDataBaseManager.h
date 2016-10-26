@@ -230,7 +230,9 @@ public:
 	// tb_project
 public:
 	int DeleteAllProject(CString project_group, CString ship_no);
+	int DeleteAllProjectFast(CString project_group, CString ship_no, CArray<CString, CString&>& arrNasFile);
 	int DeleteProjectTB(CString project_group, CString ship_no, UINT id);
+	int DeleteProjectTB(CString project_group, CString ship_no, CString strWhere);
 	int InsertProjectTB(CString project_group, CString ship_no, CArray<CProjectRecordSet, CProjectRecordSet&> *record);
 	int UpdateProjectTB(CString project_group, CString ship_no, CArray<CProjectRecordSet, CProjectRecordSet&> *record_list);
 	int SelectProjectTB(CString project_group, CString ship_no, CString where_condition, CArray<CProjectRecordSet, CProjectRecordSet&> *record);
@@ -269,12 +271,15 @@ public:
 public:
 	int CheckExistEbPjt(CString pjt_group, CString ship_no, UINT nPjtID, bool* bExist, CString* update_user, CString* update_date);
 	int DeleteEcoBlockPjtTB(CString project_group, CString ship_no, UINT id);
+	int DeleteEcoBlockPjtTB(CString project_group, CString ship_no, CString strWhere);
 	//insert
 	int UpdateManualEcoBlockProjectTB(CArray<CEcoBlockProjectRecordSet, CEcoBlockProjectRecordSet&> *EcoBlock_project_record, CString user_id);
 	//update
 	int UpdateManualEcoBlockProjectTB2(CArray<CEcoBlockProjectRecordSet, CEcoBlockProjectRecordSet&> *EcoBlock_project_record, CString user_id);
 	int UpdateEcoBlockProjectTB(CArray<CEcoBlockProjectRecordSet, CEcoBlockProjectRecordSet&> *EcoBlock_project_record, CString user_id);
 	int SelectEcoBlockProjectTB_With_Blob(CString project_group, CString ship_no, 
+		CString where_condition, CArray<CEcoBlockProjectRecordSet, CEcoBlockProjectRecordSet&> *EcoBlock_project_record);
+	int SelectEcoBlockProjectTB_With_Blob2(CString project_group, CString ship_no, 
 		CString where_condition, CArray<CEcoBlockProjectRecordSet, CEcoBlockProjectRecordSet&> *EcoBlock_project_record);
 	int SelectEcoBlockProjectTB_Without_Blob(CString project_group, CString ship_no, 
 		CString where_condition, CArray<CEcoBlockProjectRecordSet, CEcoBlockProjectRecordSet&> *EcoBlock_project_record);
@@ -385,6 +390,7 @@ public:
 // tb_ecoots_project
 public:
 	int DeleteEcoOtsProjectTB(CString project_group, CString ship_no, UINT id);
+	int DeleteEcoOtsProjectTB(CString project_group, CString ship_no, CString strWhere);
 //	int CreateEcoOtsProjectTB_BlobFiles(CEcoOtsProjectRecordSet* record, CString user_id);
 	int UpdateEcoOtsProjectTBOnlyTree(CString project_group, CString ship_no, CArray<CEcoOtsProjectRecordSet, CEcoOtsProjectRecordSet&> *record_list);
 	int InsertEcoOtsProjectTB(CString project_group, CString ship_no, CString user_id,
@@ -503,7 +509,7 @@ public:
 // tb_assembly_level
 public:
 	int DeleteAllProductionInfo(CString project_group, CString ship_no);
-
+	int DeleteAllProductionInfoFast(CString project_group, CString ship_no);
 	int DeleteAssemblyLevelTB(CString project_group, CString ship_no, UINT id);
 	int DeleteAllAssemblyLevelTB(CString project_group, CString ship_no);
 	int InsertAssemblyLevelTB(CString project_group, CString ship_no,
@@ -607,6 +613,7 @@ public:
 // tb_ecoblock_project_tree
 public:
 	int DeleteEcoblockProjectTreeTB(CString project_group, CString ship_no, UINT id);
+	int DeleteEcoblockProjectTreeTB(CString project_group, CString ship_no, CString strWhere);
 	int InsertEcoblockProjectTreeTB(CString project_group, CString ship_no,
 		CArray<CEcoBlockProjectTreeRecordSet, CEcoBlockProjectTreeRecordSet&> *record_list);
 	int UpdateEcoblockProjectTreeTB(CString project_group, CString ship_no,
