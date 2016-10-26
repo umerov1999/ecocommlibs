@@ -23,7 +23,7 @@ public:
 	CEcoWASClient();
 	~CEcoWASClient(void);
 
-private:
+public:
 	CString	m_strUserID;
 	CString	m_strPwd;
 	CString m_strEcoWASUrl;
@@ -785,6 +785,6 @@ public:
 
 public:
 	// 호선복사 기능
-	int ShipNoCopy(CString strDB, CString strOriGroup, CString strOriShipNo, CString strResGroup, CString strResShipNo);
+	int ShipNoCopy(CString strDB, CString strOriGroup, CString strOriShipNo, CString strResGroup, CString strResShipNo, BOOL bCheckSheet, CString strVarGroup);
 };
 

@@ -63,6 +63,8 @@ private:
 	CString m_strMES_MeasurePath;
 
 private:
+	void DisplayLog(CString strLog);
+
 	BOOL TmpBasicSettingCheck();
 	BOOL TmpRootPathSettingCheck();
 	BOOL NasBasicSettingCheck();

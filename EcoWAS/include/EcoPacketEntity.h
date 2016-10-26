@@ -4986,7 +4986,8 @@ public:
 		m_strOriShipNo = other.m_strOriShipNo;
 		m_strResGroup = other.m_strResGroup;
 		m_strResShipNo = other.m_strResShipNo;
-
+		m_bCheckSheet = other.m_bCheckSheet;
+		m_strVarGroup = other.m_strVarGroup;
 		return *this;
 	}
 
@@ -5011,6 +5012,11 @@ public:
 			ar & stdStr;
 			stdStr = CStringConverter::CStringWToCStringA(m_strResShipNo);
 			ar & stdStr;
+
+			ar & m_bCheckSheet;
+
+			stdStr = CStringConverter::CStringWToCStringA(m_strVarGroup);
+			ar & stdStr;
 		}
 		else
 		{
@@ -5024,6 +5030,11 @@ public:
 			m_strResGroup = CStringConverter::CStringAToCStringW(stdStr.c_str());
 			ar & stdStr;
 			m_strResShipNo = CStringConverter::CStringAToCStringW(stdStr.c_str());
+
+			ar & m_bCheckSheet;
+
+			ar & stdStr;
+			m_strVarGroup = CStringConverter::CStringAToCStringW(stdStr.c_str());
 		}
 	}
 
@@ -5035,6 +5046,8 @@ public:
 		m_strOriShipNo = _T("");
 		m_strResGroup = _T("");
 		m_strResShipNo = _T("");
+		m_bCheckSheet = FALSE;
+		m_strVarGroup = _T("");
 	}
 
 public:
@@ -5043,4 +5056,6 @@ public:
 	CString m_strOriShipNo;
 	CString m_strResGroup;
 	CString m_strResShipNo;
+	BOOL m_bCheckSheet;
+	CString m_strVarGroup;
 };
