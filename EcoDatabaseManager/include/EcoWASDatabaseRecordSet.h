@@ -17,7 +17,7 @@
 #endif
 
 
-#ifdef ECO_WAS_DATABASE_MANAGER
+#if defined(ECO_WAS_DATABASE_MANAGER) || defined(ASSEMBLY_TREE_SYNC)
 #include "EcoWASStructDefine.h"
 #else
 #include "EcoStructDefine.h"

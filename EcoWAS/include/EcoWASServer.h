@@ -5,6 +5,11 @@
 #include "FtpClientManager.h"
 #include "EcoWASDataBaseManager.h"
 
+#include <iostream>
+#include <map>
+using namespace std;
+typedef map<CString, CAssemblyTreeRecordSet> AssemTreeMap;
+typedef map<CString, UINT> Ta510021Map;
 
 class AFX_EXT_API CEcoWASServer
 {
@@ -284,9 +289,12 @@ public:
 	void SetJTSAPInfoForHHI(CString strIP, CString strID, CString strPwd, CString strDB, int nPort/* = 1541*/);
 	void SetJTFTPInfoForHHI(CString strIP, CString strID, CString strPwd);
 	BOOL Start_AssemblyTreeSync(void);
-	void AssemblyTreeSyncUpdate(CString group,CString shipNo, CArray<CAssemblyLevelRecordSet, CAssemblyLevelRecordSet&> *arrAssemblyLevelRS,CArray<CAssemblyTreeRecordSet, CAssemblyTreeRecordSet&> *arrAssemblyTreeRS, CArray<CJoinTa510021, CJoinTa510021&> *arrTa510021);
-	void AssemblyTreeSyncInsert(CString group,CString shipNo, CArray<CAssemblyLevelRecordSet, CAssemblyLevelRecordSet&> *arrAssemblyLevelRS, CString strAssemblyLevel, CArray<CAssemblyTreeRecordSet, CAssemblyTreeRecordSet&> *arrAssemblyTreeRS, CArray<CJoinTa510021, CJoinTa510021&> *arrTa510021);
-	void AssemblyTreeSyncInsert(CString group,CString shipNo, UINT lastLevelId,CArray<CAssemblyTreeRecordSet, CAssemblyTreeRecordSet&> *arrAssemblyTreeRS, CArray<CJoinTa510021, CJoinTa510021&> *arrTa510021);
+	//void AssemblyTreeSyncUpdate(CString group,CString shipNo, CArray<CAssemblyLevelRecordSet, CAssemblyLevelRecordSet&> *arrAssemblyLevelRS,CArray<CAssemblyTreeRecordSet, CAssemblyTreeRecordSet&> *arrAssemblyTreeRS, CArray<CJoinTa510021, CJoinTa510021&> *arrTa510021);
+	void AssemblyTreeSyncUpdate(CString group,CString shipNo, CArray<CAssemblyLevelRecordSet, CAssemblyLevelRecordSet&> *arrAssemblyLevelRS, AssemTreeMap *assTreeMap, CArray<CJoinTa510021, CJoinTa510021&> *arrTa510021);
+	//void AssemblyTreeSyncInsert(CString group,CString shipNo, CArray<CAssemblyLevelRecordSet, CAssemblyLevelRecordSet&> *arrAssemblyLevelRS, CString strAssemblyLevel, CArray<CAssemblyTreeRecordSet, CAssemblyTreeRecordSet&> *arrAssemblyTreeRS, CArray<CJoinTa510021, CJoinTa510021&> *arrTa510021);
+	void AssemblyTreeSyncInsert(CString group,CString shipNo, CArray<CAssemblyLevelRecordSet, CAssemblyLevelRecordSet&> *arrAssemblyLevelRS, CString strAssemblyLevel, AssemTreeMap *assTreeMap, CArray<CJoinTa510021, CJoinTa510021&> *arrTa510021);
+	//void AssemblyTreeSyncInsert(CString group,CString shipNo, UINT lastLevelId,CArray<CAssemblyTreeRecordSet, CAssemblyTreeRecordSet&> *arrAssemblyTreeRS, CArray<CJoinTa510021, CJoinTa510021&> *arrTa510021);
+	void AssemblyTreeSyncInsert(CString group,CString shipNo, UINT lastLevelId, AssemTreeMap *assTreeMap, CArray<CJoinTa510021, CJoinTa510021&> *arrTa510021);
 	void DisplayLog(CString log);
 
 };

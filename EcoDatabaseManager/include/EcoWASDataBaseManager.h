@@ -524,6 +524,7 @@ public:
 // tb_assembly_tree
 public:
 	int DeleteAssemblyTreeTB(CString project_group, CString ship_no, UINT id);
+	int DeleteAssemblyTreeTB(CString project_group, CString ship_no, CString strWhere);
 	int DeleteAllAssemblyTreeTB(CString project_group, CString ship_no);
 	int InsertAssemblyTreeTB(CString project_group, CString ship_no,
 		CArray<CAssemblyTreeRecordSet, CAssemblyTreeRecordSet&> *record_list);
