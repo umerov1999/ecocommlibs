@@ -24,44 +24,54 @@
 **  ADDITIONAL RESTRICTIONS.
 **
 ****************************************************************************/
-#ifndef QTN_POPUPCOLORBUTTON_H
-#define QTN_POPUPCOLORBUTTON_H
+#ifndef QTN_RIBBONBUTTON_H
+#define QTN_RIBBONBUTTON_H
 
+#include <QStyle>
 #include <QToolButton>
 
 #include "QtitanDef.h"
 
 
-class QStyleOption;
-
 QTITAN_BEGIN_NAMESPACE
-/* PopupColorButton */
-class QTITAN_EXPORT PopupColorButton : public QToolButton
+
+class RibbonButton : public QToolButton
 {
     Q_OBJECT
-    Q_PROPERTY(QColor color READ color WRITE setColor)
 public:
-    PopupColorButton(QWidget* parent = Q_NULL);
-    virtual ~PopupColorButton();
-
-public:
-    const QColor& color() const;
-    void setColor(const QColor& color);
-
+    RibbonButton(QWidget* parent = Q_NULL);
+    virtual ~RibbonButton();
 public:
     virtual QSize sizeHint() const;
 
-Q_SIGNALS:
-    void colorChanged(const QColor& color);
-
 protected:
-    virtual void paintEvent     (QPaintEvent* event);
-    virtual void mousePressEvent(QMouseEvent* event);
+    virtual bool event(QEvent* event);
+    virtual void actionEvent(QActionEvent* event);
+private:
+    QSize m_sizeHint;
+    Qt::ToolButtonStyle m_saveButtonStyle;
+    Qt::ArrowType m_saveArrowType;
+private:
+    Q_DISABLE_COPY(RibbonButton)
+};
 
+/* RibbonTitleButton */
+class RibbonTitleButton : public QToolButton
+{
+    Q_OBJECT
+public:
+    RibbonTitleButton(QWidget* parent, QStyle::SubControl subControl);
+    virtual ~RibbonTitleButton();
+public:
+    QStyle::SubControl subControl() const;
 protected:
-    QColor m_color;
+    virtual void paintEvent(QPaintEvent*);
+private:
+    QStyle::SubControl m_subControl;
+private:
+    Q_DISABLE_COPY(RibbonTitleButton)
 };
 
 QTITAN_END_NAMESPACE
 
-#endif // QTN_POPUPCOLORBUTTON_H
+#endif // QTN_RIBBONBUTTON_H

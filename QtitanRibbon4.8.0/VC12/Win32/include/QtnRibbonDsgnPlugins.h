@@ -24,44 +24,39 @@
 **  ADDITIONAL RESTRICTIONS.
 **
 ****************************************************************************/
-#ifndef QTN_POPUPCOLORBUTTON_H
-#define QTN_POPUPCOLORBUTTON_H
 
-#include <QToolButton>
+#ifndef QTITAN_RIBBON_DSGN_H
+#define QTITAN_RIBBON_DSGN_H
 
-#include "QtitanDef.h"
+#include <qglobal.h>
 
+#if QT_VERSION >= 0x050500
+    #include <QtUiPlugin/QDesignerCustomWidgetInterface>
+#else
+    #include <QtDesigner/QDesignerCustomWidgetInterface>
+#endif
 
-class QStyleOption;
-
-QTITAN_BEGIN_NAMESPACE
-/* PopupColorButton */
-class QTITAN_EXPORT PopupColorButton : public QToolButton
+namespace Qtitan
 {
-    Q_OBJECT
-    Q_PROPERTY(QColor color READ color WRITE setColor)
-public:
-    PopupColorButton(QWidget* parent = Q_NULL);
-    virtual ~PopupColorButton();
+    /* QtitanRibbonDsgnPlugins */
+    class QtitanRibbonDsgnPlugins: public QObject, public QDesignerCustomWidgetCollectionInterface
+    {
+        Q_OBJECT
+        Q_INTERFACES(QDesignerCustomWidgetCollectionInterface)
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 0, 0))
+        Q_PLUGIN_METADATA(IID "org.devmachines.Qt.QDesignerCustomWidgetCollectionInterface")
+#endif
+    public:
+        QtitanRibbonDsgnPlugins(QObject *parent = 0);
+        QList<QDesignerCustomWidgetInterface*> customWidgets() const;
 
-public:
-    const QColor& color() const;
-    void setColor(const QColor& color);
+    private:
+        QList<QDesignerCustomWidgetInterface *> m_plugins;
 
-public:
-    virtual QSize sizeHint() const;
+    private:
+        Q_DISABLE_COPY(QtitanRibbonDsgnPlugins)
+    };
 
-Q_SIGNALS:
-    void colorChanged(const QColor& color);
+}; //namespace Qtitan
 
-protected:
-    virtual void paintEvent     (QPaintEvent* event);
-    virtual void mousePressEvent(QMouseEvent* event);
-
-protected:
-    QColor m_color;
-};
-
-QTITAN_END_NAMESPACE
-
-#endif // QTN_POPUPCOLORBUTTON_H
+#endif //QTITAN_RIBBON_DSGN_H

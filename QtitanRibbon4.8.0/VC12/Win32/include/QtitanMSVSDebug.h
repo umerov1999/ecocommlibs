@@ -1,6 +1,6 @@
 /****************************************************************************
 **
-** Qtitan Library by Developer Machines (Microsoft-Ribbon implementation for Qt.C++)
+** Qtitan Library by Developer Machines
 ** 
 ** Copyright (c) 2009-2015 Developer Machines (http://www.devmachines.com)
 **           ALL RIGHTS RESERVED
@@ -24,44 +24,26 @@
 **  ADDITIONAL RESTRICTIONS.
 **
 ****************************************************************************/
-#ifndef QTN_POPUPCOLORBUTTON_H
-#define QTN_POPUPCOLORBUTTON_H
 
-#include <QToolButton>
+#ifndef QTITAN_MSVSDEBUG_H
+#define QTITAN_MSVSDEBUG_H
 
-#include "QtitanDef.h"
+#ifdef _MSC_VER
+    #ifdef __AFX_H__
+        #ifdef _DEBUG
+        #define new DEBUG_NEW
+        #undef THIS_FILE
+        #define THIS_FILE __FILE__
+        #endif
+    #else // __AFX_H__
+        #define _CRTDBG_MAP_ALLOC
+        #include <stdlib.h>
+        #include <crtdbg.h>
+        #ifdef _DEBUG
+        #define new new(_NORMAL_BLOCK, __FILE__, __LINE__)
+        #endif
+    #endif // __AFX_H__
+#endif // _MSC_VER
 
+#endif //QTITAN_MSVSDEBUG_H
 
-class QStyleOption;
-
-QTITAN_BEGIN_NAMESPACE
-/* PopupColorButton */
-class QTITAN_EXPORT PopupColorButton : public QToolButton
-{
-    Q_OBJECT
-    Q_PROPERTY(QColor color READ color WRITE setColor)
-public:
-    PopupColorButton(QWidget* parent = Q_NULL);
-    virtual ~PopupColorButton();
-
-public:
-    const QColor& color() const;
-    void setColor(const QColor& color);
-
-public:
-    virtual QSize sizeHint() const;
-
-Q_SIGNALS:
-    void colorChanged(const QColor& color);
-
-protected:
-    virtual void paintEvent     (QPaintEvent* event);
-    virtual void mousePressEvent(QMouseEvent* event);
-
-protected:
-    QColor m_color;
-};
-
-QTITAN_END_NAMESPACE
-
-#endif // QTN_POPUPCOLORBUTTON_H
