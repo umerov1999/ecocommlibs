@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<license version="v1.0" id="57fae9ec30fce8142bba046a">
+    <owner>上海叁明索特信息科技有限公司</owner>
+    <user>孙载桓</user>
+    <email>zaihuan@saminis.com</email>
+    <bundleId>5796ae3228cfbb3972ad2eba</bundleId>
+    <appName>工业检测表</appName>
+    <driverTypes>
+        <driverType>HID</driverType>
+    </driverTypes>
+    <penTypes>
+        <penType penName="ADP_103" ID="5" />
+        <penType penName="EN_ADP_601" ID="6" />
+        <penType penName="EN_APD_611" ID="7" />
+    </penTypes>
+    <licensedDate>20160915</licensedDate>
+    <expiredDate>20171115</expiredDate>
+    <authId>5796ae3228cfbb3972ad2ebb</authId>
+    <secret>JDVeN202bGotXmQrcSYtIyt5MTk0QHQhZmJ5cmppKTY=</secret>
+    <pageAddress start="70.0.17.0" end="70.0.17.19" pageCount="20" />
+    <authorizer company="北京拓思德科技有限公司" website="http://www.tstudy.com.cn" />
+    <signature value="A1332D82EBB6183CD501AA3CCCC07B4AB88E7B0F8313B9320BF86393836BA9BA8BE160F31F9853629B46018C7A27C423DC43DDFDBEE4184102143492192482A547F7B72AC115FF870CC1B3F2CBF840F296D7618F162B5739A05944945E8E921CB7622529E2C596B1CF943344AF3F4AA2DE8C152281F2826A08D3E7A4AE28E9EE" />
+</license>
