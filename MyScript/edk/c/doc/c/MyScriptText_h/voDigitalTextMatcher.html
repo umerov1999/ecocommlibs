@@ -1,0 +1,744 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>voDigitalTextMatcher</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="voDigitalTextMatcher";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptText.h</FONT>
+<BR>
+Type voDigitalTextMatcher</H2>
+<PRE>
+<a href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</a>
+  <IMG SRC="../..//resources/inherit.gif" ALT="extended by "><B>voDigitalTextMatcher</B>
+</PRE>
+<DL>
+<DT>
+<B>Properties:</B>
+<DD>
+<a href="../../c/MyScriptEngine_h/enum_VO_ENGINEOBJECT_PROP.html">VO_ENGINEOBJECT_PROP</a>
+</DD>
+</DT>
+</DL>
+<DL>
+<DT>
+<B>All Implemented Interfaces:</B>
+<DD>
+<a href="../../c/MyScriptEngine_h/voIAttachTarget.html">voIAttachTarget</a>, <a href="../../c/MyScriptText_h/voIDigitalTextMatcher.html">voIDigitalTextMatcher</a>
+</DD>
+</DT>
+</DL>
+<HR>
+<CODE>#include &lt;c/MyScriptText.h&gt;</CODE>
+<BR>
+<CODE>typedef  <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A>  <B>voDigitalTextMatcher</B></CODE>
+<BR>
+<CODE><I>&nbsp;extends </I><a href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</a><I>&nbsp;implements </I><a href="../../c/MyScriptEngine_h/voIAttachTarget.html">voIAttachTarget</a>, <a href="../../c/MyScriptText_h/voIDigitalTextMatcher.html">voIDigitalTextMatcher</a></CODE>
+</P>
+<P> 
+<CODE><A href="../../c/MyScriptText_h/voDigitalTextMatcher.html">voDigitalTextMatcher</A></CODE> reference type. <P>
+
+<P>    
+</P>        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Interface_Function_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Interface Function Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIAttachTarget::attach">voIAttachTarget::attach</A>(voEngine engine, voEngineObject target, voEngineObject other)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Attaches an object to this attach target. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIAttachTarget::detach">voIAttachTarget::detach</A>(voEngine engine, voEngineObject target, voEngineObject other)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Detaches an object from this attach target. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voEngineObject</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIAttachTarget::getAttachedAt">voIAttachTarget::getAttachedAt</A>(voEngine engine, voEngineObject target, int32_t index)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Returns the object attached at the specified index. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>int32_t</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIAttachTarget::getAttachedCount">voIAttachTarget::getAttachedCount</A>(voEngine engine, voEngineObject target)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Returns the number of objects attached to this attach target. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voYesNo</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIDigitalTextMatcher::matches">voIDigitalTextMatcher::matches</A>(voEngine engine, voDigitalTextMatcher target, voCharset charset, const voString *string)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Answers the question: does the given string match the current resource configuration? </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Interface_Function_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Interface Function Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="voIAttachTarget::attach"></A>
+<H3 class="code">attach</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B><A href="../../c/MyScriptEngine_h/voIAttachTarget.html">voIAttachTarget</A>::attach</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> other)</PRE>
+<DL>
+<DD>Attaches an object to this attach target. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the attach target. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+other
+</B>
+<DD>
+<parameterdescription>
+
+<P>the object to be attached.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>other</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OBJECT">VO_INVALID_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>other</CODE> cannot be attached to  <CODE>target</CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ENGINE_ERR.html#VO_NOT_COMPILED">VO_NOT_COMPILED</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>other</CODE> implements the  <CODE><A href="../../c/MyScriptEngine_h/voICompilable.html">voICompilable</A></CODE> interface and has to be compiled prior to being attached. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_LIMIT_EXCEEDED">VO_LIMIT_EXCEEDED</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the number of attach references to  <CODE>other</CODE> would exceed  <CODE>65535</CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIAttachTarget::detach"></A>
+<H3 class="code">detach</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B><A href="../../c/MyScriptEngine_h/voIAttachTarget.html">voIAttachTarget</A>::detach</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> other)</PRE>
+<DL>
+<DD>Detaches an object from this attach target. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the attach target. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+other
+</B>
+<DD>
+<parameterdescription>
+
+<P>the object to be detached.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>other</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OBJECT">VO_INVALID_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>other</CODE> is not attached to  <CODE>target</CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIAttachTarget::getAttachedAt"></A>
+<H3 class="code">getAttachedAt</H3>
+<PRE>
+<A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> <B><A href="../../c/MyScriptEngine_h/voIAttachTarget.html">voIAttachTarget</A>::getAttachedAt</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> index)</PRE>
+<DL>
+<DD>Returns the object attached at the specified index. <P>
+
+<P>
+<DL>
+<DT>
+<B>Note:</B>
+<DD>
+<P>The order in which the objects are returned does not necessarily correspond to the order in which they were attached.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the attach target. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+index
+</B>
+<DD>
+<parameterdescription>
+
+<P>the index of the requested attached object.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P>the attached object on success, otherwise  <CODE>NULL</CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INDEX_OUT_OF_BOUNDS">VO_INDEX_OUT_OF_BOUNDS</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>index</CODE> is out of bounds. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_LIMIT_EXCEEDED">VO_LIMIT_EXCEEDED</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the number of instances of the specified type would exceed the allowed limit (please remember that the limit can be shared by several types). </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIAttachTarget::getAttachedCount"></A>
+<H3 class="code">getAttachedCount</H3>
+<PRE>
+<A href="../../c/std/stdint_h/int32_t.html">int32_t</A> <B><A href="../../c/MyScriptEngine_h/voIAttachTarget.html">voIAttachTarget</A>::getAttachedCount</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target)</PRE>
+<DL>
+<DD>Returns the number of objects attached to this attach target. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the attach target.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P>the number of objects on success, otherwise  <CODE>-1</CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIDigitalTextMatcher::matches"></A>
+<H3 class="code">matches</H3>
+<PRE>
+<A href="../../c/MyScriptEngine_h/voYesNo.html">voYesNo</A> <B><A href="../../c/MyScriptText_h/voIDigitalTextMatcher.html">voIDigitalTextMatcher</A>::matches</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptText_h/voDigitalTextMatcher.html">voDigitalTextMatcher</A> target, <A href="../../c/MyScriptEngine_h/voCharset.html">voCharset</A> charset, const <A href="../../c/MyScriptEngine_h/voString.html">voString</A> *string)</PRE>
+<DL>
+<DD>Answers the question: does the given string match the current resource configuration? <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target digital text matcher. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+charset
+</B>
+<DD>
+<parameterdescription>
+
+<P>the charset used to encode parameter strings. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+string
+</B>
+<DD>
+<parameterdescription>
+
+<P>the string to be tested.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_YES">VO_YES</A></CODE> or  <CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_NO">VO_NO</A></CODE> on success, otherwise  <CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html">VO_ERR</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> is not a  <CODE><A href="../../c/MyScriptText_h/voDigitalTextMatcher.html">voDigitalTextMatcher</A></CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>charset</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>charset</CODE> reference is  <CODE>NULL</CODE> and no default charset was set. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OBJECT">VO_INVALID_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>charset</CODE> is not a  <CODE><A href="../../c/MyScriptEngine_h/voCharset.html">voCharset</A></CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>string</CODE> or its  <CODE>bytes</CODE> member is not readable. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_ARGUMENT">VO_INVALID_ARGUMENT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>string</CODE> is empty. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

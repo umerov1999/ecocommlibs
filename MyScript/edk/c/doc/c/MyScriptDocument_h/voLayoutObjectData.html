@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>voLayoutObjectData</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="voLayoutObjectData";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptDocument.h</FONT>
+<BR>
+Type voLayoutObjectData</H2>
+<PRE>
+<B>voLayoutObjectData</B>
+</PRE>
+<HR>
+<CODE>#include &lt;c/MyScriptDocument.h&gt;</CODE>
+<BR>
+<CODE>typedef  struct <A href="../../c/MyScriptDocument_h/struct__voLayoutObjectData.html">_voLayoutObjectData</A>  <B>voLayoutObjectData</B></CODE>
+<BR>
+<CODE></CODE>
+</P>
+<P>Represents the properties of an object layout item. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voLayout.html">voLayout</a>, <a href="../../c/MyScriptDocument_h/voLayoutItemData.html">voLayoutItemData</a>
+</DD>
+</DT>
+</DL>
+
+</P>    
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Member_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="3"><FONT SIZE="+2"><B>Member Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>const char *</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE></CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#mimeType">mimeType</A></CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              The mime type of the object, if specified. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voRectangle</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE></CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#rectangle">rectangle</A></CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              The position of the object in the layout, prior to the transformation if there is one. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>const char *</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE></CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#transformId">transformId</A></CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              The identifier of the transformation to be applied to the object, if any. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>const char *</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE></CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#url">url</A></CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              The URL of the object. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Member_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Member Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="mimeType"></A>
+<H3 class="code">mimeType</H3>
+<PRE>const char * <B>mimeType</B>
+</PRE>
+<DL>
+<DD>The mime type of the object, if specified. <P>
+
+<P>Otherwise  <CODE>NULL</CODE>. </P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="rectangle"></A>
+<H3 class="code">rectangle</H3>
+<PRE>
+<A href="../../c/MyScriptInk_h/voRectangle.html">voRectangle</A> <B>rectangle</B>
+</PRE>
+<DL>
+<DD>The position of the object in the layout, prior to the transformation if there is one. <P>
+        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="transformId"></A>
+<H3 class="code">transformId</H3>
+<PRE>const char * <B>transformId</B>
+</PRE>
+<DL>
+<DD>The identifier of the transformation to be applied to the object, if any. <P>
+
+<P>Otherwise  <CODE>NULL</CODE>.</P>
+<P>You have to give this identifier to  <CODE>voILayout::getTransform()</CODE> to get the transform matrix. </P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="url"></A>
+<H3 class="code">url</H3>
+<PRE>const char * <B>url</B>
+</PRE>
+<DL>
+<DD>The URL of the object. <P>
+
+<P>You have to give this URL to  <CODE>voIDocument::extractObjectTo()</CODE> in order to retrieve the object data. </P>        
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

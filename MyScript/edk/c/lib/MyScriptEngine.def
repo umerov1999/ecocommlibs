@@ -1,0 +1,25 @@
+LIBRARY MyScriptEngine
+EXPORTS
+    voCreateEngine
+    voDestroyEngine
+    voGetError
+    voSetError
+    voGetInterface
+    voImplements
+    voIsCompatible
+    voGetTypeProperty
+    voSetTypeProperty
+    voCreateObject
+    voCreateObjectEx
+    voLoadObject
+    voMakeObject
+    voStoreObject
+    voAcquireObject
+    voReleaseObject
+    voIsSame
+    voGetType
+    voGetProperty
+    voSetProperty
+    voCloneObject
+    voLoadObjectFromFile
+    voStoreObjectToFile

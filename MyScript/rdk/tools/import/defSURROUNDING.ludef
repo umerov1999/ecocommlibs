@@ -1,0 +1,17 @@
+#
+# defSURROUNDING.ludef
+# Defines the OPEN_SURROUDING and CLOSE_SURROUNDING characters
+#
+# Copyright (c) MyScript
+#
+
+# This file is encoded using the UTF-8 charset
+@set charset UTF-8
+
+# The OPEN_SURROUNDING character is mapped to the codepoint U+F0000, which
+# is mapped to the sequence (F3, B0, 80, 80) in UTF-8
+OPEN_SURROUNDING = 󰀀
+
+# The OPEN_SURROUNDING character is mapped to the codepoint U+F0001, which
+# is mapped to the sequence (F3, B0, 80, 81) in UTF-8
+CLOSE_SURROUNDING = 󰀁

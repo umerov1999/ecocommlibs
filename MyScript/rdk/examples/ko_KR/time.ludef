@@ -1,0 +1,41 @@
+# Lexical unit Korean: time
+#
+# 2006/11/08
+# v1.0
+
+###############################
+# Time using Korean
+
+### Hours ###
+# 24
+h24 = (0|1)?[0-9]|2[0-4]
+# 12
+h12 = 0?[0-9]|1[012]
+
+### Minutes ###
+mn = [0-5]?[0-9]
+
+### Seconds ###
+sc = [0-5]?[0-9]
+
+koreanTime = ((오전|오후|(a|p)\.?m\.?) ?){h12}시 ?({mn}분 ?)?({sc}초)?|{h12}시 ?({mn}분 ?)?({sc}초)?( ?(a|p)\.?m\.?)
+koreanTime = {koreanTime}|{h24}시 ?({mn}분 ?)?({sc}초)?
+
+###############################
+# Time using western style
+# hh:mm:ss
+
+# Hours
+hh = (0|1)?[0-9]|2[0-4]
+
+# Minutes
+mm = [0-5]?[0-9]
+
+# Seconds
+ss = {mm}
+
+westTime =  ((오전|오후|(a|p)\.?m\.?) ?)?{hh}:{mm}(:{ss})?|{hh}:{mm}(:{ss})?( ?(a|p)\.?m\.?)
+
+time = {koreanTime}|{westTime}
+
+{time}

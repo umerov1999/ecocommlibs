@@ -1,0 +1,16 @@
+# Lexical unit chinese: number
+#
+# 28/02/2005
+# v1.0
+
+@set charset UTF-8
+
+# Arabian numbers
+d = [0-9]
+d_oneToNine = [1-9]
+
+integer = [+\-]?(0|{d_oneToNine}{d}*|{d_oneToNine}{d}?{d}?(\,{d}{d}{d})*)
+
+number = {integer}(\.{d}+)?
+
+{number}

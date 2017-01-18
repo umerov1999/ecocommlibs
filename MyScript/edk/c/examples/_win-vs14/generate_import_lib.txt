@@ -1,0 +1,4 @@
+This file does nothing by itself but is associated with a custom build step
+that generates the VS import lib files from the module definition file
+  "edk/c/lib/MyScriptEngine.def"
+

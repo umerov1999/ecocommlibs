@@ -1,0 +1,1456 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>_voIInkStrokeFormatBuilder</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="_voIInkStrokeFormatBuilder";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptInk.h</FONT>
+<BR>
+Structure _voIInkStrokeFormatBuilder</H2>
+<PRE>
+<B></B>
+</PRE>
+<HR>
+<CODE>#include &lt;c/MyScriptInk.h&gt;</CODE>
+<BR>
+<CODE>struct <B>_voIInkStrokeFormatBuilder</B></CODE>
+<BR>
+<CODE></CODE>
+</P>
+<P></P>Functions composing the  <CODE><A href="../../c/MyScriptInk_h/voIInkStrokeFormatBuilder.html">voIInkStrokeFormatBuilder</A></CODE> interface. <P>
+
+<P>This interface exposes the public methods of the  <CODE><A href="../../c/MyScriptInk_h/voInkStrokeFormatBuilder.html">voInkStrokeFormatBuilder</A></CODE> type.</P>
+<P> 
+<implementingType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">voInkStrokeFormatBuilder </implementingType> 
+</P>    
+</P>
+<HR>
+<P>
+<A NAME="Member_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="3"><FONT SIZE="+2"><B>Member Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#addChannel">addChannel</A>)(voEngine engine, voInkStrokeFormatBuilder target, voCharset charset, const voString *name)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Adds a new channel to the stroke format to build. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#clear">clear</A>)(voEngine engine, voInkStrokeFormatBuilder target)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Clears this stroke format builder before building a new stroke format. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voInkStrokeFormat</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#createStrokeFormat">createStrokeFormat</A>)(voEngine engine, voInkStrokeFormatBuilder target)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Creates the stroke format. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voInkStrokeFormat</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#parseStrokeFormat">parseStrokeFormat</A>)(voEngine engine, voCharset charset, const voString *string)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Creates a stroke format from its string representation. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#setChannelMax">setChannelMax</A>)(voEngine engine, voInkStrokeFormatBuilder target, voCharset charset, const voString *name, float max)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Sets the maximum value of a channel. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#setChannelMin">setChannelMin</A>)(voEngine engine, voInkStrokeFormatBuilder target, voCharset charset, const voString *name, float min)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Sets the minimum value of a channel. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#setChannelQuantization">setChannelQuantization</A>)(voEngine engine, voInkStrokeFormatBuilder target, voCharset charset, const voString *name, float quantization)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Sets the quantization of a channel. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#setChannelUnit">setChannelUnit</A>)(voEngine engine, voInkStrokeFormatBuilder target, voCharset charset, const voString *name, const voString *unit)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Sets the unit of a channel. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#setSampleRate">setSampleRate</A>)(voEngine engine, voInkStrokeFormatBuilder target, float rate, bool uniform)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Sets the sample rate and indicates whether it is uniform or not. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<P>
+<A NAME="Member_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Member Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="addChannel"></A>
+<H3 class="code">addChannel</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B>addChannel</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptInk_h/voInkStrokeFormatBuilder.html">voInkStrokeFormatBuilder</A> target, <A href="../../c/MyScriptEngine_h/voCharset.html">voCharset</A> charset, const <A href="../../c/MyScriptEngine_h/voString.html">voString</A> *name)</PRE>
+<DL>
+<DD>Adds a new channel to the stroke format to build. <P>
+
+<P>Here below are the predefined names and their recognized meaning:</P>
+<P>
+<PRE>
+  Name | Description
+  ---- | -----------
+  X    | Horizontal position, increasing to the right.
+  Y    | Vertical position, increasing downward.
+  T    | Sample timestamp.
+  F    | Tip force.
+  W    | Stroke width.
+  OTx  | Tilt along the X axis.
+  OTy  | Tilt along the Y axis.
+  OA   | Azimuth angle (yaw).
+  OE   | Elevation angle (pitch).
+  OR   | Rotation (counter-clockwise rotation around the pen axis).
+</PRE>
+</P>
+<P>You can also store application specific values by using a name not found in the table above.</P>
+<P>
+<DL>
+<DT>
+<B>Note:</B>
+<DD>
+<P>A stroke format must at least contain  <CODE>X</CODE> and  <CODE>Y</CODE> channels.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke format builder. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+charset
+</B>
+<DD>
+<parameterdescription>
+
+<P>the charset used to encode parameter strings. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+name
+</B>
+<DD>
+<parameterdescription>
+
+<P>the name of channel to be added.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> is not a  <CODE><A href="../../c/MyScriptInk_h/voInkStrokeFormatBuilder.html">voInkStrokeFormatBuilder</A></CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>charset</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>charset</CODE> reference is  <CODE>NULL</CODE> and no default charset was set. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OBJECT">VO_INVALID_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>charset</CODE> is not a  <CODE><A href="../../c/MyScriptEngine_h/voCharset.html">voCharset</A></CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>name</CODE> or its  <CODE>bytes</CODE> member is not readable. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_STATE">VO_INVALID_STATE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when a channel with this  <CODE>name</CODE> already exists. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="clear"></A>
+<H3 class="code">clear</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B>clear</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptInk_h/voInkStrokeFormatBuilder.html">voInkStrokeFormatBuilder</A> target)</PRE>
+<DL>
+<DD>Clears this stroke format builder before building a new stroke format. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke format builder.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> is not a  <CODE><A href="../../c/MyScriptInk_h/voInkStrokeFormatBuilder.html">voInkStrokeFormatBuilder</A></CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="createStrokeFormat"></A>
+<H3 class="code">createStrokeFormat</H3>
+<PRE>
+<A href="../../c/MyScriptInk_h/voInkStrokeFormat.html">voInkStrokeFormat</A> <B>createStrokeFormat</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptInk_h/voInkStrokeFormatBuilder.html">voInkStrokeFormatBuilder</A> target)</PRE>
+<DL>
+<DD>Creates the stroke format. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke format builder.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P>the newly created  <CODE><A href="../../c/MyScriptInk_h/voInkStrokeFormat.html">voInkStrokeFormat</A></CODE> instance on success, otherwise  <CODE>NULL</CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> is not a  <CODE><A href="../../c/MyScriptInk_h/voInkStrokeFormatBuilder.html">voInkStrokeFormatBuilder</A></CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_LIMIT_EXCEEDED">VO_LIMIT_EXCEEDED</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the number of  <CODE><A href="../../c/MyScriptInk_h/voInkStrokeFormat.html">voInkStrokeFormat</A></CODE> instances would exceed the allowed limit (please remember that the limit can be shared by several types). </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="parseStrokeFormat"></A>
+<H3 class="code">parseStrokeFormat</H3>
+<PRE>
+<A href="../../c/MyScriptInk_h/voInkStrokeFormat.html">voInkStrokeFormat</A> <B>parseStrokeFormat</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voCharset.html">voCharset</A> charset, const <A href="../../c/MyScriptEngine_h/voString.html">voString</A> *string)</PRE>
+<DL>
+<DD>Creates a stroke format from its string representation. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+charset
+</B>
+<DD>
+<parameterdescription>
+
+<P>the charset used to encode parameter strings. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+string
+</B>
+<DD>
+<parameterdescription>
+
+<P>the string representation of the stroke format to be created.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P>the newly created  <CODE><A href="../../c/MyScriptInk_h/voInkStrokeFormat.html">voInkStrokeFormat</A></CODE> instance on success, otherwise  <CODE>NULL</CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>charset</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>charset</CODE> reference is  <CODE>NULL</CODE> and no default charset was set. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OBJECT">VO_INVALID_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>charset</CODE> is not a  <CODE><A href="../../c/MyScriptEngine_h/voCharset.html">voCharset</A></CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>string</CODE> or its  <CODE>bytes</CODE> member is not readable. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_LIMIT_EXCEEDED">VO_LIMIT_EXCEEDED</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the number of  <CODE><A href="../../c/MyScriptInk_h/voInkStrokeFormat.html">voInkStrokeFormat</A></CODE> instances would exceed the allowed limit (please remember that the limit can be shared by several types). </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="setChannelMax"></A>
+<H3 class="code">setChannelMax</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B>setChannelMax</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptInk_h/voInkStrokeFormatBuilder.html">voInkStrokeFormatBuilder</A> target, <A href="../../c/MyScriptEngine_h/voCharset.html">voCharset</A> charset, const <A href="../../c/MyScriptEngine_h/voString.html">voString</A> *name, float max)</PRE>
+<DL>
+<DD>Sets the maximum value of a channel. <P>
+
+<P>This maximum value is typically used together with quantization and maximum value to enable optimum integer quantization.</P>
+<P>
+<DL>
+<DT>
+<B>Note:</B>
+<DD>
+<P>The values stored in the channel will not be checked against this maximum: values below the maximum may be stored in the channel.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke format builder. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+charset
+</B>
+<DD>
+<parameterdescription>
+
+<P>the charset used to encode parameter strings. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+name
+</B>
+<DD>
+<parameterdescription>
+
+<P>the name of channel. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+max
+</B>
+<DD>
+<parameterdescription>
+
+<P>the maximum value in the channel.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> is not a  <CODE><A href="../../c/MyScriptInk_h/voInkStrokeFormatBuilder.html">voInkStrokeFormatBuilder</A></CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>charset</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>charset</CODE> reference is  <CODE>NULL</CODE> and no default charset was set. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OBJECT">VO_INVALID_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>charset</CODE> is not a  <CODE><A href="../../c/MyScriptEngine_h/voCharset.html">voCharset</A></CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>name</CODE> or its  <CODE>bytes</CODE> member is not readable. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_ARGUMENT">VO_INVALID_ARGUMENT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>name</CODE> does not correspond to a channel. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="setChannelMin"></A>
+<H3 class="code">setChannelMin</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B>setChannelMin</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptInk_h/voInkStrokeFormatBuilder.html">voInkStrokeFormatBuilder</A> target, <A href="../../c/MyScriptEngine_h/voCharset.html">voCharset</A> charset, const <A href="../../c/MyScriptEngine_h/voString.html">voString</A> *name, float min)</PRE>
+<DL>
+<DD>Sets the minimum value of a channel. <P>
+
+<P>This minimum value is typically used together with quantization and maximum value to enable optimum integer quantization.</P>
+<P>
+<DL>
+<DT>
+<B>Note:</B>
+<DD>
+<P>The values stored in the channel will not be checked against this minimum: values below the minimum may be stored in the channel.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke format builder. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+charset
+</B>
+<DD>
+<parameterdescription>
+
+<P>the charset used to encode parameter strings. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+name
+</B>
+<DD>
+<parameterdescription>
+
+<P>the name of channel. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+min
+</B>
+<DD>
+<parameterdescription>
+
+<P>the minimum value in the channel.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> is not a  <CODE><A href="../../c/MyScriptInk_h/voInkStrokeFormatBuilder.html">voInkStrokeFormatBuilder</A></CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>charset</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>charset</CODE> reference is  <CODE>NULL</CODE> and no default charset was set. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OBJECT">VO_INVALID_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>charset</CODE> is not a  <CODE><A href="../../c/MyScriptEngine_h/voCharset.html">voCharset</A></CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>name</CODE> or its  <CODE>bytes</CODE> member is not readable. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_ARGUMENT">VO_INVALID_ARGUMENT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>name</CODE> does not correspond to a channel. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="setChannelQuantization"></A>
+<H3 class="code">setChannelQuantization</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B>setChannelQuantization</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptInk_h/voInkStrokeFormatBuilder.html">voInkStrokeFormatBuilder</A> target, <A href="../../c/MyScriptEngine_h/voCharset.html">voCharset</A> charset, const <A href="../../c/MyScriptEngine_h/voString.html">voString</A> *name, float quantization)</PRE>
+<DL>
+<DD>Sets the quantization of a channel. <P>
+
+<P>This quantization value is typically used together with minimum and maximum value to enable optimum integer quantization. A value of  <CODE>0.0f</CODE> means the quantization is unknown.</P>
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke format builder. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+charset
+</B>
+<DD>
+<parameterdescription>
+
+<P>the charset used to encode parameter strings. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+name
+</B>
+<DD>
+<parameterdescription>
+
+<P>the name of channel. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+quantization
+</B>
+<DD>
+<parameterdescription>
+
+<P>the channel quantization.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> is not a  <CODE><A href="../../c/MyScriptInk_h/voInkStrokeFormatBuilder.html">voInkStrokeFormatBuilder</A></CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>charset</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>charset</CODE> reference is  <CODE>NULL</CODE> and no default charset was set. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OBJECT">VO_INVALID_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>charset</CODE> is not a  <CODE><A href="../../c/MyScriptEngine_h/voCharset.html">voCharset</A></CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>name</CODE> or its  <CODE>bytes</CODE> member is not readable. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_ARGUMENT">VO_INVALID_ARGUMENT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>quantization &lt; 0.0f</CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="setChannelUnit"></A>
+<H3 class="code">setChannelUnit</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B>setChannelUnit</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptInk_h/voInkStrokeFormatBuilder.html">voInkStrokeFormatBuilder</A> target, <A href="../../c/MyScriptEngine_h/voCharset.html">voCharset</A> charset, const <A href="../../c/MyScriptEngine_h/voString.html">voString</A> *name, const <A href="../../c/MyScriptEngine_h/voString.html">voString</A> *unit)</PRE>
+<DL>
+<DD>Sets the unit of a channel. <P>
+
+<P>Unit should be expressed as a string and formatted following the SI (International System of Units), for example:  <CODE>mm</CODE>,  <CODE>s</CODE>, etc.</P>
+<P>A dpi resolution can be expressed as the invert of a unit, i.e. a 1000 dpi resolution corresponds to a unit described as  <CODE>0.001 in</CODE>.</P>
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke format builder. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+charset
+</B>
+<DD>
+<parameterdescription>
+
+<P>the charset used to encode parameter strings. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+name
+</B>
+<DD>
+<parameterdescription>
+
+<P>the name of the channel. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+unit
+</B>
+<DD>
+<parameterdescription>
+
+<P>the unit of the channel.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> is not a  <CODE><A href="../../c/MyScriptInk_h/voInkStrokeFormatBuilder.html">voInkStrokeFormatBuilder</A></CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>charset</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>charset</CODE> reference is  <CODE>NULL</CODE> and no default charset was set. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OBJECT">VO_INVALID_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>charset</CODE> is not a  <CODE><A href="../../c/MyScriptEngine_h/voCharset.html">voCharset</A></CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>name</CODE> or its  <CODE>bytes</CODE> member is not readable. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>unit</CODE> or its  <CODE>bytes</CODE> member is not readable. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_ARGUMENT">VO_INVALID_ARGUMENT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>unit</CODE> cannot be parsed as a unit string description. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="setSampleRate"></A>
+<H3 class="code">setSampleRate</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B>setSampleRate</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptInk_h/voInkStrokeFormatBuilder.html">voInkStrokeFormatBuilder</A> target, float rate, <A href="../../c/std/stdbool_h/bool.html">bool</A> uniform)</PRE>
+<DL>
+<DD>Sets the sample rate and indicates whether it is uniform or not. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke format builder. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+rate
+</B>
+<DD>
+<parameterdescription>
+
+<P>the nominal sample rate. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+uniform
+</B>
+<DD>
+<parameterdescription>
+
+<P>indicates whether the sample rate is uniform or not.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> is not a  <CODE><A href="../../c/MyScriptInk_h/voInkStrokeFormatBuilder.html">voInkStrokeFormatBuilder</A></CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</P>
+</BODY>
+</HTML>

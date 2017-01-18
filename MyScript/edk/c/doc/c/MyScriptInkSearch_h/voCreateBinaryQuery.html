@@ -1,0 +1,190 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>voCreateBinaryQuery</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="voCreateBinaryQuery";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptInkSearch.h</FONT>
+<BR>
+Function voCreateBinaryQuery</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptInkSearch.h&gt;</CODE>
+<BR>
+<CODE><A href="../../c/MyScriptEngine_h/VO_INLINE.html">VO_INLINE</A> <A href="../../c/MyScriptInkSearch_h/voQuery.html">voQuery</A> <B>voCreateBinaryQuery</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voTypeId.html">voTypeId</A> type, <A href="../../c/MyScriptInkSearch_h/voQuery.html">voQuery</A> query1, <A href="../../c/MyScriptInkSearch_h/voQuery.html">voQuery</A> query2)</CODE>
+<HR>
+</P>
+<P>Creates a new binary query of the specified type. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+type
+</B>
+<DD>
+<parameterdescription>
+
+<P>the type of query to be created:  <CODE><A href="../../c/MyScriptInkSearch_h/enum_VO_INKSEARCH_T.html#VO_OrQuery">VO_OrQuery</A></CODE>,  <CODE><A href="../../c/MyScriptInkSearch_h/enum_VO_INKSEARCH_T.html#VO_AndQuery">VO_AndQuery</A></CODE>,  <CODE><A href="../../c/MyScriptInkSearch_h/enum_VO_INKSEARCH_T.html#VO_AndNotQuery">VO_AndNotQuery</A></CODE> or  <CODE><A href="../../c/MyScriptInkSearch_h/enum_VO_INKSEARCH_T.html#VO_NearQuery">VO_NearQuery</A></CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+query1
+</B>
+<DD>
+<parameterdescription>
+
+<P>the first query. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+query2
+</B>
+<DD>
+<parameterdescription>
+
+<P>the second query.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P>the newly created  <CODE><A href="../../c/MyScriptInkSearch_h/voQuery.html">voQuery</A></CODE> instance on success, otherwise  <CODE>NULL</CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_TYPE">VO_NO_SUCH_TYPE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the specified type is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_TYPE_NOT_CONCRETE">VO_TYPE_NOT_CONCRETE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the specified type is not concrete. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_CONSTRUCTOR">VO_NO_SUCH_CONSTRUCTOR</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the specified type does not have a constructor with the given initializer. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>query1</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OBJECT">VO_INVALID_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>query1</CODE> is not a  <CODE><A href="../../c/MyScriptInkSearch_h/voQuery.html">voQuery</A></CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>query2</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OBJECT">VO_INVALID_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>query2</CODE> is not a  <CODE><A href="../../c/MyScriptInkSearch_h/voQuery.html">voQuery</A></CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_LIMIT_EXCEEDED">VO_LIMIT_EXCEEDED</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the number of  <CODE><A href="../../c/MyScriptInkSearch_h/voQuery.html">voQuery</A></CODE> instances would exceed the allowed limit (please remember that the limit can be shared by several types). </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P></P>
+</BODY>
+</HTML>

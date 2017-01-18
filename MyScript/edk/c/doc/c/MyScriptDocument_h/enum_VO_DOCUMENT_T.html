@@ -1,0 +1,704 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>VO_DOCUMENT_T</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="VO_DOCUMENT_T";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptDocument.h</FONT>
+<BR>
+Enumeration VO_DOCUMENT_T</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptDocument.h&gt;</CODE>
+<BR>
+<CODE>enum <B>_VO_DOCUMENT_T</B></CODE>
+</P>
+<P>Lists the MyScript Document types. <P>
+        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Value_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Value Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_Document">VO_Document</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  3200</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voDocument.html">voDocument</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_Page">VO_Page</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voPage.html">voPage</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_PageSelection">VO_PageSelection</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voPageSelection.html">voPageSelection</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_Content">VO_Content</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voContent.html">voContent</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ContentField">VO_ContentField</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voContentField.html">voContentField</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_Layout">VO_Layout</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voLayout.html">voLayout</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_LayerIterator">VO_LayerIterator</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voLayerIterator.html">voLayerIterator</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_PenIterator">VO_PenIterator</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voPenIterator.html">voPenIterator</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_LayoutItemIterator">VO_LayoutItemIterator</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voLayoutItemIterator.html">voLayoutItemIterator</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_DocumentFinder">VO_DocumentFinder</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voDocumentFinder.html">voDocumentFinder</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_DocumentFindResult">VO_DocumentFindResult</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voDocumentFindResult.html">voDocumentFindResult</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_DocumentFindOccurrenceIterator">VO_DocumentFindOccurrenceIterator</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voDocumentFindOccurrenceIterator.html">voDocumentFindOccurrenceIterator</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ObjectIterator">VO_ObjectIterator</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voObjectIterator.html">voObjectIterator</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_GuideIterator">VO_GuideIterator</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voGuideIterator.html">voGuideIterator</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ContentProcessor">VO_ContentProcessor</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voContentProcessor.html">voContentProcessor</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_PageChangeSet">VO_PageChangeSet</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voPageChangeSet.html">voPageChangeSet</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_TextInspector">VO_TextInspector</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voTextInspector.html">voTextInspector</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_TextInterval">VO_TextInterval</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voTextInterval.html">voTextInterval</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_TypesetData">VO_TypesetData</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voTypesetData.html">voTypesetData</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_TypesetItem">VO_TypesetItem</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voTypesetItem.html">voTypesetItem</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_FontIterator">VO_FontIterator</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  3260</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voFontIterator.html">voFontIterator</A></CODE> type identifier. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Value_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Value Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="VO_Document"></A>
+<H3 class="code">VO_Document</H3>
+<PRE>
+<B>VO_Document</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voDocument.html">voDocument</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voDocument.html">voDocument</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_Page"></A>
+<H3 class="code">VO_Page</H3>
+<PRE>
+<B>VO_Page</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voPage.html">voPage</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voPage.html">voPage</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_PageSelection"></A>
+<H3 class="code">VO_PageSelection</H3>
+<PRE>
+<B>VO_PageSelection</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voPageSelection.html">voPageSelection</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voPageSelection.html">voPageSelection</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_Content"></A>
+<H3 class="code">VO_Content</H3>
+<PRE>
+<B>VO_Content</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voContent.html">voContent</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voContent.html">voContent</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ContentField"></A>
+<H3 class="code">VO_ContentField</H3>
+<PRE>
+<B>VO_ContentField</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voContentField.html">voContentField</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voContentField.html">voContentField</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_Layout"></A>
+<H3 class="code">VO_Layout</H3>
+<PRE>
+<B>VO_Layout</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voLayout.html">voLayout</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voLayout.html">voLayout</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_LayerIterator"></A>
+<H3 class="code">VO_LayerIterator</H3>
+<PRE>
+<B>VO_LayerIterator</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voLayerIterator.html">voLayerIterator</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voLayerIterator.html">voLayerIterator</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_PenIterator"></A>
+<H3 class="code">VO_PenIterator</H3>
+<PRE>
+<B>VO_PenIterator</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voPenIterator.html">voPenIterator</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voPenIterator.html">voPenIterator</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_LayoutItemIterator"></A>
+<H3 class="code">VO_LayoutItemIterator</H3>
+<PRE>
+<B>VO_LayoutItemIterator</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voLayoutItemIterator.html">voLayoutItemIterator</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voLayoutItemIterator.html">voLayoutItemIterator</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_DocumentFinder"></A>
+<H3 class="code">VO_DocumentFinder</H3>
+<PRE>
+<B>VO_DocumentFinder</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voDocumentFinder.html">voDocumentFinder</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voDocumentFinder.html">voDocumentFinder</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_DocumentFindResult"></A>
+<H3 class="code">VO_DocumentFindResult</H3>
+<PRE>
+<B>VO_DocumentFindResult</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voDocumentFindResult.html">voDocumentFindResult</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voDocumentFindResult.html">voDocumentFindResult</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_DocumentFindOccurrenceIterator"></A>
+<H3 class="code">VO_DocumentFindOccurrenceIterator</H3>
+<PRE>
+<B>VO_DocumentFindOccurrenceIterator</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voDocumentFindOccurrenceIterator.html">voDocumentFindOccurrenceIterator</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voDocumentFindOccurrenceIterator.html">voDocumentFindOccurrenceIterator</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ObjectIterator"></A>
+<H3 class="code">VO_ObjectIterator</H3>
+<PRE>
+<B>VO_ObjectIterator</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voObjectIterator.html">voObjectIterator</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voObjectIterator.html">voObjectIterator</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_GuideIterator"></A>
+<H3 class="code">VO_GuideIterator</H3>
+<PRE>
+<B>VO_GuideIterator</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voGuideIterator.html">voGuideIterator</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voGuideIterator.html">voGuideIterator</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ContentProcessor"></A>
+<H3 class="code">VO_ContentProcessor</H3>
+<PRE>
+<B>VO_ContentProcessor</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voContentProcessor.html">voContentProcessor</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voContentProcessor.html">voContentProcessor</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>7.0_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_PageChangeSet"></A>
+<H3 class="code">VO_PageChangeSet</H3>
+<PRE>
+<B>VO_PageChangeSet</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voPageChangeSet.html">voPageChangeSet</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voPageChangeSet.html">voPageChangeSet</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>7.0_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_TextInspector"></A>
+<H3 class="code">VO_TextInspector</H3>
+<PRE>
+<B>VO_TextInspector</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voTextInspector.html">voTextInspector</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voTextInspector.html">voTextInspector</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_TextInterval"></A>
+<H3 class="code">VO_TextInterval</H3>
+<PRE>
+<B>VO_TextInterval</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voTextInterval.html">voTextInterval</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voTextInterval.html">voTextInterval</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_TypesetData"></A>
+<H3 class="code">VO_TypesetData</H3>
+<PRE>
+<B>VO_TypesetData</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voTypesetData.html">voTypesetData</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voTypesetData.html">voTypesetData</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>7.0_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_TypesetItem"></A>
+<H3 class="code">VO_TypesetItem</H3>
+<PRE>
+<B>VO_TypesetItem</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voTypesetItem.html">voTypesetItem</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voTypesetItem.html">voTypesetItem</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>7.0_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_FontIterator"></A>
+<H3 class="code">VO_FontIterator</H3>
+<PRE>
+<B>VO_FontIterator</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voFontIterator.html">voFontIterator</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voFontIterator.html">voFontIterator</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>7.0_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

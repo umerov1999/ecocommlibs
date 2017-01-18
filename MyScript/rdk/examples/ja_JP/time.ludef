@@ -1,0 +1,62 @@
+# Lexical unit Japanese: time
+#
+# 31/03/2005
+# v1.0
+
+@set charset UTF-8
+
+# Hours' scale
+# Arabian numbers
+hourScale = 0?[0-9]|1[0-9]|2[0-4]
+# Japanese numbers
+jpHourScale = 零|〇|一|二|三|四|五|六|七|八|九|十(一|二|三|四|五|六|七|八|九)?|二十(一|二|三|四)?
+
+# Minutes and seconds' scale
+# Arabian numbers
+mn_n_scScale = 0?[0-9]|[1-5][0-9]
+# Japanese numbers
+jp_mn_n_scScale = 一|二|三|四|五|六|七|八|九|(二|三|四|五)?十(一|二|三|四|五|六|七|八|九)?
+
+##############################
+# Time using Japanese characters and/or Arabian characters with chinese specifier
+# Hours (Arabian + Japanese specifier)
+mixedHours = {hourScale}時
+# Hours (full Japanese)
+jpHours = {jpHourScale}時
+mixedJpHours = {mixedHours}|{jpHours}
+# Hours (full Japanese) with 半
+jpHoursWithHan = {jpHours}半
+
+# Minutes (arabian + Japanese specifier)
+mixedMinutes = {mn_n_scScale}分?
+# Minutes (full Chinese)
+jpMinutes = {jp_mn_n_scScale}分
+mixedJpMinutes = {mixedMinutes}|{jpMinutes}
+
+# Seconds (arabian + Japanese specifier)
+mixedSeconds = {mn_n_scScale}秒?
+# Seconds (full Chinese)
+jpSeconds = {jp_mn_n_scScale}秒
+mixedJpSeconds = {mixedSeconds}|{jpSeconds}
+
+jpTime = {mixedJpHours}|{jpHoursWithHan}|{mixedJpHours}{mixedJpMinutes}{mixedJpSeconds}?
+
+###############################
+# Time using Western style
+# hh:mm:ss
+
+# Hours
+hh = (0|1)?[0-9]|2[0-4]
+
+# Minutes
+mm = [0-5][0-9]
+
+# Seconds
+ss = {mm}
+
+westTime = {hh}:{mm}(:{ss})?
+
+###############################
+
+time = {jpTime}|{westTime}
+{time}

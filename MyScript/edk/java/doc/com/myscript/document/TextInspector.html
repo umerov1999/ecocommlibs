@@ -1,0 +1,989 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<title>TextInspector (MyScript SDK Java Reference Documentation)</title>
+<link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="TextInspector (MyScript SDK Java Reference Documentation)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/TextInspector.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../com/myscript/document/TextBoundary.html" title="class in com.myscript.document"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../com/myscript/document/TextInterval.html" title="class in com.myscript.document"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/myscript/document/TextInspector.html" target="_top">Frames</a></li>
+<li><a href="TextInspector.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#fields_inherited_from_class_com.myscript.engine.EngineObject">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">com.myscript.document</div>
+<h2 title="Class TextInspector" class="title">Class TextInspector</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li>java.lang.Object</li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">com.myscript.engine.EngineObject</a></li>
+<li>
+<ul class="inheritance">
+<li>com.myscript.document.TextInspector</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../com/myscript/engine/IDisposable.html" title="interface in com.myscript.engine">IDisposable</a>, <a href="../../../com/myscript/engine/IEngineObject.html" title="interface in com.myscript.engine">IEngineObject</a>, java.lang.Cloneable</dd>
+</dl>
+<hr>
+<br>
+<pre>public class <span class="strong">TextInspector</span>
+extends <a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></pre>
+<div class="block">The <code>TextInspector</code> class models a tool meant to make it easier to
+ access, select and manipulate the text recognition result associated with a
+ page.
+ <p>
+ <strong>Please note that the implementation of the <code>TextInspector</code>
+ class is not synchronized.</strong> If multiple threads concurrently try to
+ change the state of a <code>TextInspector</code> object, explicit
+ synchronization must be done externally.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>7.0.0</dd>
+<dt><span class="strong">Version:</span></dt>
+  <dd>1.0</dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_com.myscript.engine.EngineObject">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;com.myscript.engine.<a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></h3>
+<code><a href="../../../com/myscript/engine/EngineObject.html#DEFAULT_USER_LIMIT">DEFAULT_USER_LIMIT</a>, <a href="../../../com/myscript/engine/EngineObject.html#engine">engine</a>, <a href="../../../com/myscript/engine/EngineObject.html#reference">reference</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../com/myscript/document/TextInspector.html" title="class in com.myscript.document">TextInspector</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/TextInspector.html#create(com.myscript.document.Page)">create</a></strong>(<a href="../../../com/myscript/document/Page.html" title="class in com.myscript.document">Page</a>&nbsp;page)</code>
+<div class="block">Static factory method that creates a new <code>TextInspector</code> object
+ associated with a given <code>Page</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/TextInspector.html#expand(com.myscript.document.TextInterval,%20com.myscript.document.TextBoundary,%20com.myscript.document.TextBoundary)">expand</a></strong>(<a href="../../../com/myscript/document/TextInterval.html" title="class in com.myscript.document">TextInterval</a>&nbsp;interval,
+      <a href="../../../com/myscript/document/TextBoundary.html" title="class in com.myscript.document">TextBoundary</a>&nbsp;beginBoundary,
+      <a href="../../../com/myscript/document/TextBoundary.html" title="class in com.myscript.document">TextBoundary</a>&nbsp;endBoundary)</code>
+<div class="block">Expands a <code>TextInterval</code> based on boundary indications.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/myscript/document/TextInterval.html" title="class in com.myscript.document">TextInterval</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/TextInspector.html#fromField(com.myscript.document.ContentField)">fromField</a></strong>(<a href="../../../com/myscript/document/ContentField.html" title="class in com.myscript.document">ContentField</a>&nbsp;field)</code>
+<div class="block">Returns a <code>TextInterval</code> that corresponds to the specified text
+ <code>ContentField</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/myscript/document/TextInterval.html" title="class in com.myscript.document">TextInterval</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/TextInspector.html#fromSelection(com.myscript.ink.InkSelection)">fromSelection</a></strong>(<a href="../../../com/myscript/ink/InkSelection.html" title="class in com.myscript.ink">InkSelection</a>&nbsp;selection)</code>
+<div class="block">Returns a <code>TextInterval</code> that corresponds to the specified
+ selection.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/myscript/document/TextInterval.html" title="class in com.myscript.document">TextInterval</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/TextInspector.html#fromSelection(com.myscript.ink.InkSelection,%20com.myscript.document.ContentField)">fromSelection</a></strong>(<a href="../../../com/myscript/ink/InkSelection.html" title="class in com.myscript.ink">InkSelection</a>&nbsp;selection,
+             <a href="../../../com/myscript/document/ContentField.html" title="class in com.myscript.document">ContentField</a>&nbsp;field)</code>
+<div class="block">Returns a <code>TextInterval</code> that corresponds to the specified
+ <code>selection</code> and within the specified text
+ <code>ContentField</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/myscript/document/TextInterval.html" title="class in com.myscript.document">TextInterval</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/TextInspector.html#fromSelection(com.myscript.document.PageSelection)">fromSelection</a></strong>(<a href="../../../com/myscript/document/PageSelection.html" title="class in com.myscript.document">PageSelection</a>&nbsp;selection)</code>
+<div class="block">Returns a <code>TextInterval</code> that corresponds to the specified
+ selection.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/myscript/document/TextInterval.html" title="class in com.myscript.document">TextInterval</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/TextInspector.html#fromSelection(com.myscript.document.PageSelection,%20com.myscript.document.ContentField)">fromSelection</a></strong>(<a href="../../../com/myscript/document/PageSelection.html" title="class in com.myscript.document">PageSelection</a>&nbsp;selection,
+             <a href="../../../com/myscript/document/ContentField.html" title="class in com.myscript.document">ContentField</a>&nbsp;field)</code>
+<div class="block">Returns a <code>TextInterval</code> that corresponds to the specified
+ <code>selection</code> and within the specified text
+ <code>ContentField</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/myscript/document/CharInfo.html" title="class in com.myscript.document">CharInfo</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/TextInspector.html#getCharAt(com.myscript.document.ContentField,%20int)">getCharAt</a></strong>(<a href="../../../com/myscript/document/ContentField.html" title="class in com.myscript.document">ContentField</a>&nbsp;field,
+         int&nbsp;index)</code>
+<div class="block">Returns information about a character from a <code>ContentField</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/TextInspector.html#getCharCount(com.myscript.document.ContentField)">getCharCount</a></strong>(<a href="../../../com/myscript/document/ContentField.html" title="class in com.myscript.document">ContentField</a>&nbsp;field)</code>
+<div class="block">Returns the number of characters recognized in a <code>ContentField</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/myscript/engine/Iterator.html" title="class in com.myscript.engine">Iterator</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/TextInspector.html#getCharSegment(com.myscript.document.TextInterval)">getCharSegment</a></strong>(<a href="../../../com/myscript/document/TextInterval.html" title="class in com.myscript.document">TextInterval</a>&nbsp;cursor)</code>
+<div class="block">Returns a segment iterator containing the character candidates associated
+ to the begin position of a <code>TextInterval</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/TextInspector.html#getLabel(com.myscript.document.TextInterval)">getLabel</a></strong>(<a href="../../../com/myscript/document/TextInterval.html" title="class in com.myscript.document">TextInterval</a>&nbsp;interval)</code>
+<div class="block">Returns the label associated with the specified <code>TextInterval</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/myscript/document/LineInfo.html" title="class in com.myscript.document">LineInfo</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/TextInspector.html#getLineAt(com.myscript.document.ContentField,%20int)">getLineAt</a></strong>(<a href="../../../com/myscript/document/ContentField.html" title="class in com.myscript.document">ContentField</a>&nbsp;field,
+         int&nbsp;index)</code>
+<div class="block">Returns information about a line from a <code>ContentField</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/TextInspector.html#getLineCount(com.myscript.document.ContentField)">getLineCount</a></strong>(<a href="../../../com/myscript/document/ContentField.html" title="class in com.myscript.document">ContentField</a>&nbsp;field)</code>
+<div class="block">Returns the number of lines recognized in a <code>ContentField</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/myscript/document/Page.html" title="class in com.myscript.document">Page</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/TextInspector.html#getPage()">getPage</a></strong>()</code>
+<div class="block">Returns the <code>Page</code> associated with this
+ <code>TextInspector</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/myscript/document/WordInfo.html" title="class in com.myscript.document">WordInfo</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/TextInspector.html#getWordAt(com.myscript.document.ContentField,%20int)">getWordAt</a></strong>(<a href="../../../com/myscript/document/ContentField.html" title="class in com.myscript.document">ContentField</a>&nbsp;field,
+         int&nbsp;index)</code>
+<div class="block">Returns information about a word from a <code>ContentField</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/TextInspector.html#getWordCount(com.myscript.document.ContentField)">getWordCount</a></strong>(<a href="../../../com/myscript/document/ContentField.html" title="class in com.myscript.document">ContentField</a>&nbsp;field)</code>
+<div class="block">Returns the number of words recognized in a <code>ContentField</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/myscript/engine/Iterator.html" title="class in com.myscript.engine">Iterator</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/TextInspector.html#getWordSegment(com.myscript.document.TextInterval)">getWordSegment</a></strong>(<a href="../../../com/myscript/document/TextInterval.html" title="class in com.myscript.document">TextInterval</a>&nbsp;cursor)</code>
+<div class="block">Returns a segment iterator containing the word candidates associated to the
+ begin position of a <code>TextInterval</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/myscript/document/TextInterval.html" title="class in com.myscript.document">TextInterval</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/TextInspector.html#hitChar(com.myscript.geometry.Point)">hitChar</a></strong>(com.myscript.geometry.Point&nbsp;position)</code>
+<div class="block">Returns a <code>TextInterval</code> that corresponds to to the character
+ under the specified <code>position</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/myscript/document/TextInterval.html" title="class in com.myscript.document">TextInterval</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/TextInspector.html#hitChar(com.myscript.geometry.Point,%20com.myscript.document.ContentField)">hitChar</a></strong>(com.myscript.geometry.Point&nbsp;position,
+       <a href="../../../com/myscript/document/ContentField.html" title="class in com.myscript.document">ContentField</a>&nbsp;field)</code>
+<div class="block">Returns a <code>TextInterval</code> that corresponds to to the character
+ under the specified <code>position</code>, within a given
+ <code>ContentField</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/myscript/document/TextInterval.html" title="class in com.myscript.document">TextInterval</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/TextInspector.html#hitCursor(com.myscript.geometry.Point)">hitCursor</a></strong>(com.myscript.geometry.Point&nbsp;position)</code>
+<div class="block">Returns a <code>TextInterval</code> that corresponds to the closest
+ character boundary from the specified <code>position</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/myscript/document/TextInterval.html" title="class in com.myscript.document">TextInterval</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/TextInspector.html#hitCursor(com.myscript.geometry.Point,%20com.myscript.document.ContentField)">hitCursor</a></strong>(com.myscript.geometry.Point&nbsp;position,
+         <a href="../../../com/myscript/document/ContentField.html" title="class in com.myscript.document">ContentField</a>&nbsp;field)</code>
+<div class="block">Returns a <code>TextInterval</code> that corresponds to the closest
+ character boundary from the specified <code>position</code>, within a given
+ <code>ContentField</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/TextInspector.html#select(com.myscript.document.TextInterval,%20com.myscript.document.PageSelection,%20com.myscript.ink.SelectionModifier)">select</a></strong>(<a href="../../../com/myscript/document/TextInterval.html" title="class in com.myscript.document">TextInterval</a>&nbsp;interval,
+      <a href="../../../com/myscript/document/PageSelection.html" title="class in com.myscript.document">PageSelection</a>&nbsp;selection,
+      <a href="../../../com/myscript/ink/SelectionModifier.html" title="class in com.myscript.ink">SelectionModifier</a>&nbsp;modifier)</code>
+<div class="block">Updates a <code>PageSelection</code> based on a <code>TextInterval</code>.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.myscript.engine.EngineObject">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;com.myscript.engine.<a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></h3>
+<code><a href="../../../com/myscript/engine/EngineObject.html#acquire()">acquire</a>, <a href="../../../com/myscript/engine/EngineObject.html#checkDisposed()">checkDisposed</a>, <a href="../../../com/myscript/engine/EngineObject.html#clone()">clone</a>, <a href="../../../com/myscript/engine/EngineObject.html#dispose()">dispose</a>, <a href="../../../com/myscript/engine/EngineObject.html#finalize()">finalize</a>, <a href="../../../com/myscript/engine/EngineObject.html#getAttachReferenceCount()">getAttachReferenceCount</a>, <a href="../../../com/myscript/engine/EngineObject.html#getEngine()">getEngine</a>, <a href="../../../com/myscript/engine/EngineObject.html#getMemoryUsage()">getMemoryUsage</a>, <a href="../../../com/myscript/engine/EngineObject.html#getNativeReference()">getNativeReference</a>, <a href="../../../com/myscript/engine/EngineObject.html#getUserCount(com.myscript.engine.Engine)">getUserCount</a>, <a href="../../../com/myscript/engine/EngineObject.html#getUserLimit(com.myscript.engine.Engine)">getUserLimit</a>, <a href="../../../com/myscript/engine/EngineObject.html#getUserReferenceCount()">getUserReferenceCount</a>, <a href="../../../com/myscript/engine/EngineObject.html#isDisposed()">isDisposed</a>, <a href="../../../com/myscript/engine/EngineObject.html#isSame(com.myscript.engine.EngineObject)">isSame</a>, <a href="../../../com/myscript/engine/EngineObject.html#load(com.myscript.engine.Engine,%20java.nio.channels.ReadableByteChannel)">load</a>, <a href="../../../com/myscript/engine/EngineObject.html#load(com.myscript.engine.Engine,%20java.lang.String)">load</a>, <a href="../../../com/myscript/engine/EngineObject.html#load(com.myscript.engine.Engine,%20java.lang.String,%20java.lang.String)">load</a>, <a href="../../../com/myscript/engine/EngineObject.html#resetUserLimit(com.myscript.engine.Engine)">resetUserLimit</a>, <a href="../../../com/myscript/engine/EngineObject.html#setUserLimit(com.myscript.engine.Engine,%20int)">setUserLimit</a>, <a href="../../../com/myscript/engine/EngineObject.html#store(java.lang.String)">store</a>, <a href="../../../com/myscript/engine/EngineObject.html#store(java.lang.String,%20java.lang.String)">store</a>, <a href="../../../com/myscript/engine/EngineObject.html#store(java.nio.channels.WritableByteChannel)">store</a>, <a href="../../../com/myscript/engine/EngineObject.html#toString()">toString</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>equals, getClass, hashCode, notify, notifyAll, wait, wait, wait</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="create(com.myscript.document.Page)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>create</h4>
+<pre>public static final&nbsp;<a href="../../../com/myscript/document/TextInspector.html" title="class in com.myscript.document">TextInspector</a>&nbsp;create(<a href="../../../com/myscript/document/Page.html" title="class in com.myscript.document">Page</a>&nbsp;page)
+                                  throws java.lang.NullPointerException,
+                                         java.lang.IllegalStateException,
+                                         <a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a>,
+                                         <a href="../../../com/myscript/engine/OutOfMemoryException.html" title="class in com.myscript.engine">OutOfMemoryException</a></pre>
+<div class="block">Static factory method that creates a new <code>TextInspector</code> object
+ associated with a given <code>Page</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>page</code> - the associated <code>Page</code> object.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new <code>TextInspector</code> object.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.NullPointerException</code> - when <code>engine</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>engine</code> has been disposed
+           of.</dd>
+<dd><code><a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></code> - when the object user limit has been reached.</dd>
+<dd><code><a href="../../../com/myscript/engine/OutOfMemoryException.html" title="class in com.myscript.engine">OutOfMemoryException</a></code> - when the MyScript Engine failed to allocate
+           memory.</dd></dl>
+</li>
+</ul>
+<a name="getPage()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPage</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/document/Page.html" title="class in com.myscript.document">Page</a>&nbsp;getPage()
+                   throws java.lang.IllegalStateException</pre>
+<div class="block">Returns the <code>Page</code> associated with this
+ <code>TextInspector</code>.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the page associated with this <code>TextInspector</code>.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>TextInspector</code> object
+           has been disposed of.</dd></dl>
+</li>
+</ul>
+<a name="hitCursor(com.myscript.geometry.Point, com.myscript.document.ContentField)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hitCursor</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/document/TextInterval.html" title="class in com.myscript.document">TextInterval</a>&nbsp;hitCursor(com.myscript.geometry.Point&nbsp;position,
+                     <a href="../../../com/myscript/document/ContentField.html" title="class in com.myscript.document">ContentField</a>&nbsp;field)
+                             throws java.lang.NullPointerException,
+                                    java.lang.IllegalStateException,
+                                    <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></pre>
+<div class="block">Returns a <code>TextInterval</code> that corresponds to the closest
+ character boundary from the specified <code>position</code>, within a given
+ <code>ContentField</code>. The returned <code>TextInterval</code> is a
+ cursor position so its end position will be the same as its begin position.
+ Passing <code>null</code> as the <code>field</code> parameter has the same
+ effect as invoking the <a href="../../../com/myscript/document/TextInspector.html#hitCursor(com.myscript.geometry.Point)"><code>nullary overload</code></a> of the
+ method.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>position</code> - the geometric position.</dd><dd><code>field</code> - a text <code>ContentField</code>.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a <code>TextInterval</code> corresponding to a cursor at the
+         specified <code>position</code>, otherwise <code>null</code>.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>TextInspector</code> object
+           has been disposed of.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>position</code> is
+           <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>field</code> has been disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not a
+           <code>ContentField</code> of type <code>TEXT</code>.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not on the page
+           associated with this <code>TextInspector</code>.</dd></dl>
+</li>
+</ul>
+<a name="hitCursor(com.myscript.geometry.Point)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hitCursor</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/document/TextInterval.html" title="class in com.myscript.document">TextInterval</a>&nbsp;hitCursor(com.myscript.geometry.Point&nbsp;position)
+                             throws java.lang.NullPointerException,
+                                    java.lang.IllegalStateException</pre>
+<div class="block">Returns a <code>TextInterval</code> that corresponds to the closest
+ character boundary from the specified <code>position</code>. The returned
+ <code>TextInterval</code> is a cursor position so its end position will be
+ the same as its begin position.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>position</code> - the geometric position.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a <code>TextInterval</code> corresponding to a cursor at the
+         provided <code>position</code>, otherwise <code>null</code>.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.NullPointerException</code> - when <code>position</code> is
+           <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>TextInspector</code> object
+           has been disposed of.</dd></dl>
+</li>
+</ul>
+<a name="hitChar(com.myscript.geometry.Point, com.myscript.document.ContentField)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hitChar</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/document/TextInterval.html" title="class in com.myscript.document">TextInterval</a>&nbsp;hitChar(com.myscript.geometry.Point&nbsp;position,
+                   <a href="../../../com/myscript/document/ContentField.html" title="class in com.myscript.document">ContentField</a>&nbsp;field)
+                           throws java.lang.NullPointerException,
+                                  java.lang.IllegalStateException,
+                                  <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></pre>
+<div class="block">Returns a <code>TextInterval</code> that corresponds to to the character
+ under the specified <code>position</code>, within a given
+ <code>ContentField</code>. The returned <code>TextInterval</code> surrounds
+ the character so the begin position points to it and the end position
+ points just after it. Passing <code>null</code> as the <code>field</code>
+ parameter has the same effect as invoking the <a href="../../../com/myscript/document/TextInspector.html#hitChar(com.myscript.geometry.Point)"><code>nullary overload</code></a> of the method.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>position</code> - the geometric position.</dd><dd><code>field</code> - a text <code>ContentField</code>.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a <code>TextInterval</code> corresponding to the character at the
+         provided <code>position</code>, otherwise <code>null</code>.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.NullPointerException</code> - when <code>position</code> is
+           <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>field</code> has been disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not a
+           <code>ContentField</code> of type <code>TEXT</code>.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not on the page
+           associated with the target <code>TextInspector</code>.</dd></dl>
+</li>
+</ul>
+<a name="hitChar(com.myscript.geometry.Point)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hitChar</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/document/TextInterval.html" title="class in com.myscript.document">TextInterval</a>&nbsp;hitChar(com.myscript.geometry.Point&nbsp;position)
+                           throws java.lang.NullPointerException,
+                                  java.lang.IllegalStateException</pre>
+<div class="block">Returns a <code>TextInterval</code> that corresponds to to the character
+ under the specified <code>position</code>. The returned
+ <code>TextInterval</code> surrounds the character so the begin position
+ points to it and the end position points just after it.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>position</code> - the geometric position.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a <code>TextInterval</code> corresponding to the character at the
+         provided <code>position</code>, otherwise <code>null</code>..</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>TextInspector</code> object
+           has been disposed of.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>position</code> is
+           <code>null</code>.</dd></dl>
+</li>
+</ul>
+<a name="fromField(com.myscript.document.ContentField)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>fromField</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/document/TextInterval.html" title="class in com.myscript.document">TextInterval</a>&nbsp;fromField(<a href="../../../com/myscript/document/ContentField.html" title="class in com.myscript.document">ContentField</a>&nbsp;field)
+                             throws java.lang.NullPointerException,
+                                    java.lang.IllegalStateException,
+                                    <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></pre>
+<div class="block">Returns a <code>TextInterval</code> that corresponds to the specified text
+ <code>ContentField</code>. The <code>TextInterval</code> surrounds the
+ whole field so the begin position is zero and the end position is the
+ number of characters in the field.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>field</code> - a text <code>ContentField</code>.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a <code>TextInterval</code> corresponding to <code>field</code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>TextInspector</code> object
+           has been disposed of.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>field</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>field</code> has been disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not a
+           <code>ContentField</code> of type <code>TEXT</code>.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not on the page
+           associated with the target <code>TextInspector</code>.</dd></dl>
+</li>
+</ul>
+<a name="fromSelection(com.myscript.document.PageSelection)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>fromSelection</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/document/TextInterval.html" title="class in com.myscript.document">TextInterval</a>&nbsp;fromSelection(<a href="../../../com/myscript/document/PageSelection.html" title="class in com.myscript.document">PageSelection</a>&nbsp;selection)
+                                 throws java.lang.NullPointerException,
+                                        java.lang.IllegalStateException</pre>
+<div class="block">Returns a <code>TextInterval</code> that corresponds to the specified
+ selection.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>selection</code> - the <code>PageSelection</code> to evaluate.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a <code>TextInterval</code> corresponding to <code>selection</code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>TextInspector</code> object
+           has been disposed of.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>selection</code> is
+           <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>selection</code> has been disposed
+           of.</dd></dl>
+</li>
+</ul>
+<a name="fromSelection(com.myscript.ink.InkSelection)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>fromSelection</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/document/TextInterval.html" title="class in com.myscript.document">TextInterval</a>&nbsp;fromSelection(<a href="../../../com/myscript/ink/InkSelection.html" title="class in com.myscript.ink">InkSelection</a>&nbsp;selection)
+                                 throws java.lang.NullPointerException,
+                                        java.lang.IllegalStateException</pre>
+<div class="block">Returns a <code>TextInterval</code> that corresponds to the specified
+ selection.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>selection</code> - the <code>InkSelection</code> to evaluate.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a <code>TextInterval</code> corresponding to <code>selection</code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>TextInspector</code> object
+           has been disposed of.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>selection</code> is
+           <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>selection</code> has been disposed
+           of.</dd></dl>
+</li>
+</ul>
+<a name="fromSelection(com.myscript.document.PageSelection, com.myscript.document.ContentField)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>fromSelection</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/document/TextInterval.html" title="class in com.myscript.document">TextInterval</a>&nbsp;fromSelection(<a href="../../../com/myscript/document/PageSelection.html" title="class in com.myscript.document">PageSelection</a>&nbsp;selection,
+                         <a href="../../../com/myscript/document/ContentField.html" title="class in com.myscript.document">ContentField</a>&nbsp;field)
+                                 throws java.lang.NullPointerException,
+                                        java.lang.IllegalStateException,
+                                        <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></pre>
+<div class="block">Returns a <code>TextInterval</code> that corresponds to the specified
+ <code>selection</code> and within the specified text
+ <code>ContentField</code>. Passing <code>null</code> as the
+ <code>field</code> parameter has the same effect as invoking the
+ <a href="../../../com/myscript/document/TextInspector.html#fromSelection(com.myscript.document.PageSelection)"><code>nullary overload</code></a> of the method.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>selection</code> - the <code>PageSelection</code> to evaluate.</dd><dd><code>field</code> - a text <code>ContentField</code>.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a <code>TextInterval</code> corresponding to <code>selection</code>
+         .</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>TextInspector</code> object
+           has been disposed of.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>selection</code> is
+           <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>selection</code> has been disposed
+           of.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>field</code> has been disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not a
+           <code>ContentField</code> of type <code>TEXT</code>.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not on the page
+           associated with the target <code>TextInspector</code>.</dd></dl>
+</li>
+</ul>
+<a name="fromSelection(com.myscript.ink.InkSelection, com.myscript.document.ContentField)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>fromSelection</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/document/TextInterval.html" title="class in com.myscript.document">TextInterval</a>&nbsp;fromSelection(<a href="../../../com/myscript/ink/InkSelection.html" title="class in com.myscript.ink">InkSelection</a>&nbsp;selection,
+                         <a href="../../../com/myscript/document/ContentField.html" title="class in com.myscript.document">ContentField</a>&nbsp;field)
+                                 throws java.lang.NullPointerException,
+                                        java.lang.IllegalStateException,
+                                        <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></pre>
+<div class="block">Returns a <code>TextInterval</code> that corresponds to the specified
+ <code>selection</code> and within the specified text
+ <code>ContentField</code>. Passing <code>null</code> as the
+ <code>field</code> parameter has the same effect as invoking the
+ <a href="../../../com/myscript/document/TextInspector.html#fromSelection(com.myscript.ink.InkSelection)"><code>nullary overload</code></a> of the method.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>selection</code> - the <code>InkSelection</code> to evaluate.</dd><dd><code>field</code> - a text <code>ContentField</code>.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a <code>TextInterval</code> corresponding to <code>selection</code>
+         .</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>TextInspector</code> object
+           has been disposed of.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>selection</code> is
+           <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>selection</code> has been disposed
+           of.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>field</code> has been disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not a
+           <code>ContentField</code> of type <code>TEXT</code>.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not on the page
+           associated with the target <code>TextInspector</code>.</dd></dl>
+</li>
+</ul>
+<a name="expand(com.myscript.document.TextInterval, com.myscript.document.TextBoundary, com.myscript.document.TextBoundary)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>expand</h4>
+<pre>public final&nbsp;void&nbsp;expand(<a href="../../../com/myscript/document/TextInterval.html" title="class in com.myscript.document">TextInterval</a>&nbsp;interval,
+          <a href="../../../com/myscript/document/TextBoundary.html" title="class in com.myscript.document">TextBoundary</a>&nbsp;beginBoundary,
+          <a href="../../../com/myscript/document/TextBoundary.html" title="class in com.myscript.document">TextBoundary</a>&nbsp;endBoundary)
+                  throws java.lang.NullPointerException,
+                         java.lang.IllegalStateException,
+                         <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a>,
+                         java.lang.IndexOutOfBoundsException</pre>
+<div class="block">Expands a <code>TextInterval</code> based on boundary indications.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>interval</code> - the <code>TextInterval</code> to expand.</dd><dd><code>beginBoundary</code> - the boundary to which the begin position should be
+          expanded.</dd><dd><code>endBoundary</code> - the boundary to which the end position should be
+          expanded.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>TextInspector</code> object
+           has been disposed of.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>interval</code> is
+           <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>interval</code> has been disposed
+           of.</dd>
+<dd><code>java.lang.IndexOutOfBoundsException</code> - when <code>interval</code> begin or end
+           position is invalid.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code></dd></dl>
+</li>
+</ul>
+<a name="select(com.myscript.document.TextInterval, com.myscript.document.PageSelection, com.myscript.ink.SelectionModifier)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>select</h4>
+<pre>public final&nbsp;void&nbsp;select(<a href="../../../com/myscript/document/TextInterval.html" title="class in com.myscript.document">TextInterval</a>&nbsp;interval,
+          <a href="../../../com/myscript/document/PageSelection.html" title="class in com.myscript.document">PageSelection</a>&nbsp;selection,
+          <a href="../../../com/myscript/ink/SelectionModifier.html" title="class in com.myscript.ink">SelectionModifier</a>&nbsp;modifier)
+                  throws java.lang.NullPointerException,
+                         java.lang.IllegalStateException,
+                         java.lang.IndexOutOfBoundsException</pre>
+<div class="block">Updates a <code>PageSelection</code> based on a <code>TextInterval</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>interval</code> - the <code>TextInterval</code> to modify the selection with.</dd><dd><code>selection</code> - the <code>PageSelection</code> to modify.</dd><dd><code>modifier</code> - the way the <code>PageSelection</code> should be combined
+          with the the content of the <code>TextInterval</code>.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>TextInspector</code> object
+           has been disposed of.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>interval</code> is
+           <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>interval</code> has been disposed
+           of.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>selection</code> is
+           <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>selection</code> has been disposed
+           of.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>selection</code> is not on the
+           page associated with this <code>TextInspector</code>.</dd>
+<dd><code>java.lang.IndexOutOfBoundsException</code> - when <code>interval</code> begin or end
+           position is invalid.</dd></dl>
+</li>
+</ul>
+<a name="getCharSegment(com.myscript.document.TextInterval)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCharSegment</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/engine/Iterator.html" title="class in com.myscript.engine">Iterator</a>&nbsp;getCharSegment(<a href="../../../com/myscript/document/TextInterval.html" title="class in com.myscript.document">TextInterval</a>&nbsp;cursor)
+                              throws java.lang.NullPointerException,
+                                     java.lang.IllegalStateException,
+                                     java.lang.IndexOutOfBoundsException</pre>
+<div class="block">Returns a segment iterator containing the character candidates associated
+ to the begin position of a <code>TextInterval</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>cursor</code> - the cursor for which candidates are requested.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>an <code>Iterator</code> on character candidates.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>TextInspector</code> object
+           has been disposed of.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>cursor</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>cursor</code> has been disposed
+           of.</dd>
+<dd><code>java.lang.IndexOutOfBoundsException</code> - when <code>cursor</code> begin or end
+           position is invalid.</dd></dl>
+</li>
+</ul>
+<a name="getWordSegment(com.myscript.document.TextInterval)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getWordSegment</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/engine/Iterator.html" title="class in com.myscript.engine">Iterator</a>&nbsp;getWordSegment(<a href="../../../com/myscript/document/TextInterval.html" title="class in com.myscript.document">TextInterval</a>&nbsp;cursor)
+                              throws java.lang.NullPointerException,
+                                     java.lang.IllegalStateException,
+                                     java.lang.IndexOutOfBoundsException</pre>
+<div class="block">Returns a segment iterator containing the word candidates associated to the
+ begin position of a <code>TextInterval</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>cursor</code> - the cursor for which candidates are requested.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>an <code>Iterator</code> on word candidates.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>TextInspector</code> object
+           has been disposed of.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>cursor</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>cursor</code> has been disposed
+           of.</dd>
+<dd><code>java.lang.IndexOutOfBoundsException</code> - when <code>cursor</code> begin or end
+           position is invalid.</dd></dl>
+</li>
+</ul>
+<a name="getLabel(com.myscript.document.TextInterval)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLabel</h4>
+<pre>public final&nbsp;java.lang.String&nbsp;getLabel(<a href="../../../com/myscript/document/TextInterval.html" title="class in com.myscript.document">TextInterval</a>&nbsp;interval)
+                                throws java.lang.NullPointerException,
+                                       java.lang.IllegalStateException,
+                                       java.lang.IndexOutOfBoundsException</pre>
+<div class="block">Returns the label associated with the specified <code>TextInterval</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>interval</code> - the <code>TextInterval</code> for which label is requested.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the label corresponding to <code>interval</code>.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>TextInspector</code> object
+           has been disposed of.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>interval</code> is
+           <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>interval</code> has been disposed
+           of.</dd>
+<dd><code>java.lang.IndexOutOfBoundsException</code> - when <code>interval</code> begin or end
+           position is invalid.</dd></dl>
+</li>
+</ul>
+<a name="getCharCount(com.myscript.document.ContentField)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCharCount</h4>
+<pre>public final&nbsp;int&nbsp;getCharCount(<a href="../../../com/myscript/document/ContentField.html" title="class in com.myscript.document">ContentField</a>&nbsp;field)
+                       throws java.lang.NullPointerException,
+                              java.lang.IllegalStateException,
+                              <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></pre>
+<div class="block">Returns the number of characters recognized in a <code>ContentField</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>field</code> - a text <code>ContentField</code>.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the number of characters in <code>field</code>.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>TextInspector</code> object
+           has been disposed of.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>field</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>field</code> has been disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not a
+           <code>ContentField</code> of type <code>TEXT</code>.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not on the page
+           associated with the target <code>TextInspector</code>.</dd></dl>
+</li>
+</ul>
+<a name="getCharAt(com.myscript.document.ContentField, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCharAt</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/document/CharInfo.html" title="class in com.myscript.document">CharInfo</a>&nbsp;getCharAt(<a href="../../../com/myscript/document/ContentField.html" title="class in com.myscript.document">ContentField</a>&nbsp;field,
+                 int&nbsp;index)
+                         throws java.lang.NullPointerException,
+                                java.lang.IllegalStateException,
+                                <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a>,
+                                java.lang.IndexOutOfBoundsException</pre>
+<div class="block">Returns information about a character from a <code>ContentField</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>field</code> - a text <code>ContentField</code>.</dd><dd><code>index</code> - the index of the character in <code>field</code>.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the character information.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>TextInspector</code> object
+           has been disposed of.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>field</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>field</code> has been disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not a
+           <code>ContentField</code> of type <code>TEXT</code>.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not on the page
+           associated with the target <code>TextInspector</code>.</dd>
+<dd><code>java.lang.IndexOutOfBoundsException</code> - when <code>index</code> is out of bounds
+           (should be <code>&gt;= 0</code> and
+           <code>&lt; <a href="../../../com/myscript/document/TextInspector.html#getCharCount(com.myscript.document.ContentField)"><code>getCharCount(ContentField)</code></a></code>.</dd></dl>
+</li>
+</ul>
+<a name="getWordCount(com.myscript.document.ContentField)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getWordCount</h4>
+<pre>public final&nbsp;int&nbsp;getWordCount(<a href="../../../com/myscript/document/ContentField.html" title="class in com.myscript.document">ContentField</a>&nbsp;field)
+                       throws java.lang.NullPointerException,
+                              java.lang.IllegalStateException,
+                              <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></pre>
+<div class="block">Returns the number of words recognized in a <code>ContentField</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>field</code> - a text <code>ContentField</code>.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the number of words in <code>field</code>.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>TextInspector</code> object
+           has been disposed of.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>field</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>field</code> has been disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not a
+           <code>ContentField</code> of type <code>TEXT</code>.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not on the page
+           associated with the target <code>TextInspector</code>.</dd></dl>
+</li>
+</ul>
+<a name="getWordAt(com.myscript.document.ContentField, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getWordAt</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/document/WordInfo.html" title="class in com.myscript.document">WordInfo</a>&nbsp;getWordAt(<a href="../../../com/myscript/document/ContentField.html" title="class in com.myscript.document">ContentField</a>&nbsp;field,
+                 int&nbsp;index)
+                         throws java.lang.NullPointerException,
+                                java.lang.IllegalStateException,
+                                <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a>,
+                                java.lang.IndexOutOfBoundsException</pre>
+<div class="block">Returns information about a word from a <code>ContentField</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>field</code> - a text <code>ContentField</code>.</dd><dd><code>index</code> - the index of the word in <code>field</code>.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the word information.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>TextInspector</code> object
+           has been disposed of.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>field</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>field</code> has been disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not a
+           <code>ContentField</code> of type <code>TEXT</code>.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not on the page
+           associated with the target <code>TextInspector</code>.</dd>
+<dd><code>java.lang.IndexOutOfBoundsException</code> - when <code>index</code> is out of bounds
+           (should be <code>&gt;= 0</code> and
+           <code>&lt; <a href="../../../com/myscript/document/TextInspector.html#getWordCount(com.myscript.document.ContentField)"><code>getWordCount(ContentField)</code></a></code>.</dd></dl>
+</li>
+</ul>
+<a name="getLineCount(com.myscript.document.ContentField)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLineCount</h4>
+<pre>public final&nbsp;int&nbsp;getLineCount(<a href="../../../com/myscript/document/ContentField.html" title="class in com.myscript.document">ContentField</a>&nbsp;field)
+                       throws java.lang.NullPointerException,
+                              java.lang.IllegalStateException,
+                              <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></pre>
+<div class="block">Returns the number of lines recognized in a <code>ContentField</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>field</code> - a text <code>ContentField</code>.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the number of lines in <code>field</code>.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>TextInspector</code> object
+           has been disposed of.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>field</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>field</code> has been disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not a
+           <code>ContentField</code> of type <code>TEXT</code>.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not on the page
+           associated with the target <code>TextInspector</code>.</dd></dl>
+</li>
+</ul>
+<a name="getLineAt(com.myscript.document.ContentField, int)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getLineAt</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/document/LineInfo.html" title="class in com.myscript.document">LineInfo</a>&nbsp;getLineAt(<a href="../../../com/myscript/document/ContentField.html" title="class in com.myscript.document">ContentField</a>&nbsp;field,
+                 int&nbsp;index)
+                         throws java.lang.NullPointerException,
+                                java.lang.IllegalStateException,
+                                <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a>,
+                                java.lang.IndexOutOfBoundsException</pre>
+<div class="block">Returns information about a line from a <code>ContentField</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>field</code> - a text <code>ContentField</code>.</dd><dd><code>index</code> - the index of the line in <code>field</code>.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the line information.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>TextInspector</code> object
+           has been disposed of.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>field</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>field</code> has been disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not a
+           <code>ContentField</code> of type <code>TEXT</code>.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not on the page
+           associated with the target <code>TextInspector</code>.</dd>
+<dd><code>java.lang.IndexOutOfBoundsException</code> - when <code>index</code> is out of bounds
+           (should be <code>&gt;= 0</code> and
+           <code>&lt; <a href="../../../com/myscript/document/TextInspector.html#getLineCount(com.myscript.document.ContentField)"><code>getLineCount(ContentField)</code></a></code>.</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/TextInspector.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../com/myscript/document/TextBoundary.html" title="class in com.myscript.document"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../com/myscript/document/TextInterval.html" title="class in com.myscript.document"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/myscript/document/TextInspector.html" target="_top">Frames</a></li>
+<li><a href="TextInspector.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#fields_inherited_from_class_com.myscript.engine.EngineObject">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+</body>
+</html>

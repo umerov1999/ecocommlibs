@@ -1,0 +1,313 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>_voIMusicElement</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="_voIMusicElement";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptMusic.h</FONT>
+<BR>
+Structure _voIMusicElement</H2>
+<PRE>
+<B></B>
+</PRE>
+<HR>
+<CODE>#include &lt;c/MyScriptMusic.h&gt;</CODE>
+<BR>
+<CODE>struct <B>_voIMusicElement</B></CODE>
+<BR>
+<CODE></CODE>
+</P>
+<P></P>Functions composing the  <CODE><A href="../../c/MyScriptMusic_h/voIMusicElement.html">voIMusicElement</A></CODE> interface. <P>
+
+<P>This interface exposes the public methods of the  <CODE><A href="../../c/MyScriptMusic_h/voMusicElement.html">voMusicElement</A></CODE> type.</P>
+<P> 
+<implementingType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">voMusicElement </implementingType> 
+</P>    
+</P>
+<HR>
+<P>
+<A NAME="Member_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="3"><FONT SIZE="+2"><B>Member Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#getInputRangeAt">getInputRangeAt</A>)(voEngine engine, voMusicElement target, int32_t index, voMusicInputRange *range)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Returns the input range at the specified index. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>int32_t</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#getInputRangeCount">getInputRangeCount</A>)(voEngine engine, voMusicElement target)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Returns the number of input ranges this element covers. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<P>
+<A NAME="Member_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Member Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="getInputRangeAt"></A>
+<H3 class="code">getInputRangeAt</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B>getInputRangeAt</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptMusic_h/voMusicElement.html">voMusicElement</A> target, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> index, <A href="../../c/MyScriptMusic_h/voMusicInputRange.html">voMusicInputRange</A> *range)</PRE>
+<DL>
+<DD>Returns the input range at the specified index. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target element. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+index
+</B>
+<DD>
+<parameterdescription>
+
+<P>the index of the requested input range. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+range
+</B>
+<DD>
+<parameterdescription>
+
+<P>the recipient for the input range.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> is not a  <CODE><A href="../../c/MyScriptMusic_h/voMusicElement.html">voMusicElement</A></CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INDEX_OUT_OF_BOUNDS">VO_INDEX_OUT_OF_BOUNDS</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>index</CODE> is out of bounds. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>range</CODE> is not writable. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_STATE">VO_INVALID_STATE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the portion of a MyScript Document associated with this element has been modified, invalidating input ranges. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="getInputRangeCount"></A>
+<H3 class="code">getInputRangeCount</H3>
+<PRE>
+<A href="../../c/std/stdint_h/int32_t.html">int32_t</A> <B>getInputRangeCount</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptMusic_h/voMusicElement.html">voMusicElement</A> target)</PRE>
+<DL>
+<DD>Returns the number of input ranges this element covers. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target element.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P>the number of input ranges on success, otherwise  <CODE>-1</CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> is not a  <CODE><A href="../../c/MyScriptMusic_h/voMusicElement.html">voMusicElement</A></CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_STATE">VO_INVALID_STATE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the portion of a MyScript Document associated with this element has been modified, invalidating input ranges. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</P>
+</BODY>
+</HTML>

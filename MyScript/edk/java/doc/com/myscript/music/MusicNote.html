@@ -1,0 +1,876 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<title>MusicNote (MyScript SDK Java Reference Documentation)</title>
+<link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="MusicNote (MyScript SDK Java Reference Documentation)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/MusicNote.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../com/myscript/music/MusicLedgerLine.html" title="class in com.myscript.music"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../com/myscript/music/MusicNoteType.html" title="class in com.myscript.music"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/myscript/music/MusicNote.html" target="_top">Frames</a></li>
+<li><a href="MusicNote.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#fields_inherited_from_class_com.myscript.engine.EngineObject">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">com.myscript.music</div>
+<h2 title="Class MusicNote" class="title">Class MusicNote</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li>java.lang.Object</li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">com.myscript.engine.EngineObject</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../com/myscript/music/MusicElement.html" title="class in com.myscript.music">com.myscript.music.MusicElement</a></li>
+<li>
+<ul class="inheritance">
+<li>com.myscript.music.MusicNote</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../com/myscript/engine/IDisposable.html" title="interface in com.myscript.engine">IDisposable</a>, <a href="../../../com/myscript/engine/IEngineObject.html" title="interface in com.myscript.engine">IEngineObject</a>, java.lang.Cloneable</dd>
+</dl>
+<hr>
+<br>
+<pre>public final class <span class="strong">MusicNote</span>
+extends <a href="../../../com/myscript/music/MusicElement.html" title="class in com.myscript.music">MusicElement</a></pre>
+<div class="block">The <code>MusicNote</code> class models an note written in a
+ <code>MusicDocument</code>.
+ <p>
+ <strong>Please note that the implementation of the <code>MusicNote</code>
+ class is not synchronized.</strong> If multiple threads concurrently try to
+ change the state of a <code>MusicNote</code> object, explicit synchronization
+ must be done externally.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>6.0.0</dd>
+<dt><span class="strong">Version:</span></dt>
+  <dd>1.0</dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_com.myscript.engine.EngineObject">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;com.myscript.engine.<a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></h3>
+<code><a href="../../../com/myscript/engine/EngineObject.html#DEFAULT_USER_LIMIT">DEFAULT_USER_LIMIT</a>, <a href="../../../com/myscript/engine/EngineObject.html#engine">engine</a>, <a href="../../../com/myscript/engine/EngineObject.html#reference">reference</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/myscript/music/MusicAccidental.html" title="class in com.myscript.music">MusicAccidental</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/music/MusicNote.html#getAccidental()">getAccidental</a></strong>()</code>
+<div class="block">Returns the accidental of this <code>MusicNote</code> (optional).</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/myscript/music/MusicBeamType.html" title="class in com.myscript.music">MusicBeamType</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/music/MusicNote.html#getBeamTypeAt(int)">getBeamTypeAt</a></strong>(int&nbsp;index)</code>
+<div class="block">Returns the beam type at the specified <code>index</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/music/MusicNote.html#getBeamTypeCount()">getBeamTypeCount</a></strong>()</code>
+<div class="block">Returns the number of beam types on this <code>MusicNote</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/myscript/music/MusicDecoration.html" title="class in com.myscript.music">MusicDecoration</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/music/MusicNote.html#getDecorationAt(int)">getDecorationAt</a></strong>(int&nbsp;index)</code>
+<div class="block">Returns the decoration at the specified <code>index</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/music/MusicNote.html#getDecorationCount()">getDecorationCount</a></strong>()</code>
+<div class="block">Returns the number of decorations on this <code>MusicNote</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/myscript/music/MusicDots.html" title="class in com.myscript.music">MusicDots</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/music/MusicNote.html#getDots()">getDots</a></strong>()</code>
+<div class="block">Returns the dots of this <code>MusicNote</code> (optional).</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/music/MusicNote.html#getDuration(int)">getDuration</a></strong>(int&nbsp;divisions)</code>
+<div class="block">Returns the duration of this <code>MusicNote</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/myscript/music/MusicHead.html" title="class in com.myscript.music">MusicHead</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/music/MusicNote.html#getHead()">getHead</a></strong>()</code>
+<div class="block">Returns the head of this <code>MusicNote</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/myscript/music/MusicLedgerLine.html" title="class in com.myscript.music">MusicLedgerLine</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/music/MusicNote.html#getLedgerLineAt(int)">getLedgerLineAt</a></strong>(int&nbsp;index)</code>
+<div class="block">Returns the ledger line at the specified <code>index</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/music/MusicNote.html#getLedgerLineCount()">getLedgerLineCount</a></strong>()</code>
+<div class="block">Returns the number of ledger lines on this <code>MusicNote</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/music/MusicNote.html#getLine()">getLine</a></strong>()</code>
+<div class="block">Returns the line on which this <code>MusicNote</code> is positioned.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/myscript/music/MusicPitchData.html" title="class in com.myscript.music">MusicPitchData</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/music/MusicNote.html#getPitch()">getPitch</a></strong>()</code>
+<div class="block">Returns the pitch of this <code>MusicNote</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/myscript/music/MusicBeam.html" title="class in com.myscript.music">MusicBeam</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/music/MusicNote.html#getStartBeam()">getStartBeam</a></strong>()</code>
+<div class="block">Returns the beam starting from this <code>MusicNote</code> (optional).</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/myscript/music/MusicSlur.html" title="class in com.myscript.music">MusicSlur</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/music/MusicNote.html#getStartSlurAt(int)">getStartSlurAt</a></strong>(int&nbsp;index)</code>
+<div class="block">Returns the starting slur at the specified <code>index</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/music/MusicNote.html#getStartSlurCount()">getStartSlurCount</a></strong>()</code>
+<div class="block">Returns the number of slurs starting from this <code>MusicNote</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/myscript/music/MusicTie.html" title="class in com.myscript.music">MusicTie</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/music/MusicNote.html#getStartTie()">getStartTie</a></strong>()</code>
+<div class="block">Returns the tie starting from this <code>MusicNote</code> (optional).</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/myscript/music/MusicTuplet.html" title="class in com.myscript.music">MusicTuplet</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/music/MusicNote.html#getStartTuplet()">getStartTuplet</a></strong>()</code>
+<div class="block">Returns the tuplet starting from this <code>MusicNote</code> (optional).</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/myscript/music/MusicStem.html" title="class in com.myscript.music">MusicStem</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/music/MusicNote.html#getStem()">getStem</a></strong>()</code>
+<div class="block">Returns the stem of this <code>MusicNote</code> (optional).</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/myscript/music/MusicBeam.html" title="class in com.myscript.music">MusicBeam</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/music/MusicNote.html#getStopBeam()">getStopBeam</a></strong>()</code>
+<div class="block">Returns the beam stopping on this <code>MusicNote</code> (optional).</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/myscript/music/MusicSlur.html" title="class in com.myscript.music">MusicSlur</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/music/MusicNote.html#getStopSlurAt(int)">getStopSlurAt</a></strong>(int&nbsp;index)</code>
+<div class="block">Returns the stopping slur at the specified <code>index</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/music/MusicNote.html#getStopSlurCount()">getStopSlurCount</a></strong>()</code>
+<div class="block">Returns the number of slurs stopping from this <code>MusicNote</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/myscript/music/MusicTie.html" title="class in com.myscript.music">MusicTie</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/music/MusicNote.html#getStopTie()">getStopTie</a></strong>()</code>
+<div class="block">Returns the tie stopping on this <code>MusicNote</code> (optional).</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/myscript/music/MusicTuplet.html" title="class in com.myscript.music">MusicTuplet</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/music/MusicNote.html#getStopTuplet()">getStopTuplet</a></strong>()</code>
+<div class="block">Returns the tuplet stopping on this <code>MusicNote</code> (optional).</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/myscript/music/MusicTimeModificationData.html" title="class in com.myscript.music">MusicTimeModificationData</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/music/MusicNote.html#getTimeModification()">getTimeModification</a></strong>()</code>
+<div class="block">Returns the time modification for this <code>MusicNote</code> (optional).</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/myscript/music/MusicNoteType.html" title="class in com.myscript.music">MusicNoteType</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/music/MusicNote.html#getType()">getType</a></strong>()</code>
+<div class="block">Returns the type of this <code>MusicNote</code>.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.myscript.music.MusicElement">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;com.myscript.music.<a href="../../../com/myscript/music/MusicElement.html" title="class in com.myscript.music">MusicElement</a></h3>
+<code><a href="../../../com/myscript/music/MusicElement.html#getInputRangeAt(int)">getInputRangeAt</a>, <a href="../../../com/myscript/music/MusicElement.html#getInputRangeCount()">getInputRangeCount</a>, <a href="../../../com/myscript/music/MusicElement.html#getUserCount(com.myscript.engine.Engine)">getUserCount</a>, <a href="../../../com/myscript/music/MusicElement.html#getUserLimit(com.myscript.engine.Engine)">getUserLimit</a>, <a href="../../../com/myscript/music/MusicElement.html#resetUserLimit(com.myscript.engine.Engine)">resetUserLimit</a>, <a href="../../../com/myscript/music/MusicElement.html#setUserLimit(com.myscript.engine.Engine,%20int)">setUserLimit</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.myscript.engine.EngineObject">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;com.myscript.engine.<a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></h3>
+<code><a href="../../../com/myscript/engine/EngineObject.html#acquire()">acquire</a>, <a href="../../../com/myscript/engine/EngineObject.html#checkDisposed()">checkDisposed</a>, <a href="../../../com/myscript/engine/EngineObject.html#clone()">clone</a>, <a href="../../../com/myscript/engine/EngineObject.html#dispose()">dispose</a>, <a href="../../../com/myscript/engine/EngineObject.html#finalize()">finalize</a>, <a href="../../../com/myscript/engine/EngineObject.html#getAttachReferenceCount()">getAttachReferenceCount</a>, <a href="../../../com/myscript/engine/EngineObject.html#getEngine()">getEngine</a>, <a href="../../../com/myscript/engine/EngineObject.html#getMemoryUsage()">getMemoryUsage</a>, <a href="../../../com/myscript/engine/EngineObject.html#getNativeReference()">getNativeReference</a>, <a href="../../../com/myscript/engine/EngineObject.html#getUserReferenceCount()">getUserReferenceCount</a>, <a href="../../../com/myscript/engine/EngineObject.html#isDisposed()">isDisposed</a>, <a href="../../../com/myscript/engine/EngineObject.html#isSame(com.myscript.engine.EngineObject)">isSame</a>, <a href="../../../com/myscript/engine/EngineObject.html#load(com.myscript.engine.Engine,%20java.nio.channels.ReadableByteChannel)">load</a>, <a href="../../../com/myscript/engine/EngineObject.html#load(com.myscript.engine.Engine,%20java.lang.String)">load</a>, <a href="../../../com/myscript/engine/EngineObject.html#load(com.myscript.engine.Engine,%20java.lang.String,%20java.lang.String)">load</a>, <a href="../../../com/myscript/engine/EngineObject.html#store(java.lang.String)">store</a>, <a href="../../../com/myscript/engine/EngineObject.html#store(java.lang.String,%20java.lang.String)">store</a>, <a href="../../../com/myscript/engine/EngineObject.html#store(java.nio.channels.WritableByteChannel)">store</a>, <a href="../../../com/myscript/engine/EngineObject.html#toString()">toString</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>equals, getClass, hashCode, notify, notifyAll, wait, wait, wait</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="getType()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getType</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/music/MusicNoteType.html" title="class in com.myscript.music">MusicNoteType</a>&nbsp;getType()
+                            throws java.lang.IllegalStateException</pre>
+<div class="block">Returns the type of this <code>MusicNote</code>.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the type of this <code>MusicNote</code>.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>MusicNote</code> object has
+           been disposed of.</dd></dl>
+</li>
+</ul>
+<a name="getPitch()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPitch</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/music/MusicPitchData.html" title="class in com.myscript.music">MusicPitchData</a>&nbsp;getPitch()
+                              throws java.lang.IllegalStateException</pre>
+<div class="block">Returns the pitch of this <code>MusicNote</code>.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the pitch of this <code>MusicNote</code> as a
+         <code>MusicPitchData</code> object.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>MusicNote</code> object has
+           been disposed of.</dd></dl>
+</li>
+</ul>
+<a name="getDuration(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDuration</h4>
+<pre>public final&nbsp;int&nbsp;getDuration(int&nbsp;divisions)
+                      throws java.lang.IllegalStateException</pre>
+<div class="block">Returns the duration of this <code>MusicNote</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>divisions</code> - number of divisions</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the duration of this <code>MusicNote</code>.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>MusicNote</code> object has
+           been disposed of.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>divisions &lt;= 0</code>.</dd></dl>
+</li>
+</ul>
+<a name="getLine()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLine</h4>
+<pre>public final&nbsp;int&nbsp;getLine()
+                  throws java.lang.IllegalStateException</pre>
+<div class="block">Returns the line on which this <code>MusicNote</code> is positioned.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the line on which this <code>MusicNote</code> is positioned.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>MusicNote</code> object has
+           been disposed of.</dd></dl>
+</li>
+</ul>
+<a name="getHead()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getHead</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/music/MusicHead.html" title="class in com.myscript.music">MusicHead</a>&nbsp;getHead()
+                        throws java.lang.IllegalStateException,
+                               <a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></pre>
+<div class="block">Returns the head of this <code>MusicNote</code>.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the head of this <code>MusicNote</code> as a <code>MusicHead</code>
+         object.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>MusicNote</code> object has
+           been disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></code> - when the <code>MusicElement</code> user
+           limit has been reached.</dd></dl>
+</li>
+</ul>
+<a name="getStem()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStem</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/music/MusicStem.html" title="class in com.myscript.music">MusicStem</a>&nbsp;getStem()
+                        throws java.lang.IllegalStateException,
+                               <a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></pre>
+<div class="block">Returns the stem of this <code>MusicNote</code> (optional).</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the stem of this <code>MusicNote</code> as a <code>MusicStem</code>
+         object.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>MusicNote</code> object has
+           been disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></code> - when the <code>MusicElement</code> user
+           limit has been reached.</dd></dl>
+</li>
+</ul>
+<a name="getAccidental()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAccidental</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/music/MusicAccidental.html" title="class in com.myscript.music">MusicAccidental</a>&nbsp;getAccidental()
+                                    throws java.lang.IllegalStateException,
+                                           <a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></pre>
+<div class="block">Returns the accidental of this <code>MusicNote</code> (optional).</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the accidental of this <code>MusicNote</code> as a
+         <code>MusicAccidental</code> object.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>MusicNote</code> object has
+           been disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></code> - when the <code>MusicElement</code> user
+           limit has been reached.</dd></dl>
+</li>
+</ul>
+<a name="getDots()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDots</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/music/MusicDots.html" title="class in com.myscript.music">MusicDots</a>&nbsp;getDots()
+                        throws java.lang.IllegalStateException,
+                               <a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></pre>
+<div class="block">Returns the dots of this <code>MusicNote</code> (optional).</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the dots of this <code>MusicNote</code> as a <code>MusicDots</code>
+         object.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>MusicNote</code> object has
+           been disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></code> - when the <code>MusicElement</code> user
+           limit has been reached.</dd></dl>
+</li>
+</ul>
+<a name="getBeamTypeCount()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getBeamTypeCount</h4>
+<pre>public final&nbsp;int&nbsp;getBeamTypeCount()
+                           throws java.lang.IllegalStateException</pre>
+<div class="block">Returns the number of beam types on this <code>MusicNote</code>.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the number of beam type on this <code>MusicNote</code>.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>MusicNote</code> object has
+           been disposed of.</dd></dl>
+</li>
+</ul>
+<a name="getBeamTypeAt(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getBeamTypeAt</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/music/MusicBeamType.html" title="class in com.myscript.music">MusicBeamType</a>&nbsp;getBeamTypeAt(int&nbsp;index)
+                                  throws java.lang.IllegalStateException,
+                                         java.lang.IndexOutOfBoundsException</pre>
+<div class="block">Returns the beam type at the specified <code>index</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>index</code> - the index of the beam type to be retrieved.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the beam type at the specified <code>index</code> as a
+         <code>MusicBeamType</code> object.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>MusicNote</code> object has
+           been disposed of.</dd>
+<dd><code>java.lang.IndexOutOfBoundsException</code> - when <code>index</code> is out of bounds
+           (should be <code>&gt;= 0</code> and
+           <code>&lt; <a href="../../../com/myscript/music/MusicNote.html#getBeamTypeCount()"><code>getBeamTypeCount()</code></a></code>.</dd></dl>
+</li>
+</ul>
+<a name="getStartBeam()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStartBeam</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/music/MusicBeam.html" title="class in com.myscript.music">MusicBeam</a>&nbsp;getStartBeam()
+                             throws java.lang.IllegalStateException,
+                                    <a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></pre>
+<div class="block">Returns the beam starting from this <code>MusicNote</code> (optional).</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the beam starting from this <code>MusicNote</code> as a
+         <code>MusicBeam</code> object.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>MusicNote</code> object has
+           been disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></code> - when the <code>MusicElement</code> user
+           limit has been reached.</dd></dl>
+</li>
+</ul>
+<a name="getStopBeam()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStopBeam</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/music/MusicBeam.html" title="class in com.myscript.music">MusicBeam</a>&nbsp;getStopBeam()
+                            throws java.lang.IllegalStateException,
+                                   <a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></pre>
+<div class="block">Returns the beam stopping on this <code>MusicNote</code> (optional).</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the beam stopping on this <code>MusicNote</code> as a
+         <code>MusicBeam</code> object.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>MusicNote</code> object has
+           been disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></code> - when the <code>MusicElement</code> user
+           limit has been reached.</dd></dl>
+</li>
+</ul>
+<a name="getStartTie()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStartTie</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/music/MusicTie.html" title="class in com.myscript.music">MusicTie</a>&nbsp;getStartTie()
+                           throws java.lang.IllegalStateException,
+                                  <a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></pre>
+<div class="block">Returns the tie starting from this <code>MusicNote</code> (optional).</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the tie starting from this <code>MusicNote</code> as a
+         <code>MusicTie</code> object.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>MusicNote</code> object has
+           been disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></code> - when the <code>MusicElement</code> user
+           limit has been reached.</dd></dl>
+</li>
+</ul>
+<a name="getStopTie()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStopTie</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/music/MusicTie.html" title="class in com.myscript.music">MusicTie</a>&nbsp;getStopTie()
+                          throws java.lang.IllegalStateException,
+                                 <a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></pre>
+<div class="block">Returns the tie stopping on this <code>MusicNote</code> (optional).</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the tie stopping on this <code>MusicNote</code> as a
+         <code>MusicTie</code> object.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>MusicNote</code> object has
+           been disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></code> - when the <code>MusicElement</code> user
+           limit has been reached.</dd></dl>
+</li>
+</ul>
+<a name="getStartSlurCount()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStartSlurCount</h4>
+<pre>public final&nbsp;int&nbsp;getStartSlurCount()
+                            throws java.lang.IllegalStateException</pre>
+<div class="block">Returns the number of slurs starting from this <code>MusicNote</code>.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the number of slurs starting from this <code>MusicNote</code>.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>MusicNote</code> object has
+           been disposed of.</dd></dl>
+</li>
+</ul>
+<a name="getStartSlurAt(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStartSlurAt</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/music/MusicSlur.html" title="class in com.myscript.music">MusicSlur</a>&nbsp;getStartSlurAt(int&nbsp;index)
+                               throws java.lang.IllegalStateException,
+                                      java.lang.IndexOutOfBoundsException,
+                                      <a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></pre>
+<div class="block">Returns the starting slur at the specified <code>index</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>index</code> - the index of the slur to be retrieved.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the starting slur at the specified <code>index</code> as a
+         <code>MusicStartSlur</code> object.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>MusicNote</code> object has
+           been disposed of.</dd>
+<dd><code>java.lang.IndexOutOfBoundsException</code> - when <code>index</code> is out of bounds
+           (should be <code>&gt;= 0</code> and
+           <code>&lt; <a href="../../../com/myscript/music/MusicNote.html#getStartSlurCount()"><code>getStartSlurCount()</code></a></code>.</dd>
+<dd><code><a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></code> - when the <code>MusicElement</code> user
+           limit has been reached.</dd></dl>
+</li>
+</ul>
+<a name="getStopSlurCount()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStopSlurCount</h4>
+<pre>public final&nbsp;int&nbsp;getStopSlurCount()
+                           throws java.lang.IllegalStateException</pre>
+<div class="block">Returns the number of slurs stopping from this <code>MusicNote</code>.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the number of slurs stopping from this <code>MusicNote</code>.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>MusicNote</code> object has
+           been disposed of.</dd></dl>
+</li>
+</ul>
+<a name="getStopSlurAt(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStopSlurAt</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/music/MusicSlur.html" title="class in com.myscript.music">MusicSlur</a>&nbsp;getStopSlurAt(int&nbsp;index)
+                              throws java.lang.IllegalStateException,
+                                     java.lang.IndexOutOfBoundsException,
+                                     <a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></pre>
+<div class="block">Returns the stopping slur at the specified <code>index</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>index</code> - the index of the slur to be retrieved.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the stopping slur at the specified <code>index</code> as a
+         <code>MusicStopSlur</code> object.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>MusicNote</code> object has
+           been disposed of.</dd>
+<dd><code>java.lang.IndexOutOfBoundsException</code> - when <code>index</code> is out of bounds
+           (should be <code>&gt;= 0</code> and
+           <code>&lt; <a href="../../../com/myscript/music/MusicNote.html#getStopSlurCount()"><code>getStopSlurCount()</code></a></code>.</dd>
+<dd><code><a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></code> - when the <code>MusicElement</code> user
+           limit has been reached.</dd></dl>
+</li>
+</ul>
+<a name="getLedgerLineCount()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLedgerLineCount</h4>
+<pre>public final&nbsp;int&nbsp;getLedgerLineCount()
+                             throws java.lang.IllegalStateException</pre>
+<div class="block">Returns the number of ledger lines on this <code>MusicNote</code>.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the number of ledger lines on this <code>MusicNote</code>.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>MusicNote</code> object has
+           been disposed of.</dd></dl>
+</li>
+</ul>
+<a name="getLedgerLineAt(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLedgerLineAt</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/music/MusicLedgerLine.html" title="class in com.myscript.music">MusicLedgerLine</a>&nbsp;getLedgerLineAt(int&nbsp;index)
+                                      throws java.lang.IllegalStateException,
+                                             java.lang.IndexOutOfBoundsException,
+                                             <a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></pre>
+<div class="block">Returns the ledger line at the specified <code>index</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>index</code> - the index of the ledgerLine to be retrieved.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the ledger line at the specified <code>index</code> as a
+         <code>MusicLedgerLine</code> object.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>MusicNote</code> object has
+           been disposed of.</dd>
+<dd><code>java.lang.IndexOutOfBoundsException</code> - when <code>index</code> is out of bounds
+           (should be <code>&gt;= 0</code> and
+           <code>&lt; <a href="../../../com/myscript/music/MusicNote.html#getLedgerLineCount()"><code>getLedgerLineCount()</code></a></code>.</dd>
+<dd><code><a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></code> - when the <code>MusicElement</code> user
+           limit has been reached.</dd></dl>
+</li>
+</ul>
+<a name="getDecorationCount()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDecorationCount</h4>
+<pre>public final&nbsp;int&nbsp;getDecorationCount()
+                             throws java.lang.IllegalStateException</pre>
+<div class="block">Returns the number of decorations on this <code>MusicNote</code>.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the number of decorations on this <code>MusicNote</code>.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>MusicNote</code> object has
+           been disposed of.</dd></dl>
+</li>
+</ul>
+<a name="getDecorationAt(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDecorationAt</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/music/MusicDecoration.html" title="class in com.myscript.music">MusicDecoration</a>&nbsp;getDecorationAt(int&nbsp;index)
+                                      throws java.lang.IllegalStateException,
+                                             java.lang.IndexOutOfBoundsException,
+                                             <a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></pre>
+<div class="block">Returns the decoration at the specified <code>index</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>index</code> - the index of the decoration to be retrieved.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the decoration at the specified <code>index</code> as a
+         <code>MusicDecoration</code> object.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>MusicNote</code> object has
+           been disposed of.</dd>
+<dd><code>java.lang.IndexOutOfBoundsException</code> - when <code>index</code> is out of bounds
+           (should be <code>&gt;= 0</code> and
+           <code>&lt; <a href="../../../com/myscript/music/MusicNote.html#getDecorationCount()"><code>getDecorationCount()</code></a></code>.</dd>
+<dd><code><a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></code> - when the <code>MusicElement</code> user
+           limit has been reached.</dd></dl>
+</li>
+</ul>
+<a name="getStartTuplet()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStartTuplet</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/music/MusicTuplet.html" title="class in com.myscript.music">MusicTuplet</a>&nbsp;getStartTuplet()
+                                 throws java.lang.IllegalStateException,
+                                        <a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></pre>
+<div class="block">Returns the tuplet starting from this <code>MusicNote</code> (optional).</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the tuplet starting on this <code>MusicNote</code> as a
+         <code>MusicTuplet</code> object.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>MusicNote</code> object has
+           been disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></code> - when the <code>MusicElement</code> user
+           limit has been reached.</dd><dt><span class="strong">Since:</span></dt>
+  <dd>7.0.0</dd></dl>
+</li>
+</ul>
+<a name="getStopTuplet()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStopTuplet</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/music/MusicTuplet.html" title="class in com.myscript.music">MusicTuplet</a>&nbsp;getStopTuplet()
+                                throws java.lang.IllegalStateException,
+                                       <a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></pre>
+<div class="block">Returns the tuplet stopping on this <code>MusicNote</code> (optional).</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the tuplet stopping on this <code>MusicNote</code> as a
+         <code>MusicTuplet</code> object.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>MusicNote</code> object has
+           been disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></code> - when the <code>MusicElement</code> user
+           limit has been reached.</dd><dt><span class="strong">Since:</span></dt>
+  <dd>7.0.0</dd></dl>
+</li>
+</ul>
+<a name="getTimeModification()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getTimeModification</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/music/MusicTimeModificationData.html" title="class in com.myscript.music">MusicTimeModificationData</a>&nbsp;getTimeModification()
+                                                    throws java.lang.IllegalStateException</pre>
+<div class="block">Returns the time modification for this <code>MusicNote</code> (optional).</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the time modification for this <code>MusicNote</code> as a
+         <code>MusicTimeModificationData</code> object.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>MusicNote</code> object has
+           been disposed of.</dd><dt><span class="strong">Since:</span></dt>
+  <dd>7.0.0</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/MusicNote.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../com/myscript/music/MusicLedgerLine.html" title="class in com.myscript.music"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../com/myscript/music/MusicNoteType.html" title="class in com.myscript.music"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/myscript/music/MusicNote.html" target="_top">Frames</a></li>
+<li><a href="MusicNote.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#fields_inherited_from_class_com.myscript.engine.EngineObject">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+</body>
+</html>

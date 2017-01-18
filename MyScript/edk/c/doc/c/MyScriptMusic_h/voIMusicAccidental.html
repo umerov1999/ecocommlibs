@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>voIMusicAccidental</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="voIMusicAccidental";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptMusic.h</FONT>
+<BR>
+Type voIMusicAccidental</H2>
+<PRE>
+<B>voIMusicAccidental</B>
+</PRE>
+<HR>
+<CODE>#include &lt;c/MyScriptMusic.h&gt;</CODE>
+<BR>
+<CODE>typedef  struct <A href="../../c/MyScriptMusic_h/struct__voIMusicAccidental.html">_voIMusicAccidental</A>  <B>voIMusicAccidental</B></CODE>
+<BR>
+<CODE></CODE>
+</P>
+<P>Functions composing the  <CODE><A href="../../c/MyScriptMusic_h/voIMusicAccidental.html">voIMusicAccidental</A></CODE> interface. <P>
+
+<P>This interface exposes the public methods of the  <CODE><A href="../../c/MyScriptMusic_h/voMusicAccidental.html">voMusicAccidental</A></CODE> type.</P>
+<P> 
+<implementingType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">voMusicAccidental </implementingType> 
+</P>    
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Member_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="3"><FONT SIZE="+2"><B>Member Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voMusicAccidentalType</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#getType">getType</A>)(voEngine engine, voMusicAccidental target)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Returns the type of accidental. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Member_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Member Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="getType"></A>
+<H3 class="code">getType</H3>
+<PRE>
+<A href="../../c/MyScriptMusic_h/voMusicAccidentalType.html">voMusicAccidentalType</A> <B>getType</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptMusic_h/voMusicAccidental.html">voMusicAccidental</A> target)</PRE>
+<DL>
+<DD>Returns the type of accidental. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target accidental.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P>the type of accidental on success, otherwise  <CODE><A href="../../c/MyScriptMusic_h/enum__voMusicAccidentalType.html#VO_MUSIC_ACCIDENTAL_TYPE_ERR">VO_MUSIC_ACCIDENTAL_TYPE_ERR</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> is not a  <CODE><A href="../../c/MyScriptMusic_h/voMusicAccidental.html">voMusicAccidental</A></CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

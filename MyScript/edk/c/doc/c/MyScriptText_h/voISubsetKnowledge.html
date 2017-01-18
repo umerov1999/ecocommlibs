@@ -1,0 +1,933 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>voISubsetKnowledge</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="voISubsetKnowledge";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptText.h</FONT>
+<BR>
+Type voISubsetKnowledge</H2>
+<PRE>
+<B>voISubsetKnowledge</B>
+</PRE>
+<HR>
+<CODE>#include &lt;c/MyScriptText.h&gt;</CODE>
+<BR>
+<CODE>typedef  struct <A href="../../c/MyScriptText_h/struct__voISubsetKnowledge.html">_voISubsetKnowledge</A>  <B>voISubsetKnowledge</B></CODE>
+<BR>
+<CODE></CODE>
+</P>
+<P>Functions composing the  <CODE><A href="../../c/MyScriptText_h/voISubsetKnowledge.html">voISubsetKnowledge</A></CODE> interface. <P>
+
+<P>This interface exposes the public methods of the  <CODE><A href="../../c/MyScriptText_h/voSubsetKnowledge.html">voSubsetKnowledge</A></CODE> type.</P>
+<P> 
+<implementingType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">voSubsetKnowledge </implementingType> 
+</P>    
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Member_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="3"><FONT SIZE="+2"><B>Member Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#disableAllCharacters">disableAllCharacters</A>)(voEngine engine, voSubsetKnowledge target)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Disables the recognition of all characters. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#disableCharacter">disableCharacter</A>)(voEngine engine, voSubsetKnowledge target, voCharset charset, const voString *character)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Disables the specified character (singular). </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#disableCharacters">disableCharacters</A>)(voEngine engine, voSubsetKnowledge target, voCharset charset, const voString *characters)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Disables the specified characters (plural). </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#enableAllCharacters">enableAllCharacters</A>)(voEngine engine, voSubsetKnowledge target)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Enables the recognition of all characters. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#enableCharacter">enableCharacter</A>)(voEngine engine, voSubsetKnowledge target, voCharset charset, const voString *character)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Enables the specified character (singular). </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#enableCharacters">enableCharacters</A>)(voEngine engine, voSubsetKnowledge target, voCharset charset, const voString *characters)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Enables the specified characters (plural). </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Member_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Member Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="disableAllCharacters"></A>
+<H3 class="code">disableAllCharacters</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B>disableAllCharacters</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptText_h/voSubsetKnowledge.html">voSubsetKnowledge</A> target)</PRE>
+<DL>
+<DD>Disables the recognition of all characters. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target subset knowledge.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> is not a  <CODE><A href="../../c/MyScriptText_h/voSubsetKnowledge.html">voSubsetKnowledge</A></CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="disableCharacter"></A>
+<H3 class="code">disableCharacter</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B>disableCharacter</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptText_h/voSubsetKnowledge.html">voSubsetKnowledge</A> target, <A href="../../c/MyScriptEngine_h/voCharset.html">voCharset</A> charset, const <A href="../../c/MyScriptEngine_h/voString.html">voString</A> *character)</PRE>
+<DL>
+<DD>Disables the specified character (singular). <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target subset knowledge. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+charset
+</B>
+<DD>
+<parameterdescription>
+
+<P>the charset used to encode parameter strings. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+character
+</B>
+<DD>
+<parameterdescription>
+
+<P>the character to be disabled.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> is not a  <CODE><A href="../../c/MyScriptText_h/voSubsetKnowledge.html">voSubsetKnowledge</A></CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>charset</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>charset</CODE> reference is  <CODE>NULL</CODE> and no default charset was set. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OBJECT">VO_INVALID_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>charset</CODE> is not a  <CODE><A href="../../c/MyScriptEngine_h/voCharset.html">voCharset</A></CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>character</CODE> or its  <CODE>bytes</CODE> member is not readable. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_ARGUMENT">VO_INVALID_ARGUMENT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>character</CODE> is empty.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>4.5_6 </P>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="disableCharacters"></A>
+<H3 class="code">disableCharacters</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B>disableCharacters</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptText_h/voSubsetKnowledge.html">voSubsetKnowledge</A> target, <A href="../../c/MyScriptEngine_h/voCharset.html">voCharset</A> charset, const <A href="../../c/MyScriptEngine_h/voString.html">voString</A> *characters)</PRE>
+<DL>
+<DD>Disables the specified characters (plural). <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target subset knowledge. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+charset
+</B>
+<DD>
+<parameterdescription>
+
+<P>the charset used to encode parameter strings. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+characters
+</B>
+<DD>
+<parameterdescription>
+
+<P>the characters to be disabled.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> is not a  <CODE><A href="../../c/MyScriptText_h/voSubsetKnowledge.html">voSubsetKnowledge</A></CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>charset</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>charset</CODE> reference is  <CODE>NULL</CODE> and no default charset was set. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OBJECT">VO_INVALID_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>charset</CODE> is not a  <CODE><A href="../../c/MyScriptEngine_h/voCharset.html">voCharset</A></CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>characters</CODE> or its  <CODE>bytes</CODE> member is not readable. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_ARGUMENT">VO_INVALID_ARGUMENT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>characters</CODE> is empty. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="enableAllCharacters"></A>
+<H3 class="code">enableAllCharacters</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B>enableAllCharacters</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptText_h/voSubsetKnowledge.html">voSubsetKnowledge</A> target)</PRE>
+<DL>
+<DD>Enables the recognition of all characters. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target subset knowledge.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> is not a  <CODE><A href="../../c/MyScriptText_h/voSubsetKnowledge.html">voSubsetKnowledge</A></CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="enableCharacter"></A>
+<H3 class="code">enableCharacter</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B>enableCharacter</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptText_h/voSubsetKnowledge.html">voSubsetKnowledge</A> target, <A href="../../c/MyScriptEngine_h/voCharset.html">voCharset</A> charset, const <A href="../../c/MyScriptEngine_h/voString.html">voString</A> *character)</PRE>
+<DL>
+<DD>Enables the specified character (singular). <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target subset knowledge. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+charset
+</B>
+<DD>
+<parameterdescription>
+
+<P>the charset used to encode parameter strings. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+character
+</B>
+<DD>
+<parameterdescription>
+
+<P>the character to be enabled.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> is not a  <CODE><A href="../../c/MyScriptText_h/voSubsetKnowledge.html">voSubsetKnowledge</A></CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>charset</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>charset</CODE> reference is  <CODE>NULL</CODE> and no default charset was set. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OBJECT">VO_INVALID_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>charset</CODE> is not a  <CODE><A href="../../c/MyScriptEngine_h/voCharset.html">voCharset</A></CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>character</CODE> or its  <CODE>bytes</CODE> member is not readable. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_ARGUMENT">VO_INVALID_ARGUMENT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>character</CODE> is empty.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>4.5_6 </P>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="enableCharacters"></A>
+<H3 class="code">enableCharacters</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B>enableCharacters</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptText_h/voSubsetKnowledge.html">voSubsetKnowledge</A> target, <A href="../../c/MyScriptEngine_h/voCharset.html">voCharset</A> charset, const <A href="../../c/MyScriptEngine_h/voString.html">voString</A> *characters)</PRE>
+<DL>
+<DD>Enables the specified characters (plural). <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target subset knowledge. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+charset
+</B>
+<DD>
+<parameterdescription>
+
+<P>the charset used to encode parameter strings. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+characters
+</B>
+<DD>
+<parameterdescription>
+
+<P>the characters to be enabled.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> is not a  <CODE><A href="../../c/MyScriptText_h/voSubsetKnowledge.html">voSubsetKnowledge</A></CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>charset</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>charset</CODE> reference is  <CODE>NULL</CODE> and no default charset was set. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OBJECT">VO_INVALID_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>charset</CODE> is not a  <CODE><A href="../../c/MyScriptEngine_h/voCharset.html">voCharset</A></CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>characters</CODE> or its  <CODE>bytes</CODE> member is not readable. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_ARGUMENT">VO_INVALID_ARGUMENT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>characters</CODE> is empty. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

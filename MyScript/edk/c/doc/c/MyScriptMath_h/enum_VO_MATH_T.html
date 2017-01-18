@@ -1,0 +1,434 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>VO_MATH_T</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="VO_MATH_T";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptMath.h</FONT>
+<BR>
+Enumeration VO_MATH_T</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptMath.h&gt;</CODE>
+<BR>
+<CODE>enum <B>_VO_MATH_T</B></CODE>
+</P>
+<P>Lists the MyScript Math types. <P>
+        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Value_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Value Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MathDocument">VO_MathDocument</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  5000</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMath_h/voMathDocument.html">voMathDocument</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MathAlphabetKnowledge">VO_MathAlphabetKnowledge</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMath_h/voMathAlphabetKnowledge.html">voMathAlphabetKnowledge</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MathGrammar">VO_MathGrammar</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMath_h/voMathGrammar.html">voMathGrammar</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MathRecognizer">VO_MathRecognizer</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMath_h/voMathRecognizer.html">voMathRecognizer</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MathNode">VO_MathNode</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  8001</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMath_h/voMathNode.html">voMathNode</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MathTerminalNode">VO_MathTerminalNode</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  5005</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMath_h/voMathTerminalNode.html">voMathTerminalNode</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MathNonTerminalNode">VO_MathNonTerminalNode</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMath_h/voMathNonTerminalNode.html">voMathNonTerminalNode</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MathRuleNode">VO_MathRuleNode</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMath_h/voMathRuleNode.html">voMathRuleNode</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MathScratchOut">VO_MathScratchOut</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMath_h/voMathScratchOut.html">voMathScratchOut</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MathCellNode">VO_MathCellNode</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMath_h/voMathCellNode.html">voMathCellNode</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MathBorderNode">VO_MathBorderNode</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMath_h/voMathBorderNode.html">voMathBorderNode</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MathTableNode">VO_MathTableNode</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMath_h/voMathTableNode.html">voMathTableNode</A></CODE> type identifier. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Value_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Value Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="VO_MathDocument"></A>
+<H3 class="code">VO_MathDocument</H3>
+<PRE>
+<B>VO_MathDocument</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMath_h/voMathDocument.html">voMathDocument</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMath_h/voMathDocument.html">voMathDocument</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MathAlphabetKnowledge"></A>
+<H3 class="code">VO_MathAlphabetKnowledge</H3>
+<PRE>
+<B>VO_MathAlphabetKnowledge</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMath_h/voMathAlphabetKnowledge.html">voMathAlphabetKnowledge</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMath_h/voMathAlphabetKnowledge.html">voMathAlphabetKnowledge</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MathGrammar"></A>
+<H3 class="code">VO_MathGrammar</H3>
+<PRE>
+<B>VO_MathGrammar</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMath_h/voMathGrammar.html">voMathGrammar</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMath_h/voMathGrammar.html">voMathGrammar</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MathRecognizer"></A>
+<H3 class="code">VO_MathRecognizer</H3>
+<PRE>
+<B>VO_MathRecognizer</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMath_h/voMathRecognizer.html">voMathRecognizer</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMath_h/voMathRecognizer.html">voMathRecognizer</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MathNode"></A>
+<H3 class="code">VO_MathNode</H3>
+<PRE>
+<B>VO_MathNode</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMath_h/voMathNode.html">voMathNode</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMath_h/voMathNode.html">voMathNode</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MathTerminalNode"></A>
+<H3 class="code">VO_MathTerminalNode</H3>
+<PRE>
+<B>VO_MathTerminalNode</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMath_h/voMathTerminalNode.html">voMathTerminalNode</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMath_h/voMathTerminalNode.html">voMathTerminalNode</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MathNonTerminalNode"></A>
+<H3 class="code">VO_MathNonTerminalNode</H3>
+<PRE>
+<B>VO_MathNonTerminalNode</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMath_h/voMathNonTerminalNode.html">voMathNonTerminalNode</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMath_h/voMathNonTerminalNode.html">voMathNonTerminalNode</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MathRuleNode"></A>
+<H3 class="code">VO_MathRuleNode</H3>
+<PRE>
+<B>VO_MathRuleNode</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMath_h/voMathRuleNode.html">voMathRuleNode</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMath_h/voMathRuleNode.html">voMathRuleNode</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MathScratchOut"></A>
+<H3 class="code">VO_MathScratchOut</H3>
+<PRE>
+<B>VO_MathScratchOut</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMath_h/voMathScratchOut.html">voMathScratchOut</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMath_h/voMathScratchOut.html">voMathScratchOut</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>6.1_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MathCellNode"></A>
+<H3 class="code">VO_MathCellNode</H3>
+<PRE>
+<B>VO_MathCellNode</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMath_h/voMathCellNode.html">voMathCellNode</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMath_h/voMathCellNode.html">voMathCellNode</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>6.4_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MathBorderNode"></A>
+<H3 class="code">VO_MathBorderNode</H3>
+<PRE>
+<B>VO_MathBorderNode</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMath_h/voMathBorderNode.html">voMathBorderNode</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMath_h/voMathBorderNode.html">voMathBorderNode</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>6.4_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MathTableNode"></A>
+<H3 class="code">VO_MathTableNode</H3>
+<PRE>
+<B>VO_MathTableNode</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMath_h/voMathTableNode.html">voMathTableNode</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMath_h/voMathTableNode.html">voMathTableNode</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>6.4_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

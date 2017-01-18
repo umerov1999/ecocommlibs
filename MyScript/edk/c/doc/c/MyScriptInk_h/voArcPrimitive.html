@@ -1,0 +1,5333 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>voArcPrimitive</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="voArcPrimitive";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptInk.h</FONT>
+<BR>
+Type voArcPrimitive</H2>
+<PRE>
+<a href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</a>
+  <IMG SRC="../..//resources/inherit.gif" ALT="extended by "><a href="../../c/MyScriptInk_h/voInkStroke.html">voInkStroke</a>
+      <IMG SRC="../..//resources/inherit.gif" ALT="extended by "><B>voArcPrimitive</B>
+</PRE>
+<DL>
+<DT>
+<B>Properties:</B>
+<DD>
+<a href="../../c/MyScriptEngine_h/enum_VO_ENGINEOBJECT_PROP.html">VO_ENGINEOBJECT_PROP</a>
+</DD>
+</DT>
+</DL>
+<DL>
+<DT>
+<B>All Implemented Interfaces:</B>
+<DD>
+<a href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</a>, <a href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</a>, <a href="../../c/MyScriptInk_h/voIPrimitive.html">voIPrimitive</a>
+</DD>
+</DT>
+</DL>
+<HR>
+<CODE>#include &lt;c/MyScriptInk.h&gt;</CODE>
+<BR>
+<CODE>typedef  <A href="../../c/MyScriptInk_h/voInkStroke.html">voInkStroke</A>  <B>voArcPrimitive</B></CODE>
+<BR>
+<CODE><I>&nbsp;extends </I><a href="../../c/MyScriptInk_h/voInkStroke.html">voInkStroke</a><I>&nbsp;implements </I><a href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</a>, <a href="../../c/MyScriptInk_h/voIPrimitive.html">voIPrimitive</a></CODE>
+</P>
+<P> 
+<CODE><A href="../../c/MyScriptInk_h/voArcPrimitive.html">voArcPrimitive</A></CODE> reference type. <P>
+
+<P>    
+</P>        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Interface_Function_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Interface Function Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>const float *</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::getFloatArray">voIInkStroke::getFloatArray</A>(voEngine engine, voEngineObject target, int32_t channelIndex)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Returns the  <CODE>float</CODE> array corresponding to the stroke samples of a given channel. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voInkStrokeFormat</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::getFormat">voIInkStroke::getFormat</A>(voEngine engine, voEngineObject target)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Returns the format of this stroke. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>const int32_t *</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::getInt32Array">voIInkStroke::getInt32Array</A>(voEngine engine, voEngineObject target, int32_t channelIndex)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Returns the  <CODE><A href="../../c/std/stdint_h/int32_t.html">int32_t</A></CODE> array corresponding to the stroke samples of a given channel. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>const int64_t *</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::getInt64Array">voIInkStroke::getInt64Array</A>(voEngine engine, voEngineObject target, int32_t channelIndex)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Returns the  <CODE><A href="../../c/std/stdint_h/int64_t.html">int64_t</A></CODE> array corresponding to the stroke samples of a given channel. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>const voPoint *</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::getPointArray">voIInkStroke::getPointArray</A>(voEngine engine, voEngineObject target)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Returns the points array for this stroke. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::getPoints">voIInkStroke::getPoints</A>(voEngine engine, voEngineObject target, int32_t sampleOffset, int32_t sampleCount, voPoint *points)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Returns the points of the stroke. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>int32_t</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::getSampleCount">voIInkStroke::getSampleCount</A>(voEngine engine, voEngineObject target)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Returns the number of samples in this stroke. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>int64_t</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::getTimestamp">voIInkStroke::getTimestamp</A>(voEngine engine, voEngineObject target)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Returns the timestamp of the stroke as the number of microseconds elapsed since the Unix EPOCH (January 1, 1970, 00:00:00 GMT). </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::getValuesAsFloat">voIInkStroke::getValuesAsFloat</A>(voEngine engine, voEngineObject target, int32_t channelIndex, int32_t sampleOffset, int32_t sampleCount, float *values, size_t byteStride)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Returns the stroke samples of a given channel as  <CODE>float</CODE> values. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::getValuesAsInt32">voIInkStroke::getValuesAsInt32</A>(voEngine engine, voEngineObject target, int32_t channelIndex, int32_t sampleOffset, int32_t sampleCount, int32_t *values, size_t byteStride)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Returns the stroke samples of a given channel as  <CODE><A href="../../c/std/stdint_h/int32_t.html">int32_t</A></CODE> values. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::getValuesAsInt64">voIInkStroke::getValuesAsInt64</A>(voEngine engine, voEngineObject target, int32_t channelIndex, int32_t sampleOffset, int32_t sampleCount, int64_t *values, size_t byteStride)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Returns the stroke samples of a given channel as  <CODE><A href="../../c/std/stdint_h/int64_t.html">int64_t</A></CODE> values. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voYesNo</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::isFirstPointIncluded">voIInkStroke::isFirstPointIncluded</A>(voEngine engine, voEngineObject target)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Tells whether the first point of the stroke corresponds to the left boundary of a left open interval. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voYesNo</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::isFirstPointPenDown">voIInkStroke::isFirstPointPenDown</A>(voEngine engine, voEngineObject target)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Tells whether the first point of the stroke corresponds to the beginning of a raw stroke. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voYesNo</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::isFloatArrayCompatible">voIInkStroke::isFloatArrayCompatible</A>(voEngine engine, voEngineObject target, int32_t channelIndex)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Tells whether the sample data for a given channel can be retrieved as a direct  <CODE>float</CODE> array. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voYesNo</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::isInt32ArrayCompatible">voIInkStroke::isInt32ArrayCompatible</A>(voEngine engine, voEngineObject target, int32_t channelIndex)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Tells whether the sample data for a given channel can be retrieved as a direct  <CODE><A href="../../c/std/stdint_h/int32_t.html">int32_t</A></CODE> array. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voYesNo</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::isInt64ArrayCompatible">voIInkStroke::isInt64ArrayCompatible</A>(voEngine engine, voEngineObject target, int32_t channelIndex)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Tells whether the sample data for a given channel can be retrieved as a direct  <CODE><A href="../../c/std/stdint_h/int64_t.html">int64_t</A></CODE> array. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voYesNo</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::isLastPointIncluded">voIInkStroke::isLastPointIncluded</A>(voEngine engine, voEngineObject target)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Tells whether the last point of the stroke corresponds to the right boundary of a right open interval. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voYesNo</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::isLastPointPenUp">voIInkStroke::isLastPointPenUp</A>(voEngine engine, voEngineObject target)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Tells whether the last point of the stroke corresponds to the end of a raw stroke. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voYesNo</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::isPointArrayCompatible">voIInkStroke::isPointArrayCompatible</A>(voEngine engine, voEngineObject target)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Tells whether this stroke has interleaved floating-point  <CODE>X</CODE> and  <CODE>Y</CODE> channels that can be retrieved directly as an array of  <CODE><A href="../../c/MyScriptInk_h/voPoint.html">voPoint</A></CODE>. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>const float *</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::getFloatArray">voIInkStroke::getFloatArray</A>(voEngine engine, voEngineObject target, int32_t channelIndex)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Returns the  <CODE>float</CODE> array corresponding to the stroke samples of a given channel. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voInkStrokeFormat</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::getFormat">voIInkStroke::getFormat</A>(voEngine engine, voEngineObject target)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Returns the format of this stroke. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>const int32_t *</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::getInt32Array">voIInkStroke::getInt32Array</A>(voEngine engine, voEngineObject target, int32_t channelIndex)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Returns the  <CODE><A href="../../c/std/stdint_h/int32_t.html">int32_t</A></CODE> array corresponding to the stroke samples of a given channel. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>const int64_t *</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::getInt64Array">voIInkStroke::getInt64Array</A>(voEngine engine, voEngineObject target, int32_t channelIndex)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Returns the  <CODE><A href="../../c/std/stdint_h/int64_t.html">int64_t</A></CODE> array corresponding to the stroke samples of a given channel. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>const voPoint *</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::getPointArray">voIInkStroke::getPointArray</A>(voEngine engine, voEngineObject target)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Returns the points array for this stroke. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::getPoints">voIInkStroke::getPoints</A>(voEngine engine, voEngineObject target, int32_t sampleOffset, int32_t sampleCount, voPoint *points)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Returns the points of the stroke. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>int32_t</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::getSampleCount">voIInkStroke::getSampleCount</A>(voEngine engine, voEngineObject target)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Returns the number of samples in this stroke. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>int64_t</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::getTimestamp">voIInkStroke::getTimestamp</A>(voEngine engine, voEngineObject target)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Returns the timestamp of the stroke as the number of microseconds elapsed since the Unix EPOCH (January 1, 1970, 00:00:00 GMT). </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::getValuesAsFloat">voIInkStroke::getValuesAsFloat</A>(voEngine engine, voEngineObject target, int32_t channelIndex, int32_t sampleOffset, int32_t sampleCount, float *values, size_t byteStride)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Returns the stroke samples of a given channel as  <CODE>float</CODE> values. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::getValuesAsInt32">voIInkStroke::getValuesAsInt32</A>(voEngine engine, voEngineObject target, int32_t channelIndex, int32_t sampleOffset, int32_t sampleCount, int32_t *values, size_t byteStride)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Returns the stroke samples of a given channel as  <CODE><A href="../../c/std/stdint_h/int32_t.html">int32_t</A></CODE> values. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::getValuesAsInt64">voIInkStroke::getValuesAsInt64</A>(voEngine engine, voEngineObject target, int32_t channelIndex, int32_t sampleOffset, int32_t sampleCount, int64_t *values, size_t byteStride)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Returns the stroke samples of a given channel as  <CODE><A href="../../c/std/stdint_h/int64_t.html">int64_t</A></CODE> values. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voYesNo</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::isFirstPointIncluded">voIInkStroke::isFirstPointIncluded</A>(voEngine engine, voEngineObject target)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Tells whether the first point of the stroke corresponds to the left boundary of a left open interval. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voYesNo</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::isFirstPointPenDown">voIInkStroke::isFirstPointPenDown</A>(voEngine engine, voEngineObject target)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Tells whether the first point of the stroke corresponds to the beginning of a raw stroke. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voYesNo</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::isFloatArrayCompatible">voIInkStroke::isFloatArrayCompatible</A>(voEngine engine, voEngineObject target, int32_t channelIndex)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Tells whether the sample data for a given channel can be retrieved as a direct  <CODE>float</CODE> array. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voYesNo</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::isInt32ArrayCompatible">voIInkStroke::isInt32ArrayCompatible</A>(voEngine engine, voEngineObject target, int32_t channelIndex)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Tells whether the sample data for a given channel can be retrieved as a direct  <CODE><A href="../../c/std/stdint_h/int32_t.html">int32_t</A></CODE> array. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voYesNo</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::isInt64ArrayCompatible">voIInkStroke::isInt64ArrayCompatible</A>(voEngine engine, voEngineObject target, int32_t channelIndex)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Tells whether the sample data for a given channel can be retrieved as a direct  <CODE><A href="../../c/std/stdint_h/int64_t.html">int64_t</A></CODE> array. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voYesNo</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::isLastPointIncluded">voIInkStroke::isLastPointIncluded</A>(voEngine engine, voEngineObject target)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Tells whether the last point of the stroke corresponds to the right boundary of a right open interval. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voYesNo</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::isLastPointPenUp">voIInkStroke::isLastPointPenUp</A>(voEngine engine, voEngineObject target)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Tells whether the last point of the stroke corresponds to the end of a raw stroke. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voYesNo</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIInkStroke::isPointArrayCompatible">voIInkStroke::isPointArrayCompatible</A>(voEngine engine, voEngineObject target)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Tells whether this stroke has interleaved floating-point  <CODE>X</CODE> and  <CODE>Y</CODE> channels that can be retrieved directly as an array of  <CODE><A href="../../c/MyScriptInk_h/voPoint.html">voPoint</A></CODE>. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIPrimitive::getData">voIPrimitive::getData</A>(voEngine engine, voEngineObject target, void *data, size_t sizeOfData)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Returns the intrinsic geometric parameters of this primitive. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voInkDecorationType</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIPrimitive::getFirstDecoration">voIPrimitive::getFirstDecoration</A>(voEngine engine, voEngineObject target)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Returns the type of decoration at the first endpoint of this primitive. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIPrimitive::getFirstTangentAngle">voIPrimitive::getFirstTangentAngle</A>(voEngine engine, voEngineObject target, float *angle)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Returns the tangent angle at the first endpoint of this primitive. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voInkDecorationType</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIPrimitive::getLastDecoration">voIPrimitive::getLastDecoration</A>(voEngine engine, voEngineObject target)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Returns the type of the decoration at the last endpoint of this primitive. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIPrimitive::getLastTangentAngle">voIPrimitive::getLastTangentAngle</A>(voEngine engine, voEngineObject target, float *angle)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Returns the tangent angle at the last endpoint of this primitive. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Interface_Function_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Interface Function Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="voIInkStroke::getFloatArray"></A>
+<H3 class="code">getFloatArray</H3>
+<PRE>const float * <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::getFloatArray</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> channelIndex)</PRE>
+<DL>
+<DD>Returns the  <CODE>float</CODE> array corresponding to the stroke samples of a given channel. <P>
+
+<P>
+<DL>
+<DT>
+<B>Note:</B>
+<DD>
+<P>This function can be called only if  <CODE>isFloatArrayCompatible()</CODE> returns  <CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_YES">VO_YES</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+channelIndex
+</B>
+<DD>
+<parameterdescription>
+
+<P>the channel index.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P>a pointer to the  <CODE>float</CODE> array that contains the channel samples on success, otherwise  <CODE>NULL</CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INDEX_OUT_OF_BOUNDS">VO_INDEX_OUT_OF_BOUNDS</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>channelIndex</CODE> is out of bounds. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_STATE">VO_INVALID_STATE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when this function cannot be called (use  <CODE>getValuesAsFloat()</CODE> instead). </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIInkStroke::getFormat"></A>
+<H3 class="code">getFormat</H3>
+<PRE>
+<A href="../../c/MyScriptInk_h/voInkStrokeFormat.html">voInkStrokeFormat</A> <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::getFormat</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target)</PRE>
+<DL>
+<DD>Returns the format of this stroke. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P>the stroke format on success, otherwise  <CODE>NULL</CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_LIMIT_EXCEEDED">VO_LIMIT_EXCEEDED</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the number of  <CODE><A href="../../c/MyScriptInk_h/voInkStrokeFormat.html">voInkStrokeFormat</A></CODE> instances would exceed the allowed limit (please remember that the limit can be shared by several types). </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIInkStroke::getInt32Array"></A>
+<H3 class="code">getInt32Array</H3>
+<PRE>const <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> * <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::getInt32Array</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> channelIndex)</PRE>
+<DL>
+<DD>Returns the  <CODE><A href="../../c/std/stdint_h/int32_t.html">int32_t</A></CODE> array corresponding to the stroke samples of a given channel. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+channelIndex
+</B>
+<DD>
+<parameterdescription>
+
+<P>the channel index.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P>a pointer to the  <CODE><A href="../../c/std/stdint_h/int32_t.html">int32_t</A></CODE> array that contains the channel samples on success, otherwise  <CODE>NULL</CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INDEX_OUT_OF_BOUNDS">VO_INDEX_OUT_OF_BOUNDS</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>channelIndex</CODE> is out of bounds. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_STATE">VO_INVALID_STATE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when this function cannot be called (use  <CODE>getValuesAsInt32()</CODE> instead). </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIInkStroke::getInt64Array"></A>
+<H3 class="code">getInt64Array</H3>
+<PRE>const <A href="../../c/std/stdint_h/int64_t.html">int64_t</A> * <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::getInt64Array</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> channelIndex)</PRE>
+<DL>
+<DD>Returns the  <CODE><A href="../../c/std/stdint_h/int64_t.html">int64_t</A></CODE> array corresponding to the stroke samples of a given channel. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+channelIndex
+</B>
+<DD>
+<parameterdescription>
+
+<P>the channel index.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P>a pointer to the  <CODE><A href="../../c/std/stdint_h/int64_t.html">int64_t</A></CODE> array that contains the channel samples on success, otherwise  <CODE>NULL</CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INDEX_OUT_OF_BOUNDS">VO_INDEX_OUT_OF_BOUNDS</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>channelIndex</CODE> is out of bounds. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_STATE">VO_INVALID_STATE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when this function cannot be called (use  <CODE>getValuesAsInt64()</CODE> instead). </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIInkStroke::getPointArray"></A>
+<H3 class="code">getPointArray</H3>
+<PRE>const <A href="../../c/MyScriptInk_h/voPoint.html">voPoint</A> * <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::getPointArray</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target)</PRE>
+<DL>
+<DD>Returns the points array for this stroke. <P>
+
+<P>
+<DL>
+<DT>
+<B>Note:</B>
+<DD>
+<P>This function can be called only if  <CODE>isPointArrayCompatible()</CODE> returns  <CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_YES">VO_YES</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P>the array of points for this stroke on success, otherwise  <CODE>NULL</CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_STATE">VO_INVALID_STATE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when this function cannot be called (use  <CODE>getPoints()</CODE> instead). </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIInkStroke::getPoints"></A>
+<H3 class="code">getPoints</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::getPoints</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> sampleOffset, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> sampleCount, <A href="../../c/MyScriptInk_h/voPoint.html">voPoint</A> *points)</PRE>
+<DL>
+<DD>Returns the points of the stroke. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+sampleOffset
+</B>
+<DD>
+<parameterdescription>
+
+<P>the offset of the points to be retrieved. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+sampleCount
+</B>
+<DD>
+<parameterdescription>
+
+<P>the number of points to be retrieved. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+points
+</B>
+<DD>
+<parameterdescription>
+
+<P>the recipient for the points.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INDEX_OUT_OF_BOUNDS">VO_INDEX_OUT_OF_BOUNDS</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>sampleOffset</CODE> and/or  <CODE>sampleCount</CODE> are out of bounds. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>points</CODE> is not writable. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIInkStroke::getSampleCount"></A>
+<H3 class="code">getSampleCount</H3>
+<PRE>
+<A href="../../c/std/stdint_h/int32_t.html">int32_t</A> <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::getSampleCount</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target)</PRE>
+<DL>
+<DD>Returns the number of samples in this stroke. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P>the number of samples on success, otherwise  <CODE>-1</CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIInkStroke::getTimestamp"></A>
+<H3 class="code">getTimestamp</H3>
+<PRE>
+<A href="../../c/std/stdint_h/int64_t.html">int64_t</A> <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::getTimestamp</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target)</PRE>
+<DL>
+<DD>Returns the timestamp of the stroke as the number of microseconds elapsed since the Unix EPOCH (January 1, 1970, 00:00:00 GMT). <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P>the timestamp of the stroke on success, otherwise  <CODE>-1</CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIInkStroke::getValuesAsFloat"></A>
+<H3 class="code">getValuesAsFloat</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::getValuesAsFloat</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> channelIndex, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> sampleOffset, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> sampleCount, float *values, size_t byteStride)</PRE>
+<DL>
+<DD>Returns the stroke samples of a given channel as  <CODE>float</CODE> values. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+channelIndex
+</B>
+<DD>
+<parameterdescription>
+
+<P>the channel index. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+sampleOffset
+</B>
+<DD>
+<parameterdescription>
+
+<P>the offset of the samples to be retrieved. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+sampleCount
+</B>
+<DD>
+<parameterdescription>
+
+<P>the number of samples to be retrieved. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+values
+</B>
+<DD>
+<parameterdescription>
+
+<P>the recipient for the values. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+byteStride
+</B>
+<DD>
+<parameterdescription>
+
+<P>the offset, in bytes, between 2 values.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INDEX_OUT_OF_BOUNDS">VO_INDEX_OUT_OF_BOUNDS</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>channelIndex</CODE> is out bounds. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INDEX_OUT_OF_BOUNDS">VO_INDEX_OUT_OF_BOUNDS</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>sampleOffset</CODE> and/or  <CODE>sampleCount</CODE> are out of bounds. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>values</CODE> is not writable. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIInkStroke::getValuesAsInt32"></A>
+<H3 class="code">getValuesAsInt32</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::getValuesAsInt32</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> channelIndex, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> sampleOffset, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> sampleCount, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> *values, size_t byteStride)</PRE>
+<DL>
+<DD>Returns the stroke samples of a given channel as  <CODE><A href="../../c/std/stdint_h/int32_t.html">int32_t</A></CODE> values. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+channelIndex
+</B>
+<DD>
+<parameterdescription>
+
+<P>the channel index. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+sampleOffset
+</B>
+<DD>
+<parameterdescription>
+
+<P>the offset of the samples to be retrieved. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+sampleCount
+</B>
+<DD>
+<parameterdescription>
+
+<P>the number of samples to be retrieved. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+values
+</B>
+<DD>
+<parameterdescription>
+
+<P>the recipient for the values. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+byteStride
+</B>
+<DD>
+<parameterdescription>
+
+<P>the offset, in bytes, between 2 values.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INDEX_OUT_OF_BOUNDS">VO_INDEX_OUT_OF_BOUNDS</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>channelIndex</CODE> is out bounds. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INDEX_OUT_OF_BOUNDS">VO_INDEX_OUT_OF_BOUNDS</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>sampleOffset</CODE> and/or  <CODE>sampleCount</CODE> are out of bounds. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>values</CODE> is not writable. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIInkStroke::getValuesAsInt64"></A>
+<H3 class="code">getValuesAsInt64</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::getValuesAsInt64</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> channelIndex, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> sampleOffset, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> sampleCount, <A href="../../c/std/stdint_h/int64_t.html">int64_t</A> *values, size_t byteStride)</PRE>
+<DL>
+<DD>Returns the stroke samples of a given channel as  <CODE><A href="../../c/std/stdint_h/int64_t.html">int64_t</A></CODE> values. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+channelIndex
+</B>
+<DD>
+<parameterdescription>
+
+<P>the channel index. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+sampleOffset
+</B>
+<DD>
+<parameterdescription>
+
+<P>the offset of the samples to be retrieved. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+sampleCount
+</B>
+<DD>
+<parameterdescription>
+
+<P>the number of samples to be retrieved. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+values
+</B>
+<DD>
+<parameterdescription>
+
+<P>the recipient for the values. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+byteStride
+</B>
+<DD>
+<parameterdescription>
+
+<P>the offset, in bytes, between 2 values.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INDEX_OUT_OF_BOUNDS">VO_INDEX_OUT_OF_BOUNDS</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>channelIndex</CODE> is out bounds. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INDEX_OUT_OF_BOUNDS">VO_INDEX_OUT_OF_BOUNDS</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>sampleOffset</CODE> and/or  <CODE>sampleCount</CODE> are out of bounds. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>values</CODE> is not writable. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIInkStroke::isFirstPointIncluded"></A>
+<H3 class="code">isFirstPointIncluded</H3>
+<PRE>
+<A href="../../c/MyScriptEngine_h/voYesNo.html">voYesNo</A> <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::isFirstPointIncluded</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target)</PRE>
+<DL>
+<DD>Tells whether the first point of the stroke corresponds to the left boundary of a left open interval. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_YES">VO_YES</A></CODE> or  <CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_NO">VO_NO</A></CODE> on success, otherwise  <CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html">VO_ERR</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIInkStroke::isFirstPointPenDown"></A>
+<H3 class="code">isFirstPointPenDown</H3>
+<PRE>
+<A href="../../c/MyScriptEngine_h/voYesNo.html">voYesNo</A> <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::isFirstPointPenDown</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target)</PRE>
+<DL>
+<DD>Tells whether the first point of the stroke corresponds to the beginning of a raw stroke. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_YES">VO_YES</A></CODE> or  <CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_NO">VO_NO</A></CODE> on success, otherwise  <CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html">VO_ERR</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIInkStroke::isFloatArrayCompatible"></A>
+<H3 class="code">isFloatArrayCompatible</H3>
+<PRE>
+<A href="../../c/MyScriptEngine_h/voYesNo.html">voYesNo</A> <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::isFloatArrayCompatible</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> channelIndex)</PRE>
+<DL>
+<DD>Tells whether the sample data for a given channel can be retrieved as a direct  <CODE>float</CODE> array. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+channelIndex
+</B>
+<DD>
+<parameterdescription>
+
+<P>the channel index.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_YES">VO_YES</A></CODE> or  <CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_NO">VO_NO</A></CODE> on success, otherwise  <CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html">VO_ERR</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INDEX_OUT_OF_BOUNDS">VO_INDEX_OUT_OF_BOUNDS</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>channelIndex</CODE> is out of bounds. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIInkStroke::isInt32ArrayCompatible"></A>
+<H3 class="code">isInt32ArrayCompatible</H3>
+<PRE>
+<A href="../../c/MyScriptEngine_h/voYesNo.html">voYesNo</A> <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::isInt32ArrayCompatible</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> channelIndex)</PRE>
+<DL>
+<DD>Tells whether the sample data for a given channel can be retrieved as a direct  <CODE><A href="../../c/std/stdint_h/int32_t.html">int32_t</A></CODE> array. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+channelIndex
+</B>
+<DD>
+<parameterdescription>
+
+<P>the channel index.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_YES">VO_YES</A></CODE> or  <CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_NO">VO_NO</A></CODE> on success, otherwise  <CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html">VO_ERR</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INDEX_OUT_OF_BOUNDS">VO_INDEX_OUT_OF_BOUNDS</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>channelIndex</CODE> is out of bounds. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIInkStroke::isInt64ArrayCompatible"></A>
+<H3 class="code">isInt64ArrayCompatible</H3>
+<PRE>
+<A href="../../c/MyScriptEngine_h/voYesNo.html">voYesNo</A> <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::isInt64ArrayCompatible</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> channelIndex)</PRE>
+<DL>
+<DD>Tells whether the sample data for a given channel can be retrieved as a direct  <CODE><A href="../../c/std/stdint_h/int64_t.html">int64_t</A></CODE> array. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+channelIndex
+</B>
+<DD>
+<parameterdescription>
+
+<P>the channel index.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_YES">VO_YES</A></CODE> or  <CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_NO">VO_NO</A></CODE> on success, otherwise  <CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html">VO_ERR</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INDEX_OUT_OF_BOUNDS">VO_INDEX_OUT_OF_BOUNDS</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>channelIndex</CODE> is out of bounds. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIInkStroke::isLastPointIncluded"></A>
+<H3 class="code">isLastPointIncluded</H3>
+<PRE>
+<A href="../../c/MyScriptEngine_h/voYesNo.html">voYesNo</A> <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::isLastPointIncluded</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target)</PRE>
+<DL>
+<DD>Tells whether the last point of the stroke corresponds to the right boundary of a right open interval. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_YES">VO_YES</A></CODE> or  <CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_NO">VO_NO</A></CODE> on success, otherwise  <CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html">VO_ERR</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIInkStroke::isLastPointPenUp"></A>
+<H3 class="code">isLastPointPenUp</H3>
+<PRE>
+<A href="../../c/MyScriptEngine_h/voYesNo.html">voYesNo</A> <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::isLastPointPenUp</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target)</PRE>
+<DL>
+<DD>Tells whether the last point of the stroke corresponds to the end of a raw stroke. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_YES">VO_YES</A></CODE> or  <CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_NO">VO_NO</A></CODE> on success, otherwise  <CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html">VO_ERR</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIInkStroke::isPointArrayCompatible"></A>
+<H3 class="code">isPointArrayCompatible</H3>
+<PRE>
+<A href="../../c/MyScriptEngine_h/voYesNo.html">voYesNo</A> <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::isPointArrayCompatible</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target)</PRE>
+<DL>
+<DD>Tells whether this stroke has interleaved floating-point  <CODE>X</CODE> and  <CODE>Y</CODE> channels that can be retrieved directly as an array of  <CODE><A href="../../c/MyScriptInk_h/voPoint.html">voPoint</A></CODE>. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_YES">VO_YES</A></CODE> or  <CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_NO">VO_NO</A></CODE> on success, otherwise  <CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html">VO_ERR</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIInkStroke::getFloatArray"></A>
+<H3 class="code">getFloatArray</H3>
+<PRE>const float * <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::getFloatArray</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> channelIndex)</PRE>
+<DL>
+<DD>Returns the  <CODE>float</CODE> array corresponding to the stroke samples of a given channel. <P>
+
+<P>
+<DL>
+<DT>
+<B>Note:</B>
+<DD>
+<P>This function can be called only if  <CODE>isFloatArrayCompatible()</CODE> returns  <CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_YES">VO_YES</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+channelIndex
+</B>
+<DD>
+<parameterdescription>
+
+<P>the channel index.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P>a pointer to the  <CODE>float</CODE> array that contains the channel samples on success, otherwise  <CODE>NULL</CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INDEX_OUT_OF_BOUNDS">VO_INDEX_OUT_OF_BOUNDS</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>channelIndex</CODE> is out of bounds. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_STATE">VO_INVALID_STATE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when this function cannot be called (use  <CODE>getValuesAsFloat()</CODE> instead). </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIInkStroke::getFormat"></A>
+<H3 class="code">getFormat</H3>
+<PRE>
+<A href="../../c/MyScriptInk_h/voInkStrokeFormat.html">voInkStrokeFormat</A> <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::getFormat</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target)</PRE>
+<DL>
+<DD>Returns the format of this stroke. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P>the stroke format on success, otherwise  <CODE>NULL</CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_LIMIT_EXCEEDED">VO_LIMIT_EXCEEDED</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the number of  <CODE><A href="../../c/MyScriptInk_h/voInkStrokeFormat.html">voInkStrokeFormat</A></CODE> instances would exceed the allowed limit (please remember that the limit can be shared by several types). </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIInkStroke::getInt32Array"></A>
+<H3 class="code">getInt32Array</H3>
+<PRE>const <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> * <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::getInt32Array</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> channelIndex)</PRE>
+<DL>
+<DD>Returns the  <CODE><A href="../../c/std/stdint_h/int32_t.html">int32_t</A></CODE> array corresponding to the stroke samples of a given channel. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+channelIndex
+</B>
+<DD>
+<parameterdescription>
+
+<P>the channel index.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P>a pointer to the  <CODE><A href="../../c/std/stdint_h/int32_t.html">int32_t</A></CODE> array that contains the channel samples on success, otherwise  <CODE>NULL</CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INDEX_OUT_OF_BOUNDS">VO_INDEX_OUT_OF_BOUNDS</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>channelIndex</CODE> is out of bounds. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_STATE">VO_INVALID_STATE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when this function cannot be called (use  <CODE>getValuesAsInt32()</CODE> instead). </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIInkStroke::getInt64Array"></A>
+<H3 class="code">getInt64Array</H3>
+<PRE>const <A href="../../c/std/stdint_h/int64_t.html">int64_t</A> * <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::getInt64Array</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> channelIndex)</PRE>
+<DL>
+<DD>Returns the  <CODE><A href="../../c/std/stdint_h/int64_t.html">int64_t</A></CODE> array corresponding to the stroke samples of a given channel. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+channelIndex
+</B>
+<DD>
+<parameterdescription>
+
+<P>the channel index.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P>a pointer to the  <CODE><A href="../../c/std/stdint_h/int64_t.html">int64_t</A></CODE> array that contains the channel samples on success, otherwise  <CODE>NULL</CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INDEX_OUT_OF_BOUNDS">VO_INDEX_OUT_OF_BOUNDS</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>channelIndex</CODE> is out of bounds. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_STATE">VO_INVALID_STATE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when this function cannot be called (use  <CODE>getValuesAsInt64()</CODE> instead). </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIInkStroke::getPointArray"></A>
+<H3 class="code">getPointArray</H3>
+<PRE>const <A href="../../c/MyScriptInk_h/voPoint.html">voPoint</A> * <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::getPointArray</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target)</PRE>
+<DL>
+<DD>Returns the points array for this stroke. <P>
+
+<P>
+<DL>
+<DT>
+<B>Note:</B>
+<DD>
+<P>This function can be called only if  <CODE>isPointArrayCompatible()</CODE> returns  <CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_YES">VO_YES</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P>the array of points for this stroke on success, otherwise  <CODE>NULL</CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_STATE">VO_INVALID_STATE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when this function cannot be called (use  <CODE>getPoints()</CODE> instead). </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIInkStroke::getPoints"></A>
+<H3 class="code">getPoints</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::getPoints</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> sampleOffset, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> sampleCount, <A href="../../c/MyScriptInk_h/voPoint.html">voPoint</A> *points)</PRE>
+<DL>
+<DD>Returns the points of the stroke. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+sampleOffset
+</B>
+<DD>
+<parameterdescription>
+
+<P>the offset of the points to be retrieved. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+sampleCount
+</B>
+<DD>
+<parameterdescription>
+
+<P>the number of points to be retrieved. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+points
+</B>
+<DD>
+<parameterdescription>
+
+<P>the recipient for the points.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INDEX_OUT_OF_BOUNDS">VO_INDEX_OUT_OF_BOUNDS</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>sampleOffset</CODE> and/or  <CODE>sampleCount</CODE> are out of bounds. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>points</CODE> is not writable. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIInkStroke::getSampleCount"></A>
+<H3 class="code">getSampleCount</H3>
+<PRE>
+<A href="../../c/std/stdint_h/int32_t.html">int32_t</A> <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::getSampleCount</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target)</PRE>
+<DL>
+<DD>Returns the number of samples in this stroke. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P>the number of samples on success, otherwise  <CODE>-1</CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIInkStroke::getTimestamp"></A>
+<H3 class="code">getTimestamp</H3>
+<PRE>
+<A href="../../c/std/stdint_h/int64_t.html">int64_t</A> <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::getTimestamp</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target)</PRE>
+<DL>
+<DD>Returns the timestamp of the stroke as the number of microseconds elapsed since the Unix EPOCH (January 1, 1970, 00:00:00 GMT). <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P>the timestamp of the stroke on success, otherwise  <CODE>-1</CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIInkStroke::getValuesAsFloat"></A>
+<H3 class="code">getValuesAsFloat</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::getValuesAsFloat</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> channelIndex, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> sampleOffset, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> sampleCount, float *values, size_t byteStride)</PRE>
+<DL>
+<DD>Returns the stroke samples of a given channel as  <CODE>float</CODE> values. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+channelIndex
+</B>
+<DD>
+<parameterdescription>
+
+<P>the channel index. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+sampleOffset
+</B>
+<DD>
+<parameterdescription>
+
+<P>the offset of the samples to be retrieved. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+sampleCount
+</B>
+<DD>
+<parameterdescription>
+
+<P>the number of samples to be retrieved. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+values
+</B>
+<DD>
+<parameterdescription>
+
+<P>the recipient for the values. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+byteStride
+</B>
+<DD>
+<parameterdescription>
+
+<P>the offset, in bytes, between 2 values.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INDEX_OUT_OF_BOUNDS">VO_INDEX_OUT_OF_BOUNDS</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>channelIndex</CODE> is out bounds. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INDEX_OUT_OF_BOUNDS">VO_INDEX_OUT_OF_BOUNDS</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>sampleOffset</CODE> and/or  <CODE>sampleCount</CODE> are out of bounds. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>values</CODE> is not writable. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIInkStroke::getValuesAsInt32"></A>
+<H3 class="code">getValuesAsInt32</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::getValuesAsInt32</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> channelIndex, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> sampleOffset, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> sampleCount, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> *values, size_t byteStride)</PRE>
+<DL>
+<DD>Returns the stroke samples of a given channel as  <CODE><A href="../../c/std/stdint_h/int32_t.html">int32_t</A></CODE> values. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+channelIndex
+</B>
+<DD>
+<parameterdescription>
+
+<P>the channel index. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+sampleOffset
+</B>
+<DD>
+<parameterdescription>
+
+<P>the offset of the samples to be retrieved. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+sampleCount
+</B>
+<DD>
+<parameterdescription>
+
+<P>the number of samples to be retrieved. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+values
+</B>
+<DD>
+<parameterdescription>
+
+<P>the recipient for the values. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+byteStride
+</B>
+<DD>
+<parameterdescription>
+
+<P>the offset, in bytes, between 2 values.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INDEX_OUT_OF_BOUNDS">VO_INDEX_OUT_OF_BOUNDS</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>channelIndex</CODE> is out bounds. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INDEX_OUT_OF_BOUNDS">VO_INDEX_OUT_OF_BOUNDS</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>sampleOffset</CODE> and/or  <CODE>sampleCount</CODE> are out of bounds. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>values</CODE> is not writable. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIInkStroke::getValuesAsInt64"></A>
+<H3 class="code">getValuesAsInt64</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::getValuesAsInt64</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> channelIndex, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> sampleOffset, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> sampleCount, <A href="../../c/std/stdint_h/int64_t.html">int64_t</A> *values, size_t byteStride)</PRE>
+<DL>
+<DD>Returns the stroke samples of a given channel as  <CODE><A href="../../c/std/stdint_h/int64_t.html">int64_t</A></CODE> values. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+channelIndex
+</B>
+<DD>
+<parameterdescription>
+
+<P>the channel index. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+sampleOffset
+</B>
+<DD>
+<parameterdescription>
+
+<P>the offset of the samples to be retrieved. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+sampleCount
+</B>
+<DD>
+<parameterdescription>
+
+<P>the number of samples to be retrieved. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+values
+</B>
+<DD>
+<parameterdescription>
+
+<P>the recipient for the values. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+byteStride
+</B>
+<DD>
+<parameterdescription>
+
+<P>the offset, in bytes, between 2 values.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INDEX_OUT_OF_BOUNDS">VO_INDEX_OUT_OF_BOUNDS</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>channelIndex</CODE> is out bounds. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INDEX_OUT_OF_BOUNDS">VO_INDEX_OUT_OF_BOUNDS</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>sampleOffset</CODE> and/or  <CODE>sampleCount</CODE> are out of bounds. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>values</CODE> is not writable. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIInkStroke::isFirstPointIncluded"></A>
+<H3 class="code">isFirstPointIncluded</H3>
+<PRE>
+<A href="../../c/MyScriptEngine_h/voYesNo.html">voYesNo</A> <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::isFirstPointIncluded</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target)</PRE>
+<DL>
+<DD>Tells whether the first point of the stroke corresponds to the left boundary of a left open interval. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_YES">VO_YES</A></CODE> or  <CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_NO">VO_NO</A></CODE> on success, otherwise  <CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html">VO_ERR</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIInkStroke::isFirstPointPenDown"></A>
+<H3 class="code">isFirstPointPenDown</H3>
+<PRE>
+<A href="../../c/MyScriptEngine_h/voYesNo.html">voYesNo</A> <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::isFirstPointPenDown</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target)</PRE>
+<DL>
+<DD>Tells whether the first point of the stroke corresponds to the beginning of a raw stroke. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_YES">VO_YES</A></CODE> or  <CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_NO">VO_NO</A></CODE> on success, otherwise  <CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html">VO_ERR</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIInkStroke::isFloatArrayCompatible"></A>
+<H3 class="code">isFloatArrayCompatible</H3>
+<PRE>
+<A href="../../c/MyScriptEngine_h/voYesNo.html">voYesNo</A> <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::isFloatArrayCompatible</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> channelIndex)</PRE>
+<DL>
+<DD>Tells whether the sample data for a given channel can be retrieved as a direct  <CODE>float</CODE> array. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+channelIndex
+</B>
+<DD>
+<parameterdescription>
+
+<P>the channel index.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_YES">VO_YES</A></CODE> or  <CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_NO">VO_NO</A></CODE> on success, otherwise  <CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html">VO_ERR</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INDEX_OUT_OF_BOUNDS">VO_INDEX_OUT_OF_BOUNDS</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>channelIndex</CODE> is out of bounds. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIInkStroke::isInt32ArrayCompatible"></A>
+<H3 class="code">isInt32ArrayCompatible</H3>
+<PRE>
+<A href="../../c/MyScriptEngine_h/voYesNo.html">voYesNo</A> <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::isInt32ArrayCompatible</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> channelIndex)</PRE>
+<DL>
+<DD>Tells whether the sample data for a given channel can be retrieved as a direct  <CODE><A href="../../c/std/stdint_h/int32_t.html">int32_t</A></CODE> array. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+channelIndex
+</B>
+<DD>
+<parameterdescription>
+
+<P>the channel index.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_YES">VO_YES</A></CODE> or  <CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_NO">VO_NO</A></CODE> on success, otherwise  <CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html">VO_ERR</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INDEX_OUT_OF_BOUNDS">VO_INDEX_OUT_OF_BOUNDS</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>channelIndex</CODE> is out of bounds. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIInkStroke::isInt64ArrayCompatible"></A>
+<H3 class="code">isInt64ArrayCompatible</H3>
+<PRE>
+<A href="../../c/MyScriptEngine_h/voYesNo.html">voYesNo</A> <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::isInt64ArrayCompatible</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> channelIndex)</PRE>
+<DL>
+<DD>Tells whether the sample data for a given channel can be retrieved as a direct  <CODE><A href="../../c/std/stdint_h/int64_t.html">int64_t</A></CODE> array. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+channelIndex
+</B>
+<DD>
+<parameterdescription>
+
+<P>the channel index.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_YES">VO_YES</A></CODE> or  <CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_NO">VO_NO</A></CODE> on success, otherwise  <CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html">VO_ERR</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INDEX_OUT_OF_BOUNDS">VO_INDEX_OUT_OF_BOUNDS</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>channelIndex</CODE> is out of bounds. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIInkStroke::isLastPointIncluded"></A>
+<H3 class="code">isLastPointIncluded</H3>
+<PRE>
+<A href="../../c/MyScriptEngine_h/voYesNo.html">voYesNo</A> <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::isLastPointIncluded</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target)</PRE>
+<DL>
+<DD>Tells whether the last point of the stroke corresponds to the right boundary of a right open interval. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_YES">VO_YES</A></CODE> or  <CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_NO">VO_NO</A></CODE> on success, otherwise  <CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html">VO_ERR</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIInkStroke::isLastPointPenUp"></A>
+<H3 class="code">isLastPointPenUp</H3>
+<PRE>
+<A href="../../c/MyScriptEngine_h/voYesNo.html">voYesNo</A> <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::isLastPointPenUp</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target)</PRE>
+<DL>
+<DD>Tells whether the last point of the stroke corresponds to the end of a raw stroke. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_YES">VO_YES</A></CODE> or  <CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_NO">VO_NO</A></CODE> on success, otherwise  <CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html">VO_ERR</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIInkStroke::isPointArrayCompatible"></A>
+<H3 class="code">isPointArrayCompatible</H3>
+<PRE>
+<A href="../../c/MyScriptEngine_h/voYesNo.html">voYesNo</A> <B><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A>::isPointArrayCompatible</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target)</PRE>
+<DL>
+<DD>Tells whether this stroke has interleaved floating-point  <CODE>X</CODE> and  <CODE>Y</CODE> channels that can be retrieved directly as an array of  <CODE><A href="../../c/MyScriptInk_h/voPoint.html">voPoint</A></CODE>. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target stroke.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_YES">VO_YES</A></CODE> or  <CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_NO">VO_NO</A></CODE> on success, otherwise  <CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html">VO_ERR</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIPrimitive::getData"></A>
+<H3 class="code">getData</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B><A href="../../c/MyScriptInk_h/voIPrimitive.html">voIPrimitive</A>::getData</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target, void *data, size_t sizeOfData)</PRE>
+<DL>
+<DD>Returns the intrinsic geometric parameters of this primitive. <P>
+
+<P>
+<DL>
+<DT>
+<B>Note:</B>
+<DD>
+<P>The actual type of the returned data depends on the type of the target primitive, resolved by the provided size of data recipient:</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target primitive. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+data
+</B>
+<DD>
+<parameterdescription>
+
+<P>the recipient for the geometric parameters. For a  <CODE><A href="../../c/MyScriptInk_h/voLinePrimitive.html">voLinePrimitive</A></CODE> you must give a pointer to a  <CODE><A href="../../c/MyScriptInk_h/voLineSegment.html">voLineSegment</A></CODE>. For a  <CODE><A href="../../c/MyScriptInk_h/voArcPrimitive.html">voArcPrimitive</A></CODE> you must give either a pointer to a  <CODE><A href="../../c/MyScriptInk_h/voEndpointEllipticArc.html">voEndpointEllipticArc</A></CODE> or a pointer to a  <CODE><A href="../../c/MyScriptInk_h/voCenterEllipticArc.html">voCenterEllipticArc</A></CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+sizeOfData
+</B>
+<DD>
+<parameterdescription>
+
+<P>the size of the data recipient.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>data</CODE> is not writable. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_ARGUMENT">VO_INVALID_ARGUMENT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>sizeOfData</CODE> does not correspond to one of the possible data for the target primitive. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIPrimitive::getFirstDecoration"></A>
+<H3 class="code">getFirstDecoration</H3>
+<PRE>
+<A href="../../c/MyScriptInk_h/voInkDecorationType.html">voInkDecorationType</A> <B><A href="../../c/MyScriptInk_h/voIPrimitive.html">voIPrimitive</A>::getFirstDecoration</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target)</PRE>
+<DL>
+<DD>Returns the type of decoration at the first endpoint of this primitive. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target primitive.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P>the type of the decoration on success, otherwise  <CODE>-1</CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIPrimitive::getFirstTangentAngle"></A>
+<H3 class="code">getFirstTangentAngle</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B><A href="../../c/MyScriptInk_h/voIPrimitive.html">voIPrimitive</A>::getFirstTangentAngle</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target, float *angle)</PRE>
+<DL>
+<DD>Returns the tangent angle at the first endpoint of this primitive. <P>
+
+<P>
+<DL>
+<DT>
+<B>Note:</B>
+<DD>
+<P>This is a derived property that is computed from the intrinsic geometric parameters.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target primitive. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+angle
+</B>
+<DD>
+<parameterdescription>
+
+<P>the recipient for the computed tangent angle.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>angle</CODE> is not writable. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIPrimitive::getLastDecoration"></A>
+<H3 class="code">getLastDecoration</H3>
+<PRE>
+<A href="../../c/MyScriptInk_h/voInkDecorationType.html">voInkDecorationType</A> <B><A href="../../c/MyScriptInk_h/voIPrimitive.html">voIPrimitive</A>::getLastDecoration</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target)</PRE>
+<DL>
+<DD>Returns the type of the decoration at the last endpoint of this primitive. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target primitive.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P>the type of decoration on success, otherwise  <CODE>-1</CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="voIPrimitive::getLastTangentAngle"></A>
+<H3 class="code">getLastTangentAngle</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B><A href="../../c/MyScriptInk_h/voIPrimitive.html">voIPrimitive</A>::getLastTangentAngle</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target, float *angle)</PRE>
+<DL>
+<DD>Returns the tangent angle at the last endpoint of this primitive. <P>
+
+<P>
+<DL>
+<DT>
+<B>Note:</B>
+<DD>
+<P>This is a derived property that is computed from the intrinsic geometric parameters.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target primitive. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+angle
+</B>
+<DD>
+<parameterdescription>
+
+<P>the recipient for the computed tangent angle.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>target</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>target</CODE> does not implement this interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>angle</CODE> is not writable. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

@@ -1,0 +1,1101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<title>InkSampler (MyScript SDK Java Reference Documentation)</title>
+<link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="InkSampler (MyScript SDK Java Reference Documentation)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/InkSampler.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../com/myscript/gesture/GestureType.html" title="class in com.myscript.gesture"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../com/myscript/gesture/InkSamplerListener.html" title="class in com.myscript.gesture"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/myscript/gesture/InkSampler.html" target="_top">Frames</a></li>
+<li><a href="InkSampler.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#fields_inherited_from_class_com.myscript.engine.EngineObject">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">com.myscript.gesture</div>
+<h2 title="Class InkSampler" class="title">Class InkSampler</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li>java.lang.Object</li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">com.myscript.engine.EngineObject</a></li>
+<li>
+<ul class="inheritance">
+<li>com.myscript.gesture.InkSampler</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../com/myscript/engine/IDisposable.html" title="interface in com.myscript.engine">IDisposable</a>, <a href="../../../com/myscript/engine/IEngineObject.html" title="interface in com.myscript.engine">IEngineObject</a>, <a href="../../../com/myscript/ink/IInkStrokeSet.html" title="interface in com.myscript.ink">IInkStrokeSet</a>, java.lang.Cloneable</dd>
+</dl>
+<hr>
+<br>
+<pre>public final class <span class="strong">InkSampler</span>
+extends <a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>
+implements <a href="../../../com/myscript/ink/IInkStrokeSet.html" title="interface in com.myscript.ink">IInkStrokeSet</a></pre>
+<div class="block">The <code>InkSampler</code> is the abstract base class that models an ink
+ sampler.
+ <p>
+ <strong>Please note that the implementation of the <code>InkSampler</code>
+ class is not synchronized.</strong> If multiple threads concurrently try to
+ change the state of a <code>InkSampler</code> object, explicit
+ synchronization must be done externally.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>7.0.0</dd>
+<dt><span class="strong">Version:</span></dt>
+  <dd>1.0</dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_com.myscript.engine.EngineObject">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;com.myscript.engine.<a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></h3>
+<code><a href="../../../com/myscript/engine/EngineObject.html#DEFAULT_USER_LIMIT">DEFAULT_USER_LIMIT</a>, <a href="../../../com/myscript/engine/EngineObject.html#engine">engine</a>, <a href="../../../com/myscript/engine/EngineObject.html#reference">reference</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/gesture/InkSampler.html#addListener(com.myscript.gesture.InkSamplerListener)">addListener</a></strong>(<a href="../../../com/myscript/gesture/InkSamplerListener.html" title="class in com.myscript.gesture">InkSamplerListener</a>&nbsp;listener)</code>
+<div class="block">Adds the specified listener to this <code>InkSampler</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/gesture/InkSampler.html#clearStrokes()">clearStrokes</a></strong>()</code>
+<div class="block">Clear all the strokes contained in this <code>InkSampler</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../com/myscript/gesture/InkSampler.html" title="class in com.myscript.gesture">InkSampler</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/gesture/InkSampler.html#create(com.myscript.ink.Ink)">create</a></strong>(<a href="../../../com/myscript/ink/Ink.html" title="class in com.myscript.ink">Ink</a>&nbsp;ink)</code>
+<div class="block">Static factory method that creates a new <code>InkSampler</code> object
+ whose parent is the specified <code>Engine</code> object.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../com/myscript/gesture/InkSampler.html" title="class in com.myscript.gesture">InkSampler</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/gesture/InkSampler.html#create(com.myscript.document.Page)">create</a></strong>(<a href="../../../com/myscript/document/Page.html" title="class in com.myscript.document">Page</a>&nbsp;page)</code>
+<div class="block">Static factory method that creates a new <code>InkSampler</code> object
+ whose parent is the specified <code>Engine</code> object.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/myscript/ink/InkStroke.html" title="class in com.myscript.ink">InkStroke</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/gesture/InkSampler.html#detachStrokeAt(int)">detachStrokeAt</a></strong>(int&nbsp;index)</code>
+<div class="block">Detaches a stroke from this <code>InkSampler</code> (e.g.: so that it can
+ be added to the target ink or page).</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>float</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/gesture/InkSampler.html#getPenWidth()">getPenWidth</a></strong>()</code>
+<div class="block">Returns the current pen width.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/myscript/ink/InkStroke.html" title="class in com.myscript.ink">InkStroke</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/gesture/InkSampler.html#getStrokeAt(int)">getStrokeAt</a></strong>(int&nbsp;index)</code>
+<div class="block">Retrieves the stroke at the specified index in this stroke set.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/gesture/InkSampler.html#getStrokeCount()">getStrokeCount</a></strong>()</code>
+<div class="block">Retrieves the number of strokes in this stroke set.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>com.myscript.geometry.Transform</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/gesture/InkSampler.html#getViewTransform()">getViewTransform</a></strong>()</code>
+<div class="block">Returns the current model view transform.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/gesture/InkSampler.html#isDeviceRegistered(long)">isDeviceRegistered</a></strong>(long&nbsp;deviceId)</code>
+<div class="block">Tells whether the specified device has already been registered.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/gesture/InkSampler.html#isPointerRegistered(long,%20long)">isPointerRegistered</a></strong>(long&nbsp;deviceId,
+                   long&nbsp;pointerId)</code>
+<div class="block">Tells whether the specified pointer has already been registered.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/gesture/InkSampler.html#pointerCancel(long,%20long)">pointerCancel</a></strong>(long&nbsp;deviceId,
+             long&nbsp;pointerId)</code>
+<div class="block">Cancels an ongoing pointer trace in this <code>InkSampler</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/gesture/InkSampler.html#pointerDown(long,%20long,%20float[])">pointerDown</a></strong>(long&nbsp;deviceId,
+           long&nbsp;pointerId,
+           float[]&nbsp;values)</code>
+<div class="block">Sends a pointer down event to this <code>InkSampler</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/gesture/InkSampler.html#pointerDown(long,%20long,%20java.lang.Object[])">pointerDown</a></strong>(long&nbsp;deviceId,
+           long&nbsp;pointerId,
+           java.lang.Object[]&nbsp;values)</code>
+<div class="block">Sends a pointer down event to this <code>InkSampler</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/gesture/InkSampler.html#pointerMove(long,%20long,%20float[])">pointerMove</a></strong>(long&nbsp;deviceId,
+           long&nbsp;pointerId,
+           float[]&nbsp;values)</code>
+<div class="block">Sends a pointer move event to this <code>InkSampler</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/gesture/InkSampler.html#pointerMove(long,%20long,%20java.lang.Object[])">pointerMove</a></strong>(long&nbsp;deviceId,
+           long&nbsp;pointerId,
+           java.lang.Object[]&nbsp;values)</code>
+<div class="block">Sends a pointer move event to this <code>InkSampler</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/gesture/InkSampler.html#pointerUp(long,%20long)">pointerUp</a></strong>(long&nbsp;deviceId,
+         long&nbsp;pointerId)</code>
+<div class="block">Sends a pointer up event to this <code>InkSampler</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/gesture/InkSampler.html#pointerUp(long,%20long,%20float[])">pointerUp</a></strong>(long&nbsp;deviceId,
+         long&nbsp;pointerId,
+         float[]&nbsp;values)</code>
+<div class="block">Sends a pointer up event to this <code>InkSampler</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/gesture/InkSampler.html#pointerUp(long,%20long,%20java.lang.Object[])">pointerUp</a></strong>(long&nbsp;deviceId,
+         long&nbsp;pointerId,
+         java.lang.Object[]&nbsp;values)</code>
+<div class="block">Sends a pointer up event to this <code>InkSampler</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/gesture/InkSampler.html#registerDevice(long,%20com.myscript.gesture.DeviceType,%20com.myscript.ink.InkStrokeFormat)">registerDevice</a></strong>(long&nbsp;deviceId,
+              <a href="../../../com/myscript/gesture/DeviceType.html" title="class in com.myscript.gesture">DeviceType</a>&nbsp;deviceType,
+              <a href="../../../com/myscript/ink/InkStrokeFormat.html" title="class in com.myscript.ink">InkStrokeFormat</a>&nbsp;strokeFormat)</code>
+<div class="block">Registers a device to this <code>InkSampler</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/gesture/InkSampler.html#registerPointer(long,%20long,%20com.myscript.gesture.PointerType)">registerPointer</a></strong>(long&nbsp;deviceId,
+               long&nbsp;pointerId,
+               <a href="../../../com/myscript/gesture/PointerType.html" title="class in com.myscript.gesture">PointerType</a>&nbsp;pointerType)</code>
+<div class="block">Registers a pointer to this <code>InkSampler</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/gesture/InkSampler.html#removeListener(com.myscript.gesture.InkSamplerListener)">removeListener</a></strong>(<a href="../../../com/myscript/gesture/InkSamplerListener.html" title="class in com.myscript.gesture">InkSamplerListener</a>&nbsp;listener)</code>
+<div class="block">Removes the specified listener from this <code>InkSampler</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/gesture/InkSampler.html#resetPenWidth()">resetPenWidth</a></strong>()</code>
+<div class="block">Resets the current pen width to its default value, which is <code>1</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/gesture/InkSampler.html#resetViewTransform()">resetViewTransform</a></strong>()</code>
+<div class="block">Resets the current model view transform to its default value, which is the
+ identity matrix.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/gesture/InkSampler.html#setHandler(com.myscript.gesture.GestureRecognizer)">setHandler</a></strong>(<a href="../../../com/myscript/gesture/GestureRecognizer.html" title="class in com.myscript.gesture">GestureRecognizer</a>&nbsp;handler)</code>
+<div class="block">Sets the specified gesture recognizer as the handler to this
+ <code>InkSampler</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/gesture/InkSampler.html#setPenWidth(float)">setPenWidth</a></strong>(float&nbsp;penWidth)</code>
+<div class="block">Sets the current pen width.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/gesture/InkSampler.html#setViewTransform(com.myscript.geometry.Transform)">setViewTransform</a></strong>(com.myscript.geometry.Transform&nbsp;viewTransform)</code>
+<div class="block">Sets the current model view transform.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.myscript.engine.EngineObject">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;com.myscript.engine.<a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></h3>
+<code><a href="../../../com/myscript/engine/EngineObject.html#acquire()">acquire</a>, <a href="../../../com/myscript/engine/EngineObject.html#checkDisposed()">checkDisposed</a>, <a href="../../../com/myscript/engine/EngineObject.html#clone()">clone</a>, <a href="../../../com/myscript/engine/EngineObject.html#dispose()">dispose</a>, <a href="../../../com/myscript/engine/EngineObject.html#finalize()">finalize</a>, <a href="../../../com/myscript/engine/EngineObject.html#getAttachReferenceCount()">getAttachReferenceCount</a>, <a href="../../../com/myscript/engine/EngineObject.html#getEngine()">getEngine</a>, <a href="../../../com/myscript/engine/EngineObject.html#getMemoryUsage()">getMemoryUsage</a>, <a href="../../../com/myscript/engine/EngineObject.html#getNativeReference()">getNativeReference</a>, <a href="../../../com/myscript/engine/EngineObject.html#getUserCount(com.myscript.engine.Engine)">getUserCount</a>, <a href="../../../com/myscript/engine/EngineObject.html#getUserLimit(com.myscript.engine.Engine)">getUserLimit</a>, <a href="../../../com/myscript/engine/EngineObject.html#getUserReferenceCount()">getUserReferenceCount</a>, <a href="../../../com/myscript/engine/EngineObject.html#isDisposed()">isDisposed</a>, <a href="../../../com/myscript/engine/EngineObject.html#isSame(com.myscript.engine.EngineObject)">isSame</a>, <a href="../../../com/myscript/engine/EngineObject.html#load(com.myscript.engine.Engine,%20java.nio.channels.ReadableByteChannel)">load</a>, <a href="../../../com/myscript/engine/EngineObject.html#load(com.myscript.engine.Engine,%20java.lang.String)">load</a>, <a href="../../../com/myscript/engine/EngineObject.html#load(com.myscript.engine.Engine,%20java.lang.String,%20java.lang.String)">load</a>, <a href="../../../com/myscript/engine/EngineObject.html#resetUserLimit(com.myscript.engine.Engine)">resetUserLimit</a>, <a href="../../../com/myscript/engine/EngineObject.html#setUserLimit(com.myscript.engine.Engine,%20int)">setUserLimit</a>, <a href="../../../com/myscript/engine/EngineObject.html#store(java.lang.String)">store</a>, <a href="../../../com/myscript/engine/EngineObject.html#store(java.lang.String,%20java.lang.String)">store</a>, <a href="../../../com/myscript/engine/EngineObject.html#store(java.nio.channels.WritableByteChannel)">store</a>, <a href="../../../com/myscript/engine/EngineObject.html#toString()">toString</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>equals, getClass, hashCode, notify, notifyAll, wait, wait, wait</code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.myscript.engine.IEngineObject">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;com.myscript.engine.<a href="../../../com/myscript/engine/IEngineObject.html" title="interface in com.myscript.engine">IEngineObject</a></h3>
+<code><a href="../../../com/myscript/engine/IEngineObject.html#getEngine()">getEngine</a>, <a href="../../../com/myscript/engine/IEngineObject.html#getNativeReference()">getNativeReference</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.myscript.engine.IDisposable">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;com.myscript.engine.<a href="../../../com/myscript/engine/IDisposable.html" title="interface in com.myscript.engine">IDisposable</a></h3>
+<code><a href="../../../com/myscript/engine/IDisposable.html#dispose()">dispose</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="create(com.myscript.ink.Ink)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>create</h4>
+<pre>public static final&nbsp;<a href="../../../com/myscript/gesture/InkSampler.html" title="class in com.myscript.gesture">InkSampler</a>&nbsp;create(<a href="../../../com/myscript/ink/Ink.html" title="class in com.myscript.ink">Ink</a>&nbsp;ink)
+                               throws java.lang.NullPointerException,
+                                      java.lang.IllegalStateException,
+                                      <a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a>,
+                                      <a href="../../../com/myscript/engine/OutOfMemoryException.html" title="class in com.myscript.engine">OutOfMemoryException</a></pre>
+<div class="block">Static factory method that creates a new <code>InkSampler</code> object
+ whose parent is the specified <code>Engine</code> object.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>ink</code> - the target model. Please note that as the target model is an
+          <code>Ink</code> object the supported gestures are very limited
+          because context analysis has very few relevant information.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new <code>InkSampler</code> object.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.NullPointerException</code> - when <code>engine</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>engine</code> has been disposed
+           of.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>ink</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>ink</code> has been disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></code> - when the object user limit has been reached.</dd>
+<dd><code><a href="../../../com/myscript/engine/OutOfMemoryException.html" title="class in com.myscript.engine">OutOfMemoryException</a></code> - when the MyScript Engine failed to allocate
+           memory.</dd></dl>
+</li>
+</ul>
+<a name="create(com.myscript.document.Page)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>create</h4>
+<pre>public static final&nbsp;<a href="../../../com/myscript/gesture/InkSampler.html" title="class in com.myscript.gesture">InkSampler</a>&nbsp;create(<a href="../../../com/myscript/document/Page.html" title="class in com.myscript.document">Page</a>&nbsp;page)
+                               throws java.lang.NullPointerException,
+                                      java.lang.IllegalStateException,
+                                      <a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a>,
+                                      <a href="../../../com/myscript/engine/OutOfMemoryException.html" title="class in com.myscript.engine">OutOfMemoryException</a></pre>
+<div class="block">Static factory method that creates a new <code>InkSampler</code> object
+ whose parent is the specified <code>Engine</code> object.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>page</code> - the input/target page associated with this
+          <code>InkSampler</code>.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new <code>InkSampler</code> object.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.NullPointerException</code> - when <code>engine</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>engine</code> has been disposed
+           of.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>page</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>page</code> has been disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></code> - when the object user limit has been reached.</dd>
+<dd><code><a href="../../../com/myscript/engine/OutOfMemoryException.html" title="class in com.myscript.engine">OutOfMemoryException</a></code> - when the MyScript Engine failed to allocate
+           memory.</dd></dl>
+</li>
+</ul>
+<a name="addListener(com.myscript.gesture.InkSamplerListener)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addListener</h4>
+<pre>public final&nbsp;void&nbsp;addListener(<a href="../../../com/myscript/gesture/InkSamplerListener.html" title="class in com.myscript.gesture">InkSamplerListener</a>&nbsp;listener)
+                       throws java.lang.NullPointerException,
+                              java.lang.IllegalStateException</pre>
+<div class="block">Adds the specified listener to this <code>InkSampler</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>listener</code> - the ink sampler listener to add.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.NullPointerException</code> - when <code>listener</code> is
+           <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>listener</code> is already
+           registered.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>InkSampler</code> has been
+           disposed of.</dd></dl>
+</li>
+</ul>
+<a name="removeListener(com.myscript.gesture.InkSamplerListener)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeListener</h4>
+<pre>public final&nbsp;void&nbsp;removeListener(<a href="../../../com/myscript/gesture/InkSamplerListener.html" title="class in com.myscript.gesture">InkSamplerListener</a>&nbsp;listener)
+                          throws java.lang.NullPointerException,
+                                 java.lang.IllegalStateException</pre>
+<div class="block">Removes the specified listener from this <code>InkSampler</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>listener</code> - the listener to remove.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.NullPointerException</code> - when <code>listener</code> is
+           <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>listener</code> is not registered.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>InkSampler</code> has been
+           disposed of.</dd></dl>
+</li>
+</ul>
+<a name="setHandler(com.myscript.gesture.GestureRecognizer)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setHandler</h4>
+<pre>public final&nbsp;void&nbsp;setHandler(<a href="../../../com/myscript/gesture/GestureRecognizer.html" title="class in com.myscript.gesture">GestureRecognizer</a>&nbsp;handler)
+                      throws java.lang.IllegalStateException</pre>
+<div class="block">Sets the specified gesture recognizer as the handler to this
+ <code>InkSampler</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>handler</code> - the handler to set. It may be <code>null</code>, in which
+          case the previous handler is removed.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when <code>handler</code> is already
+           registered.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>InkSampler</code> has been
+           disposed of.</dd></dl>
+</li>
+</ul>
+<a name="isDeviceRegistered(long)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isDeviceRegistered</h4>
+<pre>public final&nbsp;boolean&nbsp;isDeviceRegistered(long&nbsp;deviceId)
+                                 throws java.lang.IllegalStateException</pre>
+<div class="block">Tells whether the specified device has already been registered.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>deviceId</code> - the id of the device.</dd>
+<dt><span class="strong">Returns:</span></dt><dd><code>true</code> if the device is registered.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when <code>InkSampler</code> has been
+           disposed of.</dd></dl>
+</li>
+</ul>
+<a name="registerDevice(long, com.myscript.gesture.DeviceType, com.myscript.ink.InkStrokeFormat)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>registerDevice</h4>
+<pre>public final&nbsp;void&nbsp;registerDevice(long&nbsp;deviceId,
+                  <a href="../../../com/myscript/gesture/DeviceType.html" title="class in com.myscript.gesture">DeviceType</a>&nbsp;deviceType,
+                  <a href="../../../com/myscript/ink/InkStrokeFormat.html" title="class in com.myscript.ink">InkStrokeFormat</a>&nbsp;strokeFormat)
+                          throws java.lang.IllegalArgumentException,
+                                 java.lang.NullPointerException,
+                                 java.lang.IllegalStateException</pre>
+<div class="block">Registers a device to this <code>InkSampler</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>deviceId</code> - the id of the device to register.</dd><dd><code>deviceType</code> - the type of the device to register.</dd><dd><code>strokeFormat</code> - the associated stroke format of the device to register.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.NullPointerException</code> - when <code>deviceType</code> is
+           <code>null</code>.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>deviceId</code> is already
+           registered.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>strokeFormat</code> is
+           <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>InkSampler</code> has been
+           disposed of.</dd></dl>
+</li>
+</ul>
+<a name="isPointerRegistered(long, long)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isPointerRegistered</h4>
+<pre>public final&nbsp;boolean&nbsp;isPointerRegistered(long&nbsp;deviceId,
+                          long&nbsp;pointerId)
+                                  throws java.lang.IllegalArgumentException,
+                                         java.lang.IllegalStateException</pre>
+<div class="block">Tells whether the specified pointer has already been registered.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>deviceId</code> - the id of the device.</dd><dd><code>pointerId</code> - the id of the pointer.</dd>
+<dt><span class="strong">Returns:</span></dt><dd><code>true</code> if the device is registered.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>deviceId</code> is not
+           registered.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>InkSampler</code> has been
+           disposed of.</dd></dl>
+</li>
+</ul>
+<a name="registerPointer(long, long, com.myscript.gesture.PointerType)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>registerPointer</h4>
+<pre>public final&nbsp;void&nbsp;registerPointer(long&nbsp;deviceId,
+                   long&nbsp;pointerId,
+                   <a href="../../../com/myscript/gesture/PointerType.html" title="class in com.myscript.gesture">PointerType</a>&nbsp;pointerType)
+                           throws java.lang.IllegalArgumentException,
+                                  java.lang.NullPointerException,
+                                  java.lang.IllegalStateException</pre>
+<div class="block">Registers a pointer to this <code>InkSampler</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>deviceId</code> - the id of the device associated to the pointer.</dd><dd><code>pointerId</code> - the id of the pointer to register.</dd><dd><code>pointerType</code> - the type of the pointer to register.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>deviceId</code> is not
+           registered.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>pointerId</code> is already
+           registered.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>pointerType</code> is
+           <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>InkSampler</code> has been
+           disposed of.</dd></dl>
+</li>
+</ul>
+<a name="getViewTransform()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getViewTransform</h4>
+<pre>public final&nbsp;com.myscript.geometry.Transform&nbsp;getViewTransform()
+                                                       throws java.lang.IllegalStateException</pre>
+<div class="block">Returns the current model view transform.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the view transform.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>InkSampler</code> object has
+           been disposed of.</dd></dl>
+</li>
+</ul>
+<a name="setViewTransform(com.myscript.geometry.Transform)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setViewTransform</h4>
+<pre>public final&nbsp;void&nbsp;setViewTransform(com.myscript.geometry.Transform&nbsp;viewTransform)
+                            throws java.lang.IllegalStateException,
+                                   java.lang.NullPointerException</pre>
+<div class="block">Sets the current model view transform. You should call this whenever your
+ application changes its view transform, especially for zooming operations.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>viewTransform</code> - the new view transform.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>InkSampler</code> object has
+           been disposed of.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>viewTransform</code> is null.</dd></dl>
+</li>
+</ul>
+<a name="resetViewTransform()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>resetViewTransform</h4>
+<pre>public final&nbsp;void&nbsp;resetViewTransform()
+                              throws java.lang.IllegalStateException</pre>
+<div class="block">Resets the current model view transform to its default value, which is the
+ identity matrix.</div>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>GestureRecognizer</code>
+           object has been disposed of.</dd></dl>
+</li>
+</ul>
+<a name="getPenWidth()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPenWidth</h4>
+<pre>public final&nbsp;float&nbsp;getPenWidth()
+                        throws java.lang.IllegalStateException</pre>
+<div class="block">Returns the current pen width.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the pen width.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>InkSampler</code> object has
+           been disposed of.</dd></dl>
+</li>
+</ul>
+<a name="setPenWidth(float)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setPenWidth</h4>
+<pre>public final&nbsp;void&nbsp;setPenWidth(float&nbsp;penWidth)
+                       throws java.lang.IllegalStateException,
+                              java.lang.IllegalArgumentException</pre>
+<div class="block">Sets the current pen width. You should call this whenever your application
+ changes the nominal width of the pen for new input ink.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>penWidth</code> - the new pen width.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>InkSampler</code> object has
+           been disposed of.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>penWidth &lt;= 0</code>.</dd></dl>
+</li>
+</ul>
+<a name="resetPenWidth()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>resetPenWidth</h4>
+<pre>public final&nbsp;void&nbsp;resetPenWidth()
+                         throws java.lang.IllegalStateException</pre>
+<div class="block">Resets the current pen width to its default value, which is <code>1</code>.</div>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>GestureRecognizer</code>
+           object has been disposed of.</dd></dl>
+</li>
+</ul>
+<a name="pointerDown(long, long, java.lang.Object[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>pointerDown</h4>
+<pre>public&nbsp;void&nbsp;pointerDown(long&nbsp;deviceId,
+               long&nbsp;pointerId,
+               java.lang.Object[]&nbsp;values)
+                 throws java.lang.IllegalArgumentException,
+                        java.lang.NullPointerException,
+                        java.lang.IllegalStateException,
+                        <a href="../../../com/myscript/engine/NotPermittedFromThisThreadException.html" title="class in com.myscript.engine">NotPermittedFromThisThreadException</a></pre>
+<div class="block">Sends a pointer down event to this <code>InkSampler</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>deviceId</code> - the id of the device.</dd><dd><code>pointerId</code> - the id of the pointer.</dd><dd><code>values</code> - the array of the channel values. Each value must be either a
+          <code>Float</code>, an <code>Integer</code>, or a
+          <code>Long</code>.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>deviceId</code> is not
+           registered.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>pointerId</code> is not
+           registered.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>values</code> is
+           <code>null</code>.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>values.length</code> is less
+           than 2 (we need at least X and Y).</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>InkSampler</code> has been
+           disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/NotPermittedFromThisThreadException.html" title="class in com.myscript.engine">NotPermittedFromThisThreadException</a></code> - the
+           <a href="../../../com/myscript/gesture/InkSampler.html#pointerDown(long,%20long,%20java.lang.Object[])"><code>pointerDown(long, long, Object[])</code></a> call was
+           made from a different thread from the one this
+           <code>InkSampler</code> was created in.</dd>
+<dd><code>java.lang.NullPointerException</code></dd></dl>
+</li>
+</ul>
+<a name="pointerDown(long, long, float[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>pointerDown</h4>
+<pre>public&nbsp;void&nbsp;pointerDown(long&nbsp;deviceId,
+               long&nbsp;pointerId,
+               float[]&nbsp;values)
+                 throws java.lang.IllegalArgumentException,
+                        java.lang.NullPointerException,
+                        java.lang.IllegalStateException,
+                        <a href="../../../com/myscript/engine/NotPermittedFromThisThreadException.html" title="class in com.myscript.engine">NotPermittedFromThisThreadException</a></pre>
+<div class="block">Sends a pointer down event to this <code>InkSampler</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>deviceId</code> - the id of the device.</dd><dd><code>pointerId</code> - the id of the pointer.</dd><dd><code>values</code> - the array of the channel values.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>deviceId</code> is not
+           registered.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>pointerId</code> is not
+           registered.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>values</code> is
+           <code>null</code>.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>values.length</code> is less
+           than 2 (we need at least X and Y).</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>InkSampler</code> has been
+           disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/NotPermittedFromThisThreadException.html" title="class in com.myscript.engine">NotPermittedFromThisThreadException</a></code> - the
+           <a href="../../../com/myscript/gesture/InkSampler.html#pointerDown(long,%20long,%20float[])"><code>pointerDown(long, long, float[])</code></a> call was
+           made from a different thread from the one this
+           <code>InkSampler</code> was created in.</dd>
+<dd><code>java.lang.NullPointerException</code></dd></dl>
+</li>
+</ul>
+<a name="pointerMove(long, long, java.lang.Object[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>pointerMove</h4>
+<pre>public&nbsp;void&nbsp;pointerMove(long&nbsp;deviceId,
+               long&nbsp;pointerId,
+               java.lang.Object[]&nbsp;values)
+                 throws java.lang.IllegalArgumentException,
+                        java.lang.NullPointerException,
+                        java.lang.IllegalStateException,
+                        <a href="../../../com/myscript/engine/NotPermittedFromThisThreadException.html" title="class in com.myscript.engine">NotPermittedFromThisThreadException</a></pre>
+<div class="block">Sends a pointer move event to this <code>InkSampler</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>deviceId</code> - the id of the device.</dd><dd><code>pointerId</code> - the id of the pointer.</dd><dd><code>values</code> - the array of the channel values. Each value must be either a
+          <code>Float</code>, an <code>Integer</code>, or a
+          <code>Long</code>.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>deviceId</code> is not
+           registered.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>pointerId</code> is not
+           registered.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>values</code> is
+           <code>null</code>.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>values.length</code> is less
+           than 2 (we need at least X and Y).</dd>
+<dd><code>java.lang.IllegalStateException</code> - when
+           <a href="../../../com/myscript/gesture/InkSampler.html#pointerDown(long,%20long,%20java.lang.Object[])"><code>pointerDown(long, long, Object[])</code></a> or
+           <a href="../../../com/myscript/gesture/InkSampler.html#pointerDown(long,%20long,%20float[])"><code>pointerDown(long, long, float[])</code></a> wasn't called before.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>InkSampler</code> has been
+           disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/NotPermittedFromThisThreadException.html" title="class in com.myscript.engine">NotPermittedFromThisThreadException</a></code> - the
+           <a href="../../../com/myscript/gesture/InkSampler.html#pointerMove(long,%20long,%20java.lang.Object[])"><code>pointerMove(long, long, Object[])</code></a> call was
+           made from a different thread from the one this
+           <code>InkSampler</code> was created in.</dd>
+<dd><code>java.lang.NullPointerException</code></dd></dl>
+</li>
+</ul>
+<a name="pointerMove(long, long, float[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>pointerMove</h4>
+<pre>public&nbsp;void&nbsp;pointerMove(long&nbsp;deviceId,
+               long&nbsp;pointerId,
+               float[]&nbsp;values)
+                 throws java.lang.IllegalArgumentException,
+                        java.lang.NullPointerException,
+                        java.lang.IllegalStateException,
+                        <a href="../../../com/myscript/engine/NotPermittedFromThisThreadException.html" title="class in com.myscript.engine">NotPermittedFromThisThreadException</a></pre>
+<div class="block">Sends a pointer move event to this <code>InkSampler</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>deviceId</code> - the id of the device.</dd><dd><code>pointerId</code> - the id of the pointer.</dd><dd><code>values</code> - the array of the channel values.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>deviceId</code> is not
+           registered.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>pointerId</code> is not
+           registered.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>values</code> is
+           <code>null</code>.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>values.length</code> is less
+           than 2 (we need at least X and Y).</dd>
+<dd><code>java.lang.IllegalStateException</code> - when
+           <a href="../../../com/myscript/gesture/InkSampler.html#pointerDown(long,%20long,%20java.lang.Object[])"><code>pointerDown(long, long, Object[])</code></a> or
+           <a href="../../../com/myscript/gesture/InkSampler.html#pointerDown(long,%20long,%20float[])"><code>pointerDown(long, long, float[])</code></a> wasn't called before.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>InkSampler</code> has been
+           disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/NotPermittedFromThisThreadException.html" title="class in com.myscript.engine">NotPermittedFromThisThreadException</a></code> - the
+           <a href="../../../com/myscript/gesture/InkSampler.html#pointerMove(long,%20long,%20float[])"><code>pointerMove(long, long, float[])</code></a> call was
+           made from a different thread from the one this
+           <code>InkSampler</code> was created in.</dd>
+<dd><code>java.lang.NullPointerException</code></dd></dl>
+</li>
+</ul>
+<a name="pointerUp(long, long, java.lang.Object[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>pointerUp</h4>
+<pre>public&nbsp;void&nbsp;pointerUp(long&nbsp;deviceId,
+             long&nbsp;pointerId,
+             java.lang.Object[]&nbsp;values)
+               throws java.lang.IllegalArgumentException,
+                      java.lang.NullPointerException,
+                      java.lang.IllegalStateException,
+                      <a href="../../../com/myscript/engine/NotPermittedFromThisThreadException.html" title="class in com.myscript.engine">NotPermittedFromThisThreadException</a></pre>
+<div class="block">Sends a pointer up event to this <code>InkSampler</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>deviceId</code> - the id of the device.</dd><dd><code>pointerId</code> - the id of the pointer.</dd><dd><code>values</code> - the array of the channel values. Each value must be either a
+          <code>Float</code>, an <code>Integer</code>, or a
+          <code>Long</code>.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>deviceId</code> is not
+           registered.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>pointerId</code> is not
+           registered.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>values</code> is
+           <code>null</code>.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>values.length</code> is 1 (must
+           contain at least X and Y).</dd>
+<dd><code>java.lang.IllegalStateException</code> - when
+           <a href="../../../com/myscript/gesture/InkSampler.html#pointerDown(long,%20long,%20java.lang.Object[])"><code>pointerDown(long, long, Object[])</code></a> or
+           <a href="../../../com/myscript/gesture/InkSampler.html#pointerDown(long,%20long,%20float[])"><code>pointerDown(long, long, float[])</code></a> wasn't called before.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>InkSampler</code> has been
+           disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/NotPermittedFromThisThreadException.html" title="class in com.myscript.engine">NotPermittedFromThisThreadException</a></code> - the
+           <a href="../../../com/myscript/gesture/InkSampler.html#pointerUp(long,%20long,%20java.lang.Object[])"><code>pointerUp(long, long, Object[])</code></a> call was
+           made from a different thread from the one this
+           <code>InkSampler</code> was created in.</dd>
+<dd><code>java.lang.NullPointerException</code></dd></dl>
+</li>
+</ul>
+<a name="pointerUp(long, long)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>pointerUp</h4>
+<pre>public&nbsp;void&nbsp;pointerUp(long&nbsp;deviceId,
+             long&nbsp;pointerId)
+               throws java.lang.IllegalArgumentException,
+                      java.lang.NullPointerException,
+                      java.lang.IllegalStateException,
+                      <a href="../../../com/myscript/engine/NotPermittedFromThisThreadException.html" title="class in com.myscript.engine">NotPermittedFromThisThreadException</a></pre>
+<div class="block">Sends a pointer up event to this <code>InkSampler</code>. Use this overload
+ to indicate that the device or platform doesn't give positioning
+ information for pointer up events.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>deviceId</code> - the id of the device.</dd><dd><code>pointerId</code> - the id of the pointer.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>deviceId</code> is not
+           registered.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>pointerId</code> is not
+           registered.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when
+           <a href="../../../com/myscript/gesture/InkSampler.html#pointerDown(long,%20long,%20java.lang.Object[])"><code>pointerDown(long, long, Object[])</code></a> or
+           <a href="../../../com/myscript/gesture/InkSampler.html#pointerDown(long,%20long,%20float[])"><code>pointerDown(long, long, float[])</code></a> wasn't called before.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>InkSampler</code> has been
+           disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/NotPermittedFromThisThreadException.html" title="class in com.myscript.engine">NotPermittedFromThisThreadException</a></code> - the
+           <a href="../../../com/myscript/gesture/InkSampler.html#pointerUp(long,%20long)"><code>pointerUp(long, long)</code></a> call was
+           made from a different thread from the one this
+           <code>InkSampler</code> was created in.</dd>
+<dd><code>java.lang.NullPointerException</code></dd></dl>
+</li>
+</ul>
+<a name="pointerUp(long, long, float[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>pointerUp</h4>
+<pre>public&nbsp;void&nbsp;pointerUp(long&nbsp;deviceId,
+             long&nbsp;pointerId,
+             float[]&nbsp;values)
+               throws java.lang.IllegalArgumentException,
+                      java.lang.NullPointerException,
+                      java.lang.IllegalStateException,
+                      <a href="../../../com/myscript/engine/NotPermittedFromThisThreadException.html" title="class in com.myscript.engine">NotPermittedFromThisThreadException</a></pre>
+<div class="block">Sends a pointer up event to this <code>InkSampler</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>deviceId</code> - the id of the device.</dd><dd><code>pointerId</code> - the id of the pointer.</dd><dd><code>values</code> - the array of the channel values.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>deviceId</code> is not
+           registered.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>pointerId</code> is not
+           registered.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>values</code> is
+           <code>null</code>.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>values.length</code> is 1 (must
+           contain at least X and Y).</dd>
+<dd><code>java.lang.IllegalStateException</code> - when
+           <a href="../../../com/myscript/gesture/InkSampler.html#pointerDown(long,%20long,%20java.lang.Object[])"><code>pointerDown(long, long, Object[])</code></a> or
+           <a href="../../../com/myscript/gesture/InkSampler.html#pointerDown(long,%20long,%20float[])"><code>pointerDown(long, long, float[])</code></a> wasn't called before.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>InkSampler</code> has been
+           disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/NotPermittedFromThisThreadException.html" title="class in com.myscript.engine">NotPermittedFromThisThreadException</a></code> - the
+           <a href="../../../com/myscript/gesture/InkSampler.html#pointerUp(long,%20long,%20float[])"><code>pointerUp(long, long, float[])</code></a> call was
+           made from a different thread from the one this
+           <code>InkSampler</code> was created in.</dd>
+<dd><code>java.lang.NullPointerException</code></dd></dl>
+</li>
+</ul>
+<a name="pointerCancel(long, long)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>pointerCancel</h4>
+<pre>public&nbsp;void&nbsp;pointerCancel(long&nbsp;deviceId,
+                 long&nbsp;pointerId)
+                   throws java.lang.IllegalArgumentException,
+                          java.lang.NullPointerException,
+                          java.lang.IllegalStateException,
+                          <a href="../../../com/myscript/engine/NotPermittedFromThisThreadException.html" title="class in com.myscript.engine">NotPermittedFromThisThreadException</a></pre>
+<div class="block">Cancels an ongoing pointer trace in this <code>InkSampler</code>. What we
+ call an ongoing pointer trace here is a sequence of pointer events starting
+ with a <a href="../../../com/myscript/gesture/InkSampler.html#pointerDown(long,%20long,%20java.lang.Object[])"><code>pointerDown(long, long, Object[])</code></a> or
+ <a href="../../../com/myscript/gesture/InkSampler.html#pointerDown(long,%20long,%20float[])"><code>pointerDown(long, long, float[])</code></a> and followed by zero or more
+ <a href="../../../com/myscript/gesture/InkSampler.html#pointerMove(long,%20long,%20java.lang.Object[])"><code>pointerMove(long, long, Object[])</code></a> or
+ <a href="../../../com/myscript/gesture/InkSampler.html#pointerMove(long,%20long,%20float[])"><code>pointerMove(long, long, float[])</code></a> events with the same
+ <code>deviceId</code> and <code>pointerId</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>deviceId</code> - the id of the device.</dd><dd><code>pointerId</code> - the id of the pointer.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>deviceId</code> is not
+           registered.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>pointerId</code> is not
+           registered.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>InkSampler</code> has been
+           disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/NotPermittedFromThisThreadException.html" title="class in com.myscript.engine">NotPermittedFromThisThreadException</a></code> - the
+           <a href="../../../com/myscript/gesture/InkSampler.html#pointerCancel(long,%20long)"><code>pointerCancel(long, long)</code></a> call was
+           made from a different thread from the one this
+           <code>InkSampler</code> was created in.</dd>
+<dd><code>java.lang.NullPointerException</code></dd></dl>
+</li>
+</ul>
+<a name="clearStrokes()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>clearStrokes</h4>
+<pre>public&nbsp;void&nbsp;clearStrokes()
+                  throws java.lang.IllegalStateException</pre>
+<div class="block">Clear all the strokes contained in this <code>InkSampler</code>. This
+ operation is only authorized if there is no handler set on this
+ <code>InkSampler</code>.</div>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when <code>InkSampler</code> has a handler
+           attached.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>InkSampler</code> has been
+           disposed of.</dd></dl>
+</li>
+</ul>
+<a name="detachStrokeAt(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>detachStrokeAt</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/ink/InkStroke.html" title="class in com.myscript.ink">InkStroke</a>&nbsp;detachStrokeAt(int&nbsp;index)
+                               throws java.lang.IllegalStateException,
+                                      java.lang.IndexOutOfBoundsException,
+                                      java.util.NoSuchElementException</pre>
+<div class="block">Detaches a stroke from this <code>InkSampler</code> (e.g.: so that it can
+ be added to the target ink or page).</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>index</code> - the index of the stroke.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the stroke.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IndexOutOfBoundsException</code> - when <code>index</code> is out of bounds.</dd>
+<dd><code>java.util.NoSuchElementException</code> - when the stroke at the specified
+           <code>index</code> has already been detached.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>InkSampler</code> has been
+           disposed of.</dd></dl>
+</li>
+</ul>
+<a name="getStrokeCount()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStrokeCount</h4>
+<pre>public&nbsp;int&nbsp;getStrokeCount()</pre>
+<div class="block">Retrieves the number of strokes in this stroke set.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/ink/IInkStrokeSet.html#getStrokeCount()">getStrokeCount</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/ink/IInkStrokeSet.html" title="interface in com.myscript.ink">IInkStrokeSet</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the number of strokes.</dd></dl>
+</li>
+</ul>
+<a name="getStrokeAt(int)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getStrokeAt</h4>
+<pre>public&nbsp;<a href="../../../com/myscript/ink/InkStroke.html" title="class in com.myscript.ink">InkStroke</a>&nbsp;getStrokeAt(int&nbsp;index)
+                      throws java.lang.IndexOutOfBoundsException</pre>
+<div class="block">Retrieves the stroke at the specified index in this stroke set.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/ink/IInkStrokeSet.html#getStrokeAt(int)">getStrokeAt</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/ink/IInkStrokeSet.html" title="interface in com.myscript.ink">IInkStrokeSet</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>index</code> - the index of the stroke to retrieve.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the requested stroke.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IndexOutOfBoundsException</code> - if
+           <code>(index &lt; 0 || index &gt;= getStrokeCount())</code>.</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/InkSampler.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../com/myscript/gesture/GestureType.html" title="class in com.myscript.gesture"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../com/myscript/gesture/InkSamplerListener.html" title="class in com.myscript.gesture"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/myscript/gesture/InkSampler.html" target="_top">Frames</a></li>
+<li><a href="InkSampler.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#fields_inherited_from_class_com.myscript.engine.EngineObject">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+</body>
+</html>

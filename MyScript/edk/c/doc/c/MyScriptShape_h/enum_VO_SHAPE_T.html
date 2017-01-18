@@ -1,0 +1,543 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>VO_SHAPE_T</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="VO_SHAPE_T";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptShape.h</FONT>
+<BR>
+Enumeration VO_SHAPE_T</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptShape.h&gt;</CODE>
+<BR>
+<CODE>enum <B>_VO_SHAPE_T</B></CODE>
+</P>
+<P>Lists the MyScript Shape types. <P>
+        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Value_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Value Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ShapeModel">VO_ShapeModel</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  4000</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptShape_h/voShapeModel.html">voShapeModel</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ShapeKnowledge">VO_ShapeKnowledge</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptShape_h/voShapeKnowledge.html">voShapeKnowledge</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ShapeRecognizer">VO_ShapeRecognizer</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptShape_h/voShapeRecognizer.html">voShapeRecognizer</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ShapeBeautifier">VO_ShapeBeautifier</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptShape_h/voShapeBeautifier.html">voShapeBeautifier</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ShapeDocument">VO_ShapeDocument</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptShape_h/voShapeDocument.html">voShapeDocument</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ShapePrimitive">VO_ShapePrimitive</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptShape_h/voShapePrimitive.html">voShapePrimitive</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ShapeLine">VO_ShapeLine</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptShape_h/voShapeLine.html">voShapeLine</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ShapeDecoratedLine">VO_ShapeDecoratedLine</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptShape_h/voShapeDecoratedLine.html">voShapeDecoratedLine</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ShapeEllipticArc">VO_ShapeEllipticArc</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptShape_h/voShapeEllipticArc.html">voShapeEllipticArc</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ShapeDecoratedEllipticArc">VO_ShapeDecoratedEllipticArc</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptShape_h/voShapeDecoratedEllipticArc.html">voShapeDecoratedEllipticArc</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ShapeSegment">VO_ShapeSegment</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptShape_h/voShapeSegment.html">voShapeSegment</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ShapeCandidate">VO_ShapeCandidate</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptShape_h/voShapeCandidate.html">voShapeCandidate</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ShapeRecognized">VO_ShapeRecognized</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptShape_h/voShapeRecognized.html">voShapeRecognized</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ShapeScratchOut">VO_ShapeScratchOut</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptShape_h/voShapeScratchOut.html">voShapeScratchOut</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ShapeErased">VO_ShapeErased</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptShape_h/voShapeErased.html">voShapeErased</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ShapeRejected">VO_ShapeRejected</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptShape_h/voShapeRejected.html">voShapeRejected</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ShapeHistoryManager">VO_ShapeHistoryManager</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  4029</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptShape_h/voShapeHistoryManager.html">voShapeHistoryManager</A></CODE> type identifier. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Value_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Value Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="VO_ShapeModel"></A>
+<H3 class="code">VO_ShapeModel</H3>
+<PRE>
+<B>VO_ShapeModel</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptShape_h/voShapeModel.html">voShapeModel</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptShape_h/voShapeModel.html">voShapeModel</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ShapeKnowledge"></A>
+<H3 class="code">VO_ShapeKnowledge</H3>
+<PRE>
+<B>VO_ShapeKnowledge</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptShape_h/voShapeKnowledge.html">voShapeKnowledge</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptShape_h/voShapeKnowledge.html">voShapeKnowledge</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ShapeRecognizer"></A>
+<H3 class="code">VO_ShapeRecognizer</H3>
+<PRE>
+<B>VO_ShapeRecognizer</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptShape_h/voShapeRecognizer.html">voShapeRecognizer</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptShape_h/voShapeRecognizer.html">voShapeRecognizer</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ShapeBeautifier"></A>
+<H3 class="code">VO_ShapeBeautifier</H3>
+<PRE>
+<B>VO_ShapeBeautifier</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptShape_h/voShapeBeautifier.html">voShapeBeautifier</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptShape_h/voShapeBeautifier.html">voShapeBeautifier</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ShapeDocument"></A>
+<H3 class="code">VO_ShapeDocument</H3>
+<PRE>
+<B>VO_ShapeDocument</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptShape_h/voShapeDocument.html">voShapeDocument</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptShape_h/voShapeDocument.html">voShapeDocument</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ShapePrimitive"></A>
+<H3 class="code">VO_ShapePrimitive</H3>
+<PRE>
+<B>VO_ShapePrimitive</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptShape_h/voShapePrimitive.html">voShapePrimitive</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptShape_h/voShapePrimitive.html">voShapePrimitive</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ShapeLine"></A>
+<H3 class="code">VO_ShapeLine</H3>
+<PRE>
+<B>VO_ShapeLine</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptShape_h/voShapeLine.html">voShapeLine</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptShape_h/voShapeLine.html">voShapeLine</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ShapeDecoratedLine"></A>
+<H3 class="code">VO_ShapeDecoratedLine</H3>
+<PRE>
+<B>VO_ShapeDecoratedLine</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptShape_h/voShapeDecoratedLine.html">voShapeDecoratedLine</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptShape_h/voShapeDecoratedLine.html">voShapeDecoratedLine</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ShapeEllipticArc"></A>
+<H3 class="code">VO_ShapeEllipticArc</H3>
+<PRE>
+<B>VO_ShapeEllipticArc</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptShape_h/voShapeEllipticArc.html">voShapeEllipticArc</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptShape_h/voShapeEllipticArc.html">voShapeEllipticArc</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ShapeDecoratedEllipticArc"></A>
+<H3 class="code">VO_ShapeDecoratedEllipticArc</H3>
+<PRE>
+<B>VO_ShapeDecoratedEllipticArc</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptShape_h/voShapeDecoratedEllipticArc.html">voShapeDecoratedEllipticArc</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptShape_h/voShapeDecoratedEllipticArc.html">voShapeDecoratedEllipticArc</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ShapeSegment"></A>
+<H3 class="code">VO_ShapeSegment</H3>
+<PRE>
+<B>VO_ShapeSegment</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptShape_h/voShapeSegment.html">voShapeSegment</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptShape_h/voShapeSegment.html">voShapeSegment</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ShapeCandidate"></A>
+<H3 class="code">VO_ShapeCandidate</H3>
+<PRE>
+<B>VO_ShapeCandidate</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptShape_h/voShapeCandidate.html">voShapeCandidate</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptShape_h/voShapeCandidate.html">voShapeCandidate</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ShapeRecognized"></A>
+<H3 class="code">VO_ShapeRecognized</H3>
+<PRE>
+<B>VO_ShapeRecognized</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptShape_h/voShapeRecognized.html">voShapeRecognized</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptShape_h/voShapeRecognized.html">voShapeRecognized</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ShapeScratchOut"></A>
+<H3 class="code">VO_ShapeScratchOut</H3>
+<PRE>
+<B>VO_ShapeScratchOut</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptShape_h/voShapeScratchOut.html">voShapeScratchOut</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptShape_h/voShapeScratchOut.html">voShapeScratchOut</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ShapeErased"></A>
+<H3 class="code">VO_ShapeErased</H3>
+<PRE>
+<B>VO_ShapeErased</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptShape_h/voShapeErased.html">voShapeErased</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptShape_h/voShapeErased.html">voShapeErased</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ShapeRejected"></A>
+<H3 class="code">VO_ShapeRejected</H3>
+<PRE>
+<B>VO_ShapeRejected</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptShape_h/voShapeRejected.html">voShapeRejected</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptShape_h/voShapeRejected.html">voShapeRejected</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ShapeHistoryManager"></A>
+<H3 class="code">VO_ShapeHistoryManager</H3>
+<PRE>
+<B>VO_ShapeHistoryManager</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptShape_h/voShapeHistoryManager.html">voShapeHistoryManager</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptShape_h/voShapeHistoryManager.html">voShapeHistoryManager</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

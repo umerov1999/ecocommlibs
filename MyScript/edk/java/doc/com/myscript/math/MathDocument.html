@@ -1,0 +1,645 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<title>MathDocument (MyScript SDK Java Reference Documentation)</title>
+<link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="MathDocument (MyScript SDK Java Reference Documentation)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/MathDocument.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../com/myscript/math/MathDecimalSeparatorFlags.html" title="class in com.myscript.math"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../com/myscript/math/MathGrammar.html" title="class in com.myscript.math"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/myscript/math/MathDocument.html" target="_top">Frames</a></li>
+<li><a href="MathDocument.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#fields_inherited_from_class_com.myscript.engine.EngineObject">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">com.myscript.math</div>
+<h2 title="Class MathDocument" class="title">Class MathDocument</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li>java.lang.Object</li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">com.myscript.engine.EngineObject</a></li>
+<li>
+<ul class="inheritance">
+<li>com.myscript.math.MathDocument</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../com/myscript/engine/IDisposable.html" title="interface in com.myscript.engine">IDisposable</a>, <a href="../../../com/myscript/engine/IEngineObject.html" title="interface in com.myscript.engine">IEngineObject</a>, java.lang.Cloneable</dd>
+</dl>
+<hr>
+<br>
+<pre>public final class <span class="strong">MathDocument</span>
+extends <a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></pre>
+<div class="block">The <code>MathDocument</code> class models the main math document.
+ <p>
+ <strong>Please note that the implementation of the <code>MathDocument</code>
+ class is not synchronized.</strong> If multiple threads concurrently try to
+ change the state of a <code>MathDocument</code> object, explicit synchronization
+ must be done externally.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>4.8.0</dd>
+<dt><span class="strong">Version:</span></dt>
+  <dd>1.0</dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_com.myscript.engine.EngineObject">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;com.myscript.engine.<a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></h3>
+<code><a href="../../../com/myscript/engine/EngineObject.html#DEFAULT_USER_LIMIT">DEFAULT_USER_LIMIT</a>, <a href="../../../com/myscript/engine/EngineObject.html#engine">engine</a>, <a href="../../../com/myscript/engine/EngineObject.html#reference">reference</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/math/MathDocument.html#addCharacter(com.myscript.engine.InputCharacter,%20float,%20float,%20float,%20float)">addCharacter</a></strong>(<a href="../../../com/myscript/engine/InputCharacter.html" title="class in com.myscript.engine">InputCharacter</a>&nbsp;character,
+            float&nbsp;x,
+            float&nbsp;y,
+            float&nbsp;width,
+            float&nbsp;height)</code>
+<div class="block">Adds a digital text character with respect to its position in this
+ math.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/math/MathDocument.html#addStroke(float[],%20float[])">addStroke</a></strong>(float[]&nbsp;x,
+         float[]&nbsp;y)</code>
+<div class="block">Adds a new digital pen stroke to this math.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/math/MathDocument.html#addStroke(float[],%20int,%20float[],%20int,%20int)">addStroke</a></strong>(float[]&nbsp;x,
+         int&nbsp;xOffset,
+         float[]&nbsp;y,
+         int&nbsp;yOffset,
+         int&nbsp;count)</code>
+<div class="block">Adds a new digital pen stroke to this math.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/math/MathDocument.html#addStroke(float[],%20int,%20int,%20float[],%20int,%20int,%20int)">addStroke</a></strong>(float[]&nbsp;x,
+         int&nbsp;xOffset,
+         int&nbsp;xStride,
+         float[]&nbsp;y,
+         int&nbsp;yOffset,
+         int&nbsp;yStride,
+         int&nbsp;count)</code>
+<div class="block">Adds a new digital pen stroke to this math.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/math/MathDocument.html#addStroke(com.myscript.engine.IFloatStroke)">addStroke</a></strong>(<a href="../../../com/myscript/engine/IFloatStroke.html" title="interface in com.myscript.engine">IFloatStroke</a>&nbsp;stroke)</code>
+<div class="block">Adds a new digital pen stroke to this math.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/math/MathDocument.html#clear()">clear</a></strong>()</code>
+<div class="block">Clears this math.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../com/myscript/math/MathDocument.html" title="class in com.myscript.math">MathDocument</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/math/MathDocument.html#create(com.myscript.engine.Engine)">create</a></strong>(<a href="../../../com/myscript/engine/Engine.html" title="class in com.myscript.engine">Engine</a>&nbsp;engine)</code>
+<div class="block">Static factory method that creates a new <code>MathDocument</code> object whose
+ parent is the specified <code>Engine</code> object.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/math/MathDocument.html#deleteComponentAt(int)">deleteComponentAt</a></strong>(int&nbsp;index)</code>
+<div class="block">Deletes the component at the specified <code>index</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/myscript/math/MathNode.html" title="class in com.myscript.math">MathNode</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/math/MathDocument.html#getParseTree()">getParseTree</a></strong>()</code>
+<div class="block">Returns the root node of the parse tree after this math has been
+ processed.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/myscript/math/MathScratchOut.html" title="class in com.myscript.math">MathScratchOut</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/math/MathDocument.html#getScratchOutAt(int)">getScratchOutAt</a></strong>(int&nbsp;index)</code>
+<div class="block">Returns the scratch out at the specified <code>index</code> after this
+ math has been processed.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/math/MathDocument.html#getScratchOutCount()">getScratchOutCount</a></strong>()</code>
+<div class="block">Returns the number of active scratch out after this math has been
+ processed.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/math/MathDocument.html#hasParseTree()">hasParseTree</a></strong>()</code>
+<div class="block">Tells whether this math has an associated parse tree.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/math/MathDocument.html#undeleteComponentAt(int)">undeleteComponentAt</a></strong>(int&nbsp;index)</code>
+<div class="block">Undeletes the component at the specified <code>index</code>.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.myscript.engine.EngineObject">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;com.myscript.engine.<a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></h3>
+<code><a href="../../../com/myscript/engine/EngineObject.html#acquire()">acquire</a>, <a href="../../../com/myscript/engine/EngineObject.html#checkDisposed()">checkDisposed</a>, <a href="../../../com/myscript/engine/EngineObject.html#clone()">clone</a>, <a href="../../../com/myscript/engine/EngineObject.html#dispose()">dispose</a>, <a href="../../../com/myscript/engine/EngineObject.html#finalize()">finalize</a>, <a href="../../../com/myscript/engine/EngineObject.html#getAttachReferenceCount()">getAttachReferenceCount</a>, <a href="../../../com/myscript/engine/EngineObject.html#getEngine()">getEngine</a>, <a href="../../../com/myscript/engine/EngineObject.html#getMemoryUsage()">getMemoryUsage</a>, <a href="../../../com/myscript/engine/EngineObject.html#getNativeReference()">getNativeReference</a>, <a href="../../../com/myscript/engine/EngineObject.html#getUserCount(com.myscript.engine.Engine)">getUserCount</a>, <a href="../../../com/myscript/engine/EngineObject.html#getUserLimit(com.myscript.engine.Engine)">getUserLimit</a>, <a href="../../../com/myscript/engine/EngineObject.html#getUserReferenceCount()">getUserReferenceCount</a>, <a href="../../../com/myscript/engine/EngineObject.html#isDisposed()">isDisposed</a>, <a href="../../../com/myscript/engine/EngineObject.html#isSame(com.myscript.engine.EngineObject)">isSame</a>, <a href="../../../com/myscript/engine/EngineObject.html#load(com.myscript.engine.Engine,%20java.nio.channels.ReadableByteChannel)">load</a>, <a href="../../../com/myscript/engine/EngineObject.html#load(com.myscript.engine.Engine,%20java.lang.String)">load</a>, <a href="../../../com/myscript/engine/EngineObject.html#load(com.myscript.engine.Engine,%20java.lang.String,%20java.lang.String)">load</a>, <a href="../../../com/myscript/engine/EngineObject.html#resetUserLimit(com.myscript.engine.Engine)">resetUserLimit</a>, <a href="../../../com/myscript/engine/EngineObject.html#setUserLimit(com.myscript.engine.Engine,%20int)">setUserLimit</a>, <a href="../../../com/myscript/engine/EngineObject.html#store(java.lang.String)">store</a>, <a href="../../../com/myscript/engine/EngineObject.html#store(java.lang.String,%20java.lang.String)">store</a>, <a href="../../../com/myscript/engine/EngineObject.html#store(java.nio.channels.WritableByteChannel)">store</a>, <a href="../../../com/myscript/engine/EngineObject.html#toString()">toString</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>equals, getClass, hashCode, notify, notifyAll, wait, wait, wait</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="create(com.myscript.engine.Engine)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>create</h4>
+<pre>public static final&nbsp;<a href="../../../com/myscript/math/MathDocument.html" title="class in com.myscript.math">MathDocument</a>&nbsp;create(<a href="../../../com/myscript/engine/Engine.html" title="class in com.myscript.engine">Engine</a>&nbsp;engine)
+                                 throws java.lang.NullPointerException,
+                                        java.lang.IllegalStateException,
+                                        <a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a>,
+                                        <a href="../../../com/myscript/engine/OutOfMemoryException.html" title="class in com.myscript.engine">OutOfMemoryException</a></pre>
+<div class="block">Static factory method that creates a new <code>MathDocument</code> object whose
+ parent is the specified <code>Engine</code> object.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>engine</code> - the parent <code>Engine</code> object.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new <code>MathDocument</code> object.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.NullPointerException</code> - when <code>engine</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>engine</code> has been disposed
+           of.</dd>
+<dd><code><a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></code> - when the object user limit has been reached.</dd>
+<dd><code><a href="../../../com/myscript/engine/OutOfMemoryException.html" title="class in com.myscript.engine">OutOfMemoryException</a></code> - when the MyScript Engine failed to allocate
+           memory.</dd></dl>
+</li>
+</ul>
+<a name="clear()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>clear</h4>
+<pre>public final&nbsp;void&nbsp;clear()
+                 throws java.lang.IllegalStateException</pre>
+<div class="block">Clears this math.</div>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this math object has been disposed
+           of.</dd></dl>
+</li>
+</ul>
+<a name="addStroke(com.myscript.engine.IFloatStroke)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addStroke</h4>
+<pre>public final&nbsp;void&nbsp;addStroke(<a href="../../../com/myscript/engine/IFloatStroke.html" title="interface in com.myscript.engine">IFloatStroke</a>&nbsp;stroke)
+                     throws java.lang.IllegalStateException,
+                            java.lang.NullPointerException</pre>
+<div class="block">Adds a new digital pen stroke to this math.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>stroke</code> - an object implementing the <code>IFloatStroke</code>
+          interface.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.NullPointerException</code> - when <code>stroke</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when this math object has been disposed
+           of.</dd></dl>
+</li>
+</ul>
+<a name="addStroke(float[], float[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addStroke</h4>
+<pre>public final&nbsp;void&nbsp;addStroke(float[]&nbsp;x,
+             float[]&nbsp;y)
+                     throws java.lang.NullPointerException,
+                            java.lang.IllegalArgumentException,
+                            java.lang.IllegalStateException</pre>
+<div class="block">Adds a new digital pen stroke to this math.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>x</code> - x coordinate array.</dd><dd><code>y</code> - y coordinate array.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.NullPointerException</code> - when <code>x</code> is <code>null</code>.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>y</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>x.length != y.length</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when this math object has been disposed
+           of.</dd></dl>
+</li>
+</ul>
+<a name="addStroke(float[], int, float[], int, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addStroke</h4>
+<pre>public final&nbsp;void&nbsp;addStroke(float[]&nbsp;x,
+             int&nbsp;xOffset,
+             float[]&nbsp;y,
+             int&nbsp;yOffset,
+             int&nbsp;count)
+                     throws java.lang.NullPointerException,
+                            java.lang.IllegalArgumentException,
+                            java.lang.IllegalStateException</pre>
+<div class="block">Adds a new digital pen stroke to this math.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>x</code> - x coordinate array.</dd><dd><code>xOffset</code> - the offset of the first x coordinate to be read.</dd><dd><code>y</code> - y coordinate array.</dd><dd><code>yOffset</code> - the offset of the first y coordinate to be read.</dd><dd><code>count</code> - the number of points for this stroke.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.NullPointerException</code> - when <code>x</code> is <code>null</code>.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>y</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when the values of the
+           <code>xOffset</code>, <code>yOffset</code> and <code>count</code>
+           parameters are such that the reading zone is out of range.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when this math object has been disposed
+           of.</dd></dl>
+</li>
+</ul>
+<a name="addStroke(float[], int, int, float[], int, int, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addStroke</h4>
+<pre>public final&nbsp;void&nbsp;addStroke(float[]&nbsp;x,
+             int&nbsp;xOffset,
+             int&nbsp;xStride,
+             float[]&nbsp;y,
+             int&nbsp;yOffset,
+             int&nbsp;yStride,
+             int&nbsp;count)
+                     throws java.lang.NullPointerException,
+                            java.lang.IllegalArgumentException,
+                            java.lang.IllegalStateException</pre>
+<div class="block">Adds a new digital pen stroke to this math.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>x</code> - x coordinate array.</dd><dd><code>xOffset</code> - the offset of the first x coordinate to be read.</dd><dd><code>xStride</code> - the stride from a x coordinate in the array to the next one.</dd><dd><code>y</code> - y coordinate array.</dd><dd><code>yOffset</code> - the offset of the first y coordinate to be read.</dd><dd><code>yStride</code> - the stride from a y coordinate in the array to the next one.</dd><dd><code>count</code> - the number of points for this stroke.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.NullPointerException</code> - when <code>x</code> is <code>null</code>.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>y</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when the values of the
+           <code>xOffset</code>, <code>xStride</code>, <code>yOffset</code>,
+           <code>yStride</code> and <code>count</code> parameters are such
+           that the reading zone is out of range.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when this math object has been disposed
+           of.</dd></dl>
+</li>
+</ul>
+<a name="addCharacter(com.myscript.engine.InputCharacter, float, float, float, float)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addCharacter</h4>
+<pre>public final&nbsp;void&nbsp;addCharacter(<a href="../../../com/myscript/engine/InputCharacter.html" title="class in com.myscript.engine">InputCharacter</a>&nbsp;character,
+                float&nbsp;x,
+                float&nbsp;y,
+                float&nbsp;width,
+                float&nbsp;height)
+                        throws java.lang.NullPointerException,
+                               <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a>,
+                               java.lang.IllegalArgumentException,
+                               java.lang.IllegalStateException</pre>
+<div class="block">Adds a digital text character with respect to its position in this
+ math.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>character</code> - an <code>InputCharacter</code> object.</dd><dd><code>x</code> - x coordinate of the box origin (corner).</dd><dd><code>y</code> - y coordinate of the box origin (corner).</dd><dd><code>width</code> - width of the guide box.</dd><dd><code>height</code> - height of the guide box.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.NullPointerException</code> - when <code>character</code> is
+           <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>character</code> has been disposed
+           of.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>character</code> does not have
+           the same parent <code>Engine</code> object as this math.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>x</code> is Not-a-Number (
+           <code>NaN</code>).</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>x</code> is infinitely large in
+           magnitude.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>y</code> is Not-a-Number (
+           <code>NaN</code>).</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>y</code> is infinitely large in
+           magnitude.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>width</code> is Not-a-Number (
+           <code>NaN</code>).</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>width</code> is infinitely
+           large in magnitude.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>width &lt; = 0</code>.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>height</code> is Not-a-Number (
+           <code>NaN</code>).</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>height</code> is infinitely
+           large in magnitude.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>height &lt; = 0</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when this math has been disposed of.</dd></dl>
+</li>
+</ul>
+<a name="deleteComponentAt(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>deleteComponentAt</h4>
+<pre>public final&nbsp;void&nbsp;deleteComponentAt(int&nbsp;index)
+                             throws java.lang.IllegalStateException,
+                                    java.lang.IndexOutOfBoundsException</pre>
+<div class="block">Deletes the component at the specified <code>index</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>index</code> - the index of the component to be deleted.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this math object has been disposed
+           of.</dd>
+<dd><code>java.lang.IndexOutOfBoundsException</code> - when <code>index</code> is out of bounds.</dd><dt><span class="strong">Since:</span></dt>
+  <dd>5.0.0</dd></dl>
+</li>
+</ul>
+<a name="undeleteComponentAt(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>undeleteComponentAt</h4>
+<pre>public final&nbsp;void&nbsp;undeleteComponentAt(int&nbsp;index)
+                               throws java.lang.IllegalStateException,
+                                      java.lang.IndexOutOfBoundsException</pre>
+<div class="block">Undeletes the component at the specified <code>index</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>index</code> - the index of the component to be undeleted.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this math object has been disposed
+           of.</dd>
+<dd><code>java.lang.IndexOutOfBoundsException</code> - when <code>index</code> is out of bounds.</dd><dt><span class="strong">Since:</span></dt>
+  <dd>5.0.0</dd></dl>
+</li>
+</ul>
+<a name="hasParseTree()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hasParseTree</h4>
+<pre>public final&nbsp;boolean&nbsp;hasParseTree()
+                           throws java.lang.IllegalStateException,
+                                  <a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></pre>
+<div class="block">Tells whether this math has an associated parse tree.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd><code>true</code> when <code>target</code> has an associated parse
+         tree, otherwise <code>false</code>.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this math object has been disposed
+           of.</dd>
+<dd><code><a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getParseTree()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getParseTree</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/math/MathNode.html" title="class in com.myscript.math">MathNode</a>&nbsp;getParseTree()
+                            throws java.lang.IllegalStateException,
+                                   <a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></pre>
+<div class="block">Returns the root node of the parse tree after this math has been
+ processed.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the root node of the parse tree as an <code>MathNode</code>
+         object.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this math object has been disposed
+           of.</dd>
+<dd><code><a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></code> - when the object user limit has been reached.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when this math has no associated parse
+           tree.</dd></dl>
+</li>
+</ul>
+<a name="getScratchOutCount()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getScratchOutCount</h4>
+<pre>public final&nbsp;int&nbsp;getScratchOutCount()
+                             throws java.lang.IllegalStateException</pre>
+<div class="block">Returns the number of active scratch out after this math has been
+ processed.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the number of active scratch out after this math has been
+ processed.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this math object has been disposed
+           of.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when this math has not been processed.</dd><dt><span class="strong">Since:</span></dt>
+  <dd>6.1.0</dd></dl>
+</li>
+</ul>
+<a name="getScratchOutAt(int)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getScratchOutAt</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/math/MathScratchOut.html" title="class in com.myscript.math">MathScratchOut</a>&nbsp;getScratchOutAt(int&nbsp;index)
+                                     throws java.lang.IllegalStateException,
+                                            java.lang.IndexOutOfBoundsException,
+                                            <a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></pre>
+<div class="block">Returns the scratch out at the specified <code>index</code> after this
+ math has been processed.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>index</code> - the index of the scratch out to be retrieved.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the scratch out at the specified <code>index</code> as an
+ <code>MathScratchOut</code> object.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this math object has been disposed
+           of.</dd>
+<dd><code>java.lang.IndexOutOfBoundsException</code> - when <code>index</code> is out of bounds
+ (should be <code>&gt;= 0</code> and
+ <code>&lt; <a href="../../../com/myscript/math/MathDocument.html#getScratchOutCount()"><code>getScratchOutCount()</code></a></code>.</dd>
+<dd><code><a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></code> - when the object user limit has been reached.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when this math has not been processed.</dd><dt><span class="strong">Since:</span></dt>
+  <dd>6.1.0</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/MathDocument.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../com/myscript/math/MathDecimalSeparatorFlags.html" title="class in com.myscript.math"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../com/myscript/math/MathGrammar.html" title="class in com.myscript.math"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/myscript/math/MathDocument.html" target="_top">Frames</a></li>
+<li><a href="MathDocument.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#fields_inherited_from_class_com.myscript.engine.EngineObject">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+</body>
+</html>

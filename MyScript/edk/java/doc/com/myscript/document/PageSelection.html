@@ -1,0 +1,1216 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<title>PageSelection (MyScript SDK Java Reference Documentation)</title>
+<link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="PageSelection (MyScript SDK Java Reference Documentation)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/PageSelection.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../com/myscript/document/PageChangeSetResult.html" title="class in com.myscript.document"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../com/myscript/document/PageUpdateListener.html" title="class in com.myscript.document"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/myscript/document/PageSelection.html" target="_top">Frames</a></li>
+<li><a href="PageSelection.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#fields_inherited_from_class_com.myscript.engine.EngineObject">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">com.myscript.document</div>
+<h2 title="Class PageSelection" class="title">Class PageSelection</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li>java.lang.Object</li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">com.myscript.engine.EngineObject</a></li>
+<li>
+<ul class="inheritance">
+<li>com.myscript.document.PageSelection</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../com/myscript/document/IExtentProvider.html" title="interface in com.myscript.document">IExtentProvider</a>, <a href="../../../com/myscript/document/ILayout.html" title="interface in com.myscript.document">ILayout</a>, <a href="../../../com/myscript/engine/IDisposable.html" title="interface in com.myscript.engine">IDisposable</a>, <a href="../../../com/myscript/engine/IEngineObject.html" title="interface in com.myscript.engine">IEngineObject</a>, <a href="../../../com/myscript/ink/IInkSelection.html" title="interface in com.myscript.ink">IInkSelection</a>, <a href="../../../com/myscript/ink/IInkStrokeSet.html" title="interface in com.myscript.ink">IInkStrokeSet</a>, <a href="../../../com/myscript/ink/ISelection.html" title="interface in com.myscript.ink">ISelection</a>, java.lang.Cloneable</dd>
+</dl>
+<hr>
+<br>
+<pre>public final class <span class="strong">PageSelection</span>
+extends <a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>
+implements <a href="../../../com/myscript/ink/ISelection.html" title="interface in com.myscript.ink">ISelection</a>, <a href="../../../com/myscript/document/ILayout.html" title="interface in com.myscript.document">ILayout</a>, <a href="../../../com/myscript/ink/IInkStrokeSet.html" title="interface in com.myscript.ink">IInkStrokeSet</a>, <a href="../../../com/myscript/document/IExtentProvider.html" title="interface in com.myscript.document">IExtentProvider</a>, <a href="../../../com/myscript/ink/IInkSelection.html" title="interface in com.myscript.ink">IInkSelection</a></pre>
+<div class="block">Represents a selection over a document page's layout.</div>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_com.myscript.engine.EngineObject">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;com.myscript.engine.<a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></h3>
+<code><a href="../../../com/myscript/engine/EngineObject.html#DEFAULT_USER_LIMIT">DEFAULT_USER_LIMIT</a>, <a href="../../../com/myscript/engine/EngineObject.html#engine">engine</a>, <a href="../../../com/myscript/engine/EngineObject.html#reference">reference</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#addChangeListener(com.myscript.ink.SelectionChangeListener)">addChangeListener</a></strong>(<a href="../../../com/myscript/ink/SelectionChangeListener.html" title="class in com.myscript.ink">SelectionChangeListener</a>&nbsp;listener)</code>
+<div class="block">Adds the specified change listener to the selection.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#addFont(java.lang.String,%20com.myscript.document.FontData)">addFont</a></strong>(java.lang.String&nbsp;id,
+       <a href="../../../com/myscript/document/FontData.html" title="class in com.myscript.document">FontData</a>&nbsp;data)</code>
+<div class="block">Adds a new font to this layout.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#addLayer(java.lang.String)">addLayer</a></strong>(java.lang.String&nbsp;id)</code>
+<div class="block">Adds a new layer.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#addPen(java.lang.String,%20com.myscript.document.PenData)">addPen</a></strong>(java.lang.String&nbsp;id,
+      <a href="../../../com/myscript/document/PenData.html" title="class in com.myscript.document">PenData</a>&nbsp;data)</code>
+<div class="block">Adds a new pen to this layout.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#adjustToStrokeBoundaries(float)">adjustToStrokeBoundaries</a></strong>(float&nbsp;lengthRatio)</code>
+<div class="block">Adjusts the selection to full strokes, only if all the selected portions of
+ each stroke exceed the lengthRatio compared to full stroke.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#adjustToTagBoundaries(java.lang.String,%20float)">adjustToTagBoundaries</a></strong>(java.lang.String&nbsp;tagName,
+                     float&nbsp;overlapRatio)</code>
+<div class="block">Adjusts the selection to a given tag name.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#combine(com.myscript.ink.ISelection,%20com.myscript.ink.SelectionModifier)">combine</a></strong>(<a href="../../../com/myscript/ink/ISelection.html" title="interface in com.myscript.ink">ISelection</a>&nbsp;other,
+       <a href="../../../com/myscript/ink/SelectionModifier.html" title="class in com.myscript.ink">SelectionModifier</a>&nbsp;modifier)</code>
+<div class="block">Combines the existing selection with another selection.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../com/myscript/document/PageSelection.html" title="class in com.myscript.document">PageSelection</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#create(com.myscript.document.Page)">create</a></strong>(<a href="../../../com/myscript/document/Page.html" title="class in com.myscript.document">Page</a>&nbsp;page)</code>
+<div class="block">Static factory method that creates a new <code>PageSelection</code> object
+ whose parent is the specified <code>Engine</code> object.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>com.myscript.geometry.Extent</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#getExtent()">getExtent</a></strong>()</code>
+<div class="block">Returns the display extent of this page selection.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/myscript/document/FontIterator.html" title="class in com.myscript.document">FontIterator</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#getFont(java.lang.String)">getFont</a></strong>(java.lang.String&nbsp;id)</code>
+<div class="block">Returns an iterator to access a single font in this layout.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#getFontCount()">getFontCount</a></strong>()</code>
+<div class="block">Returns the number of fonts in this layout.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/myscript/document/FontIterator.html" title="class in com.myscript.document">FontIterator</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#getFonts()">getFonts</a></strong>()</code>
+<div class="block">Returns an iterator over the fonts in this layout.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/myscript/ink/Ink.html" title="class in com.myscript.ink">Ink</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#getInk()">getInk</a></strong>()</code>
+<div class="block">Returns the ink on which the target selection is based.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/myscript/ink/InkSelection.html" title="class in com.myscript.ink">InkSelection</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#getInkSelection()">getInkSelection</a></strong>()</code>
+<div class="block">Returns the ink selection corresponding to the page selection.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/myscript/document/LayerIterator.html" title="class in com.myscript.document">LayerIterator</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#getLayer(java.lang.String)">getLayer</a></strong>(java.lang.String&nbsp;id)</code>
+<div class="block">Returns an iterator to access a single layer in this layout.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#getLayerCount()">getLayerCount</a></strong>()</code>
+<div class="block">Returns the number of layers in this layout.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/myscript/document/LayerIterator.html" title="class in com.myscript.document">LayerIterator</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#getLayers()">getLayers</a></strong>()</code>
+<div class="block">Returns an iterator over the layers in this layout.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/myscript/document/Page.html" title="class in com.myscript.document">Page</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#getPage()">getPage</a></strong>()</code>
+<div class="block">Returns the page on which this page selection is based.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/myscript/document/PenIterator.html" title="class in com.myscript.document">PenIterator</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#getPen(java.lang.String)">getPen</a></strong>(java.lang.String&nbsp;id)</code>
+<div class="block">Returns an iterator to access a single pen in this layout.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#getPenCount()">getPenCount</a></strong>()</code>
+<div class="block">Returns the number of pens in this layout.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/myscript/document/PenIterator.html" title="class in com.myscript.document">PenIterator</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#getPens()">getPens</a></strong>()</code>
+<div class="block">Returns an iterator over the pens in this layout.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/myscript/ink/InkStroke.html" title="class in com.myscript.ink">InkStroke</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#getStrokeAt(int)">getStrokeAt</a></strong>(int&nbsp;index)</code>
+<div class="block">Retrieves the stroke at the specified index in this stroke set.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#getStrokeCount()">getStrokeCount</a></strong>()</code>
+<div class="block">Retrieves the number of strokes in this stroke set.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>com.myscript.geometry.Transform</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#getTransform(java.lang.String)">getTransform</a></strong>(java.lang.String&nbsp;id)</code>
+<div class="block">Retrieves the specified transform.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>com.myscript.geometry.Rectangle</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#getViewport()">getViewport</a></strong>()</code>
+<div class="block">Returns the viewport of this layout.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#hit(com.myscript.geometry.Circle,%20com.myscript.document.LayerIterator,%20com.myscript.ink.SelectionModifier)">hit</a></strong>(com.myscript.geometry.Circle&nbsp;circle,
+   <a href="../../../com/myscript/document/LayerIterator.html" title="class in com.myscript.document">LayerIterator</a>&nbsp;layer,
+   <a href="../../../com/myscript/ink/SelectionModifier.html" title="class in com.myscript.ink">SelectionModifier</a>&nbsp;modifier)</code>
+<div class="block">Selects the top most item that intersects the specified circle.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#hit(com.myscript.geometry.Circle,%20com.myscript.ink.SelectionModifier)">hit</a></strong>(com.myscript.geometry.Circle&nbsp;circle,
+   <a href="../../../com/myscript/ink/SelectionModifier.html" title="class in com.myscript.ink">SelectionModifier</a>&nbsp;modifier)</code>
+<div class="block">Selects the top most item that intersects the specified circle.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#hitStroke(com.myscript.geometry.Circle,%20com.myscript.ink.SelectionModifier)">hitStroke</a></strong>(com.myscript.geometry.Circle&nbsp;circle,
+         <a href="../../../com/myscript/ink/SelectionModifier.html" title="class in com.myscript.ink">SelectionModifier</a>&nbsp;modifier)</code>
+<div class="block">Select the closest stroke within a circle.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>long</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#hitTag(java.lang.String,%20com.myscript.geometry.Circle,%20com.myscript.ink.SelectionModifier)">hitTag</a></strong>(java.lang.String&nbsp;tagName,
+      com.myscript.geometry.Circle&nbsp;circle,
+      <a href="../../../com/myscript/ink/SelectionModifier.html" title="class in com.myscript.ink">SelectionModifier</a>&nbsp;modifier)</code>
+<div class="block">Selects the closest tag within a circle.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#isEmpty()">isEmpty</a></strong>()</code>
+<div class="block">Returns whether solution is empty.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#parse(java.lang.String,%20com.myscript.ink.SelectionModifier)">parse</a></strong>(java.lang.String&nbsp;string,
+     <a href="../../../com/myscript/ink/SelectionModifier.html" title="class in com.myscript.ink">SelectionModifier</a>&nbsp;modifier)</code>
+<div class="block">Parses the given string as a selection and combine it into the selection.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#removeChangeListener(com.myscript.ink.SelectionChangeListener)">removeChangeListener</a></strong>(<a href="../../../com/myscript/ink/SelectionChangeListener.html" title="class in com.myscript.ink">SelectionChangeListener</a>&nbsp;listener)</code>
+<div class="block">Removes the specified change listener from the selection.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#selectAll()">selectAll</a></strong>()</code>
+<div class="block">Selects all the items from the selection's source.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#selectCircle(com.myscript.geometry.Circle,%20com.myscript.ink.SelectionModifier)">selectCircle</a></strong>(com.myscript.geometry.Circle&nbsp;circle,
+            <a href="../../../com/myscript/ink/SelectionModifier.html" title="class in com.myscript.ink">SelectionModifier</a>&nbsp;modifier)</code>
+<div class="block">Creates a new selection of the items that are combined in the specified
+ circle and combines it with the existing selection.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#selectInterval(com.myscript.ink.InkInterval,%20com.myscript.ink.SelectionModifier)">selectInterval</a></strong>(<a href="../../../com/myscript/ink/InkInterval.html" title="class in com.myscript.ink">InkInterval</a>&nbsp;interval,
+              <a href="../../../com/myscript/ink/SelectionModifier.html" title="class in com.myscript.ink">SelectionModifier</a>&nbsp;modifier)</code>
+<div class="block">Creates a new selection of the strokes and portion of strokes that are
+ contained in the specified interval and combine it with existing selection.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#selectIntervals(com.myscript.ink.InkIntervals,%20com.myscript.ink.SelectionModifier)">selectIntervals</a></strong>(<a href="../../../com/myscript/ink/InkIntervals.html" title="class in com.myscript.ink">InkIntervals</a>&nbsp;intervals,
+               <a href="../../../com/myscript/ink/SelectionModifier.html" title="class in com.myscript.ink">SelectionModifier</a>&nbsp;modifier)</code>
+<div class="block">Combine the selection with a given segment.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#selectItem(com.myscript.document.LayoutItemIterator,%20com.myscript.ink.SelectionModifier)">selectItem</a></strong>(<a href="../../../com/myscript/document/LayoutItemIterator.html" title="class in com.myscript.document">LayoutItemIterator</a>&nbsp;item,
+          <a href="../../../com/myscript/ink/SelectionModifier.html" title="class in com.myscript.ink">SelectionModifier</a>&nbsp;modifier)</code>
+<div class="block">Selects the specified item.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#selectLayer(com.myscript.document.LayerIterator,%20com.myscript.ink.SelectionModifier)">selectLayer</a></strong>(<a href="../../../com/myscript/document/LayerIterator.html" title="class in com.myscript.document">LayerIterator</a>&nbsp;layer,
+           <a href="../../../com/myscript/ink/SelectionModifier.html" title="class in com.myscript.ink">SelectionModifier</a>&nbsp;modifier)</code>
+<div class="block">Selects the specified layer.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#selectNone()">selectNone</a></strong>()</code>
+<div class="block">Clears the selection.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#selectPolygon(com.myscript.geometry.Point[],%20com.myscript.ink.SelectionModifier)">selectPolygon</a></strong>(com.myscript.geometry.Point[]&nbsp;vertices,
+             <a href="../../../com/myscript/ink/SelectionModifier.html" title="class in com.myscript.ink">SelectionModifier</a>&nbsp;modifier)</code>
+<div class="block">Creates a new selection of the items that are contained in the specified
+ polygon and combines it with the existing selection.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#selectRectangle(com.myscript.geometry.Rectangle,%20com.myscript.ink.SelectionModifier)">selectRectangle</a></strong>(com.myscript.geometry.Rectangle&nbsp;rectangle,
+               <a href="../../../com/myscript/ink/SelectionModifier.html" title="class in com.myscript.ink">SelectionModifier</a>&nbsp;modifier)</code>
+<div class="block">Creates a new selection of the items that are contained in the specified
+ rectangle and combines it with the existing selection.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#selectStroke(com.myscript.ink.InkStroke,%20com.myscript.ink.SelectionModifier)">selectStroke</a></strong>(<a href="../../../com/myscript/ink/InkStroke.html" title="class in com.myscript.ink">InkStroke</a>&nbsp;stroke,
+            <a href="../../../com/myscript/ink/SelectionModifier.html" title="class in com.myscript.ink">SelectionModifier</a>&nbsp;modifier)</code>
+<div class="block">Creates a new selection of the input stroke and combine it with existing
+ selection.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#selectTag(long,%20com.myscript.ink.SelectionModifier)">selectTag</a></strong>(long&nbsp;tagId,
+         <a href="../../../com/myscript/ink/SelectionModifier.html" title="class in com.myscript.ink">SelectionModifier</a>&nbsp;modifier)</code>
+<div class="block">Creates a new selection of the strokes that are contained in a given tag
+ and combine it with existing selection.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/document/PageSelection.html#setViewport(com.myscript.geometry.Rectangle)">setViewport</a></strong>(com.myscript.geometry.Rectangle&nbsp;rectangle)</code>
+<div class="block">Sets the viewport of this layout.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.myscript.engine.EngineObject">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;com.myscript.engine.<a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></h3>
+<code><a href="../../../com/myscript/engine/EngineObject.html#acquire()">acquire</a>, <a href="../../../com/myscript/engine/EngineObject.html#checkDisposed()">checkDisposed</a>, <a href="../../../com/myscript/engine/EngineObject.html#clone()">clone</a>, <a href="../../../com/myscript/engine/EngineObject.html#dispose()">dispose</a>, <a href="../../../com/myscript/engine/EngineObject.html#finalize()">finalize</a>, <a href="../../../com/myscript/engine/EngineObject.html#getAttachReferenceCount()">getAttachReferenceCount</a>, <a href="../../../com/myscript/engine/EngineObject.html#getEngine()">getEngine</a>, <a href="../../../com/myscript/engine/EngineObject.html#getMemoryUsage()">getMemoryUsage</a>, <a href="../../../com/myscript/engine/EngineObject.html#getNativeReference()">getNativeReference</a>, <a href="../../../com/myscript/engine/EngineObject.html#getUserCount(com.myscript.engine.Engine)">getUserCount</a>, <a href="../../../com/myscript/engine/EngineObject.html#getUserLimit(com.myscript.engine.Engine)">getUserLimit</a>, <a href="../../../com/myscript/engine/EngineObject.html#getUserReferenceCount()">getUserReferenceCount</a>, <a href="../../../com/myscript/engine/EngineObject.html#isDisposed()">isDisposed</a>, <a href="../../../com/myscript/engine/EngineObject.html#isSame(com.myscript.engine.EngineObject)">isSame</a>, <a href="../../../com/myscript/engine/EngineObject.html#load(com.myscript.engine.Engine,%20java.nio.channels.ReadableByteChannel)">load</a>, <a href="../../../com/myscript/engine/EngineObject.html#load(com.myscript.engine.Engine,%20java.lang.String)">load</a>, <a href="../../../com/myscript/engine/EngineObject.html#load(com.myscript.engine.Engine,%20java.lang.String,%20java.lang.String)">load</a>, <a href="../../../com/myscript/engine/EngineObject.html#resetUserLimit(com.myscript.engine.Engine)">resetUserLimit</a>, <a href="../../../com/myscript/engine/EngineObject.html#setUserLimit(com.myscript.engine.Engine,%20int)">setUserLimit</a>, <a href="../../../com/myscript/engine/EngineObject.html#store(java.lang.String)">store</a>, <a href="../../../com/myscript/engine/EngineObject.html#store(java.lang.String,%20java.lang.String)">store</a>, <a href="../../../com/myscript/engine/EngineObject.html#store(java.nio.channels.WritableByteChannel)">store</a>, <a href="../../../com/myscript/engine/EngineObject.html#toString()">toString</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>equals, getClass, hashCode, notify, notifyAll, wait, wait, wait</code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.myscript.engine.IEngineObject">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;com.myscript.engine.<a href="../../../com/myscript/engine/IEngineObject.html" title="interface in com.myscript.engine">IEngineObject</a></h3>
+<code><a href="../../../com/myscript/engine/IEngineObject.html#getEngine()">getEngine</a>, <a href="../../../com/myscript/engine/IEngineObject.html#getNativeReference()">getNativeReference</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.myscript.engine.IDisposable">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;com.myscript.engine.<a href="../../../com/myscript/engine/IDisposable.html" title="interface in com.myscript.engine">IDisposable</a></h3>
+<code><a href="../../../com/myscript/engine/IDisposable.html#dispose()">dispose</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="create(com.myscript.document.Page)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>create</h4>
+<pre>public static final&nbsp;<a href="../../../com/myscript/document/PageSelection.html" title="class in com.myscript.document">PageSelection</a>&nbsp;create(<a href="../../../com/myscript/document/Page.html" title="class in com.myscript.document">Page</a>&nbsp;page)</pre>
+<div class="block">Static factory method that creates a new <code>PageSelection</code> object
+ whose parent is the specified <code>Engine</code> object.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>page</code> - the target page.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new <code>PageSelection</code> object.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.NullPointerException</code> - when <code>engine</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>engine</code> has been disposed
+           of.</dd>
+<dd><code><a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></code> - when the object user limit has been reached.</dd>
+<dd><code><a href="../../../com/myscript/engine/OutOfMemoryException.html" title="class in com.myscript.engine">OutOfMemoryException</a></code> - when the MyScript Engine failed to allocate
+           memory.</dd></dl>
+</li>
+</ul>
+<a name="getPage()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPage</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/document/Page.html" title="class in com.myscript.document">Page</a>&nbsp;getPage()</pre>
+<div class="block">Returns the page on which this page selection is based.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the page.</dd></dl>
+</li>
+</ul>
+<a name="addChangeListener(com.myscript.ink.SelectionChangeListener)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addChangeListener</h4>
+<pre>public final&nbsp;void&nbsp;addChangeListener(<a href="../../../com/myscript/ink/SelectionChangeListener.html" title="class in com.myscript.ink">SelectionChangeListener</a>&nbsp;listener)</pre>
+<div class="block">Adds the specified change listener to the selection.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/ink/ISelection.html#addChangeListener(com.myscript.ink.SelectionChangeListener)">addChangeListener</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/ink/ISelection.html" title="interface in com.myscript.ink">ISelection</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>listener</code> - the change listener to add.</dd></dl>
+</li>
+</ul>
+<a name="removeChangeListener(com.myscript.ink.SelectionChangeListener)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeChangeListener</h4>
+<pre>public final&nbsp;void&nbsp;removeChangeListener(<a href="../../../com/myscript/ink/SelectionChangeListener.html" title="class in com.myscript.ink">SelectionChangeListener</a>&nbsp;listener)</pre>
+<div class="block">Removes the specified change listener from the selection.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/ink/ISelection.html#removeChangeListener(com.myscript.ink.SelectionChangeListener)">removeChangeListener</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/ink/ISelection.html" title="interface in com.myscript.ink">ISelection</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>listener</code> - the change listener to remove</dd></dl>
+</li>
+</ul>
+<a name="selectRectangle(com.myscript.geometry.Rectangle, com.myscript.ink.SelectionModifier)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>selectRectangle</h4>
+<pre>public final&nbsp;void&nbsp;selectRectangle(com.myscript.geometry.Rectangle&nbsp;rectangle,
+                   <a href="../../../com/myscript/ink/SelectionModifier.html" title="class in com.myscript.ink">SelectionModifier</a>&nbsp;modifier)</pre>
+<div class="block">Creates a new selection of the items that are contained in the specified
+ rectangle and combines it with the existing selection.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/ink/ISelection.html#selectRectangle(com.myscript.geometry.Rectangle,%20com.myscript.ink.SelectionModifier)">selectRectangle</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/ink/ISelection.html" title="interface in com.myscript.ink">ISelection</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>rectangle</code> - the rectangle from which to build the selection.</dd><dd><code>modifier</code> - the way the new selection should be combined with the
+          existing selection.</dd></dl>
+</li>
+</ul>
+<a name="selectPolygon(com.myscript.geometry.Point[], com.myscript.ink.SelectionModifier)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>selectPolygon</h4>
+<pre>public final&nbsp;void&nbsp;selectPolygon(com.myscript.geometry.Point[]&nbsp;vertices,
+                 <a href="../../../com/myscript/ink/SelectionModifier.html" title="class in com.myscript.ink">SelectionModifier</a>&nbsp;modifier)</pre>
+<div class="block">Creates a new selection of the items that are contained in the specified
+ polygon and combines it with the existing selection.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/ink/ISelection.html#selectPolygon(com.myscript.geometry.Point[],%20com.myscript.ink.SelectionModifier)">selectPolygon</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/ink/ISelection.html" title="interface in com.myscript.ink">ISelection</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>vertices</code> - the vertices of the polygon from which to build the
+          selection.</dd><dd><code>modifier</code> - the way the new selection should be combined with the
+          existing selection.</dd></dl>
+</li>
+</ul>
+<a name="selectCircle(com.myscript.geometry.Circle, com.myscript.ink.SelectionModifier)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>selectCircle</h4>
+<pre>public final&nbsp;void&nbsp;selectCircle(com.myscript.geometry.Circle&nbsp;circle,
+                <a href="../../../com/myscript/ink/SelectionModifier.html" title="class in com.myscript.ink">SelectionModifier</a>&nbsp;modifier)</pre>
+<div class="block">Creates a new selection of the items that are combined in the specified
+ circle and combines it with the existing selection.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/ink/ISelection.html#selectCircle(com.myscript.geometry.Circle,%20com.myscript.ink.SelectionModifier)">selectCircle</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/ink/ISelection.html" title="interface in com.myscript.ink">ISelection</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>circle</code> - the circle from which to build the selection.</dd><dd><code>modifier</code> - the way the new selection should be combined with the
+          existing selection.</dd></dl>
+</li>
+</ul>
+<a name="selectAll()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>selectAll</h4>
+<pre>public final&nbsp;void&nbsp;selectAll()</pre>
+<div class="block">Selects all the items from the selection's source.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/ink/ISelection.html#selectAll()">selectAll</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/ink/ISelection.html" title="interface in com.myscript.ink">ISelection</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="selectNone()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>selectNone</h4>
+<pre>public final&nbsp;void&nbsp;selectNone()</pre>
+<div class="block">Clears the selection.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/ink/ISelection.html#selectNone()">selectNone</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/ink/ISelection.html" title="interface in com.myscript.ink">ISelection</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="combine(com.myscript.ink.ISelection, com.myscript.ink.SelectionModifier)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>combine</h4>
+<pre>public final&nbsp;void&nbsp;combine(<a href="../../../com/myscript/ink/ISelection.html" title="interface in com.myscript.ink">ISelection</a>&nbsp;other,
+           <a href="../../../com/myscript/ink/SelectionModifier.html" title="class in com.myscript.ink">SelectionModifier</a>&nbsp;modifier)</pre>
+<div class="block">Combines the existing selection with another selection.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/ink/ISelection.html#combine(com.myscript.ink.ISelection,%20com.myscript.ink.SelectionModifier)">combine</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/ink/ISelection.html" title="interface in com.myscript.ink">ISelection</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>other</code> - the other selection.</dd><dd><code>modifier</code> - the way other selection should be combined with the
+          existing selection.</dd></dl>
+</li>
+</ul>
+<a name="isEmpty()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isEmpty</h4>
+<pre>public final&nbsp;boolean&nbsp;isEmpty()</pre>
+<div class="block">Returns whether solution is empty.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/ink/ISelection.html#isEmpty()">isEmpty</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/ink/ISelection.html" title="interface in com.myscript.ink">ISelection</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd><code>true</code> if selection is empty.</dd></dl>
+</li>
+</ul>
+<a name="hit(com.myscript.geometry.Circle, com.myscript.ink.SelectionModifier)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hit</h4>
+<pre>public final&nbsp;void&nbsp;hit(com.myscript.geometry.Circle&nbsp;circle,
+       <a href="../../../com/myscript/ink/SelectionModifier.html" title="class in com.myscript.ink">SelectionModifier</a>&nbsp;modifier)</pre>
+<div class="block">Selects the top most item that intersects the specified circle.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>circle</code> - the circle to select.</dd><dd><code>modifier</code> - the way the new selection should be combined with the
+          existing selection.</dd></dl>
+</li>
+</ul>
+<a name="hit(com.myscript.geometry.Circle, com.myscript.document.LayerIterator, com.myscript.ink.SelectionModifier)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hit</h4>
+<pre>public final&nbsp;void&nbsp;hit(com.myscript.geometry.Circle&nbsp;circle,
+       <a href="../../../com/myscript/document/LayerIterator.html" title="class in com.myscript.document">LayerIterator</a>&nbsp;layer,
+       <a href="../../../com/myscript/ink/SelectionModifier.html" title="class in com.myscript.ink">SelectionModifier</a>&nbsp;modifier)</pre>
+<div class="block">Selects the top most item that intersects the specified circle.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>circle</code> - the circle to select.</dd><dd><code>layer</code> - an iterator positioned on the layer on which the selection
+          should be performed.</dd><dd><code>modifier</code> - the way the new selection should be combined with the
+          existing selection.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when the layer is from a different page.</dd></dl>
+</li>
+</ul>
+<a name="selectLayer(com.myscript.document.LayerIterator, com.myscript.ink.SelectionModifier)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>selectLayer</h4>
+<pre>public final&nbsp;void&nbsp;selectLayer(<a href="../../../com/myscript/document/LayerIterator.html" title="class in com.myscript.document">LayerIterator</a>&nbsp;layer,
+               <a href="../../../com/myscript/ink/SelectionModifier.html" title="class in com.myscript.ink">SelectionModifier</a>&nbsp;modifier)</pre>
+<div class="block">Selects the specified layer.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>layer</code> - an iterator positioned on the layer to select.</dd><dd><code>modifier</code> - the way the new selection should be combined with the
+          existing selection.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when the layer is from a different page.</dd></dl>
+</li>
+</ul>
+<a name="selectItem(com.myscript.document.LayoutItemIterator, com.myscript.ink.SelectionModifier)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>selectItem</h4>
+<pre>public final&nbsp;void&nbsp;selectItem(<a href="../../../com/myscript/document/LayoutItemIterator.html" title="class in com.myscript.document">LayoutItemIterator</a>&nbsp;item,
+              <a href="../../../com/myscript/ink/SelectionModifier.html" title="class in com.myscript.ink">SelectionModifier</a>&nbsp;modifier)</pre>
+<div class="block">Selects the specified item. If that item belongs to a group, the entire
+ group will be selected.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>item</code> - an iterator positioned on the layout item to select.</dd><dd><code>modifier</code> - the way the new selection should be combined with the
+          existing selection.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when the layout item is from a different
+           page.</dd></dl>
+</li>
+</ul>
+<a name="getInkSelection()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getInkSelection</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/ink/InkSelection.html" title="class in com.myscript.ink">InkSelection</a>&nbsp;getInkSelection()</pre>
+<div class="block">Returns the ink selection corresponding to the page selection.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the ink selection.</dd></dl>
+</li>
+</ul>
+<a name="getViewport()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getViewport</h4>
+<pre>public final&nbsp;com.myscript.geometry.Rectangle&nbsp;getViewport()</pre>
+<div class="block">Returns the viewport of this layout.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/document/ILayout.html#getViewport()">getViewport</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/document/ILayout.html" title="interface in com.myscript.document">ILayout</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the viewport rectangle.</dd></dl>
+</li>
+</ul>
+<a name="setViewport(com.myscript.geometry.Rectangle)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setViewport</h4>
+<pre>public final&nbsp;void&nbsp;setViewport(com.myscript.geometry.Rectangle&nbsp;rectangle)</pre>
+<div class="block">Sets the viewport of this layout.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/document/ILayout.html#setViewport(com.myscript.geometry.Rectangle)">setViewport</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/document/ILayout.html" title="interface in com.myscript.document">ILayout</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>rectangle</code> - the viewport rectangle.</dd></dl>
+</li>
+</ul>
+<a name="getLayerCount()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLayerCount</h4>
+<pre>public final&nbsp;int&nbsp;getLayerCount()</pre>
+<div class="block">Returns the number of layers in this layout.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/document/ILayout.html#getLayerCount()">getLayerCount</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/document/ILayout.html" title="interface in com.myscript.document">ILayout</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the number of layers.</dd></dl>
+</li>
+</ul>
+<a name="getLayers()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLayers</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/document/LayerIterator.html" title="class in com.myscript.document">LayerIterator</a>&nbsp;getLayers()</pre>
+<div class="block">Returns an iterator over the layers in this layout.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/document/ILayout.html#getLayers()">getLayers</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/document/ILayout.html" title="interface in com.myscript.document">ILayout</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>a layer iterator.</dd></dl>
+</li>
+</ul>
+<a name="getLayer(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLayer</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/document/LayerIterator.html" title="class in com.myscript.document">LayerIterator</a>&nbsp;getLayer(java.lang.String&nbsp;id)</pre>
+<div class="block">Returns an iterator to access a single layer in this layout.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/document/ILayout.html#getLayer(java.lang.String)">getLayer</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/document/ILayout.html" title="interface in com.myscript.document">ILayout</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>id</code> - the id of the layer to retrieve.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a layer iterator.</dd></dl>
+</li>
+</ul>
+<a name="addLayer(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addLayer</h4>
+<pre>public final&nbsp;void&nbsp;addLayer(java.lang.String&nbsp;id)</pre>
+<div class="block">Adds a new layer.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/document/ILayout.html#addLayer(java.lang.String)">addLayer</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/document/ILayout.html" title="interface in com.myscript.document">ILayout</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>id</code> - the id of the new layer.</dd></dl>
+</li>
+</ul>
+<a name="getPenCount()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPenCount</h4>
+<pre>public final&nbsp;int&nbsp;getPenCount()</pre>
+<div class="block">Returns the number of pens in this layout.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/document/ILayout.html#getPenCount()">getPenCount</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/document/ILayout.html" title="interface in com.myscript.document">ILayout</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the number of pens.</dd></dl>
+</li>
+</ul>
+<a name="getPens()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPens</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/document/PenIterator.html" title="class in com.myscript.document">PenIterator</a>&nbsp;getPens()</pre>
+<div class="block">Returns an iterator over the pens in this layout.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/document/ILayout.html#getPens()">getPens</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/document/ILayout.html" title="interface in com.myscript.document">ILayout</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>a pen iterator.</dd></dl>
+</li>
+</ul>
+<a name="getPen(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPen</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/document/PenIterator.html" title="class in com.myscript.document">PenIterator</a>&nbsp;getPen(java.lang.String&nbsp;id)</pre>
+<div class="block">Returns an iterator to access a single pen in this layout.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/document/ILayout.html#getPen(java.lang.String)">getPen</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/document/ILayout.html" title="interface in com.myscript.document">ILayout</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>id</code> - the id of the pen to retrieve.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a pen iterator.</dd></dl>
+</li>
+</ul>
+<a name="addPen(java.lang.String, com.myscript.document.PenData)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addPen</h4>
+<pre>public final&nbsp;void&nbsp;addPen(java.lang.String&nbsp;id,
+          <a href="../../../com/myscript/document/PenData.html" title="class in com.myscript.document">PenData</a>&nbsp;data)</pre>
+<div class="block">Adds a new pen to this layout.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/document/ILayout.html#addPen(java.lang.String,%20com.myscript.document.PenData)">addPen</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/document/ILayout.html" title="interface in com.myscript.document">ILayout</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>id</code> - the identifier of the pen.</dd><dd><code>data</code> - the properties of the pen.</dd></dl>
+</li>
+</ul>
+<a name="getFontCount()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFontCount</h4>
+<pre>public final&nbsp;int&nbsp;getFontCount()</pre>
+<div class="block">Returns the number of fonts in this layout.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/document/ILayout.html#getFontCount()">getFontCount</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/document/ILayout.html" title="interface in com.myscript.document">ILayout</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the number of fonts.</dd></dl>
+</li>
+</ul>
+<a name="getFonts()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFonts</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/document/FontIterator.html" title="class in com.myscript.document">FontIterator</a>&nbsp;getFonts()</pre>
+<div class="block">Returns an iterator over the fonts in this layout.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/document/ILayout.html#getFonts()">getFonts</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/document/ILayout.html" title="interface in com.myscript.document">ILayout</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>a font iterator.</dd></dl>
+</li>
+</ul>
+<a name="getFont(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFont</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/document/FontIterator.html" title="class in com.myscript.document">FontIterator</a>&nbsp;getFont(java.lang.String&nbsp;id)</pre>
+<div class="block">Returns an iterator to access a single font in this layout.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/document/ILayout.html#getFont(java.lang.String)">getFont</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/document/ILayout.html" title="interface in com.myscript.document">ILayout</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>id</code> - the id of the font to retrieve.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a font iterator.</dd></dl>
+</li>
+</ul>
+<a name="addFont(java.lang.String, com.myscript.document.FontData)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addFont</h4>
+<pre>public final&nbsp;void&nbsp;addFont(java.lang.String&nbsp;id,
+           <a href="../../../com/myscript/document/FontData.html" title="class in com.myscript.document">FontData</a>&nbsp;data)</pre>
+<div class="block">Adds a new font to this layout.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/document/ILayout.html#addFont(java.lang.String,%20com.myscript.document.FontData)">addFont</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/document/ILayout.html" title="interface in com.myscript.document">ILayout</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>id</code> - the identifier of the font.</dd><dd><code>data</code> - the properties of the font.</dd></dl>
+</li>
+</ul>
+<a name="getTransform(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTransform</h4>
+<pre>public final&nbsp;com.myscript.geometry.Transform&nbsp;getTransform(java.lang.String&nbsp;id)</pre>
+<div class="block">Retrieves the specified transform.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/document/ILayout.html#getTransform(java.lang.String)">getTransform</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/document/ILayout.html" title="interface in com.myscript.document">ILayout</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>id</code> - the id of the transform to retrieve.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the transform.</dd></dl>
+</li>
+</ul>
+<a name="getStrokeCount()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStrokeCount</h4>
+<pre>public final&nbsp;int&nbsp;getStrokeCount()</pre>
+<div class="block">Retrieves the number of strokes in this stroke set.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/ink/IInkStrokeSet.html#getStrokeCount()">getStrokeCount</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/ink/IInkStrokeSet.html" title="interface in com.myscript.ink">IInkStrokeSet</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the number of strokes.</dd></dl>
+</li>
+</ul>
+<a name="getStrokeAt(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStrokeAt</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/ink/InkStroke.html" title="class in com.myscript.ink">InkStroke</a>&nbsp;getStrokeAt(int&nbsp;index)
+                            throws java.lang.IndexOutOfBoundsException</pre>
+<div class="block">Retrieves the stroke at the specified index in this stroke set.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/ink/IInkStrokeSet.html#getStrokeAt(int)">getStrokeAt</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/ink/IInkStrokeSet.html" title="interface in com.myscript.ink">IInkStrokeSet</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>index</code> - the index of the stroke to retrieve.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the requested stroke.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IndexOutOfBoundsException</code> - if
+           <code>(index &lt; 0 || index &gt;= getStrokeCount())</code>.</dd></dl>
+</li>
+</ul>
+<a name="getInk()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getInk</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/ink/Ink.html" title="class in com.myscript.ink">Ink</a>&nbsp;getInk()</pre>
+<div class="block">Returns the ink on which the target selection is based.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/ink/IInkSelection.html#getInk()">getInk</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/ink/IInkSelection.html" title="interface in com.myscript.ink">IInkSelection</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the ink on success, <code>null</code> otherwise.</dd></dl>
+</li>
+</ul>
+<a name="parse(java.lang.String, com.myscript.ink.SelectionModifier)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>parse</h4>
+<pre>public final&nbsp;void&nbsp;parse(java.lang.String&nbsp;string,
+         <a href="../../../com/myscript/ink/SelectionModifier.html" title="class in com.myscript.ink">SelectionModifier</a>&nbsp;modifier)</pre>
+<div class="block">Parses the given string as a selection and combine it into the selection.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/ink/IInkSelection.html#parse(java.lang.String,%20com.myscript.ink.SelectionModifier)">parse</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/ink/IInkSelection.html" title="interface in com.myscript.ink">IInkSelection</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>string</code> - the string to parse.</dd><dd><code>modifier</code> - the way the new selection should be combined with the
+          existing selection.</dd></dl>
+</li>
+</ul>
+<a name="selectInterval(com.myscript.ink.InkInterval, com.myscript.ink.SelectionModifier)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>selectInterval</h4>
+<pre>public final&nbsp;void&nbsp;selectInterval(<a href="../../../com/myscript/ink/InkInterval.html" title="class in com.myscript.ink">InkInterval</a>&nbsp;interval,
+                  <a href="../../../com/myscript/ink/SelectionModifier.html" title="class in com.myscript.ink">SelectionModifier</a>&nbsp;modifier)</pre>
+<div class="block">Creates a new selection of the strokes and portion of strokes that are
+ contained in the specified interval and combine it with existing selection.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/ink/IInkSelection.html#selectInterval(com.myscript.ink.InkInterval,%20com.myscript.ink.SelectionModifier)">selectInterval</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/ink/IInkSelection.html" title="interface in com.myscript.ink">IInkSelection</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>interval</code> - the interval from which to build the selection.</dd><dd><code>modifier</code> - the way the new selection should be combined with the
+          existing selection.</dd></dl>
+</li>
+</ul>
+<a name="selectTag(long, com.myscript.ink.SelectionModifier)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>selectTag</h4>
+<pre>public final&nbsp;void&nbsp;selectTag(long&nbsp;tagId,
+             <a href="../../../com/myscript/ink/SelectionModifier.html" title="class in com.myscript.ink">SelectionModifier</a>&nbsp;modifier)</pre>
+<div class="block">Creates a new selection of the strokes that are contained in a given tag
+ and combine it with existing selection.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/ink/IInkSelection.html#selectTag(long,%20com.myscript.ink.SelectionModifier)">selectTag</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/ink/IInkSelection.html" title="interface in com.myscript.ink">IInkSelection</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>tagId</code> - the id of the input tag.</dd><dd><code>modifier</code> - the way the new selection should be combined with the
+          existing selection.</dd></dl>
+</li>
+</ul>
+<a name="selectStroke(com.myscript.ink.InkStroke, com.myscript.ink.SelectionModifier)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>selectStroke</h4>
+<pre>public final&nbsp;void&nbsp;selectStroke(<a href="../../../com/myscript/ink/InkStroke.html" title="class in com.myscript.ink">InkStroke</a>&nbsp;stroke,
+                <a href="../../../com/myscript/ink/SelectionModifier.html" title="class in com.myscript.ink">SelectionModifier</a>&nbsp;modifier)</pre>
+<div class="block">Creates a new selection of the input stroke and combine it with existing
+ selection.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/ink/IInkSelection.html#selectStroke(com.myscript.ink.InkStroke,%20com.myscript.ink.SelectionModifier)">selectStroke</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/ink/IInkSelection.html" title="interface in com.myscript.ink">IInkSelection</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>stroke</code> - the input stroke.</dd><dd><code>modifier</code> - the way the new selection should be combined with the
+          existing selection.</dd></dl>
+</li>
+</ul>
+<a name="selectIntervals(com.myscript.ink.InkIntervals, com.myscript.ink.SelectionModifier)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>selectIntervals</h4>
+<pre>public final&nbsp;void&nbsp;selectIntervals(<a href="../../../com/myscript/ink/InkIntervals.html" title="class in com.myscript.ink">InkIntervals</a>&nbsp;intervals,
+                   <a href="../../../com/myscript/ink/SelectionModifier.html" title="class in com.myscript.ink">SelectionModifier</a>&nbsp;modifier)</pre>
+<div class="block">Combine the selection with a given segment.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/ink/IInkSelection.html#selectIntervals(com.myscript.ink.InkIntervals,%20com.myscript.ink.SelectionModifier)">selectIntervals</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/ink/IInkSelection.html" title="interface in com.myscript.ink">IInkSelection</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>intervals</code> - the input <code>InkIntervals</code> object.</dd><dd><code>modifier</code> - the way the new selection should be combined with the
+          existing selection.</dd></dl>
+</li>
+</ul>
+<a name="adjustToStrokeBoundaries(float)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>adjustToStrokeBoundaries</h4>
+<pre>public final&nbsp;void&nbsp;adjustToStrokeBoundaries(float&nbsp;lengthRatio)</pre>
+<div class="block">Adjusts the selection to full strokes, only if all the selected portions of
+ each stroke exceed the lengthRatio compared to full stroke.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/ink/IInkSelection.html#adjustToStrokeBoundaries(float)">adjustToStrokeBoundaries</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/ink/IInkSelection.html" title="interface in com.myscript.ink">IInkSelection</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>lengthRatio</code> - the length ratio (between 0 and 1) above which a stroke
+          will be kept.</dd></dl>
+</li>
+</ul>
+<a name="adjustToTagBoundaries(java.lang.String, float)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>adjustToTagBoundaries</h4>
+<pre>public final&nbsp;void&nbsp;adjustToTagBoundaries(java.lang.String&nbsp;tagName,
+                         float&nbsp;overlapRatio)</pre>
+<div class="block">Adjusts the selection to a given tag name.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/ink/IInkSelection.html#adjustToTagBoundaries(java.lang.String,%20float)">adjustToTagBoundaries</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/ink/IInkSelection.html" title="interface in com.myscript.ink">IInkSelection</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>tagName</code> - the name of the tag to select.</dd><dd><code>overlapRatio</code> - the overlap ratio (between 0 and 1) above which a tag
+          will be kept.</dd></dl>
+</li>
+</ul>
+<a name="hitStroke(com.myscript.geometry.Circle, com.myscript.ink.SelectionModifier)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hitStroke</h4>
+<pre>public final&nbsp;void&nbsp;hitStroke(com.myscript.geometry.Circle&nbsp;circle,
+             <a href="../../../com/myscript/ink/SelectionModifier.html" title="class in com.myscript.ink">SelectionModifier</a>&nbsp;modifier)</pre>
+<div class="block">Select the closest stroke within a circle.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/ink/IInkSelection.html#hitStroke(com.myscript.geometry.Circle,%20com.myscript.ink.SelectionModifier)">hitStroke</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/ink/IInkSelection.html" title="interface in com.myscript.ink">IInkSelection</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>circle</code> - the circle to select from.</dd><dd><code>modifier</code> - the way the new selection should be combined with the
+          existing selection.</dd></dl>
+</li>
+</ul>
+<a name="hitTag(java.lang.String, com.myscript.geometry.Circle, com.myscript.ink.SelectionModifier)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hitTag</h4>
+<pre>public final&nbsp;long&nbsp;hitTag(java.lang.String&nbsp;tagName,
+          com.myscript.geometry.Circle&nbsp;circle,
+          <a href="../../../com/myscript/ink/SelectionModifier.html" title="class in com.myscript.ink">SelectionModifier</a>&nbsp;modifier)</pre>
+<div class="block">Selects the closest tag within a circle. The closest tag is the tag that
+ has the bigger overlap and is closest to the center if more than one tag
+ completely overlap.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/ink/IInkSelection.html#hitTag(java.lang.String,%20com.myscript.geometry.Circle,%20com.myscript.ink.SelectionModifier)">hitTag</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/ink/IInkSelection.html" title="interface in com.myscript.ink">IInkSelection</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>tagName</code> - the name of the tag to select.</dd><dd><code>circle</code> - the circle to select from.</dd><dd><code>modifier</code> - the way the new selection should be combined with the
+          existing selection.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the tag id.</dd></dl>
+</li>
+</ul>
+<a name="getExtent()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getExtent</h4>
+<pre>public&nbsp;com.myscript.geometry.Extent&nbsp;getExtent()</pre>
+<div class="block">Returns the display extent of this page selection.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/document/IExtentProvider.html#getExtent()">getExtent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/document/IExtentProvider.html" title="interface in com.myscript.document">IExtentProvider</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the display extent.</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/PageSelection.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../com/myscript/document/PageChangeSetResult.html" title="class in com.myscript.document"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../com/myscript/document/PageUpdateListener.html" title="class in com.myscript.document"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/myscript/document/PageSelection.html" target="_top">Frames</a></li>
+<li><a href="PageSelection.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#fields_inherited_from_class_com.myscript.engine.EngineObject">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+</body>
+</html>

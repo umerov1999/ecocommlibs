@@ -1,0 +1,159 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>VO_SHAPE_BEAUTIFIER_PROP</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="VO_SHAPE_BEAUTIFIER_PROP";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptShape.h</FONT>
+<BR>
+Enumeration VO_SHAPE_BEAUTIFIER_PROP</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptShape.h&gt;</CODE>
+<BR>
+<CODE>enum <B>_VO_SHAPE_BEAUTIFIER_PROP</B></CODE>
+</P>
+<P> 
+Lists the properties that apply to the instances of the ShapeBeautifier type.
+   <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptShape_h/enum_VO_SHAPE_T.html#VO_ShapeBeautifier">VO_ShapeBeautifier</a>, <a href="../../c/MyScriptShape_h/voShapeBeautifier.html">voShapeBeautifier</a>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Value_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Value Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_SHAPE_BEAUTIFIER_ALIGNMENT_STRENGTH">VO_SHAPE_BEAUTIFIER_ALIGNMENT_STRENGTH</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  (VO_ShapeBeautifier &lt;&lt; 16)</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A value between  <CODE>0.0f</CODE> and  <CODE>1.0f</CODE> that adjusts the beautification alignment strength of the beautifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_SHAPE_BEAUTIFIER_CONGRUENCE_STRENGTH">VO_SHAPE_BEAUTIFIER_CONGRUENCE_STRENGTH</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A value between  <CODE>0.0f</CODE> and  <CODE>1.0f</CODE> that adjusts the beautification congruence strength of the beautifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_SHAPE_BEAUTIFIER_CONNECTION_STRENGTH">VO_SHAPE_BEAUTIFIER_CONNECTION_STRENGTH</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A value between  <CODE>0.0f</CODE> and  <CODE>1.0f</CODE> that adjusts the beautification connection strength of the beautifier. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Value_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Value Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="VO_SHAPE_BEAUTIFIER_ALIGNMENT_STRENGTH"></A>
+<H3 class="code">VO_SHAPE_BEAUTIFIER_ALIGNMENT_STRENGTH</H3>
+<PRE>
+<B>VO_SHAPE_BEAUTIFIER_ALIGNMENT_STRENGTH</B>
+</PRE>
+<DL>
+<DD>A value between  <CODE>0.0f</CODE> and  <CODE>1.0f</CODE> that adjusts the beautification alignment strength of the beautifier. <P>
+
+<P>
+<verbatim xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">                                                                       @xmlonly &lt;property type="ShapeBeautifier" read-only="no"&gt;\endxmlonlyfloat\xmlonly&lt;/property&gt;\endxmlonly
+</verbatim>
+</P>
+<P>
+<DL>
+<DT>
+<B>Note:</B>
+<DD>
+<P>A value equal to  <CODE>0.0f</CODE> disables the alignment constraints of the beautification process. A value close to  <CODE>1.0f</CODE> increases the likelihood of shapes being aligned with the vertical and horizontal document axis. </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_SHAPE_BEAUTIFIER_CONGRUENCE_STRENGTH"></A>
+<H3 class="code">VO_SHAPE_BEAUTIFIER_CONGRUENCE_STRENGTH</H3>
+<PRE>
+<B>VO_SHAPE_BEAUTIFIER_CONGRUENCE_STRENGTH</B>
+</PRE>
+<DL>
+<DD>A value between  <CODE>0.0f</CODE> and  <CODE>1.0f</CODE> that adjusts the beautification congruence strength of the beautifier. <P>
+
+<P>
+<verbatim>                                                                       @xmlonly &lt;property type="ShapeBeautifier" read-only="no"&gt;\endxmlonlyfloat\xmlonly&lt;/property&gt;\endxmlonly
+</verbatim>
+</P>
+<P>
+<DL>
+<DT>
+<B>Note:</B>
+<DD>
+<P>A value equal to  <CODE>0.0f</CODE> disables the congruence constraints of the beautification process. A value close to  <CODE>1.0f</CODE> increases the likelihood of shapes being of the same size and aligned with each other. </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_SHAPE_BEAUTIFIER_CONNECTION_STRENGTH"></A>
+<H3 class="code">VO_SHAPE_BEAUTIFIER_CONNECTION_STRENGTH</H3>
+<PRE>
+<B>VO_SHAPE_BEAUTIFIER_CONNECTION_STRENGTH</B>
+</PRE>
+<DL>
+<DD>A value between  <CODE>0.0f</CODE> and  <CODE>1.0f</CODE> that adjusts the beautification connection strength of the beautifier. <P>
+
+<P>
+<verbatim>                                                                       @xmlonly &lt;property type="ShapeBeautifier" read-only="no"&gt;\endxmlonlyfloat\xmlonly&lt;/property&gt;\endxmlonly
+</verbatim>
+</P>
+<P>
+<DL>
+<DT>
+<B>Note:</B>
+<DD>
+<P>A value equal to  <CODE>0.0f</CODE> disables the connection constraints of the beautification process. A value close to  <CODE>1.0f</CODE> increases the likelihood of shapes being connected. </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

@@ -1,0 +1,150 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>_voContentProcessorAction</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="_voContentProcessorAction";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptDocument.h</FONT>
+<BR>
+Enumeration _voContentProcessorAction</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptDocument.h&gt;</CODE>
+<BR>
+<CODE>enum <B>__voContentProcessorAction</B></CODE>
+</P>
+<P>Represents the type of action requested to the content processor when processing a content field. <P>
+
+<P>
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>7.0_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Value_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Value Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ACTION_RECOGNIZE">VO_ACTION_RECOGNIZE</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Request a recognition of the content field. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ACTION_RECOGNIZE_THEN_BEAUTIFY">VO_ACTION_RECOGNIZE_THEN_BEAUTIFY</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Request a recognition followed by a beautification of the content field. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ACTION_INDEX">VO_ACTION_INDEX</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Request an indexation of the content field. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ACTION_RECOGNIZE_AND_INDEX">VO_ACTION_RECOGNIZE_AND_INDEX</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Request a recognition and an indexation of the content field. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#_voContentProcessorAction_FORCE_INT_SIZE">_voContentProcessorAction_FORCE_INT_SIZE</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  0x7FFFFFFF</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Value_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Value Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="VO_ACTION_RECOGNIZE"></A>
+<H3 class="code">VO_ACTION_RECOGNIZE</H3>
+<PRE>
+<B>VO_ACTION_RECOGNIZE</B>
+</PRE>
+<DL>
+<DD>Request a recognition of the content field. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ACTION_RECOGNIZE_THEN_BEAUTIFY"></A>
+<H3 class="code">VO_ACTION_RECOGNIZE_THEN_BEAUTIFY</H3>
+<PRE>
+<B>VO_ACTION_RECOGNIZE_THEN_BEAUTIFY</B>
+</PRE>
+<DL>
+<DD>Request a recognition followed by a beautification of the content field. <P>
+
+<P>Action ignored if the type of the field is not  <CODE><A href="../../c/MyScriptDocument_h/enum__voContentFieldType.html#VO_CONTENT_FIELD_SHAPE">VO_CONTENT_FIELD_SHAPE</A></CODE>. </P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ACTION_INDEX"></A>
+<H3 class="code">VO_ACTION_INDEX</H3>
+<PRE>
+<B>VO_ACTION_INDEX</B>
+</PRE>
+<DL>
+<DD>Request an indexation of the content field. <P>
+
+<P>Action ignored if the type of the field is not  <CODE><A href="../../c/MyScriptDocument_h/enum__voContentFieldType.html#VO_CONTENT_FIELD_TEXT">VO_CONTENT_FIELD_TEXT</A></CODE>. </P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ACTION_RECOGNIZE_AND_INDEX"></A>
+<H3 class="code">VO_ACTION_RECOGNIZE_AND_INDEX</H3>
+<PRE>
+<B>VO_ACTION_RECOGNIZE_AND_INDEX</B>
+</PRE>
+<DL>
+<DD>Request a recognition and an indexation of the content field. <P>
+
+<P>Action ignored if the type of the field is not  <CODE><A href="../../c/MyScriptDocument_h/enum__voContentFieldType.html#VO_CONTENT_FIELD_TEXT">VO_CONTENT_FIELD_TEXT</A></CODE>. </P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="_voContentProcessorAction_FORCE_INT_SIZE"></A>
+<H3 class="code">_voContentProcessorAction_FORCE_INT_SIZE</H3>
+<PRE>
+<B>_voContentProcessorAction_FORCE_INT_SIZE</B>
+</PRE>
+<DL>
+<DD>
+<P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

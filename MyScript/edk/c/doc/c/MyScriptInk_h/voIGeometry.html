@@ -1,0 +1,957 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>voIGeometry</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="voIGeometry";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptInk.h</FONT>
+<BR>
+Type voIGeometry</H2>
+<PRE>
+<B>voIGeometry</B>
+</PRE>
+<HR>
+<CODE>#include &lt;c/MyScriptInk.h&gt;</CODE>
+<BR>
+<CODE>typedef  struct <A href="../../c/MyScriptInk_h/struct__voIGeometry.html">_voIGeometry</A>  <B>voIGeometry</B></CODE>
+<BR>
+<CODE></CODE>
+</P>
+<P>Functions composing the  <CODE><A href="../../c/MyScriptInk_h/voIGeometry.html">voIGeometry</A></CODE> interface. <P>
+    
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Member_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="3"><FONT SIZE="+2"><B>Member Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#invert">invert</A>)(voEngine engine, voTransform *transform)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Inverts this transform. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#multiply">multiply</A>)(voEngine engine, voTransform *transform1, voTransform *transform2)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Multiplies this transform by the second transform. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#rotate">rotate</A>)(voEngine engine, voTransform *transform, float a, float x0, float y0)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Multiplies the transform with a rotation transformation. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#scale">scale</A>)(voEngine engine, voTransform *transform, float sx, float sy)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Multiplies this transform with a scaling transformation. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#setIdentity">setIdentity</A>)(voEngine engine, voTransform *transform)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Sets the transform to the identity. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#shearX">shearX</A>)(voEngine engine, voTransform *transform, float a, float y0)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Multiplies the transform with an horizontal shearing transformation. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#shearY">shearY</A>)(voEngine engine, voTransform *transform, float a, float x0)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Multiplies the transform with a vertical shearing transformation. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#translate">translate</A>)(voEngine engine, voTransform *transform, float tx, float ty)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Multiplies the transform with a translation transformation. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Member_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Member Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="invert"></A>
+<H3 class="code">invert</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B>invert</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptInk_h/voTransform.html">voTransform</A> *transform)</PRE>
+<DL>
+<DD>Inverts this transform. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+transform
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target transform.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>transform</CODE> is not writable. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_STATE">VO_INVALID_STATE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>transform</CODE> is not invertible, because its determinant  <CODE>(a * e - b * d)</CODE> is zero. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="multiply"></A>
+<H3 class="code">multiply</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B>multiply</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptInk_h/voTransform.html">voTransform</A> *transform1, <A href="../../c/MyScriptInk_h/voTransform.html">voTransform</A> *transform2)</PRE>
+<DL>
+<DD>Multiplies this transform by the second transform. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+transform1
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target transform. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+transform2
+</B>
+<DD>
+<parameterdescription>
+
+<P>the second transform.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>transform1</CODE> is not writable. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>transform2</CODE> is not writable. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="rotate"></A>
+<H3 class="code">rotate</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B>rotate</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptInk_h/voTransform.html">voTransform</A> *transform, float a, float x0, float y0)</PRE>
+<DL>
+<DD>Multiplies the transform with a rotation transformation. <P>
+
+<P>This is equivalent to calling  <CODE>multiply(R)</CODE>, where  <CODE>R</CODE> is a  <CODE><A href="../../c/MyScriptInk_h/voTransform.html">voTransform</A></CODE> represented by the following matrix:</P>
+<P>
+<PRE>
+  [   cos(a)   -sin(a)    -cos(a) * x0 + sin(a) * y0 + x0   ]
+  [   sin(a)    cos(a)    -sin(a) * x0 - cos(a) * y0 + y0   ]
+  [   0           0                      1                  ]
+</PRE>
+</P>
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+transform
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target transform. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+a
+</B>
+<DD>
+<parameterdescription>
+
+<P>the rotation angle in radians. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+x0
+</B>
+<DD>
+<parameterdescription>
+
+<P>the x position of the origin point. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+y0
+</B>
+<DD>
+<parameterdescription>
+
+<P>the y position of the origin point.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>transform</CODE> is not writable. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="scale"></A>
+<H3 class="code">scale</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B>scale</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptInk_h/voTransform.html">voTransform</A> *transform, float sx, float sy)</PRE>
+<DL>
+<DD>Multiplies this transform with a scaling transformation. <P>
+
+<P>This is equivalent to calling  <CODE>multiply(S)</CODE>, where  <CODE>S</CODE> is a  <CODE><A href="../../c/MyScriptInk_h/voTransform.html">voTransform</A></CODE> represented by the following matrix:</P>
+<P>
+<PRE>
+  [   sx   0    0   ]
+  [   0    sy   0   ]
+  [   0    0    1   ]
+</PRE>
+</P>
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+transform
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target transform. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+sx
+</B>
+<DD>
+<parameterdescription>
+
+<P>the scaling factor along the x axis. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+sy
+</B>
+<DD>
+<parameterdescription>
+
+<P>the scaling factor along the y axis.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>transform</CODE> is not writable. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="setIdentity"></A>
+<H3 class="code">setIdentity</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B>setIdentity</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptInk_h/voTransform.html">voTransform</A> *transform)</PRE>
+<DL>
+<DD>Sets the transform to the identity. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+transform
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target transform.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>transform</CODE> is not writable. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="shearX"></A>
+<H3 class="code">shearX</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B>shearX</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptInk_h/voTransform.html">voTransform</A> *transform, float a, float y0)</PRE>
+<DL>
+<DD>Multiplies the transform with an horizontal shearing transformation. <P>
+
+<P>This is equivalent to calling  <CODE>multiply(SHX), where</CODE>SHX <CODE>is a</CODE>voTransform` represented by the following matrix:</P>
+<P>
+<PRE>
+  [    1     tan(a)   -y0 * tan(a) ]
+  [    0       1           0       ]
+  [    0       0           1       ]
+</PRE>
+</P>
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+transform
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target transform. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+a
+</B>
+<DD>
+<parameterdescription>
+
+<P>the shearing angle in radians. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+y0
+</B>
+<DD>
+<parameterdescription>
+
+<P>the y position of the origin point.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>transform</CODE> is not writable. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="shearY"></A>
+<H3 class="code">shearY</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B>shearY</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptInk_h/voTransform.html">voTransform</A> *transform, float a, float x0)</PRE>
+<DL>
+<DD>Multiplies the transform with a vertical shearing transformation. <P>
+
+<P>This is equivalent to calling  <CODE>multiply(SHY)</CODE>, where  <CODE>SHY</CODE> is a  <CODE><A href="../../c/MyScriptInk_h/voTransform.html">voTransform</A></CODE> represented by the following matrix:</P>
+<P>
+<PRE>
+  [    1       0           0       ]
+  [   tan(a)   1      -x0 * tan(a) ]
+  [    0       0           1       ]
+</PRE>
+</P>
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+transform
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target transform. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+a
+</B>
+<DD>
+<parameterdescription>
+
+<P>the shearing angle in radians. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+x0
+</B>
+<DD>
+<parameterdescription>
+
+<P>the x position of the origin point.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>transform</CODE> is not writable. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="translate"></A>
+<H3 class="code">translate</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B>translate</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptInk_h/voTransform.html">voTransform</A> *transform, float tx, float ty)</PRE>
+<DL>
+<DD>Multiplies the transform with a translation transformation. <P>
+
+<P>This is equivalent to calling  <CODE>multiply(T)</CODE>, where  <CODE>T</CODE> is a  <CODE><A href="../../c/MyScriptInk_h/voTransform.html">voTransform</A></CODE> represented by the following matrix:</P>
+<P>
+<PRE>
+  [   1    0    tx  ]
+  [   0    1    ty  ]
+  [   0    0    1   ]
+</PRE>
+</P>
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+transform
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target transform. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+tx
+</B>
+<DD>
+<parameterdescription>
+
+<P>the translation offset along the x axis. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+ty
+</B>
+<DD>
+<parameterdescription>
+
+<P>the translation offset along the y axis.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>transform</CODE> is not writable. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

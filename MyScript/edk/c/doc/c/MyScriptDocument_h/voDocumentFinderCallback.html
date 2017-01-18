@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>voDocumentFinderCallback</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="voDocumentFinderCallback";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptDocument.h</FONT>
+<BR>
+Type voDocumentFinderCallback</H2>
+<PRE>
+<B>voDocumentFinderCallback</B>
+</PRE>
+<HR>
+<CODE>#include &lt;c/MyScriptDocument.h&gt;</CODE>
+<BR>
+<CODE>typedef  void  (*<B>voDocumentFinderCallback</B>)(<A href="../../c/MyScriptDocument_h/voDocumentFinderEvent.html">voDocumentFinderEvent</A> eventId, <A href="../../c/MyScriptDocument_h/voDocumentFindOccurrenceIterator.html">voDocumentFindOccurrenceIterator</A> occurrenceIterator, void *userParam)</CODE>
+<BR>
+<CODE></CODE>
+</P>
+<P>Callback called by the document finder background thread upon completion of asynchronous events of  <CODE><A href="../../c/MyScriptDocument_h/voDocumentFinder.html">voDocumentFinder</A></CODE>. <P>
+
+<P>The objects provided in  <CODE>result</CODE> are valid only during the callback execution. You must use  <CODE>voAcquireObject()</CODE> if you want to retain them for later use.</P>
+<P>Do not call wait() from this callback, or this will result in a deadlock.</P>
+<P>Do not call other asynchronous functions from this callback (functions that call a callback upon completion), prefer calling asynchronous functions in sequence.</P>
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+eventId
+</B>
+<DD>
+<parameterdescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<P>the identifier of the event that occurred. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+occurrenceIterator
+</B>
+<DD>
+<parameterdescription>
+
+<P>an iterator over the new occurrences, when  <CODE>eventId</CODE> is  <CODE>VO_EVENT_FINDER_OCCURRENCES</CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+userParam
+</B>
+<DD>
+<parameterdescription>
+
+<P>an optional user defined parameter passed to the callback.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voIDocumentFinder.html">voIDocumentFinder</a>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P></P>
+</BODY>
+</HTML>

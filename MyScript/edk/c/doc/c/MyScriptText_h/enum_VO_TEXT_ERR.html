@@ -1,0 +1,461 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>VO_TEXT_ERR</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="VO_TEXT_ERR";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptText.h</FONT>
+<BR>
+Enumeration VO_TEXT_ERR</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptText.h&gt;</CODE>
+<BR>
+<CODE>enum <B>_VO_TEXT_ERR</B></CODE>
+</P>
+<P>Lists the MyScript Text errors. <P>
+        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Value_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Value Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MISSING_ALPHABET_KNOWLEDGE">VO_MISSING_ALPHABET_KNOWLEDGE</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  VO_INVALID_STATE | (2 &lt;&lt; 16)</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unable to complete the requested operation because a  <CODE><A href="../../c/MyScriptText_h/voAlphabetKnowledge.html">voAlphabetKnowledge</A></CODE> resource is missing. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MISSING_SOURCE">VO_MISSING_SOURCE</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unable to complete the requested operation because the input consumer source is missing. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_CHAR_STROKE_LIMIT_EXCEEDED">VO_CHAR_STROKE_LIMIT_EXCEEDED</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;One of the character input units within an input exceeds the stroke limit fixed by the recognizer. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_REGEX_SUBEXP_IMBALANCE">VO_REGEX_SUBEXP_IMBALANCE</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  VO_INVALID_ARGUMENT | (5 &lt;&lt; 16)</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parse error in a regular expression: sub-expression imbalance. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_REGEX_UNMATCHED_OPEN_SET">VO_REGEX_UNMATCHED_OPEN_SET</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parse error in a regular expression: unmatched open set. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_REGEX_UNMATCHED_OPEN_REF">VO_REGEX_UNMATCHED_OPEN_REF</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parse error in a regular expression: unmatched open reference. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_REGEX_TRAILING_ESCAPE">VO_REGEX_TRAILING_ESCAPE</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parse error in a regular expression: trailing escape. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_REGEX_INVALID_CHARACTER">VO_REGEX_INVALID_CHARACTER</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parse error in a regular expression: invalid character. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_REGEX_INVALID_REFERENCE">VO_REGEX_INVALID_REFERENCE</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parse error in a regular expression: invalid reference. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_REGEX_UNMATCHED_CLOSE_SET">VO_REGEX_UNMATCHED_CLOSE_SET</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parse error in a regular expression: unmatched close set. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_REGEX_UNMATCHED_CLOSE_REF">VO_REGEX_UNMATCHED_CLOSE_REF</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parse error in a regular expression: unmatched close reference. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_REGEX_UNESCAPED_OPERATOR">VO_REGEX_UNESCAPED_OPERATOR</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parse error in a regular expression: unescaped operator. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_INPUT_LIMIT_EXCEEDED">VO_INPUT_LIMIT_EXCEEDED</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An input with too many strokes or too many input units was sent to the target  <CODE><A href="../../c/MyScriptText_h/voHandwritingContext.html">voHandwritingContext</A></CODE>. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Value_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Value Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="VO_MISSING_ALPHABET_KNOWLEDGE"></A>
+<H3 class="code">VO_MISSING_ALPHABET_KNOWLEDGE</H3>
+<PRE>
+<B>VO_MISSING_ALPHABET_KNOWLEDGE</B>
+</PRE>
+<DL>
+<DD>Unable to complete the requested operation because a  <CODE><A href="../../c/MyScriptText_h/voAlphabetKnowledge.html">voAlphabetKnowledge</A></CODE> resource is missing. <P>
+
+<P>This does not necessarily mean that no  <CODE><A href="../../c/MyScriptText_h/voAlphabetKnowledge.html">voAlphabetKnowledge</A></CODE> resource is attached. For example, if you fill a  <CODE><A href="../../c/MyScriptEngine_h/voStructuredInput.html">voStructuredInput</A></CODE> with  <CODE><A href="../../c/MyScriptEngine_h/enum__voInputUnitType.html#VO_MULTI_LINE_TEXT">VO_MULTI_LINE_TEXT</A></CODE> input units and you attach only a  <CODE><A href="../../c/MyScriptText_h/voIsolatedAlphabetKnowledge.html">voIsolatedAlphabetKnowledge</A></CODE> you will get this error.</P>
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voAlphabetKnowledge.html">voAlphabetKnowledge</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MISSING_SOURCE"></A>
+<H3 class="code">VO_MISSING_SOURCE</H3>
+<PRE>
+<B>VO_MISSING_SOURCE</B>
+</PRE>
+<DL>
+<DD>Unable to complete the requested operation because the input consumer source is missing. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptEngine_h/voIInputConsumer.html">voIInputConsumer</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_CHAR_STROKE_LIMIT_EXCEEDED"></A>
+<H3 class="code">VO_CHAR_STROKE_LIMIT_EXCEEDED</H3>
+<PRE>
+<B>VO_CHAR_STROKE_LIMIT_EXCEEDED</B>
+</PRE>
+<DL>
+<DD>One of the character input units within an input exceeds the stroke limit fixed by the recognizer. <P>
+
+<P>
+<DL>
+<DT>
+<B>Note:</B>
+<DD>
+<P>This limit may change from one recognizer configuration to another. </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_REGEX_SUBEXP_IMBALANCE"></A>
+<H3 class="code">VO_REGEX_SUBEXP_IMBALANCE</H3>
+<PRE>
+<B>VO_REGEX_SUBEXP_IMBALANCE</B>
+</PRE>
+<DL>
+<DD>Parse error in a regular expression: sub-expression imbalance. <P>
+
+<P>This means that the number of open and close parentheses does not match.</P>
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voLexicalUnit.html">voLexicalUnit</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_REGEX_UNMATCHED_OPEN_SET"></A>
+<H3 class="code">VO_REGEX_UNMATCHED_OPEN_SET</H3>
+<PRE>
+<B>VO_REGEX_UNMATCHED_OPEN_SET</B>
+</PRE>
+<DL>
+<DD>Parse error in a regular expression: unmatched open set. <P>
+
+<P>This means that an open square bracket exists without the matching close square bracket.</P>
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voLexicalUnit.html">voLexicalUnit</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_REGEX_UNMATCHED_OPEN_REF"></A>
+<H3 class="code">VO_REGEX_UNMATCHED_OPEN_REF</H3>
+<PRE>
+<B>VO_REGEX_UNMATCHED_OPEN_REF</B>
+</PRE>
+<DL>
+<DD>Parse error in a regular expression: unmatched open reference. <P>
+
+<P>This means that an open brace exists without the matching close brace.</P>
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voLexicalUnit.html">voLexicalUnit</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_REGEX_TRAILING_ESCAPE"></A>
+<H3 class="code">VO_REGEX_TRAILING_ESCAPE</H3>
+<PRE>
+<B>VO_REGEX_TRAILING_ESCAPE</B>
+</PRE>
+<DL>
+<DD>Parse error in a regular expression: trailing escape. <P>
+
+<P>This means that a back slash was found at the end of the expression (without the escaped character).</P>
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voLexicalUnit.html">voLexicalUnit</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_REGEX_INVALID_CHARACTER"></A>
+<H3 class="code">VO_REGEX_INVALID_CHARACTER</H3>
+<PRE>
+<B>VO_REGEX_INVALID_CHARACTER</B>
+</PRE>
+<DL>
+<DD>Parse error in a regular expression: invalid character. <P>
+
+<P>This means that an invalid character was found.</P>
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voLexicalUnit.html">voLexicalUnit</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_REGEX_INVALID_REFERENCE"></A>
+<H3 class="code">VO_REGEX_INVALID_REFERENCE</H3>
+<PRE>
+<B>VO_REGEX_INVALID_REFERENCE</B>
+</PRE>
+<DL>
+<DD>Parse error in a regular expression: invalid reference. <P>
+
+<P>This means that a reference was found but the corresponding definition does not exist.</P>
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voLexicalUnit.html">voLexicalUnit</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_REGEX_UNMATCHED_CLOSE_SET"></A>
+<H3 class="code">VO_REGEX_UNMATCHED_CLOSE_SET</H3>
+<PRE>
+<B>VO_REGEX_UNMATCHED_CLOSE_SET</B>
+</PRE>
+<DL>
+<DD>Parse error in a regular expression: unmatched close set. <P>
+
+<P>This means that a close square bracket exists without the matching open square bracket.</P>
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voLexicalUnit.html">voLexicalUnit</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>4.2_2 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_REGEX_UNMATCHED_CLOSE_REF"></A>
+<H3 class="code">VO_REGEX_UNMATCHED_CLOSE_REF</H3>
+<PRE>
+<B>VO_REGEX_UNMATCHED_CLOSE_REF</B>
+</PRE>
+<DL>
+<DD>Parse error in a regular expression: unmatched close reference. <P>
+
+<P>This means that a close brace exists without the matching open brace.</P>
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voLexicalUnit.html">voLexicalUnit</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>4.2_2 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_REGEX_UNESCAPED_OPERATOR"></A>
+<H3 class="code">VO_REGEX_UNESCAPED_OPERATOR</H3>
+<PRE>
+<B>VO_REGEX_UNESCAPED_OPERATOR</B>
+</PRE>
+<DL>
+<DD>Parse error in a regular expression: unescaped operator. <P>
+
+<P>This means that a regular expression operator was found when a normal character was expected.</P>
+<P>Escape it using the backslash character if you meant it literally.</P>
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voLexicalUnit.html">voLexicalUnit</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>4.2_2 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_INPUT_LIMIT_EXCEEDED"></A>
+<H3 class="code">VO_INPUT_LIMIT_EXCEEDED</H3>
+<PRE>
+<B>VO_INPUT_LIMIT_EXCEEDED</B>
+</PRE>
+<DL>
+<DD>An input with too many strokes or too many input units was sent to the target  <CODE><A href="../../c/MyScriptText_h/voHandwritingContext.html">voHandwritingContext</A></CODE>. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voHandwritingContext.html">voHandwritingContext</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>4.2_2 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

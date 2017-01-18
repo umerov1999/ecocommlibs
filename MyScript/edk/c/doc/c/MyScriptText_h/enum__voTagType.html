@@ -1,0 +1,345 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>_voTagType</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="_voTagType";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptText.h</FONT>
+<BR>
+Enumeration _voTagType</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptText.h&gt;</CODE>
+<BR>
+<CODE>enum <B>__voTagType</B></CODE>
+</P>
+<P>Lists the digital ink tag types. <P>
+
+<P>
+<DL>
+<DT>
+<B>deprecated as of 7.4.0</B>
+<DD>
+<P></P>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Value_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Value Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_TAG_ERR">VO_TAG_ERR</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  -1</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Error marker. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_TAG_TEXT_LINE">VO_TAG_TEXT_LINE</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type of a text line tag. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_TAG_TEXT_BLOCK">VO_TAG_TEXT_BLOCK</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type of a text block tag. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_TAG_CORRECTION_BLOCK">VO_TAG_CORRECTION_BLOCK</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type of a correction block tag. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_TAG_ERASURE">VO_TAG_ERASURE</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type of an erasure tag. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_TAG_ERASED_TEXT">VO_TAG_ERASED_TEXT</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type of an erased text tag. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_TAG_STRIKETHROUGH">VO_TAG_STRIKETHROUGH</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type of a strike-through tag. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_TAG_DOUBLE_STRIKETHROUGH">VO_TAG_DOUBLE_STRIKETHROUGH</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type of a double strike-through tag. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_TAG_CROSS_OUT">VO_TAG_CROSS_OUT</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type of a cross out tag. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_TAG_SCRATCH_OUT">VO_TAG_SCRATCH_OUT</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type of a scratch out tag. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_TAG_INSERTED_TEXT">VO_TAG_INSERTED_TEXT</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type of an inserted text tag. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_TAG_MISSING_PEN_LIFT">VO_TAG_MISSING_PEN_LIFT</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type of a missing pen lift tag. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_TAG_EMPHASIZED_CHARACTER">VO_TAG_EMPHASIZED_CHARACTER</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type of an emphasized character tag. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_TAG_TEXT_COLUMN">VO_TAG_TEXT_COLUMN</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type of a text column tag. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_TAG_COUNT">VO_TAG_COUNT</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  32</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The number of tags. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#_voTagType_FORCE_INT_SIZE">_voTagType_FORCE_INT_SIZE</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  0x7FFFFFFF</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Value_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Value Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="VO_TAG_ERR"></A>
+<H3 class="code">VO_TAG_ERR</H3>
+<PRE>
+<B>VO_TAG_ERR</B>
+</PRE>
+<DL>
+<DD>Error marker. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_TAG_TEXT_LINE"></A>
+<H3 class="code">VO_TAG_TEXT_LINE</H3>
+<PRE>
+<B>VO_TAG_TEXT_LINE</B>
+</PRE>
+<DL>
+<DD>Type of a text line tag. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_TAG_TEXT_BLOCK"></A>
+<H3 class="code">VO_TAG_TEXT_BLOCK</H3>
+<PRE>
+<B>VO_TAG_TEXT_BLOCK</B>
+</PRE>
+<DL>
+<DD>Type of a text block tag. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_TAG_CORRECTION_BLOCK"></A>
+<H3 class="code">VO_TAG_CORRECTION_BLOCK</H3>
+<PRE>
+<B>VO_TAG_CORRECTION_BLOCK</B>
+</PRE>
+<DL>
+<DD>Type of a correction block tag. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_TAG_ERASURE"></A>
+<H3 class="code">VO_TAG_ERASURE</H3>
+<PRE>
+<B>VO_TAG_ERASURE</B>
+</PRE>
+<DL>
+<DD>Type of an erasure tag. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_TAG_ERASED_TEXT"></A>
+<H3 class="code">VO_TAG_ERASED_TEXT</H3>
+<PRE>
+<B>VO_TAG_ERASED_TEXT</B>
+</PRE>
+<DL>
+<DD>Type of an erased text tag. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_TAG_STRIKETHROUGH"></A>
+<H3 class="code">VO_TAG_STRIKETHROUGH</H3>
+<PRE>
+<B>VO_TAG_STRIKETHROUGH</B>
+</PRE>
+<DL>
+<DD>Type of a strike-through tag. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_TAG_DOUBLE_STRIKETHROUGH"></A>
+<H3 class="code">VO_TAG_DOUBLE_STRIKETHROUGH</H3>
+<PRE>
+<B>VO_TAG_DOUBLE_STRIKETHROUGH</B>
+</PRE>
+<DL>
+<DD>Type of a double strike-through tag. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_TAG_CROSS_OUT"></A>
+<H3 class="code">VO_TAG_CROSS_OUT</H3>
+<PRE>
+<B>VO_TAG_CROSS_OUT</B>
+</PRE>
+<DL>
+<DD>Type of a cross out tag. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_TAG_SCRATCH_OUT"></A>
+<H3 class="code">VO_TAG_SCRATCH_OUT</H3>
+<PRE>
+<B>VO_TAG_SCRATCH_OUT</B>
+</PRE>
+<DL>
+<DD>Type of a scratch out tag. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_TAG_INSERTED_TEXT"></A>
+<H3 class="code">VO_TAG_INSERTED_TEXT</H3>
+<PRE>
+<B>VO_TAG_INSERTED_TEXT</B>
+</PRE>
+<DL>
+<DD>Type of an inserted text tag. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_TAG_MISSING_PEN_LIFT"></A>
+<H3 class="code">VO_TAG_MISSING_PEN_LIFT</H3>
+<PRE>
+<B>VO_TAG_MISSING_PEN_LIFT</B>
+</PRE>
+<DL>
+<DD>Type of a missing pen lift tag. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_TAG_EMPHASIZED_CHARACTER"></A>
+<H3 class="code">VO_TAG_EMPHASIZED_CHARACTER</H3>
+<PRE>
+<B>VO_TAG_EMPHASIZED_CHARACTER</B>
+</PRE>
+<DL>
+<DD>Type of an emphasized character tag. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_TAG_TEXT_COLUMN"></A>
+<H3 class="code">VO_TAG_TEXT_COLUMN</H3>
+<PRE>
+<B>VO_TAG_TEXT_COLUMN</B>
+</PRE>
+<DL>
+<DD>Type of a text column tag. <P>
+
+<P>
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>4.7_7 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_TAG_COUNT"></A>
+<H3 class="code">VO_TAG_COUNT</H3>
+<PRE>
+<B>VO_TAG_COUNT</B>
+</PRE>
+<DL>
+<DD>The number of tags. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="_voTagType_FORCE_INT_SIZE"></A>
+<H3 class="code">_voTagType_FORCE_INT_SIZE</H3>
+<PRE>
+<B>_voTagType_FORCE_INT_SIZE</B>
+</PRE>
+<DL>
+<DD>
+<P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

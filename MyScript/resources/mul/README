@@ -1,0 +1,13 @@
+--------------------------------------------------------------------------------
+Here are some additional resources that can be used to configure or to complete an existing engine configuration.
+
+Concerning english_secondary resource, it is recommended to attach this resource to the engine to support the mixed recognition of your primary language with English words.
+
+This resource exists in different versions. Which one to choose depends on your primary language:
+
+- Attach "mul/mul-lk-english_secondary_2.res" if the primary language is Japanese, Korean or any of the supported Chinese variants.
+- Attach "mul/mul-lk-english_secondary_3.res" if the primary language is Hindi.
+- Attach "mul/mul-lk-english_secondary_1.res" otherwise.
+- Do not attach any english_secondary resource if an English variant is already the primary language.
+
+--------------------------------------------------------------------------------

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="UserMacros">
+    <BIN_DIR>../bin/win-$(ARCH)$(CONF_SUFFIX)</BIN_DIR>
+    <BUILD_DIR>build/$(ProjectName)-win-$(ARCH)-vs14-$(Configuration)</BUILD_DIR>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OutDir>$(BIN_DIR)\</OutDir>
+    <IntDir>$(BUILD_DIR)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(SolutionName)' == 'all'">CONF_SUFFIX="$(CONF_SUFFIX)";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TreatWarningAsError>true</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="BIN_DIR">
+      <Value>$(BIN_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="BUILD_DIR">
+      <Value>$(BUILD_DIR)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

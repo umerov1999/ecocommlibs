@@ -1,0 +1,192 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>voKeyboardLayout</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="voKeyboardLayout";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptKeyboard.h</FONT>
+<BR>
+Type voKeyboardLayout</H2>
+<PRE>
+<a href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</a>
+  <IMG SRC="../..//resources/inherit.gif" ALT="extended by "><B>voKeyboardLayout</B>
+</PRE>
+<DL>
+<DT>
+<B>Properties:</B>
+<DD>
+<a href="../../c/MyScriptEngine_h/enum_VO_ENGINEOBJECT_PROP.html">VO_ENGINEOBJECT_PROP</a>
+</DD>
+</DT>
+</DL>
+<DL>
+<DT>
+<B>All Implemented Interfaces:</B>
+<DD>
+<a href="../../c/MyScriptKeyboard_h/voIKeyboardLayout.html">voIKeyboardLayout</a>
+</DD>
+</DT>
+</DL>
+<HR>
+<CODE>#include &lt;c/MyScriptKeyboard.h&gt;</CODE>
+<BR>
+<CODE>typedef  <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A>  <B>voKeyboardLayout</B></CODE>
+<BR>
+<CODE><I>&nbsp;extends </I><a href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</a><I>&nbsp;implements </I><a href="../../c/MyScriptKeyboard_h/voIKeyboardLayout.html">voIKeyboardLayout</a></CODE>
+</P>
+<P> 
+<CODE><A href="../../c/MyScriptKeyboard_h/voKeyboardLayout.html">voKeyboardLayout</A></CODE> reference type. <P>
+
+<P>    
+</P>        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Interface_Function_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Interface Function Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIKeyboardLayout::addKey">voIKeyboardLayout::addKey</A>(voEngine engine, voKeyboardLayout target, voInputCharacter character, float x, float y, float width, float height, VO_FLAGS_T(voKeyFlag) flags)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Adds a key to this layout. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Interface_Function_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Interface Function Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="voIKeyboardLayout::addKey"></A>
+<H3 class="code">addKey</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B><A href="../../c/MyScriptKeyboard_h/voIKeyboardLayout.html">voIKeyboardLayout</A>::addKey</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptKeyboard_h/voKeyboardLayout.html">voKeyboardLayout</A> target, <A href="../../c/MyScriptEngine_h/voInputCharacter.html">voInputCharacter</A> character, float x, float y, float width, float height, <A href="../../c/MyScriptEngine_h/VO_FLAGS_T.html">VO_FLAGS_T</A>(<A href="../../c/MyScriptKeyboard_h/voKeyFlag.html">voKeyFlag</A>) flags)</PRE>
+<DL>
+<DD>Adds a key to this layout. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target layout. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+character
+</B>
+<DD>
+<parameterdescription>
+
+<P>the character (along with its alternates) on the key to be added. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+x
+</B>
+<DD>
+<parameterdescription>
+
+<P>the origin of the key bounding box along the x axis. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+y
+</B>
+<DD>
+<parameterdescription>
+
+<P>the origin of the key bounding box along the y axis. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+width
+</B>
+<DD>
+<parameterdescription>
+
+<P>the width of the key bounding box. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+height
+</B>
+<DD>
+<parameterdescription>
+
+<P>the height of the key bounding box. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+flags
+</B>
+<DD>
+<parameterdescription>
+
+<P>flags controlling the behavior of the key. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

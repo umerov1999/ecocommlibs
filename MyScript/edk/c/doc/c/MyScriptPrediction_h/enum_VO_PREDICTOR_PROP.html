@@ -1,0 +1,155 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>VO_PREDICTOR_PROP</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="VO_PREDICTOR_PROP";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptPrediction.h</FONT>
+<BR>
+Enumeration VO_PREDICTOR_PROP</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptPrediction.h&gt;</CODE>
+<BR>
+<CODE>enum <B>_VO_PREDICTOR_PROP</B></CODE>
+</P>
+<P> 
+Lists the properties that apply to the instances of the Predictor type.
+   <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptPrediction_h/enum_VO_PREDICTION_T.html#VO_Predictor">VO_Predictor</a>, <a href="../../c/MyScriptPrediction_h/voPredictor.html">voPredictor</a>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Value_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Value Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_WORD_COMPLETION_CANDIDATE_LIST_SIZE">VO_WORD_COMPLETION_CANDIDATE_LIST_SIZE</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  (VO_Predictor &lt;&lt; 16)</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies the size of the word completion candidate lists that will be provided in the recognition result. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_WORD_PREDICTION_CANDIDATE_LIST_SIZE">VO_WORD_PREDICTION_CANDIDATE_LIST_SIZE</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies the size of the word prediction candidate lists that will be provided in the recognition result. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ENABLE_PREDICTION_ON_COMPLETION">VO_ENABLE_PREDICTION_ON_COMPLETION</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enables predictions on completion results. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Value_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Value Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="VO_WORD_COMPLETION_CANDIDATE_LIST_SIZE"></A>
+<H3 class="code">VO_WORD_COMPLETION_CANDIDATE_LIST_SIZE</H3>
+<PRE>
+<B>VO_WORD_COMPLETION_CANDIDATE_LIST_SIZE</B>
+</PRE>
+<DL>
+<DD>Specifies the size of the word completion candidate lists that will be provided in the recognition result. <P>
+
+<P>This value must be between  <CODE>0</CODE> and  <CODE>20</CODE>.</P>
+<P> 
+<DL>
+<DT>
+<B>Usage:</B>
+<DD>
+<PRE>uint32_t value;
+voGetProperty(engine, object, VO_WORD_COMPLETION_CANDIDATE_LIST_SIZE, &amp;value, sizeof(value));
+voSetProperty(engine, object, VO_WORD_COMPLETION_CANDIDATE_LIST_SIZE, &amp;value, sizeof(value));</PRE>
+</DD>
+</DT>
+</DL> 
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_WORD_PREDICTION_CANDIDATE_LIST_SIZE"></A>
+<H3 class="code">VO_WORD_PREDICTION_CANDIDATE_LIST_SIZE</H3>
+<PRE>
+<B>VO_WORD_PREDICTION_CANDIDATE_LIST_SIZE</B>
+</PRE>
+<DL>
+<DD>Specifies the size of the word prediction candidate lists that will be provided in the recognition result. <P>
+
+<P>This value must be between  <CODE>0</CODE> and  <CODE>20</CODE>.</P>
+<P> 
+<DL>
+<DT>
+<B>Usage:</B>
+<DD>
+<PRE>uint32_t value;
+voGetProperty(engine, object, VO_WORD_PREDICTION_CANDIDATE_LIST_SIZE, &amp;value, sizeof(value));
+voSetProperty(engine, object, VO_WORD_PREDICTION_CANDIDATE_LIST_SIZE, &amp;value, sizeof(value));</PRE>
+</DD>
+</DT>
+</DL> 
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ENABLE_PREDICTION_ON_COMPLETION"></A>
+<H3 class="code">VO_ENABLE_PREDICTION_ON_COMPLETION</H3>
+<PRE>
+<B>VO_ENABLE_PREDICTION_ON_COMPLETION</B>
+</PRE>
+<DL>
+<DD>Enables predictions on completion results. <P>
+
+<P>
+<verbatim xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">                                                                       @xmlonly &lt;property type="Predictor" read-only="no"&gt;\endxmlonly\ref bool@xmlonly &lt;/property&gt;\endxmlonly
+</verbatim>
+</P>
+<P>
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>7.4_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

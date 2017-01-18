@@ -1,0 +1,55 @@
+# Data format chinese: date
+#
+# 2005/01/20
+# v1.0
+
+@set charset UTF-8
+
+# Numbers
+zeroToNine = 〇|一|二|三|四|五|六|七|八|九
+oneToTen = 一|二|三|四|五|六|七|八|九|十
+oneToNine = 一|二|三|四|五|六|七|八|九
+
+# Forced number for years
+cnNineTeen / 80 = 一九
+rmNineTeen / 80 = 19
+cnTwenty / 80 = 二〇
+rmTwenty / 80 = 20
+cnOther / 20 = {zeroToNine}|{oneToNine}{zeroToNine}{zeroToNine}?|一(〇|一|二|三|四|五|六|七|八){zeroToNine}{zeroToNine}|二{oneToNine}{zeroToNine}{zeroToNine}|(三|四|五|六|七|八|九){zeroToNine}{zeroToNine}{zeroToNine}
+rmOther / 20 = [0-9]|[1-9][0-9][0-9]?|1[0-8][0-9][0-9]|2[1-9][0-9][0-9]|[3-9][0-9][0-9][0-9]
+
+# Year
+# Four or two digit year chinese numbers
+yearCnNb = {cnNineTeen}?{zeroToNine}{zeroToNine}|{cnTwenty}{zeroToNine}{zeroToNine}|{cnOther}
+# Four or two digit year roman numbers
+yearRmNb = {rmNineTeen}?[0-9][0-9]|{rmTwenty}[0-9][0-9]|{rmOther}
+# Full year
+fullYear = ({yearCnNb}|{yearRmNb})年
+
+# Month
+# Month chinese numbers
+monthCnNb = {oneToTen}|十[一二]
+# Month roman numbers
+monthRmNb = 0?[1-9]|1[012]
+fullMonth = ({monthCnNb}|{monthRmNb})月
+
+# Day number
+# Day chinese number
+dayChineseNb = {oneToNine}|二?十{oneToNine}?|三十一?
+# Day roman number
+dayRmNb = 0?[1-9]|[12][0-9]|3[01]
+# Full day number
+fullDayNb = ({dayChineseNb}|{dayRmNb})(号|日)?
+
+# Abbreviated date
+#abbDate = {yearRmNb}(/|-)?{monthRmNb}(/|-)?{dayRmNb}
+monthRmNbWithZero = 0?[1-9]|1[012]
+dayRmNbWithZero = 0?[1-9]|[12][0-9]|3[01]
+abbDate = {yearRmNb}{monthRmNbWithZero}{dayRmNbWithZero}
+abbDate = {abbDate}|{yearRmNb}/{monthRmNbWithZero}/{dayRmNbWithZero}
+abbDate = {abbDate}|{yearRmNb}-{monthRmNbWithZero}-{dayRmNbWithZero}
+
+# Date
+date = {fullYear}{fullMonth}{fullDayNb}?|{fullYear}|{fullMonth}{fullDayNb}?|{fullDayNb}|{abbDate}
+
+{date}

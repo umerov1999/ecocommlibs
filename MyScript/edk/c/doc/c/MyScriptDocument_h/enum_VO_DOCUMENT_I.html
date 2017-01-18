@@ -1,0 +1,847 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>VO_DOCUMENT_I</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="VO_DOCUMENT_I";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptDocument.h</FONT>
+<BR>
+Enumeration VO_DOCUMENT_I</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptDocument.h&gt;</CODE>
+<BR>
+<CODE>enum <B>_VO_DOCUMENT_I</B></CODE>
+</P>
+<P>Lists the MyScript Document interfaces. <P>
+        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Value_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Value Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IDocument">VO_IDocument</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  3220</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voIDocument.html">voIDocument</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IPage">VO_IPage</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voIPage.html">voIPage</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IPageSelection">VO_IPageSelection</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voIPageSelection.html">voIPageSelection</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IContent">VO_IContent</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voIContent.html">voIContent</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IContentField">VO_IContentField</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voIContentField.html">voIContentField</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ILayout">VO_ILayout</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voILayout.html">voILayout</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ILayerIterator">VO_ILayerIterator</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voILayerIterator.html">voILayerIterator</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IPenIterator">VO_IPenIterator</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voIPenIterator.html">voIPenIterator</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ILayoutItemIterator">VO_ILayoutItemIterator</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voILayoutItemIterator.html">voILayoutItemIterator</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IPageUpdateListener">VO_IPageUpdateListener</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voIPageUpdateListener.html">voIPageUpdateListener</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IContentFieldProcessor">VO_IContentFieldProcessor</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voIContentFieldProcessor.html">voIContentFieldProcessor</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IDocumentFinder">VO_IDocumentFinder</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voIDocumentFinder.html">voIDocumentFinder</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IDocumentFindResult">VO_IDocumentFindResult</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voIDocumentFindResult.html">voIDocumentFindResult</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IDocumentFindOccurrenceIterator">VO_IDocumentFindOccurrenceIterator</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voIDocumentFindOccurrenceIterator.html">voIDocumentFindOccurrenceIterator</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IObjectIterator">VO_IObjectIterator</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voIObjectIterator.html">voIObjectIterator</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IExtentProvider">VO_IExtentProvider</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voIExtentProvider.html">voIExtentProvider</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IGuideIterator">VO_IGuideIterator</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voIGuideIterator.html">voIGuideIterator</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IContentProcessor">VO_IContentProcessor</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voIContentProcessor.html">voIContentProcessor</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IContentProcessorListener">VO_IContentProcessorListener</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voIContentProcessorListener.html">voIContentProcessorListener</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IPageChangeSet">VO_IPageChangeSet</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voIPageChangeSet.html">voIPageChangeSet</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ITextInspector">VO_ITextInspector</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voITextInspector.html">voITextInspector</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ITextInterval">VO_ITextInterval</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voITextInterval.html">voITextInterval</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ITypesetData">VO_ITypesetData</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voITypesetData.html">voITypesetData</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ITypesetItem">VO_ITypesetItem</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voITypesetItem.html">voITypesetItem</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IFontIterator">VO_IFontIterator</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptDocument_h/voIFontIterator.html">voIFontIterator</A></CODE> interface identifier. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Value_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Value Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="VO_IDocument"></A>
+<H3 class="code">VO_IDocument</H3>
+<PRE>
+<B>VO_IDocument</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voIDocument.html">voIDocument</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voIDocument.html">voIDocument</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IPage"></A>
+<H3 class="code">VO_IPage</H3>
+<PRE>
+<B>VO_IPage</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voIPage.html">voIPage</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voIPage.html">voIPage</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IPageSelection"></A>
+<H3 class="code">VO_IPageSelection</H3>
+<PRE>
+<B>VO_IPageSelection</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voIPageSelection.html">voIPageSelection</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voIPageSelection.html">voIPageSelection</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IContent"></A>
+<H3 class="code">VO_IContent</H3>
+<PRE>
+<B>VO_IContent</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voIContent.html">voIContent</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voIContent.html">voIContent</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IContentField"></A>
+<H3 class="code">VO_IContentField</H3>
+<PRE>
+<B>VO_IContentField</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voIContentField.html">voIContentField</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voIContentField.html">voIContentField</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ILayout"></A>
+<H3 class="code">VO_ILayout</H3>
+<PRE>
+<B>VO_ILayout</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voILayout.html">voILayout</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voILayout.html">voILayout</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ILayerIterator"></A>
+<H3 class="code">VO_ILayerIterator</H3>
+<PRE>
+<B>VO_ILayerIterator</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voILayerIterator.html">voILayerIterator</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voILayerIterator.html">voILayerIterator</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IPenIterator"></A>
+<H3 class="code">VO_IPenIterator</H3>
+<PRE>
+<B>VO_IPenIterator</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voIPenIterator.html">voIPenIterator</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voIPenIterator.html">voIPenIterator</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ILayoutItemIterator"></A>
+<H3 class="code">VO_ILayoutItemIterator</H3>
+<PRE>
+<B>VO_ILayoutItemIterator</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voILayoutItemIterator.html">voILayoutItemIterator</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voILayoutItemIterator.html">voILayoutItemIterator</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IPageUpdateListener"></A>
+<H3 class="code">VO_IPageUpdateListener</H3>
+<PRE>
+<B>VO_IPageUpdateListener</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voIPageUpdateListener.html">voIPageUpdateListener</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voIPageUpdateListener.html">voIPageUpdateListener</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IContentFieldProcessor"></A>
+<H3 class="code">VO_IContentFieldProcessor</H3>
+<PRE>
+<B>VO_IContentFieldProcessor</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voIContentFieldProcessor.html">voIContentFieldProcessor</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voIContentFieldProcessor.html">voIContentFieldProcessor</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IDocumentFinder"></A>
+<H3 class="code">VO_IDocumentFinder</H3>
+<PRE>
+<B>VO_IDocumentFinder</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voIDocumentFinder.html">voIDocumentFinder</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voIDocumentFinder.html">voIDocumentFinder</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IDocumentFindResult"></A>
+<H3 class="code">VO_IDocumentFindResult</H3>
+<PRE>
+<B>VO_IDocumentFindResult</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voIDocumentFindResult.html">voIDocumentFindResult</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voIDocumentFindResult.html">voIDocumentFindResult</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IDocumentFindOccurrenceIterator"></A>
+<H3 class="code">VO_IDocumentFindOccurrenceIterator</H3>
+<PRE>
+<B>VO_IDocumentFindOccurrenceIterator</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voIDocumentFindOccurrenceIterator.html">voIDocumentFindOccurrenceIterator</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voIDocumentFindOccurrenceIterator.html">voIDocumentFindOccurrenceIterator</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IObjectIterator"></A>
+<H3 class="code">VO_IObjectIterator</H3>
+<PRE>
+<B>VO_IObjectIterator</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voIObjectIterator.html">voIObjectIterator</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voIObjectIterator.html">voIObjectIterator</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IExtentProvider"></A>
+<H3 class="code">VO_IExtentProvider</H3>
+<PRE>
+<B>VO_IExtentProvider</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voIExtentProvider.html">voIExtentProvider</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voIExtentProvider.html">voIExtentProvider</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IGuideIterator"></A>
+<H3 class="code">VO_IGuideIterator</H3>
+<PRE>
+<B>VO_IGuideIterator</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voIGuideIterator.html">voIGuideIterator</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voIGuideIterator.html">voIGuideIterator</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IContentProcessor"></A>
+<H3 class="code">VO_IContentProcessor</H3>
+<PRE>
+<B>VO_IContentProcessor</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voIContentProcessor.html">voIContentProcessor</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voIContentProcessor.html">voIContentProcessor</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>7.0_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IContentProcessorListener"></A>
+<H3 class="code">VO_IContentProcessorListener</H3>
+<PRE>
+<B>VO_IContentProcessorListener</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voIContentProcessorListener.html">voIContentProcessorListener</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voIContentProcessorListener.html">voIContentProcessorListener</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>7.0_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IPageChangeSet"></A>
+<H3 class="code">VO_IPageChangeSet</H3>
+<PRE>
+<B>VO_IPageChangeSet</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voIPageChangeSet.html">voIPageChangeSet</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voIPageChangeSet.html">voIPageChangeSet</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>7.0_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ITextInspector"></A>
+<H3 class="code">VO_ITextInspector</H3>
+<PRE>
+<B>VO_ITextInspector</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voITextInspector.html">voITextInspector</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voITextInspector.html">voITextInspector</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>7.0_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ITextInterval"></A>
+<H3 class="code">VO_ITextInterval</H3>
+<PRE>
+<B>VO_ITextInterval</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voITextInterval.html">voITextInterval</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voITextInterval.html">voITextInterval</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>7.0_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ITypesetData"></A>
+<H3 class="code">VO_ITypesetData</H3>
+<PRE>
+<B>VO_ITypesetData</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voITypesetData.html">voITypesetData</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voITypesetData.html">voITypesetData</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>7.0_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ITypesetItem"></A>
+<H3 class="code">VO_ITypesetItem</H3>
+<PRE>
+<B>VO_ITypesetItem</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voITypesetItem.html">voITypesetItem</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voITypesetItem.html">voITypesetItem</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>7.0_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IFontIterator"></A>
+<H3 class="code">VO_IFontIterator</H3>
+<PRE>
+<B>VO_IFontIterator</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptDocument_h/voIFontIterator.html">voIFontIterator</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voIFontIterator.html">voIFontIterator</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>7.0_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

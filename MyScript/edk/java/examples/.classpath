@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="../bin/com.myscript.analyzer.jar"/>
+	<classpathentry kind="lib" path="../bin/com.myscript.document.jar"/>
+	<classpathentry kind="lib" path="../bin/com.myscript.edk.java.jar"/>
+	<classpathentry kind="lib" path="../bin/com.myscript.engine.jar"/>
+	<classpathentry kind="lib" path="../bin/com.myscript.gesture.jar"/>
+	<classpathentry kind="lib" path="../bin/com.myscript.ink.jar"/>
+	<classpathentry kind="lib" path="../bin/com.myscript.inksearch.jar"/>
+	<classpathentry kind="lib" path="../bin/com.myscript.math.jar"/>
+	<classpathentry kind="lib" path="../bin/com.myscript.music.jar"/>
+	<classpathentry kind="lib" path="../bin/com.myscript.prediction.jar"/>
+	<classpathentry kind="lib" path="../bin/com.myscript.shape.jar"/>
+	<classpathentry kind="lib" path="../bin/com.myscript.text.jar"/>
+	<classpathentry kind="lib" path="../bin/com.myscript.writeradaptation.jar"/>
+	<classpathentry kind="output" path="classes"/>
+</classpath>

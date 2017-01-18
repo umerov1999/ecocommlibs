@@ -1,0 +1,61 @@
+# Lexical unit Japanese: URI
+# v1.0
+# 30/08/2005
+
+
+element = [0-9a-zA-Z][-_0-9a-zA-Z]*
+
+http / 100.0 = http://
+ftp / 50.0 = ftp://
+protocol / 100.0 = {http}|{ftp}
+
+s1 / 50.0 = jp
+s2 / 45.0 = com
+s3 / 40.0 = org
+s4 / 35.0 = edu
+s5 / 30.0 = net
+s6 / 30.0 = gov
+s7 / 30.0 = de
+s8 / 25.0 = uk
+s9 / 20.0 = ch
+s10 / 0.0 = [a-zA-Z]+
+suffix = {s1}|{s2}|{s3}|{s4}|{s5}|{s6}|{s7}|{s8}|{s9}|{s10}
+
+d1 / 50.00 = www\.geocities\.co\.jp
+d2 / 48.0 = www\.asahi-net\.or\.jp
+d3 / 46.0 = homepage2\.nifty\.com
+d4 / 44.0 = member\.nifty\.ne\.jp
+d5 / 42.0 = homepage3\.nifty\.com
+d6 / 40.0 = homepage1\.nifty\.com
+d7 / 38.0 = www\.geocities\.jp
+d8 / 36.0 = www\.ne\.jp
+d9 / 34.0 = rd\.yahoo\.co\.jp
+d10 / 32.0 = ameblo\.jp
+d11 / 30.0 = www\.bekkoame\.ne\.jp
+d12 / 28.0 = hp\.vector\.co\.jp
+d13 / 26.0 = www\.amazon\.co\.jp
+d14 / 24.0 = www2s\.biglobe\.ne\.jp
+d15 / 22.0 = minnow\.cc\.gatech\.edu
+d16 / 20.0 = www\.geocities\.com
+d17 / 10.0 = www\.({element}\.)+{suffix}
+d18 / 0.0 = ({element}\.)+{suffix}
+domain = {d1}|{d2}|{d3}|{d4}|{d5}|{d6}|{d7}|{d8}|{d9}|{d10}|{d11}|{d12}|{d13}|{d14}|{d15}|{d16}|{d17}|{d18}
+
+path1 / 20.0 = (/{element})*
+perso / 80.0 = /~{element}(/{element})*
+path / 50.0 = {path1}|{perso}
+
+e1 / 100.0 = htm
+e2 / 80.0 = html
+e3 / 0.0 = {element}
+extension = {e1}|{e2}|{e3}
+
+f1 / 100.0 = index
+f2 / 0.0 = {element}
+file = {f1}|{f2}
+
+target / 100.0 = /({file}\.{extension})?
+
+uri = {protocol}?{domain}{path}?{target}?
+
+{uri}

@@ -1,0 +1,456 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>VO_SHAPE_I</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="VO_SHAPE_I";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptShape.h</FONT>
+<BR>
+Enumeration VO_SHAPE_I</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptShape.h&gt;</CODE>
+<BR>
+<CODE>enum <B>_VO_SHAPE_I</B></CODE>
+</P>
+<P>Lists the MyScript Shape interfaces. <P>
+        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Value_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Value Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IShapeModel">VO_IShapeModel</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  4100</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptShape_h/voIShapeModel.html">voIShapeModel</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IShapeKnowledge">VO_IShapeKnowledge</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptShape_h/voIShapeKnowledge.html">voIShapeKnowledge</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IShapeRecognizer">VO_IShapeRecognizer</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptShape_h/voIShapeRecognizer.html">voIShapeRecognizer</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IShapeDocument">VO_IShapeDocument</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptShape_h/voIShapeDocument.html">voIShapeDocument</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IShapeLine">VO_IShapeLine</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptShape_h/voIShapeLine.html">voIShapeLine</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IShapeDecoratedLine">VO_IShapeDecoratedLine</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptShape_h/voIShapeDecoratedLine.html">voIShapeDecoratedLine</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IShapeEllipticArc">VO_IShapeEllipticArc</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptShape_h/voIShapeEllipticArc.html">voIShapeEllipticArc</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IShapeDecoratedEllipticArc">VO_IShapeDecoratedEllipticArc</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptShape_h/voIShapeDecoratedEllipticArc.html">voIShapeDecoratedEllipticArc</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IShapeSegment">VO_IShapeSegment</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptShape_h/voIShapeSegment.html">voIShapeSegment</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IShapeRecognized">VO_IShapeRecognized</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptShape_h/voIShapeRecognized.html">voIShapeRecognized</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IShapeScratchOut">VO_IShapeScratchOut</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptShape_h/voIShapeScratchOut.html">voIShapeScratchOut</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IShapeDocumentProcessor">VO_IShapeDocumentProcessor</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptShape_h/voIShapeDocumentProcessor.html">voIShapeDocumentProcessor</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IShapeHistoryManager">VO_IShapeHistoryManager</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptShape_h/voIShapeHistoryManager.html">voIShapeHistoryManager</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IShapePrimitive">VO_IShapePrimitive</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptShape_h/voIShapePrimitive.html">voIShapePrimitive</A></CODE> interface identifier. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Value_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Value Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="VO_IShapeModel"></A>
+<H3 class="code">VO_IShapeModel</H3>
+<PRE>
+<B>VO_IShapeModel</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptShape_h/voIShapeModel.html">voIShapeModel</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptShape_h/voIShapeModel.html">voIShapeModel</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IShapeKnowledge"></A>
+<H3 class="code">VO_IShapeKnowledge</H3>
+<PRE>
+<B>VO_IShapeKnowledge</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptShape_h/voIShapeKnowledge.html">voIShapeKnowledge</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptShape_h/voIShapeKnowledge.html">voIShapeKnowledge</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IShapeRecognizer"></A>
+<H3 class="code">VO_IShapeRecognizer</H3>
+<PRE>
+<B>VO_IShapeRecognizer</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptShape_h/voIShapeRecognizer.html">voIShapeRecognizer</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptShape_h/voIShapeRecognizer.html">voIShapeRecognizer</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IShapeDocument"></A>
+<H3 class="code">VO_IShapeDocument</H3>
+<PRE>
+<B>VO_IShapeDocument</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptShape_h/voIShapeDocument.html">voIShapeDocument</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptShape_h/voIShapeDocument.html">voIShapeDocument</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IShapeLine"></A>
+<H3 class="code">VO_IShapeLine</H3>
+<PRE>
+<B>VO_IShapeLine</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptShape_h/voIShapeLine.html">voIShapeLine</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptShape_h/voIShapeLine.html">voIShapeLine</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IShapeDecoratedLine"></A>
+<H3 class="code">VO_IShapeDecoratedLine</H3>
+<PRE>
+<B>VO_IShapeDecoratedLine</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptShape_h/voIShapeDecoratedLine.html">voIShapeDecoratedLine</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptShape_h/voIShapeDecoratedLine.html">voIShapeDecoratedLine</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IShapeEllipticArc"></A>
+<H3 class="code">VO_IShapeEllipticArc</H3>
+<PRE>
+<B>VO_IShapeEllipticArc</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptShape_h/voIShapeEllipticArc.html">voIShapeEllipticArc</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptShape_h/voIShapeEllipticArc.html">voIShapeEllipticArc</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IShapeDecoratedEllipticArc"></A>
+<H3 class="code">VO_IShapeDecoratedEllipticArc</H3>
+<PRE>
+<B>VO_IShapeDecoratedEllipticArc</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptShape_h/voIShapeDecoratedEllipticArc.html">voIShapeDecoratedEllipticArc</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptShape_h/voIShapeDecoratedEllipticArc.html">voIShapeDecoratedEllipticArc</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IShapeSegment"></A>
+<H3 class="code">VO_IShapeSegment</H3>
+<PRE>
+<B>VO_IShapeSegment</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptShape_h/voIShapeSegment.html">voIShapeSegment</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptShape_h/voIShapeSegment.html">voIShapeSegment</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IShapeRecognized"></A>
+<H3 class="code">VO_IShapeRecognized</H3>
+<PRE>
+<B>VO_IShapeRecognized</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptShape_h/voIShapeRecognized.html">voIShapeRecognized</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptShape_h/voIShapeRecognized.html">voIShapeRecognized</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IShapeScratchOut"></A>
+<H3 class="code">VO_IShapeScratchOut</H3>
+<PRE>
+<B>VO_IShapeScratchOut</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptShape_h/voIShapeScratchOut.html">voIShapeScratchOut</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptShape_h/voIShapeScratchOut.html">voIShapeScratchOut</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IShapeDocumentProcessor"></A>
+<H3 class="code">VO_IShapeDocumentProcessor</H3>
+<PRE>
+<B>VO_IShapeDocumentProcessor</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptShape_h/voIShapeDocumentProcessor.html">voIShapeDocumentProcessor</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptShape_h/voIShapeDocumentProcessor.html">voIShapeDocumentProcessor</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IShapeHistoryManager"></A>
+<H3 class="code">VO_IShapeHistoryManager</H3>
+<PRE>
+<B>VO_IShapeHistoryManager</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptShape_h/voIShapeHistoryManager.html">voIShapeHistoryManager</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptShape_h/voIShapeHistoryManager.html">voIShapeHistoryManager</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IShapePrimitive"></A>
+<H3 class="code">VO_IShapePrimitive</H3>
+<PRE>
+<B>VO_IShapePrimitive</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptShape_h/voIShapePrimitive.html">voIShapePrimitive</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptShape_h/voIShapePrimitive.html">voIShapePrimitive</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

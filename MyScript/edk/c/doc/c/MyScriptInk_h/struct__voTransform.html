@@ -1,0 +1,177 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>_voTransform</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="_voTransform";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptInk.h</FONT>
+<BR>
+Structure _voTransform</H2>
+<PRE>
+<B></B>
+</PRE>
+<HR>
+<CODE>#include &lt;c/MyScriptInk.h&gt;</CODE>
+<BR>
+<CODE>struct <B>_voTransform</B></CODE>
+<BR>
+<CODE></CODE>
+</P>
+<P></P>Represents a 2D affine transform, defined as a 3x3 matrix with an implicit third raw of  <CODE>[ 0 0 1 ]</CODE>: <P>
+
+<P>
+<PRE>
+[  x' ]   [ a  b  c ]   [ x ]   [ a * x + b * y + c ]
+[  y' ] = [ d  e  f ] * [ y ] = [ d * x + e * y + f ]
+[  1  ]   [ 0  0  1 ]   [ 1 ]   [         1         ]
+</PRE> 
+</P>    
+</P>
+<HR>
+<P>
+<A NAME="Member_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="3"><FONT SIZE="+2"><B>Member Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>float</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE></CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#a">a</A></CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              The X coordinate scaling element <emphasis xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">M</emphasis>
+<subscript>1,</subscript> of the transform matrix. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>float</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE></CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#b">b</A></CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              The X coordinate shearing element <emphasis>M</emphasis>
+<subscript>1,</subscript> of the transform matrix. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>float</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE></CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#c">c</A></CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              The X coordinate translation element <emphasis>M</emphasis>
+<subscript>1,</subscript> of the transform matrix. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>float</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE></CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#d">d</A></CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              The Y coordinate shearing element <emphasis>M</emphasis>
+<subscript>2,</subscript> of the transform matrix. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>float</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE></CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#e">e</A></CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              The Y coordinate scaling element <emphasis>M</emphasis>
+<subscript>2,</subscript> of the transform matrix. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>float</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE></CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#f">f</A></CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              The Y coordinate translation element <emphasis>M</emphasis>
+<subscript>2,</subscript> of the transform matrix. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<P>
+<A NAME="Member_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Member Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="a"></A>
+<H3 class="code">a</H3>
+<PRE>float <B>a</B>
+</PRE>
+<DL>
+<DD>The X coordinate scaling element <emphasis>M</emphasis>
+<subscript>1,</subscript> of the transform matrix. <P>
+        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="b"></A>
+<H3 class="code">b</H3>
+<PRE>float <B>b</B>
+</PRE>
+<DL>
+<DD>The X coordinate shearing element <emphasis>M</emphasis>
+<subscript>1,</subscript> of the transform matrix. <P>
+        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="c"></A>
+<H3 class="code">c</H3>
+<PRE>float <B>c</B>
+</PRE>
+<DL>
+<DD>The X coordinate translation element <emphasis>M</emphasis>
+<subscript>1,</subscript> of the transform matrix. <P>
+        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="d"></A>
+<H3 class="code">d</H3>
+<PRE>float <B>d</B>
+</PRE>
+<DL>
+<DD>The Y coordinate shearing element <emphasis>M</emphasis>
+<subscript>2,</subscript> of the transform matrix. <P>
+        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="e"></A>
+<H3 class="code">e</H3>
+<PRE>float <B>e</B>
+</PRE>
+<DL>
+<DD>The Y coordinate scaling element <emphasis>M</emphasis>
+<subscript>2,</subscript> of the transform matrix. <P>
+        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="f"></A>
+<H3 class="code">f</H3>
+<PRE>float <B>f</B>
+</PRE>
+<DL>
+<DD>The Y coordinate translation element <emphasis>M</emphasis>
+<subscript>2,</subscript> of the transform matrix. <P>
+        
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</P>
+</BODY>
+</HTML>

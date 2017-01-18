@@ -1,0 +1,7 @@
+This file does nothing by itself but is associated with a custom build step
+that generates the source files
+  "edk/c/examples/certificates/MyCertificate.h"
+and
+  "edk/c/examples/certificates/MyCertificate.c",
+from the binary certificate file
+  "engine/certificates/MyCertificate.bin"

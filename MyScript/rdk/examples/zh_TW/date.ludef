@@ -1,0 +1,106 @@
+# Data format traditional Chinese: dates
+#
+# 2006/05/18
+# v1.0
+
+@set charset UTF-8
+
+# Numbers
+zeroToNine = 〇|零|一|壹|二|貳|三|叁|參|四|肆|五|伍|六|陸|七|柒|八|捌|九|玖
+oneToTen = 一|壹|二|貳|三|叁|參|四|肆|五|伍|六|陸|七|柒|八|捌|九|玖|十|拾
+oneToNine = 一|壹|二|貳|三|叁|參|四|肆|五|伍|六|陸|七|柒|八|捌|九|玖
+
+# Forced number for years
+cnNineTeen / 80 = (一|壹)(九|玖)
+rmNineTeen / 80 = 19
+cnTwenty / 80 = (二|貳)(〇|零)
+rmTwenty / 80 = 20
+cnOther / 20 = (一|壹)(〇|零|一|壹|二|貳|三|叁|參|四|肆|五|伍|六|陸|七|柒|八|捌){zeroToNine}{zeroToNine}|(二|貳){oneToNine}{zeroToNine}{zeroToNine}|(三|叁|參|四|肆|五|伍|六|陸|七|柒|八|捌|九|玖){zeroToNine}{zeroToNine}{zeroToNine}
+rmOther / 20 = 1[0-8]|2[1-9]|[3-9][0-9]
+
+# Year
+# Prefix for Western calendar
+westPref = (西|公)元
+# Four or two digit year chinese numbers
+yearCnNb = ({cnNineTeen}|{cnTwenty}|{cnOther})?{zeroToNine}{zeroToNine}
+# Four or two digit year roman numbers
+yearRmNb = ({rmNineTeen}|{rmTwenty}|{rmOther})?[0-9][0-9]
+# Full year
+fullYear = {westPref}?({yearCnNb}年|{yearRmNb}年?)
+
+# Year 中華民國 reference
+# Numbers
+# Chinese numbers
+# 1 -> 9 (new and old way)
+oneToNine = 一|壹|二|貳|三|叁|參|四|肆|五|伍|六|陸|七|柒|八|捌|九|玖
+# 1 -> 9 (before spec. (千，萬，...) -> 兩)  (new and old way)
+oneToNineBfSpec = 一|壹|二|貳|兩|三|叁|參|四|肆|五|伍|六|陸|七|柒|八|捌|九|玖
+cnUnit = 零|{oneToNine}
+# 10 -> 99
+tenToNinetynine = (一|壹|二|貳|三|叁|參|四|肆|五|伍|六|陸|七|柒|八|捌|九|玖)?(十|拾){oneToNine}?
+# 100 -> 999
+hundredTo3Nine = {oneToNineBfSpec}(百|佰)({tenToNinetynine}|零?{oneToNine})?
+# 1000 -> 9999
+thousandTo4Nine = {oneToNineBfSpec}(千|仟)({hundredTo3Nine}|{oneToNine}|零({tenToNinetynine}|{oneToNine}))?
+# Arabic numbers
+# 1 -> 999
+ar1To999 = [1-9]([0-9][0-9]?)?
+
+# Four or two digit year Chinese numbers
+yearCnNbMinGuo = ((中華)?民國)?元
+yearCnNbMinGuo = {yearCnNbMinGuo}|((中華)?民國前?)?({oneToNine}|{tenToNinetynine}|{hundredTo3Nine})
+# Four or two digit year roman numbers
+yearRmNbMinGuo = ((中華)?民國前?){ar1To999}
+
+# Four digit Chinese numbers preceded by 西元
+yearCnNbWest = {westPref}?{thousandTo4Nine}
+
+# Full year
+fullYear = {fullYear}|({yearCnNbMinGuo}|{yearRmNbMinGuo}|{yearCnNbWest})年
+
+# Month
+# Month chinese numbers
+monthCnNb = {oneToTen}|(十|拾)[一壹二貳]
+# Month roman numbers
+monthRmNb = 0?[1-9]|1[012]
+fullMonth = ({monthCnNb}|{monthRmNb})月
+
+# Day number
+# Day chinese number
+dayChineseNb = {oneToNine}|(二|貳)?(十|拾){oneToNine}?|(三|叁|參)(十|拾)(一|壹)?
+# Day roman number
+dayRmNb = 0?[1-9]|[12][0-9]|3[01]
+# Full day number
+fullDayNb = ({dayChineseNb}|{dayRmNb})(號|号|日)?
+
+# Abbreviated date
+# Reference to Western calendar
+monthRmNbWithZero = 0?[1-9]|1[012]
+dayRmNbWithZero = 0?[1-9]|[12][0-9]|3[01]
+abbDateWest = {yearRmNb}{monthRmNbWithZero}{dayRmNbWithZero}
+abbDateWest = {abbDateWest}|{yearRmNb}/{monthRmNbWithZero}/{dayRmNbWithZero}
+abbDateWest = {abbDateWest}|{yearRmNb}-{monthRmNbWithZero}-{dayRmNbWithZero}
+abbDateWest = {abbDateWest}|{yearRmNb}\.{monthRmNbWithZero}\.{dayRmNbWithZero}
+abbDateWest = {abbDateWest}|{yearRmNb} {monthRmNbWithZero} {dayRmNbWithZero}
+
+# With 中華民國 reference
+yearRmNbMinGuoInAbb = ((中華)?民國){ar1To999}
+abbDateMinGuo = {yearRmNbMinGuoInAbb}{monthRmNbWithZero}{dayRmNbWithZero}
+abbDateMinGuo = {abbDateMinGuo}|{yearRmNbMinGuoInAbb}/{monthRmNbWithZero}/{dayRmNbWithZero}
+abbDateMinGuo = {abbDateMinGuo}|{yearRmNbMinGuoInAbb}-{monthRmNbWithZero}-{dayRmNbWithZero}
+abbDateMinGuo = {abbDateMinGuo}|{yearRmNbMinGuoInAbb}\.{monthRmNbWithZero}\.{dayRmNbWithZero}
+abbDateMinGuo = {abbDateMinGuo}|{yearRmNbMinGuoInAbb} {monthRmNbWithZero} {dayRmNbWithZero}
+
+# American format
+abbDateAm = {monthRmNbWithZero}{dayRmNbWithZero}{yearRmNb}
+abbDateAm = {abbDateAm}|{monthRmNbWithZero}/{dayRmNbWithZero}/{yearRmNb}
+abbDateAm = {abbDateAm}|{monthRmNbWithZero}-{dayRmNbWithZero}-{yearRmNb}
+abbDateAm = {abbDateAm}|{monthRmNbWithZero}\.{dayRmNbWithZero}\.{yearRmNb}
+abbDateAm = {abbDateAm}|{monthRmNbWithZero} {dayRmNbWithZero} {yearRmNb}
+
+abbDate = {abbDateWest}|{abbDateMinGuo}|{abbDateAm}
+
+# Date
+date = {fullYear}{fullMonth}{fullDayNb}?|{fullYear}|{fullMonth}{fullDayNb}?|{fullDayNb}|{abbDate}
+
+{date}

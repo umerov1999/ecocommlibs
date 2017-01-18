@@ -1,0 +1,163 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>voMemoryFunctions</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="voMemoryFunctions";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptEngine.h</FONT>
+<BR>
+Type voMemoryFunctions</H2>
+<PRE>
+<B>voMemoryFunctions</B>
+</PRE>
+<HR>
+<CODE>#include &lt;c/MyScriptEngine.h&gt;</CODE>
+<BR>
+<CODE>typedef  struct <A href="../../c/MyScriptEngine_h/struct__voMemoryFunctions.html">_voMemoryFunctions</A>  <B>voMemoryFunctions</B></CODE>
+<BR>
+<CODE></CODE>
+</P>
+<P>A set of memory management functions that may be given to  <CODE>voCreateEngine()</CODE>. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD></DD>
+</DT>
+</DL>
+
+</P>    
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Member_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="3"><FONT SIZE="+2"><B>Member Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>void *</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#ptr_calloc">ptr_calloc</A>)(size_t nmemb, size_t size)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Pointer to a function that allocates space for an array of  <CODE>nmemb</CODE> objects of size  <CODE>size</CODE>, initialized to all bits zero; in conformance with C89-7.10.3.1 / C99-7.20.3.1. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>void</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#ptr_free">ptr_free</A>)(void *ptr)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Pointer to a function that deallocates the space pointed to by  <CODE>ptr</CODE>; in conformance with C89-7.10.3.2 / C99-7.20.3.2. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>void *</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#ptr_malloc">ptr_malloc</A>)(size_t size)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Pointer to a function that allocates space for  <CODE>size</CODE> bytes; in conformance with C89-7.10.3.3 / C99-7.20.3.3. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>size_t</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#ptr_msize">ptr_msize</A>)(void *ptr)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Pointer to an optional function that returns the size available in the space pointed to by  <CODE>ptr</CODE>. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>void *</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#ptr_realloc">ptr_realloc</A>)(void *ptr, size_t size)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Pointer to a function that resizes the space pointed to by  <CODE>ptr</CODE> to  <CODE>size</CODE>; in conformance with C89-7.10.3.4 / C99 7.20.3.4. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>int32_t</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE></CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#structVersion">structVersion</A></CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              The version of this struct: must be  <CODE>1</CODE>. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Member_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Member Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="ptr_calloc"></A>
+<H3 class="code">ptr_calloc</H3>
+<PRE>void * <B>ptr_calloc</B>(size_t nmemb, size_t size)</PRE>
+<DL>
+<DD>Pointer to a function that allocates space for an array of  <CODE>nmemb</CODE> objects of size  <CODE>size</CODE>, initialized to all bits zero; in conformance with C89-7.10.3.1 / C99-7.20.3.1. <P>
+        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="ptr_free"></A>
+<H3 class="code">ptr_free</H3>
+<PRE>void <B>ptr_free</B>(void *ptr)</PRE>
+<DL>
+<DD>Pointer to a function that deallocates the space pointed to by  <CODE>ptr</CODE>; in conformance with C89-7.10.3.2 / C99-7.20.3.2. <P>
+        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="ptr_malloc"></A>
+<H3 class="code">ptr_malloc</H3>
+<PRE>void * <B>ptr_malloc</B>(size_t size)</PRE>
+<DL>
+<DD>Pointer to a function that allocates space for  <CODE>size</CODE> bytes; in conformance with C89-7.10.3.3 / C99-7.20.3.3. <P>
+        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="ptr_msize"></A>
+<H3 class="code">ptr_msize</H3>
+<PRE>size_t <B>ptr_msize</B>(void *ptr)</PRE>
+<DL>
+<DD>Pointer to an optional function that returns the size available in the space pointed to by  <CODE>ptr</CODE>. <P>
+
+<P>If  <CODE>NULL</CODE>, memory statistics will count only requested not actual memory usage. </P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="ptr_realloc"></A>
+<H3 class="code">ptr_realloc</H3>
+<PRE>void * <B>ptr_realloc</B>(void *ptr, size_t size)</PRE>
+<DL>
+<DD>Pointer to a function that resizes the space pointed to by  <CODE>ptr</CODE> to  <CODE>size</CODE>; in conformance with C89-7.10.3.4 / C99 7.20.3.4. <P>
+        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="structVersion"></A>
+<H3 class="code">structVersion</H3>
+<PRE>
+<A href="../../c/std/stdint_h/int32_t.html">int32_t</A> <B>structVersion</B>
+</PRE>
+<DL>
+<DD>The version of this struct: must be  <CODE>1</CODE>. <P>
+        
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

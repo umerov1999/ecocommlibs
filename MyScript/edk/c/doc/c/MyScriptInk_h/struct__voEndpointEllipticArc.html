@@ -1,0 +1,199 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>_voEndpointEllipticArc</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="_voEndpointEllipticArc";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptInk.h</FONT>
+<BR>
+Structure _voEndpointEllipticArc</H2>
+<PRE>
+<B></B>
+</PRE>
+<HR>
+<CODE>#include &lt;c/MyScriptInk.h&gt;</CODE>
+<BR>
+<CODE>struct <B>_voEndpointEllipticArc</B></CODE>
+<BR>
+<CODE></CODE>
+</P>
+<P></P>Represents an elliptic arc on the 2D plane, by its endpoint parameterization. <P>
+
+<P>
+<DL>
+<DT>
+<B>Note:</B>
+<DD>
+<P>In order to ensure bijective conversion between endpoint and center parameterizations, we interpret the degenerate case where the two endpoints are equal as follow: When  <CODE>p2</CODE> equals  <CODE>p1</CODE>, they define the  <CODE>(1,0)</CODE> point on the origin circle (i.e.: before stretch and rotate), and a full ellipse.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptInk_h/voCenterEllipticArc.html">voCenterEllipticArc</a>
+</DD>
+</DT>
+</DL>
+
+</P>    
+</P>
+<HR>
+<P>
+<A NAME="Member_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="3"><FONT SIZE="+2"><B>Member Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>int32_t</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE></CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#fA">fA</A></CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              large-arc flag. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>int32_t</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE></CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#fS">fS</A></CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              sweep-arc flag. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voPoint</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE></CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#p1">p1</A></CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              first point. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voPoint</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE></CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#p2">p2</A></CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              last point. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>float</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE></CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#phi">phi</A></CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              x-axis rotation angle. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>float</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE></CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#rx">rx</A></CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              x-axis radius (must be positive). </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>float</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE></CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#ry">ry</A></CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              y-axis radius (must be positive). </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<P>
+<A NAME="Member_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Member Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="fA"></A>
+<H3 class="code">fA</H3>
+<PRE>
+<A href="../../c/std/stdint_h/int32_t.html">int32_t</A> <B>fA</B>
+</PRE>
+<DL>
+<DD>large-arc flag. <P>
+        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="fS"></A>
+<H3 class="code">fS</H3>
+<PRE>
+<A href="../../c/std/stdint_h/int32_t.html">int32_t</A> <B>fS</B>
+</PRE>
+<DL>
+<DD>sweep-arc flag. <P>
+        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="p1"></A>
+<H3 class="code">p1</H3>
+<PRE>
+<A href="../../c/MyScriptInk_h/voPoint.html">voPoint</A> <B>p1</B>
+</PRE>
+<DL>
+<DD>first point. <P>
+        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="p2"></A>
+<H3 class="code">p2</H3>
+<PRE>
+<A href="../../c/MyScriptInk_h/voPoint.html">voPoint</A> <B>p2</B>
+</PRE>
+<DL>
+<DD>last point. <P>
+        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="phi"></A>
+<H3 class="code">phi</H3>
+<PRE>float <B>phi</B>
+</PRE>
+<DL>
+<DD>x-axis rotation angle. <P>
+        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="rx"></A>
+<H3 class="code">rx</H3>
+<PRE>float <B>rx</B>
+</PRE>
+<DL>
+<DD>x-axis radius (must be positive). <P>
+        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="ry"></A>
+<H3 class="code">ry</H3>
+<PRE>float <B>ry</B>
+</PRE>
+<DL>
+<DD>y-axis radius (must be positive). <P>
+        
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</P>
+</BODY>
+</HTML>

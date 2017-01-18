@@ -1,0 +1,42 @@
+# Lexical unit Japanese: email
+# v1.1
+# 04/10/2005
+
+element = [0-9a-zA-Z][-_0-9a-zA-Z]*
+
+user = {element}(\.{element})*
+
+s1 / 50.0 = com
+s2 / 45.0 = net
+s3 / 40.0 = jp
+s4 / 35.0 = org
+s5 / 30.0 = edu
+s6 / 0.0 = [a-zA-Z]+
+suffix = {s1}|{s2}|{s3}|{s4}|{s5}|{s6}
+
+d1 / 100.0 = hotmail\.com
+d2 / 98.0 = yahoo\.com
+d3 / 96.0 = gmail\.com
+d4 / 94.0 = msn\.com
+d5 / 92.0 = yahoo\.co\.jp
+d6 / 90.0 = aol\.com
+d7 / 88.0 = hotmail\.co\.jp
+d8 / 86.0 = comcast\.net
+d9 / 84.0 = earthlink\.net
+d10 / 82.0 = verizon\.net
+d11 / 80.0 = msn\.com
+d12 / 78.0 = nifty\.com
+d13 / 76.0 = microsoft\.com
+d14 / 74.0 = webtv\.net
+d15 / 72.0 = netscape\.net
+d16 / 70.0 = mail\.goo\.ne\.jp
+d17 / 68.0 = asahi-net\.or\.jp
+d18 / 66.0 = jcom\.home\.ne\.jp
+d19 / 64.0 = nifty\.ne\.jp
+d20 / 0.0 = ({element}\.)+{suffix}
+domain = {d1}|{d2}|{d3}|{d4}|{d5}|{d6}|{d7}|{d8}|{d9}|{d10}|{d11}|{d12}|{d13}|{d14}|{d15}|{d16}|{d17}|{d18}
+domain = {domain}|{d19}|{d20}
+
+email = {user}@{domain}
+
+{email}

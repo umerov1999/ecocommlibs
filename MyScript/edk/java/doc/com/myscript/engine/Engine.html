@@ -1,0 +1,609 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<title>Engine (MyScript SDK Java Reference Documentation)</title>
+<link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Engine (MyScript SDK Java Reference Documentation)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/Engine.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../com/myscript/engine/Charset.html" title="class in com.myscript.engine"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/myscript/engine/Engine.html" target="_top">Frames</a></li>
+<li><a href="Engine.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">com.myscript.engine</div>
+<h2 title="Class Engine" class="title">Class Engine</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li>java.lang.Object</li>
+<li>
+<ul class="inheritance">
+<li>com.myscript.engine.Engine</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../com/myscript/engine/IDisposable.html" title="interface in com.myscript.engine">IDisposable</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public final class <span class="strong">Engine</span>
+extends java.lang.Object
+implements <a href="../../../com/myscript/engine/IDisposable.html" title="interface in com.myscript.engine">IDisposable</a></pre>
+<div class="block">The <code>Engine</code> class models the MyScript Engine.
+ 
+ <p>In order to use the various MyScript technologies, you first have to
+ obtain an instance of the <code>Engine</code> class by invoking the
+ <code>create</code> static factory method.</p>
+ 
+ <h3>RULE 1: you install it, you dispose of it!</h3>
+ <strong>This is really a very important rule</strong>, because of the native
+ implementation of the MyScript technologies: you must explicitly dispose of
+ the <code>Engine</code> objects you obtain.
+ 
+ <p>Once you have obtained an object of the <code>Engine</code> class, you are
+ able to create or load <code>EngineObject</code> objects, objects that
+ expose aspects of the different MyScript technologies.</p>
+ 
+ <h3>RULE 2: disposing of a parent engine disposes of the children !</h3>
+ All the <code>EngineObject</code> objects you create or load are linked
+ with an <code>Engine</code> object: in other words, any
+ <code>EngineObject</code> object is the child of an <code>Engine</code>
+ object. As a consequence, when disposing of an <code>Engine</code> object,
+ you also dispose of all its children and any Java references of these
+ children you are still holding become unusable: trying to use them will
+ result in a <code>IllegalStateException</code> exception being thrown.</div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>4.0.0</dd>
+<dt><span class="strong">Version:</span></dt>
+  <dd>1.1</dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/engine/Engine.html#DEFAULT_LIMIT">DEFAULT_LIMIT</a></strong></code>
+<div class="block">Default <code>Engine</code> object limit.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/engine/Engine.html#NATIVE_VERSION">NATIVE_VERSION</a></strong></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../com/myscript/engine/Engine.html" title="class in com.myscript.engine">Engine</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/engine/Engine.html#create(byte[])">create</a></strong>(byte[]&nbsp;certificate)</code>
+<div class="block">Static factory method that creates and returns a new <code>Engine</code>
+ object configured with the specified version and certificate.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/engine/Engine.html#dispose()">dispose</a></strong>()</code>
+<div class="block">Performs tasks associated with freeing, releasing, or resetting unmanaged
+ resources allocated from the native side of the MyScript Engine.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/engine/Engine.html#equals(java.lang.Object)">equals</a></strong>(java.lang.Object&nbsp;other)</code>
+<div class="block">Indicates whether some other object is "equal to" this <code>Engine</code>
+ object.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/engine/Engine.html#finalize()">finalize</a></strong>()</code>
+<div class="block">Called by the garbage collector on an <code>Engine</code> when
+ garbage collection determines that there are no more references to the
+ object.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/engine/Engine.html#getCount()">getCount</a></strong>()</code>
+<div class="block">Returns the current number of <code>Engine</code> objects that exist in
+ a MyScript enabled application.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../com/myscript/engine/MemoryStatistics.html" title="class in com.myscript.engine">MemoryStatistics</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/engine/Engine.html#getGlobalMemoryStatistics()">getGlobalMemoryStatistics</a></strong>()</code>
+<div class="block">Returns memory statistics about all the object allocated by the MyScript
+ Engine.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/engine/Engine.html#getLimit()">getLimit</a></strong>()</code>
+<div class="block">Returns the maximum number of <code>Engine</code> objects that can exist
+ at the same time in a MyScript enabled application.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/myscript/engine/MemoryStatistics.html" title="class in com.myscript.engine">MemoryStatistics</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/engine/Engine.html#getMemoryStatistics()">getMemoryStatistics</a></strong>()</code>
+<div class="block">Returns memory statistics about this <code>Engine</code> object.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>long</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/engine/Engine.html#getNativeReference()">getNativeReference</a></strong>()</code>
+<div class="block">Returns the native side reference of this <code>Engine</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/engine/Engine.html#hashCode()">hashCode</a></strong>()</code>
+<div class="block">Returns a hash code value for this <code>Engine</code> object.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/engine/Engine.html#isDisposed()">isDisposed</a></strong>()</code>
+<div class="block">Tells if this <code>Engine</code> object has been disposed of by a call to
+ the <a href="../../../com/myscript/engine/Engine.html#dispose()"><code>dispose</code></a> method.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/engine/Engine.html#resetLimit()">resetLimit</a></strong>()</code>
+<div class="block">Resets the maximum number of <code>Engine</code> objects that can exist
+ at the same time in a MyScript enabled application.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/engine/Engine.html#setLimit(int)">setLimit</a></strong>(int&nbsp;limit)</code>
+<div class="block">Sets the maximum number of <code>Engine</code> objects that can exist
+ at the same time in a MyScript enabled application.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/engine/Engine.html#toString()">toString</a></strong>()</code>
+<div class="block">Returns a <code>String</code> representation of this <code>Engine</code>.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>clone, getClass, notify, notifyAll, wait, wait, wait</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="DEFAULT_LIMIT">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>DEFAULT_LIMIT</h4>
+<pre>public static final&nbsp;int DEFAULT_LIMIT</pre>
+<div class="block">Default <code>Engine</code> object limit. This helper constant is meant to
+ be used with the <a href="../../../com/myscript/engine/Engine.html#setLimit(int)"><code>setLimit</code></a> method.</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../constant-values.html#com.myscript.engine.Engine.DEFAULT_LIMIT">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="NATIVE_VERSION">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>NATIVE_VERSION</h4>
+<pre>public static final&nbsp;int NATIVE_VERSION</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="getLimit()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLimit</h4>
+<pre>public static final&nbsp;int&nbsp;getLimit()</pre>
+<div class="block">Returns the maximum number of <code>Engine</code> objects that can exist
+ at the same time in a MyScript enabled application.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the maximum number of <code>Engine</code> objects that can exist
+ at the same time in a MyScript enabled application.</dd></dl>
+</li>
+</ul>
+<a name="setLimit(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setLimit</h4>
+<pre>public static final&nbsp;void&nbsp;setLimit(int&nbsp;limit)
+                           throws java.lang.IllegalArgumentException</pre>
+<div class="block">Sets the maximum number of <code>Engine</code> objects that can exist
+ at the same time in a MyScript enabled application.
+ 
+ <p>The special value zero means no limit. Other values are adjusted to the
+ next multiple of 16. A value under the current count is permitted and will
+ constrain the future <code>Engine</code> object creations.</p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>limit</code> - the value of the new creation limit.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>limit &lt; 0</code>.</dd></dl>
+</li>
+</ul>
+<a name="resetLimit()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>resetLimit</h4>
+<pre>public static final&nbsp;void&nbsp;resetLimit()</pre>
+<div class="block">Resets the maximum number of <code>Engine</code> objects that can exist
+ at the same time in a MyScript enabled application.</div>
+</li>
+</ul>
+<a name="getCount()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCount</h4>
+<pre>public static final&nbsp;int&nbsp;getCount()</pre>
+<div class="block">Returns the current number of <code>Engine</code> objects that exist in
+ a MyScript enabled application.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the current number of <code>Engine</code> objects that exist in
+ a MyScript enabled application.</dd></dl>
+</li>
+</ul>
+<a name="create(byte[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>create</h4>
+<pre>public static final&nbsp;<a href="../../../com/myscript/engine/Engine.html" title="class in com.myscript.engine">Engine</a>&nbsp;create(byte[]&nbsp;certificate)
+                           throws java.lang.NullPointerException,
+                                  <a href="../../../com/myscript/engine/InvalidCertificateException.html" title="class in com.myscript.engine">InvalidCertificateException</a>,
+                                  <a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></pre>
+<div class="block">Static factory method that creates and returns a new <code>Engine</code>
+ object configured with the specified version and certificate.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>certificate</code> - the certificate that identifies you as a granted
+ MyScript Engine user.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new <code>Engine</code> object.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.NullPointerException</code> - when <code>version</code> is <code>null</code>.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>certificate</code> is
+ <code>null</code>.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidCertificateException.html" title="class in com.myscript.engine">InvalidCertificateException</a></code> - when the certificate is not valid.</dd>
+<dd><code><a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></code> - when the engine limit has been reached.</dd></dl>
+</li>
+</ul>
+<a name="getGlobalMemoryStatistics()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getGlobalMemoryStatistics</h4>
+<pre>public static final&nbsp;<a href="../../../com/myscript/engine/MemoryStatistics.html" title="class in com.myscript.engine">MemoryStatistics</a>&nbsp;getGlobalMemoryStatistics()</pre>
+<div class="block">Returns memory statistics about all the object allocated by the MyScript
+ Engine.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>a <code>MemoryStatistics</code> object.</dd></dl>
+</li>
+</ul>
+<a name="getMemoryStatistics()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMemoryStatistics</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/engine/MemoryStatistics.html" title="class in com.myscript.engine">MemoryStatistics</a>&nbsp;getMemoryStatistics()
+                                           throws java.lang.IllegalStateException</pre>
+<div class="block">Returns memory statistics about this <code>Engine</code> object.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>a <code>MemoryStatistics</code> object.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>Engine</code> has been
+ disposed of.</dd></dl>
+</li>
+</ul>
+<a name="dispose()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>dispose</h4>
+<pre>public final&nbsp;void&nbsp;dispose()</pre>
+<div class="block">Performs tasks associated with freeing, releasing, or resetting unmanaged
+ resources allocated from the native side of the MyScript Engine.
+ 
+ <p>When invoking this method, all the children of this <code>Engine</code>
+ are also disposed of.</p>
+ 
+ <p>Please note that invoking this method twice has no effect.</p></div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/engine/IDisposable.html#dispose()">dispose</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/engine/IDisposable.html" title="interface in com.myscript.engine">IDisposable</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="isDisposed()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isDisposed</h4>
+<pre>public final&nbsp;boolean&nbsp;isDisposed()</pre>
+<div class="block">Tells if this <code>Engine</code> object has been disposed of by a call to
+ the <a href="../../../com/myscript/engine/Engine.html#dispose()"><code>dispose</code></a> method.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd><code>true</code> if this <code>Engine</code> has been disposed of,
+ otherwise <code>false</code>.</dd></dl>
+</li>
+</ul>
+<a name="getNativeReference()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getNativeReference</h4>
+<pre>public final&nbsp;long&nbsp;getNativeReference()
+                              throws java.lang.IllegalStateException</pre>
+<div class="block">Returns the native side reference of this <code>Engine</code>.
+ 
+ <p><strong style="color: red">This method is an implementation helper that
+ is only meant to be used by the concrete <code>EngineObject</code>
+ objects. Please kids don't try this at home.</strong></p></div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the native side reference of this <code>Engine</code>.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>Engine</code> has been
+ disposed of.</dd></dl>
+</li>
+</ul>
+<a name="equals(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equals</h4>
+<pre>public final&nbsp;boolean&nbsp;equals(java.lang.Object&nbsp;other)</pre>
+<div class="block">Indicates whether some other object is "equal to" this <code>Engine</code>
+ object.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code>equals</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>other</code> - the reference object with which to compare.</dd>
+<dt><span class="strong">Returns:</span></dt><dd><code>true</code> if the specified object is "equal to" this
+ <code>Engine</code> object.</dd></dl>
+</li>
+</ul>
+<a name="hashCode()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hashCode</h4>
+<pre>public final&nbsp;int&nbsp;hashCode()</pre>
+<div class="block">Returns a hash code value for this <code>Engine</code> object.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code>hashCode</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>a hash code value for this <code>Engine</code> object.</dd></dl>
+</li>
+</ul>
+<a name="toString()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toString</h4>
+<pre>public final&nbsp;java.lang.String&nbsp;toString()</pre>
+<div class="block">Returns a <code>String</code> representation of this <code>Engine</code>.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code>toString</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>a <code>String</code> representation of this <code>Engine</code>.</dd></dl>
+</li>
+</ul>
+<a name="finalize()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>finalize</h4>
+<pre>protected final&nbsp;void&nbsp;finalize()
+                       throws java.lang.Throwable</pre>
+<div class="block">Called by the garbage collector on an <code>Engine</code> when
+ garbage collection determines that there are no more references to the
+ object.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code>finalize</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/Engine.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../com/myscript/engine/Charset.html" title="class in com.myscript.engine"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/myscript/engine/Engine.html" target="_top">Frames</a></li>
+<li><a href="Engine.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+</body>
+</html>

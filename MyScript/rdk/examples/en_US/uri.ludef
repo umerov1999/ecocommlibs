@@ -1,0 +1,88 @@
+@import ludef "defNUL"
+
+element = {NUL}[0-9a-zA-Z][\.\-_0-9a-zA-Z]*
+
+http / 100.0 = http://
+https / 70.0 = https://
+ftp / 50.0 = ftp://
+protocol / 100.0 = {http}|{https}|{ftp}
+
+s1 / 50.0 = com
+s2 / 45.0 = org
+s3 / 40.0 = us
+s4 / 35.0 = edu
+s5 / 30.0 = net
+s6 / 30.0 = gov
+s7 / 30.0 = ca
+s8 / 25.0 = uk
+s9 / 0.0 = [a-zA-Z]+
+suffix = {s1}|{s2}|{s3}|{s4}|{s5}|{s6}|{s7}|{s8}|{s9}
+
+
+d1 / 50.0 = (www\.)?google\.com
+d2 / 50.0 = (www\.)?yahoo\.com
+d3 / 50.0 = (www\.)?facebook\.com
+d4 / 50.0 = (www\.)?youtube\.com
+d5 / 50.0 = (www\.)?myspace\.com
+d6 / 50.0 = (www\.)?wikipedia\.org
+d7 / 50.0 = (www\.)?live\.com
+d8 / 50.0 = (www\.)?craigslist\.org
+d9 / 50.0 = (www\.)?ebay\.com
+d10 / 50.0 = (www\.)?msn\.com
+d11 / 50.0 = (www\.)?blogger\.com
+d12 / 50.0 = (www\.)?twitter\.com
+d13 / 50.0 = (www\.)?amazon\.com
+d14 / 50.0 = (www\.)?aol\.com
+d15 / 50.0 = (www\.)?go\.com
+d16 / 50.0 = (www\.)?bing\.com
+d17 / 50.0 = (www\.)?espn\.go\.com
+d18 / 50.0 = (www\.)?cnn\.com
+d19 / 50.0 = (www\.)?flickr\.com
+d20 / 50.0 = (www\.)?wordpress\.com
+d21 / 50.0 = (www\.)?microsoft\.com
+d22 / 50.0 = (www\.)?imdb\.com
+d23 / 50.0 = (www\.)?photobucket\.com
+d24 / 50.0 = (www\.)?linkedin\.com
+d25 / 50.0 = (www\.)?nytimes\.com
+d26 / 50.0 = (www\.)?apple\.com
+d27 / 50.0 = (www\.)?about\.com
+d28 / 50.0 = (www\.)?comcast\.net
+d29 / 50.0 = (www\.)?weather\.com
+d30 / 50.0 = (www\.)?zynga\.com
+d31 / 50.0 = (www\.)?netflix\.com
+d32 / 50.0 = (www\.)?cnet\.com
+d33 / 50.0 = (www\.)?doubleclick\.com
+d34 / 50.0 = (www\.)?adobe\.com
+d35 / 50.0 = (www\.)?foxnews\.com
+d36 / 50.0 = (www\.)?verizon\.net
+d37 / 50.0 = (www\.)?mapquest\.com
+d38 / 50.0 = (www\.)?answers\.com
+d39 / 30.0 = www\.({element}\.)+{suffix}
+d40 / 20.0 = home\.({element}\.)+{suffix}
+d41 / 20.0 = members\.({element}\.)+{suffix}
+d42 / 0.0 = {element}+\.{suffix}
+
+domain = {d1}|{d2}|{d3}|{d4}|{d5}|{d6}|{d7}|{d8}|{d9}
+domain = {domain}|{d10}|{d11}|{d12}|{d13}|{d14}|{d15}|{d16}|{d17}|{d18}|{d19}
+domain = {domain}|{d20}|{d21}|{d22}|{d23}|{d24}|{d25}|{d26}|{d27}|{d28}|{d29}
+domain = {domain}|{d30}|{d31}|{d32}|{d33}|{d34}|{d35}|{d36}|{d37}|{d38}|{d39}
+domain = {domain}|{d40}|{d41}|{d42}
+
+path1 / 20.0 = (/{element})+
+perso / 80.0 = /~{element}(/{element})+
+path / 50.0 = {path1}|{perso}
+
+e1 / 100.0 = htm
+e2 / 80.0 = html
+e3 / 0.0 = {element}
+extension = {e1}|{e2}|{e3}
+
+f1 / 100.0 = index
+f2 / 0.0 = {element}
+file = {f1}|{f2}
+
+target / 100.0 = /({file}\.{extension})?
+
+uri = {protocol}?{domain}{path}?{target}?
+
+{uri}

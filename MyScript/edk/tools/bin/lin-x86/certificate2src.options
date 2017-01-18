@@ -1,0 +1,2 @@
+--binary=${origin}/../../../../engine/certificates/MyCertificate.bin
+--template=${origin}/../../../${lang}/templates/MyCertificate.${ext}

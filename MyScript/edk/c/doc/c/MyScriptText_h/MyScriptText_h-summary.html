@@ -1,0 +1,354 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>c/MyScriptText.h</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+            function windowTitle()
+            {
+            parent.document.title="c/MyScriptText.h";
+            }
+          </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<H2>Include file <B>c/MyScriptText.h</B>
+</H2>
+Native interface to the MyScript HandWriting Recognition (Text) service.     <P>
+    
+</P>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Type Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voAccentuationScheme.html" title="voAccentuationScheme">voAccentuationScheme</A></B></TD><TD>
+Lists the accentuation scheme values.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voAlphabetKnowledge.html" title="voAlphabetKnowledge">voAlphabetKnowledge</A></B></TD><TD>
+<CODE>voAlphabetKnowledge</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voArchive.html" title="voArchive">voArchive</A></B></TD><TD>
+<CODE>voArchive</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voCandidateFlag.html" title="voCandidateFlag">voCandidateFlag</A></B></TD><TD>
+Lists the recognition result candidate flags.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voCandidateIterator.html" title="voCandidateIterator">voCandidateIterator</A></B></TD><TD>
+<CODE>voCandidateIterator</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voCasingScheme.html" title="voCasingScheme">voCasingScheme</A></B></TD><TD>
+Lists the casing scheme values.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voCursiveAlphabetKnowledge.html" title="voCursiveAlphabetKnowledge">voCursiveAlphabetKnowledge</A></B></TD><TD>
+<CODE>voCursiveAlphabetKnowledge</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voDigitalInkTagger.html" title="voDigitalInkTagger">voDigitalInkTagger</A></B></TD><TD>
+<CODE>voDigitalInkTagger</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voDigitalTextMatcher.html" title="voDigitalTextMatcher">voDigitalTextMatcher</A></B></TD><TD>
+<CODE>voDigitalTextMatcher</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voFuzzyPinyinFlag.html" title="voFuzzyPinyinFlag">voFuzzyPinyinFlag</A></B></TD><TD>
+Lists the fuzzy pinyin flags that configure the different fuzzy pinyin behaviors.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voGrammar.html" title="voGrammar">voGrammar</A></B></TD><TD>
+<CODE>voGrammar</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voHalfWidthFullWidthScheme.html" title="voHalfWidthFullWidthScheme">voHalfWidthFullWidthScheme</A></B></TD><TD>
+Lists the half width / full width character conversion scheme values.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voHandPrintedAlphabetKnowledge.html" title="voHandPrintedAlphabetKnowledge">voHandPrintedAlphabetKnowledge</A></B></TD><TD>
+<CODE>voHandPrintedAlphabetKnowledge</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voHandwritingContext.html" title="voHandwritingContext">voHandwritingContext</A></B></TD><TD>
+<CODE>voHandwritingContext</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voIAlphabet.html" title="voIAlphabet">voIAlphabet</A></B></TD><TD>
+Functions composing the <CODE>voIAlphabet</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voICandidateIterator.html" title="voICandidateIterator">voICandidateIterator</A></B></TD><TD>
+Functions composing the <CODE>voICandidateIterator</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voIDigitalInkTagger.html" title="voIDigitalInkTagger">voIDigitalInkTagger</A></B></TD><TD>
+Functions composing the <CODE>voIDigitalInkTagger</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voIDigitalTextMatcher.html" title="voIDigitalTextMatcher">voIDigitalTextMatcher</A></B></TD><TD>
+Functions composing the <CODE>voIDigitalTextMatcher</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voILexicalUnit.html" title="voILexicalUnit">voILexicalUnit</A></B></TD><TD>
+Functions composing the <CODE>voILexicalUnit</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voILexicon.html" title="voILexicon">voILexicon</A></B></TD><TD>
+Functions composing the <CODE>voILexicon</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voILinguisticKnowledgeBuilder.html" title="voILinguisticKnowledgeBuilder">voILinguisticKnowledgeBuilder</A></B></TD><TD>
+Functions composing the <CODE>voILinguisticKnowledgeBuilder</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voInputItemLocator.html" title="voInputItemLocator">voInputItemLocator</A></B></TD><TD>
+Represents the location of an item in the input.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voInputRange.html" title="voInputRange">voInputRange</A></B></TD><TD>
+Represents a discrete range in the input, denoted by the list of the contiguous range elements that compose it.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voInputRangeElement.html" title="voInputRangeElement">voInputRangeElement</A></B></TD><TD>
+Represents a contiguous range in the input delimited by its first and last enclosed items.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voIRecognitionResult.html" title="voIRecognitionResult">voIRecognitionResult</A></B></TD><TD>
+Functions composing the <CODE>voIRecognitionResult</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voIRecognitionResultProvider.html" title="voIRecognitionResultProvider">voIRecognitionResultProvider</A></B></TD><TD>
+Functions composing the <CODE>voIRecognitionResultProvider</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voISegmentIterator.html" title="voISegmentIterator">voISegmentIterator</A></B></TD><TD>
+Functions composing the <CODE>voISegmentIterator</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voIsolatedAlphabetKnowledge.html" title="voIsolatedAlphabetKnowledge">voIsolatedAlphabetKnowledge</A></B></TD><TD>
+<CODE>voIsolatedAlphabetKnowledge</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voISubsetKnowledge.html" title="voISubsetKnowledge">voISubsetKnowledge</A></B></TD><TD>
+Functions composing the <CODE>voISubsetKnowledge</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voITagIterator.html" title="voITagIterator">voITagIterator</A></B></TD><TD>
+Functions composing the <CODE>voITagIterator</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voITagList.html" title="voITagList">voITagList</A></B></TD><TD>
+Functions composing the <CODE>voITagList</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voITextSegmenter.html" title="voITextSegmenter">voITextSegmenter</A></B></TD><TD>
+Functions composing the <CODE>voITextSegmenter</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voIWordIterator.html" title="voIWordIterator">voIWordIterator</A></B></TD><TD>
+Functions composing the <CODE>voIWordIterator</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voLexicalUnit.html" title="voLexicalUnit">voLexicalUnit</A></B></TD><TD>
+<CODE>voLexicalUnit</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voLexicon.html" title="voLexicon">voLexicon</A></B></TD><TD>
+<CODE>voLexicon</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voLexiconInitializer.html" title="voLexiconInitializer">voLexiconInitializer</A></B></TD><TD>
+Holds the parameters required to create an instance of the <CODE>voLexicon</CODE> type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voLinguisticKnowledge.html" title="voLinguisticKnowledge">voLinguisticKnowledge</A></B></TD><TD>
+<CODE>voLinguisticKnowledge</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voLinguisticKnowledgeBuilder.html" title="voLinguisticKnowledgeBuilder">voLinguisticKnowledgeBuilder</A></B></TD><TD>
+<CODE>voLinguisticKnowledgeBuilder</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voLinguisticKnowledgeBuilderInitializer.html" title="voLinguisticKnowledgeBuilderInitializer">voLinguisticKnowledgeBuilderInitializer</A></B></TD><TD>
+Holds the parameters required to create an instance of the <CODE>voLinguisticKnowledgeBuilder</CODE> type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voRecognitionResult.html" title="voRecognitionResult">voRecognitionResult</A></B></TD><TD>
+<CODE>voRecognitionResult</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voRecognizer.html" title="voRecognizer">voRecognizer</A></B></TD><TD>
+<CODE>voRecognizer</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voResource.html" title="voResource">voResource</A></B></TD><TD>
+<CODE>voResource</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voSegmentIterator.html" title="voSegmentIterator">voSegmentIterator</A></B></TD><TD>
+<CODE>voSegmentIterator</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voStructuredInputRecognizer.html" title="voStructuredInputRecognizer">voStructuredInputRecognizer</A></B></TD><TD>
+<CODE>voStructuredInputRecognizer</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voSubsetKnowledge.html" title="voSubsetKnowledge">voSubsetKnowledge</A></B></TD><TD>
+<CODE>voSubsetKnowledge</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voSuperimposedScheme.html" title="voSuperimposedScheme">voSuperimposedScheme</A></B></TD><TD>
+Lists the half width / full width character conversion scheme values.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voTagIterator.html" title="voTagIterator">voTagIterator</A></B></TD><TD>
+<CODE>voTagIterator</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voTagList.html" title="voTagList">voTagList</A></B></TD><TD>
+<CODE>voTagList</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voTagType.html" title="voTagType">voTagType</A></B></TD><TD>
+Lists the digital ink tag types.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voTextRecognizer.html" title="voTextRecognizer">voTextRecognizer</A></B></TD><TD>
+<CODE>voTextRecognizer</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voTextSegmenter.html" title="voTextSegmenter">voTextSegmenter</A></B></TD><TD>
+<CODE>voTextSegmenter</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voVocabulary.html" title="voVocabulary">voVocabulary</A></B></TD><TD>
+<CODE>voVocabulary</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voWordIterator.html" title="voWordIterator">voWordIterator</A></B></TD><TD>
+<CODE>voWordIterator</CODE> reference type.         </TD>
+</TR>
+</TABLE>
+&nbsp;
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Enumeration Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="enum_VO_HANDWRITINGCONTEXT_PROP.html" title="VO_HANDWRITINGCONTEXT_PROP">VO_HANDWRITINGCONTEXT_PROP</A></B></TD><TD>
+ 
+<propertySet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></propertySet>         
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="enum_VO_HANDWRITINGCONTEXT_TPROP.html" title="VO_HANDWRITINGCONTEXT_TPROP">VO_HANDWRITINGCONTEXT_TPROP</A></B></TD><TD>
+ 
+<typePropertySet></typePropertySet>         
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="enum_VO_LEXICON_PROP.html" title="VO_LEXICON_PROP">VO_LEXICON_PROP</A></B></TD><TD>
+ 
+<propertySet></propertySet>         
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="enum_VO_RECOGNIZER_PROP.html" title="VO_RECOGNIZER_PROP">VO_RECOGNIZER_PROP</A></B></TD><TD>
+ 
+<propertySet></propertySet>         
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="enum_VO_RESOURCE_PROP.html" title="VO_RESOURCE_PROP">VO_RESOURCE_PROP</A></B></TD><TD>
+ 
+<propertySet></propertySet>         
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="enum_VO_RESOURCE_TPROP.html" title="VO_RESOURCE_TPROP">VO_RESOURCE_TPROP</A></B></TD><TD>
+ 
+<typePropertySet></typePropertySet>         
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="enum_VO_SPEED_QUALITY_COMPROMISE_VALUE.html" title="VO_SPEED_QUALITY_COMPROMISE_VALUE">VO_SPEED_QUALITY_COMPROMISE_VALUE</A></B></TD><TD>
+Lists the speed versus quality compromise special values.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="enum_VO_TEXT_ERR.html" title="VO_TEXT_ERR">VO_TEXT_ERR</A></B></TD><TD>
+Lists the MyScript Text errors.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="enum_VO_TEXT_I.html" title="VO_TEXT_I">VO_TEXT_I</A></B></TD><TD>
+Lists the MyScript Text interfaces.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="enum_VO_TEXT_T.html" title="VO_TEXT_T">VO_TEXT_T</A></B></TD><TD>
+Lists the MyScript Text types.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="enum_VO_VOCABULARY_PROP.html" title="VO_VOCABULARY_PROP">VO_VOCABULARY_PROP</A></B></TD><TD>
+ 
+<propertySet></propertySet>         
+</TD>
+</TR>
+</TABLE>
+&nbsp;
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Function Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voCreateArchive.html" title="voCreateArchive">voCreateArchive</A></B></TD><TD>
+Creates a new <CODE>voArchive</CODE> instance.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voCreateDigitalInkTagger.html" title="voCreateDigitalInkTagger">voCreateDigitalInkTagger</A></B></TD><TD>
+Creates a new <CODE>voDigitalInkTagger</CODE> instance.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voCreateDigitalTextMatcher.html" title="voCreateDigitalTextMatcher">voCreateDigitalTextMatcher</A></B></TD><TD>
+Creates a new <CODE>voDigitalTextMatcher</CODE> instance.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voCreateLexicalUnit.html" title="voCreateLexicalUnit">voCreateLexicalUnit</A></B></TD><TD>
+Creates a new <CODE>voLexicalUnit</CODE> instance.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voCreateLexicon.html" title="voCreateLexicon">voCreateLexicon</A></B></TD><TD>
+Creates a new <CODE>voLexicon</CODE> instance.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voCreateLexiconEx.html" title="voCreateLexiconEx">voCreateLexiconEx</A></B></TD><TD>
+Creates a new <CODE>voLexicon</CODE> instance.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voCreateLinguisticKnowledgeBuilder.html" title="voCreateLinguisticKnowledgeBuilder">voCreateLinguisticKnowledgeBuilder</A></B></TD><TD>
+Creates a new <CODE>voLinguisticKnowledgeBuilder</CODE> instance.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voCreateStructuredInputRecognizer.html" title="voCreateStructuredInputRecognizer">voCreateStructuredInputRecognizer</A></B></TD><TD>
+Creates a new <CODE>voStructuredInputRecognizer</CODE> instance.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voCreateSubsetKnowledge.html" title="voCreateSubsetKnowledge">voCreateSubsetKnowledge</A></B></TD><TD>
+Creates a new <CODE>voSubsetKnowledge</CODE> instance.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voCreateTextRecognizer.html" title="voCreateTextRecognizer">voCreateTextRecognizer</A></B></TD><TD>
+Creates a new <CODE>voTextRecognizer</CODE> instance.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voCreateTextSegmenter.html" title="voCreateTextSegmenter">voCreateTextSegmenter</A></B></TD><TD>
+Creates a new <CODE>voTextSegmenter</CODE> instance.         </TD>
+</TR>
+</TABLE>
+&nbsp;
+</BODY>
+</HTML>

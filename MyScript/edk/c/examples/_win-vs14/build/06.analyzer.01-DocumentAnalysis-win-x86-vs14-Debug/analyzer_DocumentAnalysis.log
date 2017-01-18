@@ -1,0 +1,9 @@
+﻿  DocumentAnalysis.c
+  MyCertificate.c
+  MyScriptEngine-strerror.c
+  MyScriptAnalyzer-documentToSVG.c
+  common.c
+  parseInk.c
+  Generating Code...
+  analyzer_DocumentAnalysis.vcxproj -> C:\Users\JYChoi\Desktop\Myscript_P\edk\c\examples\_win-vs14\../bin/win-x86-Debug\06.analyzer.01-DocumentAnalysis.exe
+  analyzer_DocumentAnalysis.vcxproj -> ../bin/win-x86-Debug\06.analyzer.01-DocumentAnalysis.pdb (Full PDB)

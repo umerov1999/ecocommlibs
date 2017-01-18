@@ -1,0 +1,278 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>voMusicStemType</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="voMusicStemType";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptMusic.h</FONT>
+<BR>
+Type voMusicStemType</H2>
+<PRE>
+<B>voMusicStemType</B>
+</PRE>
+<HR>
+<CODE>#include &lt;c/MyScriptMusic.h&gt;</CODE>
+<BR>
+<CODE>typedef  enum _voMusicStemType  <B>voMusicStemType</B></CODE>
+<BR>
+<CODE></CODE>
+</P>
+<P>Represents a stem type. <P>
+        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Value_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Value Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MUSIC_STEM_TYPE_ERR">VO_MUSIC_STEM_TYPE_ERR</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  -1</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Error marker. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MUSIC_STEM_TYPE_UP">VO_MUSIC_STEM_TYPE_UP</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Up. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MUSIC_STEM_TYPE_UP_FLAG1">VO_MUSIC_STEM_TYPE_UP_FLAG1</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Up eighth. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MUSIC_STEM_TYPE_UP_FLAG2">VO_MUSIC_STEM_TYPE_UP_FLAG2</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Up 16th. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MUSIC_STEM_TYPE_UP_FLAG3">VO_MUSIC_STEM_TYPE_UP_FLAG3</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Up 32nd. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MUSIC_STEM_TYPE_UP_FLAG4">VO_MUSIC_STEM_TYPE_UP_FLAG4</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Up 64th. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MUSIC_STEM_TYPE_DOWN">VO_MUSIC_STEM_TYPE_DOWN</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Down. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MUSIC_STEM_TYPE_DOWN_FLAG1">VO_MUSIC_STEM_TYPE_DOWN_FLAG1</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Down eighth. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MUSIC_STEM_TYPE_DOWN_FLAG2">VO_MUSIC_STEM_TYPE_DOWN_FLAG2</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Down 16th. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MUSIC_STEM_TYPE_DOWN_FLAG3">VO_MUSIC_STEM_TYPE_DOWN_FLAG3</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Down 32nd. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MUSIC_STEM_TYPE_DOWN_FLAG4">VO_MUSIC_STEM_TYPE_DOWN_FLAG4</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Down 64th. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MUSIC_STEM_TYPE_COUNT">VO_MUSIC_STEM_TYPE_COUNT</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#_voMusicStemType_FORCE_INT_SIZE">_voMusicStemType_FORCE_INT_SIZE</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  0x7FFFFFFF</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Value_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Value Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="VO_MUSIC_STEM_TYPE_ERR"></A>
+<H3 class="code">VO_MUSIC_STEM_TYPE_ERR</H3>
+<PRE>
+<B>VO_MUSIC_STEM_TYPE_ERR</B>
+</PRE>
+<DL>
+<DD>Error marker. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MUSIC_STEM_TYPE_UP"></A>
+<H3 class="code">VO_MUSIC_STEM_TYPE_UP</H3>
+<PRE>
+<B>VO_MUSIC_STEM_TYPE_UP</B>
+</PRE>
+<DL>
+<DD>Up. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MUSIC_STEM_TYPE_UP_FLAG1"></A>
+<H3 class="code">VO_MUSIC_STEM_TYPE_UP_FLAG1</H3>
+<PRE>
+<B>VO_MUSIC_STEM_TYPE_UP_FLAG1</B>
+</PRE>
+<DL>
+<DD>Up eighth. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MUSIC_STEM_TYPE_UP_FLAG2"></A>
+<H3 class="code">VO_MUSIC_STEM_TYPE_UP_FLAG2</H3>
+<PRE>
+<B>VO_MUSIC_STEM_TYPE_UP_FLAG2</B>
+</PRE>
+<DL>
+<DD>Up 16th. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MUSIC_STEM_TYPE_UP_FLAG3"></A>
+<H3 class="code">VO_MUSIC_STEM_TYPE_UP_FLAG3</H3>
+<PRE>
+<B>VO_MUSIC_STEM_TYPE_UP_FLAG3</B>
+</PRE>
+<DL>
+<DD>Up 32nd. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MUSIC_STEM_TYPE_UP_FLAG4"></A>
+<H3 class="code">VO_MUSIC_STEM_TYPE_UP_FLAG4</H3>
+<PRE>
+<B>VO_MUSIC_STEM_TYPE_UP_FLAG4</B>
+</PRE>
+<DL>
+<DD>Up 64th. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MUSIC_STEM_TYPE_DOWN"></A>
+<H3 class="code">VO_MUSIC_STEM_TYPE_DOWN</H3>
+<PRE>
+<B>VO_MUSIC_STEM_TYPE_DOWN</B>
+</PRE>
+<DL>
+<DD>Down. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MUSIC_STEM_TYPE_DOWN_FLAG1"></A>
+<H3 class="code">VO_MUSIC_STEM_TYPE_DOWN_FLAG1</H3>
+<PRE>
+<B>VO_MUSIC_STEM_TYPE_DOWN_FLAG1</B>
+</PRE>
+<DL>
+<DD>Down eighth. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MUSIC_STEM_TYPE_DOWN_FLAG2"></A>
+<H3 class="code">VO_MUSIC_STEM_TYPE_DOWN_FLAG2</H3>
+<PRE>
+<B>VO_MUSIC_STEM_TYPE_DOWN_FLAG2</B>
+</PRE>
+<DL>
+<DD>Down 16th. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MUSIC_STEM_TYPE_DOWN_FLAG3"></A>
+<H3 class="code">VO_MUSIC_STEM_TYPE_DOWN_FLAG3</H3>
+<PRE>
+<B>VO_MUSIC_STEM_TYPE_DOWN_FLAG3</B>
+</PRE>
+<DL>
+<DD>Down 32nd. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MUSIC_STEM_TYPE_DOWN_FLAG4"></A>
+<H3 class="code">VO_MUSIC_STEM_TYPE_DOWN_FLAG4</H3>
+<PRE>
+<B>VO_MUSIC_STEM_TYPE_DOWN_FLAG4</B>
+</PRE>
+<DL>
+<DD>Down 64th. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MUSIC_STEM_TYPE_COUNT"></A>
+<H3 class="code">VO_MUSIC_STEM_TYPE_COUNT</H3>
+<PRE>
+<B>VO_MUSIC_STEM_TYPE_COUNT</B>
+</PRE>
+<DL>
+<DD>
+<P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="_voMusicStemType_FORCE_INT_SIZE"></A>
+<H3 class="code">_voMusicStemType_FORCE_INT_SIZE</H3>
+<PRE>
+<B>_voMusicStemType_FORCE_INT_SIZE</B>
+</PRE>
+<DL>
+<DD>
+<P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

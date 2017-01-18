@@ -1,0 +1,641 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<title>MusicRecognizer (MyScript SDK Java Reference Documentation)</title>
+<link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="MusicRecognizer (MyScript SDK Java Reference Documentation)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/MusicRecognizer.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../com/myscript/music/MusicPlacement.html" title="class in com.myscript.music"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../com/myscript/music/MusicRest.html" title="class in com.myscript.music"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/myscript/music/MusicRecognizer.html" target="_top">Frames</a></li>
+<li><a href="MusicRecognizer.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#fields_inherited_from_class_com.myscript.engine.EngineObject">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">com.myscript.music</div>
+<h2 title="Class MusicRecognizer" class="title">Class MusicRecognizer</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li>java.lang.Object</li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">com.myscript.engine.EngineObject</a></li>
+<li>
+<ul class="inheritance">
+<li>com.myscript.music.MusicRecognizer</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../com/myscript/document/IContentFieldProcessor.html" title="interface in com.myscript.document">IContentFieldProcessor</a>, <a href="../../../com/myscript/engine/IAttachTarget.html" title="interface in com.myscript.engine">IAttachTarget</a>, <a href="../../../com/myscript/engine/IDisposable.html" title="interface in com.myscript.engine">IDisposable</a>, <a href="../../../com/myscript/engine/IEngineObject.html" title="interface in com.myscript.engine">IEngineObject</a>, java.lang.Cloneable</dd>
+</dl>
+<hr>
+<br>
+<pre>public final class <span class="strong">MusicRecognizer</span>
+extends <a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>
+implements <a href="../../../com/myscript/engine/IAttachTarget.html" title="interface in com.myscript.engine">IAttachTarget</a>, <a href="../../../com/myscript/document/IContentFieldProcessor.html" title="interface in com.myscript.document">IContentFieldProcessor</a></pre>
+<div class="block">The <code>MusicRecognizer</code> class models a music recognizer.
+ <p>
+ <strong>Please note that the implementation of the
+ <code>MusicRecognizer</code> class is not synchronized.</strong> If multiple
+ threads concurrently try to change the state of a
+ <code>MusicRecognizer</code> object, explicit synchronization must be done
+ externally.
+ </p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>6.0.0</dd>
+<dt><span class="strong">Version:</span></dt>
+  <dd>1.0</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../com/myscript/music/MusicDocument.html" title="class in com.myscript.music"><code>MusicDocument</code></a></dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_com.myscript.engine.EngineObject">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;com.myscript.engine.<a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></h3>
+<code><a href="../../../com/myscript/engine/EngineObject.html#DEFAULT_USER_LIMIT">DEFAULT_USER_LIMIT</a>, <a href="../../../com/myscript/engine/EngineObject.html#engine">engine</a>, <a href="../../../com/myscript/engine/EngineObject.html#reference">reference</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/music/MusicRecognizer.html#attach(com.myscript.engine.EngineObject)">attach</a></strong>(<a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Attaches the specified <code>EngineObject</code> to this attach target.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../com/myscript/music/MusicRecognizer.html" title="class in com.myscript.music">MusicRecognizer</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/music/MusicRecognizer.html#create(com.myscript.engine.Engine)">create</a></strong>(<a href="../../../com/myscript/engine/Engine.html" title="class in com.myscript.engine">Engine</a>&nbsp;engine)</code>
+<div class="block">Static factory method that creates a new <code>MusicRecognizer</code>
+ object whose parent is the specified <code>Engine</code> object.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/music/MusicRecognizer.html#detach(com.myscript.engine.EngineObject)">detach</a></strong>(<a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Detaches the specified <code>EngineObject</code> from this attach target.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/music/MusicRecognizer.html#getAttachedAt(int)">getAttachedAt</a></strong>(int&nbsp;index)</code>
+<div class="block">Returns the attached <code>EngineObject</code> at the specified index.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/music/MusicRecognizer.html#getAttachedCount()">getAttachedCount</a></strong>()</code>
+<div class="block">Returns the number of <code>EngineObject</code> objects attached to this
+ attach target.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>float</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/music/MusicRecognizer.html#getScratchOutDetectionSensitivity()">getScratchOutDetectionSensitivity</a></strong>()</code>
+<div class="block">Returns the value of the <code>ScratchOutDetectionSensitivity</code>
+ property that controls the scratch out detection sensitivity.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/music/MusicRecognizer.html#process(com.myscript.engine.EngineObject)">process</a></strong>(<a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;field)</code>
+<div class="block">Process the target <code>ContentField</code> object.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/music/MusicRecognizer.html#process(com.myscript.engine.EngineObject,%20com.myscript.engine.IProgress)">process</a></strong>(<a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;field,
+       <a href="../../../com/myscript/engine/IProgress.html" title="interface in com.myscript.engine">IProgress</a>&nbsp;progress)</code>
+<div class="block">Process the target <code>ContentField</code> object.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/music/MusicRecognizer.html#process(com.myscript.music.MusicDocument)">process</a></strong>(<a href="../../../com/myscript/music/MusicDocument.html" title="class in com.myscript.music">MusicDocument</a>&nbsp;document)</code>
+<div class="block">Process the target <code>MusicDocument</code> object.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/music/MusicRecognizer.html#process(com.myscript.music.MusicDocument,%20com.myscript.engine.IProgress)">process</a></strong>(<a href="../../../com/myscript/music/MusicDocument.html" title="class in com.myscript.music">MusicDocument</a>&nbsp;document,
+       <a href="../../../com/myscript/engine/IProgress.html" title="interface in com.myscript.engine">IProgress</a>&nbsp;progress)</code>
+<div class="block">Process the target <code>MusicDocument</code> object.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/music/MusicRecognizer.html#resetScratchOutDetectionSensitivity()">resetScratchOutDetectionSensitivity</a></strong>()</code>
+<div class="block">Resets the status of the <code>ScratchOutDetectionSensitivity</code>
+ property that controls the scratch out detection sensitivity.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/music/MusicRecognizer.html#setScratchOutDetectionSensitivity(float)">setScratchOutDetectionSensitivity</a></strong>(float&nbsp;sensitivity)</code>
+<div class="block">Sets the value of the <code>ScratchOutDetectionSensitivity</code> property
+ that controls the scratch out detection sensitivity.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.myscript.engine.EngineObject">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;com.myscript.engine.<a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></h3>
+<code><a href="../../../com/myscript/engine/EngineObject.html#acquire()">acquire</a>, <a href="../../../com/myscript/engine/EngineObject.html#checkDisposed()">checkDisposed</a>, <a href="../../../com/myscript/engine/EngineObject.html#clone()">clone</a>, <a href="../../../com/myscript/engine/EngineObject.html#dispose()">dispose</a>, <a href="../../../com/myscript/engine/EngineObject.html#finalize()">finalize</a>, <a href="../../../com/myscript/engine/EngineObject.html#getAttachReferenceCount()">getAttachReferenceCount</a>, <a href="../../../com/myscript/engine/EngineObject.html#getEngine()">getEngine</a>, <a href="../../../com/myscript/engine/EngineObject.html#getMemoryUsage()">getMemoryUsage</a>, <a href="../../../com/myscript/engine/EngineObject.html#getNativeReference()">getNativeReference</a>, <a href="../../../com/myscript/engine/EngineObject.html#getUserCount(com.myscript.engine.Engine)">getUserCount</a>, <a href="../../../com/myscript/engine/EngineObject.html#getUserLimit(com.myscript.engine.Engine)">getUserLimit</a>, <a href="../../../com/myscript/engine/EngineObject.html#getUserReferenceCount()">getUserReferenceCount</a>, <a href="../../../com/myscript/engine/EngineObject.html#isDisposed()">isDisposed</a>, <a href="../../../com/myscript/engine/EngineObject.html#isSame(com.myscript.engine.EngineObject)">isSame</a>, <a href="../../../com/myscript/engine/EngineObject.html#load(com.myscript.engine.Engine,%20java.nio.channels.ReadableByteChannel)">load</a>, <a href="../../../com/myscript/engine/EngineObject.html#load(com.myscript.engine.Engine,%20java.lang.String)">load</a>, <a href="../../../com/myscript/engine/EngineObject.html#load(com.myscript.engine.Engine,%20java.lang.String,%20java.lang.String)">load</a>, <a href="../../../com/myscript/engine/EngineObject.html#resetUserLimit(com.myscript.engine.Engine)">resetUserLimit</a>, <a href="../../../com/myscript/engine/EngineObject.html#setUserLimit(com.myscript.engine.Engine,%20int)">setUserLimit</a>, <a href="../../../com/myscript/engine/EngineObject.html#store(java.lang.String)">store</a>, <a href="../../../com/myscript/engine/EngineObject.html#store(java.lang.String,%20java.lang.String)">store</a>, <a href="../../../com/myscript/engine/EngineObject.html#store(java.nio.channels.WritableByteChannel)">store</a>, <a href="../../../com/myscript/engine/EngineObject.html#toString()">toString</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>equals, getClass, hashCode, notify, notifyAll, wait, wait, wait</code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.myscript.engine.IEngineObject">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;com.myscript.engine.<a href="../../../com/myscript/engine/IEngineObject.html" title="interface in com.myscript.engine">IEngineObject</a></h3>
+<code><a href="../../../com/myscript/engine/IEngineObject.html#getEngine()">getEngine</a>, <a href="../../../com/myscript/engine/IEngineObject.html#getNativeReference()">getNativeReference</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.myscript.engine.IDisposable">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;com.myscript.engine.<a href="../../../com/myscript/engine/IDisposable.html" title="interface in com.myscript.engine">IDisposable</a></h3>
+<code><a href="../../../com/myscript/engine/IDisposable.html#dispose()">dispose</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="create(com.myscript.engine.Engine)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>create</h4>
+<pre>public static final&nbsp;<a href="../../../com/myscript/music/MusicRecognizer.html" title="class in com.myscript.music">MusicRecognizer</a>&nbsp;create(<a href="../../../com/myscript/engine/Engine.html" title="class in com.myscript.engine">Engine</a>&nbsp;engine)
+                                    throws java.lang.NullPointerException,
+                                           java.lang.IllegalStateException,
+                                           <a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a>,
+                                           <a href="../../../com/myscript/engine/OutOfMemoryException.html" title="class in com.myscript.engine">OutOfMemoryException</a></pre>
+<div class="block">Static factory method that creates a new <code>MusicRecognizer</code>
+ object whose parent is the specified <code>Engine</code> object.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>engine</code> - the parent <code>Engine</code> object.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new <code>MusicRecognizer</code> object.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.NullPointerException</code> - when <code>engine</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>engine</code> has been disposed
+           of.</dd>
+<dd><code><a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></code> - when the object user limit has been reached.</dd>
+<dd><code><a href="../../../com/myscript/engine/OutOfMemoryException.html" title="class in com.myscript.engine">OutOfMemoryException</a></code> - when the MyScript Engine failed to allocate
+           memory.</dd></dl>
+</li>
+</ul>
+<a name="attach(com.myscript.engine.EngineObject)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>attach</h4>
+<pre>public final&nbsp;void&nbsp;attach(<a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)
+                  throws java.lang.IllegalStateException,
+                         java.lang.NullPointerException,
+                         java.lang.IllegalArgumentException,
+                         <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a>,
+                         <a href="../../../com/myscript/engine/ModificationAccessDeniedException.html" title="class in com.myscript.engine">ModificationAccessDeniedException</a></pre>
+<div class="block">Attaches the specified <code>EngineObject</code> to this attach target.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/engine/IAttachTarget.html#attach(com.myscript.engine.EngineObject)">attach</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/engine/IAttachTarget.html" title="interface in com.myscript.engine">IAttachTarget</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>object</code> - an instance of the <code>EngineObject</code> class.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>MusicRecognizer</code> object
+           has been disposed of.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>object</code> has been disposed
+           of.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>object</code> is <code>null</code>.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>object</code> does not have the
+ same parent <code>Engine</code> as this attach target.</dd>
+<dd><code>java.lang.IllegalArgumentException</code></dd>
+<dd><code><a href="../../../com/myscript/engine/ModificationAccessDeniedException.html" title="class in com.myscript.engine">ModificationAccessDeniedException</a></code></dd></dl>
+</li>
+</ul>
+<a name="detach(com.myscript.engine.EngineObject)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>detach</h4>
+<pre>public final&nbsp;void&nbsp;detach(<a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)
+                  throws java.lang.IllegalStateException,
+                         java.lang.NullPointerException,
+                         java.lang.IllegalArgumentException,
+                         <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a>,
+                         <a href="../../../com/myscript/engine/ModificationAccessDeniedException.html" title="class in com.myscript.engine">ModificationAccessDeniedException</a></pre>
+<div class="block">Detaches the specified <code>EngineObject</code> from this attach target.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/engine/IAttachTarget.html#detach(com.myscript.engine.EngineObject)">detach</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/engine/IAttachTarget.html" title="interface in com.myscript.engine">IAttachTarget</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>object</code> - an instance of the <code>EngineObject</code> class.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>MusicRecognizer</code> object
+           has been disposed of.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>object</code> has been disposed
+           of.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>object</code> is <code>null</code>.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>object</code> does not have the
+ same parent <code>Engine</code> as this attach target.</dd>
+<dd><code>java.lang.IllegalArgumentException</code></dd>
+<dd><code><a href="../../../com/myscript/engine/ModificationAccessDeniedException.html" title="class in com.myscript.engine">ModificationAccessDeniedException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getAttachedCount()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAttachedCount</h4>
+<pre>public final&nbsp;int&nbsp;getAttachedCount()
+                           throws java.lang.IllegalStateException</pre>
+<div class="block">Returns the number of <code>EngineObject</code> objects attached to this
+ attach target.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/engine/IAttachTarget.html#getAttachedCount()">getAttachedCount</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/engine/IAttachTarget.html" title="interface in com.myscript.engine">IAttachTarget</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the number of instances of the <code>EngineObject</code> class
+ attached to this attach target.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>MusicRecognizer</code> object
+           has been disposed of.</dd></dl>
+</li>
+</ul>
+<a name="getAttachedAt(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAttachedAt</h4>
+<pre>public final&nbsp;<a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;getAttachedAt(int&nbsp;index)
+                                 throws java.lang.IllegalStateException,
+                                        java.lang.IndexOutOfBoundsException,
+                                        <a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></pre>
+<div class="block">Returns the attached <code>EngineObject</code> at the specified index.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/engine/IAttachTarget.html#getAttachedAt(int)">getAttachedAt</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/engine/IAttachTarget.html" title="interface in com.myscript.engine">IAttachTarget</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>index</code> - the index of the attached instance of the
+ <code>EngineObject</code> class to be returned.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the <code>EngineObject</code> attached at the specified index.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>MusicRecognizer</code> object
+           has been disposed of.</dd>
+<dd><code>java.lang.IndexOutOfBoundsException</code> - when <code>index</code> is out of bounds
+ (should be <code>&gt;= 0</code> and <code>&lt;
+ <a href="../../../com/myscript/engine/IAttachTarget.html#getAttachedCount()">IAttachTarget.getAttachedCount()</a>)</code>.</dd>
+<dd><code><a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></code> - when the object user limit has been
+ reached.</dd></dl>
+</li>
+</ul>
+<a name="process(com.myscript.music.MusicDocument)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>process</h4>
+<pre>public final&nbsp;void&nbsp;process(<a href="../../../com/myscript/music/MusicDocument.html" title="class in com.myscript.music">MusicDocument</a>&nbsp;document)
+                   throws java.lang.IllegalStateException,
+                          <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a>,
+                          <a href="../../../com/myscript/music/MissingMusicAlphabetKnowledgeException.html" title="class in com.myscript.music">MissingMusicAlphabetKnowledgeException</a>,
+                          <a href="../../../com/myscript/music/MissingMusicGrammarException.html" title="class in com.myscript.music">MissingMusicGrammarException</a>,
+                          <a href="../../../com/myscript/music/MissingMusicStaffException.html" title="class in com.myscript.music">MissingMusicStaffException</a></pre>
+<div class="block">Process the target <code>MusicDocument</code> object.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>document</code> - a <code>MusicDocument</code> object.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this object is not in a state where the
+           <code>process</code> method can be invoked.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>MusicRecognizer</code> object
+           has been disposed of.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>document</code> is
+           <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>document</code> has been disposed
+           of.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>document</code> does not have the
+           same parent <code>Engine</code> as this
+           <code>MusicRecognizer</code> object.</dd>
+<dd><code><a href="../../../com/myscript/music/MissingMusicAlphabetKnowledgeException.html" title="class in com.myscript.music">MissingMusicAlphabetKnowledgeException</a></code> - when this
+           <code>MusicRecognizer</code> has no attached
+           <code>AlphabetKnowledge</code>.</dd>
+<dd><code><a href="../../../com/myscript/music/MissingMusicGrammarException.html" title="class in com.myscript.music">MissingMusicGrammarException</a></code> - when this <code>MusicRecognizer</code>
+           has no attached <code>MusicGrammar</code>.</dd>
+<dd><code><a href="../../../com/myscript/music/MissingMusicStaffException.html" title="class in com.myscript.music">MissingMusicStaffException</a></code> - when <code>document</code> has no staff
+           defined.</dd></dl>
+</li>
+</ul>
+<a name="process(com.myscript.music.MusicDocument, com.myscript.engine.IProgress)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>process</h4>
+<pre>public final&nbsp;void&nbsp;process(<a href="../../../com/myscript/music/MusicDocument.html" title="class in com.myscript.music">MusicDocument</a>&nbsp;document,
+           <a href="../../../com/myscript/engine/IProgress.html" title="interface in com.myscript.engine">IProgress</a>&nbsp;progress)
+                   throws java.lang.IllegalStateException,
+                          <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a>,
+                          <a href="../../../com/myscript/music/MissingMusicAlphabetKnowledgeException.html" title="class in com.myscript.music">MissingMusicAlphabetKnowledgeException</a>,
+                          <a href="../../../com/myscript/music/MissingMusicGrammarException.html" title="class in com.myscript.music">MissingMusicGrammarException</a>,
+                          <a href="../../../com/myscript/music/MissingMusicStaffException.html" title="class in com.myscript.music">MissingMusicStaffException</a>,
+                          <a href="../../../com/myscript/engine/CanceledException.html" title="class in com.myscript.engine">CanceledException</a></pre>
+<div class="block">Process the target <code>MusicDocument</code> object.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>document</code> - a <code>Music</code> object.</dd><dd><code>progress</code> - an object implementing the <code>IProgress</code> interface
+ used to notify the client side about the status of the <code>process</code>
+ operation. Passing <code>null</code> as the <code>progress</code> parameter
+ has the same effect as invoking the
+ <a href="../../../com/myscript/music/MusicRecognizer.html#process(com.myscript.music.MusicDocument)"><code>overload</code></a> of the
+ method.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this object is not in a state where the
+           <code>process</code> method can be invoked.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>MusicRecognizer</code> object
+           has been disposed of.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>document</code> is
+           <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>document</code> has been disposed
+           of.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>document</code> does not have the
+           same parent <code>Engine</code> as this
+           <code>MusicRecognizer</code> object.</dd>
+<dd><code><a href="../../../com/myscript/music/MissingMusicAlphabetKnowledgeException.html" title="class in com.myscript.music">MissingMusicAlphabetKnowledgeException</a></code> - when this
+           <code>MusicRecognizer</code> has no attached
+           <code>AlphabetKnowledge</code>.</dd>
+<dd><code><a href="../../../com/myscript/music/MissingMusicGrammarException.html" title="class in com.myscript.music">MissingMusicGrammarException</a></code> - when this <code>MusicRecognizer</code>
+           has no attached <code>MusicGrammar</code>.</dd>
+<dd><code><a href="../../../com/myscript/music/MissingMusicStaffException.html" title="class in com.myscript.music">MissingMusicStaffException</a></code> - when <code>document</code> has no staff
+           defined.</dd>
+<dd><code><a href="../../../com/myscript/engine/CanceledException.html" title="class in com.myscript.engine">CanceledException</a></code> - when the operation has been canceled by the
+           <a href="../../../com/myscript/engine/IProgress.html#update(int,%20int)"><code>IProgress.update(int, int)</code></a> method.</dd></dl>
+</li>
+</ul>
+<a name="process(com.myscript.engine.EngineObject)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>process</h4>
+<pre>public&nbsp;void&nbsp;process(<a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;field)</pre>
+<div class="block">Process the target <code>ContentField</code> object.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/document/IContentFieldProcessor.html#process(com.myscript.engine.EngineObject)">process</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/document/IContentFieldProcessor.html" title="interface in com.myscript.document">IContentFieldProcessor</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>field</code> - a <code>ContentField</code> object.</dd></dl>
+</li>
+</ul>
+<a name="process(com.myscript.engine.EngineObject, com.myscript.engine.IProgress)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>process</h4>
+<pre>public&nbsp;void&nbsp;process(<a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;field,
+           <a href="../../../com/myscript/engine/IProgress.html" title="interface in com.myscript.engine">IProgress</a>&nbsp;progress)</pre>
+<div class="block">Process the target <code>ContentField</code> object.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/document/IContentFieldProcessor.html#process(com.myscript.engine.EngineObject,%20com.myscript.engine.IProgress)">process</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/document/IContentFieldProcessor.html" title="interface in com.myscript.document">IContentFieldProcessor</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>field</code> - a <code>ContentField</code> object.</dd><dd><code>progress</code> - an object implementing the <code>IProgress</code> interface
+          used to notify the client side about the status of the
+          <code>process</code> operation. Passing <code>null</code> as the
+          <code>progress</code> parameter has the same effect as invoking
+          the <a href="../../../com/myscript/document/IContentFieldProcessor.html#process(com.myscript.engine.EngineObject)"><code>overload</code></a>
+          of the method.</dd></dl>
+</li>
+</ul>
+<a name="getScratchOutDetectionSensitivity()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getScratchOutDetectionSensitivity</h4>
+<pre>public final&nbsp;float&nbsp;getScratchOutDetectionSensitivity()
+                                              throws java.lang.IllegalStateException</pre>
+<div class="block">Returns the value of the <code>ScratchOutDetectionSensitivity</code>
+ property that controls the scratch out detection sensitivity.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the scratch out detection sensitivity. <code>0.0f</code> disables
+         scratch out detection. <code>1.0f</code> means maximum supported
+         sensitivity.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>MusicRecognizer</code> object
+           has been disposed of.</dd></dl>
+</li>
+</ul>
+<a name="setScratchOutDetectionSensitivity(float)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setScratchOutDetectionSensitivity</h4>
+<pre>public final&nbsp;void&nbsp;setScratchOutDetectionSensitivity(float&nbsp;sensitivity)
+                                             throws java.lang.IllegalStateException,
+                                                    java.lang.IllegalArgumentException</pre>
+<div class="block">Sets the value of the <code>ScratchOutDetectionSensitivity</code> property
+ that controls the scratch out detection sensitivity.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>sensitivity</code> - the scratch out detection sensitivity value.
+          <code>0.0f</code> disables scratch out detection.
+          <code>1.0f</code> means maximum supported sensitivity.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>MusicRecognizer</code> object
+           has been disposed of.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>sensitivity</code> is not in
+           the <code>0.0f ... 1.0f</code> range.</dd></dl>
+</li>
+</ul>
+<a name="resetScratchOutDetectionSensitivity()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>resetScratchOutDetectionSensitivity</h4>
+<pre>public final&nbsp;void&nbsp;resetScratchOutDetectionSensitivity()
+                                               throws java.lang.IllegalStateException</pre>
+<div class="block">Resets the status of the <code>ScratchOutDetectionSensitivity</code>
+ property that controls the scratch out detection sensitivity.</div>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>MusicRecognizer</code> object
+           has been disposed of.</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/MusicRecognizer.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../com/myscript/music/MusicPlacement.html" title="class in com.myscript.music"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../com/myscript/music/MusicRest.html" title="class in com.myscript.music"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/myscript/music/MusicRecognizer.html" target="_top">Frames</a></li>
+<li><a href="MusicRecognizer.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#fields_inherited_from_class_com.myscript.engine.EngineObject">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>VO_IFACE</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="VO_IFACE";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptEngine.h</FONT>
+<BR>
+Define VO_IFACE</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptEngine.h&gt;</CODE>
+<BR>
+<CODE>#define VO_IFACE(engine, IName) ((const vo##IName*)voGetInterface(engine, VO_##IName))</CODE>
+<HR>
+</P>
+<P>Helper macro that facilitates the use of interface functions by performing the correct cast on the result of  <CODE>voGetInterface()</CODE>. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+IName
+</B>
+<DD>
+<parameterdescription>
+
+<P>the name of the interface without prefix, so that prepending  <CODE>VO_</CODE> gives the identifier and prepending  <CODE>vo</CODE> gives the function structure type.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Example:</B>
+<DD>
+<P>
+<PRE>
+VO_IFACE(engine, ICharset)-&gt;setDefaultCharacter(engine, charset, '?');
+</PRE>
+</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Note:</B>
+<DD>
+<P>Invoking an interface function with an instance of a type that does not implement this interface sets the error code to  <CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>See also:</B>
+<DD></DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P></P>
+</BODY>
+</HTML>

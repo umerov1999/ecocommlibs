@@ -1,0 +1,151 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>VO_ENGINEOBJECT_PROP</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="VO_ENGINEOBJECT_PROP";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptEngine.h</FONT>
+<BR>
+Enumeration VO_ENGINEOBJECT_PROP</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptEngine.h&gt;</CODE>
+<BR>
+<CODE>enum <B>_VO_ENGINEOBJECT_PROP</B></CODE>
+</P>
+<P> 
+Lists the properties that apply to the instances of the EngineObject type.
+   <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptEngine_h/enum_VO_ENGINE_T.html#VO_EngineObject">VO_EngineObject</a>, <a href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</a>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Value_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Value Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_USER_REFERENCE_COUNT">VO_USER_REFERENCE_COUNT</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  0x40000</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gives the number of user references to this object. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ATTACH_REFERENCE_COUNT">VO_ATTACH_REFERENCE_COUNT</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gives the number of attach references to this object. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MEMORY_USAGE">VO_MEMORY_USAGE</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gives the memory usage of this object, in bytes. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Value_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Value Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="VO_USER_REFERENCE_COUNT"></A>
+<H3 class="code">VO_USER_REFERENCE_COUNT</H3>
+<PRE>
+<B>VO_USER_REFERENCE_COUNT</B>
+</PRE>
+<DL>
+<DD>Gives the number of user references to this object. <P>
+
+<P> 
+<DL>
+<DT>
+<B>Usage:</B>
+<DD>
+<PRE>uint32_t value;
+voGetProperty(engine, object, VO_USER_REFERENCE_COUNT, &amp;value, sizeof(value));</PRE>
+</DD>
+</DT>
+</DL> 
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ATTACH_REFERENCE_COUNT"></A>
+<H3 class="code">VO_ATTACH_REFERENCE_COUNT</H3>
+<PRE>
+<B>VO_ATTACH_REFERENCE_COUNT</B>
+</PRE>
+<DL>
+<DD>Gives the number of attach references to this object. <P>
+
+<P> 
+<DL>
+<DT>
+<B>Usage:</B>
+<DD>
+<PRE>uint32_t value;
+voGetProperty(engine, object, VO_ATTACH_REFERENCE_COUNT, &amp;value, sizeof(value));</PRE>
+</DD>
+</DT>
+</DL> 
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MEMORY_USAGE"></A>
+<H3 class="code">VO_MEMORY_USAGE</H3>
+<PRE>
+<B>VO_MEMORY_USAGE</B>
+</PRE>
+<DL>
+<DD>Gives the memory usage of this object, in bytes. <P>
+
+<P>
+<verbatim xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">                                                                       @xmlonly &lt;property type="EngineObject" read-only="yes"&gt;\endxmlonly\ref size_t@xmlonly &lt;/property&gt;\endxmlonly
+</verbatim>
+</P>
+<P>
+<DL>
+<DT>
+<B>Note:</B>
+<DD>
+<P>This property is available only for some types of objects, typically serializable objects. If the object does not provide the information,  <CODE>voGetProperty()</CODE> returns  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE> and  <CODE>voGetError()</CODE> returns  <CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE>. </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

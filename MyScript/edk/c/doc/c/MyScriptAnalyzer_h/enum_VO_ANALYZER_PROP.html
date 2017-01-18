@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>VO_ANALYZER_PROP</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="VO_ANALYZER_PROP";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptAnalyzer.h</FONT>
+<BR>
+Enumeration VO_ANALYZER_PROP</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptAnalyzer.h&gt;</CODE>
+<BR>
+<CODE>enum <B>_VO_ANALYZER_PROP</B></CODE>
+</P>
+<P> 
+Lists the properties that apply to the instances of the voAnalyzer type.
+   <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD></DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Value_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Value Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ANALYZER_PROCESSING_LEVEL">VO_ANALYZER_PROCESSING_LEVEL</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  (VO_Analyzer &lt;&lt; 16)</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adjusts the level of processing applied to the analyzer document. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Value_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Value Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="VO_ANALYZER_PROCESSING_LEVEL"></A>
+<H3 class="code">VO_ANALYZER_PROCESSING_LEVEL</H3>
+<PRE>
+<B>VO_ANALYZER_PROCESSING_LEVEL</B>
+</PRE>
+<DL>
+<DD>Adjusts the level of processing applied to the analyzer document. <P>
+
+<P>By default, the highest level of processing is applied.</P>
+<P> 
+<DL>
+<DT>
+<B>Usage:</B>
+<DD>
+<PRE>voAnalyzerProcessingLevel value;
+voGetProperty(engine, object, VO_ANALYZER_PROCESSING_LEVEL, &amp;value, sizeof(value));
+voSetProperty(engine, object, VO_ANALYZER_PROCESSING_LEVEL, &amp;value, sizeof(value));</PRE>
+</DD>
+</DT>
+</DL> 
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

@@ -1,0 +1,287 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>voFuzzyPinyinFlag</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="voFuzzyPinyinFlag";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptText.h</FONT>
+<BR>
+Type voFuzzyPinyinFlag</H2>
+<PRE>
+<B>voFuzzyPinyinFlag</B>
+</PRE>
+<HR>
+<CODE>#include &lt;c/MyScriptText.h&gt;</CODE>
+<BR>
+<CODE>typedef  enum _voFuzzyPinyinFlag  <B>voFuzzyPinyinFlag</B></CODE>
+<BR>
+<CODE></CODE>
+</P>
+<P>Lists the fuzzy pinyin flags that configure the different fuzzy pinyin behaviors. <P>
+
+<P>
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>7.4_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Value_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Value Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_FUZZY_PINYIN_NONE">VO_FUZZY_PINYIN_NONE</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  0</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;None. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_FUZZY_PINYIN_C_CH">VO_FUZZY_PINYIN_C_CH</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  1 &lt;&lt; 0</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C is equivalent to CH. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_FUZZY_PINYIN_Z_ZH">VO_FUZZY_PINYIN_Z_ZH</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  1 &lt;&lt; 1</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Z is equivalent to ZH. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_FUZZY_PINYIN_S_SH">VO_FUZZY_PINYIN_S_SH</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  1 &lt;&lt; 2</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;S is equivalent to SH. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_FUZZY_PINYIN_F_H">VO_FUZZY_PINYIN_F_H</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  1 &lt;&lt; 3</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;F is equivalent to H. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_FUZZY_PINYIN_K_G">VO_FUZZY_PINYIN_K_G</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  1 &lt;&lt; 4</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K is equivalent to G. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_FUZZY_PINYIN_L_N">VO_FUZZY_PINYIN_L_N</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  1 &lt;&lt; 5</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L is equivalent to N. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_FUZZY_PINYIN_L_R">VO_FUZZY_PINYIN_L_R</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  1 &lt;&lt; 6</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L is equivalent to R. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_FUZZY_PINYIN_AN_ANG">VO_FUZZY_PINYIN_AN_ANG</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  1 &lt;&lt; 7</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AN is equivalent to ANG. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_FUZZY_PINYIN_EN_ENG">VO_FUZZY_PINYIN_EN_ENG</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  1 &lt;&lt; 8</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EN is equivalent to ENG. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_FUZZY_PINYIN_IN_ING">VO_FUZZY_PINYIN_IN_ING</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  1 &lt;&lt; 9</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IN is equivalent to ING. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_FUZZY_PINYIN_IAN_IANG">VO_FUZZY_PINYIN_IAN_IANG</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  1 &lt;&lt; 10</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IAN is equivalent to IANG. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_FUZZY_PINYIN_UAN_UANG">VO_FUZZY_PINYIN_UAN_UANG</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  1 &lt;&lt; 11</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UAN is equivalent to UANG. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Value_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Value Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="VO_FUZZY_PINYIN_NONE"></A>
+<H3 class="code">VO_FUZZY_PINYIN_NONE</H3>
+<PRE>
+<B>VO_FUZZY_PINYIN_NONE</B>
+</PRE>
+<DL>
+<DD>None. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_FUZZY_PINYIN_C_CH"></A>
+<H3 class="code">VO_FUZZY_PINYIN_C_CH</H3>
+<PRE>
+<B>VO_FUZZY_PINYIN_C_CH</B>
+</PRE>
+<DL>
+<DD>C is equivalent to CH. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_FUZZY_PINYIN_Z_ZH"></A>
+<H3 class="code">VO_FUZZY_PINYIN_Z_ZH</H3>
+<PRE>
+<B>VO_FUZZY_PINYIN_Z_ZH</B>
+</PRE>
+<DL>
+<DD>Z is equivalent to ZH. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_FUZZY_PINYIN_S_SH"></A>
+<H3 class="code">VO_FUZZY_PINYIN_S_SH</H3>
+<PRE>
+<B>VO_FUZZY_PINYIN_S_SH</B>
+</PRE>
+<DL>
+<DD>S is equivalent to SH. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_FUZZY_PINYIN_F_H"></A>
+<H3 class="code">VO_FUZZY_PINYIN_F_H</H3>
+<PRE>
+<B>VO_FUZZY_PINYIN_F_H</B>
+</PRE>
+<DL>
+<DD>F is equivalent to H. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_FUZZY_PINYIN_K_G"></A>
+<H3 class="code">VO_FUZZY_PINYIN_K_G</H3>
+<PRE>
+<B>VO_FUZZY_PINYIN_K_G</B>
+</PRE>
+<DL>
+<DD>K is equivalent to G. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_FUZZY_PINYIN_L_N"></A>
+<H3 class="code">VO_FUZZY_PINYIN_L_N</H3>
+<PRE>
+<B>VO_FUZZY_PINYIN_L_N</B>
+</PRE>
+<DL>
+<DD>L is equivalent to N. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_FUZZY_PINYIN_L_R"></A>
+<H3 class="code">VO_FUZZY_PINYIN_L_R</H3>
+<PRE>
+<B>VO_FUZZY_PINYIN_L_R</B>
+</PRE>
+<DL>
+<DD>L is equivalent to R. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_FUZZY_PINYIN_AN_ANG"></A>
+<H3 class="code">VO_FUZZY_PINYIN_AN_ANG</H3>
+<PRE>
+<B>VO_FUZZY_PINYIN_AN_ANG</B>
+</PRE>
+<DL>
+<DD>AN is equivalent to ANG. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_FUZZY_PINYIN_EN_ENG"></A>
+<H3 class="code">VO_FUZZY_PINYIN_EN_ENG</H3>
+<PRE>
+<B>VO_FUZZY_PINYIN_EN_ENG</B>
+</PRE>
+<DL>
+<DD>EN is equivalent to ENG. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_FUZZY_PINYIN_IN_ING"></A>
+<H3 class="code">VO_FUZZY_PINYIN_IN_ING</H3>
+<PRE>
+<B>VO_FUZZY_PINYIN_IN_ING</B>
+</PRE>
+<DL>
+<DD>IN is equivalent to ING. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_FUZZY_PINYIN_IAN_IANG"></A>
+<H3 class="code">VO_FUZZY_PINYIN_IAN_IANG</H3>
+<PRE>
+<B>VO_FUZZY_PINYIN_IAN_IANG</B>
+</PRE>
+<DL>
+<DD>IAN is equivalent to IANG. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_FUZZY_PINYIN_UAN_UANG"></A>
+<H3 class="code">VO_FUZZY_PINYIN_UAN_UANG</H3>
+<PRE>
+<B>VO_FUZZY_PINYIN_UAN_UANG</B>
+</PRE>
+<DL>
+<DD>UAN is equivalent to UANG. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

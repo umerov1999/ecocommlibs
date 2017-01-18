@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>voDocumentAsyncCommandCompletionCallback</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="voDocumentAsyncCommandCompletionCallback";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptDocument.h</FONT>
+<BR>
+Type voDocumentAsyncCommandCompletionCallback</H2>
+<PRE>
+<B>voDocumentAsyncCommandCompletionCallback</B>
+</PRE>
+<HR>
+<CODE>#include &lt;c/MyScriptDocument.h&gt;</CODE>
+<BR>
+<CODE>typedef  void  (*<B>voDocumentAsyncCommandCompletionCallback</B>)(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptDocument_h/voDocumentAsyncCommand.html">voDocumentAsyncCommand</A> cmd, <A href="../../c/std/stdbool_h/bool.html">bool</A> success, <A href="../../c/MyScriptDocument_h/voDocumentAsyncCommandResult.html">voDocumentAsyncCommandResult</A> result, void *userParam)</CODE>
+<BR>
+<CODE></CODE>
+</P>
+<P>DEPRECATED. <P>
+
+<P>Callback called by the document I/O background thread upon completion of asynchronous commands of  <CODE><A href="../../c/MyScriptDocument_h/voDocument.html">voDocument</A></CODE> and  <CODE><A href="../../c/MyScriptDocument_h/voPage.html">voPage</A></CODE>.</P>
+<P>The objects provided in  <CODE>result</CODE> are valid only during the callback execution, therefore you must use  <CODE>voAcquireObject()</CODE> if you want to retain the object for later use.</P>
+<P>Do not call sync() from this callback, or this will result in a deadlock.</P>
+<P>Do not call other asynchronous functions from this callback (functions that call a callback upon completion), prefer calling asynchronous functions in sequence.</P>
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+cmd
+</B>
+<DD>
+<parameterdescription>
+
+<P>the command that just completed. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+success
+</B>
+<DD>
+<parameterdescription>
+
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> when the command was successful, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+result
+</B>
+<DD>
+<parameterdescription>
+
+<P>the result of the command. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+userParam
+</B>
+<DD>
+<parameterdescription>
+
+<P>an optional user defined parameter passed to the callback.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voIDocument.html">voIDocument</a>, <a href="../../c/MyScriptDocument_h/voIPage.html">voIPage</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>deprecated as of 8.0.0</B>
+<DD>
+<P></P>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P></P>
+</BODY>
+</HTML>

@@ -1,0 +1,485 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>VO_INK_I</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="VO_INK_I";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptInk.h</FONT>
+<BR>
+Enumeration VO_INK_I</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptInk.h&gt;</CODE>
+<BR>
+<CODE>enum <B>_VO_INK_I</B></CODE>
+</P>
+<P>Lists the MyScript Ink interfaces. <P>
+        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Value_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Value Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ISelectionChangeListener">VO_ISelectionChangeListener</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  3120</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptInk_h/voISelectionChangeListener.html">voISelectionChangeListener</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ISelection">VO_ISelection</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptInk_h/voISelection.html">voISelection</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IInkStrokeFormat">VO_IInkStrokeFormat</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptInk_h/voIInkStrokeFormat.html">voIInkStrokeFormat</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IInkStrokeFormatBuilder">VO_IInkStrokeFormatBuilder</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptInk_h/voIInkStrokeFormatBuilder.html">voIInkStrokeFormatBuilder</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IInkStroke">VO_IInkStroke</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IInkStrokeBuilder">VO_IInkStrokeBuilder</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptInk_h/voIInkStrokeBuilder.html">voIInkStrokeBuilder</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IInk">VO_IInk</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptInk_h/voIInk.html">voIInk</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IInkIntervals">VO_IInkIntervals</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptInk_h/voIInkIntervals.html">voIInkIntervals</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IInkStrokeSet">VO_IInkStrokeSet</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptInk_h/voIInkStrokeSet.html">voIInkStrokeSet</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IInkSelection">VO_IInkSelection</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptInk_h/voIInkSelection.html">voIInkSelection</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IGeometry">VO_IGeometry</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptInk_h/voIGeometry.html">voIGeometry</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IInkTagIterator">VO_IInkTagIterator</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptInk_h/voIInkTagIterator.html">voIInkTagIterator</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IInkUpdateListener">VO_IInkUpdateListener</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptInk_h/voIInkUpdateListener.html">voIInkUpdateListener</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IGlyph">VO_IGlyph</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptInk_h/voIGlyph.html">voIGlyph</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IPrimitive">VO_IPrimitive</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptInk_h/voIPrimitive.html">voIPrimitive</A></CODE> interface identifier. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Value_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Value Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="VO_ISelectionChangeListener"></A>
+<H3 class="code">VO_ISelectionChangeListener</H3>
+<PRE>
+<B>VO_ISelectionChangeListener</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptInk_h/voISelectionChangeListener.html">voISelectionChangeListener</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptInk_h/voISelectionChangeListener.html">voISelectionChangeListener</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ISelection"></A>
+<H3 class="code">VO_ISelection</H3>
+<PRE>
+<B>VO_ISelection</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptInk_h/voISelection.html">voISelection</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptInk_h/voISelection.html">voISelection</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IInkStrokeFormat"></A>
+<H3 class="code">VO_IInkStrokeFormat</H3>
+<PRE>
+<B>VO_IInkStrokeFormat</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptInk_h/voIInkStrokeFormat.html">voIInkStrokeFormat</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptInk_h/voIInkStrokeFormat.html">voIInkStrokeFormat</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IInkStrokeFormatBuilder"></A>
+<H3 class="code">VO_IInkStrokeFormatBuilder</H3>
+<PRE>
+<B>VO_IInkStrokeFormatBuilder</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptInk_h/voIInkStrokeFormatBuilder.html">voIInkStrokeFormatBuilder</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptInk_h/voIInkStrokeFormatBuilder.html">voIInkStrokeFormatBuilder</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IInkStroke"></A>
+<H3 class="code">VO_IInkStroke</H3>
+<PRE>
+<B>VO_IInkStroke</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptInk_h/voIInkStroke.html">voIInkStroke</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IInkStrokeBuilder"></A>
+<H3 class="code">VO_IInkStrokeBuilder</H3>
+<PRE>
+<B>VO_IInkStrokeBuilder</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptInk_h/voIInkStrokeBuilder.html">voIInkStrokeBuilder</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptInk_h/voIInkStrokeBuilder.html">voIInkStrokeBuilder</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IInk"></A>
+<H3 class="code">VO_IInk</H3>
+<PRE>
+<B>VO_IInk</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptInk_h/voIInk.html">voIInk</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptInk_h/voIInk.html">voIInk</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IInkIntervals"></A>
+<H3 class="code">VO_IInkIntervals</H3>
+<PRE>
+<B>VO_IInkIntervals</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptInk_h/voIInkIntervals.html">voIInkIntervals</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptInk_h/voIInkIntervals.html">voIInkIntervals</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IInkStrokeSet"></A>
+<H3 class="code">VO_IInkStrokeSet</H3>
+<PRE>
+<B>VO_IInkStrokeSet</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptInk_h/voIInkStrokeSet.html">voIInkStrokeSet</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptInk_h/voIInkStrokeSet.html">voIInkStrokeSet</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IInkSelection"></A>
+<H3 class="code">VO_IInkSelection</H3>
+<PRE>
+<B>VO_IInkSelection</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptInk_h/voIInkSelection.html">voIInkSelection</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptInk_h/voIInkSelection.html">voIInkSelection</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IGeometry"></A>
+<H3 class="code">VO_IGeometry</H3>
+<PRE>
+<B>VO_IGeometry</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptInk_h/voIGeometry.html">voIGeometry</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptInk_h/voIGeometry.html">voIGeometry</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IInkTagIterator"></A>
+<H3 class="code">VO_IInkTagIterator</H3>
+<PRE>
+<B>VO_IInkTagIterator</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptInk_h/voIInkTagIterator.html">voIInkTagIterator</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptInk_h/voIInkTagIterator.html">voIInkTagIterator</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IInkUpdateListener"></A>
+<H3 class="code">VO_IInkUpdateListener</H3>
+<PRE>
+<B>VO_IInkUpdateListener</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptInk_h/voIInkUpdateListener.html">voIInkUpdateListener</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptInk_h/voIInkUpdateListener.html">voIInkUpdateListener</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IGlyph"></A>
+<H3 class="code">VO_IGlyph</H3>
+<PRE>
+<B>VO_IGlyph</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptInk_h/voIGlyph.html">voIGlyph</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptInk_h/voIGlyph.html">voIGlyph</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IPrimitive"></A>
+<H3 class="code">VO_IPrimitive</H3>
+<PRE>
+<B>VO_IPrimitive</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptInk_h/voIPrimitive.html">voIPrimitive</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptInk_h/voIPrimitive.html">voIPrimitive</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

@@ -1,0 +1,7 @@
+﻿  SuperimposedRecognition.c
+  MyCertificate.c
+  MyScriptEngine-strerror.c
+  common.c
+  Generating Code...
+  text_SuperimposedRecognition.vcxproj -> C:\Users\JYChoi\Desktop\Myscript_P\edk\c\examples\_win-vs14\../bin/win-x86-Debug\01.text.07-SuperimposedRecognition.exe
+  text_SuperimposedRecognition.vcxproj -> ../bin/win-x86-Debug\01.text.07-SuperimposedRecognition.pdb (Full PDB)

@@ -1,0 +1,219 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>voCandidateFlag</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="voCandidateFlag";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptText.h</FONT>
+<BR>
+Type voCandidateFlag</H2>
+<PRE>
+<B>voCandidateFlag</B>
+</PRE>
+<HR>
+<CODE>#include &lt;c/MyScriptText.h&gt;</CODE>
+<BR>
+<CODE>typedef  enum _voCandidateFlag  <B>voCandidateFlag</B></CODE>
+<BR>
+<CODE></CODE>
+</P>
+<P>Lists the recognition result candidate flags. <P>
+
+<P>
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>4.5_5 </P>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Value_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Value Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_CANDIDATE_FLAG_OMITTED">VO_CANDIDATE_FLAG_OMITTED</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  1 &lt;&lt; 0</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The candidate contains at least one omitted character. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_CANDIDATE_FLAG_SUPERFLUOUS">VO_CANDIDATE_FLAG_SUPERFLUOUS</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  1 &lt;&lt; 1</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The candidate contains at least one superfluous character. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_CANDIDATE_FLAG_SUBSTITUTED">VO_CANDIDATE_FLAG_SUBSTITUTED</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  1 &lt;&lt; 2</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The candidate contains at least one substituted character. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_CANDIDATE_FLAG_UNKNOWN">VO_CANDIDATE_FLAG_UNKNOWN</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  1 &lt;&lt; 3</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The candidate contains at least one unknown character. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_CANDIDATE_FLAG_ERASED">VO_CANDIDATE_FLAG_ERASED</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  1 &lt;&lt; 4</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The candidate contains at least one erased character. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_CANDIDATE_FLAG_EMPHASIZED">VO_CANDIDATE_FLAG_EMPHASIZED</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  1 &lt;&lt; 5</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The candidate contains at least one emphasized character. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_CANDIDATE_FLAG_OUT_OF_LEXICON">VO_CANDIDATE_FLAG_OUT_OF_LEXICON</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  1 &lt;&lt; 6</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The candidate was produced by an out of lexicon match. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_CANDIDATE_FLAG_PARTIAL">VO_CANDIDATE_FLAG_PARTIAL</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  1 &lt;&lt; 7</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The candidate corresponds to a partial match. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Value_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Value Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="VO_CANDIDATE_FLAG_OMITTED"></A>
+<H3 class="code">VO_CANDIDATE_FLAG_OMITTED</H3>
+<PRE>
+<B>VO_CANDIDATE_FLAG_OMITTED</B>
+</PRE>
+<DL>
+<DD>The candidate contains at least one omitted character. <P>
+
+<P>An omitted character is a character that was omitted by the user and has been added by the spelling distortion match. Consequently, the input range of the corresponding character level segment will be empty. </P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_CANDIDATE_FLAG_SUPERFLUOUS"></A>
+<H3 class="code">VO_CANDIDATE_FLAG_SUPERFLUOUS</H3>
+<PRE>
+<B>VO_CANDIDATE_FLAG_SUPERFLUOUS</B>
+</PRE>
+<DL>
+<DD>The candidate contains at least one superfluous character. <P>
+
+<P>A superfluous character is a character that was superfluously added by the user and has been discarded by the spelling distortion match. Consequently, the label of the corresponding character level candidate will be empty. </P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_CANDIDATE_FLAG_SUBSTITUTED"></A>
+<H3 class="code">VO_CANDIDATE_FLAG_SUBSTITUTED</H3>
+<PRE>
+<B>VO_CANDIDATE_FLAG_SUBSTITUTED</B>
+</PRE>
+<DL>
+<DD>The candidate contains at least one substituted character. <P>
+
+<P>A substituted character is a character which label has been substituted by the spelling distortion match. </P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_CANDIDATE_FLAG_UNKNOWN"></A>
+<H3 class="code">VO_CANDIDATE_FLAG_UNKNOWN</H3>
+<PRE>
+<B>VO_CANDIDATE_FLAG_UNKNOWN</B>
+</PRE>
+<DL>
+<DD>The candidate contains at least one unknown character. <P>
+
+<P>An unknown character is a character that was considered unreadable by the recognizer. Note that this character will not match normal vocabulary entries which will be forced to transform it to a substituted character. Consequently, only out of lexicon matches or unconstrained recognition may output this. </P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_CANDIDATE_FLAG_ERASED"></A>
+<H3 class="code">VO_CANDIDATE_FLAG_ERASED</H3>
+<PRE>
+<B>VO_CANDIDATE_FLAG_ERASED</B>
+</PRE>
+<DL>
+<DD>The candidate contains at least one erased character. <P>
+
+<P>An erased character is a character that has been detected has erased by an attached digital ink tagger (using either a strike-through or a double strike-through or a cross out or a scratch out gesture). </P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_CANDIDATE_FLAG_EMPHASIZED"></A>
+<H3 class="code">VO_CANDIDATE_FLAG_EMPHASIZED</H3>
+<PRE>
+<B>VO_CANDIDATE_FLAG_EMPHASIZED</B>
+</PRE>
+<DL>
+<DD>The candidate contains at least one emphasized character. <P>
+
+<P>An emphasized character is a character that has been detected has emphasized by an attached digital ink tagger. Consequently, the resemblance score of this character may not be accurate. </P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_CANDIDATE_FLAG_OUT_OF_LEXICON"></A>
+<H3 class="code">VO_CANDIDATE_FLAG_OUT_OF_LEXICON</H3>
+<PRE>
+<B>VO_CANDIDATE_FLAG_OUT_OF_LEXICON</B>
+</PRE>
+<DL>
+<DD>The candidate was produced by an out of lexicon match. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_CANDIDATE_FLAG_PARTIAL"></A>
+<H3 class="code">VO_CANDIDATE_FLAG_PARTIAL</H3>
+<PRE>
+<B>VO_CANDIDATE_FLAG_PARTIAL</B>
+</PRE>
+<DL>
+<DD>The candidate corresponds to a partial match. <P>
+
+<P>
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>4.9_8 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

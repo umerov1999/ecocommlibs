@@ -1,0 +1,7 @@
+﻿  MyCertificate.c
+  MyScriptEngine-strerror.c
+  common.c
+  LoadMetadata.c
+  Generating Code...
+  document_LoadMetadata.vcxproj -> C:\Users\JYChoi\Desktop\Myscript_P\edk\c\examples\_win-vs14\../bin/win-x86-Debug\08.document.03-LoadMetadata.exe
+  document_LoadMetadata.vcxproj -> ../bin/win-x86-Debug\08.document.03-LoadMetadata.pdb (Full PDB)

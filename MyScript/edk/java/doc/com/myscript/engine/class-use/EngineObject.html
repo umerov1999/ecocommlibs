@@ -1,0 +1,2352 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<title>Uses of Class com.myscript.engine.EngineObject (MyScript SDK Java Reference Documentation)</title>
+<link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Uses of Class com.myscript.engine.EngineObject (MyScript SDK Java Reference Documentation)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../overview-summary.html">Overview</a></li>
+<li><a href="../package-summary.html">Package</a></li>
+<li><a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">Class</a></li>
+<li class="navBarCell1Rev">Use</li>
+<li><a href="../package-tree.html">Tree</a></li>
+<li><a href="../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev</li>
+<li>Next</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../index.html?com/myscript/engine/class-use/EngineObject.html" target="_top">Frames</a></li>
+<li><a href="EngineObject.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<div class="header">
+<h2 title="Uses of Class com.myscript.engine.EngineObject" class="title">Uses of Class<br>com.myscript.engine.EngineObject</h2>
+</div>
+<div class="classUseContainer">
+<ul class="blockList">
+<li class="blockList">
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing packages, and an explanation">
+<caption><span>Packages that use <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Package</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="#com.myscript.analyzer">com.myscript.analyzer</a></td>
+<td class="colLast">
+<div class="block">The <code>com.myscript.analyzer</code> package provides classes and
+interfaces that model the access to the MyScript Analyzer technology.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#com.myscript.configurationmanager">com.myscript.configurationmanager</a></td>
+<td class="colLast">
+<div class="block">The <code>com.myscript.configurationmanager</code> package provides classes and
+interfaces that model the access to the MyScript Configuration Manager technology.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#com.myscript.document">com.myscript.document</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#com.myscript.engine">com.myscript.engine</a></td>
+<td class="colLast">
+<div class="block">The <code>com.myscript.engine</code> package provides classes and
+interfaces that model the generic access to the MyScript Engine technology.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#com.myscript.gesture">com.myscript.gesture</a></td>
+<td class="colLast">
+<div class="block">The <code>com.myscript.gesture</code> package provides classes and
+interfaces that model the access to the MyScript Gesture technology.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#com.myscript.ink">com.myscript.ink</a></td>
+<td class="colLast">
+<div class="block">The <code>com.myscript.ink</code> package provides classes and
+interfaces that model the access to the MyScript Ink technology.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#com.myscript.inksearch">com.myscript.inksearch</a></td>
+<td class="colLast">
+<div class="block">The <code>com.myscript.inksearch</code> package provides classes
+and interfaces that model the access to the MyScript InkSearch technology.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#com.myscript.json">com.myscript.json</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#com.myscript.keyboard">com.myscript.keyboard</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#com.myscript.math">com.myscript.math</a></td>
+<td class="colLast">
+<div class="block">The <code>com.myscript.math</code> package provides classes and
+interfaces that model the access to the MyScript Math technology.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#com.myscript.music">com.myscript.music</a></td>
+<td class="colLast">
+<div class="block">The <code>com.myscript.music</code> package provides classes and
+interfaces that model the access to the MyScript Music technology.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#com.myscript.prediction">com.myscript.prediction</a></td>
+<td class="colLast">
+<div class="block">The <code>com.myscript.prediction</code> package provides classes
+and interfaces that model the access to the MyScript prediction technology.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#com.myscript.shape">com.myscript.shape</a></td>
+<td class="colLast">
+<div class="block">The <code>com.myscript.shape</code> package provides classes and
+interfaces that model the access to the MyScript Shape technology.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#com.myscript.text">com.myscript.text</a></td>
+<td class="colLast">
+<div class="block">The <code>com.myscript.text</code> package provides classes and
+interfaces that model the access to the MyScript Handwriting Recognition
+technology.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#com.myscript.writeradaptation">com.myscript.writeradaptation</a></td>
+<td class="colLast">
+<div class="block">The <code>com.myscript.writeradaptation</code> package provides
+  classes and interfaces that model the access to the MyScript Writer Adaptation
+  technology.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<ul class="blockList">
+<li class="blockList"><a name="com.myscript.analyzer">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a> in <a href="../../../../com/myscript/analyzer/package-summary.html">com.myscript.analyzer</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subclasses, and an explanation">
+<caption><span>Subclasses of <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a> in <a href="../../../../com/myscript/analyzer/package-summary.html">com.myscript.analyzer</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/analyzer/Analyzer.html" title="class in com.myscript.analyzer">Analyzer</a></strong></code>
+<div class="block">The <code>Analyzer</code> class models an analyzer working on an
+ <code>AnalyzerDocument</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/analyzer/AnalyzerCell.html" title="class in com.myscript.analyzer">AnalyzerCell</a></strong></code>
+<div class="block">The <code>AnalyzerCell</code> class models a cell.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/analyzer/AnalyzerDocument.html" title="class in com.myscript.analyzer">AnalyzerDocument</a></strong></code>
+<div class="block">The <code>AnalyzerDocument</code> class models a document.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/analyzer/AnalyzerElement.html" title="class in com.myscript.analyzer">AnalyzerElement</a></strong></code>
+<div class="block">The <code>AnalyzerElement</code> class is the abstract base class that models
+ all the analyzer elements into which an analyzer document can be decomposed.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/analyzer/AnalyzerGroup.html" title="class in com.myscript.analyzer">AnalyzerGroup</a></strong></code>
+<div class="block">The <code>AnalyzerGroup</code> class models a group.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/analyzer/AnalyzerKnowledge.html" title="class in com.myscript.analyzer">AnalyzerKnowledge</a></strong></code>
+<div class="block">The <code>AnalyzerKnowledge</code> class models the knowledge of the
+ different analyzer elements and their segmentation characteristics for a
+ specific domain.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/analyzer/AnalyzerLine.html" title="class in com.myscript.analyzer">AnalyzerLine</a></strong></code>
+<div class="block">The <code>AnalyzerLine</code> class models a line.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/analyzer/AnalyzerShape.html" title="class in com.myscript.analyzer">AnalyzerShape</a></strong></code>
+<div class="block">The <code>AnalyzerShape</code> class models a shape.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/analyzer/AnalyzerTable.html" title="class in com.myscript.analyzer">AnalyzerTable</a></strong></code>
+<div class="block">The <code>AnalyzerTable</code> class models a table.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/analyzer/AnalyzerTextLine.html" title="class in com.myscript.analyzer">AnalyzerTextLine</a></strong></code>
+<div class="block">The <code>AnalyzerTextLine</code> class models a text line.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/analyzer/AnalyzerUnderline.html" title="class in com.myscript.analyzer">AnalyzerUnderline</a></strong></code>
+<div class="block">The <code>AnalyzerUnderline</code> class models an underline element.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../com/myscript/analyzer/package-summary.html">com.myscript.analyzer</a> that return <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></code></td>
+<td class="colLast"><span class="strong">Analyzer.</span><code><strong><a href="../../../../com/myscript/analyzer/Analyzer.html#getAttachedAt(int)">getAttachedAt</a></strong>(int&nbsp;index)</code>
+<div class="block">Returns the attached <code>EngineObject</code> at the specified index.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../com/myscript/analyzer/package-summary.html">com.myscript.analyzer</a> with parameters of type <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">Analyzer.</span><code><strong><a href="../../../../com/myscript/analyzer/Analyzer.html#attach(com.myscript.engine.EngineObject)">attach</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Attaches the specified <code>EngineObject</code> to this attach target.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">Analyzer.</span><code><strong><a href="../../../../com/myscript/analyzer/Analyzer.html#detach(com.myscript.engine.EngineObject)">detach</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Detaches the specified <code>EngineObject</code> from this attach target.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">Analyzer.</span><code><strong><a href="../../../../com/myscript/analyzer/Analyzer.html#process(com.myscript.engine.EngineObject)">process</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;field)</code>
+<div class="block">Process the target <code>ContentField</code> object.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">Analyzer.</span><code><strong><a href="../../../../com/myscript/analyzer/Analyzer.html#process(com.myscript.engine.EngineObject,%20com.myscript.engine.IProgress)">process</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;field,
+       <a href="../../../../com/myscript/engine/IProgress.html" title="interface in com.myscript.engine">IProgress</a>&nbsp;progress)</code>
+<div class="block">Process the target <code>ContentField</code> object.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="com.myscript.configurationmanager">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a> in <a href="../../../../com/myscript/configurationmanager/package-summary.html">com.myscript.configurationmanager</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subclasses, and an explanation">
+<caption><span>Subclasses of <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a> in <a href="../../../../com/myscript/configurationmanager/package-summary.html">com.myscript.configurationmanager</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/configurationmanager/ConfigurationManager.html" title="class in com.myscript.configurationmanager">ConfigurationManager</a></strong></code>
+<div class="block">The <code>ConfigurationManager</code> class models a configuration manager.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/configurationmanager/Configurer.html" title="class in com.myscript.configurationmanager">Configurer</a></strong></code>
+<div class="block">The <code>Configurer</code> class models a configurer.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../com/myscript/configurationmanager/package-summary.html">com.myscript.configurationmanager</a> that return <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></code></td>
+<td class="colLast"><span class="strong">Configurer.</span><code><strong><a href="../../../../com/myscript/configurationmanager/Configurer.html#getConfigurable()">getConfigurable</a></strong>()</code>
+<div class="block">Returns the configurable object on which this <code>Configurer</code>
+ applies.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../com/myscript/configurationmanager/package-summary.html">com.myscript.configurationmanager</a> with parameters of type <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">ConfigurationManager.</span><code><strong><a href="../../../../com/myscript/configurationmanager/ConfigurationManager.html#configure(java.lang.String,%20java.lang.String,%20com.myscript.engine.EngineObject)">configure</a></strong>(java.lang.String&nbsp;bundleName,
+         java.lang.String&nbsp;configurationName,
+         <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;configurable)</code>
+<div class="block">Configures the specified configurable <code>EngineObject</code> by applying
+ the specified configuration.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../com/myscript/configurationmanager/Configurer.html" title="class in com.myscript.configurationmanager">Configurer</a></code></td>
+<td class="colLast"><span class="strong">ConfigurationManager.</span><code><strong><a href="../../../../com/myscript/configurationmanager/ConfigurationManager.html#createConfigurer(com.myscript.engine.EngineObject)">createConfigurer</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;configurable)</code>
+<div class="block">Creates a <code>Configurer</code> to configure the specified configurable
+ <code>EngineObject</code>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="com.myscript.document">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a> in <a href="../../../../com/myscript/document/package-summary.html">com.myscript.document</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subclasses, and an explanation">
+<caption><span>Subclasses of <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a> in <a href="../../../../com/myscript/document/package-summary.html">com.myscript.document</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/document/Content.html" title="class in com.myscript.document">Content</a></strong></code>
+<div class="block">Represents the content (the invisible part) of a document page.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/document/ContentField.html" title="class in com.myscript.document">ContentField</a></strong></code>
+<div class="block">Represents a field as part of the content of a page.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/document/ContentProcessor.html" title="class in com.myscript.document">ContentProcessor</a></strong></code>
+<div class="block">The <code>ContentProcessor</code> class models a content processor.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/document/ContentProcessorListener.html" title="class in com.myscript.document">ContentProcessorListener</a></strong></code>
+<div class="block">The <code>ContentProcessorListener</code> is the abstract base class that
+ models an object that will receive notification of changes that occur on an
+ <code>ContentProcessor</code> object.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/document/Document.html" title="class in com.myscript.document">Document</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/document/DocumentFinder.html" title="class in com.myscript.document">DocumentFinder</a></strong></code>
+<div class="block">The <code>DocumentFinder</code> class allows background processing of
+ MyScript InkSearch queries through a document.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/document/DocumentFindOccurrenceIterator.html" title="class in com.myscript.document">DocumentFindOccurrenceIterator</a></strong></code>
+<div class="block">Represents an iterator over the occurrences of a find result.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/document/DocumentFindResult.html" title="class in com.myscript.document">DocumentFindResult</a></strong></code>
+<div class="block">Represents the result of a find process through the
+ <code>DocumentFinder</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/document/FontIterator.html" title="class in com.myscript.document">FontIterator</a></strong></code>
+<div class="block">Represents an iterator over the fonts of a layout.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/document/GuideIterator.html" title="class in com.myscript.document">GuideIterator</a></strong></code>
+<div class="block">Represents an iterator over a list of guides.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/document/LayerIterator.html" title="class in com.myscript.document">LayerIterator</a></strong></code>
+<div class="block">Represents an iterator over the layers of a layout.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/document/Layout.html" title="class in com.myscript.document">Layout</a></strong></code>
+<div class="block">Represents the layout of a document page.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/document/LayoutItemIterator.html" title="class in com.myscript.document">LayoutItemIterator</a></strong></code>
+<div class="block">Represents an iterator over a sequence of layout items.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/document/ObjectIterator.html" title="class in com.myscript.document">ObjectIterator</a></strong></code>
+<div class="block">Represents an iterator over the objects of a document.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/document/Page.html" title="class in com.myscript.document">Page</a></strong></code>
+<div class="block">Represents a page as part of a <code>Document</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/document/PageChangeSet.html" title="class in com.myscript.document">PageChangeSet</a></strong></code>
+<div class="block">The <code>PageChangeSet</code> class models a page change set.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/document/PageSelection.html" title="class in com.myscript.document">PageSelection</a></strong></code>
+<div class="block">Represents a selection over a document page's layout.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/document/PageUpdateListener.html" title="class in com.myscript.document">PageUpdateListener</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/document/PenIterator.html" title="class in com.myscript.document">PenIterator</a></strong></code>
+<div class="block">Represents an iterator over the pens of a layout.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/document/TextInspector.html" title="class in com.myscript.document">TextInspector</a></strong></code>
+<div class="block">The <code>TextInspector</code> class models a tool meant to make it easier to
+ access, select and manipulate the text recognition result associated with a
+ page.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/document/TextInterval.html" title="class in com.myscript.document">TextInterval</a></strong></code>
+<div class="block">The <code>TextInspector</code> class models a portion of recognized text.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/document/TypesetData.html" title="class in com.myscript.document">TypesetData</a></strong></code>
+<div class="block">The <code>TypesetData</code> class models a typeset data describing the
+ outcome of a typeset operation.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/document/TypesetItem.html" title="class in com.myscript.document">TypesetItem</a></strong></code>
+<div class="block">The <code>TypesetItem</code> class models a glyph or primitive generated from
+ recognition results, that will replace a given portion of ink when the
+ associated typeset data is applied.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../com/myscript/document/package-summary.html">com.myscript.document</a> that return <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></code></td>
+<td class="colLast"><span class="strong">ContentField.</span><code><strong><a href="../../../../com/myscript/document/ContentField.html#getResult()">getResult</a></strong>()</code>
+<div class="block">Returns the result of this content field.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../com/myscript/document/package-summary.html">com.myscript.document</a> with parameters of type <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../com/myscript/ink/InkSegment.html" title="class in com.myscript.ink">InkSegment</a></code></td>
+<td class="colLast"><span class="strong">Page.</span><code><strong><a href="../../../../com/myscript/document/Page.html#getInkSegmentForObject(com.myscript.engine.EngineObject)">getInkSegmentForObject</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Returns the ink segment associated with the specified object.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>long</code></td>
+<td class="colLast"><span class="strong">Page.</span><code><strong><a href="../../../../com/myscript/document/Page.html#getInkTagIdForObject(com.myscript.engine.EngineObject)">getInkTagIdForObject</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Returns the ink tag id associated with the specified object.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><span class="strong">Page.</span><code><strong><a href="../../../../com/myscript/document/Page.html#isObjectAssociatedWithInkSegment(com.myscript.engine.EngineObject)">isObjectAssociatedWithInkSegment</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Indicates whether an object is associated with a ink portion.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><span class="strong">Page.</span><code><strong><a href="../../../../com/myscript/document/Page.html#isObjectAssociatedWithInkTagId(com.myscript.engine.EngineObject)">isObjectAssociatedWithInkTagId</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Indicates whether an object is associated with a ink portion that is
+ tagged.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">IAsyncCommandHandler.</span><code><strong><a href="../../../../com/myscript/document/IAsyncCommandHandler.html#onCompletion(com.myscript.document.AsyncCommand,%20boolean,%20com.myscript.engine.EngineObject)">onCompletion</a></strong>(<a href="../../../../com/myscript/document/AsyncCommand.html" title="class in com.myscript.document">AsyncCommand</a>&nbsp;cmd,
+            boolean&nbsp;success,
+            <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;result)</code>
+<div class="block">Called upon completion of an asynchronous command of Document or Page.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><span class="strong">ContentProcessorListener.</span><code><strong><a href="../../../../com/myscript/document/ContentProcessorListener.html#onCreated(com.myscript.document.ContentField,%20com.myscript.engine.EngineObject)">onCreated</a></strong>(<a href="../../../../com/myscript/document/ContentField.html" title="class in com.myscript.document">ContentField</a>&nbsp;field,
+         <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;fieldProcessor)</code>
+<div class="block">Called when a content field processor has been created.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">IContentFieldProcessor.</span><code><strong><a href="../../../../com/myscript/document/IContentFieldProcessor.html#process(com.myscript.engine.EngineObject)">process</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;field)</code>
+<div class="block">Process the target <code>ContentField</code> object.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">DocumentFinder.</span><code><strong><a href="../../../../com/myscript/document/DocumentFinder.html#process(com.myscript.engine.EngineObject)">process</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;query)</code>
+<div class="block">Launches a find process with the specified query.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">IContentFieldProcessor.</span><code><strong><a href="../../../../com/myscript/document/IContentFieldProcessor.html#process(com.myscript.engine.EngineObject,%20com.myscript.engine.IProgress)">process</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;field,
+       <a href="../../../../com/myscript/engine/IProgress.html" title="interface in com.myscript.engine">IProgress</a>&nbsp;progress)</code>
+<div class="block">Process the target <code>ContentField</code> object.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">Page.</span><code><strong><a href="../../../../com/myscript/document/Page.html#setMetadata(com.myscript.engine.EngineObject,%20com.myscript.document.IAsyncCommandHandler)">setMetadata</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;metadata,
+           <a href="../../../../com/myscript/document/IAsyncCommandHandler.html" title="interface in com.myscript.document">IAsyncCommandHandler</a>&nbsp;handler)</code>
+<div class="block">Requests setting the metadata object associated with this page.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="com.myscript.engine">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a> in <a href="../../../../com/myscript/engine/package-summary.html">com.myscript.engine</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subclasses, and an explanation">
+<caption><span>Subclasses of <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a> in <a href="../../../../com/myscript/engine/package-summary.html">com.myscript.engine</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/engine/Charset.html" title="class in com.myscript.engine">Charset</a></strong></code>
+<div class="block">The <code>Charset</code> class models the MyScript Engine
+ <code>Charset</code> native type.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/engine/FloatStructuredInput.html" title="class in com.myscript.engine">FloatStructuredInput</a></strong></code>
+<div class="block">The <code>FloatStructuredInput</code> class models a structured input to the
+ MyScript technologies where the parameters are expressed in the
+ <code>float</code> number format.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/engine/HistoryManager.html" title="class in com.myscript.engine">HistoryManager</a></strong></code>
+<div class="block">The <code>HistoryManager</code> class models an object that records the
+ history of changes in another object and allows undo / redo.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/engine/Input.html" title="class in com.myscript.engine">Input</a></strong></code>
+<div class="block">The <code>Input</code> class is the abstract base class of all the
+ MyScript input objects.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/engine/InputCharacter.html" title="class in com.myscript.engine">InputCharacter</a></strong></code>
+<div class="block">The <code>InputCharacter</code> class models the MyScript Engine
+ <code>InputCharacter</code> native type.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/engine/Iterator.html" title="class in com.myscript.engine">Iterator</a></strong></code>
+<div class="block">The <code>Iterator</code> class models an iterator over a MyScript Engine
+ collection.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/engine/StructuredInput.html" title="class in com.myscript.engine">StructuredInput</a></strong></code>
+<div class="block">The <code>StructuredInput</code> class is the abstract base class of all
+ the MyScript structured input objects.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/engine/UserObject.html" title="class in com.myscript.engine">UserObject</a></strong></code>
+<div class="block">The <code>UserObject</code> class is the base class for classes of objects
+ that receive notifications from the native engine.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../com/myscript/engine/package-summary.html">com.myscript.engine</a> that return <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></code></td>
+<td class="colLast"><span class="strong">EngineObject.</span><code><strong><a href="../../../../com/myscript/engine/EngineObject.html#acquire()">acquire</a></strong>()</code>
+<div class="block">Returns a <strong>shallow copy</strong> of this <code>EngineObject</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></code></td>
+<td class="colLast"><span class="strong">IAttachTarget.</span><code><strong><a href="../../../../com/myscript/engine/IAttachTarget.html#getAttachedAt(int)">getAttachedAt</a></strong>(int&nbsp;index)</code>
+<div class="block">Returns the attached <code>EngineObject</code> at the specified index.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></code></td>
+<td class="colLast"><span class="strong">EngineObject.</span><code><strong><a href="../../../../com/myscript/engine/EngineObject.html#load(com.myscript.engine.Engine,%20java.nio.channels.ReadableByteChannel)">load</a></strong>(<a href="../../../../com/myscript/engine/Engine.html" title="class in com.myscript.engine">Engine</a>&nbsp;engine,
+    java.nio.channels.ReadableByteChannel&nbsp;channel)</code>
+<div class="block">Loads a new <code>EngineObject</code> from the specified
+ <code>ReadableByteChannel</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></code></td>
+<td class="colLast"><span class="strong">EngineObject.</span><code><strong><a href="../../../../com/myscript/engine/EngineObject.html#load(com.myscript.engine.Engine,%20java.lang.String)">load</a></strong>(<a href="../../../../com/myscript/engine/Engine.html" title="class in com.myscript.engine">Engine</a>&nbsp;engine,
+    java.lang.String&nbsp;path)</code>
+<div class="block">Loads a new <code>EngineObject</code> object from the specified file path.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></code></td>
+<td class="colLast"><span class="strong">EngineObject.</span><code><strong><a href="../../../../com/myscript/engine/EngineObject.html#load(com.myscript.engine.Engine,%20java.lang.String,%20java.lang.String)">load</a></strong>(<a href="../../../../com/myscript/engine/Engine.html" title="class in com.myscript.engine">Engine</a>&nbsp;engine,
+    java.lang.String&nbsp;path,
+    java.lang.String&nbsp;mediaType)</code>
+<div class="block">Loads a new <code>EngineObject</code> object from the specified file path.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../com/myscript/engine/package-summary.html">com.myscript.engine</a> with parameters of type <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">IAttachTarget.</span><code><strong><a href="../../../../com/myscript/engine/IAttachTarget.html#attach(com.myscript.engine.EngineObject)">attach</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Attaches the specified <code>EngineObject</code> to this attach target.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">IAttachTarget.</span><code><strong><a href="../../../../com/myscript/engine/IAttachTarget.html#detach(com.myscript.engine.EngineObject)">detach</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Detaches the specified <code>EngineObject</code> from this attach target.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><span class="strong">EngineObject.</span><code><strong><a href="../../../../com/myscript/engine/EngineObject.html#isSame(com.myscript.engine.EngineObject)">isSame</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;other)</code>
+<div class="block">Tells if this <code>EngineObject</code> and the specified
+ <code>EngineObject</code> correspond to the same native side MyScript
+ object.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="com.myscript.gesture">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a> in <a href="../../../../com/myscript/gesture/package-summary.html">com.myscript.gesture</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subclasses, and an explanation">
+<caption><span>Subclasses of <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a> in <a href="../../../../com/myscript/gesture/package-summary.html">com.myscript.gesture</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/gesture/GestureHandler.html" title="class in com.myscript.gesture">GestureHandler</a></strong></code>
+<div class="block">The <code>GestureHandler</code> is the abstract base class that models an
+ object that will receive notification of changes that occur on an
+ <code>GestureRecognizer</code> object.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/gesture/GestureRecognizer.html" title="class in com.myscript.gesture">GestureRecognizer</a></strong></code>
+<div class="block">The <code>GestureRecognizer</code> is the abstract base class that models a
+ gesture recognizer.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/gesture/GestureResult.html" title="class in com.myscript.gesture">GestureResult</a></strong></code>
+<div class="block">The <code>GestureResult</code> models a gesture result.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/gesture/GestureResults.html" title="class in com.myscript.gesture">GestureResults</a></strong></code>
+<div class="block">The <code>GestureResults</code> models gesture results.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/gesture/InkSampler.html" title="class in com.myscript.gesture">InkSampler</a></strong></code>
+<div class="block">The <code>InkSampler</code> is the abstract base class that models an ink
+ sampler.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/gesture/InkSamplerListener.html" title="class in com.myscript.gesture">InkSamplerListener</a></strong></code>
+<div class="block">The <code>InkSamplerListener</code> is the abstract base class that models an
+ object that will receive notification of changes that occur on an
+ <code>InkSampler</code> object.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../com/myscript/gesture/package-summary.html">com.myscript.gesture</a> that return <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></code></td>
+<td class="colLast"><span class="strong">GestureResult.</span><code><strong><a href="../../../../com/myscript/gesture/GestureResult.html#getAfterSelection()">getAfterSelection</a></strong>()</code>
+<div class="block">Returns the after selection of this <code>GestureResult</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></code></td>
+<td class="colLast"><span class="strong">GestureResult.</span><code><strong><a href="../../../../com/myscript/gesture/GestureResult.html#getBeforeSelection()">getBeforeSelection</a></strong>()</code>
+<div class="block">Returns the before selection of this <code>GestureResult</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></code></td>
+<td class="colLast"><span class="strong">GestureResult.</span><code><strong><a href="../../../../com/myscript/gesture/GestureResult.html#getSelection()">getSelection</a></strong>()</code>
+<div class="block">Returns the selection associated to this <code>GestureResult</code>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="com.myscript.ink">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a> in <a href="../../../../com/myscript/ink/package-summary.html">com.myscript.ink</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subclasses, and an explanation">
+<caption><span>Subclasses of <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a> in <a href="../../../../com/myscript/ink/package-summary.html">com.myscript.ink</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/ink/ArcPrimitive.html" title="class in com.myscript.ink">ArcPrimitive</a></strong></code>
+<div class="block">Represents an elliptic arc primitive stored as a digital ink stroke.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/ink/Glyph.html" title="class in com.myscript.ink">Glyph</a></strong></code>
+<div class="block">Represents a glyph stored as a digital ink stroke.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/ink/Ink.html" title="class in com.myscript.ink">Ink</a></strong></code>
+<div class="block">Represents digital ink.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/ink/InkIntervals.html" title="class in com.myscript.ink">InkIntervals</a></strong></code>
+<div class="block">Represents a union of disjoint intervals on the ink cursor line.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/ink/InkSegment.html" title="class in com.myscript.ink">InkSegment</a></strong></code>
+<div class="block">Represents a portion of digital ink as a union of disjoint intervals on the
+ ink cursor line.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/ink/InkSelection.html" title="class in com.myscript.ink">InkSelection</a></strong></code>
+<div class="block">Represents a selection over an <code>Ink</code> object.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/ink/InkStroke.html" title="class in com.myscript.ink">InkStroke</a></strong></code>
+<div class="block">Represents a digital ink stroke.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/ink/InkStrokeBuilder.html" title="class in com.myscript.ink">InkStrokeBuilder</a></strong></code>
+<div class="block">The <code>InkStrokeBuilder</code> class serves as a factory for creating
+ instances of the <code>InkStroke</code> class.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/ink/InkStrokeFormat.html" title="class in com.myscript.ink">InkStrokeFormat</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/ink/InkStrokeFormatBuilder.html" title="class in com.myscript.ink">InkStrokeFormatBuilder</a></strong></code>
+<div class="block">A <code>InkStrokeFormatBuilder</code> is used to build
+ <code>InkStrokeFormat</code> objects by specifying their properties and then
+ invoking <a href="../../../../com/myscript/ink/InkStrokeFormatBuilder.html#createStrokeFormat()"><code>InkStrokeFormatBuilder.createStrokeFormat()</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/ink/InkTagIterator.html" title="class in com.myscript.ink">InkTagIterator</a></strong></code>
+<div class="block">Represents a iterator over a set of ink tags.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/ink/InkUpdateListener.html" title="class in com.myscript.ink">InkUpdateListener</a></strong></code>
+<div class="block">The <code>InkUpdateListener</code> class models an object that will receive
+ notification of changes that occur on an <code>Ink</code> object.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/ink/LinePrimitive.html" title="class in com.myscript.ink">LinePrimitive</a></strong></code>
+<div class="block">Represents a line primitive stored as a digital ink stroke.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/ink/SelectionChangeListener.html" title="class in com.myscript.ink">SelectionChangeListener</a></strong></code>
+<div class="block">The <code>SelectionChangeListener</code> class models an object that will
+ receive notification of changes that occur on an <code>ISelection</code>
+ object.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../com/myscript/ink/package-summary.html">com.myscript.ink</a> that return <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></code></td>
+<td class="colLast"><span class="strong">InkTagIterator.</span><code><strong><a href="../../../../com/myscript/ink/InkTagIterator.html#getData()">getData</a></strong>()</code>
+<div class="block">Retrieves the data associated with the tag at the current position in the
+ iteration.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../com/myscript/ink/package-summary.html">com.myscript.ink</a> with parameters of type <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>long</code></td>
+<td class="colLast"><span class="strong">Ink.</span><code><strong><a href="../../../../com/myscript/ink/Ink.html#addTag(java.lang.String,%20com.myscript.ink.InkIntervals,%20com.myscript.engine.EngineObject)">addTag</a></strong>(java.lang.String&nbsp;name,
+      <a href="../../../../com/myscript/ink/InkIntervals.html" title="class in com.myscript.ink">InkIntervals</a>&nbsp;intervals,
+      <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;data)</code>
+<div class="block">Adds a new tag to this ink.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">InkTagIterator.</span><code><strong><a href="../../../../com/myscript/ink/InkTagIterator.html#setData(com.myscript.engine.EngineObject)">setData</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;data)</code>
+<div class="block">Sets the data associated with the tag at the current position in the
+ iteration.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">Ink.</span><code><strong><a href="../../../../com/myscript/ink/Ink.html#updateTag(long,%20com.myscript.ink.InkIntervals,%20com.myscript.engine.EngineObject)">updateTag</a></strong>(long&nbsp;tagId,
+         <a href="../../../../com/myscript/ink/InkIntervals.html" title="class in com.myscript.ink">InkIntervals</a>&nbsp;newIntervals,
+         <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;newData)</code>
+<div class="block">Updates a tag from this ink.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="com.myscript.inksearch">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a> in <a href="../../../../com/myscript/inksearch/package-summary.html">com.myscript.inksearch</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subclasses, and an explanation">
+<caption><span>Subclasses of <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a> in <a href="../../../../com/myscript/inksearch/package-summary.html">com.myscript.inksearch</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/inksearch/AndNotQuery.html" title="class in com.myscript.inksearch">AndNotQuery</a></strong></code>
+<div class="block">The <code>AndNotQuery</code> class models query that does a logical
+ <strong>AND NOT</strong> operation between two <code>Query</code> objects.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/inksearch/AndQuery.html" title="class in com.myscript.inksearch">AndQuery</a></strong></code>
+<div class="block">The <code>AndQuery</code> class models query that does a logical
+ <strong>AND</strong> operation between two <code>Query</code> objects.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/inksearch/Finder.html" title="class in com.myscript.inksearch">Finder</a></strong></code>
+<div class="block">The <code>Finder</code> class models the MyScript InkSearch Finder type that
+ allows you to perform search requests on indexed digital ink samples.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/inksearch/FindResult.html" title="class in com.myscript.inksearch">FindResult</a></strong></code>
+<div class="block">The <code>FindResult</code> class models the result of a search query.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/inksearch/Index.html" title="class in com.myscript.inksearch">Index</a></strong></code>
+<div class="block">The <code>Index</code> class models the MyScript InkSearch index type.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/inksearch/Indexer.html" title="class in com.myscript.inksearch">Indexer</a></strong></code>
+<div class="block">The <code>Indexer</code> class is the abstract base class for all the
+ MyScript InkSearch indexing handwriting context entities.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/inksearch/NearQuery.html" title="class in com.myscript.inksearch">NearQuery</a></strong></code>
+<div class="block">The <code>NearQuery</code> class models query that does a logical
+ <strong>AND</strong> operation between two <code>Query</code> objects and
+ also introduces a notion of proximity.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/inksearch/OccurrenceCharacterIterator.html" title="class in com.myscript.inksearch">OccurrenceCharacterIterator</a></strong></code>
+<div class="block">The <code>OccurrenceCharacterIterator</code> class models an iterator over
+ the characters of the label of a search occurrence.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/inksearch/OccurrenceIterator.html" title="class in com.myscript.inksearch">OccurrenceIterator</a></strong></code>
+<div class="block">The <code>OccurrenceIterator</code> class models an iterator over the
+ occurences of a <code>FindResult</code> object.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/inksearch/OrQuery.html" title="class in com.myscript.inksearch">OrQuery</a></strong></code>
+<div class="block">The <code>OrQuery</code> class models query that does a logical
+ <strong>OR</strong> operation between two <code>Query</code> objects.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/inksearch/Query.html" title="class in com.myscript.inksearch">Query</a></strong></code>
+<div class="block">The <code>Query</code> class is the abstract base class for all the kind of
+ MyScript InkSearch queries.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/inksearch/StringQuery.html" title="class in com.myscript.inksearch">StringQuery</a></strong></code>
+<div class="block">The <code>StringQuery</code> class models a query that allows the user
+ to search all the occurrences that match a specified character string.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/inksearch/StructuredInputIndexer.html" title="class in com.myscript.inksearch">StructuredInputIndexer</a></strong></code>
+<div class="block">The <code>StructuredInputIndexer</code> class models an handwriting indexer
+ fueled by a structured input.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/inksearch/StructuredInputSlimIndexer.html" title="class in com.myscript.inksearch">StructuredInputSlimIndexer</a></strong></code>
+<div class="block">The <code>StructuredInputSlimIndexer</code> class models a slim handwriting
+ indexer fueled by a structured input.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/inksearch/TextIndexer.html" title="class in com.myscript.inksearch">TextIndexer</a></strong></code>
+<div class="block">The <code>TextIndexer</code> class models an handwriting indexer that
+ processes MyScript document content fields instead of the legacy input.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/inksearch/VocabularyQuery.html" title="class in com.myscript.inksearch">VocabularyQuery</a></strong></code>
+<div class="block">The <code>VocabularyQuery</code> class models a query that allows the user
+ to search all the occurrences that matches the content of a specified
+ <code>Vocabulary</code> resource object.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../com/myscript/inksearch/package-summary.html">com.myscript.inksearch</a> that return <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></code></td>
+<td class="colLast"><span class="strong">TextIndexer.</span><code><strong><a href="../../../../com/myscript/inksearch/TextIndexer.html#getAttachedAt(int)">getAttachedAt</a></strong>(int&nbsp;index)</code>
+<div class="block">Returns the attached <code>EngineObject</code> at the specified index.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></code></td>
+<td class="colLast"><span class="strong">Finder.</span><code><strong><a href="../../../../com/myscript/inksearch/Finder.html#getAttachedAt(int)">getAttachedAt</a></strong>(int&nbsp;index)</code>
+<div class="block">Returns the attached <code>EngineObject</code> at the specified index.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../com/myscript/inksearch/package-summary.html">com.myscript.inksearch</a> with parameters of type <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">TextIndexer.</span><code><strong><a href="../../../../com/myscript/inksearch/TextIndexer.html#attach(com.myscript.engine.EngineObject)">attach</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Attaches the specified <code>EngineObject</code> to this attach target.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">Finder.</span><code><strong><a href="../../../../com/myscript/inksearch/Finder.html#attach(com.myscript.engine.EngineObject)">attach</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Attaches the specified <code>EngineObject</code> to this attach target.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">TextIndexer.</span><code><strong><a href="../../../../com/myscript/inksearch/TextIndexer.html#detach(com.myscript.engine.EngineObject)">detach</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Detaches the specified <code>EngineObject</code> from this attach target.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">Finder.</span><code><strong><a href="../../../../com/myscript/inksearch/Finder.html#detach(com.myscript.engine.EngineObject)">detach</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Detaches the specified <code>EngineObject</code> from this attach target.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">TextIndexer.</span><code><strong><a href="../../../../com/myscript/inksearch/TextIndexer.html#process(com.myscript.engine.EngineObject)">process</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;field)</code>
+<div class="block">Process the target <code>ContentField</code> object.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">TextIndexer.</span><code><strong><a href="../../../../com/myscript/inksearch/TextIndexer.html#process(com.myscript.engine.EngineObject,%20com.myscript.engine.IProgress)">process</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;field,
+       <a href="../../../../com/myscript/engine/IProgress.html" title="interface in com.myscript.engine">IProgress</a>&nbsp;progress)</code>
+<div class="block">Process the target <code>ContentField</code> object.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="com.myscript.json">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a> in <a href="../../../../com/myscript/json/package-summary.html">com.myscript.json</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subclasses, and an explanation">
+<caption><span>Subclasses of <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a> in <a href="../../../../com/myscript/json/package-summary.html">com.myscript.json</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/json/Json.html" title="class in com.myscript.json">Json</a></strong></code>
+<div class="block">Represents a JSON value.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/json/JsonObjectIterator.html" title="class in com.myscript.json">JsonObjectIterator</a></strong></code>
+<div class="block">Represents an iterator over the entries of a JSON object.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="com.myscript.keyboard">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a> in <a href="../../../../com/myscript/keyboard/package-summary.html">com.myscript.keyboard</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subclasses, and an explanation">
+<caption><span>Subclasses of <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a> in <a href="../../../../com/myscript/keyboard/package-summary.html">com.myscript.keyboard</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/keyboard/KeyboardInput.html" title="class in com.myscript.keyboard">KeyboardInput</a></strong></code>
+<div class="block">The <code>KeyboardInput</code> class models a keyboard input.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/keyboard/KeyboardLayout.html" title="class in com.myscript.keyboard">KeyboardLayout</a></strong></code>
+<div class="block">The <code>KeyboardLayout</code> class models a keyboard layout.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="com.myscript.math">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a> in <a href="../../../../com/myscript/math/package-summary.html">com.myscript.math</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subclasses, and an explanation">
+<caption><span>Subclasses of <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a> in <a href="../../../../com/myscript/math/package-summary.html">com.myscript.math</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/math/MathAlphabetKnowledge.html" title="class in com.myscript.math">MathAlphabetKnowledge</a></strong></code>
+<div class="block">The <code>MathAlphabetKnowledge</code> class models the list of
+ characters and mathematical symbols that can be written in an math.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/math/MathBorderNode.html" title="class in com.myscript.math">MathBorderNode</a></strong></code>
+<div class="block">The <code>MathBorderNode</code> class models a border in a table.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/math/MathCellNode.html" title="class in com.myscript.math">MathCellNode</a></strong></code>
+<div class="block">The <code>MathCellNode</code> class models a cell in a table.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/math/MathDocument.html" title="class in com.myscript.math">MathDocument</a></strong></code>
+<div class="block">The <code>MathDocument</code> class models the main math document.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/math/MathGrammar.html" title="class in com.myscript.math">MathGrammar</a></strong></code>
+<div class="block">The <code>MathGrammar</code> class models a grammar used to recognize maths.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/math/MathNode.html" title="class in com.myscript.math">MathNode</a></strong></code>
+<div class="block">The <code>MathNode</code> class is the abstract base class that models
+ all the nodes of an math tree.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/math/MathNonTerminalNode.html" title="class in com.myscript.math">MathNonTerminalNode</a></strong></code>
+<div class="block">The <code>MathNonTerminalNode</code> class models a non terminal node in
+ the math parse tree.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/math/MathRecognizer.html" title="class in com.myscript.math">MathRecognizer</a></strong></code>
+<div class="block">The <code>MathRecognizer</code> class models an math recognizer.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/math/MathRuleNode.html" title="class in com.myscript.math">MathRuleNode</a></strong></code>
+<div class="block">The <code>MathRuleNode</code> class models a rule node in the math
+ parse tree.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/math/MathScratchOut.html" title="class in com.myscript.math">MathScratchOut</a></strong></code>
+<div class="block">The <code>MathScratchOut</code> class models a scratch out gesture.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/math/MathTableNode.html" title="class in com.myscript.math">MathTableNode</a></strong></code>
+<div class="block">The <code>MathTableNode</code> class models a table.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/math/MathTerminalNode.html" title="class in com.myscript.math">MathTerminalNode</a></strong></code>
+<div class="block">The <code>MathTerminalNode</code> class models a terminal node in the
+ math parse tree.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../com/myscript/math/package-summary.html">com.myscript.math</a> that return <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></code></td>
+<td class="colLast"><span class="strong">MathRecognizer.</span><code><strong><a href="../../../../com/myscript/math/MathRecognizer.html#getAttachedAt(int)">getAttachedAt</a></strong>(int&nbsp;index)</code>
+<div class="block">Returns the attached <code>EngineObject</code> at the specified index.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../com/myscript/math/package-summary.html">com.myscript.math</a> with parameters of type <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">MathRecognizer.</span><code><strong><a href="../../../../com/myscript/math/MathRecognizer.html#attach(com.myscript.engine.EngineObject)">attach</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Attaches the specified <code>EngineObject</code> to this attach target.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">MathRecognizer.</span><code><strong><a href="../../../../com/myscript/math/MathRecognizer.html#detach(com.myscript.engine.EngineObject)">detach</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Detaches the specified <code>EngineObject</code> from this attach target.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">MathRecognizer.</span><code><strong><a href="../../../../com/myscript/math/MathRecognizer.html#process(com.myscript.engine.EngineObject)">process</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;field)</code>
+<div class="block">Process the target <code>ContentField</code> object.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">MathRecognizer.</span><code><strong><a href="../../../../com/myscript/math/MathRecognizer.html#process(com.myscript.engine.EngineObject,%20com.myscript.engine.IProgress)">process</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;field,
+       <a href="../../../../com/myscript/engine/IProgress.html" title="interface in com.myscript.engine">IProgress</a>&nbsp;progress)</code>
+<div class="block">Process the target <code>ContentField</code> object.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="com.myscript.music">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a> in <a href="../../../../com/myscript/music/package-summary.html">com.myscript.music</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subclasses, and an explanation">
+<caption><span>Subclasses of <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a> in <a href="../../../../com/myscript/music/package-summary.html">com.myscript.music</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/music/MusicAccidental.html" title="class in com.myscript.music">MusicAccidental</a></strong></code>
+<div class="block">The <code>MusicAccidental</code> class models an accidental written in a
+ <code>MusicDocument</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/music/MusicAlphabetKnowledge.html" title="class in com.myscript.music">MusicAlphabetKnowledge</a></strong></code>
+<div class="block">The <code>MusicAlphabetKnowledge</code> class models the list of musical
+ symbols that can be written in a music document.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/music/MusicAnnotation.html" title="class in com.myscript.music">MusicAnnotation</a></strong></code>
+<div class="block">The <code>MusicAnnotation</code> class models an annotation written in a
+ <code>MusicDocument</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/music/MusicArpeggiate.html" title="class in com.myscript.music">MusicArpeggiate</a></strong></code>
+<div class="block">The <code>MusicArpeggiate</code> class models a chord arpeggiate written in a
+ <code>MusicDocument</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/music/MusicBar.html" title="class in com.myscript.music">MusicBar</a></strong></code>
+<div class="block">The <code>MusicBar</code> class models a bar written in a
+ <code>MusicDocument</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/music/MusicBeam.html" title="class in com.myscript.music">MusicBeam</a></strong></code>
+<div class="block">The <code>MusicBeam</code> class models a beam written in a
+ <code>MusicDocument</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/music/MusicChord.html" title="class in com.myscript.music">MusicChord</a></strong></code>
+<div class="block">The <code>MusicChord</code> class models an chord written in a
+ <code>MusicDocument</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/music/MusicClef.html" title="class in com.myscript.music">MusicClef</a></strong></code>
+<div class="block">The <code>MusicClef</code> class models a clef written in a
+ <code>MusicDocument</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/music/MusicDecoration.html" title="class in com.myscript.music">MusicDecoration</a></strong></code>
+<div class="block">The <code>MusicDecoration</code> class models a decoration written in a
+ <code>MusicDocument</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/music/MusicDocument.html" title="class in com.myscript.music">MusicDocument</a></strong></code>
+<div class="block">The <code>MusicDocument</code> class models the main music document.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/music/MusicDots.html" title="class in com.myscript.music">MusicDots</a></strong></code>
+<div class="block">The <code>MusicDots</code> class models dots written beside a note or a rest
+ in a <code>MusicDocument</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/music/MusicElement.html" title="class in com.myscript.music">MusicElement</a></strong></code>
+<div class="block">The <code>MusicElement</code> is the abstract base class that models the
+ different elements in a recognized <code>MusicDocument</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/music/MusicGrammar.html" title="class in com.myscript.music">MusicGrammar</a></strong></code>
+<div class="block">The <code>MusicGrammar</code> class models a grammar used to recognize music
+ documents.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/music/MusicHead.html" title="class in com.myscript.music">MusicHead</a></strong></code>
+<div class="block">The <code>MusicHead</code> class models a note head written in a
+ <code>MusicDocument</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/music/MusicKeySignature.html" title="class in com.myscript.music">MusicKeySignature</a></strong></code>
+<div class="block">The <code>MusicKeySignature</code> class models a key signature written in a
+ <code>MusicDocument</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/music/MusicLedgerLine.html" title="class in com.myscript.music">MusicLedgerLine</a></strong></code>
+<div class="block">The <code>MusicLedgerLine</code> class models a ledger line written in a
+ <code>MusicDocument</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/music/MusicNote.html" title="class in com.myscript.music">MusicNote</a></strong></code>
+<div class="block">The <code>MusicNote</code> class models an note written in a
+ <code>MusicDocument</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/music/MusicPart.html" title="class in com.myscript.music">MusicPart</a></strong></code>
+<div class="block">The <code>MusicPart</code> class models a part in a music score.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/music/MusicRecognizer.html" title="class in com.myscript.music">MusicRecognizer</a></strong></code>
+<div class="block">The <code>MusicRecognizer</code> class models a music recognizer.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/music/MusicRest.html" title="class in com.myscript.music">MusicRest</a></strong></code>
+<div class="block">The <code>MusicRest</code> class models an rest written in a
+ <code>MusicDocument</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/music/MusicScore.html" title="class in com.myscript.music">MusicScore</a></strong></code>
+<div class="block">The <code>MusicScore</code> class models the interpretation of a
+ <code>MusicDocument</code> into a score.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/music/MusicScratchOut.html" title="class in com.myscript.music">MusicScratchOut</a></strong></code>
+<div class="block">The <code>MusicScratchOut</code> class models a scratch out gesture.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/music/MusicSlur.html" title="class in com.myscript.music">MusicSlur</a></strong></code>
+<div class="block">The <code>MusicSlur</code> class models a slur written in a
+ <code>MusicDocument</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/music/MusicStem.html" title="class in com.myscript.music">MusicStem</a></strong></code>
+<div class="block">The <code>MusicStem</code> class models a note / chord stem written in a
+ <code>MusicDocument</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/music/MusicTie.html" title="class in com.myscript.music">MusicTie</a></strong></code>
+<div class="block">The <code>MusicTie</code> class models a note tie written in a
+ <code>MusicDocument</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/music/MusicTimeSignature.html" title="class in com.myscript.music">MusicTimeSignature</a></strong></code>
+<div class="block">The <code>MusicTimeSignature</code> class models a time signature written in
+ a <code>MusicDocument</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/music/MusicTuplet.html" title="class in com.myscript.music">MusicTuplet</a></strong></code>
+<div class="block">The <code>MusicTuplet</code> class models a tuplet written in a
+ <code>MusicDocument</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/music/MusicTupletBracket.html" title="class in com.myscript.music">MusicTupletBracket</a></strong></code>
+<div class="block">The <code>MusicTupletBracket</code> class models a tuplet bracket written in
+ a <code>MusicDocument</code>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../com/myscript/music/package-summary.html">com.myscript.music</a> that return <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></code></td>
+<td class="colLast"><span class="strong">MusicRecognizer.</span><code><strong><a href="../../../../com/myscript/music/MusicRecognizer.html#getAttachedAt(int)">getAttachedAt</a></strong>(int&nbsp;index)</code>
+<div class="block">Returns the attached <code>EngineObject</code> at the specified index.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../com/myscript/music/package-summary.html">com.myscript.music</a> with parameters of type <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">MusicRecognizer.</span><code><strong><a href="../../../../com/myscript/music/MusicRecognizer.html#attach(com.myscript.engine.EngineObject)">attach</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Attaches the specified <code>EngineObject</code> to this attach target.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">MusicRecognizer.</span><code><strong><a href="../../../../com/myscript/music/MusicRecognizer.html#detach(com.myscript.engine.EngineObject)">detach</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Detaches the specified <code>EngineObject</code> from this attach target.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">MusicRecognizer.</span><code><strong><a href="../../../../com/myscript/music/MusicRecognizer.html#process(com.myscript.engine.EngineObject)">process</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;field)</code>
+<div class="block">Process the target <code>ContentField</code> object.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">MusicRecognizer.</span><code><strong><a href="../../../../com/myscript/music/MusicRecognizer.html#process(com.myscript.engine.EngineObject,%20com.myscript.engine.IProgress)">process</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;field,
+       <a href="../../../../com/myscript/engine/IProgress.html" title="interface in com.myscript.engine">IProgress</a>&nbsp;progress)</code>
+<div class="block">Process the target <code>ContentField</code> object.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="com.myscript.prediction">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a> in <a href="../../../../com/myscript/prediction/package-summary.html">com.myscript.prediction</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subclasses, and an explanation">
+<caption><span>Subclasses of <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a> in <a href="../../../../com/myscript/prediction/package-summary.html">com.myscript.prediction</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/prediction/Predictor.html" title="class in com.myscript.prediction">Predictor</a></strong></code>
+<div class="block">The <code>Predictor</code> class models a runnable object that can perform
+ word completion on a prefix and predict the next word that would be written
+ by the user.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="com.myscript.shape">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a> in <a href="../../../../com/myscript/shape/package-summary.html">com.myscript.shape</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subclasses, and an explanation">
+<caption><span>Subclasses of <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a> in <a href="../../../../com/myscript/shape/package-summary.html">com.myscript.shape</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/shape/ShapeBeautifier.html" title="class in com.myscript.shape">ShapeBeautifier</a></strong></code>
+<div class="block">The <code>ShapeBeautifier</code> class models a shape beautifier working on a
+ <code>ShapeDocument</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/shape/ShapeCandidate.html" title="class in com.myscript.shape">ShapeCandidate</a></strong></code>
+<div class="block">The <code>ShapeCandidate</code> class is the abstract base class for all
+ shape candidates.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/shape/ShapeDecoratedEllipticArc.html" title="class in com.myscript.shape">ShapeDecoratedEllipticArc</a></strong></code>
+<div class="block">The <code>ShapeDecoratedEllipticArc</code> class models a 2D decorated
+ elliptic arc.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/shape/ShapeDecoratedLine.html" title="class in com.myscript.shape">ShapeDecoratedLine</a></strong></code>
+<div class="block">The <code>ShapeDecoratedLine</code> class models a 2D decorated line segment.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/shape/ShapeDocument.html" title="class in com.myscript.shape">ShapeDocument</a></strong></code>
+<div class="block">The <code>ShapeDocument</code> class models the main document.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/shape/ShapeEllipticArc.html" title="class in com.myscript.shape">ShapeEllipticArc</a></strong></code>
+<div class="block">The <code>ShapeEllipticArc</code> class models a 2D elliptic arc.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/shape/ShapeErased.html" title="class in com.myscript.shape">ShapeErased</a></strong></code>
+<div class="block">The <code>ShapeErased</code> class models a portion of ink that has been
+ erased by a scratch out.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/shape/ShapeHistoryManager.html" title="class in com.myscript.shape">ShapeHistoryManager</a></strong></code>
+<div class="block">The <code>ShapeHistoryManager</code> class models an entity that holds the
+ undo/redo history of a <code>ShapeDocument</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/shape/ShapeKnowledge.html" title="class in com.myscript.shape">ShapeKnowledge</a></strong></code>
+<div class="block">The <code>ShapeKnowledge</code> class models the knowledge of the different
+ shapes and their segmentation characteristics for a specific domain.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/shape/ShapeLine.html" title="class in com.myscript.shape">ShapeLine</a></strong></code>
+<div class="block">The <code>ShapeLine</code> class models a 2D line segment.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/shape/ShapeModel.html" title="class in com.myscript.shape">ShapeModel</a></strong></code>
+<div class="block">The <code>ShapeModel</code> class models a kind of shape: triangle, circle,
+ square, etc.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/shape/ShapePrimitive.html" title="class in com.myscript.shape">ShapePrimitive</a></strong></code>
+<div class="block">The <code>ShapePrimitive</code> class is the abstract base class that models
+ all the geometric primitives into which a shape model can be decomposed.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/shape/ShapeRecognized.html" title="class in com.myscript.shape">ShapeRecognized</a></strong></code>
+<div class="block">The <code>ShapeRecognized</code> class models a recognized shape.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/shape/ShapeRecognizer.html" title="class in com.myscript.shape">ShapeRecognizer</a></strong></code>
+<div class="block">The <code>ShapeRecognizer</code> class models a shape recognizer working on a
+ <code>ShapeDocument</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/shape/ShapeRejected.html" title="class in com.myscript.shape">ShapeRejected</a></strong></code>
+<div class="block">The <code>ShapeRejected</code> class models a portion of ink that has been
+ rejected.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/shape/ShapeScratchOut.html" title="class in com.myscript.shape">ShapeScratchOut</a></strong></code>
+<div class="block">The <code>ShapeScratchOut</code> class models a portion of ink that has been
+ identified as scratch out.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/shape/ShapeSegment.html" title="class in com.myscript.shape">ShapeSegment</a></strong></code>
+<div class="block">The <code>ShapeSegment</code> class models a semantic portion of ink.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../com/myscript/shape/package-summary.html">com.myscript.shape</a> that return <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></code></td>
+<td class="colLast"><span class="strong">ShapeRecognizer.</span><code><strong><a href="../../../../com/myscript/shape/ShapeRecognizer.html#getAttachedAt(int)">getAttachedAt</a></strong>(int&nbsp;index)</code>
+<div class="block">Returns the attached <code>EngineObject</code> at the specified index.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></code></td>
+<td class="colLast"><span class="strong">ShapeDocument.</span><code><strong><a href="../../../../com/myscript/shape/ShapeDocument.html#getAttachedAt(int)">getAttachedAt</a></strong>(int&nbsp;index)</code>
+<div class="block">Returns the attached <code>EngineObject</code> at the specified index.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></code></td>
+<td class="colLast"><span class="strong">ShapeBeautifier.</span><code><strong><a href="../../../../com/myscript/shape/ShapeBeautifier.html#getAttachedAt(int)">getAttachedAt</a></strong>(int&nbsp;index)</code>
+<div class="block">Returns the attached <code>EngineObject</code> at the specified index.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../com/myscript/shape/package-summary.html">com.myscript.shape</a> with parameters of type <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">ShapeRecognizer.</span><code><strong><a href="../../../../com/myscript/shape/ShapeRecognizer.html#attach(com.myscript.engine.EngineObject)">attach</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Attaches the specified <code>EngineObject</code> to this attach target.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">ShapeDocument.</span><code><strong><a href="../../../../com/myscript/shape/ShapeDocument.html#attach(com.myscript.engine.EngineObject)">attach</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Attaches the specified <code>EngineObject</code> to this attach target.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">ShapeBeautifier.</span><code><strong><a href="../../../../com/myscript/shape/ShapeBeautifier.html#attach(com.myscript.engine.EngineObject)">attach</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Attaches the specified <code>EngineObject</code> to this attach target.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">ShapeRecognizer.</span><code><strong><a href="../../../../com/myscript/shape/ShapeRecognizer.html#detach(com.myscript.engine.EngineObject)">detach</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Detaches the specified <code>EngineObject</code> from this attach target.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">ShapeDocument.</span><code><strong><a href="../../../../com/myscript/shape/ShapeDocument.html#detach(com.myscript.engine.EngineObject)">detach</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Detaches the specified <code>EngineObject</code> from this attach target.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">ShapeBeautifier.</span><code><strong><a href="../../../../com/myscript/shape/ShapeBeautifier.html#detach(com.myscript.engine.EngineObject)">detach</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Detaches the specified <code>EngineObject</code> from this attach target.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">ShapeRecognizer.</span><code><strong><a href="../../../../com/myscript/shape/ShapeRecognizer.html#process(com.myscript.engine.EngineObject)">process</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;field)</code>
+<div class="block">Process the target <code>ContentField</code> object.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">ShapeBeautifier.</span><code><strong><a href="../../../../com/myscript/shape/ShapeBeautifier.html#process(com.myscript.engine.EngineObject)">process</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;field)</code>
+<div class="block">Process the target <code>ContentField</code> object.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">ShapeRecognizer.</span><code><strong><a href="../../../../com/myscript/shape/ShapeRecognizer.html#process(com.myscript.engine.EngineObject,%20com.myscript.engine.IProgress)">process</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;field,
+       <a href="../../../../com/myscript/engine/IProgress.html" title="interface in com.myscript.engine">IProgress</a>&nbsp;progress)</code>
+<div class="block">Process the target <code>ContentField</code> object.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">ShapeBeautifier.</span><code><strong><a href="../../../../com/myscript/shape/ShapeBeautifier.html#process(com.myscript.engine.EngineObject,%20com.myscript.engine.IProgress)">process</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;field,
+       <a href="../../../../com/myscript/engine/IProgress.html" title="interface in com.myscript.engine">IProgress</a>&nbsp;progress)</code>
+<div class="block">Process the target <code>ContentField</code> object.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="com.myscript.text">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a> in <a href="../../../../com/myscript/text/package-summary.html">com.myscript.text</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subclasses, and an explanation">
+<caption><span>Subclasses of <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a> in <a href="../../../../com/myscript/text/package-summary.html">com.myscript.text</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/text/AlphabetKnowledge.html" title="class in com.myscript.text">AlphabetKnowledge</a></strong></code>
+<div class="block">The <code>AlphabetKnowledge</code> class is the abstract base class that
+ models knowledge of the alphabet and the segmentation characteristics of a
+ specific language.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/text/Archive.html" title="class in com.myscript.text">Archive</a></strong></code>
+<div class="block">The <code>Archive</code> class models the MyScript Handwriting Recognition
+ Archive resource type.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/text/CandidateIterator.html" title="class in com.myscript.text">CandidateIterator</a></strong></code>
+<div class="block">The <code>CandidateIterator</code> class models an iterator over the
+ candidates of a <code>RecognitionResult</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/text/CursiveAlphabetKnowledge.html" title="class in com.myscript.text">CursiveAlphabetKnowledge</a></strong></code>
+<div class="block">The <code>CursiveAlphabetKnowledge</code> class models the MyScript
+ Handwriting Recognition Cursive Alphabet Knowledge resource type.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/text/DigitalInkTagger.html" title="class in com.myscript.text">DigitalInkTagger</a></strong></code>
+<div class="block">The <code>DigitalInkTagger</code> class models an entity capable of
+ annotating pieces of digital ink with semantic tags.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/text/DigitalTextMatcher.html" title="class in com.myscript.text">DigitalTextMatcher</a></strong></code>
+<div class="block">The <code>DigitalTextMatcher</code> class models an entity that is able to
+ tell if some digital text can be recognized by a specified MyScript
+ Handwriting Recognition resource configuration.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/text/Grammar.html" title="class in com.myscript.text">Grammar</a></strong></code>
+<div class="block">The <code>Grammar</code> class models the MyScript Handwriting Recognition
+ Grammar resource type.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/text/HandPrintedAlphabetKnowledge.html" title="class in com.myscript.text">HandPrintedAlphabetKnowledge</a></strong></code>
+<div class="block">The <code>HandPrintedAlphabetKnowledge</code> class models the MyScript
+ Handwriting Recognition Hand Printed Alphabet Knowledge resource type.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/text/HandwritingContext.html" title="class in com.myscript.text">HandwritingContext</a></strong></code>
+<div class="block">The <code>HandwritingContext</code> class models a MyScript technology entity
+ that is able to deal with handwriting.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/text/IsolatedAlphabetKnowledge.html" title="class in com.myscript.text">IsolatedAlphabetKnowledge</a></strong></code>
+<div class="block">The <code>IsolatedAlphabetKnowledge</code> class models the MyScript
+ Handwriting Recognition Isolated Alphabet Knowledge resource type.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/text/LexicalUnit.html" title="class in com.myscript.text">LexicalUnit</a></strong></code>
+<div class="block">The <code>LexicalUnit</code> class models the MyScript Handwriting
+ Recognition Lexical Unit resource type.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/text/Lexicon.html" title="class in com.myscript.text">Lexicon</a></strong></code>
+<div class="block">The <code>Lexicon</code> class models the MyScript Handwriting Recognition
+ Lexicon resource type.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/text/LinguisticKnowledge.html" title="class in com.myscript.text">LinguisticKnowledge</a></strong></code>
+<div class="block">The <code>LinguisticKnowledge</code> class is the abstract base class that
+ models knowledge about the words, phrases or particular semantic units that
+ may exist in a specific language.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/text/LinguisticKnowledgeBuilder.html" title="class in com.myscript.text">LinguisticKnowledgeBuilder</a></strong></code>
+<div class="block">The <code>LinguisticKnowledgeBuilder</code> class models an object capable of
+ building a <code>Resource</code> object containing linguistic knowledge
+ derived from user input.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/text/RecognitionResult.html" title="class in com.myscript.text">RecognitionResult</a></strong></code>
+<div class="block">The <code>RecognitionResult</code> class models the result of a handwriting
+ recognition treatment.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/text/Recognizer.html" title="class in com.myscript.text">Recognizer</a></strong></code>
+<div class="block">The <code>Recognizer</code> class is the abstract base class of all the
+ recognizers provided by the MyScript Handwriting Recognition technology.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/text/Resource.html" title="class in com.myscript.text">Resource</a></strong></code>
+<div class="block">The <code>Resource</code> class is the abstract base class that models
+ knowledge about the various language elements you are recognizing.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/text/SegmentIterator.html" title="class in com.myscript.text">SegmentIterator</a></strong></code>
+<div class="block">The <code>SegmentIterator</code> class models an iterator over the
+ segments; segments are the pieces of input that make up the segmentation
+ of a recognition result candidate.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/text/StructuredInputRecognizer.html" title="class in com.myscript.text">StructuredInputRecognizer</a></strong></code>
+<div class="block">The <code>StructuredInputRecognizer</code> class models a MyScript
+ handwriting recognizer fueled by a structured input.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/text/SubsetKnowledge.html" title="class in com.myscript.text">SubsetKnowledge</a></strong></code>
+<div class="block">The <code>SubsetKnowledge</code> class models the MyScript Handwriting
+ Recognition Subset Knowledge resource type.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/text/TagIterator.html" title="class in com.myscript.text">TagIterator</a></strong></code>
+<div class="block">The <code>TagIterator</code> class models an iterator over tags; tags
+ categorize pieces of input: "this piece of ink corresponds to a text line,
+ this other one corresponds to an erasure, etc".</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/text/TagList.html" title="class in com.myscript.text">TagList</a></strong></code>
+<div class="block">The <code>TagList</code> class models a list of tags.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/text/TextRecognizer.html" title="class in com.myscript.text">TextRecognizer</a></strong></code>
+<div class="block">The <code>TextRecognizer</code> class models a recognizer that processes
+ MyScript document content fields instead of the legacy input.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/text/TextSegmenter.html" title="class in com.myscript.text">TextSegmenter</a></strong></code>
+<div class="block">The <code>TextSegmenter</code> class models a text segmenter that can split
+ sentences into words.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/text/Vocabulary.html" title="class in com.myscript.text">Vocabulary</a></strong></code>
+<div class="block">The <code>Vocabulary</code> class is the abstract base class that models
+ vocabulary level linguistic knowledge given to the recognizer.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/text/WordIterator.html" title="class in com.myscript.text">WordIterator</a></strong></code>
+<div class="block">The <code>WordIterator</code> class models an iterator over the words of a
+ <code>Lexicon</code> object.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../com/myscript/text/package-summary.html">com.myscript.text</a> that return <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></code></td>
+<td class="colLast"><span class="strong">TextSegmenter.</span><code><strong><a href="../../../../com/myscript/text/TextSegmenter.html#getAttachedAt(int)">getAttachedAt</a></strong>(int&nbsp;index)</code>
+<div class="block">Returns the attached <code>EngineObject</code> at the specified index.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></code></td>
+<td class="colLast"><span class="strong">TextRecognizer.</span><code><strong><a href="../../../../com/myscript/text/TextRecognizer.html#getAttachedAt(int)">getAttachedAt</a></strong>(int&nbsp;index)</code>
+<div class="block">Returns the attached <code>EngineObject</code> at the specified index.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></code></td>
+<td class="colLast"><span class="strong">HandwritingContext.</span><code><strong><a href="../../../../com/myscript/text/HandwritingContext.html#getAttachedAt(int)">getAttachedAt</a></strong>(int&nbsp;index)</code>
+<div class="block">Returns the attached <code>EngineObject</code> at the specified index.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></code></td>
+<td class="colLast"><span class="strong">DigitalTextMatcher.</span><code><strong><a href="../../../../com/myscript/text/DigitalTextMatcher.html#getAttachedAt(int)">getAttachedAt</a></strong>(int&nbsp;index)</code>
+<div class="block">Returns the attached <code>EngineObject</code> at the specified index.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></code></td>
+<td class="colLast"><span class="strong">Archive.</span><code><strong><a href="../../../../com/myscript/text/Archive.html#getAttachedAt(int)">getAttachedAt</a></strong>(int&nbsp;index)</code>
+<div class="block">Returns the attached <code>EngineObject</code> at the specified index.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../com/myscript/text/package-summary.html">com.myscript.text</a> with parameters of type <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">TextSegmenter.</span><code><strong><a href="../../../../com/myscript/text/TextSegmenter.html#attach(com.myscript.engine.EngineObject)">attach</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Attaches the specified <code>EngineObject</code> to this attach target.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">TextRecognizer.</span><code><strong><a href="../../../../com/myscript/text/TextRecognizer.html#attach(com.myscript.engine.EngineObject)">attach</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Attaches the specified <code>EngineObject</code> to this attach target.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">HandwritingContext.</span><code><strong><a href="../../../../com/myscript/text/HandwritingContext.html#attach(com.myscript.engine.EngineObject)">attach</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Attaches the specified <code>EngineObject</code> to this attach target.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">DigitalTextMatcher.</span><code><strong><a href="../../../../com/myscript/text/DigitalTextMatcher.html#attach(com.myscript.engine.EngineObject)">attach</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Attaches the specified <code>EngineObject</code> to this attach target.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">Archive.</span><code><strong><a href="../../../../com/myscript/text/Archive.html#attach(com.myscript.engine.EngineObject)">attach</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Attaches the specified <code>EngineObject</code> to this attach target.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">TextSegmenter.</span><code><strong><a href="../../../../com/myscript/text/TextSegmenter.html#detach(com.myscript.engine.EngineObject)">detach</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Detaches the specified <code>EngineObject</code> from this attach target.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">TextRecognizer.</span><code><strong><a href="../../../../com/myscript/text/TextRecognizer.html#detach(com.myscript.engine.EngineObject)">detach</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Detaches the specified <code>EngineObject</code> from this attach target.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">HandwritingContext.</span><code><strong><a href="../../../../com/myscript/text/HandwritingContext.html#detach(com.myscript.engine.EngineObject)">detach</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Detaches the specified <code>EngineObject</code> from this attach target.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">DigitalTextMatcher.</span><code><strong><a href="../../../../com/myscript/text/DigitalTextMatcher.html#detach(com.myscript.engine.EngineObject)">detach</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Detaches the specified <code>EngineObject</code> from this attach target.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">Archive.</span><code><strong><a href="../../../../com/myscript/text/Archive.html#detach(com.myscript.engine.EngineObject)">detach</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Detaches the specified <code>EngineObject</code> from this attach target.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">TextRecognizer.</span><code><strong><a href="../../../../com/myscript/text/TextRecognizer.html#process(com.myscript.engine.EngineObject)">process</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;field)</code>
+<div class="block">Process the target <code>ContentField</code> object.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">TextRecognizer.</span><code><strong><a href="../../../../com/myscript/text/TextRecognizer.html#process(com.myscript.engine.EngineObject,%20com.myscript.engine.IProgress)">process</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;field,
+       <a href="../../../../com/myscript/engine/IProgress.html" title="interface in com.myscript.engine">IProgress</a>&nbsp;progress)</code>
+<div class="block">Process the target <code>ContentField</code> object.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="com.myscript.writeradaptation">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a> in <a href="../../../../com/myscript/writeradaptation/package-summary.html">com.myscript.writeradaptation</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subclasses, and an explanation">
+<caption><span>Subclasses of <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a> in <a href="../../../../com/myscript/writeradaptation/package-summary.html">com.myscript.writeradaptation</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/writeradaptation/WriterAdaptationCollector.html" title="class in com.myscript.writeradaptation">WriterAdaptationCollector</a></strong></code>
+<div class="block">The <code>WriterAdaptationCollector</code> class models a writer adaptation
+ collector.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/writeradaptation/WriterAdaptationProfile.html" title="class in com.myscript.writeradaptation">WriterAdaptationProfile</a></strong></code>
+<div class="block">The <code>WriterAdaptationProfile</code> class models a writer adaptation
+ profile.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/myscript/writeradaptation/WriterAdaptationTrainer.html" title="class in com.myscript.writeradaptation">WriterAdaptationTrainer</a></strong></code>
+<div class="block">The <code>WriterAdaptationTrainer</code> class models a runnable object that
+ can perform a writer adaptation training process.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../com/myscript/writeradaptation/package-summary.html">com.myscript.writeradaptation</a> that return <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></code></td>
+<td class="colLast"><span class="strong">WriterAdaptationTrainer.</span><code><strong><a href="../../../../com/myscript/writeradaptation/WriterAdaptationTrainer.html#getAttachedAt(int)">getAttachedAt</a></strong>(int&nbsp;index)</code>
+<div class="block">Returns the attached <code>EngineObject</code> at the specified index.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></code></td>
+<td class="colLast"><span class="strong">WriterAdaptationCollector.</span><code><strong><a href="../../../../com/myscript/writeradaptation/WriterAdaptationCollector.html#getAttachedAt(int)">getAttachedAt</a></strong>(int&nbsp;index)</code>
+<div class="block">Returns the attached <code>EngineObject</code> at the specified index.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../com/myscript/writeradaptation/package-summary.html">com.myscript.writeradaptation</a> with parameters of type <a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">WriterAdaptationTrainer.</span><code><strong><a href="../../../../com/myscript/writeradaptation/WriterAdaptationTrainer.html#attach(com.myscript.engine.EngineObject)">attach</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Attaches the specified <code>EngineObject</code> to this attach target.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">WriterAdaptationCollector.</span><code><strong><a href="../../../../com/myscript/writeradaptation/WriterAdaptationCollector.html#attach(com.myscript.engine.EngineObject)">attach</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Attaches the specified <code>EngineObject</code> to this attach target.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">WriterAdaptationTrainer.</span><code><strong><a href="../../../../com/myscript/writeradaptation/WriterAdaptationTrainer.html#detach(com.myscript.engine.EngineObject)">detach</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Detaches the specified <code>EngineObject</code> from this attach target.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">WriterAdaptationCollector.</span><code><strong><a href="../../../../com/myscript/writeradaptation/WriterAdaptationCollector.html#detach(com.myscript.engine.EngineObject)">detach</a></strong>(<a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;object)</code>
+<div class="block">Detaches the specified <code>EngineObject</code> from this attach target.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../overview-summary.html">Overview</a></li>
+<li><a href="../package-summary.html">Package</a></li>
+<li><a href="../../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">Class</a></li>
+<li class="navBarCell1Rev">Use</li>
+<li><a href="../package-tree.html">Tree</a></li>
+<li><a href="../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev</li>
+<li>Next</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../index.html?com/myscript/engine/class-use/EngineObject.html" target="_top">Frames</a></li>
+<li><a href="EngineObject.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+</body>
+</html>

@@ -1,0 +1,47 @@
+# Lexical unit chinese: uri
+#
+# 09/02/2005
+# v1.0
+
+element = [0-9a-zA-Z][-_0-9a-zA-Z]*
+
+http / 100 = http://
+ftp / 50 = ftp://
+protocol = {http}|{ftp}
+
+# Suffix
+s1 / 50 = org
+s2 / 45 = com
+s3 / 40 = cn
+s4 / 35 = cc	
+s5 / 30 = net	
+s6 / 25 = tw
+s7 / 20 = hk
+s8 / 15 = ca
+s9 / 0 = [a-zA-Z]([a-zA-Z]([a-zA-Z][a-zA-Z]?)?)?
+
+suffix = {s1}|{s2}|{s3}|{s4}|{s5}|{s6}|{s7}|{s8}|{s9}
+
+# www prefix
+w3Pre / 75 = www\.
+
+domain = ({element}\.)+{suffix}
+
+path1 / 20 = (/{element})*
+perso / 80 = /~{element}(/{element})*
+path / 50 = {path1}|{perso}
+
+e1 / 100 = htm
+e2 / 80 = html
+e3 / 0 = {element}
+extension = {e1}|{e2}|{e3}
+
+f1 / 100 = index
+f2 / 0 = {element}
+file = {f1}|{f2}
+
+target / 100 = /({file}\.{extension})?
+
+uri = ({protocol}{w3Pre}?|{w3Pre}){domain}{path}?{target}?
+
+{uri}

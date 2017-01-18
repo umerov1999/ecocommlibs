@@ -1,0 +1,811 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>VO_MUSIC_I</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="VO_MUSIC_I";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptMusic.h</FONT>
+<BR>
+Enumeration VO_MUSIC_I</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptMusic.h&gt;</CODE>
+<BR>
+<CODE>enum <B>_VO_MUSIC_I</B></CODE>
+</P>
+<P>Lists the MyScript Music interfaces. <P>
+        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Value_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Value Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IMusicDocument">VO_IMusicDocument</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  9050</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voIMusicDocument.html">voIMusicDocument</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IMusicRecognizer">VO_IMusicRecognizer</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  9052</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voIMusicRecognizer.html">voIMusicRecognizer</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IMusicScore">VO_IMusicScore</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voIMusicScore.html">voIMusicScore</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IMusicPart">VO_IMusicPart</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voIMusicPart.html">voIMusicPart</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IMusicElement">VO_IMusicElement</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voIMusicElement.html">voIMusicElement</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IMusicDecoration">VO_IMusicDecoration</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voIMusicDecoration.html">voIMusicDecoration</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IMusicBar">VO_IMusicBar</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voIMusicBar.html">voIMusicBar</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IMusicClef">VO_IMusicClef</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voIMusicClef.html">voIMusicClef</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IMusicAccidental">VO_IMusicAccidental</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voIMusicAccidental.html">voIMusicAccidental</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IMusicKeySignature">VO_IMusicKeySignature</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voIMusicKeySignature.html">voIMusicKeySignature</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IMusicAnnotation">VO_IMusicAnnotation</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voIMusicAnnotation.html">voIMusicAnnotation</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IMusicTimeSignature">VO_IMusicTimeSignature</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voIMusicTimeSignature.html">voIMusicTimeSignature</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IMusicNote">VO_IMusicNote</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voIMusicNote.html">voIMusicNote</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IMusicHead">VO_IMusicHead</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voIMusicHead.html">voIMusicHead</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IMusicStem">VO_IMusicStem</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voIMusicStem.html">voIMusicStem</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IMusicBeam">VO_IMusicBeam</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voIMusicBeam.html">voIMusicBeam</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IMusicDots">VO_IMusicDots</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voIMusicDots.html">voIMusicDots</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IMusicTie">VO_IMusicTie</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voIMusicTie.html">voIMusicTie</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IMusicSlur">VO_IMusicSlur</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voIMusicSlur.html">voIMusicSlur</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IMusicRest">VO_IMusicRest</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voIMusicRest.html">voIMusicRest</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IMusicChord">VO_IMusicChord</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voIMusicChord.html">voIMusicChord</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IMusicScratchOut">VO_IMusicScratchOut</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voIMusicScratchOut.html">voIMusicScratchOut</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IMusicArpeggiate">VO_IMusicArpeggiate</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voIMusicArpeggiate.html">voIMusicArpeggiate</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IMusicTuplet">VO_IMusicTuplet</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voIMusicTuplet.html">voIMusicTuplet</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IMusicTupletBracket">VO_IMusicTupletBracket</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voIMusicTupletBracket.html">voIMusicTupletBracket</A></CODE> interface identifier. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Value_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Value Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="VO_IMusicDocument"></A>
+<H3 class="code">VO_IMusicDocument</H3>
+<PRE>
+<B>VO_IMusicDocument</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voIMusicDocument.html">voIMusicDocument</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voIMusicDocument.html">voIMusicDocument</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IMusicRecognizer"></A>
+<H3 class="code">VO_IMusicRecognizer</H3>
+<PRE>
+<B>VO_IMusicRecognizer</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voIMusicRecognizer.html">voIMusicRecognizer</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voIMusicRecognizer.html">voIMusicRecognizer</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IMusicScore"></A>
+<H3 class="code">VO_IMusicScore</H3>
+<PRE>
+<B>VO_IMusicScore</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voIMusicScore.html">voIMusicScore</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voIMusicScore.html">voIMusicScore</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IMusicPart"></A>
+<H3 class="code">VO_IMusicPart</H3>
+<PRE>
+<B>VO_IMusicPart</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voIMusicPart.html">voIMusicPart</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voIMusicPart.html">voIMusicPart</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IMusicElement"></A>
+<H3 class="code">VO_IMusicElement</H3>
+<PRE>
+<B>VO_IMusicElement</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voIMusicElement.html">voIMusicElement</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voIMusicElement.html">voIMusicElement</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IMusicDecoration"></A>
+<H3 class="code">VO_IMusicDecoration</H3>
+<PRE>
+<B>VO_IMusicDecoration</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voIMusicDecoration.html">voIMusicDecoration</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voIMusicDecoration.html">voIMusicDecoration</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IMusicBar"></A>
+<H3 class="code">VO_IMusicBar</H3>
+<PRE>
+<B>VO_IMusicBar</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voIMusicBar.html">voIMusicBar</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voIMusicBar.html">voIMusicBar</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IMusicClef"></A>
+<H3 class="code">VO_IMusicClef</H3>
+<PRE>
+<B>VO_IMusicClef</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voIMusicClef.html">voIMusicClef</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voIMusicClef.html">voIMusicClef</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IMusicAccidental"></A>
+<H3 class="code">VO_IMusicAccidental</H3>
+<PRE>
+<B>VO_IMusicAccidental</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voIMusicAccidental.html">voIMusicAccidental</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voIMusicAccidental.html">voIMusicAccidental</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IMusicKeySignature"></A>
+<H3 class="code">VO_IMusicKeySignature</H3>
+<PRE>
+<B>VO_IMusicKeySignature</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voIMusicKeySignature.html">voIMusicKeySignature</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voIMusicKeySignature.html">voIMusicKeySignature</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IMusicAnnotation"></A>
+<H3 class="code">VO_IMusicAnnotation</H3>
+<PRE>
+<B>VO_IMusicAnnotation</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voIMusicAnnotation.html">voIMusicAnnotation</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voIMusicAnnotation.html">voIMusicAnnotation</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IMusicTimeSignature"></A>
+<H3 class="code">VO_IMusicTimeSignature</H3>
+<PRE>
+<B>VO_IMusicTimeSignature</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voIMusicTimeSignature.html">voIMusicTimeSignature</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voIMusicTimeSignature.html">voIMusicTimeSignature</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IMusicNote"></A>
+<H3 class="code">VO_IMusicNote</H3>
+<PRE>
+<B>VO_IMusicNote</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voIMusicNote.html">voIMusicNote</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voIMusicNote.html">voIMusicNote</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IMusicHead"></A>
+<H3 class="code">VO_IMusicHead</H3>
+<PRE>
+<B>VO_IMusicHead</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voIMusicHead.html">voIMusicHead</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voIMusicHead.html">voIMusicHead</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IMusicStem"></A>
+<H3 class="code">VO_IMusicStem</H3>
+<PRE>
+<B>VO_IMusicStem</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voIMusicStem.html">voIMusicStem</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voIMusicStem.html">voIMusicStem</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IMusicBeam"></A>
+<H3 class="code">VO_IMusicBeam</H3>
+<PRE>
+<B>VO_IMusicBeam</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voIMusicBeam.html">voIMusicBeam</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voIMusicBeam.html">voIMusicBeam</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IMusicDots"></A>
+<H3 class="code">VO_IMusicDots</H3>
+<PRE>
+<B>VO_IMusicDots</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voIMusicDots.html">voIMusicDots</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voIMusicDots.html">voIMusicDots</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IMusicTie"></A>
+<H3 class="code">VO_IMusicTie</H3>
+<PRE>
+<B>VO_IMusicTie</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voIMusicTie.html">voIMusicTie</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voIMusicTie.html">voIMusicTie</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IMusicSlur"></A>
+<H3 class="code">VO_IMusicSlur</H3>
+<PRE>
+<B>VO_IMusicSlur</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voIMusicSlur.html">voIMusicSlur</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voIMusicSlur.html">voIMusicSlur</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IMusicRest"></A>
+<H3 class="code">VO_IMusicRest</H3>
+<PRE>
+<B>VO_IMusicRest</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voIMusicRest.html">voIMusicRest</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voIMusicRest.html">voIMusicRest</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IMusicChord"></A>
+<H3 class="code">VO_IMusicChord</H3>
+<PRE>
+<B>VO_IMusicChord</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voIMusicChord.html">voIMusicChord</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voIMusicChord.html">voIMusicChord</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IMusicScratchOut"></A>
+<H3 class="code">VO_IMusicScratchOut</H3>
+<PRE>
+<B>VO_IMusicScratchOut</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voIMusicScratchOut.html">voIMusicScratchOut</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voIMusicScratchOut.html">voIMusicScratchOut</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>6.1_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IMusicArpeggiate"></A>
+<H3 class="code">VO_IMusicArpeggiate</H3>
+<PRE>
+<B>VO_IMusicArpeggiate</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voIMusicArpeggiate.html">voIMusicArpeggiate</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voIMusicArpeggiate.html">voIMusicArpeggiate</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>6.3_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IMusicTuplet"></A>
+<H3 class="code">VO_IMusicTuplet</H3>
+<PRE>
+<B>VO_IMusicTuplet</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voIMusicTuplet.html">voIMusicTuplet</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voIMusicTuplet.html">voIMusicTuplet</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>7.0_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IMusicTupletBracket"></A>
+<H3 class="code">VO_IMusicTupletBracket</H3>
+<PRE>
+<B>VO_IMusicTupletBracket</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voIMusicTupletBracket.html">voIMusicTupletBracket</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voIMusicTupletBracket.html">voIMusicTupletBracket</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>7.0_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

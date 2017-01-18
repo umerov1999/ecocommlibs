@@ -1,0 +1,8 @@
+This file does nothing by itself but is associated with a custom build step
+that generates a launcher batch file
+  "$(TargetDir)/$(TargetName).bat".
+This batch file first sets up the PATH variable to include the directory where
+the MyScript Engine DLL is located and then launches the target executable.
+This is necessary for "Win32 * using import lib" configurations because when
+using an import lib instead of the MyScriptEngine dlHelper the library must be
+located somewhere on the executable search path.

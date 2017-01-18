@@ -1,0 +1,63 @@
+@import ludef "defNUL"
+
+d = {NUL}[0-9]
+
+areaCode_fmt1 = {d}{d}{d}
+areaCode_fmt2 = \({d}{d}{d}\)
+areaCode_fmt3 = {areaCode_fmt1}|{areaCode_fmt2}
+
+international = \+?1
+
+# fmt1 :  no separator. If the international prefix is given, area code has to be given
+# 1xxxxxxxxxx
+# xxxxxxxxxx
+# xxxxxxx
+phone_fmt1 = (({international}{areaCode_fmt1})|{areaCode_fmt1})?{d}{d}{d}{d}{d}{d}{d}
+
+# fmt2 : dash as separator
+# 1-xxx-xxx-xxxx
+# xxx-xxx-xxxx
+# xxx-xxxxxxx
+# xxx-xxxx
+phone_fmt2 = (({international}-{areaCode_fmt1}-)|{areaCode_fmt1}-)?{d}{d}{d}-?{d}{d}{d}{d}
+
+# fmt3 : dot as separator
+# xxx\.xxx\.xxxx
+# 1\.xxx\.xxx\.xxxx
+# xxx\.xxxxxxx
+# xxx\.xxxx
+phone_fmt3 = (({international}\.{areaCode_fmt1}\.)|{areaCode_fmt1}\.)?{d}{d}{d}\.?{d}{d}{d}{d}
+
+# fmt4 : space as separator
+# 1 xxx xxx xxxx
+# xxx xxx xxxx
+# xxx xxxxxxx
+# xxx xxxx
+phone_fmt4 = (({international} {areaCode_fmt1} )|{areaCode_fmt1} )?{d}{d}{d} ?{d}{d}{d}{d}
+
+# fmt5 : extension of fmt2
+# xxx xxx-xxxx
+# \(xxx\)-xxx-xxxx
+# \(xxx\)xxx-xxxx
+# \(xxx\) xxx-xxxx
+# \(xxx\) xxxxxxx
+# \(xxx\)xxxxxxx
+# 1-\(xxx\)-xxx-xxxx
+# 1 \(xxx\)-xxx-xxxx
+# 1 \(xxx\) xxx-xxxx
+phone_fmt5a = {international}-{areaCode_fmt2}-{d}{d}{d}-{d}{d}{d}{d}
+phone_fmt5b = {international} {areaCode_fmt2}(-| ){d}{d}{d}-{d}{d}{d}{d}
+phone_fmt5c = {areaCode_fmt2} ?{d}{d}{d}-?{d}{d}{d}{d}
+phone_fmt5d = {areaCode_fmt3}(-| ){d}{d}{d}-{d}{d}{d}{d}
+phone_fmt5 = {phone_fmt5a}|{phone_fmt5b}|{phone_fmt5c}|{phone_fmt5d}
+
+# fmt6 : extension of fmt4
+# \(xxx\) xxxxxxx
+# \(xxx\) xxx xxxx
+# \(xxx\)xxx xxxx
+# \(xxx\)xxxxxxx
+phone_fmt6 = {areaCode_fmt2} ?{d}{d}{d} ?{d}{d}{d}{d}
+
+phone = {phone_fmt1}|{phone_fmt2}|{phone_fmt3}|{phone_fmt4}|{phone_fmt5}|{phone_fmt6}
+
+{phone}

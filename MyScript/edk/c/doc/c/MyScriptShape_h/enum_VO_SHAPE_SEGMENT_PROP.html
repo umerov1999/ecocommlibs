@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>VO_SHAPE_SEGMENT_PROP</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="VO_SHAPE_SEGMENT_PROP";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptShape.h</FONT>
+<BR>
+Enumeration VO_SHAPE_SEGMENT_PROP</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptShape.h&gt;</CODE>
+<BR>
+<CODE>enum <B>_VO_SHAPE_SEGMENT_PROP</B></CODE>
+</P>
+<P> 
+Lists the properties that apply to the instances of the ShapeSegment type.
+   <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptShape_h/enum_VO_SHAPE_T.html#VO_ShapeSegment">VO_ShapeSegment</a>, <a href="../../c/MyScriptShape_h/voShapeSegment.html">voShapeSegment</a>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Value_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Value Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_SHAPE_SEGMENT_FREEZE_RECOGNITION">VO_SHAPE_SEGMENT_FREEZE_RECOGNITION</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  (VO_ShapeSegment &lt;&lt; 16)</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Freezes the recognition process for this segment. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_SHAPE_SEGMENT_FREEZE_BEAUTIFICATION">VO_SHAPE_SEGMENT_FREEZE_BEAUTIFICATION</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Freezes the beautification process for this segment. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Value_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Value Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="VO_SHAPE_SEGMENT_FREEZE_RECOGNITION"></A>
+<H3 class="code">VO_SHAPE_SEGMENT_FREEZE_RECOGNITION</H3>
+<PRE>
+<B>VO_SHAPE_SEGMENT_FREEZE_RECOGNITION</B>
+</PRE>
+<DL>
+<DD>Freezes the recognition process for this segment. <P>
+
+<P> 
+<DL>
+<DT>
+<B>Usage:</B>
+<DD>
+<PRE>bool value;
+voGetProperty(engine, object, VO_SHAPE_SEGMENT_FREEZE_RECOGNITION, &amp;value, sizeof(value));
+voSetProperty(engine, object, VO_SHAPE_SEGMENT_FREEZE_RECOGNITION, &amp;value, sizeof(value));</PRE>
+</DD>
+</DT>
+</DL> 
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_SHAPE_SEGMENT_FREEZE_BEAUTIFICATION"></A>
+<H3 class="code">VO_SHAPE_SEGMENT_FREEZE_BEAUTIFICATION</H3>
+<PRE>
+<B>VO_SHAPE_SEGMENT_FREEZE_BEAUTIFICATION</B>
+</PRE>
+<DL>
+<DD>Freezes the beautification process for this segment. <P>
+
+<P> 
+<DL>
+<DT>
+<B>Usage:</B>
+<DD>
+<PRE>bool value;
+voGetProperty(engine, object, VO_SHAPE_SEGMENT_FREEZE_BEAUTIFICATION, &amp;value, sizeof(value));
+voSetProperty(engine, object, VO_SHAPE_SEGMENT_FREEZE_BEAUTIFICATION, &amp;value, sizeof(value));</PRE>
+</DD>
+</DT>
+</DL> 
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

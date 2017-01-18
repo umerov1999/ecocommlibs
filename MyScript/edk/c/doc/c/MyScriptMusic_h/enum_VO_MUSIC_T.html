@@ -1,0 +1,898 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>VO_MUSIC_T</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="VO_MUSIC_T";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptMusic.h</FONT>
+<BR>
+Enumeration VO_MUSIC_T</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptMusic.h&gt;</CODE>
+<BR>
+<CODE>enum <B>_VO_MUSIC_T</B></CODE>
+</P>
+<P>Lists the MyScript Music types. <P>
+        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Value_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Value Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MusicDocument">VO_MusicDocument</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  9000</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voMusicDocument.html">voMusicDocument</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MusicAlphabetKnowledge">VO_MusicAlphabetKnowledge</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voMusicAlphabetKnowledge.html">voMusicAlphabetKnowledge</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MusicGrammar">VO_MusicGrammar</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voMusicGrammar.html">voMusicGrammar</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MusicRecognizer">VO_MusicRecognizer</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voMusicRecognizer.html">voMusicRecognizer</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MusicScore">VO_MusicScore</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voMusicScore.html">voMusicScore</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MusicPart">VO_MusicPart</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voMusicPart.html">voMusicPart</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MusicElement">VO_MusicElement</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voMusicElement.html">voMusicElement</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MusicDecoration">VO_MusicDecoration</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voMusicDecoration.html">voMusicDecoration</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MusicBar">VO_MusicBar</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voMusicBar.html">voMusicBar</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MusicClef">VO_MusicClef</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voMusicClef.html">voMusicClef</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MusicAccidental">VO_MusicAccidental</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voMusicAccidental.html">voMusicAccidental</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MusicKeySignature">VO_MusicKeySignature</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voMusicKeySignature.html">voMusicKeySignature</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MusicAnnotation">VO_MusicAnnotation</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voMusicAnnotation.html">voMusicAnnotation</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MusicTimeSignature">VO_MusicTimeSignature</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voMusicTimeSignature.html">voMusicTimeSignature</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MusicNote">VO_MusicNote</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voMusicNote.html">voMusicNote</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MusicHead">VO_MusicHead</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voMusicHead.html">voMusicHead</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MusicStem">VO_MusicStem</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voMusicStem.html">voMusicStem</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MusicBeam">VO_MusicBeam</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voMusicBeam.html">voMusicBeam</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MusicDots">VO_MusicDots</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voMusicDots.html">voMusicDots</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MusicTie">VO_MusicTie</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voMusicTie.html">voMusicTie</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MusicSlur">VO_MusicSlur</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voMusicSlur.html">voMusicSlur</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MusicLedgerLine">VO_MusicLedgerLine</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voMusicLedgerLine.html">voMusicLedgerLine</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MusicRest">VO_MusicRest</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voMusicRest.html">voMusicRest</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MusicChord">VO_MusicChord</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voMusicChord.html">voMusicChord</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MusicScratchOut">VO_MusicScratchOut</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voMusicScratchOut.html">voMusicScratchOut</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MusicArpeggiate">VO_MusicArpeggiate</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voMusicArpeggiate.html">voMusicArpeggiate</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MusicTuplet">VO_MusicTuplet</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voMusicTuplet.html">voMusicTuplet</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MusicTupletBracket">VO_MusicTupletBracket</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMusic_h/voMusicTupletBracket.html">voMusicTupletBracket</A></CODE> type identifier. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Value_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Value Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="VO_MusicDocument"></A>
+<H3 class="code">VO_MusicDocument</H3>
+<PRE>
+<B>VO_MusicDocument</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voMusicDocument.html">voMusicDocument</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voMusicDocument.html">voMusicDocument</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MusicAlphabetKnowledge"></A>
+<H3 class="code">VO_MusicAlphabetKnowledge</H3>
+<PRE>
+<B>VO_MusicAlphabetKnowledge</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voMusicAlphabetKnowledge.html">voMusicAlphabetKnowledge</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voMusicAlphabetKnowledge.html">voMusicAlphabetKnowledge</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MusicGrammar"></A>
+<H3 class="code">VO_MusicGrammar</H3>
+<PRE>
+<B>VO_MusicGrammar</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voMusicGrammar.html">voMusicGrammar</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voMusicGrammar.html">voMusicGrammar</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MusicRecognizer"></A>
+<H3 class="code">VO_MusicRecognizer</H3>
+<PRE>
+<B>VO_MusicRecognizer</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voMusicRecognizer.html">voMusicRecognizer</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voMusicRecognizer.html">voMusicRecognizer</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MusicScore"></A>
+<H3 class="code">VO_MusicScore</H3>
+<PRE>
+<B>VO_MusicScore</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voMusicScore.html">voMusicScore</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voMusicScore.html">voMusicScore</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MusicPart"></A>
+<H3 class="code">VO_MusicPart</H3>
+<PRE>
+<B>VO_MusicPart</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voMusicPart.html">voMusicPart</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voMusicPart.html">voMusicPart</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MusicElement"></A>
+<H3 class="code">VO_MusicElement</H3>
+<PRE>
+<B>VO_MusicElement</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voMusicElement.html">voMusicElement</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voMusicElement.html">voMusicElement</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MusicDecoration"></A>
+<H3 class="code">VO_MusicDecoration</H3>
+<PRE>
+<B>VO_MusicDecoration</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voMusicDecoration.html">voMusicDecoration</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voMusicDecoration.html">voMusicDecoration</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MusicBar"></A>
+<H3 class="code">VO_MusicBar</H3>
+<PRE>
+<B>VO_MusicBar</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voMusicBar.html">voMusicBar</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voMusicBar.html">voMusicBar</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MusicClef"></A>
+<H3 class="code">VO_MusicClef</H3>
+<PRE>
+<B>VO_MusicClef</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voMusicClef.html">voMusicClef</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voMusicClef.html">voMusicClef</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MusicAccidental"></A>
+<H3 class="code">VO_MusicAccidental</H3>
+<PRE>
+<B>VO_MusicAccidental</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voMusicAccidental.html">voMusicAccidental</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voMusicAccidental.html">voMusicAccidental</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MusicKeySignature"></A>
+<H3 class="code">VO_MusicKeySignature</H3>
+<PRE>
+<B>VO_MusicKeySignature</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voMusicKeySignature.html">voMusicKeySignature</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voMusicKeySignature.html">voMusicKeySignature</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MusicAnnotation"></A>
+<H3 class="code">VO_MusicAnnotation</H3>
+<PRE>
+<B>VO_MusicAnnotation</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voMusicAnnotation.html">voMusicAnnotation</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voMusicAnnotation.html">voMusicAnnotation</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MusicTimeSignature"></A>
+<H3 class="code">VO_MusicTimeSignature</H3>
+<PRE>
+<B>VO_MusicTimeSignature</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voMusicTimeSignature.html">voMusicTimeSignature</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voMusicTimeSignature.html">voMusicTimeSignature</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MusicNote"></A>
+<H3 class="code">VO_MusicNote</H3>
+<PRE>
+<B>VO_MusicNote</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voMusicNote.html">voMusicNote</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voMusicNote.html">voMusicNote</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MusicHead"></A>
+<H3 class="code">VO_MusicHead</H3>
+<PRE>
+<B>VO_MusicHead</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voMusicHead.html">voMusicHead</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voMusicHead.html">voMusicHead</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MusicStem"></A>
+<H3 class="code">VO_MusicStem</H3>
+<PRE>
+<B>VO_MusicStem</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voMusicStem.html">voMusicStem</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voMusicStem.html">voMusicStem</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MusicBeam"></A>
+<H3 class="code">VO_MusicBeam</H3>
+<PRE>
+<B>VO_MusicBeam</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voMusicBeam.html">voMusicBeam</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voMusicBeam.html">voMusicBeam</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MusicDots"></A>
+<H3 class="code">VO_MusicDots</H3>
+<PRE>
+<B>VO_MusicDots</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voMusicDots.html">voMusicDots</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voMusicDots.html">voMusicDots</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MusicTie"></A>
+<H3 class="code">VO_MusicTie</H3>
+<PRE>
+<B>VO_MusicTie</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voMusicTie.html">voMusicTie</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voMusicTie.html">voMusicTie</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MusicSlur"></A>
+<H3 class="code">VO_MusicSlur</H3>
+<PRE>
+<B>VO_MusicSlur</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voMusicSlur.html">voMusicSlur</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voMusicSlur.html">voMusicSlur</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MusicLedgerLine"></A>
+<H3 class="code">VO_MusicLedgerLine</H3>
+<PRE>
+<B>VO_MusicLedgerLine</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voMusicLedgerLine.html">voMusicLedgerLine</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voMusicLedgerLine.html">voMusicLedgerLine</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MusicRest"></A>
+<H3 class="code">VO_MusicRest</H3>
+<PRE>
+<B>VO_MusicRest</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voMusicRest.html">voMusicRest</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voMusicRest.html">voMusicRest</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MusicChord"></A>
+<H3 class="code">VO_MusicChord</H3>
+<PRE>
+<B>VO_MusicChord</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voMusicChord.html">voMusicChord</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voMusicChord.html">voMusicChord</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MusicScratchOut"></A>
+<H3 class="code">VO_MusicScratchOut</H3>
+<PRE>
+<B>VO_MusicScratchOut</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voMusicScratchOut.html">voMusicScratchOut</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voMusicScratchOut.html">voMusicScratchOut</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>6.1_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MusicArpeggiate"></A>
+<H3 class="code">VO_MusicArpeggiate</H3>
+<PRE>
+<B>VO_MusicArpeggiate</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voMusicArpeggiate.html">voMusicArpeggiate</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voMusicArpeggiate.html">voMusicArpeggiate</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>6.3_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MusicTuplet"></A>
+<H3 class="code">VO_MusicTuplet</H3>
+<PRE>
+<B>VO_MusicTuplet</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voMusicTuplet.html">voMusicTuplet</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voMusicTuplet.html">voMusicTuplet</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>7.0_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MusicTupletBracket"></A>
+<H3 class="code">VO_MusicTupletBracket</H3>
+<PRE>
+<B>VO_MusicTupletBracket</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMusic_h/voMusicTupletBracket.html">voMusicTupletBracket</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMusic_h/voMusicTupletBracket.html">voMusicTupletBracket</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>7.0_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

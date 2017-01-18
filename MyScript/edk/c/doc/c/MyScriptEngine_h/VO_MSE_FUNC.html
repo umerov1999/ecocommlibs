@@ -1,0 +1,2547 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>VO_MSE_FUNC</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="VO_MSE_FUNC";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptEngine.h</FONT>
+<BR>
+Define VO_MSE_FUNC</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptEngine.h&gt;</CODE>
+<BR>
+<CODE>#define VO_MSE_FUNC(type, name, params) VO_MSE_IMPORT type VO_MSE_CALL name params</CODE>
+<HR>
+</P>
+<P>
+<P>
+        
+</P>
+</P>
+<HR>
+<P></P>
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptEngine.h</FONT>
+<BR>
+Function VO_MSE_FUNC</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptEngine.h&gt;</CODE>
+<BR>
+<CODE> <B>VO_MSE_FUNC</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A>, voCreateEngine,(<A href="../../c/std/stdint_h/uint32_t.html">uint32_t</A> version, const <A href="../../c/MyScriptEngine_h/voCertificate.html">voCertificate</A> *certificate, const <A href="../../c/MyScriptEngine_h/voMemoryFunctions.html">voMemoryFunctions</A> *memoryFunctions))</CODE>
+<HR>
+</P>
+<P>Creates a new engine instance. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+version
+</B>
+<DD>
+<parameterdescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<P>must be  <CODE><A href="../../c/MyScriptEngine_h/VO_MSE_VER.html">VO_MSE_VER</A></CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+certificate
+</B>
+<DD>
+<parameterdescription>
+
+<P>the certificate that identifies you as a legitimate MyScript customer. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+memoryFunctions
+</B>
+<DD>
+<parameterdescription>
+
+<P>optional memory functions.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P>the reference to the newly created engine on success, otherwise  <CODE>NULL</CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ENGINE_ERR.html#VO_INVALID_VERSION">VO_INVALID_VERSION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the requested version is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_CERTIFICATE">VO_INVALID_CERTIFICATE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the certificate is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when either the  <CODE>certificate</CODE> or its  <CODE>bytes</CODE> member is  <CODE>NULL</CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_ARGUMENT">VO_INVALID_ARGUMENT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the memory functions are invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_LIMIT_EXCEEDED">VO_LIMIT_EXCEEDED</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when creating the reference to the  <CODE><A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A></CODE> would cause the  <CODE><A href="../../c/MyScriptEngine_h/enum_VO_ENGINE_TPROP.html#VO_ENGINE_COUNT">VO_ENGINE_COUNT</A></CODE> value to exceed the  <CODE><A href="../../c/MyScriptEngine_h/enum_VO_ENGINE_TPROP.html#VO_ENGINE_LIMIT">VO_ENGINE_LIMIT</A></CODE> value.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>See also:</B>
+<DD></DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P></P>
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptEngine.h</FONT>
+<BR>
+Function VO_MSE_FUNC</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptEngine.h&gt;</CODE>
+<BR>
+<CODE> <B>VO_MSE_FUNC</B>(<A href="../../c/std/stdbool_h/bool.html">bool</A>, voDestroyEngine,(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine))</CODE>
+<HR>
+</P>
+<P>Destroys an engine and releases all the objects created with it. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine to be destroyed.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+see . </P>        
+</P>
+</P>
+<HR>
+<P></P>
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptEngine.h</FONT>
+<BR>
+Function VO_MSE_FUNC</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptEngine.h&gt;</CODE>
+<BR>
+<CODE> <B>VO_MSE_FUNC</B>(<A href="../../c/std/stdint_h/int32_t.html">int32_t</A>, voGetError,(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine))</CODE>
+<HR>
+</P>
+<P>Returns the error set by the last function call in the current running thread. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P>the error set by the last function call in the current running thread, or  <CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_ERROR">VO_NO_ERROR</A></CODE> if no error occurred.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Note:</B>
+<DD>
+<P>In order to get error information about errors that have occurred in the  <CODE>voCreateEngine()</CODE> or  <CODE>voDestroyEngine()</CODE> functions, you have to pass  <CODE>NULL</CODE> for the  <CODE>engine</CODE> parameter of this function.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>See also:</B>
+<DD></DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P></P>
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptEngine.h</FONT>
+<BR>
+Function VO_MSE_FUNC</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptEngine.h&gt;</CODE>
+<BR>
+<CODE> <B>VO_MSE_FUNC</B>(void, voSetError,(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> code))</CODE>
+<HR>
+</P>
+<P>Explicitly sets an error for the specified engine. <P>
+
+<P>The error code can be further retrieved via  <CODE>voGetError()</CODE>.</P>
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+code
+</B>
+<DD>
+<parameterdescription>
+
+<P>the error code.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P></P>
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptEngine.h</FONT>
+<BR>
+Function VO_MSE_FUNC</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptEngine.h&gt;</CODE>
+<BR>
+<CODE> <B>VO_MSE_FUNC</B>(const void *, voGetInterface,(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voTypeId.html">voTypeId</A> iface))</CODE>
+<HR>
+</P>
+<P>Returns the functions for the specified interface. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+iface
+</B>
+<DD>
+<parameterdescription>
+
+<P>the identifier of the interface.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P>a pointer to the corresponding interface functions structure on success, otherwise  <CODE>NULL</CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_INTERFACE">VO_NO_SUCH_INTERFACE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the specified interface does not exist. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the specified interface has no functions.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Note:</B>
+<DD>
+<P>This function is not supposed to be used directly, please use the  <CODE>VO_IFACE()</CODE> helper macro instead.</P>
+<P>Invoking an interface function with an instance of a type that does not implement this interface sets the error code to  <CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptEngine_h/VO_IFACE.html">VO_IFACE</a>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P></P>
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptEngine.h</FONT>
+<BR>
+Function VO_MSE_FUNC</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptEngine.h&gt;</CODE>
+<BR>
+<CODE> <B>VO_MSE_FUNC</B>(<A href="../../c/MyScriptEngine_h/voYesNo.html">voYesNo</A>, voImplements,(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voTypeId.html">voTypeId</A> type, <A href="../../c/MyScriptEngine_h/voTypeId.html">voTypeId</A> iface))</CODE>
+<HR>
+</P>
+<P>Answers the question: does the specified type implement the specified interface? <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+type
+</B>
+<DD>
+<parameterdescription>
+
+<P>the identifier of the type. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+iface
+</B>
+<DD>
+<parameterdescription>
+
+<P>the identifier of the interface.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_YES">VO_YES</A></CODE> or  <CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_NO">VO_NO</A></CODE> on success, otherwise  <CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html">VO_ERR</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_TYPE">VO_NO_SUCH_TYPE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the specified type does not exist. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_INTERFACE">VO_NO_SUCH_INTERFACE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the specified interface does not exist. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P></P>
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptEngine.h</FONT>
+<BR>
+Function VO_MSE_FUNC</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptEngine.h&gt;</CODE>
+<BR>
+<CODE> <B>VO_MSE_FUNC</B>(<A href="../../c/MyScriptEngine_h/voYesNo.html">voYesNo</A>, voIsCompatible,(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voTypeId.html">voTypeId</A> type1, <A href="../../c/MyScriptEngine_h/voTypeId.html">voTypeId</A> type2))</CODE>
+<HR>
+</P>
+<P>Answers the question: is  <CODE>type1</CODE> compatible with  <CODE>type2</CODE>? <P>
+
+<P>A type is said to be compatible with another type if it is either the same type or it inherits from the second type.</P>
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+type1
+</B>
+<DD>
+<parameterdescription>
+
+<P>the identifier of the derived type. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+type2
+</B>
+<DD>
+<parameterdescription>
+
+<P>the identifier of the base type.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_YES">VO_YES</A></CODE> or  <CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_NO">VO_NO</A></CODE> on success, otherwise  <CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html">VO_ERR</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_TYPE">VO_NO_SUCH_TYPE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>type1</CODE> or  <CODE>type2</CODE> does not exist. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P></P>
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptEngine.h</FONT>
+<BR>
+Function VO_MSE_FUNC</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptEngine.h&gt;</CODE>
+<BR>
+<CODE> <B>VO_MSE_FUNC</B>(<A href="../../c/std/stdbool_h/bool.html">bool</A>, voGetTypeProperty,(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voTypeId.html">voTypeId</A> type, <A href="../../c/MyScriptEngine_h/voPropId.html">voPropId</A> property, void *value, size_t sizeOfValue))</CODE>
+<HR>
+</P>
+<P>Returns the value of the specified type property. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+type
+</B>
+<DD>
+<parameterdescription>
+
+<P>the identifier of the type (e.g.  <CODE><A href="../../c/MyScriptEngine_h/enum_VO_ENGINE_T.html#VO_Engine">VO_Engine</A></CODE>). </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+property
+</B>
+<DD>
+<parameterdescription>
+
+<P>the identifier of the property (e.g.  <CODE><A href="../../c/MyScriptEngine_h/enum_VO_ENGINE_TPROP.html#VO_MEM_STATS">VO_MEM_STATS</A></CODE>). </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+value
+</B>
+<DD>
+<parameterdescription>
+
+<P>the recipient for the value. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+sizeOfValue
+</B>
+<DD>
+<parameterdescription>
+
+<P>the size of the recipient for the value, in bytes. This parameter is used by the engine to ensure that the recipient you are using has the proper type.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_TYPE">VO_NO_SUCH_TYPE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the specified type does not exist. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_PROPERTY">VO_NO_SUCH_PROPERTY</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the specified property does not exist for the specified type. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_SIZE">VO_INVALID_SIZE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the recipient does not have the proper size. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the given recipient is not writable. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P></P>
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptEngine.h</FONT>
+<BR>
+Function VO_MSE_FUNC</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptEngine.h&gt;</CODE>
+<BR>
+<CODE> <B>VO_MSE_FUNC</B>(<A href="../../c/std/stdbool_h/bool.html">bool</A>, voSetTypeProperty,(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voTypeId.html">voTypeId</A> type, <A href="../../c/MyScriptEngine_h/voPropId.html">voPropId</A> property, const void *value, size_t sizeOfValue))</CODE>
+<HR>
+</P>
+<P>Sets or resets the value of the specified type property. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+type
+</B>
+<DD>
+<parameterdescription>
+
+<P>the identifier of the type (e.g.  <CODE><A href="../../c/MyScriptEngine_h/enum_VO_ENGINE_T.html#VO_Engine">VO_Engine</A></CODE>). </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+property
+</B>
+<DD>
+<parameterdescription>
+
+<P>the identifier of the property (e.g.  <CODE><A href="../../c/MyScriptEngine_h/enum_VO_ENGINE_TPROP.html#VO_MEM_STATS">VO_MEM_STATS</A></CODE>). </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+value
+</B>
+<DD>
+<parameterdescription>
+
+<P>the recipient for the value. Use  <CODE>NULL</CODE> when you want to reset the property to its default value. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+sizeOfValue
+</B>
+<DD>
+<parameterdescription>
+
+<P>the size of the recipient for the value, in bytes. This parameter is used by the engine to ensure that the recipient you are using has the proper type.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_TYPE">VO_NO_SUCH_TYPE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the specified type does not exist. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_PROPERTY">VO_NO_SUCH_PROPERTY</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the specified property does not exist for the specified type. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_READ_ONLY_PROPERTY">VO_READ_ONLY_PROPERTY</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the property is read-only. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_SIZE">VO_INVALID_SIZE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the recipient does not have the proper size. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the given recipient is not readable. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_ARGUMENT">VO_INVALID_ARGUMENT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the given value is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P></P>
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptEngine.h</FONT>
+<BR>
+Function VO_MSE_FUNC</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptEngine.h&gt;</CODE>
+<BR>
+<CODE> <B>VO_MSE_FUNC</B>(<A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A>, voCreateObject,(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voTypeId.html">voTypeId</A> type))</CODE>
+<HR>
+</P>
+<P>Creates a new object of the specified type. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+type
+</B>
+<DD>
+<parameterdescription>
+
+<P>the type of the object to be created.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P>the reference to the newly created object on success, otherwise  <CODE>NULL</CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_TYPE">VO_NO_SUCH_TYPE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the specified type does not exist. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_TYPE_NOT_CONCRETE">VO_TYPE_NOT_CONCRETE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the specified type is not concrete. It may be an abstract type or an interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_CONSTRUCTOR">VO_NO_SUCH_CONSTRUCTOR</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the specified type does not have a default constructor. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_LIMIT_EXCEEDED">VO_LIMIT_EXCEEDED</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the number of instances of the specified type would exceed the allowed limit (please remember that the limit can be shared by several types).</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>See also:</B>
+<DD></DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P></P>
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptEngine.h</FONT>
+<BR>
+Function VO_MSE_FUNC</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptEngine.h&gt;</CODE>
+<BR>
+<CODE> <B>VO_MSE_FUNC</B>(<A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A>, voCreateObjectEx,(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voTypeId.html">voTypeId</A> type, const void *initializer, size_t sizeOfInitializer))</CODE>
+<HR>
+</P>
+<P>Creates a new object of the specified type, initialized with the specified initializer. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+type
+</B>
+<DD>
+<parameterdescription>
+
+<P>the type of the object to be created. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+initializer
+</B>
+<DD>
+<parameterdescription>
+
+<P>a pointer to the initializer. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+sizeOfInitializer
+</B>
+<DD>
+<parameterdescription>
+
+<P>the size of the initializer in bytes.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P>the reference to the newly created object on success, otherwise  <CODE>NULL</CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_TYPE">VO_NO_SUCH_TYPE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the specified type does not exist. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_TYPE_NOT_CONCRETE">VO_TYPE_NOT_CONCRETE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the specified type is not concrete. It may be an abstract type or an interface. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_CONSTRUCTOR">VO_NO_SUCH_CONSTRUCTOR</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the specified type does not have a constructor with the given initializer. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the specified initializer points to an unreadable memory location. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_SIZE">VO_INVALID_SIZE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the specified initializer does not have the proper size. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_LIMIT_EXCEEDED">VO_LIMIT_EXCEEDED</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the number of instances of the specified type would exceed the allowed limit (please remember that the limit can be shared by several types).</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>See also:</B>
+<DD></DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P></P>
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptEngine.h</FONT>
+<BR>
+Function VO_MSE_FUNC</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptEngine.h&gt;</CODE>
+<BR>
+<CODE> <B>VO_MSE_FUNC</B>(<A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A>, voLoadObject,(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voReadFunc.html">voReadFunc</A> readFunc, void *userParam))</CODE>
+<HR>
+</P>
+<P>Loads an object from an application supplied binary data stream. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+readFunc
+</B>
+<DD>
+<parameterdescription>
+
+<P>a pointer to a  <CODE><A href="../../c/MyScriptEngine_h/voReadFunc.html">voReadFunc</A></CODE> function. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+userParam
+</B>
+<DD>
+<parameterdescription>
+
+<P>an optional pointer to a user defined parameter that will be passed back to  <CODE>readFunc</CODE>.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P>the reference to the newly created object on success, otherwise  <CODE>NULL</CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ENGINE_ERR.html#VO_INVALID_CALLBACK">VO_INVALID_CALLBACK</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>readFunc</CODE> is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_PREMATURE_END_OF_DATA">VO_PREMATURE_END_OF_DATA</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the binary data stream does not contain enough data. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_IO_FAILURE">VO_IO_FAILURE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the binary data stream is invalid or corrupted. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_LIMIT_EXCEEDED">VO_LIMIT_EXCEEDED</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the number of instances of the specified type would exceed the allowed limit (please remember that the limit can be shared by several types). </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P></P>
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptEngine.h</FONT>
+<BR>
+Function VO_MSE_FUNC</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptEngine.h&gt;</CODE>
+<BR>
+<CODE> <B>VO_MSE_FUNC</B>(<A href="../../c/std/stdbool_h/bool.html">bool</A>, voStoreObject,(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> object, <A href="../../c/MyScriptEngine_h/voWriteFunc.html">voWriteFunc</A> writeFunc, void *userParam))</CODE>
+<HR>
+</P>
+<P>Stores an object to an application supplied binary data stream. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+object
+</B>
+<DD>
+<parameterdescription>
+
+<P>the object to be stored. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+writeFunc
+</B>
+<DD>
+<parameterdescription>
+
+<P>a pointer to a  <CODE><A href="../../c/MyScriptEngine_h/voWriteFunc.html">voWriteFunc</A></CODE> function. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+userParam
+</B>
+<DD>
+<parameterdescription>
+
+<P>an optional pointer to a user defined parameter that will be passed back to  <CODE>writeFunc</CODE>.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>object</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ENGINE_ERR.html#VO_NOT_COMPILED">VO_NOT_COMPILED</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>object</CODE> implements the  <CODE><A href="../../c/MyScriptEngine_h/voICompilable.html">voICompilable</A></CODE> interface and has to be compiled prior to being stored. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ENGINE_ERR.html#VO_INVALID_CALLBACK">VO_INVALID_CALLBACK</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>writeFunc</CODE> is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_IO_FAILURE">VO_IO_FAILURE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>writeFunc</CODE> did not write the requested number of bytes. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_UNSUPPORTED_SERIALIZATION">VO_UNSUPPORTED_SERIALIZATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>object</CODE> is not serializable. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P></P>
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptEngine.h</FONT>
+<BR>
+Function VO_MSE_FUNC</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptEngine.h&gt;</CODE>
+<BR>
+<CODE> <B>VO_MSE_FUNC</B>(<A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A>, voAcquireObject,(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> object))</CODE>
+<HR>
+</P>
+<P>Returns a new reference to the specified object. <P>
+
+<P>This function is useful in some languages like C++ where you need to be able to design copyable objects.</P>
+<P>
+<DL>
+<DT>
+<B>Example:</B>
+<DD>
+<P>
+<PRE>
+class EngineObject
+{
+public:
+  EngineObject(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voTypeId.html">voTypeId</A> type) : e(engine), o(voCreateObject(engine, type)) {}
+  EngineObject(const EngineObject&amp; rhs) : e(rhs.e), o(voAcquireObject(rhs.e, rhs.o)) {}</PRE>
+</P>
+</DD>
+</DT>
+</DL>
+...</P>
+<P>
+<PRE>  ~EngineObject() { voReleaseObject(e, o); }
+private:
+  <A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> e;
+  <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> o;
+};
+</PRE>
+</P>
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+object
+</B>
+<DD>
+<parameterdescription>
+
+<P>the object to be acquired.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P>a new reference to the specified object on success, otherwise  <CODE>NULL</CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>object</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_LIMIT_EXCEEDED">VO_LIMIT_EXCEEDED</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the number of user references to  <CODE>object</CODE> would exceed  <CODE>65535</CODE>.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>See also:</B>
+<DD></DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P></P>
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptEngine.h</FONT>
+<BR>
+Function VO_MSE_FUNC</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptEngine.h&gt;</CODE>
+<BR>
+<CODE> <B>VO_MSE_FUNC</B>(<A href="../../c/std/stdbool_h/bool.html">bool</A>, voReleaseObject,(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> object))</CODE>
+<HR>
+</P>
+<P>Releases a reference to the specified object. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+object
+</B>
+<DD>
+<parameterdescription>
+
+<P>the object to be released.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>object</CODE> reference is invalid.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>See also:</B>
+<DD></DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P></P>
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptEngine.h</FONT>
+<BR>
+Function VO_MSE_FUNC</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptEngine.h&gt;</CODE>
+<BR>
+<CODE> <B>VO_MSE_FUNC</B>(<A href="../../c/MyScriptEngine_h/voYesNo.html">voYesNo</A>, voIsSame,(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> object1, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> object2))</CODE>
+<HR>
+</P>
+<P>Answers the question: do the two references have the same referee? <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+object1
+</B>
+<DD>
+<parameterdescription>
+
+<P>the first object. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+object2
+</B>
+<DD>
+<parameterdescription>
+
+<P>the second object.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_YES">VO_YES</A></CODE> or  <CODE><A href="../../c/MyScriptEngine_h/enum__voYesNo.html#VO_NO">VO_NO</A></CODE> on success, otherwise  <CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html">VO_ERR</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>object1</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>object2</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P></P>
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptEngine.h</FONT>
+<BR>
+Function VO_MSE_FUNC</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptEngine.h&gt;</CODE>
+<BR>
+<CODE> <B>VO_MSE_FUNC</B>(<A href="../../c/MyScriptEngine_h/voTypeId.html">voTypeId</A>, voGetType,(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> object))</CODE>
+<HR>
+</P>
+<P>Returns the type of the specified object. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+object
+</B>
+<DD>
+<parameterdescription>
+
+<P>the object to be queried.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P>the type of  <CODE>object</CODE> on success, otherwise  <CODE>-1</CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>object</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P></P>
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptEngine.h</FONT>
+<BR>
+Function VO_MSE_FUNC</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptEngine.h&gt;</CODE>
+<BR>
+<CODE> <B>VO_MSE_FUNC</B>(<A href="../../c/std/stdbool_h/bool.html">bool</A>, voGetProperty,(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> object, <A href="../../c/MyScriptEngine_h/voPropId.html">voPropId</A> property, void *value, size_t sizeOfValue))</CODE>
+<HR>
+</P>
+<P>Returns the value of the specified object property. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+object
+</B>
+<DD>
+<parameterdescription>
+
+<P>the object to be queried. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+property
+</B>
+<DD>
+<parameterdescription>
+
+<P>the identifier of the object property. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+value
+</B>
+<DD>
+<parameterdescription>
+
+<P>the recipient for the value. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+sizeOfValue
+</B>
+<DD>
+<parameterdescription>
+
+<P>the size of the recipient for the value, in bytes. This parameter is used by the engine to ensure that the recipient you are using has the proper type.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>object</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_PROPERTY">VO_NO_SUCH_PROPERTY</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the specified property does not exist for the specified object. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_SIZE">VO_INVALID_SIZE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the recipient does not have the proper size. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the given recipient is not writable. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P></P>
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptEngine.h</FONT>
+<BR>
+Function VO_MSE_FUNC</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptEngine.h&gt;</CODE>
+<BR>
+<CODE> <B>VO_MSE_FUNC</B>(<A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A>, voLoadObjectFromFile,(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voCharset.html">voCharset</A> charset, const <A href="../../c/MyScriptEngine_h/voString.html">voString</A> *fileName, const <A href="../../c/MyScriptEngine_h/voString.html">voString</A> *mediaType))</CODE>
+<HR>
+</P>
+<P>Loads an object from the specified file. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+charset
+</B>
+<DD>
+<parameterdescription>
+
+<P>the charset used to encode parameter strings. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+fileName
+</B>
+<DD>
+<parameterdescription>
+
+<P>the name of the file to be loaded. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+mediaType
+</B>
+<DD>
+<parameterdescription>
+
+<P>an optional media type to use. This is useful if the actual mime type can't be derived from the file itself.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P>the reference to the newly created object on success, otherwise  <CODE>NULL</CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>charset</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>charset</CODE> reference is  <CODE>NULL</CODE> and no default charset was set. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OBJECT">VO_INVALID_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>charset</CODE> is not a  <CODE><A href="../../c/MyScriptEngine_h/voCharset.html">voCharset</A></CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>fileName</CODE> or its  <CODE>bytes</CODE> member is not readable. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>mediaType</CODE> or its  <CODE>bytes</CODE> member is not readable. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_PREMATURE_END_OF_DATA">VO_PREMATURE_END_OF_DATA</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the file does not contain enough data. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_IO_FAILURE">VO_IO_FAILURE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the file content is invalid or corrupted. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ENGINE_ERR.html#VO_NO_SUCH_FILE">VO_NO_SUCH_FILE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the file does not exist. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_TYPE">VO_NO_SUCH_TYPE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the media type is not supported, this may be caused by a missing or unauthorized library. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_LIMIT_EXCEEDED">VO_LIMIT_EXCEEDED</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the number of instances of the specified type would exceed the allowed limit (please remember that the limit can be shared by several types). </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P></P>
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptEngine.h</FONT>
+<BR>
+Function VO_MSE_FUNC</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptEngine.h&gt;</CODE>
+<BR>
+<CODE> <B>VO_MSE_FUNC</B>(<A href="../../c/std/stdbool_h/bool.html">bool</A>, voStoreObjectToFile,(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> object, <A href="../../c/MyScriptEngine_h/voCharset.html">voCharset</A> charset, const <A href="../../c/MyScriptEngine_h/voString.html">voString</A> *fileName, const <A href="../../c/MyScriptEngine_h/voString.html">voString</A> *mediaType))</CODE>
+<HR>
+</P>
+<P>Stores an object to the specified file. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+object
+</B>
+<DD>
+<parameterdescription>
+
+<P>the object to be stored. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+charset
+</B>
+<DD>
+<parameterdescription>
+
+<P>the charset used to encode parameter strings. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+fileName
+</B>
+<DD>
+<parameterdescription>
+
+<P>the name of the file to be loaded. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+mediaType
+</B>
+<DD>
+<parameterdescription>
+
+<P>an optional media type to use. This is useful if the actual mime type can't be derived from the file itself.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> on success, otherwise  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Throws:</B>
+<DD>
+<DL>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>engine</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>object</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>charset</CODE> reference is invalid. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when the  <CODE>charset</CODE> reference is  <CODE>NULL</CODE> and no default charset was set. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>fileName</CODE> or its  <CODE>bytes</CODE> member is not readable. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>mediaType</CODE> or its  <CODE>bytes</CODE> member is not readable. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ENGINE_ERR.html#VO_NOT_COMPILED">VO_NOT_COMPILED</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>object</CODE> implements the  <CODE><A href="../../c/MyScriptEngine_h/voICompilable.html">voICompilable</A></CODE> interface and has to be compiled prior to being stored. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_IO_FAILURE">VO_IO_FAILURE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when there was a problem writing the file. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ENGINE_ERR.html#VO_NO_SUCH_FILE">VO_NO_SUCH_FILE</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when a component of the pahtname does not exist. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_UNSUPPORTED_SERIALIZATION">VO_UNSUPPORTED_SERIALIZATION</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>object</CODE> is not serializable. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P></P>
+</BODY>
+</HTML>

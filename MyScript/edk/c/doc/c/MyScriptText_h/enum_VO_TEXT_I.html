@@ -1,0 +1,530 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>VO_TEXT_I</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="VO_TEXT_I";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptText.h</FONT>
+<BR>
+Enumeration VO_TEXT_I</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptText.h&gt;</CODE>
+<BR>
+<CODE>enum <B>_VO_TEXT_I</B></CODE>
+</P>
+<P>Lists the MyScript Text interfaces. <P>
+        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Value_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Value Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ILexicalUnit">VO_ILexicalUnit</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  350</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voILexicalUnit.html">voILexicalUnit</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ILexicon">VO_ILexicon</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voILexicon.html">voILexicon</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ISubsetKnowledge">VO_ISubsetKnowledge</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voISubsetKnowledge.html">voISubsetKnowledge</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IWordIterator">VO_IWordIterator</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voIWordIterator.html">voIWordIterator</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IRecognitionResult">VO_IRecognitionResult</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voIRecognitionResult.html">voIRecognitionResult</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ICandidateIterator">VO_ICandidateIterator</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voICandidateIterator.html">voICandidateIterator</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ISegmentIterator">VO_ISegmentIterator</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voISegmentIterator.html">voISegmentIterator</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IDigitalTextMatcher">VO_IDigitalTextMatcher</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  VO_ISegmentIterator + 2</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voIDigitalTextMatcher.html">voIDigitalTextMatcher</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IAlphabet">VO_IAlphabet</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  400</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voIAlphabet.html">voIAlphabet</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IRecognitionResultProvider">VO_IRecognitionResultProvider</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voIRecognitionResultProvider.html">voIRecognitionResultProvider</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IDigitalInkTagger">VO_IDigitalInkTagger</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  VO_IRecognitionResultProvider + 2</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voIDigitalInkTagger.html">voIDigitalInkTagger</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ITagList">VO_ITagList</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voITagList.html">voITagList</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ITagIterator">VO_ITagIterator</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voITagIterator.html">voITagIterator</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ITextSegmenter">VO_ITextSegmenter</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voITextSegmenter.html">voITextSegmenter</A></CODE> interface type. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ILinguisticKnowledgeBuilder">VO_ILinguisticKnowledgeBuilder</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voILinguisticKnowledgeBuilder.html">voILinguisticKnowledgeBuilder</A></CODE> interface type. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Value_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Value Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="VO_ILexicalUnit"></A>
+<H3 class="code">VO_ILexicalUnit</H3>
+<PRE>
+<B>VO_ILexicalUnit</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voILexicalUnit.html">voILexicalUnit</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voILexicalUnit.html">voILexicalUnit</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ILexicon"></A>
+<H3 class="code">VO_ILexicon</H3>
+<PRE>
+<B>VO_ILexicon</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voILexicon.html">voILexicon</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voILexicon.html">voILexicon</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ISubsetKnowledge"></A>
+<H3 class="code">VO_ISubsetKnowledge</H3>
+<PRE>
+<B>VO_ISubsetKnowledge</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voISubsetKnowledge.html">voISubsetKnowledge</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voISubsetKnowledge.html">voISubsetKnowledge</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IWordIterator"></A>
+<H3 class="code">VO_IWordIterator</H3>
+<PRE>
+<B>VO_IWordIterator</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voIWordIterator.html">voIWordIterator</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voIWordIterator.html">voIWordIterator</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IRecognitionResult"></A>
+<H3 class="code">VO_IRecognitionResult</H3>
+<PRE>
+<B>VO_IRecognitionResult</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voIRecognitionResult.html">voIRecognitionResult</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voIRecognitionResult.html">voIRecognitionResult</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ICandidateIterator"></A>
+<H3 class="code">VO_ICandidateIterator</H3>
+<PRE>
+<B>VO_ICandidateIterator</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voICandidateIterator.html">voICandidateIterator</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voICandidateIterator.html">voICandidateIterator</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ISegmentIterator"></A>
+<H3 class="code">VO_ISegmentIterator</H3>
+<PRE>
+<B>VO_ISegmentIterator</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voISegmentIterator.html">voISegmentIterator</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voISegmentIterator.html">voISegmentIterator</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IDigitalTextMatcher"></A>
+<H3 class="code">VO_IDigitalTextMatcher</H3>
+<PRE>
+<B>VO_IDigitalTextMatcher</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voIDigitalTextMatcher.html">voIDigitalTextMatcher</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voIDigitalTextMatcher.html">voIDigitalTextMatcher</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IAlphabet"></A>
+<H3 class="code">VO_IAlphabet</H3>
+<PRE>
+<B>VO_IAlphabet</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voIAlphabet.html">voIAlphabet</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voIAlphabet.html">voIAlphabet</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IRecognitionResultProvider"></A>
+<H3 class="code">VO_IRecognitionResultProvider</H3>
+<PRE>
+<B>VO_IRecognitionResultProvider</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voIRecognitionResultProvider.html">voIRecognitionResultProvider</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voIRecognitionResultProvider.html">voIRecognitionResultProvider</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IDigitalInkTagger"></A>
+<H3 class="code">VO_IDigitalInkTagger</H3>
+<PRE>
+<B>VO_IDigitalInkTagger</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voIDigitalInkTagger.html">voIDigitalInkTagger</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voIDigitalInkTagger.html">voIDigitalInkTagger</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>4.4_4 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ITagList"></A>
+<H3 class="code">VO_ITagList</H3>
+<PRE>
+<B>VO_ITagList</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voITagList.html">voITagList</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voITagList.html">voITagList</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>4.4_4 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ITagIterator"></A>
+<H3 class="code">VO_ITagIterator</H3>
+<PRE>
+<B>VO_ITagIterator</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voITagIterator.html">voITagIterator</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voITagIterator.html">voITagIterator</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>4.4_4 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ITextSegmenter"></A>
+<H3 class="code">VO_ITextSegmenter</H3>
+<PRE>
+<B>VO_ITextSegmenter</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voITextSegmenter.html">voITextSegmenter</A></CODE> interface type. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voITextSegmenter.html">voITextSegmenter</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>7.4_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ILinguisticKnowledgeBuilder"></A>
+<H3 class="code">VO_ILinguisticKnowledgeBuilder</H3>
+<PRE>
+<B>VO_ILinguisticKnowledgeBuilder</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voILinguisticKnowledgeBuilder.html">voILinguisticKnowledgeBuilder</A></CODE> interface type. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voILinguisticKnowledgeBuilder.html">voILinguisticKnowledgeBuilder</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>7.4_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

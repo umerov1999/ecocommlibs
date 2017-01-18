@@ -1,0 +1,340 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>VO_ENGINE_T</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="VO_ENGINE_T";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptEngine.h</FONT>
+<BR>
+Enumeration VO_ENGINE_T</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptEngine.h&gt;</CODE>
+<BR>
+<CODE>enum <B>_VO_ENGINE_T</B></CODE>
+</P>
+<P>Lists the MyScript Engine types. <P>
+        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Value_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Value Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_Engine">VO_Engine</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_EngineObject">VO_EngineObject</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  4</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_Iterator">VO_Iterator</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  8</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptEngine_h/voIterator.html">voIterator</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_Charset">VO_Charset</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  101</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptEngine_h/voCharset.html">voCharset</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_Input">VO_Input</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptEngine_h/voInput.html">voInput</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_StructuredInput">VO_StructuredInput</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  107</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptEngine_h/voStructuredInput.html">voStructuredInput</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_FloatStructuredInput">VO_FloatStructuredInput</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptEngine_h/voFloatStructuredInput.html">voFloatStructuredInput</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_InputCharacter">VO_InputCharacter</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  111</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptEngine_h/voInputCharacter.html">voInputCharacter</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_HistoryManager">VO_HistoryManager</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptEngine_h/voHistoryManager.html">voHistoryManager</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_UserObject">VO_UserObject</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptEngine_h/voUserObject.html">voUserObject</A></CODE> type identifier. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Value_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Value Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="VO_Engine"></A>
+<H3 class="code">VO_Engine</H3>
+<PRE>
+<B>VO_Engine</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptEngine_h/voEngine.html">voEngine</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_EngineObject"></A>
+<H3 class="code">VO_EngineObject</H3>
+<PRE>
+<B>VO_EngineObject</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_Iterator"></A>
+<H3 class="code">VO_Iterator</H3>
+<PRE>
+<B>VO_Iterator</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptEngine_h/voIterator.html">voIterator</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptEngine_h/voIterator.html">voIterator</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_Charset"></A>
+<H3 class="code">VO_Charset</H3>
+<PRE>
+<B>VO_Charset</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptEngine_h/voCharset.html">voCharset</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptEngine_h/voCharset.html">voCharset</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_Input"></A>
+<H3 class="code">VO_Input</H3>
+<PRE>
+<B>VO_Input</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptEngine_h/voInput.html">voInput</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptEngine_h/voInput.html">voInput</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_StructuredInput"></A>
+<H3 class="code">VO_StructuredInput</H3>
+<PRE>
+<B>VO_StructuredInput</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptEngine_h/voStructuredInput.html">voStructuredInput</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptEngine_h/voStructuredInput.html">voStructuredInput</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_FloatStructuredInput"></A>
+<H3 class="code">VO_FloatStructuredInput</H3>
+<PRE>
+<B>VO_FloatStructuredInput</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptEngine_h/voFloatStructuredInput.html">voFloatStructuredInput</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptEngine_h/voFloatStructuredInput.html">voFloatStructuredInput</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_InputCharacter"></A>
+<H3 class="code">VO_InputCharacter</H3>
+<PRE>
+<B>VO_InputCharacter</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptEngine_h/voInputCharacter.html">voInputCharacter</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptEngine_h/voInputCharacter.html">voInputCharacter</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_HistoryManager"></A>
+<H3 class="code">VO_HistoryManager</H3>
+<PRE>
+<B>VO_HistoryManager</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptEngine_h/voHistoryManager.html">voHistoryManager</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptEngine_h/voHistoryManager.html">voHistoryManager</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_UserObject"></A>
+<H3 class="code">VO_UserObject</H3>
+<PRE>
+<B>VO_UserObject</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptEngine_h/voUserObject.html">voUserObject</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptEngine_h/voUserObject.html">voUserObject</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

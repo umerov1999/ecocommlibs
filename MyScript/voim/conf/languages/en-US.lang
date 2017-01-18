@@ -1,0 +1,80 @@
+Language-Version: 1.0
+Language-Name: en-US
+Configuration-Script:
+ AddResDir ../../../resources
+
+Name: text
+Input-Type: MULTIPLE_LINE_TEXT
+Result-Item-Type: WORD
+Use-User-Dictionary: true
+Configuration-Script:
+ AddResource en_US/en_US-ak-cur.res
+ AddResource en_US/en_US-lk-text.res
+ SetCharListSize 1
+ SetWordListSize 5
+ SetTextListSize 1
+
+Name: email
+Input-Type: SINGLE_LINE_TEXT
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: true
+Configuration-Script:
+ AddResource en_US/en_US-ak-cur.res
+ AddResource mul/mul-lk-email.res
+ SetCharListSize 5
+ SetWordListSize 1
+ SetTextListSize 1
+
+Name: number
+Input-Type: SINGLE_LINE_TEXT
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: true
+Configuration-Script:
+ AddResource en_US/en_US-ak-cur.res
+ AddResource mul/mul-lk-number.res
+ SetCharListSize 5
+ SetWordListSize 1
+ SetTextListSize 1
+
+Name: phone_number
+Input-Type: SINGLE_LINE_TEXT
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: true
+Configuration-Script:
+ AddResource en_US/en_US-ak-cur.res
+ AddResource mul/mul-lk-phone_number.res
+ SetCharListSize 5
+ SetWordListSize 1
+ SetTextListSize 1
+
+Name: uri
+Input-Type: SINGLE_LINE_TEXT
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: true
+Configuration-Script:
+ AddResource en_US/en_US-ak-cur.res
+ AddResource mul/mul-lk-uri.res
+ SetCharListSize 5
+ SetWordListSize 1
+ SetTextListSize 1
+
+Name: char
+Input-Type: SINGLE_CHARACTER
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: false
+Configuration-Script:
+ AddResource en_US/en_US-ak-iso.res
+ SetCharListSize 5
+ SetWordListSize 1
+ SetTextListSize 1
+
+Name: digit
+Input-Type: SINGLE_CHARACTER
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: false
+Configuration-Script:
+ AddResource en_US/en_US-ak-iso.res
+ SetCharacters 0123456789
+ SetCharListSize 5
+ SetWordListSize 1
+ SetTextListSize 1

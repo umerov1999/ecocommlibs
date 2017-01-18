@@ -1,0 +1,58 @@
+# Lexical unit traditional Chinese: email
+#
+# 2006/04/19
+# v1.0
+
+element = [0-9a-zA-Z][-_0-9a-zA-Z]*
+
+s1 / 50 = com\.tw
+s2 / 45 = tw
+s3 / 40 = com
+s4 / 35 = org
+s5 / 30 = cc
+s6 / 25 = net
+s7 / 20 = hk
+s8 / 15 = sg
+s9 / 10 = fr
+s10 / 0 = [a-zA-Z]([a-zA-Z]([a-zA-Z][a-zA-Z]?)?)?
+
+suffix = {s1}|{s2}|{s3}|{s4}|{s5}|{s6}|{s7}|{s8}|{s9}|{s10}
+
+d1 / 100 = ((ms|cm)[1-9]([0-9][0-9]?)?\.)?hinet\.net
+d2 / 99 = netvigator\.com
+d3 / 98 = geocities\.com
+d4 / 97 = operamail\.com
+d5 / 96 = (ms[1-9]([0-9][0-9]?)?\.)?ntu\.edu\.tw
+d6 / 95 = yam\.com\.tw
+d7 / 94 = kimo\.com\.tw
+d8 / 93 = msn\.com
+d9 / 92 = aol\.com
+d10 / 91 = yam\.com\.tw
+d11 / 90 = nctu\.edu\.tw
+d12 / 88 = hotmail\.com
+d13 / 86 = pie\.com\.tw
+d14 / 84 = msn\.com
+d15 / 82 = mail\.nctu\.edu\.tw
+d16 / 80 = yahoo\.com
+d17 / 78 = msa\.hinet\.net
+d18 / 76 = giga\.net\.tw
+d19 / 74 = virgin\.net
+d20 / 72 = lycos\.com
+d21 / 70 = cc\.nctu\.edu\.tw
+d22 / 68 = sinamail\.com
+d23 / 66 = so-net\.net\.tw
+d24 / 64 = mail2000\.com\.tw
+d25 / 62 = seed\.net\.tw
+d26 / 60 = pchome\.com\.tw
+d27 / 58 = yahoo\.com\.tw
+d28 / 56 = bigfoot\.com
+d29 / 54 = sina\.com
+domain = {d1}|{d2}|{d3}|{d4}|{d5}|{d6}|{d7}|{d8}|{d9}|{d10}|{d11}|{d12}|{d13}|{d14}|{d15}
+domain = {domain}|{d16}|{d17}|{d18}|{d19}|{d20}|{d21}|{d22}|{d23}|{d24}|{d25}|{d26}|{d27}|{d28}|{d29}
+domain = {domain}|{element}(\.{element})*\.{suffix}
+
+user = {element}(\.{element})*
+
+email = {user}@{domain}
+
+{email}

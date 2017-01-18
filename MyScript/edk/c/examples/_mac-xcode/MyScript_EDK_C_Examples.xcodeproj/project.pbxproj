@@ -1,0 +1,3411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		1ACB11670D2CF96B004A9D1B /* all */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1ACB118C0D2CF9CA004A9D1B /* Build configuration list for PBXAggregateTarget "all" */;
+			buildPhases = (
+			);
+			dependencies = (
+				1ACB11830D2CF978004A9D1B /* PBXTargetDependency */,
+				1ACB117B0D2CF978004A9D1B /* PBXTargetDependency */,
+				1ACB117D0D2CF978004A9D1B /* PBXTargetDependency */,
+				1ACB117F0D2CF978004A9D1B /* PBXTargetDependency */,
+				1ACB11810D2CF978004A9D1B /* PBXTargetDependency */,
+				1ACB11770D2CF978004A9D1B /* PBXTargetDependency */,
+				1AD8EEAB1A3218F900CAB71C /* PBXTargetDependency */,
+				1AD8EEAD1A3218F900CAB71C /* PBXTargetDependency */,
+				1ACB11790D2CF978004A9D1B /* PBXTargetDependency */,
+				1A384F3A0EA8E55400901C93 /* PBXTargetDependency */,
+				1A384F3C0EA8E55700901C93 /* PBXTargetDependency */,
+				1AD8EEAF1A3218F900CAB71C /* PBXTargetDependency */,
+				1ACB11710D2CF978004A9D1B /* PBXTargetDependency */,
+				1ACB11730D2CF978004A9D1B /* PBXTargetDependency */,
+				1A540C16132FD55C0074143F /* PBXTargetDependency */,
+				1A540C14132FD55C0074143F /* PBXTargetDependency */,
+				1A540C12132FD55C0074143F /* PBXTargetDependency */,
+				1A540C10132FD55C0074143F /* PBXTargetDependency */,
+				1A540C0E132FD55C0074143F /* PBXTargetDependency */,
+				1A540C0C132FD55C0074143F /* PBXTargetDependency */,
+				1A44F15014431DF6003E2B02 /* PBXTargetDependency */,
+				79A44D6317032C41000656FA /* PBXTargetDependency */,
+				794C92B61656514A00C90DA1 /* PBXTargetDependency */,
+				F40E1B58181FAE00009E8D65 /* PBXTargetDependency */,
+				F40E1B5A181FAE00009E8D65 /* PBXTargetDependency */,
+				F40E1B5C181FAE00009E8D65 /* PBXTargetDependency */,
+				F40E1B5E181FAE08009E8D65 /* PBXTargetDependency */,
+				3BA6FF6717DF53CA00C04955 /* PBXTargetDependency */,
+				79C20726181806E700F1E21D /* PBXTargetDependency */,
+				79C20724181806E700F1E21D /* PBXTargetDependency */,
+				79C20728181806E700F1E21D /* PBXTargetDependency */,
+				F40E1B62181FAE08009E8D65 /* PBXTargetDependency */,
+				F40E1B60181FAE08009E8D65 /* PBXTargetDependency */,
+				F40E1B68181FAE08009E8D65 /* PBXTargetDependency */,
+				F40E1B64181FAE08009E8D65 /* PBXTargetDependency */,
+				3BA6FF7617DF5A6900C04955 /* PBXTargetDependency */,
+				79C2072E181806E700F1E21D /* PBXTargetDependency */,
+				79C20722181806E700F1E21D /* PBXTargetDependency */,
+				3BA6FF8517DF5B9B00C04955 /* PBXTargetDependency */,
+				79C2072C181806E700F1E21D /* PBXTargetDependency */,
+				F40E1B66181FAE08009E8D65 /* PBXTargetDependency */,
+				79C20730181806E700F1E21D /* PBXTargetDependency */,
+				1A7155AB18535CC7009C8DED /* PBXTargetDependency */,
+			);
+			name = all;
+			productName = all;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		16EA0770181973B100F1C963 /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		16EA0771181973B100F1C963 /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		16EA0772181973B100F1C963 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		16EA077E181974D900F1C963 /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		16EA077F181974D900F1C963 /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		16EA0780181974D900F1C963 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		16EA078D1819764300F1C963 /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		16EA078E1819764300F1C963 /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		16EA078F1819764300F1C963 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		16EA079F181979D300F1C963 /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		16EA07A0181979D300F1C963 /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		16EA07A1181979D300F1C963 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		16FE54D4181A5F8200B85426 /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		16FE54D5181A5F8200B85426 /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		16FE54D6181A5F8200B85426 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		16FE54E0181A643000B85426 /* MyScriptAnalyzer-documentToSVG.c in Sources */ = {isa = PBXBuildFile; fileRef = 794C92911656500300C90DA1 /* MyScriptAnalyzer-documentToSVG.c */; };
+		16FE54E5181A675A00B85426 /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		16FE54E6181A675A00B85426 /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		16FE54E7181A675A00B85426 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		1A1837E718291F20003E7048 /* UsingTags.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A1837E618291F1A003E7048 /* UsingTags.c */; };
+		1A1837E818291F23003E7048 /* EditInk.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A1837E518291F1A003E7048 /* EditInk.c */; };
+		1A1837E918291F26003E7048 /* CreateInk.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A1837E418291F1A003E7048 /* CreateInk.c */; };
+		1A1837FA18291F69003E7048 /* CreateDocument.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A1837EA18291F4C003E7048 /* CreateDocument.c */; };
+		1A1837FB18291F6E003E7048 /* DocumentAnalysis.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A1837EB18291F4C003E7048 /* DocumentAnalysis.c */; };
+		1A1837FC18291F72003E7048 /* EditMetadata.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A1837EC18291F4C003E7048 /* EditMetadata.c */; };
+		1A1837FD18291F75003E7048 /* MathRecognition.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A1837ED18291F4C003E7048 /* MathRecognition.c */; };
+		1A1837FE18291F78003E7048 /* InkSearching.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A1837EE18291F4C003E7048 /* InkSearching.c */; };
+		1A1837FF18291F7B003E7048 /* LayoutEdition.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A1837EF18291F4C003E7048 /* LayoutEdition.c */; };
+		1A18380018291F7F003E7048 /* LoadMetadata.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A1837F018291F4C003E7048 /* LoadMetadata.c */; };
+		1A18380118291F82003E7048 /* LoadSaveDocument.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A1837F118291F4C003E7048 /* LoadSaveDocument.c */; };
+		1A18380218291F84003E7048 /* PageEdition.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A1837F218291F4C003E7048 /* PageEdition.c */; };
+		1A18380318291F87003E7048 /* PageUpdateListener.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A1837F318291F4C003E7048 /* PageUpdateListener.c */; };
+		1A18380418291F8B003E7048 /* ShapeRecognition.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A1837F418291F4C003E7048 /* ShapeRecognition.c */; };
+		1A18380518291F8F003E7048 /* StoreMetadata.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A1837F518291F4C003E7048 /* StoreMetadata.c */; };
+		1A18380618291F96003E7048 /* TextIndexation.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A1837F718291F4C003E7048 /* TextIndexation.c */; };
+		1A18380718291F9A003E7048 /* TextRecognition.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A1837F818291F4C003E7048 /* TextRecognition.c */; };
+		1A18380818291F9E003E7048 /* UndoRedo.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A1837F918291F4C003E7048 /* UndoRedo.c */; };
+		1A3DA3DF14471C48003962E7 /* MyScriptMath-parseTreeToLaTeX.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A3DA3DD14471C48003962E7 /* MyScriptMath-parseTreeToLaTeX.c */; };
+		1A44F14714431DEA003E2B02 /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		1A44F14814431DEA003E2B02 /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		1A44F14914431DEA003E2B02 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		1A44F15614431E36003E2B02 /* MathRecognition.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A44F15514431E36003E2B02 /* MathRecognition.c */; };
+		1A51B69D1292D253008C6585 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		1A51B6BE1292D3B0008C6585 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		1A51B6D41292D433008C6585 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		1A51B6D71292D43B008C6585 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		1A51B6DA1292D44D008C6585 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		1A51B6DD1292D4BA008C6585 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		1A51B73D1292E412008C6585 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		1A51B7661292E8E9008C6585 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		1A51B7681292E8F2008C6585 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		1A51B7691292E8F6008C6585 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		1A51B7A21292ECEC008C6585 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		1A540B84132FD2B80074143F /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		1A540B85132FD2B80074143F /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		1A540B86132FD2B80074143F /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		1A540B8C132FD3430074143F /* SingleShapeRecognition.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A540B79132FD2380074143F /* SingleShapeRecognition.c */; };
+		1A540BC5132FD4270074143F /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		1A540BC6132FD4270074143F /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		1A540BC7132FD4270074143F /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		1A540BD0132FD45A0074143F /* MultipleShapesRecognitionBeautification.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A540B75132FD2380074143F /* MultipleShapesRecognitionBeautification.c */; };
+		1A540BD5132FD4600074143F /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		1A540BD6132FD4600074143F /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		1A540BD7132FD4600074143F /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		1A540BDE132FD4810074143F /* IncrementalShapeRecognitionBeautification.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A540B73132FD2380074143F /* IncrementalShapeRecognitionBeautification.c */; };
+		1A540BE3132FD48D0074143F /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		1A540BE4132FD48D0074143F /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		1A540BE5132FD48D0074143F /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		1A540BEC132FD4A10074143F /* ScratchOutDetection.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A540B78132FD2380074143F /* ScratchOutDetection.c */; };
+		1A540BF3132FD4B60074143F /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		1A540BF4132FD4B60074143F /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		1A540BF5132FD4B60074143F /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		1A540C01132FD4DA0074143F /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		1A540C02132FD4DA0074143F /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		1A540C03132FD4DA0074143F /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		1A540C09132FD4F70074143F /* AdjustingModelsDetectionSensitivity.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A540B6E132FD2380074143F /* AdjustingModelsDetectionSensitivity.c */; };
+		1A540C0A132FD5040074143F /* AdjustingBeautifierProperties.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A540B6C132FD2380074143F /* AdjustingBeautifierProperties.c */; };
+		1A65E97116765C940026875E /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		1A65E97316765C940026875E /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		1A65E97416765C940026875E /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		1A65E97B16765D7F0026875E /* ConjointRecognitionCompletionAndPrediction.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A65E97A16765D7F0026875E /* ConjointRecognitionCompletionAndPrediction.c */; };
+		1A65E97C16765D8C0026875E /* parseInk.c in Sources */ = {isa = PBXBuildFile; fileRef = 793DDAD6166CB53D00684C85 /* parseInk.c */; };
+		1A7155A118535CAF009C8DED /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		1A7155A218535CAF009C8DED /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		1A7155A318535CAF009C8DED /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		1A7155A418535CAF009C8DED /* parseInk.c in Sources */ = {isa = PBXBuildFile; fileRef = 793DDAD6166CB53D00684C85 /* parseInk.c */; };
+		1A7155AE18535CFF009C8DED /* MusicRecognition.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A7155AD18535CFF009C8DED /* MusicRecognition.c */; };
+		1A7155B118535D26009C8DED /* MyScriptMusic-scoreToMusicXML.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A7155AF18535D26009C8DED /* MyScriptMusic-scoreToMusicXML.c */; };
+		1AA0F600147578CD0008949F /* MyScriptMath-parseTreeToMathML.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AA0F5FE147578CD0008949F /* MyScriptMath-parseTreeToMathML.c */; };
+		1AAF4F0D1270B78300141A3C /* CreateDestroyEngine.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF81270B76A00141A3C /* CreateDestroyEngine.c */; };
+		1AAF4F0E1270B78E00141A3C /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		1AAF4F0F1270B79300141A3C /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		1AAF4F991270BB7500141A3C /* CreateSubsetKnowledge.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EFD1270B76A00141A3C /* CreateSubsetKnowledge.c */; };
+		1AAF4F9A1270BB7B00141A3C /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		1AAF4FA11270BBA800141A3C /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		1AAF4FB51270BC5800141A3C /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		1AAF4FB61270BC5B00141A3C /* CreateLexicon.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EFC1270B76A00141A3C /* CreateLexicon.c */; };
+		1AAF4FB71270BC6400141A3C /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		1AAF4FCF1270BD6C00141A3C /* CreateLexicalUnit.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EFB1270B76A00141A3C /* CreateLexicalUnit.c */; };
+		1AAF4FD01270BD6F00141A3C /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		1AAF4FD11270BD7400141A3C /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		1AAF4FD81270BDC900141A3C /* CreateArchive.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EFA1270B76A00141A3C /* CreateArchive.c */; };
+		1AAF4FD91270BDCD00141A3C /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		1AAF4FDA1270BDD000141A3C /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		1AAF4FF71271BC8B00141A3C /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		1AAF4FFD1271BCA600141A3C /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		1AAF504D1271C23A00141A3C /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		1AAF504E1271C23E00141A3C /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		1AAF504F1271C24300141A3C /* ExploreRecognitionResult.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4F021270B76A00141A3C /* ExploreRecognitionResult.c */; };
+		1AAF50561271C97900141A3C /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		1AAF50571271C97D00141A3C /* MyScriptText-strTagType.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF42201270B24000141A3C /* MyScriptText-strTagType.c */; };
+		1AAF505F1271C98900141A3C /* DigitalInkTagging.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EFE1270B76A00141A3C /* DigitalInkTagging.c */; };
+		1AAF50601271C98D00141A3C /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		1AAF50651271C9AE00141A3C /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		1AAF50661271C9B100141A3C /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		1AAF50671271C9B400141A3C /* MyScriptText-strTagType.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF42201270B24000141A3C /* MyScriptText-strTagType.c */; };
+		1AAF50681271C9BA00141A3C /* DigitalInkTaggingWithRecognition.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4F001270B76A00141A3C /* DigitalInkTaggingWithRecognition.c */; };
+		1AAF507E1271CB8F00141A3C /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		1AAF507F1271CB9300141A3C /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		1AAF50801271CB9800141A3C /* StructuredInputInkIndexing.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4F071270B76A00141A3C /* StructuredInputInkIndexing.c */; };
+		1AAF50851271CBF200141A3C /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		1AAF50861271CBF600141A3C /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		1AAF50871271CBFB00141A3C /* InkSearching.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4F061270B76A00141A3C /* InkSearching.c */; };
+		3B05829917E9C06600BCB10D /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		3B05829A17E9C06600BCB10D /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		3B05829B17E9C06600BCB10D /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		3B82ABF01806BFB800DE74FF /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		3B82ABF11806BFB800DE74FF /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		3B82ABF21806BFB800DE74FF /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		3B89B7FB1806D78F00579F81 /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		3B89B7FC1806D78F00579F81 /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		3B89B7FE1806D78F00579F81 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		3BA6FF5317DF4FDF00C04955 /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		3BA6FF5417DF4FDF00C04955 /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		3BA6FF5517DF4FDF00C04955 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		3BA6FF6C17DF597100C04955 /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		3BA6FF6D17DF597100C04955 /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		3BA6FF6E17DF597100C04955 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		3BA6FF7B17DF5AD500C04955 /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		3BA6FF7C17DF5AD500C04955 /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		3BA6FF7D17DF5AD500C04955 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		3BA6FF8A17DF5BDE00C04955 /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		3BA6FF8B17DF5BDE00C04955 /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		3BA6FF8C17DF5BDE00C04955 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		3BA6FF9317DF5C1400C04955 /* MyScriptMath-parseTreeToLaTeX.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A3DA3DD14471C48003962E7 /* MyScriptMath-parseTreeToLaTeX.c */; };
+		3BB00E0E17F585EA00BF8A6A /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		3BB00E0F17F585EA00BF8A6A /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		3BB00E1017F585EA00BF8A6A /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		3BB00E1C17F58CDF00BF8A6A /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		3BB00E1D17F58CDF00BF8A6A /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		3BB00E1E17F58CDF00BF8A6A /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		793DDAD8166CB53D00684C85 /* parseInk.c in Sources */ = {isa = PBXBuildFile; fileRef = 793DDAD6166CB53D00684C85 /* parseInk.c */; };
+		794C928116564FA200C90DA1 /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		794C928216564FA200C90DA1 /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		794C928316564FA200C90DA1 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		794C929016564FE500C90DA1 /* DocumentAnalysis.c in Sources */ = {isa = PBXBuildFile; fileRef = 794C928F16564FE500C90DA1 /* DocumentAnalysis.c */; };
+		794C92931656500300C90DA1 /* MyScriptAnalyzer-documentToSVG.c in Sources */ = {isa = PBXBuildFile; fileRef = 794C92911656500300C90DA1 /* MyScriptAnalyzer-documentToSVG.c */; };
+		798930FC181822FF003BE3C7 /* ConjointRecognitionAndAdaptation.c in Sources */ = {isa = PBXBuildFile; fileRef = 798930FB181822FF003BE3C7 /* ConjointRecognitionAndAdaptation.c */; };
+		79C20717181806C500F1E21D /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		79C20718181806C500F1E21D /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		79C20719181806C500F1E21D /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		79C2071C181806C500F1E21D /* parseInk.c in Sources */ = {isa = PBXBuildFile; fileRef = 793DDAD6166CB53D00684C85 /* parseInk.c */; };
+		B09502FE1A247D9800E199FF /* CursiveRecognition.c in Sources */ = {isa = PBXBuildFile; fileRef = B09502FA1A247D8E00E199FF /* CursiveRecognition.c */; };
+		B09503031A247DAE00E199FF /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		B09503041A247DAE00E199FF /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		B09503051A247DAE00E199FF /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		B095030F1A247DDC00E199FF /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		B09503101A247DDC00E199FF /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		B09503111A247DDC00E199FF /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		B095031B1A247E1800E199FF /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		B095031C1A247E1800E199FF /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		B095031D1A247E1800E199FF /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		B09503231A247E4000E199FF /* IsolatedRecognition.c in Sources */ = {isa = PBXBuildFile; fileRef = B09502FB1A247D8E00E199FF /* IsolatedRecognition.c */; };
+		B09503241A247E4600E199FF /* SuperimposedRecognition.c in Sources */ = {isa = PBXBuildFile; fileRef = B09502FC1A247D8E00E199FF /* SuperimposedRecognition.c */; };
+		B09503251A247E4C00E199FF /* Transliteration.c in Sources */ = {isa = PBXBuildFile; fileRef = B09502FD1A247D8E00E199FF /* Transliteration.c */; };
+		F40E1B31181FA8FE009E8D65 /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		F40E1B32181FA8FE009E8D65 /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		F40E1B33181FA8FE009E8D65 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		F40E1B40181FABA7009E8D65 /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		F40E1B42181FABA7009E8D65 /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		F40E1B43181FABA7009E8D65 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+		F40E1B4C181FABC4009E8D65 /* MyCertificate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF4EF51270B76A00141A3C /* MyCertificate.c */; };
+		F40E1B4D181FABC4009E8D65 /* MyScriptEngine-strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */; };
+		F40E1B4E181FABC4009E8D65 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B6991292D1BB008C6585 /* common.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A384F390EA8E55400901C93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A384EF10EA8E3F300901C93;
+			remoteInfo = text_DigitalInkTagging;
+		};
+		1A384F3B0EA8E55700901C93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A384F360EA8E53D00901C93;
+			remoteInfo = text_DigitalInkTaggingWithRecognition;
+		};
+		1A44F14F14431DF6003E2B02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A44F14214431DEA003E2B02;
+			remoteInfo = math_MathRecognition;
+		};
+		1A540C0B132FD55C0074143F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A540BFD132FD4DA0074143F;
+			remoteInfo = shape_AdjustingBeautifierProperties;
+		};
+		1A540C0D132FD55C0074143F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A540BEF132FD4B60074143F;
+			remoteInfo = shape_AdjustingModelsDetectionSensitivity;
+		};
+		1A540C0F132FD55C0074143F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A540BDF132FD48D0074143F;
+			remoteInfo = shape_ScratchOutDetection;
+		};
+		1A540C11132FD55C0074143F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A540BD1132FD4600074143F;
+			remoteInfo = shape_IncrementalShapeRecognitionBeautification;
+		};
+		1A540C13132FD55C0074143F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A540BC1132FD4270074143F;
+			remoteInfo = shape_MultipleShapesRecognitionBeautification;
+		};
+		1A540C15132FD55C0074143F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A540B7F132FD2B80074143F;
+			remoteInfo = shape_SingleShapeRecognition;
+		};
+		1A7155AA18535CC7009C8DED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A71559D18535CAF009C8DED;
+			remoteInfo = 11.music.01_MusicRecognition;
+		};
+		1ACB11700D2CF978004A9D1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1ACB0F9E0D2CDCB8004A9D1B;
+			remoteInfo = inksearch_StructuredInputInkIndexing;
+		};
+		1ACB11720D2CF978004A9D1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1ACB0F8D0D2CDC67004A9D1B;
+			remoteInfo = inksearch_InkSearching;
+		};
+		1ACB11760D2CF978004A9D1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1ACB0CEA0D2BB3D7004A9D1B;
+			remoteInfo = text_StructuredInputRecognition;
+		};
+		1ACB11780D2CF978004A9D1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1ACB0DE00D2BF539004A9D1B;
+			remoteInfo = text_ExploreRecognitionResult;
+		};
+		1ACB117A0D2CF978004A9D1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1ACB0DCC0D2BF4CF004A9D1B;
+			remoteInfo = text_CreateSubsetKnowledge;
+		};
+		1ACB117C0D2CF978004A9D1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1ACB0D970D2BECA5004A9D1B;
+			remoteInfo = text_CreateLexicon;
+		};
+		1ACB117E0D2CF978004A9D1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1ACB0DAB0D2BEE6D004A9D1B;
+			remoteInfo = text_CreateLexicalUnit;
+		};
+		1ACB11800D2CF978004A9D1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1ACB0D850D2BD744004A9D1B;
+			remoteInfo = text_CreateArchive;
+		};
+		1ACB11820D2CF978004A9D1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A77FCF00D29033800ED2292;
+			remoteInfo = engine_CreateDestroyEngine;
+		};
+		1AD8EEAA1A3218F900CAB71C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B09503171A247E1800E199FF;
+			remoteInfo = 01.text.06_IsolatedRecognition;
+		};
+		1AD8EEAC1A3218F900CAB71C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B095030B1A247DDC00E199FF;
+			remoteInfo = 01.text.07_SuperimposedRecognition;
+		};
+		1AD8EEAE1A3218F900CAB71C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B09502FF1A247DAE00E199FF;
+			remoteInfo = 01.text.11_Transliteration;
+		};
+		3BA6FF6617DF53CA00C04955 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BA6FF4F17DF4FDF00C04955;
+			remoteInfo = document_ProcessLoadSave;
+		};
+		3BA6FF7517DF5A6900C04955 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BA6FF6817DF597100C04955;
+			remoteInfo = document_ProcessTextRecognition;
+		};
+		3BA6FF8417DF5B9B00C04955 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BA6FF7717DF5AD500C04955;
+			remoteInfo = document_ProcessShapeRecognition;
+		};
+		794C92B51656514A00C90DA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 794C927D16564FA200C90DA1;
+			remoteInfo = analyzer_DocumentAnalysis;
+		};
+		79A44D6217032C41000656FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A65E96D16765C940026875E;
+			remoteInfo = prediction_ConjointRecognitionCompletionAndPrediction;
+		};
+		79C20721181806E700F1E21D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B89B7F71806D78F00579F81;
+			remoteInfo = document_InkSearch;
+		};
+		79C20723181806E700F1E21D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BB00E1817F58CDF00BF8A6A;
+			remoteInfo = document_MetadataEdit;
+		};
+		79C20725181806E700F1E21D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B05829517E9C06600BCB10D;
+			remoteInfo = document_MetadataLoad;
+		};
+		79C20727181806E700F1E21D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BB00E0A17F585EA00BF8A6A;
+			remoteInfo = document_MetadataStore;
+		};
+		79C2072B181806E700F1E21D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BA6FF8617DF5BDE00C04955;
+			remoteInfo = document_ProcessMathRecognition;
+		};
+		79C2072D181806E700F1E21D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B82ABEC1806BFB800DE74FF;
+			remoteInfo = document_ProcessTextIndexation;
+		};
+		79C2072F181806E700F1E21D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79C20713181806C500F1E21D;
+			remoteInfo = writeradaptation_Recognition;
+		};
+		F40E1B57181FAE00009E8D65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F40E1B2D181FA8FE009E8D65;
+			remoteInfo = ink_CreateJink;
+		};
+		F40E1B59181FAE00009E8D65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F40E1B3C181FABA7009E8D65;
+			remoteInfo = ink_EditJink;
+		};
+		F40E1B5B181FAE00009E8D65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F40E1B48181FABC4009E8D65;
+			remoteInfo = ink_UseTags;
+		};
+		F40E1B5D181FAE08009E8D65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16EA079A181979D300F1C963;
+			remoteInfo = document_CreateDocument;
+		};
+		F40E1B5F181FAE08009E8D65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16EA07891819764300F1C963;
+			remoteInfo = document_LayoutEdition;
+		};
+		F40E1B61181FAE08009E8D65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16EA077A181974D900F1C963;
+			remoteInfo = document_PageEdition;
+		};
+		F40E1B63181FAE08009E8D65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16FE54E1181A675A00B85426;
+			remoteInfo = document_PageUpdateListener;
+		};
+		F40E1B65181FAE08009E8D65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16FE54D0181A5F8200B85426;
+			remoteInfo = document_ProcessAnalyzer;
+		};
+		F40E1B67181FAE08009E8D65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A77FCE50D29031000ED2292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16EA076C181973B100F1C963;
+			remoteInfo = document_UndoRedo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16EA0777181973B100F1C963 /* 08.document.08_UndoRedo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 08.document.08_UndoRedo; sourceTree = BUILT_PRODUCTS_DIR; };
+		16EA0785181974D900F1C963 /* 08.document.06_PageEdition */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 08.document.06_PageEdition; sourceTree = BUILT_PRODUCTS_DIR; };
+		16EA07951819764300F1C963 /* 08.document.07_LayoutEdition */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 08.document.07_LayoutEdition; sourceTree = BUILT_PRODUCTS_DIR; };
+		16EA07A6181979D300F1C963 /* 08.document.01_CreateDocument */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 08.document.01_CreateDocument; sourceTree = BUILT_PRODUCTS_DIR; };
+		16FE54DB181A5F8200B85426 /* 08.document.15_DocumentAnalysis */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 08.document.15_DocumentAnalysis; sourceTree = BUILT_PRODUCTS_DIR; };
+		16FE54EC181A675A00B85426 /* 08.document.09_PageUpdateListener */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 08.document.09_PageUpdateListener; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A1837E418291F1A003E7048 /* CreateInk.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = CreateInk.c; path = ../ink/CreateInk.c; sourceTree = "<group>"; };
+		1A1837E518291F1A003E7048 /* EditInk.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = EditInk.c; path = ../ink/EditInk.c; sourceTree = "<group>"; };
+		1A1837E618291F1A003E7048 /* UsingTags.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = UsingTags.c; path = ../ink/UsingTags.c; sourceTree = "<group>"; };
+		1A1837EA18291F4C003E7048 /* CreateDocument.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CreateDocument.c; sourceTree = "<group>"; };
+		1A1837EB18291F4C003E7048 /* DocumentAnalysis.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = DocumentAnalysis.c; sourceTree = "<group>"; };
+		1A1837EC18291F4C003E7048 /* EditMetadata.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = EditMetadata.c; sourceTree = "<group>"; };
+		1A1837ED18291F4C003E7048 /* MathRecognition.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MathRecognition.c; sourceTree = "<group>"; };
+		1A1837EE18291F4C003E7048 /* InkSearching.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = InkSearching.c; sourceTree = "<group>"; };
+		1A1837EF18291F4C003E7048 /* LayoutEdition.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = LayoutEdition.c; sourceTree = "<group>"; };
+		1A1837F018291F4C003E7048 /* LoadMetadata.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = LoadMetadata.c; sourceTree = "<group>"; };
+		1A1837F118291F4C003E7048 /* LoadSaveDocument.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = LoadSaveDocument.c; sourceTree = "<group>"; };
+		1A1837F218291F4C003E7048 /* PageEdition.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = PageEdition.c; sourceTree = "<group>"; };
+		1A1837F318291F4C003E7048 /* PageUpdateListener.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = PageUpdateListener.c; sourceTree = "<group>"; };
+		1A1837F418291F4C003E7048 /* ShapeRecognition.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ShapeRecognition.c; sourceTree = "<group>"; };
+		1A1837F518291F4C003E7048 /* StoreMetadata.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = StoreMetadata.c; sourceTree = "<group>"; };
+		1A1837F618291F4C003E7048 /* strokes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = strokes.h; sourceTree = "<group>"; };
+		1A1837F718291F4C003E7048 /* TextIndexation.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = TextIndexation.c; sourceTree = "<group>"; };
+		1A1837F818291F4C003E7048 /* TextRecognition.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = TextRecognition.c; sourceTree = "<group>"; };
+		1A1837F918291F4C003E7048 /* UndoRedo.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = UndoRedo.c; sourceTree = "<group>"; };
+		1A384EF20EA8E3F300901C93 /* 01.text.09_DigitalInkTagging */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 01.text.09_DigitalInkTagging; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A384F370EA8E53D00901C93 /* 01.text.10_DigitalInkTaggingWithRecognition */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 01.text.10_DigitalInkTaggingWithRecognition; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A3DA3DD14471C48003962E7 /* MyScriptMath-parseTreeToLaTeX.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "MyScriptMath-parseTreeToLaTeX.c"; sourceTree = "<group>"; };
+		1A3DA3DE14471C48003962E7 /* MyScriptMath-parseTreeToLaTeX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MyScriptMath-parseTreeToLaTeX.h"; sourceTree = "<group>"; };
+		1A44F14D14431DEA003E2B02 /* 04.math.01_MathRecognition */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 04.math.01_MathRecognition; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A44F15514431E36003E2B02 /* MathRecognition.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MathRecognition.c; sourceTree = "<group>"; };
+		1A51B5E01292971C008C6585 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		1A51B6991292D1BB008C6585 /* common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = common.c; sourceTree = "<group>"; };
+		1A540B6C132FD2380074143F /* AdjustingBeautifierProperties.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = AdjustingBeautifierProperties.c; sourceTree = "<group>"; };
+		1A540B6E132FD2380074143F /* AdjustingModelsDetectionSensitivity.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = AdjustingModelsDetectionSensitivity.c; sourceTree = "<group>"; };
+		1A540B6F132FD2380074143F /* almost_rectangle.strokes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = almost_rectangle.strokes.h; sourceTree = "<group>"; };
+		1A540B70132FD2380074143F /* arrow_head.strokes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arrow_head.strokes.h; sourceTree = "<group>"; };
+		1A540B71132FD2380074143F /* arrow.strokes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arrow.strokes.h; sourceTree = "<group>"; };
+		1A540B72132FD2380074143F /* circle.strokes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = circle.strokes.h; sourceTree = "<group>"; };
+		1A540B73132FD2380074143F /* IncrementalShapeRecognitionBeautification.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = IncrementalShapeRecognitionBeautification.c; sourceTree = "<group>"; };
+		1A540B74132FD2380074143F /* line.strokes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = line.strokes.h; sourceTree = "<group>"; };
+		1A540B75132FD2380074143F /* MultipleShapesRecognitionBeautification.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MultipleShapesRecognitionBeautification.c; sourceTree = "<group>"; };
+		1A540B76132FD2380074143F /* rectangle.strokes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rectangle.strokes.h; sourceTree = "<group>"; };
+		1A540B77132FD2380074143F /* scratch_out.strokes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scratch_out.strokes.h; sourceTree = "<group>"; };
+		1A540B78132FD2380074143F /* ScratchOutDetection.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ScratchOutDetection.c; sourceTree = "<group>"; };
+		1A540B79132FD2380074143F /* SingleShapeRecognition.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SingleShapeRecognition.c; sourceTree = "<group>"; };
+		1A540B7A132FD2380074143F /* triangle.strokes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = triangle.strokes.h; sourceTree = "<group>"; };
+		1A540B8A132FD2B80074143F /* 03.shape.01_SingleShapeRecognition */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 03.shape.01_SingleShapeRecognition; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A540BCC132FD4270074143F /* 03.shape.02_MultipleShapesRecognitionBeautification */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 03.shape.02_MultipleShapesRecognitionBeautification; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A540BDC132FD4600074143F /* 03.shape.03_IncrementalShapeRecognitionBeautification */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 03.shape.03_IncrementalShapeRecognitionBeautification; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A540BEA132FD48D0074143F /* 03.shape.04_ScratchOutDetection */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 03.shape.04_ScratchOutDetection; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A540BFA132FD4B60074143F /* 03.shape.05_AdjustingModelsDetectionSensitivity */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 03.shape.05_AdjustingModelsDetectionSensitivity; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A540C07132FD4DA0074143F /* 03.shape.06_AdjustingBeautifierProperties */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 03.shape.06_AdjustingBeautifierProperties; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A65E97816765C940026875E /* 05.prediction.01_ConjointRecognitionCompletionAndPrediction */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 05.prediction.01_ConjointRecognitionCompletionAndPrediction; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A65E97A16765D7F0026875E /* ConjointRecognitionCompletionAndPrediction.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ConjointRecognitionCompletionAndPrediction.c; sourceTree = "<group>"; };
+		1A7155A918535CAF009C8DED /* 10.music.01_MusicRecognition */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 10.music.01_MusicRecognition; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A7155AD18535CFF009C8DED /* MusicRecognition.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MusicRecognition.c; sourceTree = "<group>"; };
+		1A7155AF18535D26009C8DED /* MyScriptMusic-scoreToMusicXML.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "MyScriptMusic-scoreToMusicXML.c"; sourceTree = "<group>"; };
+		1A7155B018535D26009C8DED /* MyScriptMusic-scoreToMusicXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MyScriptMusic-scoreToMusicXML.h"; sourceTree = "<group>"; };
+		1A77FCF10D29033800ED2292 /* 00.engine.01_CreateDestroyEngine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 00.engine.01_CreateDestroyEngine; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A8B9FEE169447A800B99C6D /* MyScriptAnalyzer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScriptAnalyzer.h; sourceTree = "<group>"; };
+		1A8B9FEF169447A800B99C6D /* MyScriptMath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScriptMath.h; sourceTree = "<group>"; };
+		1A8B9FF0169447A800B99C6D /* MyScriptPrediction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScriptPrediction.h; sourceTree = "<group>"; };
+		1A8B9FF1169447A800B99C6D /* MyScriptShape.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScriptShape.h; sourceTree = "<group>"; };
+		1AA0F5FE147578CD0008949F /* MyScriptMath-parseTreeToMathML.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "MyScriptMath-parseTreeToMathML.c"; sourceTree = "<group>"; };
+		1AA0F5FF147578CD0008949F /* MyScriptMath-parseTreeToMathML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MyScriptMath-parseTreeToMathML.h"; sourceTree = "<group>"; };
+		1AAF41991270B1FB00141A3C /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		1AAF42091270B24000141A3C /* MyScriptEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScriptEngine.h; sourceTree = "<group>"; };
+		1AAF420B1270B24000141A3C /* MyScriptText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScriptText.h; sourceTree = "<group>"; };
+		1AAF420E1270B24000141A3C /* MyScriptInkSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScriptInkSearch.h; sourceTree = "<group>"; };
+		1AAF42121270B24000141A3C /* stdbool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdbool.h; sourceTree = "<group>"; };
+		1AAF42141270B24000141A3C /* stdint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdint.h; sourceTree = "<group>"; };
+		1AAF42191270B24000141A3C /* MyScriptEngine-dlHelper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "MyScriptEngine-dlHelper.c"; sourceTree = "<group>"; };
+		1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "MyScriptEngine-strerror.c"; sourceTree = "<group>"; };
+		1AAF421B1270B24000141A3C /* MyScriptEngine-strerror.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MyScriptEngine-strerror.h"; sourceTree = "<group>"; };
+		1AAF421C1270B24000141A3C /* MyScriptEngine-strtype.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "MyScriptEngine-strtype.c"; sourceTree = "<group>"; };
+		1AAF421D1270B24000141A3C /* MyScriptEngine-strtype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MyScriptEngine-strtype.h"; sourceTree = "<group>"; };
+		1AAF421E1270B24000141A3C /* MyScriptText-strCandidateFlag.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "MyScriptText-strCandidateFlag.c"; sourceTree = "<group>"; };
+		1AAF421F1270B24000141A3C /* MyScriptText-strCandidateFlag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MyScriptText-strCandidateFlag.h"; sourceTree = "<group>"; };
+		1AAF42201270B24000141A3C /* MyScriptText-strTagType.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "MyScriptText-strTagType.c"; sourceTree = "<group>"; };
+		1AAF42211270B24000141A3C /* MyScriptText-strTagType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MyScriptText-strTagType.h"; sourceTree = "<group>"; };
+		1AAF4EF51270B76A00141A3C /* MyCertificate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MyCertificate.c; sourceTree = "<group>"; };
+		1AAF4EF61270B76A00141A3C /* MyCertificate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCertificate.h; sourceTree = "<group>"; };
+		1AAF4EF81270B76A00141A3C /* CreateDestroyEngine.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CreateDestroyEngine.c; sourceTree = "<group>"; };
+		1AAF4EFA1270B76A00141A3C /* CreateArchive.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CreateArchive.c; sourceTree = "<group>"; };
+		1AAF4EFB1270B76A00141A3C /* CreateLexicalUnit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CreateLexicalUnit.c; sourceTree = "<group>"; };
+		1AAF4EFC1270B76A00141A3C /* CreateLexicon.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CreateLexicon.c; sourceTree = "<group>"; };
+		1AAF4EFD1270B76A00141A3C /* CreateSubsetKnowledge.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CreateSubsetKnowledge.c; sourceTree = "<group>"; };
+		1AAF4EFE1270B76A00141A3C /* DigitalInkTagging.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DigitalInkTagging.c; sourceTree = "<group>"; };
+		1AAF4EFF1270B76A00141A3C /* DigitalInkTagging.strokes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigitalInkTagging.strokes.h; sourceTree = "<group>"; };
+		1AAF4F001270B76A00141A3C /* DigitalInkTaggingWithRecognition.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DigitalInkTaggingWithRecognition.c; sourceTree = "<group>"; };
+		1AAF4F011270B76A00141A3C /* DigitalInkTaggingWithRecognition.strokes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigitalInkTaggingWithRecognition.strokes.h; sourceTree = "<group>"; };
+		1AAF4F021270B76A00141A3C /* ExploreRecognitionResult.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ExploreRecognitionResult.c; sourceTree = "<group>"; };
+		1AAF4F061270B76A00141A3C /* InkSearching.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = InkSearching.c; sourceTree = "<group>"; };
+		1AAF4F071270B76A00141A3C /* StructuredInputInkIndexing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = StructuredInputInkIndexing.c; sourceTree = "<group>"; };
+		1AAF51391271D7BD00141A3C /* Project.Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.Debug.xcconfig; sourceTree = "<group>"; };
+		1AAF513A1271D7BD00141A3C /* Project.Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.Release.xcconfig; sourceTree = "<group>"; };
+		1ABE3E8B1A00FBD40076DEE1 /* MyScriptDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScriptDocument.h; sourceTree = "<group>"; };
+		1ABE3E8C1A00FBD40076DEE1 /* MyScriptDOM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScriptDOM.h; sourceTree = "<group>"; };
+		1ABE3E8D1A00FBD40076DEE1 /* MyScriptInk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScriptInk.h; sourceTree = "<group>"; };
+		1ABE3E8E1A00FBD40076DEE1 /* MyScriptIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScriptIO.h; sourceTree = "<group>"; };
+		1ABE3E8F1A00FBD40076DEE1 /* MyScriptJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScriptJSON.h; sourceTree = "<group>"; };
+		1ABE3E901A00FBD40076DEE1 /* MyScriptMusic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScriptMusic.h; sourceTree = "<group>"; };
+		1ABE3E911A00FBD40076DEE1 /* MyScriptSymbol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScriptSymbol.h; sourceTree = "<group>"; };
+		1ABE3E921A00FBD40076DEE1 /* MyScriptWriterAdaptation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScriptWriterAdaptation.h; sourceTree = "<group>"; };
+		1ACB0CEB0D2BB3D7004A9D1B /* 01.text.05_CursiveRecognition */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 01.text.05_CursiveRecognition; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ACB0D860D2BD744004A9D1B /* 01.text.04_CreateArchive */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 01.text.04_CreateArchive; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ACB0D980D2BECA5004A9D1B /* 01.text.02_CreateLexicon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 01.text.02_CreateLexicon; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ACB0DAC0D2BEE6D004A9D1B /* 01.text.03_CreateLexicalUnit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 01.text.03_CreateLexicalUnit; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ACB0DCD0D2BF4CF004A9D1B /* 01.text.01_CreateSubsetKnowledge */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 01.text.01_CreateSubsetKnowledge; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ACB0DE10D2BF539004A9D1B /* 01.text.08_ExploreRecognitionResult */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 01.text.08_ExploreRecognitionResult; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ACB0F8E0D2CDC67004A9D1B /* 02.inksearch.02_InkSearching */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 02.inksearch.02_InkSearching; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ACB0F9F0D2CDCB8004A9D1B /* 02.inksearch.01_StructuredInputInkIndexing */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 02.inksearch.01_StructuredInputInkIndexing; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B0582A017E9C06600BCB10D /* 08.document.03_LoadMetadata */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 08.document.03_LoadMetadata; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B82ABF71806BFB800DE74FF /* 08.document.11_TextIndexation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 08.document.11_TextIndexation; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B89B8031806D78F00579F81 /* 08.document.12_InkSearching */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 08.document.12_InkSearching; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BA6FF5A17DF4FDF00C04955 /* 08.document.02_LoadSaveDocument */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 08.document.02_LoadSaveDocument; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BA6FF7317DF597100C04955 /* 08.document.10_TextRecognition */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 08.document.10_TextRecognition; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BA6FF8217DF5AD500C04955 /* 08.document.13_ShapeRecognition */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 08.document.13_ShapeRecognition; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BA6FF9117DF5BDE00C04955 /* 08.document.14_MathRecognition */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 08.document.14_MathRecognition; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BB00E1517F585EA00BF8A6A /* 08.document.05_StoreMetadata */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 08.document.05_StoreMetadata; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BB00E2317F58CDF00BF8A6A /* 08.document.04_EditMetadata */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 08.document.04_EditMetadata; sourceTree = BUILT_PRODUCTS_DIR; };
+		793DDAD6166CB53D00684C85 /* parseInk.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = parseInk.c; sourceTree = "<group>"; };
+		793DDAD7166CB53D00684C85 /* parseInk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parseInk.h; sourceTree = "<group>"; };
+		794C928A16564FA200C90DA1 /* 06.analyzer.01_DocumentAnalysis */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 06.analyzer.01_DocumentAnalysis; sourceTree = BUILT_PRODUCTS_DIR; };
+		794C928F16564FE500C90DA1 /* DocumentAnalysis.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = DocumentAnalysis.c; path = ../analyzer/DocumentAnalysis.c; sourceTree = "<group>"; };
+		794C92911656500300C90DA1 /* MyScriptAnalyzer-documentToSVG.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "MyScriptAnalyzer-documentToSVG.c"; sourceTree = "<group>"; };
+		794C92921656500300C90DA1 /* MyScriptAnalyzer-documentToSVG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MyScriptAnalyzer-documentToSVG.h"; sourceTree = "<group>"; };
+		798930FB181822FF003BE3C7 /* ConjointRecognitionAndAdaptation.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ConjointRecognitionAndAdaptation.c; sourceTree = "<group>"; };
+		79C20720181806C500F1E21D /* 09.writeradaptation.01_ConjointRecognitionAndAdaptation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 09.writeradaptation.01_ConjointRecognitionAndAdaptation; sourceTree = BUILT_PRODUCTS_DIR; };
+		B09502FA1A247D8E00E199FF /* CursiveRecognition.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CursiveRecognition.c; sourceTree = "<group>"; };
+		B09502FB1A247D8E00E199FF /* IsolatedRecognition.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = IsolatedRecognition.c; sourceTree = "<group>"; };
+		B09502FC1A247D8E00E199FF /* SuperimposedRecognition.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SuperimposedRecognition.c; sourceTree = "<group>"; };
+		B09502FD1A247D8E00E199FF /* Transliteration.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Transliteration.c; sourceTree = "<group>"; };
+		B095030A1A247DAE00E199FF /* 01.text.11_Transliteration */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 01.text.11_Transliteration; sourceTree = BUILT_PRODUCTS_DIR; };
+		B09503161A247DDC00E199FF /* 01.text.07_SuperimposedRecognition */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 01.text.07_SuperimposedRecognition; sourceTree = BUILT_PRODUCTS_DIR; };
+		B09503221A247E1800E199FF /* 01.text.06_IsolatedRecognition */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 01.text.06_IsolatedRecognition; sourceTree = BUILT_PRODUCTS_DIR; };
+		F40E1B38181FA8FE009E8D65 /* 07.ink.01_CreateInk */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 07.ink.01_CreateInk; sourceTree = BUILT_PRODUCTS_DIR; };
+		F40E1B47181FABA7009E8D65 /* 07.ink.02_EditInk */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 07.ink.02_EditInk; sourceTree = BUILT_PRODUCTS_DIR; };
+		F40E1B52181FABC4009E8D65 /* 07.ink.03_UsingTags */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 07.ink.03_UsingTags; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1A44F13F14431DB0003E2B02 /* math */ = {
+			isa = PBXGroup;
+			children = (
+				1A44F15514431E36003E2B02 /* MathRecognition.c */,
+			);
+			name = math;
+			path = ../math;
+			sourceTree = "<group>";
+		};
+		1A540B68132FD1FF0074143F /* shape */ = {
+			isa = PBXGroup;
+			children = (
+				1A540B6C132FD2380074143F /* AdjustingBeautifierProperties.c */,
+				1A540B6E132FD2380074143F /* AdjustingModelsDetectionSensitivity.c */,
+				1A540B6F132FD2380074143F /* almost_rectangle.strokes.h */,
+				1A540B70132FD2380074143F /* arrow_head.strokes.h */,
+				1A540B71132FD2380074143F /* arrow.strokes.h */,
+				1A540B72132FD2380074143F /* circle.strokes.h */,
+				1A540B73132FD2380074143F /* IncrementalShapeRecognitionBeautification.c */,
+				1A540B74132FD2380074143F /* line.strokes.h */,
+				1A540B75132FD2380074143F /* MultipleShapesRecognitionBeautification.c */,
+				1A540B76132FD2380074143F /* rectangle.strokes.h */,
+				1A540B77132FD2380074143F /* scratch_out.strokes.h */,
+				1A540B78132FD2380074143F /* ScratchOutDetection.c */,
+				1A540B79132FD2380074143F /* SingleShapeRecognition.c */,
+				1A540B7A132FD2380074143F /* triangle.strokes.h */,
+			);
+			name = shape;
+			path = ../shape;
+			sourceTree = "<group>";
+		};
+		1A65E96B16765C520026875E /* prediction */ = {
+			isa = PBXGroup;
+			children = (
+				1A65E97A16765D7F0026875E /* ConjointRecognitionCompletionAndPrediction.c */,
+			);
+			name = prediction;
+			path = ../prediction;
+			sourceTree = "<group>";
+		};
+		1A7155AC18535CD6009C8DED /* music */ = {
+			isa = PBXGroup;
+			children = (
+				1A7155AD18535CFF009C8DED /* MusicRecognition.c */,
+			);
+			name = music;
+			path = ../music;
+			sourceTree = "<group>";
+		};
+		1A77FCE30D29031000ED2292 = {
+			isa = PBXGroup;
+			children = (
+				1AAF51381271D7B300141A3C /* xcconfig */,
+				1AAF4EF41270B76A00141A3C /* certificates */,
+				1AAF41981270B1FB00141A3C /* common */,
+				3BA6FF5B17DF50C400C04955 /* document */,
+				1AAF419A1270B23F00141A3C /* edk */,
+				794C928D16564FCF00C90DA1 /* analyzer */,
+				1AAF4EF71270B76A00141A3C /* engine */,
+				1A44F13F14431DB0003E2B02 /* math */,
+				1AAF4EF91270B76A00141A3C /* text */,
+				F40E1B39181FA97D009E8D65 /* ink */,
+				1AAF4F051270B76A00141A3C /* inksearch */,
+				1A7155AC18535CD6009C8DED /* music */,
+				1A65E96B16765C520026875E /* prediction */,
+				1A540B68132FD1FF0074143F /* shape */,
+				79C20731181808ED00F1E21D /* writeradaptation */,
+				1A77FCF20D29033800ED2292 /* Products */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		1A77FCF20D29033800ED2292 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A77FCF10D29033800ED2292 /* 00.engine.01_CreateDestroyEngine */,
+				1ACB0CEB0D2BB3D7004A9D1B /* 01.text.05_CursiveRecognition */,
+				1ACB0D860D2BD744004A9D1B /* 01.text.04_CreateArchive */,
+				1ACB0D980D2BECA5004A9D1B /* 01.text.02_CreateLexicon */,
+				1ACB0DAC0D2BEE6D004A9D1B /* 01.text.03_CreateLexicalUnit */,
+				1ACB0DCD0D2BF4CF004A9D1B /* 01.text.01_CreateSubsetKnowledge */,
+				1ACB0DE10D2BF539004A9D1B /* 01.text.08_ExploreRecognitionResult */,
+				1ACB0F8E0D2CDC67004A9D1B /* 02.inksearch.02_InkSearching */,
+				1ACB0F9F0D2CDCB8004A9D1B /* 02.inksearch.01_StructuredInputInkIndexing */,
+				1A384EF20EA8E3F300901C93 /* 01.text.09_DigitalInkTagging */,
+				1A384F370EA8E53D00901C93 /* 01.text.10_DigitalInkTaggingWithRecognition */,
+				1A540B8A132FD2B80074143F /* 03.shape.01_SingleShapeRecognition */,
+				1A540BCC132FD4270074143F /* 03.shape.02_MultipleShapesRecognitionBeautification */,
+				1A540BDC132FD4600074143F /* 03.shape.03_IncrementalShapeRecognitionBeautification */,
+				1A540BEA132FD48D0074143F /* 03.shape.04_ScratchOutDetection */,
+				1A540BFA132FD4B60074143F /* 03.shape.05_AdjustingModelsDetectionSensitivity */,
+				1A540C07132FD4DA0074143F /* 03.shape.06_AdjustingBeautifierProperties */,
+				1A44F14D14431DEA003E2B02 /* 04.math.01_MathRecognition */,
+				794C928A16564FA200C90DA1 /* 06.analyzer.01_DocumentAnalysis */,
+				1A65E97816765C940026875E /* 05.prediction.01_ConjointRecognitionCompletionAndPrediction */,
+				3BA6FF5A17DF4FDF00C04955 /* 08.document.02_LoadSaveDocument */,
+				3BA6FF7317DF597100C04955 /* 08.document.10_TextRecognition */,
+				3BA6FF8217DF5AD500C04955 /* 08.document.13_ShapeRecognition */,
+				3BA6FF9117DF5BDE00C04955 /* 08.document.14_MathRecognition */,
+				3B0582A017E9C06600BCB10D /* 08.document.03_LoadMetadata */,
+				3BB00E1517F585EA00BF8A6A /* 08.document.05_StoreMetadata */,
+				3BB00E2317F58CDF00BF8A6A /* 08.document.04_EditMetadata */,
+				3B82ABF71806BFB800DE74FF /* 08.document.11_TextIndexation */,
+				3B89B8031806D78F00579F81 /* 08.document.12_InkSearching */,
+				79C20720181806C500F1E21D /* 09.writeradaptation.01_ConjointRecognitionAndAdaptation */,
+				16EA0777181973B100F1C963 /* 08.document.08_UndoRedo */,
+				16EA0785181974D900F1C963 /* 08.document.06_PageEdition */,
+				16EA07951819764300F1C963 /* 08.document.07_LayoutEdition */,
+				16EA07A6181979D300F1C963 /* 08.document.01_CreateDocument */,
+				16FE54DB181A5F8200B85426 /* 08.document.15_DocumentAnalysis */,
+				16FE54EC181A675A00B85426 /* 08.document.09_PageUpdateListener */,
+				F40E1B38181FA8FE009E8D65 /* 07.ink.01_CreateInk */,
+				F40E1B47181FABA7009E8D65 /* 07.ink.02_EditInk */,
+				F40E1B52181FABC4009E8D65 /* 07.ink.03_UsingTags */,
+				1A7155A918535CAF009C8DED /* 10.music.01_MusicRecognition */,
+				B095030A1A247DAE00E199FF /* 01.text.11_Transliteration */,
+				B09503161A247DDC00E199FF /* 01.text.07_SuperimposedRecognition */,
+				B09503221A247E1800E199FF /* 01.text.06_IsolatedRecognition */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AAF41981270B1FB00141A3C /* common */ = {
+			isa = PBXGroup;
+			children = (
+				793DDAD6166CB53D00684C85 /* parseInk.c */,
+				793DDAD7166CB53D00684C85 /* parseInk.h */,
+				1A51B6991292D1BB008C6585 /* common.c */,
+				1A51B5E01292971C008C6585 /* common.h */,
+				1AAF41991270B1FB00141A3C /* config.h */,
+			);
+			name = common;
+			path = ../common;
+			sourceTree = "<group>";
+		};
+		1AAF419A1270B23F00141A3C /* edk */ = {
+			isa = PBXGroup;
+			children = (
+				1AAF419B1270B23F00141A3C /* c */,
+			);
+			name = edk;
+			path = ../../..;
+			sourceTree = "<group>";
+		};
+		1AAF419B1270B23F00141A3C /* c */ = {
+			isa = PBXGroup;
+			children = (
+				1AAF42041270B24000141A3C /* include */,
+				1AAF42181270B24000141A3C /* src */,
+			);
+			path = c;
+			sourceTree = "<group>";
+		};
+		1AAF42041270B24000141A3C /* include */ = {
+			isa = PBXGroup;
+			children = (
+				1AAF42051270B24000141A3C /* c */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		1AAF42051270B24000141A3C /* c */ = {
+			isa = PBXGroup;
+			children = (
+				1A8B9FEE169447A800B99C6D /* MyScriptAnalyzer.h */,
+				1ABE3E8B1A00FBD40076DEE1 /* MyScriptDocument.h */,
+				1ABE3E8C1A00FBD40076DEE1 /* MyScriptDOM.h */,
+				1AAF42091270B24000141A3C /* MyScriptEngine.h */,
+				1A8B9FEF169447A800B99C6D /* MyScriptMath.h */,
+				1AAF420B1270B24000141A3C /* MyScriptText.h */,
+				1ABE3E8D1A00FBD40076DEE1 /* MyScriptInk.h */,
+				1AAF420E1270B24000141A3C /* MyScriptInkSearch.h */,
+				1ABE3E8E1A00FBD40076DEE1 /* MyScriptIO.h */,
+				1ABE3E8F1A00FBD40076DEE1 /* MyScriptJSON.h */,
+				1ABE3E901A00FBD40076DEE1 /* MyScriptMusic.h */,
+				1A8B9FF0169447A800B99C6D /* MyScriptPrediction.h */,
+				1A8B9FF1169447A800B99C6D /* MyScriptShape.h */,
+				1ABE3E911A00FBD40076DEE1 /* MyScriptSymbol.h */,
+				1ABE3E921A00FBD40076DEE1 /* MyScriptWriterAdaptation.h */,
+				1AAF42111270B24000141A3C /* std */,
+			);
+			path = c;
+			sourceTree = "<group>";
+		};
+		1AAF42111270B24000141A3C /* std */ = {
+			isa = PBXGroup;
+			children = (
+				1AAF42121270B24000141A3C /* stdbool.h */,
+				1AAF42141270B24000141A3C /* stdint.h */,
+			);
+			path = std;
+			sourceTree = "<group>";
+		};
+		1AAF42181270B24000141A3C /* src */ = {
+			isa = PBXGroup;
+			children = (
+				794C92911656500300C90DA1 /* MyScriptAnalyzer-documentToSVG.c */,
+				794C92921656500300C90DA1 /* MyScriptAnalyzer-documentToSVG.h */,
+				1AAF42191270B24000141A3C /* MyScriptEngine-dlHelper.c */,
+				1AAF421A1270B24000141A3C /* MyScriptEngine-strerror.c */,
+				1AAF421B1270B24000141A3C /* MyScriptEngine-strerror.h */,
+				1AAF421C1270B24000141A3C /* MyScriptEngine-strtype.c */,
+				1AAF421D1270B24000141A3C /* MyScriptEngine-strtype.h */,
+				1A3DA3DD14471C48003962E7 /* MyScriptMath-parseTreeToLaTeX.c */,
+				1A3DA3DE14471C48003962E7 /* MyScriptMath-parseTreeToLaTeX.h */,
+				1AA0F5FE147578CD0008949F /* MyScriptMath-parseTreeToMathML.c */,
+				1AA0F5FF147578CD0008949F /* MyScriptMath-parseTreeToMathML.h */,
+				1AAF421E1270B24000141A3C /* MyScriptText-strCandidateFlag.c */,
+				1AAF421F1270B24000141A3C /* MyScriptText-strCandidateFlag.h */,
+				1AAF42201270B24000141A3C /* MyScriptText-strTagType.c */,
+				1AAF42211270B24000141A3C /* MyScriptText-strTagType.h */,
+				1A7155AF18535D26009C8DED /* MyScriptMusic-scoreToMusicXML.c */,
+				1A7155B018535D26009C8DED /* MyScriptMusic-scoreToMusicXML.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		1AAF4EF41270B76A00141A3C /* certificates */ = {
+			isa = PBXGroup;
+			children = (
+				1AAF4EF51270B76A00141A3C /* MyCertificate.c */,
+				1AAF4EF61270B76A00141A3C /* MyCertificate.h */,
+			);
+			name = certificates;
+			path = ../certificates;
+			sourceTree = "<group>";
+		};
+		1AAF4EF71270B76A00141A3C /* engine */ = {
+			isa = PBXGroup;
+			children = (
+				1AAF4EF81270B76A00141A3C /* CreateDestroyEngine.c */,
+			);
+			name = engine;
+			path = ../engine;
+			sourceTree = "<group>";
+		};
+		1AAF4EF91270B76A00141A3C /* text */ = {
+			isa = PBXGroup;
+			children = (
+				1AAF4EFA1270B76A00141A3C /* CreateArchive.c */,
+				1AAF4EFB1270B76A00141A3C /* CreateLexicalUnit.c */,
+				1AAF4EFC1270B76A00141A3C /* CreateLexicon.c */,
+				1AAF4EFD1270B76A00141A3C /* CreateSubsetKnowledge.c */,
+				B09502FA1A247D8E00E199FF /* CursiveRecognition.c */,
+				1AAF4EFE1270B76A00141A3C /* DigitalInkTagging.c */,
+				1AAF4EFF1270B76A00141A3C /* DigitalInkTagging.strokes.h */,
+				1AAF4F001270B76A00141A3C /* DigitalInkTaggingWithRecognition.c */,
+				1AAF4F011270B76A00141A3C /* DigitalInkTaggingWithRecognition.strokes.h */,
+				1AAF4F021270B76A00141A3C /* ExploreRecognitionResult.c */,
+				B09502FB1A247D8E00E199FF /* IsolatedRecognition.c */,
+				B09502FC1A247D8E00E199FF /* SuperimposedRecognition.c */,
+				B09502FD1A247D8E00E199FF /* Transliteration.c */,
+			);
+			name = text;
+			path = ../text;
+			sourceTree = "<group>";
+		};
+		1AAF4F051270B76A00141A3C /* inksearch */ = {
+			isa = PBXGroup;
+			children = (
+				1AAF4F071270B76A00141A3C /* StructuredInputInkIndexing.c */,
+				1AAF4F061270B76A00141A3C /* InkSearching.c */,
+			);
+			name = inksearch;
+			path = ../inksearch;
+			sourceTree = "<group>";
+		};
+		1AAF51381271D7B300141A3C /* xcconfig */ = {
+			isa = PBXGroup;
+			children = (
+				1AAF51391271D7BD00141A3C /* Project.Debug.xcconfig */,
+				1AAF513A1271D7BD00141A3C /* Project.Release.xcconfig */,
+			);
+			name = xcconfig;
+			sourceTree = "<group>";
+		};
+		3BA6FF5B17DF50C400C04955 /* document */ = {
+			isa = PBXGroup;
+			children = (
+				1A1837EA18291F4C003E7048 /* CreateDocument.c */,
+				1A1837EB18291F4C003E7048 /* DocumentAnalysis.c */,
+				1A1837EC18291F4C003E7048 /* EditMetadata.c */,
+				1A1837ED18291F4C003E7048 /* MathRecognition.c */,
+				1A1837EE18291F4C003E7048 /* InkSearching.c */,
+				1A1837EF18291F4C003E7048 /* LayoutEdition.c */,
+				1A1837F018291F4C003E7048 /* LoadMetadata.c */,
+				1A1837F118291F4C003E7048 /* LoadSaveDocument.c */,
+				1A1837F218291F4C003E7048 /* PageEdition.c */,
+				1A1837F318291F4C003E7048 /* PageUpdateListener.c */,
+				1A1837F418291F4C003E7048 /* ShapeRecognition.c */,
+				1A1837F518291F4C003E7048 /* StoreMetadata.c */,
+				1A1837F618291F4C003E7048 /* strokes.h */,
+				1A1837F718291F4C003E7048 /* TextIndexation.c */,
+				1A1837F818291F4C003E7048 /* TextRecognition.c */,
+				1A1837F918291F4C003E7048 /* UndoRedo.c */,
+			);
+			name = document;
+			path = ../document;
+			sourceTree = "<group>";
+		};
+		794C928D16564FCF00C90DA1 /* analyzer */ = {
+			isa = PBXGroup;
+			children = (
+				794C928F16564FE500C90DA1 /* DocumentAnalysis.c */,
+			);
+			name = analyzer;
+			path = ../analyzer;
+			sourceTree = "<group>";
+		};
+		79C20731181808ED00F1E21D /* writeradaptation */ = {
+			isa = PBXGroup;
+			children = (
+				798930FB181822FF003BE3C7 /* ConjointRecognitionAndAdaptation.c */,
+			);
+			name = writeradaptation;
+			path = ../writeradaptation;
+			sourceTree = "<group>";
+		};
+		F40E1B39181FA97D009E8D65 /* ink */ = {
+			isa = PBXGroup;
+			children = (
+				1A1837E418291F1A003E7048 /* CreateInk.c */,
+				1A1837E518291F1A003E7048 /* EditInk.c */,
+				1A1837E618291F1A003E7048 /* UsingTags.c */,
+			);
+			name = ink;
+			path = ../ink;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16EA076C181973B100F1C963 /* 08.document.08_UndoRedo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16EA0774181973B100F1C963 /* Build configuration list for PBXNativeTarget "08.document.08_UndoRedo" */;
+			buildPhases = (
+				16EA076F181973B100F1C963 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 08.document.08_UndoRedo;
+			productName = 08.document.08_UndoRedo;
+			productReference = 16EA0777181973B100F1C963 /* 08.document.08_UndoRedo */;
+			productType = "com.apple.product-type.tool";
+		};
+		16EA077A181974D900F1C963 /* 08.document.06_PageEdition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16EA0782181974D900F1C963 /* Build configuration list for PBXNativeTarget "08.document.06_PageEdition" */;
+			buildPhases = (
+				16EA077D181974D900F1C963 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 08.document.06_PageEdition;
+			productName = 08.document.06_PageEdition;
+			productReference = 16EA0785181974D900F1C963 /* 08.document.06_PageEdition */;
+			productType = "com.apple.product-type.tool";
+		};
+		16EA07891819764300F1C963 /* 08.document.07_LayoutEdition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16EA07921819764300F1C963 /* Build configuration list for PBXNativeTarget "08.document.07_LayoutEdition" */;
+			buildPhases = (
+				16EA078C1819764300F1C963 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 08.document.07_LayoutEdition;
+			productName = 08.document.07_LayoutEdition;
+			productReference = 16EA07951819764300F1C963 /* 08.document.07_LayoutEdition */;
+			productType = "com.apple.product-type.tool";
+		};
+		16EA079A181979D300F1C963 /* 08.document.01_CreateDocument */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16EA07A3181979D300F1C963 /* Build configuration list for PBXNativeTarget "08.document.01_CreateDocument" */;
+			buildPhases = (
+				16EA079D181979D300F1C963 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 08.document.01_CreateDocument;
+			productName = 08.document.01_CreateDocument;
+			productReference = 16EA07A6181979D300F1C963 /* 08.document.01_CreateDocument */;
+			productType = "com.apple.product-type.tool";
+		};
+		16FE54D0181A5F8200B85426 /* 08.document.15_DocumentAnalysis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16FE54D8181A5F8200B85426 /* Build configuration list for PBXNativeTarget "08.document.15_DocumentAnalysis" */;
+			buildPhases = (
+				16FE54D3181A5F8200B85426 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 08.document.15_DocumentAnalysis;
+			productName = 08.document.15_DocumentAnalysis;
+			productReference = 16FE54DB181A5F8200B85426 /* 08.document.15_DocumentAnalysis */;
+			productType = "com.apple.product-type.tool";
+		};
+		16FE54E1181A675A00B85426 /* 08.document.09_PageUpdateListener */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16FE54E9181A675A00B85426 /* Build configuration list for PBXNativeTarget "08.document.09_PageUpdateListener" */;
+			buildPhases = (
+				16FE54E4181A675A00B85426 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 08.document.09_PageUpdateListener;
+			productName = 08.document.09_PageUpdateListener;
+			productReference = 16FE54EC181A675A00B85426 /* 08.document.09_PageUpdateListener */;
+			productType = "com.apple.product-type.tool";
+		};
+		1A384EF10EA8E3F300901C93 /* 01.text.09_DigitalInkTagging */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A384EF80EA8E41E00901C93 /* Build configuration list for PBXNativeTarget "01.text.09_DigitalInkTagging" */;
+			buildPhases = (
+				1A384EEF0EA8E3F300901C93 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 01.text.09_DigitalInkTagging;
+			productName = 01.text.07_DigitalInkTagging;
+			productReference = 1A384EF20EA8E3F300901C93 /* 01.text.09_DigitalInkTagging */;
+			productType = "com.apple.product-type.tool";
+		};
+		1A384F360EA8E53D00901C93 /* 01.text.10_DigitalInkTaggingWithRecognition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A384F4C0EA8E58200901C93 /* Build configuration list for PBXNativeTarget "01.text.10_DigitalInkTaggingWithRecognition" */;
+			buildPhases = (
+				1A384F340EA8E53D00901C93 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 01.text.10_DigitalInkTaggingWithRecognition;
+			productName = 01.text.08_DigitalInkTaggingWithRecognition;
+			productReference = 1A384F370EA8E53D00901C93 /* 01.text.10_DigitalInkTaggingWithRecognition */;
+			productType = "com.apple.product-type.tool";
+		};
+		1A44F14214431DEA003E2B02 /* 04.math.01_MathRecognition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A44F14A14431DEA003E2B02 /* Build configuration list for PBXNativeTarget "04.math.01_MathRecognition" */;
+			buildPhases = (
+				1A44F14514431DEA003E2B02 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 04.math.01_MathRecognition;
+			productName = 04.math.01_MathRecognition;
+			productReference = 1A44F14D14431DEA003E2B02 /* 04.math.01_MathRecognition */;
+			productType = "com.apple.product-type.tool";
+		};
+		1A540B7F132FD2B80074143F /* 03.shape.01_SingleShapeRecognition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A540B87132FD2B80074143F /* Build configuration list for PBXNativeTarget "03.shape.01_SingleShapeRecognition" */;
+			buildPhases = (
+				1A540B82132FD2B80074143F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 03.shape.01_SingleShapeRecognition;
+			productName = 03.shape.01_SingleShapeRecognition;
+			productReference = 1A540B8A132FD2B80074143F /* 03.shape.01_SingleShapeRecognition */;
+			productType = "com.apple.product-type.tool";
+		};
+		1A540BC1132FD4270074143F /* 03.shape.02_MultipleShapesRecognitionBeautification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A540BC9132FD4270074143F /* Build configuration list for PBXNativeTarget "03.shape.02_MultipleShapesRecognitionBeautification" */;
+			buildPhases = (
+				1A540BC4132FD4270074143F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 03.shape.02_MultipleShapesRecognitionBeautification;
+			productName = 03.shape.02_MultipleShapesRecognitionBeautification;
+			productReference = 1A540BCC132FD4270074143F /* 03.shape.02_MultipleShapesRecognitionBeautification */;
+			productType = "com.apple.product-type.tool";
+		};
+		1A540BD1132FD4600074143F /* 03.shape.03_IncrementalShapeRecognitionBeautification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A540BD9132FD4600074143F /* Build configuration list for PBXNativeTarget "03.shape.03_IncrementalShapeRecognitionBeautification" */;
+			buildPhases = (
+				1A540BD4132FD4600074143F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 03.shape.03_IncrementalShapeRecognitionBeautification;
+			productName = 03.shape.03_IncrementalShapeRecognitionBeautification;
+			productReference = 1A540BDC132FD4600074143F /* 03.shape.03_IncrementalShapeRecognitionBeautification */;
+			productType = "com.apple.product-type.tool";
+		};
+		1A540BDF132FD48D0074143F /* 03.shape.04_ScratchOutDetection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A540BE7132FD48D0074143F /* Build configuration list for PBXNativeTarget "03.shape.04_ScratchOutDetection" */;
+			buildPhases = (
+				1A540BE2132FD48D0074143F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 03.shape.04_ScratchOutDetection;
+			productName = 03.shape.04_ScratchOutDetection;
+			productReference = 1A540BEA132FD48D0074143F /* 03.shape.04_ScratchOutDetection */;
+			productType = "com.apple.product-type.tool";
+		};
+		1A540BEF132FD4B60074143F /* 03.shape.05_AdjustingModelsDetectionSensitivity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A540BF7132FD4B60074143F /* Build configuration list for PBXNativeTarget "03.shape.05_AdjustingModelsDetectionSensitivity" */;
+			buildPhases = (
+				1A540BF2132FD4B60074143F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 03.shape.05_AdjustingModelsDetectionSensitivity;
+			productName = 03.shape.05_AdjustingModelsDetectionSensitivity;
+			productReference = 1A540BFA132FD4B60074143F /* 03.shape.05_AdjustingModelsDetectionSensitivity */;
+			productType = "com.apple.product-type.tool";
+		};
+		1A540BFD132FD4DA0074143F /* 03.shape.06_AdjustingBeautifierProperties */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A540C04132FD4DA0074143F /* Build configuration list for PBXNativeTarget "03.shape.06_AdjustingBeautifierProperties" */;
+			buildPhases = (
+				1A540C00132FD4DA0074143F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 03.shape.06_AdjustingBeautifierProperties;
+			productName = 03.shape.06_AdjustingBeautifierProperties;
+			productReference = 1A540C07132FD4DA0074143F /* 03.shape.06_AdjustingBeautifierProperties */;
+			productType = "com.apple.product-type.tool";
+		};
+		1A65E96D16765C940026875E /* 05.prediction.01_ConjointRecognitionCompletionAndPrediction */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A65E97516765C940026875E /* Build configuration list for PBXNativeTarget "05.prediction.01_ConjointRecognitionCompletionAndPrediction" */;
+			buildPhases = (
+				1A65E97016765C940026875E /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 05.prediction.01_ConjointRecognitionCompletionAndPrediction;
+			productName = 05.prediction.01_ConjointRecognitionCompletionAndPrediction;
+			productReference = 1A65E97816765C940026875E /* 05.prediction.01_ConjointRecognitionCompletionAndPrediction */;
+			productType = "com.apple.product-type.tool";
+		};
+		1A71559D18535CAF009C8DED /* 10.music.01_MusicRecognition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A7155A618535CAF009C8DED /* Build configuration list for PBXNativeTarget "10.music.01_MusicRecognition" */;
+			buildPhases = (
+				1A7155A018535CAF009C8DED /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 10.music.01_MusicRecognition;
+			productName = 10.music.01_MusicRecognition;
+			productReference = 1A7155A918535CAF009C8DED /* 10.music.01_MusicRecognition */;
+			productType = "com.apple.product-type.tool";
+		};
+		1A77FCF00D29033800ED2292 /* 00.engine.01_CreateDestroyEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A77FCF40D29033800ED2292 /* Build configuration list for PBXNativeTarget "00.engine.01_CreateDestroyEngine" */;
+			buildPhases = (
+				1A77FCEE0D29033800ED2292 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 00.engine.01_CreateDestroyEngine;
+			productName = 00.engine.01_CreateDestroyEngine;
+			productReference = 1A77FCF10D29033800ED2292 /* 00.engine.01_CreateDestroyEngine */;
+			productType = "com.apple.product-type.tool";
+		};
+		1ACB0CEA0D2BB3D7004A9D1B /* 01.text.05_CursiveRecognition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ACB0CF10D2BB407004A9D1B /* Build configuration list for PBXNativeTarget "01.text.05_CursiveRecognition" */;
+			buildPhases = (
+				1ACB0CE80D2BB3D7004A9D1B /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 01.text.05_CursiveRecognition;
+			productName = 01.text.05_StructuredInputRecognition;
+			productReference = 1ACB0CEB0D2BB3D7004A9D1B /* 01.text.05_CursiveRecognition */;
+			productType = "com.apple.product-type.tool";
+		};
+		1ACB0D850D2BD744004A9D1B /* 01.text.04_CreateArchive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ACB0D8A0D2BD75A004A9D1B /* Build configuration list for PBXNativeTarget "01.text.04_CreateArchive" */;
+			buildPhases = (
+				1ACB0D830D2BD744004A9D1B /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 01.text.04_CreateArchive;
+			productName = 01.text.04_CreateArchive;
+			productReference = 1ACB0D860D2BD744004A9D1B /* 01.text.04_CreateArchive */;
+			productType = "com.apple.product-type.tool";
+		};
+		1ACB0D970D2BECA5004A9D1B /* 01.text.02_CreateLexicon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ACB0D9A0D2BECA9004A9D1B /* Build configuration list for PBXNativeTarget "01.text.02_CreateLexicon" */;
+			buildPhases = (
+				1ACB0D950D2BECA5004A9D1B /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 01.text.02_CreateLexicon;
+			productName = 01.text.02_CreateLexicon;
+			productReference = 1ACB0D980D2BECA5004A9D1B /* 01.text.02_CreateLexicon */;
+			productType = "com.apple.product-type.tool";
+		};
+		1ACB0DAB0D2BEE6D004A9D1B /* 01.text.03_CreateLexicalUnit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ACB0DAE0D2BEE74004A9D1B /* Build configuration list for PBXNativeTarget "01.text.03_CreateLexicalUnit" */;
+			buildPhases = (
+				1ACB0DA90D2BEE6D004A9D1B /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 01.text.03_CreateLexicalUnit;
+			productName = 01.text.03_CreateLexicalUnit;
+			productReference = 1ACB0DAC0D2BEE6D004A9D1B /* 01.text.03_CreateLexicalUnit */;
+			productType = "com.apple.product-type.tool";
+		};
+		1ACB0DCC0D2BF4CF004A9D1B /* 01.text.01_CreateSubsetKnowledge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ACB0DCF0D2BF4F2004A9D1B /* Build configuration list for PBXNativeTarget "01.text.01_CreateSubsetKnowledge" */;
+			buildPhases = (
+				1ACB0DCA0D2BF4CF004A9D1B /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 01.text.01_CreateSubsetKnowledge;
+			productName = 01.text.01_CreateSubsetKnowledge;
+			productReference = 1ACB0DCD0D2BF4CF004A9D1B /* 01.text.01_CreateSubsetKnowledge */;
+			productType = "com.apple.product-type.tool";
+		};
+		1ACB0DE00D2BF539004A9D1B /* 01.text.08_ExploreRecognitionResult */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ACB0DE50D2BF552004A9D1B /* Build configuration list for PBXNativeTarget "01.text.08_ExploreRecognitionResult" */;
+			buildPhases = (
+				1ACB0DDE0D2BF539004A9D1B /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 01.text.08_ExploreRecognitionResult;
+			productName = 01.text.06_ExploreRecognitionResult;
+			productReference = 1ACB0DE10D2BF539004A9D1B /* 01.text.08_ExploreRecognitionResult */;
+			productType = "com.apple.product-type.tool";
+		};
+		1ACB0F8D0D2CDC67004A9D1B /* 02.inksearch.02_InkSearching */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ACB0F940D2CDC90004A9D1B /* Build configuration list for PBXNativeTarget "02.inksearch.02_InkSearching" */;
+			buildPhases = (
+				1ACB0F8B0D2CDC67004A9D1B /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 02.inksearch.02_InkSearching;
+			productName = 02.inksearch.02_InkSearching;
+			productReference = 1ACB0F8E0D2CDC67004A9D1B /* 02.inksearch.02_InkSearching */;
+			productType = "com.apple.product-type.tool";
+		};
+		1ACB0F9E0D2CDCB8004A9D1B /* 02.inksearch.01_StructuredInputInkIndexing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ACB0FA40D2CDCC4004A9D1B /* Build configuration list for PBXNativeTarget "02.inksearch.01_StructuredInputInkIndexing" */;
+			buildPhases = (
+				1ACB0F9C0D2CDCB8004A9D1B /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 02.inksearch.01_StructuredInputInkIndexing;
+			productName = 02.inksearch.01_StructuredInputInkIndexing;
+			productReference = 1ACB0F9F0D2CDCB8004A9D1B /* 02.inksearch.01_StructuredInputInkIndexing */;
+			productType = "com.apple.product-type.tool";
+		};
+		3B05829517E9C06600BCB10D /* 08.document.03_LoadMetadata */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B05829D17E9C06600BCB10D /* Build configuration list for PBXNativeTarget "08.document.03_LoadMetadata" */;
+			buildPhases = (
+				3B05829817E9C06600BCB10D /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 08.document.03_LoadMetadata;
+			productName = 08.document.03_LoadMetadata;
+			productReference = 3B0582A017E9C06600BCB10D /* 08.document.03_LoadMetadata */;
+			productType = "com.apple.product-type.tool";
+		};
+		3B82ABEC1806BFB800DE74FF /* 08.document.11_TextIndexation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B82ABF41806BFB800DE74FF /* Build configuration list for PBXNativeTarget "08.document.11_TextIndexation" */;
+			buildPhases = (
+				3B82ABEF1806BFB800DE74FF /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 08.document.11_TextIndexation;
+			productName = 08.document.11_TextIndexation;
+			productReference = 3B82ABF71806BFB800DE74FF /* 08.document.11_TextIndexation */;
+			productType = "com.apple.product-type.tool";
+		};
+		3B89B7F71806D78F00579F81 /* 08.document.12_InkSearching */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B89B8001806D78F00579F81 /* Build configuration list for PBXNativeTarget "08.document.12_InkSearching" */;
+			buildPhases = (
+				3B89B7FA1806D78F00579F81 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 08.document.12_InkSearching;
+			productName = 08.document.12_InkSearching;
+			productReference = 3B89B8031806D78F00579F81 /* 08.document.12_InkSearching */;
+			productType = "com.apple.product-type.tool";
+		};
+		3BA6FF4F17DF4FDF00C04955 /* 08.document.02_LoadSaveDocument */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BA6FF5717DF4FDF00C04955 /* Build configuration list for PBXNativeTarget "08.document.02_LoadSaveDocument" */;
+			buildPhases = (
+				3BA6FF5217DF4FDF00C04955 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 08.document.02_LoadSaveDocument;
+			productName = 08.document.02_LoadSaveDocument;
+			productReference = 3BA6FF5A17DF4FDF00C04955 /* 08.document.02_LoadSaveDocument */;
+			productType = "com.apple.product-type.tool";
+		};
+		3BA6FF6817DF597100C04955 /* 08.document.10_TextRecognition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BA6FF7017DF597100C04955 /* Build configuration list for PBXNativeTarget "08.document.10_TextRecognition" */;
+			buildPhases = (
+				3BA6FF6B17DF597100C04955 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 08.document.10_TextRecognition;
+			productName = 08.document.10_TextRecognition;
+			productReference = 3BA6FF7317DF597100C04955 /* 08.document.10_TextRecognition */;
+			productType = "com.apple.product-type.tool";
+		};
+		3BA6FF7717DF5AD500C04955 /* 08.document.13_ShapeRecognition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BA6FF7F17DF5AD500C04955 /* Build configuration list for PBXNativeTarget "08.document.13_ShapeRecognition" */;
+			buildPhases = (
+				3BA6FF7A17DF5AD500C04955 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 08.document.13_ShapeRecognition;
+			productName = 08.document.13_ShapeRecognition;
+			productReference = 3BA6FF8217DF5AD500C04955 /* 08.document.13_ShapeRecognition */;
+			productType = "com.apple.product-type.tool";
+		};
+		3BA6FF8617DF5BDE00C04955 /* 08.document.14_MathRecognition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BA6FF8E17DF5BDE00C04955 /* Build configuration list for PBXNativeTarget "08.document.14_MathRecognition" */;
+			buildPhases = (
+				3BA6FF8917DF5BDE00C04955 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 08.document.14_MathRecognition;
+			productName = 08.document.14_MathRecognition;
+			productReference = 3BA6FF9117DF5BDE00C04955 /* 08.document.14_MathRecognition */;
+			productType = "com.apple.product-type.tool";
+		};
+		3BB00E0A17F585EA00BF8A6A /* 08.document.05_StoreMetadata */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BB00E1217F585EA00BF8A6A /* Build configuration list for PBXNativeTarget "08.document.05_StoreMetadata" */;
+			buildPhases = (
+				3BB00E0D17F585EA00BF8A6A /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 08.document.05_StoreMetadata;
+			productName = 08.document.05_StoreMetadata;
+			productReference = 3BB00E1517F585EA00BF8A6A /* 08.document.05_StoreMetadata */;
+			productType = "com.apple.product-type.tool";
+		};
+		3BB00E1817F58CDF00BF8A6A /* 08.document.04_EditMetadata */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BB00E2017F58CDF00BF8A6A /* Build configuration list for PBXNativeTarget "08.document.04_EditMetadata" */;
+			buildPhases = (
+				3BB00E1B17F58CDF00BF8A6A /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 08.document.04_EditMetadata;
+			productName = 08.document.04_EditMetadata;
+			productReference = 3BB00E2317F58CDF00BF8A6A /* 08.document.04_EditMetadata */;
+			productType = "com.apple.product-type.tool";
+		};
+		794C927D16564FA200C90DA1 /* 06.analyzer.01_DocumentAnalysis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 794C928716564FA200C90DA1 /* Build configuration list for PBXNativeTarget "06.analyzer.01_DocumentAnalysis" */;
+			buildPhases = (
+				794C928016564FA200C90DA1 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 06.analyzer.01_DocumentAnalysis;
+			productName = 06.analyzer.01_DocumentAnalysis;
+			productReference = 794C928A16564FA200C90DA1 /* 06.analyzer.01_DocumentAnalysis */;
+			productType = "com.apple.product-type.tool";
+		};
+		79C20713181806C500F1E21D /* 09.writeradaptation.01_ConjointRecognitionAndAdaptation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79C2071D181806C500F1E21D /* Build configuration list for PBXNativeTarget "09.writeradaptation.01_ConjointRecognitionAndAdaptation" */;
+			buildPhases = (
+				79C20716181806C500F1E21D /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 09.writeradaptation.01_ConjointRecognitionAndAdaptation;
+			productName = 09.writeradaptation.01_ConjointRecognitionAndAdaptation;
+			productReference = 79C20720181806C500F1E21D /* 09.writeradaptation.01_ConjointRecognitionAndAdaptation */;
+			productType = "com.apple.product-type.tool";
+		};
+		B09502FF1A247DAE00E199FF /* 01.text.11_Transliteration */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B09503071A247DAE00E199FF /* Build configuration list for PBXNativeTarget "01.text.11_Transliteration" */;
+			buildPhases = (
+				B09503021A247DAE00E199FF /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 01.text.11_Transliteration;
+			productName = 01.text.05_StructuredInputRecognition;
+			productReference = B095030A1A247DAE00E199FF /* 01.text.11_Transliteration */;
+			productType = "com.apple.product-type.tool";
+		};
+		B095030B1A247DDC00E199FF /* 01.text.07_SuperimposedRecognition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B09503131A247DDC00E199FF /* Build configuration list for PBXNativeTarget "01.text.07_SuperimposedRecognition" */;
+			buildPhases = (
+				B095030E1A247DDC00E199FF /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 01.text.07_SuperimposedRecognition;
+			productName = 01.text.05_StructuredInputRecognition;
+			productReference = B09503161A247DDC00E199FF /* 01.text.07_SuperimposedRecognition */;
+			productType = "com.apple.product-type.tool";
+		};
+		B09503171A247E1800E199FF /* 01.text.06_IsolatedRecognition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B095031F1A247E1800E199FF /* Build configuration list for PBXNativeTarget "01.text.06_IsolatedRecognition" */;
+			buildPhases = (
+				B095031A1A247E1800E199FF /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 01.text.06_IsolatedRecognition;
+			productName = 01.text.05_StructuredInputRecognition;
+			productReference = B09503221A247E1800E199FF /* 01.text.06_IsolatedRecognition */;
+			productType = "com.apple.product-type.tool";
+		};
+		F40E1B2D181FA8FE009E8D65 /* 07.ink.01_CreateInk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F40E1B35181FA8FE009E8D65 /* Build configuration list for PBXNativeTarget "07.ink.01_CreateInk" */;
+			buildPhases = (
+				F40E1B30181FA8FE009E8D65 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 07.ink.01_CreateInk;
+			productName = 07.ink.01_CreateInk;
+			productReference = F40E1B38181FA8FE009E8D65 /* 07.ink.01_CreateInk */;
+			productType = "com.apple.product-type.tool";
+		};
+		F40E1B3C181FABA7009E8D65 /* 07.ink.02_EditInk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F40E1B44181FABA7009E8D65 /* Build configuration list for PBXNativeTarget "07.ink.02_EditInk" */;
+			buildPhases = (
+				F40E1B3F181FABA7009E8D65 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 07.ink.02_EditInk;
+			productName = 07.ink.02_EditInk;
+			productReference = F40E1B47181FABA7009E8D65 /* 07.ink.02_EditInk */;
+			productType = "com.apple.product-type.tool";
+		};
+		F40E1B48181FABC4009E8D65 /* 07.ink.03_UsingTags */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F40E1B4F181FABC4009E8D65 /* Build configuration list for PBXNativeTarget "07.ink.03_UsingTags" */;
+			buildPhases = (
+				F40E1B4B181FABC4009E8D65 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 07.ink.03_UsingTags;
+			productName = 07.ink.03_UsingTags;
+			productReference = F40E1B52181FABC4009E8D65 /* 07.ink.03_UsingTags */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A77FCE50D29031000ED2292 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = MyScript;
+			};
+			buildConfigurationList = 1A77FCE60D29031000ED2292 /* Build configuration list for PBXProject "MyScript_EDK_C_Examples" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 1A77FCE30D29031000ED2292;
+			productRefGroup = 1A77FCF20D29033800ED2292 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A77FCF00D29033800ED2292 /* 00.engine.01_CreateDestroyEngine */,
+				1ACB0DCC0D2BF4CF004A9D1B /* 01.text.01_CreateSubsetKnowledge */,
+				1ACB0D970D2BECA5004A9D1B /* 01.text.02_CreateLexicon */,
+				1ACB0DAB0D2BEE6D004A9D1B /* 01.text.03_CreateLexicalUnit */,
+				1ACB0D850D2BD744004A9D1B /* 01.text.04_CreateArchive */,
+				1ACB0CEA0D2BB3D7004A9D1B /* 01.text.05_CursiveRecognition */,
+				B09503171A247E1800E199FF /* 01.text.06_IsolatedRecognition */,
+				B095030B1A247DDC00E199FF /* 01.text.07_SuperimposedRecognition */,
+				1ACB0DE00D2BF539004A9D1B /* 01.text.08_ExploreRecognitionResult */,
+				1A384EF10EA8E3F300901C93 /* 01.text.09_DigitalInkTagging */,
+				1A384F360EA8E53D00901C93 /* 01.text.10_DigitalInkTaggingWithRecognition */,
+				B09502FF1A247DAE00E199FF /* 01.text.11_Transliteration */,
+				1ACB0F9E0D2CDCB8004A9D1B /* 02.inksearch.01_StructuredInputInkIndexing */,
+				1ACB0F8D0D2CDC67004A9D1B /* 02.inksearch.02_InkSearching */,
+				1A540B7F132FD2B80074143F /* 03.shape.01_SingleShapeRecognition */,
+				1A540BC1132FD4270074143F /* 03.shape.02_MultipleShapesRecognitionBeautification */,
+				1A540BD1132FD4600074143F /* 03.shape.03_IncrementalShapeRecognitionBeautification */,
+				1A540BDF132FD48D0074143F /* 03.shape.04_ScratchOutDetection */,
+				1A540BEF132FD4B60074143F /* 03.shape.05_AdjustingModelsDetectionSensitivity */,
+				1A540BFD132FD4DA0074143F /* 03.shape.06_AdjustingBeautifierProperties */,
+				1A44F14214431DEA003E2B02 /* 04.math.01_MathRecognition */,
+				1A65E96D16765C940026875E /* 05.prediction.01_ConjointRecognitionCompletionAndPrediction */,
+				794C927D16564FA200C90DA1 /* 06.analyzer.01_DocumentAnalysis */,
+				F40E1B2D181FA8FE009E8D65 /* 07.ink.01_CreateInk */,
+				F40E1B3C181FABA7009E8D65 /* 07.ink.02_EditInk */,
+				F40E1B48181FABC4009E8D65 /* 07.ink.03_UsingTags */,
+				16EA079A181979D300F1C963 /* 08.document.01_CreateDocument */,
+				3BA6FF4F17DF4FDF00C04955 /* 08.document.02_LoadSaveDocument */,
+				3B05829517E9C06600BCB10D /* 08.document.03_LoadMetadata */,
+				3BB00E1817F58CDF00BF8A6A /* 08.document.04_EditMetadata */,
+				3BB00E0A17F585EA00BF8A6A /* 08.document.05_StoreMetadata */,
+				16EA077A181974D900F1C963 /* 08.document.06_PageEdition */,
+				16EA07891819764300F1C963 /* 08.document.07_LayoutEdition */,
+				16EA076C181973B100F1C963 /* 08.document.08_UndoRedo */,
+				16FE54E1181A675A00B85426 /* 08.document.09_PageUpdateListener */,
+				3BA6FF6817DF597100C04955 /* 08.document.10_TextRecognition */,
+				3B82ABEC1806BFB800DE74FF /* 08.document.11_TextIndexation */,
+				3B89B7F71806D78F00579F81 /* 08.document.12_InkSearching */,
+				3BA6FF7717DF5AD500C04955 /* 08.document.13_ShapeRecognition */,
+				3BA6FF8617DF5BDE00C04955 /* 08.document.14_MathRecognition */,
+				16FE54D0181A5F8200B85426 /* 08.document.15_DocumentAnalysis */,
+				79C20713181806C500F1E21D /* 09.writeradaptation.01_ConjointRecognitionAndAdaptation */,
+				1A71559D18535CAF009C8DED /* 10.music.01_MusicRecognition */,
+				1ACB11670D2CF96B004A9D1B /* all */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16EA076F181973B100F1C963 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16EA0770181973B100F1C963 /* MyCertificate.c in Sources */,
+				16EA0771181973B100F1C963 /* MyScriptEngine-strerror.c in Sources */,
+				16EA0772181973B100F1C963 /* common.c in Sources */,
+				1A18380818291F9E003E7048 /* UndoRedo.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16EA077D181974D900F1C963 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16EA077E181974D900F1C963 /* MyCertificate.c in Sources */,
+				16EA077F181974D900F1C963 /* MyScriptEngine-strerror.c in Sources */,
+				16EA0780181974D900F1C963 /* common.c in Sources */,
+				1A18380218291F84003E7048 /* PageEdition.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16EA078C1819764300F1C963 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16EA078D1819764300F1C963 /* MyCertificate.c in Sources */,
+				16EA078E1819764300F1C963 /* MyScriptEngine-strerror.c in Sources */,
+				1A1837FF18291F7B003E7048 /* LayoutEdition.c in Sources */,
+				16EA078F1819764300F1C963 /* common.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16EA079D181979D300F1C963 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A1837FA18291F69003E7048 /* CreateDocument.c in Sources */,
+				16EA079F181979D300F1C963 /* MyCertificate.c in Sources */,
+				16EA07A0181979D300F1C963 /* MyScriptEngine-strerror.c in Sources */,
+				16EA07A1181979D300F1C963 /* common.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16FE54D3181A5F8200B85426 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16FE54E0181A643000B85426 /* MyScriptAnalyzer-documentToSVG.c in Sources */,
+				1A1837FB18291F6E003E7048 /* DocumentAnalysis.c in Sources */,
+				16FE54D4181A5F8200B85426 /* MyCertificate.c in Sources */,
+				16FE54D5181A5F8200B85426 /* MyScriptEngine-strerror.c in Sources */,
+				16FE54D6181A5F8200B85426 /* common.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16FE54E4181A675A00B85426 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16FE54E5181A675A00B85426 /* MyCertificate.c in Sources */,
+				16FE54E6181A675A00B85426 /* MyScriptEngine-strerror.c in Sources */,
+				16FE54E7181A675A00B85426 /* common.c in Sources */,
+				1A18380318291F87003E7048 /* PageUpdateListener.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A384EEF0EA8E3F300901C93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAF50561271C97900141A3C /* MyScriptEngine-strerror.c in Sources */,
+				1AAF50571271C97D00141A3C /* MyScriptText-strTagType.c in Sources */,
+				1AAF505F1271C98900141A3C /* DigitalInkTagging.c in Sources */,
+				1AAF50601271C98D00141A3C /* MyCertificate.c in Sources */,
+				1A51B6DD1292D4BA008C6585 /* common.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A384F340EA8E53D00901C93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAF50651271C9AE00141A3C /* MyCertificate.c in Sources */,
+				1AAF50661271C9B100141A3C /* MyScriptEngine-strerror.c in Sources */,
+				1AAF50671271C9B400141A3C /* MyScriptText-strTagType.c in Sources */,
+				1AAF50681271C9BA00141A3C /* DigitalInkTaggingWithRecognition.c in Sources */,
+				1A51B7661292E8E9008C6585 /* common.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A44F14514431DEA003E2B02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A44F14714431DEA003E2B02 /* MyCertificate.c in Sources */,
+				1A44F14814431DEA003E2B02 /* MyScriptEngine-strerror.c in Sources */,
+				1A44F14914431DEA003E2B02 /* common.c in Sources */,
+				1A44F15614431E36003E2B02 /* MathRecognition.c in Sources */,
+				1A3DA3DF14471C48003962E7 /* MyScriptMath-parseTreeToLaTeX.c in Sources */,
+				1AA0F600147578CD0008949F /* MyScriptMath-parseTreeToMathML.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A540B82132FD2B80074143F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A540B84132FD2B80074143F /* MyCertificate.c in Sources */,
+				1A540B85132FD2B80074143F /* MyScriptEngine-strerror.c in Sources */,
+				1A540B86132FD2B80074143F /* common.c in Sources */,
+				1A540B8C132FD3430074143F /* SingleShapeRecognition.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A540BC4132FD4270074143F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A540BC5132FD4270074143F /* MyCertificate.c in Sources */,
+				1A540BC6132FD4270074143F /* MyScriptEngine-strerror.c in Sources */,
+				1A540BC7132FD4270074143F /* common.c in Sources */,
+				1A540BD0132FD45A0074143F /* MultipleShapesRecognitionBeautification.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A540BD4132FD4600074143F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A540BD5132FD4600074143F /* MyCertificate.c in Sources */,
+				1A540BD6132FD4600074143F /* MyScriptEngine-strerror.c in Sources */,
+				1A540BD7132FD4600074143F /* common.c in Sources */,
+				1A540BDE132FD4810074143F /* IncrementalShapeRecognitionBeautification.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A540BE2132FD48D0074143F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A540BE3132FD48D0074143F /* MyCertificate.c in Sources */,
+				1A540BE4132FD48D0074143F /* MyScriptEngine-strerror.c in Sources */,
+				1A540BE5132FD48D0074143F /* common.c in Sources */,
+				1A540BEC132FD4A10074143F /* ScratchOutDetection.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A540BF2132FD4B60074143F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A540BF3132FD4B60074143F /* MyCertificate.c in Sources */,
+				1A540BF4132FD4B60074143F /* MyScriptEngine-strerror.c in Sources */,
+				1A540BF5132FD4B60074143F /* common.c in Sources */,
+				1A540C09132FD4F70074143F /* AdjustingModelsDetectionSensitivity.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A540C00132FD4DA0074143F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A540C01132FD4DA0074143F /* MyCertificate.c in Sources */,
+				1A540C02132FD4DA0074143F /* MyScriptEngine-strerror.c in Sources */,
+				1A540C03132FD4DA0074143F /* common.c in Sources */,
+				1A540C0A132FD5040074143F /* AdjustingBeautifierProperties.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A65E97016765C940026875E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A65E97116765C940026875E /* MyCertificate.c in Sources */,
+				1A65E97316765C940026875E /* MyScriptEngine-strerror.c in Sources */,
+				1A65E97416765C940026875E /* common.c in Sources */,
+				1A65E97B16765D7F0026875E /* ConjointRecognitionCompletionAndPrediction.c in Sources */,
+				1A65E97C16765D8C0026875E /* parseInk.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A7155A018535CAF009C8DED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A7155B118535D26009C8DED /* MyScriptMusic-scoreToMusicXML.c in Sources */,
+				1A7155A118535CAF009C8DED /* MyCertificate.c in Sources */,
+				1A7155AE18535CFF009C8DED /* MusicRecognition.c in Sources */,
+				1A7155A218535CAF009C8DED /* MyScriptEngine-strerror.c in Sources */,
+				1A7155A318535CAF009C8DED /* common.c in Sources */,
+				1A7155A418535CAF009C8DED /* parseInk.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A77FCEE0D29033800ED2292 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAF4F0D1270B78300141A3C /* CreateDestroyEngine.c in Sources */,
+				1AAF4F0E1270B78E00141A3C /* MyCertificate.c in Sources */,
+				1AAF4F0F1270B79300141A3C /* MyScriptEngine-strerror.c in Sources */,
+				1A51B69D1292D253008C6585 /* common.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ACB0CE80D2BB3D7004A9D1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAF4FF71271BC8B00141A3C /* MyCertificate.c in Sources */,
+				1AAF4FFD1271BCA600141A3C /* MyScriptEngine-strerror.c in Sources */,
+				1A51B7A21292ECEC008C6585 /* common.c in Sources */,
+				B09502FE1A247D9800E199FF /* CursiveRecognition.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ACB0D830D2BD744004A9D1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAF4FD81270BDC900141A3C /* CreateArchive.c in Sources */,
+				1AAF4FD91270BDCD00141A3C /* MyCertificate.c in Sources */,
+				1AAF4FDA1270BDD000141A3C /* MyScriptEngine-strerror.c in Sources */,
+				1A51B6BE1292D3B0008C6585 /* common.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ACB0D950D2BECA5004A9D1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAF4FB51270BC5800141A3C /* MyCertificate.c in Sources */,
+				1AAF4FB61270BC5B00141A3C /* CreateLexicon.c in Sources */,
+				1AAF4FB71270BC6400141A3C /* MyScriptEngine-strerror.c in Sources */,
+				1A51B6D71292D43B008C6585 /* common.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ACB0DA90D2BEE6D004A9D1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAF4FCF1270BD6C00141A3C /* CreateLexicalUnit.c in Sources */,
+				1AAF4FD01270BD6F00141A3C /* MyCertificate.c in Sources */,
+				1AAF4FD11270BD7400141A3C /* MyScriptEngine-strerror.c in Sources */,
+				1A51B6D41292D433008C6585 /* common.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ACB0DCA0D2BF4CF004A9D1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAF4F991270BB7500141A3C /* CreateSubsetKnowledge.c in Sources */,
+				1AAF4F9A1270BB7B00141A3C /* MyScriptEngine-strerror.c in Sources */,
+				1AAF4FA11270BBA800141A3C /* MyCertificate.c in Sources */,
+				1A51B6DA1292D44D008C6585 /* common.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ACB0DDE0D2BF539004A9D1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAF504D1271C23A00141A3C /* MyScriptEngine-strerror.c in Sources */,
+				1AAF504E1271C23E00141A3C /* MyCertificate.c in Sources */,
+				1AAF504F1271C24300141A3C /* ExploreRecognitionResult.c in Sources */,
+				1A51B73D1292E412008C6585 /* common.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ACB0F8B0D2CDC67004A9D1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAF50851271CBF200141A3C /* MyScriptEngine-strerror.c in Sources */,
+				1AAF50861271CBF600141A3C /* MyCertificate.c in Sources */,
+				1AAF50871271CBFB00141A3C /* InkSearching.c in Sources */,
+				1A51B7691292E8F6008C6585 /* common.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ACB0F9C0D2CDCB8004A9D1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAF507E1271CB8F00141A3C /* MyScriptEngine-strerror.c in Sources */,
+				1AAF507F1271CB9300141A3C /* MyCertificate.c in Sources */,
+				1AAF50801271CB9800141A3C /* StructuredInputInkIndexing.c in Sources */,
+				1A51B7681292E8F2008C6585 /* common.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B05829817E9C06600BCB10D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A18380018291F7F003E7048 /* LoadMetadata.c in Sources */,
+				3B05829917E9C06600BCB10D /* MyCertificate.c in Sources */,
+				3B05829A17E9C06600BCB10D /* MyScriptEngine-strerror.c in Sources */,
+				3B05829B17E9C06600BCB10D /* common.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B82ABEF1806BFB800DE74FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B82ABF01806BFB800DE74FF /* MyCertificate.c in Sources */,
+				1A18380618291F96003E7048 /* TextIndexation.c in Sources */,
+				3B82ABF11806BFB800DE74FF /* MyScriptEngine-strerror.c in Sources */,
+				3B82ABF21806BFB800DE74FF /* common.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B89B7FA1806D78F00579F81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B89B7FB1806D78F00579F81 /* MyCertificate.c in Sources */,
+				3B89B7FC1806D78F00579F81 /* MyScriptEngine-strerror.c in Sources */,
+				3B89B7FE1806D78F00579F81 /* common.c in Sources */,
+				1A1837FE18291F78003E7048 /* InkSearching.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BA6FF5217DF4FDF00C04955 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BA6FF5317DF4FDF00C04955 /* MyCertificate.c in Sources */,
+				1A18380118291F82003E7048 /* LoadSaveDocument.c in Sources */,
+				3BA6FF5417DF4FDF00C04955 /* MyScriptEngine-strerror.c in Sources */,
+				3BA6FF5517DF4FDF00C04955 /* common.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BA6FF6B17DF597100C04955 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A18380718291F9A003E7048 /* TextRecognition.c in Sources */,
+				3BA6FF6C17DF597100C04955 /* MyCertificate.c in Sources */,
+				3BA6FF6D17DF597100C04955 /* MyScriptEngine-strerror.c in Sources */,
+				3BA6FF6E17DF597100C04955 /* common.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BA6FF7A17DF5AD500C04955 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BA6FF7B17DF5AD500C04955 /* MyCertificate.c in Sources */,
+				1A18380418291F8B003E7048 /* ShapeRecognition.c in Sources */,
+				3BA6FF7C17DF5AD500C04955 /* MyScriptEngine-strerror.c in Sources */,
+				3BA6FF7D17DF5AD500C04955 /* common.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BA6FF8917DF5BDE00C04955 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BA6FF8A17DF5BDE00C04955 /* MyCertificate.c in Sources */,
+				1A1837FD18291F75003E7048 /* MathRecognition.c in Sources */,
+				3BA6FF8B17DF5BDE00C04955 /* MyScriptEngine-strerror.c in Sources */,
+				3BA6FF9317DF5C1400C04955 /* MyScriptMath-parseTreeToLaTeX.c in Sources */,
+				3BA6FF8C17DF5BDE00C04955 /* common.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BB00E0D17F585EA00BF8A6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BB00E0E17F585EA00BF8A6A /* MyCertificate.c in Sources */,
+				3BB00E0F17F585EA00BF8A6A /* MyScriptEngine-strerror.c in Sources */,
+				1A18380518291F8F003E7048 /* StoreMetadata.c in Sources */,
+				3BB00E1017F585EA00BF8A6A /* common.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BB00E1B17F58CDF00BF8A6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BB00E1C17F58CDF00BF8A6A /* MyCertificate.c in Sources */,
+				3BB00E1D17F58CDF00BF8A6A /* MyScriptEngine-strerror.c in Sources */,
+				1A1837FC18291F72003E7048 /* EditMetadata.c in Sources */,
+				3BB00E1E17F58CDF00BF8A6A /* common.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		794C928016564FA200C90DA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				794C928116564FA200C90DA1 /* MyCertificate.c in Sources */,
+				794C928216564FA200C90DA1 /* MyScriptEngine-strerror.c in Sources */,
+				794C928316564FA200C90DA1 /* common.c in Sources */,
+				794C929016564FE500C90DA1 /* DocumentAnalysis.c in Sources */,
+				794C92931656500300C90DA1 /* MyScriptAnalyzer-documentToSVG.c in Sources */,
+				793DDAD8166CB53D00684C85 /* parseInk.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79C20716181806C500F1E21D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79C20717181806C500F1E21D /* MyCertificate.c in Sources */,
+				79C20718181806C500F1E21D /* MyScriptEngine-strerror.c in Sources */,
+				79C20719181806C500F1E21D /* common.c in Sources */,
+				79C2071C181806C500F1E21D /* parseInk.c in Sources */,
+				798930FC181822FF003BE3C7 /* ConjointRecognitionAndAdaptation.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B09503021A247DAE00E199FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B09503031A247DAE00E199FF /* MyCertificate.c in Sources */,
+				B09503041A247DAE00E199FF /* MyScriptEngine-strerror.c in Sources */,
+				B09503051A247DAE00E199FF /* common.c in Sources */,
+				B09503251A247E4C00E199FF /* Transliteration.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B095030E1A247DDC00E199FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B095030F1A247DDC00E199FF /* MyCertificate.c in Sources */,
+				B09503101A247DDC00E199FF /* MyScriptEngine-strerror.c in Sources */,
+				B09503111A247DDC00E199FF /* common.c in Sources */,
+				B09503241A247E4600E199FF /* SuperimposedRecognition.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B095031A1A247E1800E199FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B095031B1A247E1800E199FF /* MyCertificate.c in Sources */,
+				B095031C1A247E1800E199FF /* MyScriptEngine-strerror.c in Sources */,
+				B095031D1A247E1800E199FF /* common.c in Sources */,
+				B09503231A247E4000E199FF /* IsolatedRecognition.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F40E1B30181FA8FE009E8D65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F40E1B31181FA8FE009E8D65 /* MyCertificate.c in Sources */,
+				1A1837E918291F26003E7048 /* CreateInk.c in Sources */,
+				F40E1B32181FA8FE009E8D65 /* MyScriptEngine-strerror.c in Sources */,
+				F40E1B33181FA8FE009E8D65 /* common.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F40E1B3F181FABA7009E8D65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A1837E818291F23003E7048 /* EditInk.c in Sources */,
+				F40E1B40181FABA7009E8D65 /* MyCertificate.c in Sources */,
+				F40E1B42181FABA7009E8D65 /* MyScriptEngine-strerror.c in Sources */,
+				F40E1B43181FABA7009E8D65 /* common.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F40E1B4B181FABC4009E8D65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F40E1B4C181FABC4009E8D65 /* MyCertificate.c in Sources */,
+				F40E1B4D181FABC4009E8D65 /* MyScriptEngine-strerror.c in Sources */,
+				F40E1B4E181FABC4009E8D65 /* common.c in Sources */,
+				1A1837E718291F20003E7048 /* UsingTags.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A384F3A0EA8E55400901C93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A384EF10EA8E3F300901C93 /* 01.text.09_DigitalInkTagging */;
+			targetProxy = 1A384F390EA8E55400901C93 /* PBXContainerItemProxy */;
+		};
+		1A384F3C0EA8E55700901C93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A384F360EA8E53D00901C93 /* 01.text.10_DigitalInkTaggingWithRecognition */;
+			targetProxy = 1A384F3B0EA8E55700901C93 /* PBXContainerItemProxy */;
+		};
+		1A44F15014431DF6003E2B02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A44F14214431DEA003E2B02 /* 04.math.01_MathRecognition */;
+			targetProxy = 1A44F14F14431DF6003E2B02 /* PBXContainerItemProxy */;
+		};
+		1A540C0C132FD55C0074143F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A540BFD132FD4DA0074143F /* 03.shape.06_AdjustingBeautifierProperties */;
+			targetProxy = 1A540C0B132FD55C0074143F /* PBXContainerItemProxy */;
+		};
+		1A540C0E132FD55C0074143F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A540BEF132FD4B60074143F /* 03.shape.05_AdjustingModelsDetectionSensitivity */;
+			targetProxy = 1A540C0D132FD55C0074143F /* PBXContainerItemProxy */;
+		};
+		1A540C10132FD55C0074143F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A540BDF132FD48D0074143F /* 03.shape.04_ScratchOutDetection */;
+			targetProxy = 1A540C0F132FD55C0074143F /* PBXContainerItemProxy */;
+		};
+		1A540C12132FD55C0074143F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A540BD1132FD4600074143F /* 03.shape.03_IncrementalShapeRecognitionBeautification */;
+			targetProxy = 1A540C11132FD55C0074143F /* PBXContainerItemProxy */;
+		};
+		1A540C14132FD55C0074143F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A540BC1132FD4270074143F /* 03.shape.02_MultipleShapesRecognitionBeautification */;
+			targetProxy = 1A540C13132FD55C0074143F /* PBXContainerItemProxy */;
+		};
+		1A540C16132FD55C0074143F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A540B7F132FD2B80074143F /* 03.shape.01_SingleShapeRecognition */;
+			targetProxy = 1A540C15132FD55C0074143F /* PBXContainerItemProxy */;
+		};
+		1A7155AB18535CC7009C8DED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A71559D18535CAF009C8DED /* 10.music.01_MusicRecognition */;
+			targetProxy = 1A7155AA18535CC7009C8DED /* PBXContainerItemProxy */;
+		};
+		1ACB11710D2CF978004A9D1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1ACB0F9E0D2CDCB8004A9D1B /* 02.inksearch.01_StructuredInputInkIndexing */;
+			targetProxy = 1ACB11700D2CF978004A9D1B /* PBXContainerItemProxy */;
+		};
+		1ACB11730D2CF978004A9D1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1ACB0F8D0D2CDC67004A9D1B /* 02.inksearch.02_InkSearching */;
+			targetProxy = 1ACB11720D2CF978004A9D1B /* PBXContainerItemProxy */;
+		};
+		1ACB11770D2CF978004A9D1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1ACB0CEA0D2BB3D7004A9D1B /* 01.text.05_CursiveRecognition */;
+			targetProxy = 1ACB11760D2CF978004A9D1B /* PBXContainerItemProxy */;
+		};
+		1ACB11790D2CF978004A9D1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1ACB0DE00D2BF539004A9D1B /* 01.text.08_ExploreRecognitionResult */;
+			targetProxy = 1ACB11780D2CF978004A9D1B /* PBXContainerItemProxy */;
+		};
+		1ACB117B0D2CF978004A9D1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1ACB0DCC0D2BF4CF004A9D1B /* 01.text.01_CreateSubsetKnowledge */;
+			targetProxy = 1ACB117A0D2CF978004A9D1B /* PBXContainerItemProxy */;
+		};
+		1ACB117D0D2CF978004A9D1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1ACB0D970D2BECA5004A9D1B /* 01.text.02_CreateLexicon */;
+			targetProxy = 1ACB117C0D2CF978004A9D1B /* PBXContainerItemProxy */;
+		};
+		1ACB117F0D2CF978004A9D1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1ACB0DAB0D2BEE6D004A9D1B /* 01.text.03_CreateLexicalUnit */;
+			targetProxy = 1ACB117E0D2CF978004A9D1B /* PBXContainerItemProxy */;
+		};
+		1ACB11810D2CF978004A9D1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1ACB0D850D2BD744004A9D1B /* 01.text.04_CreateArchive */;
+			targetProxy = 1ACB11800D2CF978004A9D1B /* PBXContainerItemProxy */;
+		};
+		1ACB11830D2CF978004A9D1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A77FCF00D29033800ED2292 /* 00.engine.01_CreateDestroyEngine */;
+			targetProxy = 1ACB11820D2CF978004A9D1B /* PBXContainerItemProxy */;
+		};
+		1AD8EEAB1A3218F900CAB71C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B09503171A247E1800E199FF /* 01.text.06_IsolatedRecognition */;
+			targetProxy = 1AD8EEAA1A3218F900CAB71C /* PBXContainerItemProxy */;
+		};
+		1AD8EEAD1A3218F900CAB71C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B095030B1A247DDC00E199FF /* 01.text.07_SuperimposedRecognition */;
+			targetProxy = 1AD8EEAC1A3218F900CAB71C /* PBXContainerItemProxy */;
+		};
+		1AD8EEAF1A3218F900CAB71C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B09502FF1A247DAE00E199FF /* 01.text.11_Transliteration */;
+			targetProxy = 1AD8EEAE1A3218F900CAB71C /* PBXContainerItemProxy */;
+		};
+		3BA6FF6717DF53CA00C04955 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BA6FF4F17DF4FDF00C04955 /* 08.document.02_LoadSaveDocument */;
+			targetProxy = 3BA6FF6617DF53CA00C04955 /* PBXContainerItemProxy */;
+		};
+		3BA6FF7617DF5A6900C04955 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BA6FF6817DF597100C04955 /* 08.document.10_TextRecognition */;
+			targetProxy = 3BA6FF7517DF5A6900C04955 /* PBXContainerItemProxy */;
+		};
+		3BA6FF8517DF5B9B00C04955 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BA6FF7717DF5AD500C04955 /* 08.document.13_ShapeRecognition */;
+			targetProxy = 3BA6FF8417DF5B9B00C04955 /* PBXContainerItemProxy */;
+		};
+		794C92B61656514A00C90DA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 794C927D16564FA200C90DA1 /* 06.analyzer.01_DocumentAnalysis */;
+			targetProxy = 794C92B51656514A00C90DA1 /* PBXContainerItemProxy */;
+		};
+		79A44D6317032C41000656FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A65E96D16765C940026875E /* 05.prediction.01_ConjointRecognitionCompletionAndPrediction */;
+			targetProxy = 79A44D6217032C41000656FA /* PBXContainerItemProxy */;
+		};
+		79C20722181806E700F1E21D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B89B7F71806D78F00579F81 /* 08.document.12_InkSearching */;
+			targetProxy = 79C20721181806E700F1E21D /* PBXContainerItemProxy */;
+		};
+		79C20724181806E700F1E21D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BB00E1817F58CDF00BF8A6A /* 08.document.04_EditMetadata */;
+			targetProxy = 79C20723181806E700F1E21D /* PBXContainerItemProxy */;
+		};
+		79C20726181806E700F1E21D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B05829517E9C06600BCB10D /* 08.document.03_LoadMetadata */;
+			targetProxy = 79C20725181806E700F1E21D /* PBXContainerItemProxy */;
+		};
+		79C20728181806E700F1E21D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BB00E0A17F585EA00BF8A6A /* 08.document.05_StoreMetadata */;
+			targetProxy = 79C20727181806E700F1E21D /* PBXContainerItemProxy */;
+		};
+		79C2072C181806E700F1E21D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BA6FF8617DF5BDE00C04955 /* 08.document.14_MathRecognition */;
+			targetProxy = 79C2072B181806E700F1E21D /* PBXContainerItemProxy */;
+		};
+		79C2072E181806E700F1E21D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B82ABEC1806BFB800DE74FF /* 08.document.11_TextIndexation */;
+			targetProxy = 79C2072D181806E700F1E21D /* PBXContainerItemProxy */;
+		};
+		79C20730181806E700F1E21D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79C20713181806C500F1E21D /* 09.writeradaptation.01_ConjointRecognitionAndAdaptation */;
+			targetProxy = 79C2072F181806E700F1E21D /* PBXContainerItemProxy */;
+		};
+		F40E1B58181FAE00009E8D65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F40E1B2D181FA8FE009E8D65 /* 07.ink.01_CreateInk */;
+			targetProxy = F40E1B57181FAE00009E8D65 /* PBXContainerItemProxy */;
+		};
+		F40E1B5A181FAE00009E8D65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F40E1B3C181FABA7009E8D65 /* 07.ink.02_EditInk */;
+			targetProxy = F40E1B59181FAE00009E8D65 /* PBXContainerItemProxy */;
+		};
+		F40E1B5C181FAE00009E8D65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F40E1B48181FABC4009E8D65 /* 07.ink.03_UsingTags */;
+			targetProxy = F40E1B5B181FAE00009E8D65 /* PBXContainerItemProxy */;
+		};
+		F40E1B5E181FAE08009E8D65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16EA079A181979D300F1C963 /* 08.document.01_CreateDocument */;
+			targetProxy = F40E1B5D181FAE08009E8D65 /* PBXContainerItemProxy */;
+		};
+		F40E1B60181FAE08009E8D65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16EA07891819764300F1C963 /* 08.document.07_LayoutEdition */;
+			targetProxy = F40E1B5F181FAE08009E8D65 /* PBXContainerItemProxy */;
+		};
+		F40E1B62181FAE08009E8D65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16EA077A181974D900F1C963 /* 08.document.06_PageEdition */;
+			targetProxy = F40E1B61181FAE08009E8D65 /* PBXContainerItemProxy */;
+		};
+		F40E1B64181FAE08009E8D65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16FE54E1181A675A00B85426 /* 08.document.09_PageUpdateListener */;
+			targetProxy = F40E1B63181FAE08009E8D65 /* PBXContainerItemProxy */;
+		};
+		F40E1B66181FAE08009E8D65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16FE54D0181A5F8200B85426 /* 08.document.15_DocumentAnalysis */;
+			targetProxy = F40E1B65181FAE08009E8D65 /* PBXContainerItemProxy */;
+		};
+		F40E1B68181FAE08009E8D65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16EA076C181973B100F1C963 /* 08.document.08_UndoRedo */;
+			targetProxy = F40E1B67181FAE08009E8D65 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		16EA0775181973B100F1C963 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		16EA0776181973B100F1C963 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		16EA0783181974D900F1C963 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		16EA0784181974D900F1C963 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		16EA07931819764300F1C963 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		16EA07941819764300F1C963 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		16EA07A4181979D300F1C963 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		16EA07A5181979D300F1C963 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		16FE54D9181A5F8200B85426 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		16FE54DA181A5F8200B85426 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		16FE54EA181A675A00B85426 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		16FE54EB181A675A00B85426 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		1A384EF90EA8E41E00901C93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		1A384EFA0EA8E41E00901C93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		1A384F4D0EA8E58200901C93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		1A384F4E0EA8E58200901C93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		1A44F14B14431DEA003E2B02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		1A44F14C14431DEA003E2B02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		1A540B88132FD2B80074143F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		1A540B89132FD2B80074143F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		1A540BCA132FD4270074143F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		1A540BCB132FD4270074143F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		1A540BDA132FD4600074143F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		1A540BDB132FD4600074143F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		1A540BE8132FD48D0074143F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		1A540BE9132FD48D0074143F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		1A540BF8132FD4B60074143F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		1A540BF9132FD4B60074143F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		1A540C05132FD4DA0074143F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		1A540C06132FD4DA0074143F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		1A65E97616765C940026875E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		1A65E97716765C940026875E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		1A7155A718535CAF009C8DED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		1A7155A818535CAF009C8DED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		1A77FCE70D29031000ED2292 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AAF51391271D7BD00141A3C /* Project.Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		1A77FCE80D29031000ED2292 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AAF513A1271D7BD00141A3C /* Project.Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		1A77FCF50D29033800ED2292 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		1A77FCF60D29033800ED2292 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		1ACB0CF20D2BB407004A9D1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		1ACB0CF30D2BB407004A9D1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		1ACB0D8B0D2BD75A004A9D1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		1ACB0D8C0D2BD75A004A9D1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		1ACB0D9B0D2BECA9004A9D1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		1ACB0D9C0D2BECA9004A9D1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		1ACB0DAF0D2BEE74004A9D1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		1ACB0DB00D2BEE74004A9D1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		1ACB0DD00D2BF4F2004A9D1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		1ACB0DD10D2BF4F2004A9D1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		1ACB0DE60D2BF552004A9D1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		1ACB0DE70D2BF552004A9D1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		1ACB0F950D2CDC90004A9D1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		1ACB0F960D2CDC90004A9D1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		1ACB0FA50D2CDCC4004A9D1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		1ACB0FA60D2CDCC4004A9D1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		1ACB118D0D2CF9CA004A9D1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		1ACB118E0D2CF9CA004A9D1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		3B05829E17E9C06600BCB10D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		3B05829F17E9C06600BCB10D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		3B82ABF51806BFB800DE74FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		3B82ABF61806BFB800DE74FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		3B89B8011806D78F00579F81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		3B89B8021806D78F00579F81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		3BA6FF5817DF4FDF00C04955 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		3BA6FF5917DF4FDF00C04955 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		3BA6FF7117DF597100C04955 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		3BA6FF7217DF597100C04955 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		3BA6FF8017DF5AD500C04955 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		3BA6FF8117DF5AD500C04955 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		3BA6FF8F17DF5BDE00C04955 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		3BA6FF9017DF5BDE00C04955 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		3BB00E1317F585EA00BF8A6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		3BB00E1417F585EA00BF8A6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		3BB00E2117F58CDF00BF8A6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		3BB00E2217F58CDF00BF8A6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		794C928816564FA200C90DA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		794C928916564FA200C90DA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		79C2071E181806C500F1E21D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		79C2071F181806C500F1E21D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		B09503081A247DAE00E199FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		B09503091A247DAE00E199FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		B09503141A247DDC00E199FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		B09503151A247DDC00E199FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		B09503201A247E1800E199FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		B09503211A247E1800E199FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		F40E1B36181FA8FE009E8D65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		F40E1B37181FA8FE009E8D65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		F40E1B45181FABA7009E8D65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		F40E1B46181FABA7009E8D65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		F40E1B50181FABC4009E8D65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		F40E1B51181FABC4009E8D65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16EA0774181973B100F1C963 /* Build configuration list for PBXNativeTarget "08.document.08_UndoRedo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16EA0775181973B100F1C963 /* Debug */,
+				16EA0776181973B100F1C963 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16EA0782181974D900F1C963 /* Build configuration list for PBXNativeTarget "08.document.06_PageEdition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16EA0783181974D900F1C963 /* Debug */,
+				16EA0784181974D900F1C963 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16EA07921819764300F1C963 /* Build configuration list for PBXNativeTarget "08.document.07_LayoutEdition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16EA07931819764300F1C963 /* Debug */,
+				16EA07941819764300F1C963 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16EA07A3181979D300F1C963 /* Build configuration list for PBXNativeTarget "08.document.01_CreateDocument" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16EA07A4181979D300F1C963 /* Debug */,
+				16EA07A5181979D300F1C963 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16FE54D8181A5F8200B85426 /* Build configuration list for PBXNativeTarget "08.document.15_DocumentAnalysis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16FE54D9181A5F8200B85426 /* Debug */,
+				16FE54DA181A5F8200B85426 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16FE54E9181A675A00B85426 /* Build configuration list for PBXNativeTarget "08.document.09_PageUpdateListener" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16FE54EA181A675A00B85426 /* Debug */,
+				16FE54EB181A675A00B85426 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A384EF80EA8E41E00901C93 /* Build configuration list for PBXNativeTarget "01.text.09_DigitalInkTagging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A384EF90EA8E41E00901C93 /* Debug */,
+				1A384EFA0EA8E41E00901C93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A384F4C0EA8E58200901C93 /* Build configuration list for PBXNativeTarget "01.text.10_DigitalInkTaggingWithRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A384F4D0EA8E58200901C93 /* Debug */,
+				1A384F4E0EA8E58200901C93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A44F14A14431DEA003E2B02 /* Build configuration list for PBXNativeTarget "04.math.01_MathRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A44F14B14431DEA003E2B02 /* Debug */,
+				1A44F14C14431DEA003E2B02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A540B87132FD2B80074143F /* Build configuration list for PBXNativeTarget "03.shape.01_SingleShapeRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A540B88132FD2B80074143F /* Debug */,
+				1A540B89132FD2B80074143F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A540BC9132FD4270074143F /* Build configuration list for PBXNativeTarget "03.shape.02_MultipleShapesRecognitionBeautification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A540BCA132FD4270074143F /* Debug */,
+				1A540BCB132FD4270074143F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A540BD9132FD4600074143F /* Build configuration list for PBXNativeTarget "03.shape.03_IncrementalShapeRecognitionBeautification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A540BDA132FD4600074143F /* Debug */,
+				1A540BDB132FD4600074143F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A540BE7132FD48D0074143F /* Build configuration list for PBXNativeTarget "03.shape.04_ScratchOutDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A540BE8132FD48D0074143F /* Debug */,
+				1A540BE9132FD48D0074143F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A540BF7132FD4B60074143F /* Build configuration list for PBXNativeTarget "03.shape.05_AdjustingModelsDetectionSensitivity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A540BF8132FD4B60074143F /* Debug */,
+				1A540BF9132FD4B60074143F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A540C04132FD4DA0074143F /* Build configuration list for PBXNativeTarget "03.shape.06_AdjustingBeautifierProperties" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A540C05132FD4DA0074143F /* Debug */,
+				1A540C06132FD4DA0074143F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A65E97516765C940026875E /* Build configuration list for PBXNativeTarget "05.prediction.01_ConjointRecognitionCompletionAndPrediction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A65E97616765C940026875E /* Debug */,
+				1A65E97716765C940026875E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A7155A618535CAF009C8DED /* Build configuration list for PBXNativeTarget "10.music.01_MusicRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A7155A718535CAF009C8DED /* Debug */,
+				1A7155A818535CAF009C8DED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A77FCE60D29031000ED2292 /* Build configuration list for PBXProject "MyScript_EDK_C_Examples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A77FCE70D29031000ED2292 /* Debug */,
+				1A77FCE80D29031000ED2292 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A77FCF40D29033800ED2292 /* Build configuration list for PBXNativeTarget "00.engine.01_CreateDestroyEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A77FCF50D29033800ED2292 /* Debug */,
+				1A77FCF60D29033800ED2292 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ACB0CF10D2BB407004A9D1B /* Build configuration list for PBXNativeTarget "01.text.05_CursiveRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ACB0CF20D2BB407004A9D1B /* Debug */,
+				1ACB0CF30D2BB407004A9D1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ACB0D8A0D2BD75A004A9D1B /* Build configuration list for PBXNativeTarget "01.text.04_CreateArchive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ACB0D8B0D2BD75A004A9D1B /* Debug */,
+				1ACB0D8C0D2BD75A004A9D1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ACB0D9A0D2BECA9004A9D1B /* Build configuration list for PBXNativeTarget "01.text.02_CreateLexicon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ACB0D9B0D2BECA9004A9D1B /* Debug */,
+				1ACB0D9C0D2BECA9004A9D1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ACB0DAE0D2BEE74004A9D1B /* Build configuration list for PBXNativeTarget "01.text.03_CreateLexicalUnit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ACB0DAF0D2BEE74004A9D1B /* Debug */,
+				1ACB0DB00D2BEE74004A9D1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ACB0DCF0D2BF4F2004A9D1B /* Build configuration list for PBXNativeTarget "01.text.01_CreateSubsetKnowledge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ACB0DD00D2BF4F2004A9D1B /* Debug */,
+				1ACB0DD10D2BF4F2004A9D1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ACB0DE50D2BF552004A9D1B /* Build configuration list for PBXNativeTarget "01.text.08_ExploreRecognitionResult" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ACB0DE60D2BF552004A9D1B /* Debug */,
+				1ACB0DE70D2BF552004A9D1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ACB0F940D2CDC90004A9D1B /* Build configuration list for PBXNativeTarget "02.inksearch.02_InkSearching" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ACB0F950D2CDC90004A9D1B /* Debug */,
+				1ACB0F960D2CDC90004A9D1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ACB0FA40D2CDCC4004A9D1B /* Build configuration list for PBXNativeTarget "02.inksearch.01_StructuredInputInkIndexing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ACB0FA50D2CDCC4004A9D1B /* Debug */,
+				1ACB0FA60D2CDCC4004A9D1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ACB118C0D2CF9CA004A9D1B /* Build configuration list for PBXAggregateTarget "all" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ACB118D0D2CF9CA004A9D1B /* Debug */,
+				1ACB118E0D2CF9CA004A9D1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B05829D17E9C06600BCB10D /* Build configuration list for PBXNativeTarget "08.document.03_LoadMetadata" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B05829E17E9C06600BCB10D /* Debug */,
+				3B05829F17E9C06600BCB10D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B82ABF41806BFB800DE74FF /* Build configuration list for PBXNativeTarget "08.document.11_TextIndexation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B82ABF51806BFB800DE74FF /* Debug */,
+				3B82ABF61806BFB800DE74FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B89B8001806D78F00579F81 /* Build configuration list for PBXNativeTarget "08.document.12_InkSearching" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B89B8011806D78F00579F81 /* Debug */,
+				3B89B8021806D78F00579F81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BA6FF5717DF4FDF00C04955 /* Build configuration list for PBXNativeTarget "08.document.02_LoadSaveDocument" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BA6FF5817DF4FDF00C04955 /* Debug */,
+				3BA6FF5917DF4FDF00C04955 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BA6FF7017DF597100C04955 /* Build configuration list for PBXNativeTarget "08.document.10_TextRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BA6FF7117DF597100C04955 /* Debug */,
+				3BA6FF7217DF597100C04955 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BA6FF7F17DF5AD500C04955 /* Build configuration list for PBXNativeTarget "08.document.13_ShapeRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BA6FF8017DF5AD500C04955 /* Debug */,
+				3BA6FF8117DF5AD500C04955 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BA6FF8E17DF5BDE00C04955 /* Build configuration list for PBXNativeTarget "08.document.14_MathRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BA6FF8F17DF5BDE00C04955 /* Debug */,
+				3BA6FF9017DF5BDE00C04955 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BB00E1217F585EA00BF8A6A /* Build configuration list for PBXNativeTarget "08.document.05_StoreMetadata" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BB00E1317F585EA00BF8A6A /* Debug */,
+				3BB00E1417F585EA00BF8A6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BB00E2017F58CDF00BF8A6A /* Build configuration list for PBXNativeTarget "08.document.04_EditMetadata" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BB00E2117F58CDF00BF8A6A /* Debug */,
+				3BB00E2217F58CDF00BF8A6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		794C928716564FA200C90DA1 /* Build configuration list for PBXNativeTarget "06.analyzer.01_DocumentAnalysis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				794C928816564FA200C90DA1 /* Debug */,
+				794C928916564FA200C90DA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79C2071D181806C500F1E21D /* Build configuration list for PBXNativeTarget "09.writeradaptation.01_ConjointRecognitionAndAdaptation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79C2071E181806C500F1E21D /* Debug */,
+				79C2071F181806C500F1E21D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B09503071A247DAE00E199FF /* Build configuration list for PBXNativeTarget "01.text.11_Transliteration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B09503081A247DAE00E199FF /* Debug */,
+				B09503091A247DAE00E199FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B09503131A247DDC00E199FF /* Build configuration list for PBXNativeTarget "01.text.07_SuperimposedRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B09503141A247DDC00E199FF /* Debug */,
+				B09503151A247DDC00E199FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B095031F1A247E1800E199FF /* Build configuration list for PBXNativeTarget "01.text.06_IsolatedRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B09503201A247E1800E199FF /* Debug */,
+				B09503211A247E1800E199FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F40E1B35181FA8FE009E8D65 /* Build configuration list for PBXNativeTarget "07.ink.01_CreateInk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F40E1B36181FA8FE009E8D65 /* Debug */,
+				F40E1B37181FA8FE009E8D65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F40E1B44181FABA7009E8D65 /* Build configuration list for PBXNativeTarget "07.ink.02_EditInk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F40E1B45181FABA7009E8D65 /* Debug */,
+				F40E1B46181FABA7009E8D65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F40E1B4F181FABC4009E8D65 /* Build configuration list for PBXNativeTarget "07.ink.03_UsingTags" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F40E1B50181FABC4009E8D65 /* Debug */,
+				F40E1B51181FABC4009E8D65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A77FCE50D29031000ED2292 /* Project object */;
+}

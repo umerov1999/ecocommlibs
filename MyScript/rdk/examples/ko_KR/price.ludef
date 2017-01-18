@@ -1,0 +1,80 @@
+# Data format Korean: price
+#
+# 2006/11/08
+# v1.0
+
+@set charset UTF-8
+
+# Korean numbers based on Chinese numbering
+chBasedZero = 영|공
+# Units (1-9)
+chBasedUnits = [일이삼사오육칠팔구]
+# Units (2-9) before specificator
+chBasedUnitsBeforeSpec = [이삼사오육칠팔구]
+# Tens (10, 11, ..., 98, 99)
+chBasedTens = {chBasedUnitsBeforeSpec}?십 ?{chBasedUnits}?
+# Tens before spec
+chBasedTensBeforeSpec = {chBasedUnitsBeforeSpec}?십 ?{chBasedUnitsBeforeSpec}?
+# Hundreds (100, 200, ..., 998, 999)
+chBasedHundreds = {chBasedUnitsBeforeSpec}?백 ?({chBasedTens}|{chBasedUnits})?
+# Hundreds before spec
+chBasedHundredsBeforeSpec = {chBasedUnitsBeforeSpec}?백 ?({chBasedTensBeforeSpec}|{chBasedUnitsBeforeSpec})?
+# Thousands (1000, 2000, ..., 9998, 9999)
+chBasedThousands = {chBasedUnitsBeforeSpec}?천 ?({chBasedHundreds}|{chBasedTens}|{chBasedUnits})?
+# Thousands before spec
+chBasedThousandsBeforeSpec = {chBasedUnitsBeforeSpec}?천 ?({chBasedHundredsBeforeSpec}|{chBasedTensBeforeSpec}|{chBasedUnitsBeforeSpec})?
+# Ten thousands (10000, 20000, ..., 99999998, 99999999)
+chBasedTenThousands = ({chBasedThousandsBeforeSpec}|{chBasedHundredsBeforeSpec}|{chBasedTensBeforeSpec}|{chBasedUnitsBeforeSpec})?만 ?({chBasedThousands}|{chBasedHundreds}|{chBasedTens}|{chBasedUnits})?
+# Hundreds millions (100000000 <= x <= 999999999999)
+chBasedHundredMillions = ({chBasedThousandsBeforeSpec}|{chBasedHundredsBeforeSpec}|{chBasedTensBeforeSpec}|{chBasedUnitsBeforeSpec})?억 ?({chBasedTenThousands}|{chBasedThousands}|{chBasedHundreds}|{chBasedTens}|{chBasedUnits})?
+# Thousand billions (1000000000000 <= x <= 9999999999999999)
+chBasedThousandMillions = ({chBasedThousandsBeforeSpec}|{chBasedHundredsBeforeSpec}|{chBasedTensBeforeSpec}|{chBasedUnitsBeforeSpec})?조 ?({chBasedHundredMillions}|{chBasedTenThousands}|{chBasedThousands}|{chBasedHundreds}|{chBasedTens}|{chBasedUnits})?
+
+chBasedNumbers = {chBasedZero}|{chBasedTens}|{chBasedHundreds}|{chBasedThousands}|{chBasedTenThousands}|{chBasedHundredMillions}|{chBasedThousandMillions}
+
+# Native Korean numbers
+# Units (1-9)
+natUnits = (하나|둘|셋|넷|다섯|여섯|일곱|여덟|아홉)
+# Tens (10, 20, ..., 80, 90)
+natTens = (열|스물|서른|마흔|쉰|예순|일흔|여든|아흔)
+# Tens + units
+natTensNUnits = {natTens}{natUnits}
+
+natNumbers = {natUnits}|{natTens}|{natTensNUnits}
+
+# Mixed Korean/Arabic numbers
+# 0 <= n < 10
+units = [0-9]
+# 10 < n < 100
+tens = (0|[1-9](십 ?)?){units}?
+# 100 < n < 1000
+hundreds = (0|[1-9](백 ?)?)({tens}|{units})?
+# 1000 <= n < 10000
+thousands = (0|[1-9](천 ?)?)({hundreds}|{tens}|{units})?
+# 10000 <= n < 10e8
+tenThousands = ({thousands}|{hundreds}|{tens}|{units})만 ?({thousands}|{hundreds}|{tens}|{units})?
+# 10e8 <= n < 10e12
+hundredMillions = ({thousands}|{hundreds}|{tens}|{units})억 ?({tenThousands}|{thousands}|{hundreds}|{tens}|{units})?
+# 10e12 <= n < 10e16
+thousandBillions = ({thousands}|{hundreds}|{tens}|{units})조 ?({hundredMillions}|{tenThousands}|{thousands}|{hundreds}|{tens}|{units})?
+
+mixedNumbers = {thousandBillions}{hundredMillions}?{tenThousands}?{thousands}?{hundreds}?{tens}?{units}?
+mixedNumbers = {mixedNumbers}|{hundredMillions}{tenThousands}?{thousands}?{hundreds}?{tens}?{units}?
+mixedNumbers = {mixedNumbers}|{tenThousands}{thousands}?{hundreds}?{tens}?{units}?
+mixedNumbers = {mixedNumbers}|{thousands}{hundreds}?{tens}?{units}?|{hundreds}{tens}?{units}?
+mixedNumbers = {mixedNumbers}|{tens}{units}?|{units}
+
+korNumbers = {chBasedNumbers}|{natNumbers}|{mixedNumbers}
+
+# Western numbering
+d = [0-9]
+integer = [+\-]?({d}+|{d}?{d}?{d}(\,{d}{d}{d})*)
+westNumbers = {integer}(\.{d}+)?
+
+# All numbers
+numbers = {korNumbers}|{westNumbers}
+
+# Prices
+price = (￦ ?)?{numbers}( ?원)|{numbers}( ?￦)|(￦ ?){numbers}
+
+{price}

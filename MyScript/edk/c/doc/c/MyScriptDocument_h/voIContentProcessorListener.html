@@ -1,0 +1,1031 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>voIContentProcessorListener</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="voIContentProcessorListener";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptDocument.h</FONT>
+<BR>
+Type voIContentProcessorListener</H2>
+<PRE>
+<B>voIContentProcessorListener</B>
+</PRE>
+<HR>
+<CODE>#include &lt;c/MyScriptDocument.h&gt;</CODE>
+<BR>
+<CODE>typedef  struct <A href="../../c/MyScriptDocument_h/struct__voIContentProcessorListener.html">_voIContentProcessorListener</A>  <B>voIContentProcessorListener</B></CODE>
+<BR>
+<CODE></CODE>
+</P>
+<P>Functions composing the  <CODE><A href="../../c/MyScriptDocument_h/voIContentProcessorListener.html">voIContentProcessorListener</A></CODE> interface. <P>
+
+<P>
+<DL>
+<DT>
+<B>Note:</B>
+<DD>
+<P>This interface is implementable by user objects. User code is not allowed to invoke this interface directly: as a consequence  <CODE>voGetInterface()</CODE> returns  <CODE>NULL</CODE>.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>7.0_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>    
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Member_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="3"><FONT SIZE="+2"><B>Member Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>void</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#added">added</A>)(voEngine engine, voUserObject target, voContentProcessor processor)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Called when the target listener is added to a content processor object. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>void</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#onActiveAreaProcessingEnd">onActiveAreaProcessingEnd</A>)(voEngine engine, voUserObject target, voEngineObject activeArea)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Called when the recognition process on an active area ended. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>void</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#onActiveAreaProcessingStart">onActiveAreaProcessingStart</A>)(voEngine engine, voUserObject target, voEngineObject activeArea)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Called when the recognition process starts on an active area. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#onConfigured">onConfigured</A>)(voEngine engine, voUserObject target, voContentField field, voConfigurer configurer)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Called when a content field processor has been configured. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>void</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#onCreated">onCreated</A>)(voEngine engine, voUserObject target, voContentField field, voEngineObject fieldProcessor)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Called when a content field processor has been created. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>void</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#onError">onError</A>)(voEngine engine, voEngineObject target, voContentField field, int32_t error)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Called when an error occurred while processing  <CODE>field</CODE>. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>void</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#onErrorEx">onErrorEx</A>)(voEngine engine, voEngineObject target, voContentField field, int32_t error, voCharset charset, const voString *messages)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Called when an error occurred while processing  <CODE>field</CODE>. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>void</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#onFieldProcessingEnd">onFieldProcessingEnd</A>)(voEngine engine, voUserObject target, voContentField field)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Called when the recognition process of a field ended. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>void</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#onFieldProcessingStart">onFieldProcessingStart</A>)(voEngine engine, voUserObject target, voContentField field)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Called when the recognition process starts on a field. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>void</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#onPageProcessingEnd">onPageProcessingEnd</A>)(voEngine engine, voUserObject target, voPage page)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Called when the recognition process on a page ended. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>void</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#onPageProcessingStart">onPageProcessingStart</A>)(voEngine engine, voUserObject target, voPage page)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Called when then recognition process starts on a page. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>void</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#onProgress">onProgress</A>)(voEngine engine, voUserObject target, voContentField field, float progress)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Called multiple times during process to indicate progression. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>void</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#onResultAvailable">onResultAvailable</A>)(voEngine engine, voUserObject target, voContentField field, voPageChangeSet changeSet)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Called when a page update is available, following a recognition, beautification or ink search process. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>void</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#removed">removed</A>)(voEngine engine, voUserObject target, voContentProcessor processor)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Called when the target listener is removed from a content processor object. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Member_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Member Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="added"></A>
+<H3 class="code">added</H3>
+<PRE>void <B>added</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voUserObject.html">voUserObject</A> target, <A href="../../c/MyScriptDocument_h/voContentProcessor.html">voContentProcessor</A> processor)</PRE>
+<DL>
+<DD>Called when the target listener is added to a content processor object. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target listener. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+processor
+</B>
+<DD>
+<parameterdescription>
+
+<P>the content processor to which the listener was added. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="onActiveAreaProcessingEnd"></A>
+<H3 class="code">onActiveAreaProcessingEnd</H3>
+<PRE>void <B>onActiveAreaProcessingEnd</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voUserObject.html">voUserObject</A> target, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> activeArea)</PRE>
+<DL>
+<DD>Called when the recognition process on an active area ended. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target listener. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+activeArea
+</B>
+<DD>
+<parameterdescription>
+
+<P>the active area. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="onActiveAreaProcessingStart"></A>
+<H3 class="code">onActiveAreaProcessingStart</H3>
+<PRE>void <B>onActiveAreaProcessingStart</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voUserObject.html">voUserObject</A> target, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> activeArea)</PRE>
+<DL>
+<DD>Called when the recognition process starts on an active area. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target listener. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+activeArea
+</B>
+<DD>
+<parameterdescription>
+
+<P>the active area. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="onConfigured"></A>
+<H3 class="code">onConfigured</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B>onConfigured</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voUserObject.html">voUserObject</A> target, <A href="../../c/MyScriptDocument_h/voContentField.html">voContentField</A> field, <A href="../../c/MyScriptConfigurationManager_h/voConfigurer.html">voConfigurer</A> configurer)</PRE>
+<DL>
+<DD>Called when a content field processor has been configured. <P>
+
+<P>The application may configure the content field further.</P>
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target listener. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+field
+</B>
+<DD>
+<parameterdescription>
+
+<P>the content field which processor has been configured. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+configurer
+</B>
+<DD>
+<parameterdescription>
+
+<P>the configurer in use.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE> if an error occurred during further configuration, otherwise  <CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE>. </P>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="onCreated"></A>
+<H3 class="code">onCreated</H3>
+<PRE>void <B>onCreated</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voUserObject.html">voUserObject</A> target, <A href="../../c/MyScriptDocument_h/voContentField.html">voContentField</A> field, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> fieldProcessor)</PRE>
+<DL>
+<DD>Called when a content field processor has been created. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target listener. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+field
+</B>
+<DD>
+<parameterdescription>
+
+<P>the content field that will be processed by  <CODE>processor</CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+fieldProcessor
+</B>
+<DD>
+<parameterdescription>
+
+<P>the created content field processor on success, otherwise  <CODE>NULL</CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="onError"></A>
+<H3 class="code">onError</H3>
+<PRE>void <B>onError</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target, <A href="../../c/MyScriptDocument_h/voContentField.html">voContentField</A> field, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> error)</PRE>
+<DL>
+<DD>Called when an error occurred while processing  <CODE>field</CODE>. <P>
+
+<P>DEPRECATED: listeners should implement onErrorEx instead</P>
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target listener. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+field
+</B>
+<DD>
+<parameterdescription>
+
+<P>the content field for which processing triggered an error. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+error
+</B>
+<DD>
+<parameterdescription>
+
+<P>the last error encountered. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="onErrorEx"></A>
+<H3 class="code">onErrorEx</H3>
+<PRE>void <B>onErrorEx</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> target, <A href="../../c/MyScriptDocument_h/voContentField.html">voContentField</A> field, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> error, <A href="../../c/MyScriptEngine_h/voCharset.html">voCharset</A> charset, const <A href="../../c/MyScriptEngine_h/voString.html">voString</A> *messages)</PRE>
+<DL>
+<DD>Called when an error occurred while processing  <CODE>field</CODE>. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target listener. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+field
+</B>
+<DD>
+<parameterdescription>
+
+<P>the content field for which processing triggered an error. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+error
+</B>
+<DD>
+<parameterdescription>
+
+<P>the last error encountered. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+charset
+</B>
+<DD>
+<parameterdescription>
+
+<P>the default charset, used to encode parameter strings. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+messages
+</B>
+<DD>
+<parameterdescription>
+
+<P>the error messages. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="onFieldProcessingEnd"></A>
+<H3 class="code">onFieldProcessingEnd</H3>
+<PRE>void <B>onFieldProcessingEnd</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voUserObject.html">voUserObject</A> target, <A href="../../c/MyScriptDocument_h/voContentField.html">voContentField</A> field)</PRE>
+<DL>
+<DD>Called when the recognition process of a field ended. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target listener. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+field
+</B>
+<DD>
+<parameterdescription>
+
+<P>the content field. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="onFieldProcessingStart"></A>
+<H3 class="code">onFieldProcessingStart</H3>
+<PRE>void <B>onFieldProcessingStart</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voUserObject.html">voUserObject</A> target, <A href="../../c/MyScriptDocument_h/voContentField.html">voContentField</A> field)</PRE>
+<DL>
+<DD>Called when the recognition process starts on a field. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target listener. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+field
+</B>
+<DD>
+<parameterdescription>
+
+<P>the content field. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="onPageProcessingEnd"></A>
+<H3 class="code">onPageProcessingEnd</H3>
+<PRE>void <B>onPageProcessingEnd</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voUserObject.html">voUserObject</A> target, <A href="../../c/MyScriptDocument_h/voPage.html">voPage</A> page)</PRE>
+<DL>
+<DD>Called when the recognition process on a page ended. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target listener. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+page
+</B>
+<DD>
+<parameterdescription>
+
+<P>the page. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="onPageProcessingStart"></A>
+<H3 class="code">onPageProcessingStart</H3>
+<PRE>void <B>onPageProcessingStart</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voUserObject.html">voUserObject</A> target, <A href="../../c/MyScriptDocument_h/voPage.html">voPage</A> page)</PRE>
+<DL>
+<DD>Called when then recognition process starts on a page. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target listener. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+page
+</B>
+<DD>
+<parameterdescription>
+
+<P>the page. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="onProgress"></A>
+<H3 class="code">onProgress</H3>
+<PRE>void <B>onProgress</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voUserObject.html">voUserObject</A> target, <A href="../../c/MyScriptDocument_h/voContentField.html">voContentField</A> field, float progress)</PRE>
+<DL>
+<DD>Called multiple times during process to indicate progression. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target listener. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+field
+</B>
+<DD>
+<parameterdescription>
+
+<P>the content field which is being processed. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+progress
+</B>
+<DD>
+<parameterdescription>
+
+<P>the progression rate between  <CODE>0</CODE> and  <CODE>1</CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="onResultAvailable"></A>
+<H3 class="code">onResultAvailable</H3>
+<PRE>void <B>onResultAvailable</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voUserObject.html">voUserObject</A> target, <A href="../../c/MyScriptDocument_h/voContentField.html">voContentField</A> field, <A href="../../c/MyScriptDocument_h/voPageChangeSet.html">voPageChangeSet</A> changeSet)</PRE>
+<DL>
+<DD>Called when a page update is available, following a recognition, beautification or ink search process. <P>
+
+<P>If the process succeeded the application should send a message to the UI thread with the given change set so that the UI thread applies it.</P>
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target listener. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+field
+</B>
+<DD>
+<parameterdescription>
+
+<P>the content field for which a result update is available. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+changeSet
+</B>
+<DD>
+<parameterdescription>
+
+<P>the change set on success, otherwise  <CODE>NULL</CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="removed"></A>
+<H3 class="code">removed</H3>
+<PRE>void <B>removed</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voUserObject.html">voUserObject</A> target, <A href="../../c/MyScriptDocument_h/voContentProcessor.html">voContentProcessor</A> processor)</PRE>
+<DL>
+<DD>Called when the target listener is removed from a content processor object. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target listener. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+processor
+</B>
+<DD>
+<parameterdescription>
+
+<P>the content processor from which the listener was removed. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

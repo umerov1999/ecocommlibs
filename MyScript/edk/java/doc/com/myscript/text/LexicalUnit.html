@@ -1,0 +1,1247 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<title>LexicalUnit (MyScript SDK Java Reference Documentation)</title>
+<link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="LexicalUnit (MyScript SDK Java Reference Documentation)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/LexicalUnit.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../com/myscript/text/IsolatedAlphabetKnowledge.html" title="class in com.myscript.text"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../com/myscript/text/Lexicon.html" title="class in com.myscript.text"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/myscript/text/LexicalUnit.html" target="_top">Frames</a></li>
+<li><a href="LexicalUnit.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#fields_inherited_from_class_com.myscript.text.Resource">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">com.myscript.text</div>
+<h2 title="Class LexicalUnit" class="title">Class LexicalUnit</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li>java.lang.Object</li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">com.myscript.engine.EngineObject</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../com/myscript/text/Resource.html" title="class in com.myscript.text">com.myscript.text.Resource</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../com/myscript/text/LinguisticKnowledge.html" title="class in com.myscript.text">com.myscript.text.LinguisticKnowledge</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../com/myscript/text/Vocabulary.html" title="class in com.myscript.text">com.myscript.text.Vocabulary</a></li>
+<li>
+<ul class="inheritance">
+<li>com.myscript.text.LexicalUnit</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../com/myscript/engine/ICompilable.html" title="interface in com.myscript.engine">ICompilable</a>, <a href="../../../com/myscript/engine/IDisposable.html" title="interface in com.myscript.engine">IDisposable</a>, <a href="../../../com/myscript/engine/IEngineObject.html" title="interface in com.myscript.engine">IEngineObject</a>, java.lang.Cloneable</dd>
+</dl>
+<hr>
+<br>
+<pre>public final class <span class="strong">LexicalUnit</span>
+extends <a href="../../../com/myscript/text/Vocabulary.html" title="class in com.myscript.text">Vocabulary</a>
+implements <a href="../../../com/myscript/engine/ICompilable.html" title="interface in com.myscript.engine">ICompilable</a></pre>
+<div class="block">The <code>LexicalUnit</code> class models the MyScript Handwriting
+ Recognition Lexical Unit resource type.
+ 
+ <p>Lexical Units are used to constrain the handwriting recognition process
+ by the means of regular expressions.</p>
+ 
+ <p>A <code>LexicalUnit</code> object is serializable, in other words you can
+ invoke the
+ <a href="../../../com/myscript/engine/EngineObject.html#load(com.myscript.engine.Engine,%20java.nio.channels.ReadableByteChannel)"><code>load</code></a>
+ and
+ <a href="../../../com/myscript/engine/EngineObject.html#store(java.nio.channels.WritableByteChannel)"><code>store</code></a> 
+ methods on it.</p>
+ 
+ <p><strong>Please note that the implementation of the <code>LexicalUnit</code>
+ class is not synchronized.</strong> If multiple threads concurrently try to
+ change the state of a <code>LexicalUnit</code> object, explicit
+ synchronization must be done externally.</p></div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>4.0.0</dd>
+<dt><span class="strong">Version:</span></dt>
+  <dd>1.1</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../com/myscript/text/Vocabulary.html" title="class in com.myscript.text"><code>Vocabulary</code></a>, 
+<a href="../../../com/myscript/text/Resource.html" title="class in com.myscript.text"><code>Resource</code></a></dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_com.myscript.text.Resource">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;com.myscript.text.<a href="../../../com/myscript/text/Resource.html" title="class in com.myscript.text">Resource</a></h3>
+<code><a href="../../../com/myscript/text/Resource.html#DEFAULT_USER_LIMIT">DEFAULT_USER_LIMIT</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_com.myscript.engine.EngineObject">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;com.myscript.engine.<a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></h3>
+<code><a href="../../../com/myscript/engine/EngineObject.html#engine">engine</a>, <a href="../../../com/myscript/engine/EngineObject.html#reference">reference</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/text/LexicalUnit.html#compile()">compile</a></strong>()</code>
+<div class="block">Compiles this compilable object.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/text/LexicalUnit.html#compile(com.myscript.engine.IProgress)">compile</a></strong>(<a href="../../../com/myscript/engine/IProgress.html" title="interface in com.myscript.engine">IProgress</a>&nbsp;progress)</code>
+<div class="block">Compiles this compilable object.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../com/myscript/text/LexicalUnit.html" title="class in com.myscript.text">LexicalUnit</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/text/LexicalUnit.html#create(com.myscript.engine.Engine)">create</a></strong>(<a href="../../../com/myscript/engine/Engine.html" title="class in com.myscript.engine">Engine</a>&nbsp;engine)</code>
+<div class="block">Static factory method that creates a new <code>LexicalUnit</code> object
+ whose parent is the specified <code>Engine</code> object.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/text/LexicalUnit.html#decompile()">decompile</a></strong>()</code>
+<div class="block">Always throws an <code>InvalidOperationException</code> exception.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/text/LexicalUnit.html#decompile(com.myscript.engine.IProgress)">decompile</a></strong>(<a href="../../../com/myscript/engine/IProgress.html" title="interface in com.myscript.engine">IProgress</a>&nbsp;progress)</code>
+<div class="block">Always throws an <code>InvalidOperationException</code> exception.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/text/LexicalUnit.html#defineMainRegex(com.myscript.engine.Charset,%20byte[])">defineMainRegex</a></strong>(<a href="../../../com/myscript/engine/Charset.html" title="class in com.myscript.engine">Charset</a>&nbsp;charset,
+               byte[]&nbsp;regex)</code>
+<div class="block">Defines the main regular expression.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/text/LexicalUnit.html#defineMainRegex(com.myscript.engine.Charset,%20byte[],%20float)">defineMainRegex</a></strong>(<a href="../../../com/myscript/engine/Charset.html" title="class in com.myscript.engine">Charset</a>&nbsp;charset,
+               byte[]&nbsp;regex,
+               float&nbsp;frequency)</code>
+<div class="block">Defines the main regular expression.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/text/LexicalUnit.html#defineMainRegex(java.lang.String)">defineMainRegex</a></strong>(java.lang.String&nbsp;regex)</code>
+<div class="block">Defines the main regular expression.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/text/LexicalUnit.html#defineMainRegex(java.lang.String,%20float)">defineMainRegex</a></strong>(java.lang.String&nbsp;regex,
+               float&nbsp;frequency)</code>
+<div class="block">Defines the main regular expression.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/text/LexicalUnit.html#defineRegex(com.myscript.engine.Charset,%20byte[],%20byte[])">defineRegex</a></strong>(<a href="../../../com/myscript/engine/Charset.html" title="class in com.myscript.engine">Charset</a>&nbsp;charset,
+           byte[]&nbsp;name,
+           byte[]&nbsp;regex)</code>
+<div class="block">Defines a named regular expression.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/text/LexicalUnit.html#defineRegex(com.myscript.engine.Charset,%20byte[],%20byte[],%20float)">defineRegex</a></strong>(<a href="../../../com/myscript/engine/Charset.html" title="class in com.myscript.engine">Charset</a>&nbsp;charset,
+           byte[]&nbsp;name,
+           byte[]&nbsp;regex,
+           float&nbsp;frequency)</code>
+<div class="block">Defines a named regular expression.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/text/LexicalUnit.html#defineRegex(java.lang.String,%20java.lang.String)">defineRegex</a></strong>(java.lang.String&nbsp;name,
+           java.lang.String&nbsp;regex)</code>
+<div class="block">Defines a named regular expression.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/text/LexicalUnit.html#defineRegex(java.lang.String,%20java.lang.String,%20float)">defineRegex</a></strong>(java.lang.String&nbsp;name,
+           java.lang.String&nbsp;regex,
+           float&nbsp;frequency)</code>
+<div class="block">Defines a named regular expression.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/text/LexicalUnit.html#importVocabulary(com.myscript.engine.Charset,%20byte[],%20com.myscript.text.Vocabulary)">importVocabulary</a></strong>(<a href="../../../com/myscript/engine/Charset.html" title="class in com.myscript.engine">Charset</a>&nbsp;charset,
+                byte[]&nbsp;name,
+                <a href="../../../com/myscript/text/Vocabulary.html" title="class in com.myscript.text">Vocabulary</a>&nbsp;vocabulary)</code>
+<div class="block">Imports a <code>Vocabulary</code> resource object into this
+ <code>LexicalUnit</code> object.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/text/LexicalUnit.html#importVocabulary(com.myscript.engine.Charset,%20byte[],%20com.myscript.text.Vocabulary,%20float)">importVocabulary</a></strong>(<a href="../../../com/myscript/engine/Charset.html" title="class in com.myscript.engine">Charset</a>&nbsp;charset,
+                byte[]&nbsp;name,
+                <a href="../../../com/myscript/text/Vocabulary.html" title="class in com.myscript.text">Vocabulary</a>&nbsp;vocabulary,
+                float&nbsp;frequency)</code>
+<div class="block">Imports a <code>Vocabulary</code> resource object into this
+ <code>LexicalUnit</code> object.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/text/LexicalUnit.html#importVocabulary(java.lang.String,%20com.myscript.text.Vocabulary)">importVocabulary</a></strong>(java.lang.String&nbsp;name,
+                <a href="../../../com/myscript/text/Vocabulary.html" title="class in com.myscript.text">Vocabulary</a>&nbsp;vocabulary)</code>
+<div class="block">Imports a <code>Vocabulary</code> resource object into this
+ <code>LexicalUnit</code> object.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/text/LexicalUnit.html#importVocabulary(java.lang.String,%20com.myscript.text.Vocabulary,%20float)">importVocabulary</a></strong>(java.lang.String&nbsp;name,
+                <a href="../../../com/myscript/text/Vocabulary.html" title="class in com.myscript.text">Vocabulary</a>&nbsp;vocabulary,
+                float&nbsp;frequency)</code>
+<div class="block">Imports a <code>Vocabulary</code> resource object into this
+ <code>LexicalUnit</code> object.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/text/LexicalUnit.html#isCompiled()">isCompiled</a></strong>()</code>
+<div class="block">Tells whether or not this compilable object is compiled.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.myscript.text.Vocabulary">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;com.myscript.text.<a href="../../../com/myscript/text/Vocabulary.html" title="class in com.myscript.text">Vocabulary</a></h3>
+<code><a href="../../../com/myscript/text/Vocabulary.html#getAccentuationScheme()">getAccentuationScheme</a>, <a href="../../../com/myscript/text/Vocabulary.html#getCasingScheme()">getCasingScheme</a>, <a href="../../../com/myscript/text/Vocabulary.html#getFrequencyScale()">getFrequencyScale</a>, <a href="../../../com/myscript/text/Vocabulary.html#getRecognitionPathLimit()">getRecognitionPathLimit</a>, <a href="../../../com/myscript/text/Vocabulary.html#getReservedRecognitionPaths()">getReservedRecognitionPaths</a>, <a href="../../../com/myscript/text/Vocabulary.html#resetAccentuationScheme()">resetAccentuationScheme</a>, <a href="../../../com/myscript/text/Vocabulary.html#resetCasingScheme()">resetCasingScheme</a>, <a href="../../../com/myscript/text/Vocabulary.html#resetFrequencyScale()">resetFrequencyScale</a>, <a href="../../../com/myscript/text/Vocabulary.html#resetRecognitionPathLimit()">resetRecognitionPathLimit</a>, <a href="../../../com/myscript/text/Vocabulary.html#resetReservedRecognitionPaths()">resetReservedRecognitionPaths</a>, <a href="../../../com/myscript/text/Vocabulary.html#setAccentuationScheme(com.myscript.text.AccentuationScheme)">setAccentuationScheme</a>, <a href="../../../com/myscript/text/Vocabulary.html#setCasingScheme(com.myscript.text.CasingScheme)">setCasingScheme</a>, <a href="../../../com/myscript/text/Vocabulary.html#setFrequencyScale(float)">setFrequencyScale</a>, <a href="../../../com/myscript/text/Vocabulary.html#setRecognitionPathLimit(float)">setRecognitionPathLimit</a>, <a href="../../../com/myscript/text/Vocabulary.html#setReservedRecognitionPaths(float)">setReservedRecognitionPaths</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.myscript.text.Resource">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;com.myscript.text.<a href="../../../com/myscript/text/Resource.html" title="class in com.myscript.text">Resource</a></h3>
+<code><a href="../../../com/myscript/text/Resource.html#getName()">getName</a>, <a href="../../../com/myscript/text/Resource.html#getUserCount(com.myscript.engine.Engine)">getUserCount</a>, <a href="../../../com/myscript/text/Resource.html#getUserLimit(com.myscript.engine.Engine)">getUserLimit</a>, <a href="../../../com/myscript/text/Resource.html#getVersion()">getVersion</a>, <a href="../../../com/myscript/text/Resource.html#resetUserLimit(com.myscript.engine.Engine)">resetUserLimit</a>, <a href="../../../com/myscript/text/Resource.html#setName(java.lang.String)">setName</a>, <a href="../../../com/myscript/text/Resource.html#setUserLimit(com.myscript.engine.Engine,%20int)">setUserLimit</a>, <a href="../../../com/myscript/text/Resource.html#setVersion(int,%20int)">setVersion</a>, <a href="../../../com/myscript/text/Resource.html#setVersion(int,%20int,%20int)">setVersion</a>, <a href="../../../com/myscript/text/Resource.html#setVersion(com.myscript.engine.Version)">setVersion</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.myscript.engine.EngineObject">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;com.myscript.engine.<a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></h3>
+<code><a href="../../../com/myscript/engine/EngineObject.html#acquire()">acquire</a>, <a href="../../../com/myscript/engine/EngineObject.html#checkDisposed()">checkDisposed</a>, <a href="../../../com/myscript/engine/EngineObject.html#clone()">clone</a>, <a href="../../../com/myscript/engine/EngineObject.html#dispose()">dispose</a>, <a href="../../../com/myscript/engine/EngineObject.html#finalize()">finalize</a>, <a href="../../../com/myscript/engine/EngineObject.html#getAttachReferenceCount()">getAttachReferenceCount</a>, <a href="../../../com/myscript/engine/EngineObject.html#getEngine()">getEngine</a>, <a href="../../../com/myscript/engine/EngineObject.html#getMemoryUsage()">getMemoryUsage</a>, <a href="../../../com/myscript/engine/EngineObject.html#getNativeReference()">getNativeReference</a>, <a href="../../../com/myscript/engine/EngineObject.html#getUserReferenceCount()">getUserReferenceCount</a>, <a href="../../../com/myscript/engine/EngineObject.html#isDisposed()">isDisposed</a>, <a href="../../../com/myscript/engine/EngineObject.html#isSame(com.myscript.engine.EngineObject)">isSame</a>, <a href="../../../com/myscript/engine/EngineObject.html#load(com.myscript.engine.Engine,%20java.nio.channels.ReadableByteChannel)">load</a>, <a href="../../../com/myscript/engine/EngineObject.html#load(com.myscript.engine.Engine,%20java.lang.String)">load</a>, <a href="../../../com/myscript/engine/EngineObject.html#load(com.myscript.engine.Engine,%20java.lang.String,%20java.lang.String)">load</a>, <a href="../../../com/myscript/engine/EngineObject.html#store(java.lang.String)">store</a>, <a href="../../../com/myscript/engine/EngineObject.html#store(java.lang.String,%20java.lang.String)">store</a>, <a href="../../../com/myscript/engine/EngineObject.html#store(java.nio.channels.WritableByteChannel)">store</a>, <a href="../../../com/myscript/engine/EngineObject.html#toString()">toString</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>equals, getClass, hashCode, notify, notifyAll, wait, wait, wait</code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.myscript.engine.IEngineObject">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;com.myscript.engine.<a href="../../../com/myscript/engine/IEngineObject.html" title="interface in com.myscript.engine">IEngineObject</a></h3>
+<code><a href="../../../com/myscript/engine/IEngineObject.html#getEngine()">getEngine</a>, <a href="../../../com/myscript/engine/IEngineObject.html#getNativeReference()">getNativeReference</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.myscript.engine.IDisposable">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;com.myscript.engine.<a href="../../../com/myscript/engine/IDisposable.html" title="interface in com.myscript.engine">IDisposable</a></h3>
+<code><a href="../../../com/myscript/engine/IDisposable.html#dispose()">dispose</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="create(com.myscript.engine.Engine)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>create</h4>
+<pre>public static final&nbsp;<a href="../../../com/myscript/text/LexicalUnit.html" title="class in com.myscript.text">LexicalUnit</a>&nbsp;create(<a href="../../../com/myscript/engine/Engine.html" title="class in com.myscript.engine">Engine</a>&nbsp;engine)
+                                throws java.lang.NullPointerException,
+                                       java.lang.IllegalStateException,
+                                       <a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a>,
+                                       <a href="../../../com/myscript/engine/OutOfMemoryException.html" title="class in com.myscript.engine">OutOfMemoryException</a></pre>
+<div class="block">Static factory method that creates a new <code>LexicalUnit</code> object
+ whose parent is the specified <code>Engine</code> object.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>engine</code> - the parent <code>Engine</code> object.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new <code>LexicalUnit</code> object.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.NullPointerException</code> - when <code>engine</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>engine</code> has been disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></code> - when the <code>Resource</code> user limit
+ has been reached.</dd>
+<dd><code><a href="../../../com/myscript/engine/OutOfMemoryException.html" title="class in com.myscript.engine">OutOfMemoryException</a></code> - when the MyScript Engine failed to allocate
+ memory.</dd></dl>
+</li>
+</ul>
+<a name="isCompiled()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isCompiled</h4>
+<pre>public final&nbsp;boolean&nbsp;isCompiled()
+                         throws java.lang.IllegalStateException</pre>
+<div class="block">Tells whether or not this compilable object is compiled.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/engine/ICompilable.html#isCompiled()">isCompiled</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/engine/ICompilable.html" title="interface in com.myscript.engine">ICompilable</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd><code>true</code> when this compilable object has been compiled,
+ otherwise <code>false</code>.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>LexicalUnit</code> object
+ has been disposed of.</dd></dl>
+</li>
+</ul>
+<a name="compile()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>compile</h4>
+<pre>public final&nbsp;void&nbsp;compile()
+                   throws java.lang.IllegalStateException</pre>
+<div class="block">Compiles this compilable object.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/engine/ICompilable.html#compile()">compile</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/engine/ICompilable.html" title="interface in com.myscript.engine">ICompilable</a></code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>LexicalUnit</code> object
+ has been disposed of.</dd></dl>
+</li>
+</ul>
+<a name="compile(com.myscript.engine.IProgress)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>compile</h4>
+<pre>public final&nbsp;void&nbsp;compile(<a href="../../../com/myscript/engine/IProgress.html" title="interface in com.myscript.engine">IProgress</a>&nbsp;progress)
+                   throws java.lang.IllegalStateException,
+                          <a href="../../../com/myscript/engine/CanceledException.html" title="class in com.myscript.engine">CanceledException</a></pre>
+<div class="block">Compiles this compilable object.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/engine/ICompilable.html#compile(com.myscript.engine.IProgress)">compile</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/engine/ICompilable.html" title="interface in com.myscript.engine">ICompilable</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>progress</code> - an object implementing the <code>IProgress</code> interface
+ used to notify the client side about the status of the <code>compile</code>
+ operation. Passing <code>null</code> as the <code>progress</code> parameter
+ has the same effect as invoking the <a href="../../../com/myscript/engine/ICompilable.html#compile()"><code>nullary
+ overload</code></a> of the method.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>LexicalUnit</code> object
+ has been disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/CanceledException.html" title="class in com.myscript.engine">CanceledException</a></code> - when the operation has been canceled by the
+ <a href="../../../com/myscript/engine/IProgress.html#update(int,%20int)"><code>IProgress.update(int, int)</code></a> method.</dd></dl>
+</li>
+</ul>
+<a name="decompile()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>decompile</h4>
+<pre>public final&nbsp;void&nbsp;decompile()
+                     throws java.lang.IllegalStateException,
+                            <a href="../../../com/myscript/engine/InvalidOperationException.html" title="class in com.myscript.engine">InvalidOperationException</a></pre>
+<div class="block">Always throws an <code>InvalidOperationException</code> exception.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/engine/ICompilable.html#decompile()">decompile</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/engine/ICompilable.html" title="interface in com.myscript.engine">ICompilable</a></code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>LexicalUnit</code> object
+ has been disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidOperationException.html" title="class in com.myscript.engine">InvalidOperationException</a></code> - always.</dd></dl>
+</li>
+</ul>
+<a name="decompile(com.myscript.engine.IProgress)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>decompile</h4>
+<pre>public final&nbsp;void&nbsp;decompile(<a href="../../../com/myscript/engine/IProgress.html" title="interface in com.myscript.engine">IProgress</a>&nbsp;progress)
+                     throws java.lang.IllegalStateException,
+                            <a href="../../../com/myscript/engine/InvalidOperationException.html" title="class in com.myscript.engine">InvalidOperationException</a></pre>
+<div class="block">Always throws an <code>InvalidOperationException</code> exception.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/engine/ICompilable.html#decompile(com.myscript.engine.IProgress)">decompile</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/engine/ICompilable.html" title="interface in com.myscript.engine">ICompilable</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>progress</code> - ignored.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>LexicalUnit</code> object has
+ been disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidOperationException.html" title="class in com.myscript.engine">InvalidOperationException</a></code> - always.</dd></dl>
+</li>
+</ul>
+<a name="defineRegex(java.lang.String, java.lang.String, float)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>defineRegex</h4>
+<pre>public final&nbsp;void&nbsp;defineRegex(java.lang.String&nbsp;name,
+               java.lang.String&nbsp;regex,
+               float&nbsp;frequency)
+                       throws java.lang.IllegalStateException,
+                              java.lang.NullPointerException,
+                              java.lang.IllegalArgumentException,
+                              <a href="../../../com/myscript/text/RegexInvalidCharacterException.html" title="class in com.myscript.text">RegexInvalidCharacterException</a>,
+                              <a href="../../../com/myscript/text/RegexSubExpImbalanceException.html" title="class in com.myscript.text">RegexSubExpImbalanceException</a>,
+                              <a href="../../../com/myscript/text/RegexUnmatchedOpenSetException.html" title="class in com.myscript.text">RegexUnmatchedOpenSetException</a>,
+                              <a href="../../../com/myscript/text/RegexUnmatchedOpenRefException.html" title="class in com.myscript.text">RegexUnmatchedOpenRefException</a>,
+                              <a href="../../../com/myscript/text/RegexTrailingEscapeException.html" title="class in com.myscript.text">RegexTrailingEscapeException</a>,
+                              <a href="../../../com/myscript/text/RegexInvalidReferenceException.html" title="class in com.myscript.text">RegexInvalidReferenceException</a>,
+                              <a href="../../../com/myscript/engine/ModificationAccessDeniedException.html" title="class in com.myscript.engine">ModificationAccessDeniedException</a>,
+                              <a href="../../../com/myscript/text/RegexUnmatchedCloseSetException.html" title="class in com.myscript.text">RegexUnmatchedCloseSetException</a>,
+                              <a href="../../../com/myscript/text/RegexUnmatchedCloseRefException.html" title="class in com.myscript.text">RegexUnmatchedCloseRefException</a>,
+                              <a href="../../../com/myscript/text/RegexUnescapedOperatorException.html" title="class in com.myscript.text">RegexUnescapedOperatorException</a></pre>
+<div class="block">Defines a named regular expression.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>name</code> - the name of the regular expression to be defined (to be used
+ when you want to reference it from another regular expression).</dd><dd><code>regex</code> - the regular expression to be defined.</dd><dd><code>frequency</code> - the frequency value assigned to the newly defined regular
+ expression (must lie in the <code>-1.0f ... 1.0f</code> range).</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>LexicalUnit</code> object has
+ been disposed of.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>LexicalUnit</code> object has
+ been compiled.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>name</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>name</code> is the empty
+ string.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>regex</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>regex</code> is the empty
+ string.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexInvalidCharacterException.html" title="class in com.myscript.text">RegexInvalidCharacterException</a></code> - when <code>name</code> contains an
+ invalid character.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexInvalidCharacterException.html" title="class in com.myscript.text">RegexInvalidCharacterException</a></code> - when <code>regex</code> contains an
+ invalid character.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexSubExpImbalanceException.html" title="class in com.myscript.text">RegexSubExpImbalanceException</a></code> - when <code>regex</code> contains a
+ sub-expression imbalance.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnmatchedOpenSetException.html" title="class in com.myscript.text">RegexUnmatchedOpenSetException</a></code> - when <code>regex</code> contains an
+ unmatched open set.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnmatchedOpenRefException.html" title="class in com.myscript.text">RegexUnmatchedOpenRefException</a></code> - when <code>regex</code> contains an
+ unmatched open reference.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexTrailingEscapeException.html" title="class in com.myscript.text">RegexTrailingEscapeException</a></code> - when <code>regex</code> contains a
+ trailing escape character.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexInvalidReferenceException.html" title="class in com.myscript.text">RegexInvalidReferenceException</a></code> - when <code>regex</code> refers to
+ an undefined entity.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnmatchedCloseSetException.html" title="class in com.myscript.text">RegexUnmatchedCloseSetException</a></code> - when <code>regex</code> contains an
+ unmatched close set.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnmatchedCloseRefException.html" title="class in com.myscript.text">RegexUnmatchedCloseRefException</a></code> - when <code>regex</code> contains an
+ unmatched close reference.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnescapedOperatorException.html" title="class in com.myscript.text">RegexUnescapedOperatorException</a></code> - when <code>regex</code> contains an
+ unescaped operator.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>frequency</code> is
+ Not-a-Number (<code>NaN</code>).</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>frequency</code> is infinitely
+ large in magnitude.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>frequency</code> does not lie
+ in the <code>-1.0f ... 1.0f</code> range.</dd>
+<dd><code><a href="../../../com/myscript/engine/ModificationAccessDeniedException.html" title="class in com.myscript.engine">ModificationAccessDeniedException</a></code> - when this
+ <code>LexicalUnit</code> object is in use by another object.</dd></dl>
+</li>
+</ul>
+<a name="defineRegex(java.lang.String, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>defineRegex</h4>
+<pre>public final&nbsp;void&nbsp;defineRegex(java.lang.String&nbsp;name,
+               java.lang.String&nbsp;regex)
+                       throws java.lang.IllegalStateException,
+                              java.lang.NullPointerException,
+                              java.lang.IllegalArgumentException,
+                              <a href="../../../com/myscript/text/RegexInvalidCharacterException.html" title="class in com.myscript.text">RegexInvalidCharacterException</a>,
+                              <a href="../../../com/myscript/text/RegexSubExpImbalanceException.html" title="class in com.myscript.text">RegexSubExpImbalanceException</a>,
+                              <a href="../../../com/myscript/text/RegexUnmatchedOpenSetException.html" title="class in com.myscript.text">RegexUnmatchedOpenSetException</a>,
+                              <a href="../../../com/myscript/text/RegexUnmatchedOpenRefException.html" title="class in com.myscript.text">RegexUnmatchedOpenRefException</a>,
+                              <a href="../../../com/myscript/text/RegexTrailingEscapeException.html" title="class in com.myscript.text">RegexTrailingEscapeException</a>,
+                              <a href="../../../com/myscript/text/RegexInvalidReferenceException.html" title="class in com.myscript.text">RegexInvalidReferenceException</a>,
+                              <a href="../../../com/myscript/engine/ModificationAccessDeniedException.html" title="class in com.myscript.engine">ModificationAccessDeniedException</a>,
+                              <a href="../../../com/myscript/text/RegexUnmatchedCloseSetException.html" title="class in com.myscript.text">RegexUnmatchedCloseSetException</a>,
+                              <a href="../../../com/myscript/text/RegexUnmatchedCloseRefException.html" title="class in com.myscript.text">RegexUnmatchedCloseRefException</a>,
+                              <a href="../../../com/myscript/text/RegexUnescapedOperatorException.html" title="class in com.myscript.text">RegexUnescapedOperatorException</a></pre>
+<div class="block">Defines a named regular expression.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>name</code> - the name of the regular expression to be defined (to be used
+ when you want to reference it from another regular expression).</dd><dd><code>regex</code> - the regular expression to be defined.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>LexicalUnit</code> object has
+ been disposed of.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>LexicalUnit</code> object has
+ been compiled.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>name</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>name</code> is the empty
+ string.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>regex</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>regex</code> is the empty
+ string.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexInvalidCharacterException.html" title="class in com.myscript.text">RegexInvalidCharacterException</a></code> - when <code>name</code> contains an
+ invalid character.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexInvalidCharacterException.html" title="class in com.myscript.text">RegexInvalidCharacterException</a></code> - when <code>regex</code> contains an
+ invalid character.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexSubExpImbalanceException.html" title="class in com.myscript.text">RegexSubExpImbalanceException</a></code> - when <code>regex</code> contains a
+ sub-expression imbalance.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnmatchedOpenSetException.html" title="class in com.myscript.text">RegexUnmatchedOpenSetException</a></code> - when <code>regex</code> contains an
+ unmatched open set.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnmatchedOpenRefException.html" title="class in com.myscript.text">RegexUnmatchedOpenRefException</a></code> - when <code>regex</code> contains an
+ unmatched open reference.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexTrailingEscapeException.html" title="class in com.myscript.text">RegexTrailingEscapeException</a></code> - when <code>regex</code> contains a
+ trailing escape character.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexInvalidReferenceException.html" title="class in com.myscript.text">RegexInvalidReferenceException</a></code> - when <code>regex</code> refers to
+ an undefined entity.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnmatchedCloseSetException.html" title="class in com.myscript.text">RegexUnmatchedCloseSetException</a></code> - when <code>regex</code> contains an
+ unmatched close set.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnmatchedCloseRefException.html" title="class in com.myscript.text">RegexUnmatchedCloseRefException</a></code> - when <code>regex</code> contains an
+ unmatched close reference.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnescapedOperatorException.html" title="class in com.myscript.text">RegexUnescapedOperatorException</a></code> - when <code>regex</code> contains an
+ unescaped operator.</dd>
+<dd><code><a href="../../../com/myscript/engine/ModificationAccessDeniedException.html" title="class in com.myscript.engine">ModificationAccessDeniedException</a></code> - when this
+ <code>LexicalUnit</code> object is in use by another object.</dd></dl>
+</li>
+</ul>
+<a name="defineRegex(com.myscript.engine.Charset, byte[], byte[], float)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>defineRegex</h4>
+<pre>public final&nbsp;void&nbsp;defineRegex(<a href="../../../com/myscript/engine/Charset.html" title="class in com.myscript.engine">Charset</a>&nbsp;charset,
+               byte[]&nbsp;name,
+               byte[]&nbsp;regex,
+               float&nbsp;frequency)
+                       throws java.lang.IllegalStateException,
+                              java.lang.NullPointerException,
+                              <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a>,
+                              java.lang.IllegalArgumentException,
+                              <a href="../../../com/myscript/text/RegexInvalidCharacterException.html" title="class in com.myscript.text">RegexInvalidCharacterException</a>,
+                              <a href="../../../com/myscript/text/RegexSubExpImbalanceException.html" title="class in com.myscript.text">RegexSubExpImbalanceException</a>,
+                              <a href="../../../com/myscript/text/RegexUnmatchedOpenSetException.html" title="class in com.myscript.text">RegexUnmatchedOpenSetException</a>,
+                              <a href="../../../com/myscript/text/RegexUnmatchedOpenRefException.html" title="class in com.myscript.text">RegexUnmatchedOpenRefException</a>,
+                              <a href="../../../com/myscript/text/RegexTrailingEscapeException.html" title="class in com.myscript.text">RegexTrailingEscapeException</a>,
+                              <a href="../../../com/myscript/text/RegexInvalidReferenceException.html" title="class in com.myscript.text">RegexInvalidReferenceException</a>,
+                              <a href="../../../com/myscript/engine/ModificationAccessDeniedException.html" title="class in com.myscript.engine">ModificationAccessDeniedException</a>,
+                              <a href="../../../com/myscript/text/RegexUnmatchedCloseSetException.html" title="class in com.myscript.text">RegexUnmatchedCloseSetException</a>,
+                              <a href="../../../com/myscript/text/RegexUnmatchedCloseRefException.html" title="class in com.myscript.text">RegexUnmatchedCloseRefException</a>,
+                              <a href="../../../com/myscript/text/RegexUnescapedOperatorException.html" title="class in com.myscript.text">RegexUnescapedOperatorException</a></pre>
+<div class="block">Defines a named regular expression.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>charset</code> - the <code>Charset</code> object to be used when decoding
+ <code>name</code> and <code>regex</code>.</dd><dd><code>name</code> - the name of the regular expression to be defined (to be used
+ when you want to reference it from another regular expression).</dd><dd><code>regex</code> - the regular expression to be defined.</dd><dd><code>frequency</code> - the frequency value assigned to the newly defined regular
+ expression (must lie in the <code>-1.0f ... 1.0f</code> range).</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>LexicalUnit</code> object has
+ been disposed of.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>LexicalUnit</code> object has
+ been compiled.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>charset</code> is
+ <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>charset</code> has been
+ disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>charset</code> does not
+ have the same parent engine as this <code>LexicalUnit</code> object.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>name</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>name</code> is the empty
+ string.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>regex</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>regex</code> is the empty
+ string.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexInvalidCharacterException.html" title="class in com.myscript.text">RegexInvalidCharacterException</a></code> - when <code>name</code> contains an
+ invalid character.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexInvalidCharacterException.html" title="class in com.myscript.text">RegexInvalidCharacterException</a></code> - when <code>regex</code> contains an
+ invalid character.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexSubExpImbalanceException.html" title="class in com.myscript.text">RegexSubExpImbalanceException</a></code> - when <code>regex</code> contains a
+ sub-expression imbalance.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnmatchedOpenSetException.html" title="class in com.myscript.text">RegexUnmatchedOpenSetException</a></code> - when <code>regex</code> contains an
+ unmatched open set.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnmatchedOpenRefException.html" title="class in com.myscript.text">RegexUnmatchedOpenRefException</a></code> - when <code>regex</code> contains an
+ unmatched open reference.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexTrailingEscapeException.html" title="class in com.myscript.text">RegexTrailingEscapeException</a></code> - when <code>regex</code> contains a
+ trailing escape character.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexInvalidReferenceException.html" title="class in com.myscript.text">RegexInvalidReferenceException</a></code> - when <code>regex</code> refers to
+ an undefined entity.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnmatchedCloseSetException.html" title="class in com.myscript.text">RegexUnmatchedCloseSetException</a></code> - when <code>regex</code> contains an
+ unmatched close set.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnmatchedCloseRefException.html" title="class in com.myscript.text">RegexUnmatchedCloseRefException</a></code> - when <code>regex</code> contains an
+ unmatched close reference.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnescapedOperatorException.html" title="class in com.myscript.text">RegexUnescapedOperatorException</a></code> - when <code>regex</code> contains an
+ unescaped operator.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>frequency</code> is
+ Not-a-Number (<code>NaN</code>).</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>frequency</code> is infinitely
+ large in magnitude.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>frequency</code> does not lie
+ in the <code>-1.0f ... 1.0f</code> range.</dd>
+<dd><code><a href="../../../com/myscript/engine/ModificationAccessDeniedException.html" title="class in com.myscript.engine">ModificationAccessDeniedException</a></code> - when this
+ <code>LexicalUnit</code> object is in use by another object.</dd></dl>
+</li>
+</ul>
+<a name="defineRegex(com.myscript.engine.Charset, byte[], byte[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>defineRegex</h4>
+<pre>public final&nbsp;void&nbsp;defineRegex(<a href="../../../com/myscript/engine/Charset.html" title="class in com.myscript.engine">Charset</a>&nbsp;charset,
+               byte[]&nbsp;name,
+               byte[]&nbsp;regex)
+                       throws java.lang.IllegalStateException,
+                              java.lang.NullPointerException,
+                              <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a>,
+                              java.lang.IllegalArgumentException,
+                              <a href="../../../com/myscript/text/RegexInvalidCharacterException.html" title="class in com.myscript.text">RegexInvalidCharacterException</a>,
+                              <a href="../../../com/myscript/text/RegexSubExpImbalanceException.html" title="class in com.myscript.text">RegexSubExpImbalanceException</a>,
+                              <a href="../../../com/myscript/text/RegexUnmatchedOpenSetException.html" title="class in com.myscript.text">RegexUnmatchedOpenSetException</a>,
+                              <a href="../../../com/myscript/text/RegexUnmatchedOpenRefException.html" title="class in com.myscript.text">RegexUnmatchedOpenRefException</a>,
+                              <a href="../../../com/myscript/text/RegexTrailingEscapeException.html" title="class in com.myscript.text">RegexTrailingEscapeException</a>,
+                              <a href="../../../com/myscript/text/RegexInvalidReferenceException.html" title="class in com.myscript.text">RegexInvalidReferenceException</a>,
+                              <a href="../../../com/myscript/engine/ModificationAccessDeniedException.html" title="class in com.myscript.engine">ModificationAccessDeniedException</a>,
+                              <a href="../../../com/myscript/text/RegexUnmatchedCloseSetException.html" title="class in com.myscript.text">RegexUnmatchedCloseSetException</a>,
+                              <a href="../../../com/myscript/text/RegexUnmatchedCloseRefException.html" title="class in com.myscript.text">RegexUnmatchedCloseRefException</a>,
+                              <a href="../../../com/myscript/text/RegexUnescapedOperatorException.html" title="class in com.myscript.text">RegexUnescapedOperatorException</a></pre>
+<div class="block">Defines a named regular expression.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>charset</code> - the <code>Charset</code> object to be used when decoding
+ <code>name</code> and <code>regex</code>.</dd><dd><code>name</code> - the name of the regular expression to be defined (to be used
+ when you want to reference it from another regular expression).</dd><dd><code>regex</code> - the regular expression to be defined.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>LexicalUnit</code> object has
+ been disposed of.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>LexicalUnit</code> object has
+ been compiled.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>charset</code> is
+ <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>charset</code> has been
+ disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>charset</code> does not
+ have the same parent engine as this <code>LexicalUnit</code> object.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>name</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>name</code> is the empty
+ string.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>regex</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>regex</code> is the empty
+ string.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexInvalidCharacterException.html" title="class in com.myscript.text">RegexInvalidCharacterException</a></code> - when <code>name</code> contains an
+ invalid character.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexInvalidCharacterException.html" title="class in com.myscript.text">RegexInvalidCharacterException</a></code> - when <code>regex</code> contains an
+ invalid character.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexSubExpImbalanceException.html" title="class in com.myscript.text">RegexSubExpImbalanceException</a></code> - when <code>regex</code> contains a
+ sub-expression imbalance.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnmatchedOpenSetException.html" title="class in com.myscript.text">RegexUnmatchedOpenSetException</a></code> - when <code>regex</code> contains an
+ unmatched open set.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnmatchedOpenRefException.html" title="class in com.myscript.text">RegexUnmatchedOpenRefException</a></code> - when <code>regex</code> contains an
+ unmatched open reference.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexTrailingEscapeException.html" title="class in com.myscript.text">RegexTrailingEscapeException</a></code> - when <code>regex</code> contains a
+ trailing escape character.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexInvalidReferenceException.html" title="class in com.myscript.text">RegexInvalidReferenceException</a></code> - when <code>regex</code> refers to
+ an undefined entity.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnmatchedCloseSetException.html" title="class in com.myscript.text">RegexUnmatchedCloseSetException</a></code> - when <code>regex</code> contains an
+ unmatched close set.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnmatchedCloseRefException.html" title="class in com.myscript.text">RegexUnmatchedCloseRefException</a></code> - when <code>regex</code> contains an
+ unmatched close reference.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnescapedOperatorException.html" title="class in com.myscript.text">RegexUnescapedOperatorException</a></code> - when <code>regex</code> contains an
+ unescaped operator.</dd>
+<dd><code><a href="../../../com/myscript/engine/ModificationAccessDeniedException.html" title="class in com.myscript.engine">ModificationAccessDeniedException</a></code> - when this
+ <code>LexicalUnit</code> object is in use by another object.</dd></dl>
+</li>
+</ul>
+<a name="defineMainRegex(java.lang.String, float)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>defineMainRegex</h4>
+<pre>public final&nbsp;void&nbsp;defineMainRegex(java.lang.String&nbsp;regex,
+                   float&nbsp;frequency)
+                           throws java.lang.IllegalStateException,
+                                  java.lang.NullPointerException,
+                                  java.lang.IllegalArgumentException,
+                                  <a href="../../../com/myscript/text/RegexInvalidCharacterException.html" title="class in com.myscript.text">RegexInvalidCharacterException</a>,
+                                  <a href="../../../com/myscript/text/RegexSubExpImbalanceException.html" title="class in com.myscript.text">RegexSubExpImbalanceException</a>,
+                                  <a href="../../../com/myscript/text/RegexUnmatchedOpenSetException.html" title="class in com.myscript.text">RegexUnmatchedOpenSetException</a>,
+                                  <a href="../../../com/myscript/text/RegexUnmatchedOpenRefException.html" title="class in com.myscript.text">RegexUnmatchedOpenRefException</a>,
+                                  <a href="../../../com/myscript/engine/ModificationAccessDeniedException.html" title="class in com.myscript.engine">ModificationAccessDeniedException</a>,
+                                  <a href="../../../com/myscript/text/RegexUnmatchedCloseSetException.html" title="class in com.myscript.text">RegexUnmatchedCloseSetException</a>,
+                                  <a href="../../../com/myscript/text/RegexUnmatchedCloseRefException.html" title="class in com.myscript.text">RegexUnmatchedCloseRefException</a>,
+                                  <a href="../../../com/myscript/text/RegexUnescapedOperatorException.html" title="class in com.myscript.text">RegexUnescapedOperatorException</a></pre>
+<div class="block">Defines the main regular expression.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>regex</code> - the main regular expression.</dd><dd><code>frequency</code> - the frequency value assigned to the newly defined regular
+ expression (must lie in the <code>-1.0f ... 1.0f</code> range).</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>LexicalUnit</code> object has
+ been disposed of.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>LexicalUnit</code> object has
+ been compiled.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>regex</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>regex</code> is the empty
+ string.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexInvalidCharacterException.html" title="class in com.myscript.text">RegexInvalidCharacterException</a></code> - when <code>regex</code> contains an
+ invalid character.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexSubExpImbalanceException.html" title="class in com.myscript.text">RegexSubExpImbalanceException</a></code> - when <code>regex</code> contains a
+ sub-expression imbalance.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnmatchedOpenSetException.html" title="class in com.myscript.text">RegexUnmatchedOpenSetException</a></code> - when <code>regex</code> contains an
+ unmatched open set.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnmatchedOpenRefException.html" title="class in com.myscript.text">RegexUnmatchedOpenRefException</a></code> - when <code>regex</code> contains an
+ unmatched open reference.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexTrailingEscapeException.html" title="class in com.myscript.text">RegexTrailingEscapeException</a></code> - when <code>regex</code> contains a
+ trailing escape character.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexInvalidReferenceException.html" title="class in com.myscript.text">RegexInvalidReferenceException</a></code> - when <code>regex</code> refers to
+ an undefined entity.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnmatchedCloseSetException.html" title="class in com.myscript.text">RegexUnmatchedCloseSetException</a></code> - when <code>regex</code> contains an
+ unmatched close set.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnmatchedCloseRefException.html" title="class in com.myscript.text">RegexUnmatchedCloseRefException</a></code> - when <code>regex</code> contains an
+ unmatched close reference.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnescapedOperatorException.html" title="class in com.myscript.text">RegexUnescapedOperatorException</a></code> - when <code>regex</code> contains an
+ unescaped operator.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>frequency</code> is
+ Not-a-Number (<code>NaN</code>).</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>frequency</code> is infinitely
+ large in magnitude.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>frequency</code> does not lie
+ in the <code>-1.0f ... 1.0f</code> range.</dd>
+<dd><code><a href="../../../com/myscript/engine/ModificationAccessDeniedException.html" title="class in com.myscript.engine">ModificationAccessDeniedException</a></code> - when this
+ <code>LexicalUnit</code> object is in use by another object.</dd></dl>
+</li>
+</ul>
+<a name="defineMainRegex(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>defineMainRegex</h4>
+<pre>public final&nbsp;void&nbsp;defineMainRegex(java.lang.String&nbsp;regex)
+                           throws java.lang.IllegalStateException,
+                                  java.lang.NullPointerException,
+                                  java.lang.IllegalArgumentException,
+                                  <a href="../../../com/myscript/text/RegexInvalidCharacterException.html" title="class in com.myscript.text">RegexInvalidCharacterException</a>,
+                                  <a href="../../../com/myscript/text/RegexSubExpImbalanceException.html" title="class in com.myscript.text">RegexSubExpImbalanceException</a>,
+                                  <a href="../../../com/myscript/text/RegexUnmatchedOpenSetException.html" title="class in com.myscript.text">RegexUnmatchedOpenSetException</a>,
+                                  <a href="../../../com/myscript/text/RegexUnmatchedOpenRefException.html" title="class in com.myscript.text">RegexUnmatchedOpenRefException</a>,
+                                  <a href="../../../com/myscript/engine/ModificationAccessDeniedException.html" title="class in com.myscript.engine">ModificationAccessDeniedException</a>,
+                                  <a href="../../../com/myscript/text/RegexUnmatchedCloseSetException.html" title="class in com.myscript.text">RegexUnmatchedCloseSetException</a>,
+                                  <a href="../../../com/myscript/text/RegexUnmatchedCloseRefException.html" title="class in com.myscript.text">RegexUnmatchedCloseRefException</a>,
+                                  <a href="../../../com/myscript/text/RegexUnescapedOperatorException.html" title="class in com.myscript.text">RegexUnescapedOperatorException</a></pre>
+<div class="block">Defines the main regular expression.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>regex</code> - the main regular expression.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>LexicalUnit</code> object has
+ been disposed of.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>LexicalUnit</code> object has
+ been compiled.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>regex</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>regex</code> is the empty
+ string.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexInvalidCharacterException.html" title="class in com.myscript.text">RegexInvalidCharacterException</a></code> - when <code>regex</code> contains an
+ invalid character.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexSubExpImbalanceException.html" title="class in com.myscript.text">RegexSubExpImbalanceException</a></code> - when <code>regex</code> contains a
+ sub-expression imbalance.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnmatchedOpenSetException.html" title="class in com.myscript.text">RegexUnmatchedOpenSetException</a></code> - when <code>regex</code> contains an
+ unmatched open set.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnmatchedOpenRefException.html" title="class in com.myscript.text">RegexUnmatchedOpenRefException</a></code> - when <code>regex</code> contains an
+ unmatched open reference.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexTrailingEscapeException.html" title="class in com.myscript.text">RegexTrailingEscapeException</a></code> - when <code>regex</code> contains a
+ trailing escape character.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexInvalidReferenceException.html" title="class in com.myscript.text">RegexInvalidReferenceException</a></code> - when <code>regex</code> refers to
+ an undefined entity.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnmatchedCloseSetException.html" title="class in com.myscript.text">RegexUnmatchedCloseSetException</a></code> - when <code>regex</code> contains an
+ unmatched close set.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnmatchedCloseRefException.html" title="class in com.myscript.text">RegexUnmatchedCloseRefException</a></code> - when <code>regex</code> contains an
+ unmatched close reference.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnescapedOperatorException.html" title="class in com.myscript.text">RegexUnescapedOperatorException</a></code> - when <code>regex</code> contains an
+ unescaped operator.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>frequency</code> does not lie
+ in the -1.0f ... 1.0f range.</dd>
+<dd><code><a href="../../../com/myscript/engine/ModificationAccessDeniedException.html" title="class in com.myscript.engine">ModificationAccessDeniedException</a></code> - when this
+ <code>LexicalUnit</code> object is in use by another object.</dd></dl>
+</li>
+</ul>
+<a name="defineMainRegex(com.myscript.engine.Charset, byte[], float)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>defineMainRegex</h4>
+<pre>public final&nbsp;void&nbsp;defineMainRegex(<a href="../../../com/myscript/engine/Charset.html" title="class in com.myscript.engine">Charset</a>&nbsp;charset,
+                   byte[]&nbsp;regex,
+                   float&nbsp;frequency)
+                           throws java.lang.IllegalStateException,
+                                  java.lang.NullPointerException,
+                                  <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a>,
+                                  java.lang.IllegalArgumentException,
+                                  <a href="../../../com/myscript/text/RegexInvalidCharacterException.html" title="class in com.myscript.text">RegexInvalidCharacterException</a>,
+                                  <a href="../../../com/myscript/text/RegexSubExpImbalanceException.html" title="class in com.myscript.text">RegexSubExpImbalanceException</a>,
+                                  <a href="../../../com/myscript/text/RegexUnmatchedOpenSetException.html" title="class in com.myscript.text">RegexUnmatchedOpenSetException</a>,
+                                  <a href="../../../com/myscript/text/RegexUnmatchedOpenRefException.html" title="class in com.myscript.text">RegexUnmatchedOpenRefException</a>,
+                                  <a href="../../../com/myscript/engine/ModificationAccessDeniedException.html" title="class in com.myscript.engine">ModificationAccessDeniedException</a>,
+                                  <a href="../../../com/myscript/text/RegexUnmatchedCloseSetException.html" title="class in com.myscript.text">RegexUnmatchedCloseSetException</a>,
+                                  <a href="../../../com/myscript/text/RegexUnmatchedCloseRefException.html" title="class in com.myscript.text">RegexUnmatchedCloseRefException</a>,
+                                  <a href="../../../com/myscript/text/RegexUnescapedOperatorException.html" title="class in com.myscript.text">RegexUnescapedOperatorException</a></pre>
+<div class="block">Defines the main regular expression.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>charset</code> - the <code>Charset</code> object to be used when decoding
+ <code>regex</code>.</dd><dd><code>regex</code> - the main regular expression.</dd><dd><code>frequency</code> - the frequency value assigned to the newly defined regular
+ expression (must lie in the <code>-1.0f ... 1.0f</code> range).</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>LexicalUnit</code> object has
+ been disposed of.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>LexicalUnit</code> object has
+ been compiled.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>charset</code> is
+ <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>charset</code> has been disposed
+ of.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>charset</code> does not have the
+ same parent engine as this <code>LexicalUnit</code> object.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>regex</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>regex</code> is the empty
+ string.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexInvalidCharacterException.html" title="class in com.myscript.text">RegexInvalidCharacterException</a></code> - when <code>regex</code> contains an
+ invalid character.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexSubExpImbalanceException.html" title="class in com.myscript.text">RegexSubExpImbalanceException</a></code> - when <code>regex</code> contains a
+ sub-expression imbalance.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnmatchedOpenSetException.html" title="class in com.myscript.text">RegexUnmatchedOpenSetException</a></code> - when <code>regex</code> contains an
+ unmatched open set.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnmatchedOpenRefException.html" title="class in com.myscript.text">RegexUnmatchedOpenRefException</a></code> - when <code>regex</code> contains an
+ unmatched open reference.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexTrailingEscapeException.html" title="class in com.myscript.text">RegexTrailingEscapeException</a></code> - when <code>regex</code> contains a
+ trailing escape character.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexInvalidReferenceException.html" title="class in com.myscript.text">RegexInvalidReferenceException</a></code> - when <code>regex</code> refers to
+ an undefined entity.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnmatchedCloseSetException.html" title="class in com.myscript.text">RegexUnmatchedCloseSetException</a></code> - when <code>regex</code> contains an
+ unmatched close set.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnmatchedCloseRefException.html" title="class in com.myscript.text">RegexUnmatchedCloseRefException</a></code> - when <code>regex</code> contains an
+ unmatched close reference.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnescapedOperatorException.html" title="class in com.myscript.text">RegexUnescapedOperatorException</a></code> - when <code>regex</code> contains an
+ unescaped operator.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>frequency</code> is
+ Not-a-Number (<code>NaN</code>).</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>frequency</code> is infinitely
+ large in magnitude.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>frequency</code> does not lie
+ in the <code>-1.0f ... 1.0f</code> range.</dd>
+<dd><code><a href="../../../com/myscript/engine/ModificationAccessDeniedException.html" title="class in com.myscript.engine">ModificationAccessDeniedException</a></code> - when this
+ <code>LexicalUnit</code> object is in use by another object.</dd></dl>
+</li>
+</ul>
+<a name="defineMainRegex(com.myscript.engine.Charset, byte[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>defineMainRegex</h4>
+<pre>public final&nbsp;void&nbsp;defineMainRegex(<a href="../../../com/myscript/engine/Charset.html" title="class in com.myscript.engine">Charset</a>&nbsp;charset,
+                   byte[]&nbsp;regex)
+                           throws java.lang.IllegalStateException,
+                                  java.lang.NullPointerException,
+                                  <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a>,
+                                  java.lang.IllegalArgumentException,
+                                  <a href="../../../com/myscript/text/RegexInvalidCharacterException.html" title="class in com.myscript.text">RegexInvalidCharacterException</a>,
+                                  <a href="../../../com/myscript/text/RegexSubExpImbalanceException.html" title="class in com.myscript.text">RegexSubExpImbalanceException</a>,
+                                  <a href="../../../com/myscript/text/RegexUnmatchedOpenSetException.html" title="class in com.myscript.text">RegexUnmatchedOpenSetException</a>,
+                                  <a href="../../../com/myscript/text/RegexUnmatchedOpenRefException.html" title="class in com.myscript.text">RegexUnmatchedOpenRefException</a>,
+                                  <a href="../../../com/myscript/engine/ModificationAccessDeniedException.html" title="class in com.myscript.engine">ModificationAccessDeniedException</a>,
+                                  <a href="../../../com/myscript/text/RegexUnmatchedCloseSetException.html" title="class in com.myscript.text">RegexUnmatchedCloseSetException</a>,
+                                  <a href="../../../com/myscript/text/RegexUnmatchedCloseRefException.html" title="class in com.myscript.text">RegexUnmatchedCloseRefException</a>,
+                                  <a href="../../../com/myscript/text/RegexUnescapedOperatorException.html" title="class in com.myscript.text">RegexUnescapedOperatorException</a></pre>
+<div class="block">Defines the main regular expression.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>charset</code> - the <code>Charset</code> object to be used when decoding
+ <code>regex</code>.</dd><dd><code>regex</code> - the main regular expression.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>LexicalUnit</code> object has
+ been disposed of.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>LexicalUnit</code> object has
+ been compiled.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>charset</code> is
+ <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>charset</code> has been disposed
+ of.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>charset</code> does not have the
+ same parent engine as this <code>LexicalUnit</code> object.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>regex</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>regex</code> is the empty
+ string.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexInvalidCharacterException.html" title="class in com.myscript.text">RegexInvalidCharacterException</a></code> - when <code>regex</code> contains an
+ invalid character.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexSubExpImbalanceException.html" title="class in com.myscript.text">RegexSubExpImbalanceException</a></code> - when <code>regex</code> contains a
+ sub-expression imbalance.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnmatchedOpenSetException.html" title="class in com.myscript.text">RegexUnmatchedOpenSetException</a></code> - when <code>regex</code> contains an
+ unmatched open set.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnmatchedOpenRefException.html" title="class in com.myscript.text">RegexUnmatchedOpenRefException</a></code> - when <code>regex</code> contains an
+ unmatched open reference.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexTrailingEscapeException.html" title="class in com.myscript.text">RegexTrailingEscapeException</a></code> - when <code>regex</code> contains a
+ trailing escape character.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexInvalidReferenceException.html" title="class in com.myscript.text">RegexInvalidReferenceException</a></code> - when <code>regex</code> refers to
+ an undefined entity.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnmatchedCloseSetException.html" title="class in com.myscript.text">RegexUnmatchedCloseSetException</a></code> - when <code>regex</code> contains an
+ unmatched close set.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnmatchedCloseRefException.html" title="class in com.myscript.text">RegexUnmatchedCloseRefException</a></code> - when <code>regex</code> contains an
+ unmatched close reference.</dd>
+<dd><code><a href="../../../com/myscript/text/RegexUnescapedOperatorException.html" title="class in com.myscript.text">RegexUnescapedOperatorException</a></code> - when <code>regex</code> contains an
+ unescaped operator.</dd>
+<dd><code><a href="../../../com/myscript/engine/ModificationAccessDeniedException.html" title="class in com.myscript.engine">ModificationAccessDeniedException</a></code> - when this
+ <code>LexicalUnit</code> object is in use by another object.</dd></dl>
+</li>
+</ul>
+<a name="importVocabulary(java.lang.String, com.myscript.text.Vocabulary, float)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>importVocabulary</h4>
+<pre>public final&nbsp;void&nbsp;importVocabulary(java.lang.String&nbsp;name,
+                    <a href="../../../com/myscript/text/Vocabulary.html" title="class in com.myscript.text">Vocabulary</a>&nbsp;vocabulary,
+                    float&nbsp;frequency)
+                            throws java.lang.IllegalStateException,
+                                   java.lang.NullPointerException,
+                                   <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a>,
+                                   java.lang.IllegalArgumentException,
+                                   <a href="../../../com/myscript/engine/ModificationAccessDeniedException.html" title="class in com.myscript.engine">ModificationAccessDeniedException</a></pre>
+<div class="block">Imports a <code>Vocabulary</code> resource object into this
+ <code>LexicalUnit</code> object.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>name</code> - the name of the resource to import (to be used when
+ you want to reference it from a regular expression).</dd><dd><code>vocabulary</code> - a <code>Vocabulary</code> resource object.</dd><dd><code>frequency</code> - the frequency value assigned to the newly defined regular
+ expression (must lie in the <code>-1.0f ... 1.0f</code> range).</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>LexicalUnit</code> object has
+ been disposed of.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>LexicalUnit</code> object has
+ been compiled.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>name</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>name</code> is the empty
+ string.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>vocabulary</code> is
+ <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>vocabulary</code> has been
+ disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>vocabulary</code> does not have
+ the same parent engine as this <code>LexicalUnit</code> object.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>frequency</code> is
+ Not-a-Number (<code>NaN</code>).</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>frequency</code> is infinitely
+ large in magnitude.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>frequency</code> does not lie
+ in the <code>-1.0f ... 1.0f</code> range.</dd>
+<dd><code><a href="../../../com/myscript/engine/ModificationAccessDeniedException.html" title="class in com.myscript.engine">ModificationAccessDeniedException</a></code> - when this
+ <code>LexicalUnit</code> object is in use by another object.</dd></dl>
+</li>
+</ul>
+<a name="importVocabulary(java.lang.String, com.myscript.text.Vocabulary)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>importVocabulary</h4>
+<pre>public final&nbsp;void&nbsp;importVocabulary(java.lang.String&nbsp;name,
+                    <a href="../../../com/myscript/text/Vocabulary.html" title="class in com.myscript.text">Vocabulary</a>&nbsp;vocabulary)
+                            throws java.lang.IllegalStateException,
+                                   java.lang.NullPointerException,
+                                   <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a>,
+                                   java.lang.IllegalArgumentException,
+                                   <a href="../../../com/myscript/engine/ModificationAccessDeniedException.html" title="class in com.myscript.engine">ModificationAccessDeniedException</a></pre>
+<div class="block">Imports a <code>Vocabulary</code> resource object into this
+ <code>LexicalUnit</code> object.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>name</code> - the name of the resource to import (to be used when
+ you want to reference it from a regular expression).</dd><dd><code>vocabulary</code> - a <code>Vocabulary</code> resource object.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>LexicalUnit</code> object has
+ been disposed of.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>LexicalUnit</code> object has
+ been compiled.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>name</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>name</code> is the empty
+ string.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>vocabulary</code> is
+ <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>vocabulary</code> has been
+ disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>vocabulary</code> does not have
+ the same parent engine as this <code>LexicalUnit</code> object.</dd>
+<dd><code><a href="../../../com/myscript/engine/ModificationAccessDeniedException.html" title="class in com.myscript.engine">ModificationAccessDeniedException</a></code> - when this
+ <code>LexicalUnit</code> object is in use by another object.</dd></dl>
+</li>
+</ul>
+<a name="importVocabulary(com.myscript.engine.Charset, byte[], com.myscript.text.Vocabulary, float)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>importVocabulary</h4>
+<pre>public final&nbsp;void&nbsp;importVocabulary(<a href="../../../com/myscript/engine/Charset.html" title="class in com.myscript.engine">Charset</a>&nbsp;charset,
+                    byte[]&nbsp;name,
+                    <a href="../../../com/myscript/text/Vocabulary.html" title="class in com.myscript.text">Vocabulary</a>&nbsp;vocabulary,
+                    float&nbsp;frequency)
+                            throws java.lang.IllegalStateException,
+                                   java.lang.NullPointerException,
+                                   <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a>,
+                                   java.lang.IllegalArgumentException,
+                                   <a href="../../../com/myscript/engine/ModificationAccessDeniedException.html" title="class in com.myscript.engine">ModificationAccessDeniedException</a></pre>
+<div class="block">Imports a <code>Vocabulary</code> resource object into this
+ <code>LexicalUnit</code> object.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>charset</code> - the <code>Charset</code> object to be used when decoding
+ <code>name</code>.</dd><dd><code>name</code> - the name of the resource to import (to be used when
+ you want to reference it from a regular expression).</dd><dd><code>vocabulary</code> - a <code>Vocabulary</code> resource object.</dd><dd><code>frequency</code> - the frequency value assigned to the newly defined regular
+ expression (must lie in the <code>-1.0f ... 1.0f</code> range).</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>LexicalUnit</code> object has
+ been disposed of.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>LexicalUnit</code> object has
+ been compiled.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>charset</code> is
+ <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>charset</code> has been disposed
+ of.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>charset</code> does not have the
+ same parent engine as this <code>LexicalUnit</code> object.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>name</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>name</code> is the empty
+ string.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>vocabulary</code> is
+ <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>vocabulary</code> has been
+ disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>vocabulary</code> does not have
+ the same parent engine as this <code>LexicalUnit</code> object.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>frequency</code> is
+ Not-a-Number (<code>NaN</code>).</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>frequency</code> is infinitely
+ large in magnitude.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>frequency</code> does not lie
+ in the <code>-1.0f ... 1.0f</code> range.</dd>
+<dd><code><a href="../../../com/myscript/engine/ModificationAccessDeniedException.html" title="class in com.myscript.engine">ModificationAccessDeniedException</a></code> - when this
+ <code>LexicalUnit</code> object is in use by another object.</dd></dl>
+</li>
+</ul>
+<a name="importVocabulary(com.myscript.engine.Charset, byte[], com.myscript.text.Vocabulary)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>importVocabulary</h4>
+<pre>public final&nbsp;void&nbsp;importVocabulary(<a href="../../../com/myscript/engine/Charset.html" title="class in com.myscript.engine">Charset</a>&nbsp;charset,
+                    byte[]&nbsp;name,
+                    <a href="../../../com/myscript/text/Vocabulary.html" title="class in com.myscript.text">Vocabulary</a>&nbsp;vocabulary)
+                            throws java.lang.IllegalStateException,
+                                   java.lang.NullPointerException,
+                                   <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a>,
+                                   java.lang.IllegalArgumentException,
+                                   <a href="../../../com/myscript/engine/ModificationAccessDeniedException.html" title="class in com.myscript.engine">ModificationAccessDeniedException</a></pre>
+<div class="block">Imports a <code>Vocabulary</code> resource object into this
+ <code>LexicalUnit</code> object.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>charset</code> - the <code>Charset</code> object to be used when decoding
+ <code>name</code>.</dd><dd><code>name</code> - the name of the resource to import (to be used when
+ you want to reference it from a regular expression).</dd><dd><code>vocabulary</code> - a <code>Vocabulary</code> resource object.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>LexicalUnit</code> object has
+ been disposed of.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>LexicalUnit</code> object has
+ been compiled.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>charset</code> is
+ <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>charset</code> has been disposed
+ of.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>charset</code> does not have the
+ same parent engine as this <code>LexicalUnit</code> object.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>name</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>name</code> is the empty
+ string.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>vocabulary</code> is
+ <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>vocabulary</code> has been
+ disposed of.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>vocabulary</code> does not have
+ the same parent engine as this <code>LexicalUnit</code> object.</dd>
+<dd><code><a href="../../../com/myscript/engine/ModificationAccessDeniedException.html" title="class in com.myscript.engine">ModificationAccessDeniedException</a></code> - when this
+ <code>LexicalUnit</code> object is in use by another object.</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/LexicalUnit.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../com/myscript/text/IsolatedAlphabetKnowledge.html" title="class in com.myscript.text"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../com/myscript/text/Lexicon.html" title="class in com.myscript.text"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/myscript/text/LexicalUnit.html" target="_top">Frames</a></li>
+<li><a href="LexicalUnit.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#fields_inherited_from_class_com.myscript.text.Resource">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+</body>
+</html>

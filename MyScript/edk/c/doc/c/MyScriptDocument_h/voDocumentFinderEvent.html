@@ -1,0 +1,152 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>voDocumentFinderEvent</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="voDocumentFinderEvent";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptDocument.h</FONT>
+<BR>
+Type voDocumentFinderEvent</H2>
+<PRE>
+<B>voDocumentFinderEvent</B>
+</PRE>
+<HR>
+<CODE>#include &lt;c/MyScriptDocument.h&gt;</CODE>
+<BR>
+<CODE>typedef  enum _voDocumentFinderEvent  <B>voDocumentFinderEvent</B></CODE>
+<BR>
+<CODE></CODE>
+</P>
+<P>Lists the asynchronous events of  <CODE><A href="../../c/MyScriptDocument_h/voDocumentFinder.html">voDocumentFinder</A></CODE>. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voDocumentFinderCallback.html">voDocumentFinderCallback</a>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Value_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Value Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_DOCUMENT_FINDER_EVENT_START">VO_DOCUMENT_FINDER_EVENT_START</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indicates the worker thread started a new find process. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_DOCUMENT_FINDER_EVENT_NEW_OCCURRENCES">VO_DOCUMENT_FINDER_EVENT_NEW_OCCURRENCES</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indicates the worker thread has found new occurrences. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_DOCUMENT_FINDER_EVENT_DONE">VO_DOCUMENT_FINDER_EVENT_DONE</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indicates the worker thread has completed the find process. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_DOCUMENT_FINDER_EVENT_CANCELLED">VO_DOCUMENT_FINDER_EVENT_CANCELLED</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indicates cancellation of the find process. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#_voDocumentFinderEvent_FORCE_INT_SIZE">_voDocumentFinderEvent_FORCE_INT_SIZE</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  0x7FFFFFFF</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Value_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Value Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="VO_DOCUMENT_FINDER_EVENT_START"></A>
+<H3 class="code">VO_DOCUMENT_FINDER_EVENT_START</H3>
+<PRE>
+<B>VO_DOCUMENT_FINDER_EVENT_START</B>
+</PRE>
+<DL>
+<DD>Indicates the worker thread started a new find process. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_DOCUMENT_FINDER_EVENT_NEW_OCCURRENCES"></A>
+<H3 class="code">VO_DOCUMENT_FINDER_EVENT_NEW_OCCURRENCES</H3>
+<PRE>
+<B>VO_DOCUMENT_FINDER_EVENT_NEW_OCCURRENCES</B>
+</PRE>
+<DL>
+<DD>Indicates the worker thread has found new occurrences. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_DOCUMENT_FINDER_EVENT_DONE"></A>
+<H3 class="code">VO_DOCUMENT_FINDER_EVENT_DONE</H3>
+<PRE>
+<B>VO_DOCUMENT_FINDER_EVENT_DONE</B>
+</PRE>
+<DL>
+<DD>Indicates the worker thread has completed the find process. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_DOCUMENT_FINDER_EVENT_CANCELLED"></A>
+<H3 class="code">VO_DOCUMENT_FINDER_EVENT_CANCELLED</H3>
+<PRE>
+<B>VO_DOCUMENT_FINDER_EVENT_CANCELLED</B>
+</PRE>
+<DL>
+<DD>Indicates cancellation of the find process. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="_voDocumentFinderEvent_FORCE_INT_SIZE"></A>
+<H3 class="code">_voDocumentFinderEvent_FORCE_INT_SIZE</H3>
+<PRE>
+<B>_voDocumentFinderEvent_FORCE_INT_SIZE</B>
+</PRE>
+<DL>
+<DD>
+<P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

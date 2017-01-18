@@ -1,0 +1,427 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>VO_ENGINE_I</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="VO_ENGINE_I";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptEngine.h</FONT>
+<BR>
+Enumeration VO_ENGINE_I</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptEngine.h&gt;</CODE>
+<BR>
+<CODE>enum <B>_VO_ENGINE_I</B></CODE>
+</P>
+<P>Lists the MyScript Engine interfaces. <P>
+        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Value_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Value Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IIterator">VO_IIterator</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  150</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptEngine_h/voIIterator.html">voIIterator</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ICharset">VO_ICharset</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptEngine_h/voICharset.html">voICharset</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IAttachTarget">VO_IAttachTarget</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptEngine_h/voIAttachTarget.html">voIAttachTarget</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ICompilable">VO_ICompilable</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptEngine_h/voICompilable.html">voICompilable</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IInput">VO_IInput</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptEngine_h/voIInput.html">voIInput</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IStructuredInput">VO_IStructuredInput</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  159</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptEngine_h/voIStructuredInput.html">voIStructuredInput</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IFloatStructuredInput">VO_IFloatStructuredInput</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptEngine_h/voIFloatStructuredInput.html">voIFloatStructuredInput</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IInputConsumer">VO_IInputConsumer</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  163</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptEngine_h/voIInputConsumer.html">voIInputConsumer</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IRunnable">VO_IRunnable</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptEngine_h/voIRunnable.html">voIRunnable</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IInputCharacter">VO_IInputCharacter</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  166</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptEngine_h/voIInputCharacter.html">voIInputCharacter</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IHistoryManager">VO_IHistoryManager</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptEngine_h/voIHistoryManager.html">voIHistoryManager</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IVersionable">VO_IVersionable</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptEngine_h/voIVersionable.html">voIVersionable</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IUserObject">VO_IUserObject</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptEngine_h/voIUserObject.html">voIUserObject</A></CODE> interface identifier. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Value_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Value Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="VO_IIterator"></A>
+<H3 class="code">VO_IIterator</H3>
+<PRE>
+<B>VO_IIterator</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptEngine_h/voIIterator.html">voIIterator</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptEngine_h/voIIterator.html">voIIterator</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ICharset"></A>
+<H3 class="code">VO_ICharset</H3>
+<PRE>
+<B>VO_ICharset</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptEngine_h/voICharset.html">voICharset</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptEngine_h/voICharset.html">voICharset</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IAttachTarget"></A>
+<H3 class="code">VO_IAttachTarget</H3>
+<PRE>
+<B>VO_IAttachTarget</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptEngine_h/voIAttachTarget.html">voIAttachTarget</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptEngine_h/voIAttachTarget.html">voIAttachTarget</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ICompilable"></A>
+<H3 class="code">VO_ICompilable</H3>
+<PRE>
+<B>VO_ICompilable</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptEngine_h/voICompilable.html">voICompilable</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptEngine_h/voICompilable.html">voICompilable</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IInput"></A>
+<H3 class="code">VO_IInput</H3>
+<PRE>
+<B>VO_IInput</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptEngine_h/voIInput.html">voIInput</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptEngine_h/voIInput.html">voIInput</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IStructuredInput"></A>
+<H3 class="code">VO_IStructuredInput</H3>
+<PRE>
+<B>VO_IStructuredInput</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptEngine_h/voIStructuredInput.html">voIStructuredInput</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptEngine_h/voIStructuredInput.html">voIStructuredInput</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IFloatStructuredInput"></A>
+<H3 class="code">VO_IFloatStructuredInput</H3>
+<PRE>
+<B>VO_IFloatStructuredInput</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptEngine_h/voIFloatStructuredInput.html">voIFloatStructuredInput</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptEngine_h/voIFloatStructuredInput.html">voIFloatStructuredInput</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IInputConsumer"></A>
+<H3 class="code">VO_IInputConsumer</H3>
+<PRE>
+<B>VO_IInputConsumer</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptEngine_h/voIInputConsumer.html">voIInputConsumer</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptEngine_h/voIInputConsumer.html">voIInputConsumer</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IRunnable"></A>
+<H3 class="code">VO_IRunnable</H3>
+<PRE>
+<B>VO_IRunnable</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptEngine_h/voIRunnable.html">voIRunnable</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptEngine_h/voIRunnable.html">voIRunnable</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IInputCharacter"></A>
+<H3 class="code">VO_IInputCharacter</H3>
+<PRE>
+<B>VO_IInputCharacter</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptEngine_h/voIInputCharacter.html">voIInputCharacter</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptEngine_h/voIInputCharacter.html">voIInputCharacter</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IHistoryManager"></A>
+<H3 class="code">VO_IHistoryManager</H3>
+<PRE>
+<B>VO_IHistoryManager</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptEngine_h/voIHistoryManager.html">voIHistoryManager</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptEngine_h/voIHistoryManager.html">voIHistoryManager</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IVersionable"></A>
+<H3 class="code">VO_IVersionable</H3>
+<PRE>
+<B>VO_IVersionable</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptEngine_h/voIVersionable.html">voIVersionable</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptEngine_h/voIVersionable.html">voIVersionable</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IUserObject"></A>
+<H3 class="code">VO_IUserObject</H3>
+<PRE>
+<B>VO_IUserObject</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptEngine_h/voIUserObject.html">voIUserObject</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptEngine_h/voIUserObject.html">voIUserObject</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

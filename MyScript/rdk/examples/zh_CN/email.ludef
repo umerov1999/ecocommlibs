@@ -1,0 +1,49 @@
+# Lexical unit simplified Chinese: email
+#
+# 2006/04/25
+# v1.1
+
+element = [0-9a-zA-Z][-_0-9a-zA-Z]*
+
+s1 / 50 = org
+s2 / 45 = com
+s3 / 40 = cn
+s4 / 35 = cc
+s5 / 30 = net
+s6 / 25 = tw
+s7 / 20 = hk
+s8 / 15 = ca
+s9 / 0 = [a-zA-Z]([a-zA-Z]([a-zA-Z][a-zA-Z]?)?)?
+
+suffix = {s1}|{s2}|{s3}|{s4}|{s5}|{s6}|{s7}|{s8}|{s9}
+
+d1 / 100 = hotmail\.com
+d2 / 98 = ptt\.cc
+d3 / 96 = 163\.com
+d4 / 94 = wusetu\.cn
+d5 / 92 = msn\.com
+d6 / 90 = 126\.com
+d7 / 88 = sina\.com
+d8 / 86 = sohu\.com
+d9 / 84 = yahoo\.com\.cn
+d10 / 82 = 21cn\.com
+d11 / 80 = tom\.com
+d12 / 78 = lzusiyu\.org
+d13 / 76 = gmail\.com
+d14 / 74 = 163\.net
+d15 / 72 = yahoo\.com
+d16 / 70 = 263\.net
+d17 / 68 = yeah\.net
+d18 / 66 = sina\.com\.cn
+d19 / 64 = vip\.sina\.com
+d20 / 62 = citiz\.net
+d21 / 60 = microsoft\.com
+domain = {d1}|{d2}|{d3}|{d4}|{d5}|{d6}|{d7}|{d8}|{d9}|{d10}|{d11}|{d12}|{d13}|{d14}|{d15}
+domain = {domain}|{d16}|{d17}|{d18}|{d19}|{d20}|{d21}
+domain = {domain}|{element}(\.{element})*\.{suffix}
+
+user = {element}(\.{element})*
+
+email = {user}\.?@{domain}
+
+{email}

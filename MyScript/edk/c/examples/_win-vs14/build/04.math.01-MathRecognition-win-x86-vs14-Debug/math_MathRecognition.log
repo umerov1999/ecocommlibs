@@ -1,0 +1,12 @@
+﻿  MathRecognition.c
+  MyCertificate.c
+  MyScriptEngine-strerror.c
+  MyScriptMath-parseTreeToLaTeX.c
+..\..\src\MyScriptMath-parseTreeToLaTeX.c : error C2220: warning treated as error - no 'object' file generated
+..\..\src\MyScriptMath-parseTreeToLaTeX.c : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+..\..\src\MyScriptMath-parseTreeToLaTeX.c(898): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+  MyScriptMath-parseTreeToMathML.c
+..\..\src\MyScriptMath-parseTreeToMathML.c : error C2220: warning treated as error - no 'object' file generated
+..\..\src\MyScriptMath-parseTreeToMathML.c : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+  common.c
+  Generating Code...

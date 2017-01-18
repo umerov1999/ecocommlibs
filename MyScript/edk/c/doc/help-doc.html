@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE>
+Overview
+</TITLE>
+
+<META NAME="keywords" CONTENT="Overview, MyScript SDK C Reference Documentation">
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    parent.document.title="API Help";
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+
+<CENTER>
+<H1>
+How This API Document Is Organized</H1>
+</CENTER>
+This API (Application Programming Interface) document has pages corresponding to the items in the navigation bar, described as follows.<H3>
+Overview</H3>
+<BLOCKQUOTE>
+
+  <P> The <A HREF="overview-summary.html">Overview</A> page is the front page of 
+    this API document and provides a list of all include files with a summary 
+    for each. This page can also contains an overall description of the whole 
+    API.
+</BLOCKQUOTE>
+<H3>
+Include Files</H3>
+<BLOCKQUOTE>
+
+<P>
+Each include file has a page that contains a list of the objects it defines with a summary for each. This page can contain five categories:
+<UL>
+    <LI>types (simple types, classes and interfaces) 
+    <LI>enumerations
+    <LI>structures
+    <LI>defines
+    <LI>functions
+</UL>
+</BLOCKQUOTE>
+<H3>
+Simple Types, Classes and Interfaces</H3>
+<BLOCKQUOTE>
+
+<P>
+Each type has its own separate page. Each of these pages has three sections consisting of a type/class/interface description, summary table, and detailed member descriptions:
+<UL>
+<B>only for Classes</B>
+<LI>Class inheritance diagram
+<LI>Type Properties<a href="#Type_Properties">*</a>
+<LI>Properties<a href="#Properties">*</a>
+<LI>All Implemented Interfaces
+<LI>Direct Known Subtypes
+<BR><BR>
+<B>only for Interfaces</B>
+<LI>Class inheritance diagram
+<LI>Direct Known Subtypes
+<BR><BR>
+<B>for every Type</B>
+<LI>Include file to use
+<LI>Type description
+<LI>Members Summary
+<LI>Members Detail
+</UL>
+Each summary entry contains the first sentence from the detailed description for that item. The summary entries are alphabetical, while the detailed descriptions are in the order they appear in the source code. This preserves the logical groupings established by the programmer.</BLOCKQUOTE>
+
+<H3>Enumeration</H3>
+<BLOCKQUOTE>
+<P>
+Each enumeration has its own separate page with the following sections:
+<UL>
+  <LI>Enumeration declaration
+  <LI>Enumeration description
+</UL>
+</BLOCKQUOTE>
+
+<HR>
+
+<a name="Type_Properties"><H3>Type Properties</H3></a>
+<BLOCKQUOTE>
+<P>
+The <b>Type Properties</b> item contains link(s) to enumeration(s) that list the
+properties applicable to the type.
+A type property can be seen as a static member variable in a C++ class.
+Accessing a type property with id <i>$PROPERTY</i> with value type <i>$value_t</i> applied
+to a type with id <i>$TYPE</i> (e.g.: the id of the type <code>voMyType</code> is <code>VO_MyType</code>) is done as follows:
+<pre>
+<i>$value_t</i> value;
+voGetTypeProperty(engine, <i>$TYPE</i>, <i>$PROPERTY</i>, &amp;value, sizeof(value));
+voSetTypeProperty(engine, <i>$TYPE</i>, <i>$PROPERTY</i>, &amp;value, sizeof(value));
+</pre>
+</BLOCKQUOTE>
+
+<a name="Properties"><H3>Properties</H3></a>
+<BLOCKQUOTE>
+<P>
+The <b>Properties</b> item contains link(s) to enumeration(s) that list the
+properties applicable to the instances of the type.
+A type property can be seen as a member variable in a C++ class.
+Accessing a property with id <i>$PROPERTY</i> with value type <i>$value_t</i> applied
+to an object is done as follows:
+<pre>
+<i>$value_t</i> value;
+voGetProperty(engine, object, <i>$PROPERTY</i>, &amp;value, sizeof(value));
+voSetProperty(engine, object, <i>$PROPERTY</i>, &amp;value, sizeof(value));
+</pre>
+</BLOCKQUOTE>
+
+</BODY>
+</HTML>

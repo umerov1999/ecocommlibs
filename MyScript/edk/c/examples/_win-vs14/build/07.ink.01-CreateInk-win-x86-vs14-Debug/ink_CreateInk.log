@@ -1,0 +1,7 @@
+﻿  MyCertificate.c
+  MyScriptEngine-strerror.c
+  common.c
+  CreateInk.c
+  Generating Code...
+  ink_CreateInk.vcxproj -> C:\Users\JYChoi\Desktop\Myscript_P\edk\c\examples\_win-vs14\../bin/win-x86-Debug\07.ink.01-CreateInk.exe
+  ink_CreateInk.vcxproj -> ../bin/win-x86-Debug\07.ink.01-CreateInk.pdb (Full PDB)

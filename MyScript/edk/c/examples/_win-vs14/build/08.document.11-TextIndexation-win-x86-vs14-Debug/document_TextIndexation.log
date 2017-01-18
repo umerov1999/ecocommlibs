@@ -1,0 +1,7 @@
+﻿  MyCertificate.c
+  MyScriptEngine-strerror.c
+  common.c
+  TextIndexation.c
+  Generating Code...
+  document_TextIndexation.vcxproj -> C:\Users\JYChoi\Desktop\Myscript_P\edk\c\examples\_win-vs14\../bin/win-x86-Debug\08.document.11-TextIndexation.exe
+  document_TextIndexation.vcxproj -> ../bin/win-x86-Debug\08.document.11-TextIndexation.pdb (Full PDB)

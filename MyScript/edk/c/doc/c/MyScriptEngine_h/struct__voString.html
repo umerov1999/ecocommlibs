@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>_voString</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="_voString";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptEngine.h</FONT>
+<BR>
+Structure _voString</H2>
+<PRE>
+<B></B>
+</PRE>
+<HR>
+<CODE>#include &lt;c/MyScriptEngine.h&gt;</CODE>
+<BR>
+<CODE>struct <B>_voString</B></CODE>
+<BR>
+<CODE></CODE>
+</P>
+<P></P>Represents a character string encoded in a specific charset. <P>
+
+<P>When a  <CODE><A href="../../c/MyScriptEngine_h/voString.html">voString</A></CODE> is used as an output by a function, the typical usage is to call the function twice:</P>
+<P>
+<UL class="docContent">
+
+<LI>
+<P>once with  <CODE>bytes</CODE> set to  <CODE>NULL</CODE> in which case  <CODE>byteCount</CODE> will be set to the number of bytes you have to allocate/provide.</P>
+</LI>
+<LI>
+<P>a second time with  <CODE>bytes</CODE> pointing a writable buffer and  <CODE>byteCount</CODE> set to the maximum number of bytes the function is allowed to write.</P>
+</LI>
+<LI>
+<P>in any case, on output  <CODE>byteCount</CODE> will always be set to the number of bytes needed to hold the string <ndash xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></ndash> even if you allocated less. </P>
+</LI>
+</UL>
+
+</P>    
+</P>
+<HR>
+<P>
+<A NAME="Member_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="3"><FONT SIZE="+2"><B>Member Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>size_t</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE></CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#byteCount">byteCount</A></CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Number of bytes. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>char *</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE></CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#bytes">bytes</A></CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Pointer to the bytes of the string. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<P>
+<A NAME="Member_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Member Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="byteCount"></A>
+<H3 class="code">byteCount</H3>
+<PRE>size_t <B>byteCount</B>
+</PRE>
+<DL>
+<DD>Number of bytes. <P>
+        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="bytes"></A>
+<H3 class="code">bytes</H3>
+<PRE>char * <B>bytes</B>
+</PRE>
+<DL>
+<DD>Pointer to the bytes of the string. <P>
+        
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</P>
+</BODY>
+</HTML>

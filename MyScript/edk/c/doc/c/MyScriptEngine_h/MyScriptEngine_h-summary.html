@@ -1,0 +1,435 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>c/MyScriptEngine.h</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+            function windowTitle()
+            {
+            parent.document.title="c/MyScriptEngine.h";
+            }
+          </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<H2>Include file <B>c/MyScriptEngine.h</B>
+</H2>
+Native interface to the MyScript Engine.     <P>
+This is the interface through which MyScript services expose their own interfaces.     </P>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Type Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voCertificate.html" title="voCertificate">voCertificate</A></B></TD><TD>
+Certificate.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voCharset.html" title="voCharset">voCharset</A></B></TD><TD>
+<CODE>voCharset</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voEngine.html" title="voEngine">voEngine</A></B></TD><TD>
+<CODE>voEngine</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voEngineObject.html" title="voEngineObject">voEngineObject</A></B></TD><TD>
+<CODE>voEngineObject</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voFloatStructuredInput.html" title="voFloatStructuredInput">voFloatStructuredInput</A></B></TD><TD>
+<CODE>voFloatStructuredInput</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voHistoryManager.html" title="voHistoryManager">voHistoryManager</A></B></TD><TD>
+<CODE>voHistoryManager</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voIAttachTarget.html" title="voIAttachTarget">voIAttachTarget</A></B></TD><TD>
+Functions composing the <CODE>voIAttachTarget</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voICharset.html" title="voICharset">voICharset</A></B></TD><TD>
+Functions composing the <CODE>voICharset</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voICompilable.html" title="voICompilable">voICompilable</A></B></TD><TD>
+Functions composing the <CODE>voICompilable</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voId.html" title="voId">voId</A></B></TD><TD>
+Abstract identifier.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voIFloatStructuredInput.html" title="voIFloatStructuredInput">voIFloatStructuredInput</A></B></TD><TD>
+Functions composing the <CODE>voIFloatStructuredInput</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voIHistoryManager.html" title="voIHistoryManager">voIHistoryManager</A></B></TD><TD>
+Functions composing the <CODE>voIHistoryManager</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voIInput.html" title="voIInput">voIInput</A></B></TD><TD>
+Functions composing the <CODE>voIInput</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voIInputCharacter.html" title="voIInputCharacter">voIInputCharacter</A></B></TD><TD>
+Functions composing the <CODE>voIInputCharacter</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voIInputConsumer.html" title="voIInputConsumer">voIInputConsumer</A></B></TD><TD>
+Functions composing the <CODE>voIInputConsumer</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voIIterator.html" title="voIIterator">voIIterator</A></B></TD><TD>
+Functions composing the <CODE>voIIterator</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voInput.html" title="voInput">voInput</A></B></TD><TD>
+<CODE>voInput</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voInputCharacter.html" title="voInputCharacter">voInputCharacter</A></B></TD><TD>
+<CODE>voInputCharacter</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voInputUnitType.html" title="voInputUnitType">voInputUnitType</A></B></TD><TD>
+Lists the input unit types.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voIRunnable.html" title="voIRunnable">voIRunnable</A></B></TD><TD>
+Functions composing the <CODE>voIRunnable</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voIStructuredInput.html" title="voIStructuredInput">voIStructuredInput</A></B></TD><TD>
+Functions composing the <CODE>voIStructuredInput</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voIterator.html" title="voIterator">voIterator</A></B></TD><TD>
+<CODE>voIterator</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voIUserObject.html" title="voIUserObject">voIUserObject</A></B></TD><TD>
+Functions composing the <CODE>voIUserObject</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voIVersionable.html" title="voIVersionable">voIVersionable</A></B></TD><TD>
+Functions composing the <CODE>voIVersionable</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voMemoryFunctions.html" title="voMemoryFunctions">voMemoryFunctions</A></B></TD><TD>
+A set of memory management functions that may be given to <CODE>voCreateEngine()</CODE>.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voMemoryStatistics.html" title="voMemoryStatistics">voMemoryStatistics</A></B></TD><TD>
+Represents statistics about memory usage.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voNotifyProgressFunc.html" title="voNotifyProgressFunc">voNotifyProgressFunc</A></B></TD><TD>
+Defines an application supplied function that will receive progress notifications from a time consuming task.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voPropId.html" title="voPropId">voPropId</A></B></TD><TD>
+Property identifier.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voReadFunc.html" title="voReadFunc">voReadFunc</A></B></TD><TD>
+Defines an application supplied function that performs read operations triggered by the <CODE>voLoadObject()</CODE> function.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voReference.html" title="voReference">voReference</A></B></TD><TD>
+Reference to a MyScript internal object.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voString.html" title="voString">voString</A></B></TD><TD>
+Represents a character string encoded in a specific charset.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voStructuredInput.html" title="voStructuredInput">voStructuredInput</A></B></TD><TD>
+<CODE>voStructuredInput</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voTypeId.html" title="voTypeId">voTypeId</A></B></TD><TD>
+Type identifier.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voUserObject.html" title="voUserObject">voUserObject</A></B></TD><TD>
+<CODE>voUserObject</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voUserObjectInitializer.html" title="voUserObjectInitializer">voUserObjectInitializer</A></B></TD><TD>
+Holds the parameters required to create a new <CODE>voUserObject</CODE> instance.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voUserObjectOnDestroyCallback.html" title="voUserObjectOnDestroyCallback">voUserObjectOnDestroyCallback</A></B></TD><TD>
+Callback called when a user object is about to be destroyed.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voWriteFunc.html" title="voWriteFunc">voWriteFunc</A></B></TD><TD>
+Defines an application supplied function that performs write operations triggered by the <CODE>voStoreObject()</CODE> function.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voYesNo.html" title="voYesNo">voYesNo</A></B></TD><TD>
+Return type of functions that provide a binary response but need a third value to notify a possible failure.         </TD>
+</TR>
+</TABLE>
+&nbsp;
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Enumeration Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="enum_VO_ENGINE_ERR.html" title="VO_ENGINE_ERR">VO_ENGINE_ERR</A></B></TD><TD>
+        </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="enum_VO_ENGINE_I.html" title="VO_ENGINE_I">VO_ENGINE_I</A></B></TD><TD>
+Lists the MyScript Engine interfaces.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="enum_VO_ENGINE_T.html" title="VO_ENGINE_T">VO_ENGINE_T</A></B></TD><TD>
+Lists the MyScript Engine types.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="enum_VO_ENGINE_TPROP.html" title="VO_ENGINE_TPROP">VO_ENGINE_TPROP</A></B></TD><TD>
+ 
+<typePropertySet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></typePropertySet>         
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="enum_VO_ENGINEOBJECT_PROP.html" title="VO_ENGINEOBJECT_PROP">VO_ENGINEOBJECT_PROP</A></B></TD><TD>
+ 
+<propertySet></propertySet>         
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="enum_VO_ENGINEOBJECT_TPROP.html" title="VO_ENGINEOBJECT_TPROP">VO_ENGINEOBJECT_TPROP</A></B></TD><TD>
+ 
+<typePropertySet></typePropertySet>         
+</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="enum_VO_ERR.html" title="VO_ERR">VO_ERR</A></B></TD><TD>
+Lists the MyScript errors.         </TD>
+</TR>
+</TABLE>
+&nbsp;
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Define Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_CERTIFICATE_TYPE.html" title="VO_CERTIFICATE_TYPE">VO_CERTIFICATE_TYPE</A></B></TD><TD>
+        </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_ERR_TYPE.html" title="VO_ERR_TYPE">VO_ERR_TYPE</A></B></TD><TD>
+        </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_FLAGS_T.html" title="VO_FLAGS_T">VO_FLAGS_T</A></B></TD><TD>
+Defines the underlying type for flags.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_ID_TYPES.html" title="VO_ID_TYPES">VO_ID_TYPES</A></B></TD><TD>
+        </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_IFACE.html" title="VO_IFACE">VO_IFACE</A></B></TD><TD>
+Helper macro that facilitates the use of interface functions by performing the correct cast on the result of <CODE>voGetInterface()</CODE>.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_INLINE.html" title="VO_INLINE">VO_INLINE</A></B></TD><TD>
+Declares an inline function.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_INVALID_FLAGS.html" title="VO_INVALID_FLAGS">VO_INVALID_FLAGS</A></B></TD><TD>
+Invalid flags value, returned by some functions to indicate an error.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_INVALID_SIZE_T.html" title="VO_INVALID_SIZE_T">VO_INVALID_SIZE_T</A></B></TD><TD>
+Invalid size value, returned by some functions to indicate an error.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_MAKE_VERSION.html" title="VO_MAKE_VERSION">VO_MAKE_VERSION</A></B></TD><TD>
+        </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_MEMORY_FUNCTIONS_TYPE.html" title="VO_MEMORY_FUNCTIONS_TYPE">VO_MEMORY_FUNCTIONS_TYPE</A></B></TD><TD>
+        </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_MEMORY_STATISTICS_TYPE.html" title="VO_MEMORY_STATISTICS_TYPE">VO_MEMORY_STATISTICS_TYPE</A></B></TD><TD>
+        </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_MSE_CALL.html" title="VO_MSE_CALL">VO_MSE_CALL</A></B></TD><TD>
+Defines the calling convention of a function or function type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_MSE_EXPORT.html" title="VO_MSE_EXPORT">VO_MSE_EXPORT</A></B></TD><TD>
+Declares an external symbol to be exported from the code.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_MSE_FUNC.html" title="VO_MSE_FUNC">VO_MSE_FUNC</A></B></TD><TD>
+        </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_MSE_IMPORT.html" title="VO_MSE_IMPORT">VO_MSE_IMPORT</A></B></TD><TD>
+Declares an external symbol to be imported into the code.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_MSE_VER.html" title="VO_MSE_VER">VO_MSE_VER</A></B></TD><TD>
+The version you must pass to the <CODE>voCreateEngine()</CODE> function.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_NOTIFY_PROGRESS_FUNC_TYPE.html" title="VO_NOTIFY_PROGRESS_FUNC_TYPE">VO_NOTIFY_PROGRESS_FUNC_TYPE</A></B></TD><TD>
+        </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_READ_FUNC_TYPE.html" title="VO_READ_FUNC_TYPE">VO_READ_FUNC_TYPE</A></B></TD><TD>
+        </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_REFERENCE_TYPE.html" title="VO_REFERENCE_TYPE">VO_REFERENCE_TYPE</A></B></TD><TD>
+        </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_STRING_TYPE.html" title="VO_STRING_TYPE">VO_STRING_TYPE</A></B></TD><TD>
+        </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_VERSION.html" title="VO_VERSION">VO_VERSION</A></B></TD><TD>
+        </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_WRITE_FUNC_TYPE.html" title="VO_WRITE_FUNC_TYPE">VO_WRITE_FUNC_TYPE</A></B></TD><TD>
+        </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_YES_NO_TYPE.html" title="VO_YES_NO_TYPE">VO_YES_NO_TYPE</A></B></TD><TD>
+        </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_ZERO_ENDED.html" title="VO_ZERO_ENDED">VO_ZERO_ENDED</A></B></TD><TD>
+To be used in place of <CODE>voString.byteCount</CODE> when the string is zero ended.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voString_INITIALIZER.html" title="voString_INITIALIZER">voString_INITIALIZER</A></B></TD><TD>
+Helper macro that initializes a <CODE>voString</CODE> variable from a zero-ended string.         </TD>
+</TR>
+</TABLE>
+&nbsp;
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Function Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_MSE_FUNC.html" title="VO_MSE_FUNC">VO_MSE_FUNC</A></B></TD><TD>
+Creates a new engine instance.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_MSE_FUNC.html" title="VO_MSE_FUNC">VO_MSE_FUNC</A></B></TD><TD>
+Destroys an engine and releases all the objects created with it.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_MSE_FUNC.html" title="VO_MSE_FUNC">VO_MSE_FUNC</A></B></TD><TD>
+Returns the error set by the last function call in the current running thread.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_MSE_FUNC.html" title="VO_MSE_FUNC">VO_MSE_FUNC</A></B></TD><TD>
+Explicitly sets an error for the specified engine.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_MSE_FUNC.html" title="VO_MSE_FUNC">VO_MSE_FUNC</A></B></TD><TD>
+Returns the functions for the specified interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_MSE_FUNC.html" title="VO_MSE_FUNC">VO_MSE_FUNC</A></B></TD><TD>
+Answers the question: does the specified type implement the specified interface?         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_MSE_FUNC.html" title="VO_MSE_FUNC">VO_MSE_FUNC</A></B></TD><TD>
+Answers the question: is <CODE>type1</CODE> compatible with <CODE>type2</CODE>?         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_MSE_FUNC.html" title="VO_MSE_FUNC">VO_MSE_FUNC</A></B></TD><TD>
+Returns the value of the specified type property.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_MSE_FUNC.html" title="VO_MSE_FUNC">VO_MSE_FUNC</A></B></TD><TD>
+Sets or resets the value of the specified type property.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_MSE_FUNC.html" title="VO_MSE_FUNC">VO_MSE_FUNC</A></B></TD><TD>
+Creates a new object of the specified type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_MSE_FUNC.html" title="VO_MSE_FUNC">VO_MSE_FUNC</A></B></TD><TD>
+Creates a new object of the specified type, initialized with the specified initializer.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_MSE_FUNC.html" title="VO_MSE_FUNC">VO_MSE_FUNC</A></B></TD><TD>
+Loads an object from an application supplied binary data stream.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_MSE_FUNC.html" title="VO_MSE_FUNC">VO_MSE_FUNC</A></B></TD><TD>
+Stores an object to an application supplied binary data stream.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_MSE_FUNC.html" title="VO_MSE_FUNC">VO_MSE_FUNC</A></B></TD><TD>
+Returns a new reference to the specified object.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_MSE_FUNC.html" title="VO_MSE_FUNC">VO_MSE_FUNC</A></B></TD><TD>
+Releases a reference to the specified object.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_MSE_FUNC.html" title="VO_MSE_FUNC">VO_MSE_FUNC</A></B></TD><TD>
+Answers the question: do the two references have the same referee?         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_MSE_FUNC.html" title="VO_MSE_FUNC">VO_MSE_FUNC</A></B></TD><TD>
+Returns the type of the specified object.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_MSE_FUNC.html" title="VO_MSE_FUNC">VO_MSE_FUNC</A></B></TD><TD>
+Returns the value of the specified object property.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_MSE_FUNC.html" title="VO_MSE_FUNC">VO_MSE_FUNC</A></B></TD><TD>
+Loads an object from the specified file.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="VO_MSE_FUNC.html" title="VO_MSE_FUNC">VO_MSE_FUNC</A></B></TD><TD>
+Stores an object to the specified file.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voCloneObject.html" title="voCloneObject">voCloneObject</A></B></TD><TD>
+Clones the specified object.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voCreateCharset.html" title="voCreateCharset">voCreateCharset</A></B></TD><TD>
+Creates a new <CODE>voCharset</CODE> instance.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voCreateFloatStructuredInput.html" title="voCreateFloatStructuredInput">voCreateFloatStructuredInput</A></B></TD><TD>
+Creates a new <CODE>voFloatStructuredInput</CODE> instance.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voCreateInputCharacter.html" title="voCreateInputCharacter">voCreateInputCharacter</A></B></TD><TD>
+Creates a new <CODE>voInputCharacter</CODE> instance.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voCreateUserObject.html" title="voCreateUserObject">voCreateUserObject</A></B></TD><TD>
+Creates a new <CODE>voUserObject</CODE> instance.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voSetProperty.html" title="voSetProperty">voSetProperty</A></B></TD><TD>
+Sets or resets the value of the specified object property.         </TD>
+</TR>
+</TABLE>
+&nbsp;
+</BODY>
+</HTML>

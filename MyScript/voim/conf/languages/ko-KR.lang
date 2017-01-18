@@ -1,0 +1,81 @@
+Language-Version: 1.0
+Language-Name: ko-KR
+Configuration-Script:
+ AddResDir ../../../resources
+
+Name: text
+Input-Type: MULTIPLE_LINE_TEXT
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: true
+Configuration-Script:
+ AddResource ko_KR/ko_KR-ak-cur.res
+ AddResource ko_KR/ko_KR-lk-text.res
+ AddResource mul/mul-lk-english_secondary_2.res
+ SetCharListSize 5
+ SetWordListSize 1
+ SetTextListSize 1
+
+Name: email
+Input-Type: SINGLE_LINE_TEXT
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: true
+Configuration-Script:
+ AddResource ko_KR/ko_KR-ak-cur.res
+ AddResource mul/mul-lk-email.res
+ SetCharListSize 5
+ SetWordListSize 1
+ SetTextListSize 1
+
+Name: number
+Input-Type: SINGLE_LINE_TEXT
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: true
+Configuration-Script:
+ AddResource ko_KR/ko_KR-ak-cur.res
+ AddResource mul/mul-lk-number.res
+ SetCharListSize 5
+ SetWordListSize 1
+ SetTextListSize 1
+
+Name: phone_number
+Input-Type: SINGLE_LINE_TEXT
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: true
+Configuration-Script:
+ AddResource ko_KR/ko_KR-ak-cur.res
+ AddResource mul/mul-lk-phone_number.res
+ SetCharListSize 5
+ SetWordListSize 1
+ SetTextListSize 1
+
+Name: uri
+Input-Type: SINGLE_LINE_TEXT
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: true
+Configuration-Script:
+ AddResource ko_KR/ko_KR-ak-cur.res
+ AddResource mul/mul-lk-uri.res
+ SetCharListSize 5
+ SetWordListSize 1
+ SetTextListSize 1
+
+Name: char
+Input-Type: SINGLE_CHARACTER
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: false
+Configuration-Script:
+ AddResource ko_KR/ko_KR-ak-iso.res
+ SetCharListSize 5
+ SetWordListSize 1
+ SetTextListSize 1
+
+Name: digit
+Input-Type: SINGLE_CHARACTER
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: false
+Configuration-Script:
+ AddResource ko_KR/ko_KR-ak-iso.res
+ SetCharacters 0123456789
+ SetCharListSize 5
+ SetWordListSize 1
+ SetTextListSize 1

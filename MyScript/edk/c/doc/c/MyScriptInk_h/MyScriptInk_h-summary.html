@@ -1,0 +1,374 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>c/MyScriptInk.h</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+            function windowTitle()
+            {
+            parent.document.title="c/MyScriptInk.h";
+            }
+          </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<H2>Include file <B>c/MyScriptInk.h</B>
+</H2>
+Native interface to the MyScript Ink service.     <P>
+    
+</P>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Type Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voArcPrimitive.html" title="voArcPrimitive">voArcPrimitive</A></B></TD><TD>
+<CODE>voArcPrimitive</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voArcPrimitiveInitializer.html" title="voArcPrimitiveInitializer">voArcPrimitiveInitializer</A></B></TD><TD>
+Holds the parameters required to create a new <CODE>voArcPrimitive</CODE> instance, using center parameterization.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voArcPrimitiveInitializer2.html" title="voArcPrimitiveInitializer2">voArcPrimitiveInitializer2</A></B></TD><TD>
+Holds the parameters required to create a new <CODE>voArcPrimitive</CODE> instance, using endpoint parameterization.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voCenterEllipticArc.html" title="voCenterEllipticArc">voCenterEllipticArc</A></B></TD><TD>
+Represents an elliptic arc on the 2D plane, by its center parameterization.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voChangeFlag.html" title="voChangeFlag">voChangeFlag</A></B></TD><TD>
+Lists the flag bits for the <CODE>flags</CODE> parameter of the <CODE>voISelectionChangeListener::changed()</CODE> function.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voCircle.html" title="voCircle">voCircle</A></B></TD><TD>
+Represents a circle on the 2D plane.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voCubicBezierCurve.html" title="voCubicBezierCurve">voCubicBezierCurve</A></B></TD><TD>
+Represents a cubic bezier curve on the 2D plane.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voEllipse.html" title="voEllipse">voEllipse</A></B></TD><TD>
+Represents an axis-aligned ellipse on the 2D plane.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voEndpointEllipticArc.html" title="voEndpointEllipticArc">voEndpointEllipticArc</A></B></TD><TD>
+Represents an elliptic arc on the 2D plane, by its endpoint parameterization.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voExtent.html" title="voExtent">voExtent</A></B></TD><TD>
+Represents the extent of some geometric object on the 2D plane.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voGlyph.html" title="voGlyph">voGlyph</A></B></TD><TD>
+<CODE>voGlyph</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voGlyphInitializer1.html" title="voGlyphInitializer1">voGlyphInitializer1</A></B></TD><TD>
+Holds the parameters required to create a new <CODE>voGlyph</CODE> instance.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voGlyphInitializer2.html" title="voGlyphInitializer2">voGlyphInitializer2</A></B></TD><TD>
+Holds the parameters required to create a new <CODE>voGlyph</CODE> instance.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voGlyphInitializer3.html" title="voGlyphInitializer3">voGlyphInitializer3</A></B></TD><TD>
+Holds the parameters required to create a new <CODE>voGlyph</CODE> instance.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voGlyphLines.html" title="voGlyphLines">voGlyphLines</A></B></TD><TD>
+Represents the typography lines of a glyph.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voHorizontalLineSet.html" title="voHorizontalLineSet">voHorizontalLineSet</A></B></TD><TD>
+Represents a set of equally spaced horizontal lines.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voIGeometry.html" title="voIGeometry">voIGeometry</A></B></TD><TD>
+Functions composing the <CODE>voIGeometry</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voIGlyph.html" title="voIGlyph">voIGlyph</A></B></TD><TD>
+Functions composing the <CODE>voIGlyph</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voIInk.html" title="voIInk">voIInk</A></B></TD><TD>
+Functions composing the <CODE>voIInk</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voIInkIntervals.html" title="voIInkIntervals">voIInkIntervals</A></B></TD><TD>
+Functions composing the <CODE>voIInkIntervals</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voIInkSelection.html" title="voIInkSelection">voIInkSelection</A></B></TD><TD>
+Functions composing the <CODE>voIInkSelection</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voIInkStroke.html" title="voIInkStroke">voIInkStroke</A></B></TD><TD>
+Functions composing the <CODE>voIInkStroke</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voIInkStrokeBuilder.html" title="voIInkStrokeBuilder">voIInkStrokeBuilder</A></B></TD><TD>
+Functions composing the <CODE>voIInkStrokeBuilder</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voIInkStrokeFormat.html" title="voIInkStrokeFormat">voIInkStrokeFormat</A></B></TD><TD>
+Functions composing the <CODE>voIInkStrokeFormat</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voIInkStrokeFormatBuilder.html" title="voIInkStrokeFormatBuilder">voIInkStrokeFormatBuilder</A></B></TD><TD>
+Functions composing the <CODE>voIInkStrokeFormatBuilder</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voIInkStrokeSet.html" title="voIInkStrokeSet">voIInkStrokeSet</A></B></TD><TD>
+Functions composing the <CODE>voIInkStrokeSet</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voIInkTagIterator.html" title="voIInkTagIterator">voIInkTagIterator</A></B></TD><TD>
+Functions composing the <CODE>voIInkTagIterator</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voIInkUpdateListener.html" title="voIInkUpdateListener">voIInkUpdateListener</A></B></TD><TD>
+Functions composing the <CODE>voIInkUpdateListener</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voInk.html" title="voInk">voInk</A></B></TD><TD>
+<CODE>voInk</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voInkCursor.html" title="voInkCursor">voInkCursor</A></B></TD><TD>
+Represents a position on the discrete trace formed by the sequence of strokes in a stroke set.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voInkDecorationType.html" title="voInkDecorationType">voInkDecorationType</A></B></TD><TD>
+Lists the decoration types.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voInkInitializer.html" title="voInkInitializer">voInkInitializer</A></B></TD><TD>
+Holds the parameters required to create a new <CODE>voInk</CODE> instance, with a default stroke format.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voInkInterval.html" title="voInkInterval">voInkInterval</A></B></TD><TD>
+Represents an interval on the ink cursor line.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voInkIntervals.html" title="voInkIntervals">voInkIntervals</A></B></TD><TD>
+<CODE>voInkIntervals</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voInkIntervalsMatchMode.html" title="voInkIntervalsMatchMode">voInkIntervalsMatchMode</A></B></TD><TD>
+Represents the way a lookup handles the query intervals parameter.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voInkSegment.html" title="voInkSegment">voInkSegment</A></B></TD><TD>
+<CODE>voInkSegment</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voInkSelection.html" title="voInkSelection">voInkSelection</A></B></TD><TD>
+<CODE>voInkSelection</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voInkSelectionInitializer.html" title="voInkSelectionInitializer">voInkSelectionInitializer</A></B></TD><TD>
+Holds the parameters required to create a new <CODE>voInkSelection</CODE> instance.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voInkStroke.html" title="voInkStroke">voInkStroke</A></B></TD><TD>
+<CODE>voInkStroke</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voInkStrokeBuilder.html" title="voInkStrokeBuilder">voInkStrokeBuilder</A></B></TD><TD>
+<CODE>voInkStrokeBuilder</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voInkStrokeBuilderInitializer1.html" title="voInkStrokeBuilderInitializer1">voInkStrokeBuilderInitializer1</A></B></TD><TD>
+Holds the parameters required to create a new <CODE>voInkStrokeBuilder</CODE> instance.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voInkStrokeBuilderInitializer2.html" title="voInkStrokeBuilderInitializer2">voInkStrokeBuilderInitializer2</A></B></TD><TD>
+Holds the parameters required to create a new <CODE>voInkStrokeBuilder</CODE> instance.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voInkStrokeFormat.html" title="voInkStrokeFormat">voInkStrokeFormat</A></B></TD><TD>
+<CODE>voInkStrokeFormat</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voInkStrokeFormatBuilder.html" title="voInkStrokeFormatBuilder">voInkStrokeFormatBuilder</A></B></TD><TD>
+<CODE>voInkStrokeFormatBuilder</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voInkTagIterator.html" title="voInkTagIterator">voInkTagIterator</A></B></TD><TD>
+<CODE>voInkTagIterator</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voInkTagQuery.html" title="voInkTagQuery">voInkTagQuery</A></B></TD><TD>
+Holds the parameters to run a lookup on tag set.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voInkUpdateTagInfo.html" title="voInkUpdateTagInfo">voInkUpdateTagInfo</A></B></TD><TD>
+Represents information about what happened to a tag.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voIPrimitive.html" title="voIPrimitive">voIPrimitive</A></B></TD><TD>
+Functions composing the <CODE>voIPrimitive</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voISelection.html" title="voISelection">voISelection</A></B></TD><TD>
+Functions composing the <CODE>voISelection</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voISelectionChangeListener.html" title="voISelectionChangeListener">voISelectionChangeListener</A></B></TD><TD>
+Functions composing the <CODE>voISelectionChangeListener</CODE> interface.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voLinePrimitive.html" title="voLinePrimitive">voLinePrimitive</A></B></TD><TD>
+<CODE>voLinePrimitive</CODE> reference type.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voLinePrimitiveInitializer.html" title="voLinePrimitiveInitializer">voLinePrimitiveInitializer</A></B></TD><TD>
+Holds the parameters required to create a new <CODE>voLinePrimitive</CODE> instance.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voLineSegment.html" title="voLineSegment">voLineSegment</A></B></TD><TD>
+Represents a line segment on the 2D plane.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voParallelogram.html" title="voParallelogram">voParallelogram</A></B></TD><TD>
+Represents a parallelogram with an origin and two vectors.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voPoint.html" title="voPoint">voPoint</A></B></TD><TD>
+Represents a point on the 2D plane.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voQuadraticBezierCurve.html" title="voQuadraticBezierCurve">voQuadraticBezierCurve</A></B></TD><TD>
+Represents a quadratic bezier curve on the 2D plane.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voRectangle.html" title="voRectangle">voRectangle</A></B></TD><TD>
+Represents an axis aligned rectangle on the 2D plane.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voRoundedRectangle.html" title="voRoundedRectangle">voRoundedRectangle</A></B></TD><TD>
+Represents an axis-aligned rounded rectangle on the 2D plane.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voSelectionModifier.html" title="voSelectionModifier">voSelectionModifier</A></B></TD><TD>
+Represents the way an input will be combined with an existing selection.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voTagAction.html" title="voTagAction">voTagAction</A></B></TD><TD>
+Lists the possible values of the <CODE>action</CODE> member of <CODE>voInkUpdateTagInfo</CODE>.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voTransform.html" title="voTransform">voTransform</A></B></TD><TD>
+Represents a 2D affine transform, defined as a 3x3 matrix with an implicit third raw of <CODE>[ 0 0 1 ]</CODE>:         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voVerticalLineSet.html" title="voVerticalLineSet">voVerticalLineSet</A></B></TD><TD>
+Represents a set of equally spaced vertical lines.         </TD>
+</TR>
+</TABLE>
+&nbsp;
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Enumeration Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="enum_VO_INK_ERR.html" title="VO_INK_ERR">VO_INK_ERR</A></B></TD><TD>
+Lists the MyScript Ink errors.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="enum_VO_INK_I.html" title="VO_INK_I">VO_INK_I</A></B></TD><TD>
+Lists the MyScript Ink interfaces.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="enum_VO_INK_T.html" title="VO_INK_T">VO_INK_T</A></B></TD><TD>
+Lists the MyScript Ink types.         </TD>
+</TR>
+</TABLE>
+&nbsp;
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Define Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voInkTagQuery_EMPTY_INITIALIZER.html" title="voInkTagQuery_EMPTY_INITIALIZER">voInkTagQuery_EMPTY_INITIALIZER</A></B></TD><TD>
+        </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voInkTagQueryById_INITIALIZER.html" title="voInkTagQueryById_INITIALIZER">voInkTagQueryById_INITIALIZER</A></B></TD><TD>
+        </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voInkTagQueryByIntervals_INITIALIZER.html" title="voInkTagQueryByIntervals_INITIALIZER">voInkTagQueryByIntervals_INITIALIZER</A></B></TD><TD>
+        </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voInkTagQueryByName_INITIALIZER.html" title="voInkTagQueryByName_INITIALIZER">voInkTagQueryByName_INITIALIZER</A></B></TD><TD>
+        </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voInkTagQueryByVoString_INITIALIZER.html" title="voInkTagQueryByVoString_INITIALIZER">voInkTagQueryByVoString_INITIALIZER</A></B></TD><TD>
+        </TD>
+</TR>
+</TABLE>
+&nbsp;
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Function Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voCreateArcPrimitiveFromCenterParametrization.html" title="voCreateArcPrimitiveFromCenterParametrization">voCreateArcPrimitiveFromCenterParametrization</A></B></TD><TD>
+Creates a new <CODE>voArcPrimitive</CODE> instance.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voCreateArcPrimitiveFromEndPointParametrization.html" title="voCreateArcPrimitiveFromEndPointParametrization">voCreateArcPrimitiveFromEndPointParametrization</A></B></TD><TD>
+Creates a new <CODE>voArcPrimitive</CODE> instance.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voCreateGlyph1.html" title="voCreateGlyph1">voCreateGlyph1</A></B></TD><TD>
+Creates a new <CODE>voGlyph</CODE> instance.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voCreateGlyph2.html" title="voCreateGlyph2">voCreateGlyph2</A></B></TD><TD>
+Creates a new <CODE>voGlyph</CODE> instance.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voCreateGlyph3.html" title="voCreateGlyph3">voCreateGlyph3</A></B></TD><TD>
+Creates a new <CODE>voGlyph</CODE> instance.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voCreateInk.html" title="voCreateInk">voCreateInk</A></B></TD><TD>
+Creates a new <CODE>voInk</CODE> instance.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voCreateInkSelection.html" title="voCreateInkSelection">voCreateInkSelection</A></B></TD><TD>
+Creates a new <CODE>voInkSelection</CODE> instance.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voCreateInkStrokeBuilder1.html" title="voCreateInkStrokeBuilder1">voCreateInkStrokeBuilder1</A></B></TD><TD>
+Creates a new <CODE>voInkStrokeBuilder</CODE> instance.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voCreateInkStrokeBuilder2.html" title="voCreateInkStrokeBuilder2">voCreateInkStrokeBuilder2</A></B></TD><TD>
+Creates a new <CODE>voInkStrokeBuilder</CODE> instance.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voCreateInkStrokeFormatBuilder.html" title="voCreateInkStrokeFormatBuilder">voCreateInkStrokeFormatBuilder</A></B></TD><TD>
+Creates a new <CODE>voInkStrokeFormatBuilder</CODE> instance.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voCreateInkWithStrokeFormat.html" title="voCreateInkWithStrokeFormat">voCreateInkWithStrokeFormat</A></B></TD><TD>
+Creates a new <CODE>voInk</CODE> instance.         </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A href="voCreateLinePrimitive.html" title="voCreateLinePrimitive">voCreateLinePrimitive</A></B></TD><TD>
+Creates a new <CODE>voLinePrimitive</CODE> instance.         </TD>
+</TR>
+</TABLE>
+&nbsp;
+</BODY>
+</HTML>

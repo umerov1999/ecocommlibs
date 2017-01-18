@@ -1,0 +1,7 @@
+﻿  MyCertificate.c
+  MyScriptEngine-strerror.c
+  common.c
+  TextRecognition.c
+  Generating Code...
+  document_TextRecognition.vcxproj -> C:\Users\JYChoi\Desktop\Myscript_P\edk\c\examples\_win-vs14\../bin/win-x86-Debug\08.document.10-TextRecognition.exe
+  document_TextRecognition.vcxproj -> ../bin/win-x86-Debug\08.document.10-TextRecognition.pdb (Full PDB)

@@ -1,0 +1,487 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>voIPageUpdateListener</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="voIPageUpdateListener";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptDocument.h</FONT>
+<BR>
+Type voIPageUpdateListener</H2>
+<PRE>
+<B>voIPageUpdateListener</B>
+</PRE>
+<HR>
+<CODE>#include &lt;c/MyScriptDocument.h&gt;</CODE>
+<BR>
+<CODE>typedef  struct <A href="../../c/MyScriptDocument_h/struct__voIPageUpdateListener.html">_voIPageUpdateListener</A>  <B>voIPageUpdateListener</B></CODE>
+<BR>
+<CODE></CODE>
+</P>
+<P>Functions composing the  <CODE><A href="../../c/MyScriptDocument_h/voIPageUpdateListener.html">voIPageUpdateListener</A></CODE> interface. <P>
+
+<P>
+<DL>
+<DT>
+<B>Note:</B>
+<DD>
+<P>This interface is implementable by user objects. User code is not allowed to invoke this interface directly: as a consequence  <CODE>voGetInterface()</CODE> returns  <CODE>NULL</CODE>. </P>
+</DD>
+</DT>
+</DL>
+
+</P>    
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Member_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="3"><FONT SIZE="+2"><B>Member Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>void</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#added">added</A>)(voEngine engine, voUserObject target, voPage page)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Called when the target change listener is added to a page object. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>void</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#onContentFieldInputUpdate">onContentFieldInputUpdate</A>)(voEngine engine, voUserObject target, voPage page, voContentField field)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Called when the input of a content field has changed. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>void</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#onContentFieldResultUpdate">onContentFieldResultUpdate</A>)(voEngine engine, voUserObject target, voPage page, voContentField field)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Called when the result of a content field has changed. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>void</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#onLayerUpdate">onLayerUpdate</A>)(voEngine engine, voUserObject target, voPage page, int32_t layerIndex, const voExtent *extent)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Called when a layer of the page layout has changed. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>void</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#onLayoutUpdate">onLayoutUpdate</A>)(voEngine engine, voUserObject target, voPage page, const voExtent *extent)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Called when the page layout has changed. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>void</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#removed">removed</A>)(voEngine engine, voUserObject target, voPage page)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Called when the target change listener is removed from a page object. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Member_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Member Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="added"></A>
+<H3 class="code">added</H3>
+<PRE>void <B>added</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voUserObject.html">voUserObject</A> target, <A href="../../c/MyScriptDocument_h/voPage.html">voPage</A> page)</PRE>
+<DL>
+<DD>Called when the target change listener is added to a page object. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target change listener. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+page
+</B>
+<DD>
+<parameterdescription>
+
+<P>the page to which the change listener was added. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="onContentFieldInputUpdate"></A>
+<H3 class="code">onContentFieldInputUpdate</H3>
+<PRE>void <B>onContentFieldInputUpdate</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voUserObject.html">voUserObject</A> target, <A href="../../c/MyScriptDocument_h/voPage.html">voPage</A> page, <A href="../../c/MyScriptDocument_h/voContentField.html">voContentField</A> field)</PRE>
+<DL>
+<DD>Called when the input of a content field has changed. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target change listener. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+page
+</B>
+<DD>
+<parameterdescription>
+
+<P>the page that has been updated. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+field
+</B>
+<DD>
+<parameterdescription>
+
+<P>the content field which input has changed. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="onContentFieldResultUpdate"></A>
+<H3 class="code">onContentFieldResultUpdate</H3>
+<PRE>void <B>onContentFieldResultUpdate</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voUserObject.html">voUserObject</A> target, <A href="../../c/MyScriptDocument_h/voPage.html">voPage</A> page, <A href="../../c/MyScriptDocument_h/voContentField.html">voContentField</A> field)</PRE>
+<DL>
+<DD>Called when the result of a content field has changed. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target change listener. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+page
+</B>
+<DD>
+<parameterdescription>
+
+<P>the page that has been updated. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+field
+</B>
+<DD>
+<parameterdescription>
+
+<P>the content field which result has changed. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="onLayerUpdate"></A>
+<H3 class="code">onLayerUpdate</H3>
+<PRE>void <B>onLayerUpdate</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voUserObject.html">voUserObject</A> target, <A href="../../c/MyScriptDocument_h/voPage.html">voPage</A> page, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> layerIndex, const <A href="../../c/MyScriptInk_h/voExtent.html">voExtent</A> *extent)</PRE>
+<DL>
+<DD>Called when a layer of the page layout has changed. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target change listener. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+page
+</B>
+<DD>
+<parameterdescription>
+
+<P>the page that has been updated. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+layerIndex
+</B>
+<DD>
+<parameterdescription>
+
+<P>the layout layer index on to which extent applies. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+extent
+</B>
+<DD>
+<parameterdescription>
+
+<P>the extent of updates on the X and Y axes for the layer at  <CODE>layerIndex</CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="onLayoutUpdate"></A>
+<H3 class="code">onLayoutUpdate</H3>
+<PRE>void <B>onLayoutUpdate</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voUserObject.html">voUserObject</A> target, <A href="../../c/MyScriptDocument_h/voPage.html">voPage</A> page, const <A href="../../c/MyScriptInk_h/voExtent.html">voExtent</A> *extent)</PRE>
+<DL>
+<DD>Called when the page layout has changed. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target change listener. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+page
+</B>
+<DD>
+<parameterdescription>
+
+<P>the page that has been updated. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+extent
+</B>
+<DD>
+<parameterdescription>
+
+<P>the extent of updates on the X and Y axes. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="removed"></A>
+<H3 class="code">removed</H3>
+<PRE>void <B>removed</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voUserObject.html">voUserObject</A> target, <A href="../../c/MyScriptDocument_h/voPage.html">voPage</A> page)</PRE>
+<DL>
+<DD>Called when the target change listener is removed from a page object. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target change listener. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+page
+</B>
+<DD>
+<parameterdescription>
+
+<P>the page from which the change listener was removed. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

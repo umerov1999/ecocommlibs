@@ -1,0 +1,28 @@
+# Lexical unit Traditional Chinese: price
+#
+# 2006/05/22
+# v1.0
+
+@set charset UTF-8
+
+######### Number definitions (full western, mixed, fullChinese) #########
+
+# Western style number
+d = [0-9]
+d_oneToNine = [1-9]
+integer =  [+\-]?(0|{d_oneToNine}{d}*|{d_oneToNine}{d}?{d}?(\,{d}{d}{d})*)
+westNumber = {integer}(\.{d}{d}?)?
+
+######### End of number definitions #########
+
+# Western formatted prices
+# xx元/塊 format
+westPrice1 = (NT\$?|\$(NT)?|新?(台|臺)幣)?{westNumber}(元|塊)|{westNumber}(元|塊)(NT\$?|\$(NT)?|新?(台|臺)幣)
+# xx元/塊xx
+westPrice2 = (NT\$?|\$(NT)?|新?(台|臺)幣)?{integer}(元|塊)({d}{d}?)?|{integer}(元|塊)({d}{d}?)NT\$?
+# NT$xx, xxNT$
+westPrice3 = (NT\$?|\$(NT)?|新?(台|臺)幣){westNumber}|{westNumber}(NT\$?|\$(NT)?|新?(台|臺)幣)
+
+westPrice = {westPrice1}|{westPrice2}|{westPrice3}
+
+{westPrice}

@@ -1,0 +1,191 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>c/MyScriptMusic.h</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+</HEAD>
+<BODY BGCOLOR="white">
+<FONT size="+1" CLASS="FrameTitleFont"><A target="classFrame" HREF="MyScriptMusic_h-summary.html">c/MyScriptMusic.h</A></FONT>
+<TABLE BORDER="0" WIDTH="100%" SUMMARY="">
+<TR>
+<TD NOWRAP="yes"><FONT size="+1" CLASS="FrameHeadingFont">
+          Types</FONT><FONT CLASS="FrameItemFont">
+<BR>
+<A target="classFrame" href="voIMusicAccidental.html">voIMusicAccidental</A>
+<BR>
+<A target="classFrame" href="voIMusicAnnotation.html">voIMusicAnnotation</A>
+<BR>
+<A target="classFrame" href="voIMusicArpeggiate.html">voIMusicArpeggiate</A>
+<BR>
+<A target="classFrame" href="voIMusicBar.html">voIMusicBar</A>
+<BR>
+<A target="classFrame" href="voIMusicBeam.html">voIMusicBeam</A>
+<BR>
+<A target="classFrame" href="voIMusicChord.html">voIMusicChord</A>
+<BR>
+<A target="classFrame" href="voIMusicClef.html">voIMusicClef</A>
+<BR>
+<A target="classFrame" href="voIMusicDecoration.html">voIMusicDecoration</A>
+<BR>
+<A target="classFrame" href="voIMusicDocument.html">voIMusicDocument</A>
+<BR>
+<A target="classFrame" href="voIMusicDots.html">voIMusicDots</A>
+<BR>
+<A target="classFrame" href="voIMusicElement.html">voIMusicElement</A>
+<BR>
+<A target="classFrame" href="voIMusicHead.html">voIMusicHead</A>
+<BR>
+<A target="classFrame" href="voIMusicKeySignature.html">voIMusicKeySignature</A>
+<BR>
+<A target="classFrame" href="voIMusicNote.html">voIMusicNote</A>
+<BR>
+<A target="classFrame" href="voIMusicPart.html">voIMusicPart</A>
+<BR>
+<A target="classFrame" href="voIMusicRecognizer.html">voIMusicRecognizer</A>
+<BR>
+<A target="classFrame" href="voIMusicRest.html">voIMusicRest</A>
+<BR>
+<A target="classFrame" href="voIMusicScore.html">voIMusicScore</A>
+<BR>
+<A target="classFrame" href="voIMusicScratchOut.html">voIMusicScratchOut</A>
+<BR>
+<A target="classFrame" href="voIMusicSlur.html">voIMusicSlur</A>
+<BR>
+<A target="classFrame" href="voIMusicStem.html">voIMusicStem</A>
+<BR>
+<A target="classFrame" href="voIMusicTie.html">voIMusicTie</A>
+<BR>
+<A target="classFrame" href="voIMusicTimeSignature.html">voIMusicTimeSignature</A>
+<BR>
+<A target="classFrame" href="voIMusicTuplet.html">voIMusicTuplet</A>
+<BR>
+<A target="classFrame" href="voIMusicTupletBracket.html">voIMusicTupletBracket</A>
+<BR>
+<A target="classFrame" href="voMusicAccidental.html">voMusicAccidental</A>
+<BR>
+<A target="classFrame" href="voMusicAccidentalType.html">voMusicAccidentalType</A>
+<BR>
+<A target="classFrame" href="voMusicAlphabetKnowledge.html">voMusicAlphabetKnowledge</A>
+<BR>
+<A target="classFrame" href="voMusicAnnotation.html">voMusicAnnotation</A>
+<BR>
+<A target="classFrame" href="voMusicArpeggiate.html">voMusicArpeggiate</A>
+<BR>
+<A target="classFrame" href="voMusicArpeggiateType.html">voMusicArpeggiateType</A>
+<BR>
+<A target="classFrame" href="voMusicBar.html">voMusicBar</A>
+<BR>
+<A target="classFrame" href="voMusicBarRepeatDirection.html">voMusicBarRepeatDirection</A>
+<BR>
+<A target="classFrame" href="voMusicBarStyle.html">voMusicBarStyle</A>
+<BR>
+<A target="classFrame" href="voMusicBeam.html">voMusicBeam</A>
+<BR>
+<A target="classFrame" href="voMusicBeamSlope.html">voMusicBeamSlope</A>
+<BR>
+<A target="classFrame" href="voMusicBeamType.html">voMusicBeamType</A>
+<BR>
+<A target="classFrame" href="voMusicChord.html">voMusicChord</A>
+<BR>
+<A target="classFrame" href="voMusicClef.html">voMusicClef</A>
+<BR>
+<A target="classFrame" href="voMusicClefSymbol.html">voMusicClefSymbol</A>
+<BR>
+<A target="classFrame" href="voMusicDecoration.html">voMusicDecoration</A>
+<BR>
+<A target="classFrame" href="voMusicDecorationSymbol.html">voMusicDecorationSymbol</A>
+<BR>
+<A target="classFrame" href="voMusicDocument.html">voMusicDocument</A>
+<BR>
+<A target="classFrame" href="voMusicDots.html">voMusicDots</A>
+<BR>
+<A target="classFrame" href="voMusicElement.html">voMusicElement</A>
+<BR>
+<A target="classFrame" href="voMusicGrammar.html">voMusicGrammar</A>
+<BR>
+<A target="classFrame" href="voMusicHead.html">voMusicHead</A>
+<BR>
+<A target="classFrame" href="voMusicHeadType.html">voMusicHeadType</A>
+<BR>
+<A target="classFrame" href="voMusicInputRange.html">voMusicInputRange</A>
+<BR>
+<A target="classFrame" href="voMusicKeySignature.html">voMusicKeySignature</A>
+<BR>
+<A target="classFrame" href="voMusicKeySignatureData.html">voMusicKeySignatureData</A>
+<BR>
+<A target="classFrame" href="voMusicLedgerLine.html">voMusicLedgerLine</A>
+<BR>
+<A target="classFrame" href="voMusicNote.html">voMusicNote</A>
+<BR>
+<A target="classFrame" href="voMusicNoteType.html">voMusicNoteType</A>
+<BR>
+<A target="classFrame" href="voMusicPart.html">voMusicPart</A>
+<BR>
+<A target="classFrame" href="voMusicPitchData.html">voMusicPitchData</A>
+<BR>
+<A target="classFrame" href="voMusicPitchStep.html">voMusicPitchStep</A>
+<BR>
+<A target="classFrame" href="voMusicPlacement.html">voMusicPlacement</A>
+<BR>
+<A target="classFrame" href="voMusicRecognizer.html">voMusicRecognizer</A>
+<BR>
+<A target="classFrame" href="voMusicRest.html">voMusicRest</A>
+<BR>
+<A target="classFrame" href="voMusicRestType.html">voMusicRestType</A>
+<BR>
+<A target="classFrame" href="voMusicScore.html">voMusicScore</A>
+<BR>
+<A target="classFrame" href="voMusicScratchOut.html">voMusicScratchOut</A>
+<BR>
+<A target="classFrame" href="voMusicSlur.html">voMusicSlur</A>
+<BR>
+<A target="classFrame" href="voMusicStem.html">voMusicStem</A>
+<BR>
+<A target="classFrame" href="voMusicStemType.html">voMusicStemType</A>
+<BR>
+<A target="classFrame" href="voMusicTie.html">voMusicTie</A>
+<BR>
+<A target="classFrame" href="voMusicTimeModificationData.html">voMusicTimeModificationData</A>
+<BR>
+<A target="classFrame" href="voMusicTimeModificationType.html">voMusicTimeModificationType</A>
+<BR>
+<A target="classFrame" href="voMusicTimeSignature.html">voMusicTimeSignature</A>
+<BR>
+<A target="classFrame" href="voMusicTimeSignatureType.html">voMusicTimeSignatureType</A>
+<BR>
+<A target="classFrame" href="voMusicTuplet.html">voMusicTuplet</A>
+<BR>
+<A target="classFrame" href="voMusicTupletBracket.html">voMusicTupletBracket</A>
+<BR>
+<A target="classFrame" href="voMusicTupletBracketType.html">voMusicTupletBracketType</A></FONT></TD>
+</TR>
+</TABLE>
+<TABLE BORDER="0" WIDTH="100%" SUMMARY="">
+<TR>
+<TD NOWRAP="yes"><FONT size="+1" CLASS="FrameHeadingFont">
+          Enumerations</FONT><FONT CLASS="FrameItemFont">
+<BR>
+<A target="classFrame" href="enum_VO_MUSIC_ERR.html">VO_MUSIC_ERR</A>
+<BR>
+<A target="classFrame" href="enum_VO_MUSIC_T.html">VO_MUSIC_T</A>
+<BR>
+<A target="classFrame" href="enum_VO_MUSIC_I.html">VO_MUSIC_I</A>
+<BR>
+<A target="classFrame" href="enum_VO_MUSIC_ELEMENT_TPROP.html">VO_MUSIC_ELEMENT_TPROP</A>
+<BR>
+<A target="classFrame" href="enum_VO_MUSIC_RECOGNIZER_PROP.html">VO_MUSIC_RECOGNIZER_PROP</A></FONT></TD>
+</TR>
+</TABLE>
+<TABLE BORDER="0" WIDTH="100%" SUMMARY="">
+<TR>
+<TD NOWRAP="yes"><FONT size="+1" CLASS="FrameHeadingFont">
+          Functions</FONT><FONT CLASS="FrameItemFont">
+<BR>
+<A target="classFrame" href="voCreateMusicDocument.html">voCreateMusicDocument</A>
+<BR>
+<A target="classFrame" href="voCreateMusicRecognizer.html">voCreateMusicRecognizer</A></FONT></TD>
+</TR>
+</TABLE>
+</BODY>
+</HTML>

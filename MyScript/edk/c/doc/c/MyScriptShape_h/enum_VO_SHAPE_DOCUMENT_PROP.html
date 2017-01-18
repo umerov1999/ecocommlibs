@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>VO_SHAPE_DOCUMENT_PROP</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="VO_SHAPE_DOCUMENT_PROP";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptShape.h</FONT>
+<BR>
+Enumeration VO_SHAPE_DOCUMENT_PROP</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptShape.h&gt;</CODE>
+<BR>
+<CODE>enum <B>_VO_SHAPE_DOCUMENT_PROP</B></CODE>
+</P>
+<P> 
+Lists the properties that apply to the instances of the ShapeDocument type.
+   <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptShape_h/enum_VO_SHAPE_T.html#VO_ShapeDocument">VO_ShapeDocument</a>, <a href="../../c/MyScriptShape_h/voShapeDocument.html">voShapeDocument</a>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Value_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Value Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_SHAPE_DOCUMENT_DISABLE_AUTO_COMMIT_RESULT">VO_SHAPE_DOCUMENT_DISABLE_AUTO_COMMIT_RESULT</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  (VO_ShapeDocument &lt;&lt; 16)</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tells the shape document to not automatically commit its result, i.e. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_SHAPE_DOCUMENT_DISABLE_AUTO_SEGMENT_CREATION">VO_SHAPE_DOCUMENT_DISABLE_AUTO_SEGMENT_CREATION</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tells the shape document to not create a new segment for each new stroke or primitive that is added to it, unless  <CODE>startSegment()</CODE> has been called. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Value_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Value Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="VO_SHAPE_DOCUMENT_DISABLE_AUTO_COMMIT_RESULT"></A>
+<H3 class="code">VO_SHAPE_DOCUMENT_DISABLE_AUTO_COMMIT_RESULT</H3>
+<PRE>
+<B>VO_SHAPE_DOCUMENT_DISABLE_AUTO_COMMIT_RESULT</B>
+</PRE>
+<DL>
+<DD>Tells the shape document to not automatically commit its result, i.e. <P>
+
+<P>once a document is processed by a shape recognizer, the recognition result is not used as input for the next recognition.</P>
+<P> 
+<DL>
+<DT>
+<B>Usage:</B>
+<DD>
+<PRE>bool value;
+voGetProperty(engine, object, VO_SHAPE_DOCUMENT_DISABLE_AUTO_COMMIT_RESULT, &amp;value, sizeof(value));
+voSetProperty(engine, object, VO_SHAPE_DOCUMENT_DISABLE_AUTO_COMMIT_RESULT, &amp;value, sizeof(value));</PRE>
+</DD>
+</DT>
+</DL>
+</P>
+<P>
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>7.0_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_SHAPE_DOCUMENT_DISABLE_AUTO_SEGMENT_CREATION"></A>
+<H3 class="code">VO_SHAPE_DOCUMENT_DISABLE_AUTO_SEGMENT_CREATION</H3>
+<PRE>
+<B>VO_SHAPE_DOCUMENT_DISABLE_AUTO_SEGMENT_CREATION</B>
+</PRE>
+<DL>
+<DD>Tells the shape document to not create a new segment for each new stroke or primitive that is added to it, unless  <CODE>startSegment()</CODE> has been called. <P>
+
+<P>
+<verbatim xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">                                                                       @xmlonly &lt;property type="ShapeDocument" read-only="no"&gt;\endxmlonly\ref bool@xmlonly &lt;/property&gt;\endxmlonly
+</verbatim>
+</P>
+<P>
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>7.0_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

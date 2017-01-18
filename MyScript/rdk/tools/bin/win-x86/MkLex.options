@@ -1,0 +1,7 @@
+--engine-directory=${origin}/../../../../engine/bin/win-x86
+--certificate=${origin}/../../../../engine/certificates/MyCertificate.bin
+--charset=UTF-8
+-R .
+${command-line-options}
+-R ${origin}/../../../../resources
+-R ${origin}/../../../../resources/*

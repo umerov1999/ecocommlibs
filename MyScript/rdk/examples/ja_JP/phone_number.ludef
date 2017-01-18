@@ -1,0 +1,91 @@
+# Lexical unit Japanese: phone_number
+# v1.0
+# 24/08/2005
+
+# Shigaikyokuban (市外局番) (Prefix used to phone outside of the city of the user)
+# 4 digits shigaikyokuban
+shigaikyokuban_4digits = @import string-list "shigaikyokuban_4digits.lex"
+# 3 digits shigaikyokuban
+shigaikyokuban_3digits = @import string-list "shigaikyokuban_3digits.lex"
+# 2 digits shigaikyokuban
+shigaikyokuban_2digits = @import string-list "shigaikyokuban_2digits.lex"
+# 1 digit shigaikyokuban
+shigaikyokuban_1digit = @import string-list "shigaikyokuban_1digit.lex"
+
+# Shinaikyokuban (市内局番) (Prefix needed to refence a number inside a city)
+# 4 digits shinaikyokuban
+shinaikyokuban_4digits = [0-9][0-9][0-9][0-9]
+# 3 digits shinaikyokuban
+shinaikyokuban_3digits = [0-9][0-9][0-9]
+# 2 digits shinaikyokuban
+shinaikyokuban_2digits = [0-9][0-9]
+# 1 digits shinaikyokuban
+shinaikyokuban_1digit = [0-9]
+
+# Mobile phones prefixes
+# Keitaidenwa (携帯電話)
+keitai = 0[89]0
+# PHS
+phs = 070
+mobilePhonePrefix = {keitai}|{phs}
+
+# Kanyushabango (加入者番号) (User number)
+kanyushabango = [0-9][0-9][0-9][0-9]
+
+# Mobile phone number #
+# Dash separator
+mobilePhoneNumberFirstPart = \({mobilePhonePrefix}\)|{mobilePhonePrefix}-
+mobilePhoneNumber = {mobilePhoneNumberFirstPart}[0-9][0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]
+# Blank space separator
+mobilePhoneNumberFirstPart = (\({mobilePhonePrefix}\)|{mobilePhonePrefix}[ ])
+mobilePhoneNumber = {mobilePhoneNumber}|{mobilePhoneNumberFirstPart}[0-9][0-9][0-9][0-9] [0-9][0-9][0-9][0-9]
+# No separator
+mobilePhoneNumberFirstPart = (\({mobilePhonePrefix}\)|{mobilePhonePrefix})
+mobilePhoneNumber = {mobilePhoneNumber}|{mobilePhoneNumberFirstPart}[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]
+
+# Phone number #
+# Dash separator
+# 4 digits shigaikyokuban + 1 digit shinaikyokuban
+prefix = \(0{shigaikyokuban_4digits}\)|0{shigaikyokuban_4digits}-
+phoneNumber = {prefix}?{shinaikyokuban_1digit}-{kanyushabango}
+# 3 digits shigaikyokuban + 2 digit shinaikyokuban
+prefix = \(0{shigaikyokuban_3digits}\)|0{shigaikyokuban_3digits}-
+phoneNumber = {phoneNumber}|{prefix}?{shinaikyokuban_2digits}-{kanyushabango}
+# 2 digits shigaikyokuban + 3 digit shinaikyokuban
+prefix = \(0{shigaikyokuban_2digits}\)|0{shigaikyokuban_2digits}-
+phoneNumber = {phoneNumber}|{prefix}?{shinaikyokuban_3digits}-{kanyushabango}
+# 1 digits shigaikyokuban + 4 digit shinaikyokuban
+prefix = \(0{shigaikyokuban_1digit}\)|0{shigaikyokuban_1digit}-
+phoneNumber = {phoneNumber}|{prefix}?{shinaikyokuban_4digits}-{kanyushabango}
+
+# Blank space separator
+# 4 digits shigaikyokuban + 1 digit shinaikyokuban
+prefix = \(0{shigaikyokuban_4digits}\)|0{shigaikyokuban_4digits}[ ]
+phoneNumber = {phoneNumber}|{prefix}?{shinaikyokuban_1digit} {kanyushabango}
+# 3 digits shigaikyokuban + 2 digit shinaikyokuban
+prefix = \(0{shigaikyokuban_3digits}\)|0{shigaikyokuban_3digits}[ ]
+phoneNumber = {phoneNumber}|{prefix}?{shinaikyokuban_2digits} {kanyushabango}
+# 2 digits shigaikyokuban + 3 digit shinaikyokuban
+prefix = \(0{shigaikyokuban_2digits}\)|0{shigaikyokuban_2digits}[ ]
+phoneNumber = {phoneNumber}|{prefix}?{shinaikyokuban_3digits} {kanyushabango}
+# 1 digits shigaikyokuban + 4 digit shinaikyokuban
+prefix = \(0{shigaikyokuban_1digit}\)|0{shigaikyokuban_1digit}[ ]
+phoneNumber = {phoneNumber}|{prefix}?{shinaikyokuban_4digits} {kanyushabango}
+
+# No separator
+# 4 digits shigaikyokuban + 1 digit shinaikyokuban
+prefix = \(0{shigaikyokuban_4digits}\)|0{shigaikyokuban_4digits}
+phoneNumber = {phoneNumber}|{prefix}?{shinaikyokuban_1digit}{kanyushabango}
+# 3 digits shigaikyokuban + 2 digit shinaikyokuban
+prefix = \(0{shigaikyokuban_3digits}\)|0{shigaikyokuban_3digits}
+phoneNumber = {phoneNumber}|{prefix}?{shinaikyokuban_2digits}{kanyushabango}
+# 2 digits shigaikyokuban + 3 digit shinaikyokuban
+prefix = \(0{shigaikyokuban_2digits}\)|0{shigaikyokuban_2digits}
+phoneNumber = {phoneNumber}|{prefix}?{shinaikyokuban_3digits}{kanyushabango}
+# 1 digits shigaikyokuban + 4 digit shinaikyokuban
+prefix = \(0{shigaikyokuban_1digit}\)|0{shigaikyokuban_1digit}
+phoneNumber = {phoneNumber}|{prefix}?{shinaikyokuban_4digits}{kanyushabango}
+
+phoneNumber = {phoneNumber}|{mobilePhoneNumber}
+
+{phoneNumber}

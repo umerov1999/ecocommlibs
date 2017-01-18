@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>VO_RESOURCE_PROP</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="VO_RESOURCE_PROP";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptText.h</FONT>
+<BR>
+Enumeration VO_RESOURCE_PROP</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptText.h&gt;</CODE>
+<BR>
+<CODE>enum <B>_VO_RESOURCE_PROP</B></CODE>
+</P>
+<P> 
+Lists the properties that apply to the instances of the Resource type.
+   <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/enum_VO_TEXT_T.html#VO_Resource">VO_Resource</a>, <a href="../../c/MyScriptText_h/voResource.html">voResource</a>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Value_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Value Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_RESOURCE_NAME">VO_RESOURCE_NAME</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  (VO_Resource &lt;&lt; 16)</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Represents the name of the resource (encoded in US-ASCII). </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_RESOURCE_VERSION">VO_RESOURCE_VERSION</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Represents the content version of the resource. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Value_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Value Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="VO_RESOURCE_NAME"></A>
+<H3 class="code">VO_RESOURCE_NAME</H3>
+<PRE>
+<B>VO_RESOURCE_NAME</B>
+</PRE>
+<DL>
+<DD>Represents the name of the resource (encoded in US-ASCII). <P>
+
+<P>This property is writable by the resource creator and readable by any user.</P>
+<P>The value must be a sequence of at most 56 characters taken among the following list: `['a'...'z', 'A'...'Z', '0'...'9', '_', '+', '/', '-', '.']`.</P>
+<P> 
+<DL>
+<DT>
+<B>Usage:</B>
+<DD>
+<PRE>voString value;
+voGetProperty(engine, object, VO_RESOURCE_NAME, &amp;value, sizeof(value));
+voSetProperty(engine, object, VO_RESOURCE_NAME, &amp;value, sizeof(value));</PRE>
+</DD>
+</DT>
+</DL> 
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_RESOURCE_VERSION"></A>
+<H3 class="code">VO_RESOURCE_VERSION</H3>
+<PRE>
+<B>VO_RESOURCE_VERSION</B>
+</PRE>
+<DL>
+<DD>Represents the content version of the resource. <P>
+
+<P>This property is writable by the resource creator and readable by any user.</P>
+<P>The format of this number is specified by the  <CODE>VO_VERSION()</CODE> macro.</P>
+<P> 
+<DL>
+<DT>
+<B>Usage:</B>
+<DD>
+<PRE>uint32_t value;
+voGetProperty(engine, object, VO_RESOURCE_VERSION, &amp;value, sizeof(value));
+voSetProperty(engine, object, VO_RESOURCE_VERSION, &amp;value, sizeof(value));</PRE>
+</DD>
+</DT>
+</DL> 
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

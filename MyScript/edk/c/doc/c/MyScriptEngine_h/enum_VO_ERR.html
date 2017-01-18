@@ -1,0 +1,512 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>VO_ERR</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="VO_ERR";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptEngine.h</FONT>
+<BR>
+Enumeration VO_ERR</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptEngine.h&gt;</CODE>
+<BR>
+<CODE>enum <B>_VO_ERR</B></CODE>
+</P>
+<P>Lists the MyScript errors. <P>
+        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Value_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Value Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_NO_ERROR">VO_NO_ERROR</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No error occurred. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_INVALID_ARGUMENT">VO_INVALID_ARGUMENT</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  0x1000000</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The argument is invalid. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_INVALID_OPERATION">VO_INVALID_OPERATION</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  0x2000000</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The requested operation is not implemented for the target object. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_INVALID_STATE">VO_INVALID_STATE</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  0x3000000</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The requested operation cannot be performed within the current state. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_RUNTIME_ERROR">VO_RUNTIME_ERROR</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  0x4000000</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Runtime error. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_NO_SUCH_REFERENCE">VO_NO_SUCH_REFERENCE</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  0x1010000</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The reference is invalid. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_NO_SUCH_ENGINE">VO_NO_SUCH_ENGINE</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The engine reference is invalid. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_NO_SUCH_OBJECT">VO_NO_SUCH_OBJECT</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The object reference is invalid. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_INVALID_CERTIFICATE">VO_INVALID_CERTIFICATE</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  0x1020001</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Invalid certificate. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_INDEX_OUT_OF_BOUNDS">VO_INDEX_OUT_OF_BOUNDS</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The index is out of bounds. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_INVALID_OBJECT">VO_INVALID_OBJECT</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The object is invalid for the requested operation because it doesn't have the proper type. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_INVALID_SIZE">VO_INVALID_SIZE</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  0x1020005</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The given value does not have the right size. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_INVALID_USER_BUFFER">VO_INVALID_USER_BUFFER</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  0x1030000</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A user supplied buffer is either unreadable or unwritable. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_NO_SUCH_TYPE">VO_NO_SUCH_TYPE</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  0x1040000</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The specified type does not exist. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_TYPE_NOT_CONCRETE">VO_TYPE_NOT_CONCRETE</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The specified type is not concrete. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_NO_SUCH_CONSTRUCTOR">VO_NO_SUCH_CONSTRUCTOR</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The specified type does not have a constructor with the specified initializer. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_NO_SUCH_INTERFACE">VO_NO_SUCH_INTERFACE</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The specified interface does not exist. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_NO_SUCH_PROPERTY">VO_NO_SUCH_PROPERTY</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The specified property does not exist. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_READ_ONLY_PROPERTY">VO_READ_ONLY_PROPERTY</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The specified property is read-only. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_UNSUPPORTED_SERIALIZATION">VO_UNSUPPORTED_SERIALIZATION</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The specified object does not support serialization. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_LIMIT_EXCEEDED">VO_LIMIT_EXCEEDED</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  0x3010000</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The requested operation cannot be performed because it would exceed the limit fixed as a programming guard. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_MODIFICATION_ACCESS_DENIED">VO_MODIFICATION_ACCESS_DENIED</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  0x3010002</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The object cannot be modified because it is in use by another object. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_OUT_OF_MEMORY">VO_OUT_OF_MEMORY</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  0x4000001</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The engine ran out of memory. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IO_FAILURE">VO_IO_FAILURE</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An Input/Output operation failed. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_PREMATURE_END_OF_DATA">VO_PREMATURE_END_OF_DATA</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;End of input has been reached while more data was needed. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_INTERNAL_ERROR">VO_INTERNAL_ERROR</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The engine crashed. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_CANCELED">VO_CANCELED</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The operation was canceled by the progress notification function. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Value_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Value Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="VO_NO_ERROR"></A>
+<H3 class="code">VO_NO_ERROR</H3>
+<PRE>
+<B>VO_NO_ERROR</B>
+</PRE>
+<DL>
+<DD>No error occurred. <P>
+
+<P>This is the value returned by  <CODE>voGetError()</CODE> when there is no error to report. </P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_INVALID_ARGUMENT"></A>
+<H3 class="code">VO_INVALID_ARGUMENT</H3>
+<PRE>
+<B>VO_INVALID_ARGUMENT</B>
+</PRE>
+<DL>
+<DD>The argument is invalid. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_INVALID_OPERATION"></A>
+<H3 class="code">VO_INVALID_OPERATION</H3>
+<PRE>
+<B>VO_INVALID_OPERATION</B>
+</PRE>
+<DL>
+<DD>The requested operation is not implemented for the target object. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_INVALID_STATE"></A>
+<H3 class="code">VO_INVALID_STATE</H3>
+<PRE>
+<B>VO_INVALID_STATE</B>
+</PRE>
+<DL>
+<DD>The requested operation cannot be performed within the current state. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_RUNTIME_ERROR"></A>
+<H3 class="code">VO_RUNTIME_ERROR</H3>
+<PRE>
+<B>VO_RUNTIME_ERROR</B>
+</PRE>
+<DL>
+<DD>Runtime error. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_NO_SUCH_REFERENCE"></A>
+<H3 class="code">VO_NO_SUCH_REFERENCE</H3>
+<PRE>
+<B>VO_NO_SUCH_REFERENCE</B>
+</PRE>
+<DL>
+<DD>The reference is invalid. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_NO_SUCH_ENGINE"></A>
+<H3 class="code">VO_NO_SUCH_ENGINE</H3>
+<PRE>
+<B>VO_NO_SUCH_ENGINE</B>
+</PRE>
+<DL>
+<DD>The engine reference is invalid. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_NO_SUCH_OBJECT"></A>
+<H3 class="code">VO_NO_SUCH_OBJECT</H3>
+<PRE>
+<B>VO_NO_SUCH_OBJECT</B>
+</PRE>
+<DL>
+<DD>The object reference is invalid. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_INVALID_CERTIFICATE"></A>
+<H3 class="code">VO_INVALID_CERTIFICATE</H3>
+<PRE>
+<B>VO_INVALID_CERTIFICATE</B>
+</PRE>
+<DL>
+<DD>Invalid certificate. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_INDEX_OUT_OF_BOUNDS"></A>
+<H3 class="code">VO_INDEX_OUT_OF_BOUNDS</H3>
+<PRE>
+<B>VO_INDEX_OUT_OF_BOUNDS</B>
+</PRE>
+<DL>
+<DD>The index is out of bounds. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_INVALID_OBJECT"></A>
+<H3 class="code">VO_INVALID_OBJECT</H3>
+<PRE>
+<B>VO_INVALID_OBJECT</B>
+</PRE>
+<DL>
+<DD>The object is invalid for the requested operation because it doesn't have the proper type. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_INVALID_SIZE"></A>
+<H3 class="code">VO_INVALID_SIZE</H3>
+<PRE>
+<B>VO_INVALID_SIZE</B>
+</PRE>
+<DL>
+<DD>The given value does not have the right size. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_INVALID_USER_BUFFER"></A>
+<H3 class="code">VO_INVALID_USER_BUFFER</H3>
+<PRE>
+<B>VO_INVALID_USER_BUFFER</B>
+</PRE>
+<DL>
+<DD>A user supplied buffer is either unreadable or unwritable. <P>
+
+<P>Typically  <CODE>NULL</CODE>. </P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_NO_SUCH_TYPE"></A>
+<H3 class="code">VO_NO_SUCH_TYPE</H3>
+<PRE>
+<B>VO_NO_SUCH_TYPE</B>
+</PRE>
+<DL>
+<DD>The specified type does not exist. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_TYPE_NOT_CONCRETE"></A>
+<H3 class="code">VO_TYPE_NOT_CONCRETE</H3>
+<PRE>
+<B>VO_TYPE_NOT_CONCRETE</B>
+</PRE>
+<DL>
+<DD>The specified type is not concrete. <P>
+
+<P>It is either an abstract type or an interface type. This means instantiation is not allowed. </P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_NO_SUCH_CONSTRUCTOR"></A>
+<H3 class="code">VO_NO_SUCH_CONSTRUCTOR</H3>
+<PRE>
+<B>VO_NO_SUCH_CONSTRUCTOR</B>
+</PRE>
+<DL>
+<DD>The specified type does not have a constructor with the specified initializer. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_NO_SUCH_INTERFACE"></A>
+<H3 class="code">VO_NO_SUCH_INTERFACE</H3>
+<PRE>
+<B>VO_NO_SUCH_INTERFACE</B>
+</PRE>
+<DL>
+<DD>The specified interface does not exist. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_NO_SUCH_PROPERTY"></A>
+<H3 class="code">VO_NO_SUCH_PROPERTY</H3>
+<PRE>
+<B>VO_NO_SUCH_PROPERTY</B>
+</PRE>
+<DL>
+<DD>The specified property does not exist. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_READ_ONLY_PROPERTY"></A>
+<H3 class="code">VO_READ_ONLY_PROPERTY</H3>
+<PRE>
+<B>VO_READ_ONLY_PROPERTY</B>
+</PRE>
+<DL>
+<DD>The specified property is read-only. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_UNSUPPORTED_SERIALIZATION"></A>
+<H3 class="code">VO_UNSUPPORTED_SERIALIZATION</H3>
+<PRE>
+<B>VO_UNSUPPORTED_SERIALIZATION</B>
+</PRE>
+<DL>
+<DD>The specified object does not support serialization. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_LIMIT_EXCEEDED"></A>
+<H3 class="code">VO_LIMIT_EXCEEDED</H3>
+<PRE>
+<B>VO_LIMIT_EXCEEDED</B>
+</PRE>
+<DL>
+<DD>The requested operation cannot be performed because it would exceed the limit fixed as a programming guard. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_MODIFICATION_ACCESS_DENIED"></A>
+<H3 class="code">VO_MODIFICATION_ACCESS_DENIED</H3>
+<PRE>
+<B>VO_MODIFICATION_ACCESS_DENIED</B>
+</PRE>
+<DL>
+<DD>The object cannot be modified because it is in use by another object. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_OUT_OF_MEMORY"></A>
+<H3 class="code">VO_OUT_OF_MEMORY</H3>
+<PRE>
+<B>VO_OUT_OF_MEMORY</B>
+</PRE>
+<DL>
+<DD>The engine ran out of memory. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IO_FAILURE"></A>
+<H3 class="code">VO_IO_FAILURE</H3>
+<PRE>
+<B>VO_IO_FAILURE</B>
+</PRE>
+<DL>
+<DD>An Input/Output operation failed. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_PREMATURE_END_OF_DATA"></A>
+<H3 class="code">VO_PREMATURE_END_OF_DATA</H3>
+<PRE>
+<B>VO_PREMATURE_END_OF_DATA</B>
+</PRE>
+<DL>
+<DD>End of input has been reached while more data was needed. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_INTERNAL_ERROR"></A>
+<H3 class="code">VO_INTERNAL_ERROR</H3>
+<PRE>
+<B>VO_INTERNAL_ERROR</B>
+</PRE>
+<DL>
+<DD>The engine crashed. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_CANCELED"></A>
+<H3 class="code">VO_CANCELED</H3>
+<PRE>
+<B>VO_CANCELED</B>
+</PRE>
+<DL>
+<DD>The operation was canceled by the progress notification function. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

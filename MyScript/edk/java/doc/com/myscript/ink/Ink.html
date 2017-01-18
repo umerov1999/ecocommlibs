@@ -1,0 +1,815 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<title>Ink (MyScript SDK Java Reference Documentation)</title>
+<link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Ink (MyScript SDK Java Reference Documentation)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/Ink.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../com/myscript/ink/IInkStrokeSet.html" title="interface in com.myscript.ink"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../com/myscript/ink/InkCursor.html" title="class in com.myscript.ink"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/myscript/ink/Ink.html" target="_top">Frames</a></li>
+<li><a href="Ink.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#fields_inherited_from_class_com.myscript.engine.EngineObject">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">com.myscript.ink</div>
+<h2 title="Class Ink" class="title">Class Ink</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li>java.lang.Object</li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">com.myscript.engine.EngineObject</a></li>
+<li>
+<ul class="inheritance">
+<li>com.myscript.ink.Ink</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../com/myscript/engine/IDisposable.html" title="interface in com.myscript.engine">IDisposable</a>, <a href="../../../com/myscript/engine/IEngineObject.html" title="interface in com.myscript.engine">IEngineObject</a>, <a href="../../../com/myscript/engine/IVersionable.html" title="interface in com.myscript.engine">IVersionable</a>, <a href="../../../com/myscript/ink/IInkStrokeSet.html" title="interface in com.myscript.ink">IInkStrokeSet</a>, java.lang.Cloneable</dd>
+</dl>
+<hr>
+<br>
+<pre>public final class <span class="strong">Ink</span>
+extends <a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>
+implements <a href="../../../com/myscript/ink/IInkStrokeSet.html" title="interface in com.myscript.ink">IInkStrokeSet</a>, <a href="../../../com/myscript/engine/IVersionable.html" title="interface in com.myscript.engine">IVersionable</a></pre>
+<div class="block">Represents digital ink.</div>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_com.myscript.engine.EngineObject">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;com.myscript.engine.<a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></h3>
+<code><a href="../../../com/myscript/engine/EngineObject.html#DEFAULT_USER_LIMIT">DEFAULT_USER_LIMIT</a>, <a href="../../../com/myscript/engine/EngineObject.html#engine">engine</a>, <a href="../../../com/myscript/engine/EngineObject.html#reference">reference</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/Ink.html#addListener(com.myscript.ink.InkUpdateListener)">addListener</a></strong>(<a href="../../../com/myscript/ink/InkUpdateListener.html" title="class in com.myscript.ink">InkUpdateListener</a>&nbsp;listener)</code>
+<div class="block">Adds an update listener to this <code>Ink</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/Ink.html#addStroke(com.myscript.ink.InkStroke)">addStroke</a></strong>(<a href="../../../com/myscript/ink/InkStroke.html" title="class in com.myscript.ink">InkStroke</a>&nbsp;stroke)</code>
+<div class="block">Adds a stroke to this ink.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/Ink.html#addStroke(com.myscript.ink.InkStroke,%20long[])">addStroke</a></strong>(<a href="../../../com/myscript/ink/InkStroke.html" title="class in com.myscript.ink">InkStroke</a>&nbsp;stroke,
+         long[]&nbsp;tags)</code>
+<div class="block">Adds a stroke to the target ink and also add it to existing tags.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>long</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/Ink.html#addTag(java.lang.String)">addTag</a></strong>(java.lang.String&nbsp;name)</code>
+<div class="block">Adds a new empty tag to this ink.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>long</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/Ink.html#addTag(java.lang.String,%20com.myscript.ink.InkIntervals)">addTag</a></strong>(java.lang.String&nbsp;name,
+      <a href="../../../com/myscript/ink/InkIntervals.html" title="class in com.myscript.ink">InkIntervals</a>&nbsp;intervals)</code>
+<div class="block">Adds a new tag to this ink.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>long</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/Ink.html#addTag(java.lang.String,%20com.myscript.ink.InkIntervals,%20com.myscript.engine.EngineObject)">addTag</a></strong>(java.lang.String&nbsp;name,
+      <a href="../../../com/myscript/ink/InkIntervals.html" title="class in com.myscript.ink">InkIntervals</a>&nbsp;intervals,
+      <a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;data)</code>
+<div class="block">Adds a new tag to this ink.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/Ink.html#chop(com.myscript.ink.InkIntervals)">chop</a></strong>(<a href="../../../com/myscript/ink/InkIntervals.html" title="class in com.myscript.ink">InkIntervals</a>&nbsp;intervals)</code>
+<div class="block">Chops the strokes at the lower and upper endpoints of each interval from
+ the given intervals.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../com/myscript/ink/Ink.html" title="class in com.myscript.ink">Ink</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/Ink.html#create(com.myscript.engine.Engine)">create</a></strong>(<a href="../../../com/myscript/engine/Engine.html" title="class in com.myscript.engine">Engine</a>&nbsp;engine)</code>
+<div class="block">Static factory method that creates a new <code>Ink</code> object whose
+ parent is the specified <code>Engine</code> object.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../com/myscript/ink/Ink.html" title="class in com.myscript.ink">Ink</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/Ink.html#create(com.myscript.engine.Engine,%20com.myscript.ink.InkStrokeFormat)">create</a></strong>(<a href="../../../com/myscript/engine/Engine.html" title="class in com.myscript.engine">Engine</a>&nbsp;engine,
+      <a href="../../../com/myscript/ink/InkStrokeFormat.html" title="class in com.myscript.ink">InkStrokeFormat</a>&nbsp;strokeFormat)</code>
+<div class="block">Static factory method that creates a new <code>Ink</code> object whose
+ parent is the specified <code>Engine</code> object and whose strokes 
+ will be stored as described by <code>strokeFormat</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/Ink.html#erase(com.myscript.ink.InkIntervals)">erase</a></strong>(<a href="../../../com/myscript/ink/InkIntervals.html" title="class in com.myscript.ink">InkIntervals</a>&nbsp;intervals)</code>
+<div class="block">Erases the specified portion of ink.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/myscript/engine/HistoryManager.html" title="class in com.myscript.engine">HistoryManager</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/Ink.html#getHistoryManager()">getHistoryManager</a></strong>()</code>
+<div class="block">Returns the history manager that controls this object's history of changes.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/myscript/ink/IInkStrokeSet.html" title="interface in com.myscript.ink">IInkStrokeSet</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/Ink.html#getRawStrokes()">getRawStrokes</a></strong>()</code>
+<div class="block">Returns the raw strokes of the target ink as a stroke set.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/myscript/ink/InkStroke.html" title="class in com.myscript.ink">InkStroke</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/Ink.html#getStrokeAt(int)">getStrokeAt</a></strong>(int&nbsp;index)</code>
+<div class="block">Retrieves the stroke at the specified index in this stroke set.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/Ink.html#getStrokeCount()">getStrokeCount</a></strong>()</code>
+<div class="block">Retrieves the number of strokes in this stroke set.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/myscript/ink/InkStroke.html" title="class in com.myscript.ink">InkStroke</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/Ink.html#getStrokeFromId(long)">getStrokeFromId</a></strong>(long&nbsp;id)</code>
+<div class="block">Returns the stroke associated with <code>id</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>long</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/Ink.html#getStrokeId(com.myscript.ink.InkStroke)">getStrokeId</a></strong>(<a href="../../../com/myscript/ink/InkStroke.html" title="class in com.myscript.ink">InkStroke</a>&nbsp;stroke)</code>
+<div class="block">Returns the id associated with <code>stroke</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/myscript/ink/InkInterval.html" title="class in com.myscript.ink">InkInterval</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/Ink.html#getStrokeInterval(com.myscript.ink.InkStroke)">getStrokeInterval</a></strong>(<a href="../../../com/myscript/ink/InkStroke.html" title="class in com.myscript.ink">InkStroke</a>&nbsp;stroke)</code>
+<div class="block">Returns the interval associated with a given stroke.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/Ink.html#lock()">lock</a></strong>()</code>
+<div class="block">Acquires exclusive access to the target object by the current thread.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/Ink.html#paste(com.myscript.ink.IInkStrokeSet)">paste</a></strong>(<a href="../../../com/myscript/ink/IInkStrokeSet.html" title="interface in com.myscript.ink">IInkStrokeSet</a>&nbsp;strokeSet)</code>
+<div class="block">Adds all the strokes from the specified set into this ink.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/Ink.html#removeListener(com.myscript.ink.InkUpdateListener)">removeListener</a></strong>(<a href="../../../com/myscript/ink/InkUpdateListener.html" title="class in com.myscript.ink">InkUpdateListener</a>&nbsp;listener)</code>
+<div class="block">Removes an update listener from this <code>Ink</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../com/myscript/ink/InkTagIterator.html" title="class in com.myscript.ink">InkTagIterator</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/Ink.html#tagLookup(com.myscript.ink.InkTagQuery)">tagLookup</a></strong>(<a href="../../../com/myscript/ink/InkTagQuery.html" title="class in com.myscript.ink">InkTagQuery</a>&nbsp;query)</code>
+<div class="block">Returns an iterator over the tags selected by the specified query.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/Ink.html#tagLookupCount(com.myscript.ink.InkTagQuery)">tagLookupCount</a></strong>(<a href="../../../com/myscript/ink/InkTagQuery.html" title="class in com.myscript.ink">InkTagQuery</a>&nbsp;query)</code>
+<div class="block">Returns the number of tags selected by the specified query.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/Ink.html#transform(com.myscript.ink.InkIntervals,%20com.myscript.geometry.Transform)">transform</a></strong>(<a href="../../../com/myscript/ink/InkIntervals.html" title="class in com.myscript.ink">InkIntervals</a>&nbsp;intervals,
+         com.myscript.geometry.Transform&nbsp;transform)</code>
+<div class="block">Transforms the strokes referenced by the given intervals.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/Ink.html#unlock()">unlock</a></strong>()</code>
+<div class="block">Releases exclusive access to the target object by the current thread.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/Ink.html#updateTag(long,%20com.myscript.ink.InkIntervals)">updateTag</a></strong>(long&nbsp;tagId,
+         <a href="../../../com/myscript/ink/InkIntervals.html" title="class in com.myscript.ink">InkIntervals</a>&nbsp;newIntervals)</code>
+<div class="block">Updates a tag from this ink.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/Ink.html#updateTag(long,%20com.myscript.ink.InkIntervals,%20com.myscript.engine.EngineObject)">updateTag</a></strong>(long&nbsp;tagId,
+         <a href="../../../com/myscript/ink/InkIntervals.html" title="class in com.myscript.ink">InkIntervals</a>&nbsp;newIntervals,
+         <a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;newData)</code>
+<div class="block">Updates a tag from this ink.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.myscript.engine.EngineObject">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;com.myscript.engine.<a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></h3>
+<code><a href="../../../com/myscript/engine/EngineObject.html#acquire()">acquire</a>, <a href="../../../com/myscript/engine/EngineObject.html#checkDisposed()">checkDisposed</a>, <a href="../../../com/myscript/engine/EngineObject.html#clone()">clone</a>, <a href="../../../com/myscript/engine/EngineObject.html#dispose()">dispose</a>, <a href="../../../com/myscript/engine/EngineObject.html#finalize()">finalize</a>, <a href="../../../com/myscript/engine/EngineObject.html#getAttachReferenceCount()">getAttachReferenceCount</a>, <a href="../../../com/myscript/engine/EngineObject.html#getEngine()">getEngine</a>, <a href="../../../com/myscript/engine/EngineObject.html#getMemoryUsage()">getMemoryUsage</a>, <a href="../../../com/myscript/engine/EngineObject.html#getNativeReference()">getNativeReference</a>, <a href="../../../com/myscript/engine/EngineObject.html#getUserCount(com.myscript.engine.Engine)">getUserCount</a>, <a href="../../../com/myscript/engine/EngineObject.html#getUserLimit(com.myscript.engine.Engine)">getUserLimit</a>, <a href="../../../com/myscript/engine/EngineObject.html#getUserReferenceCount()">getUserReferenceCount</a>, <a href="../../../com/myscript/engine/EngineObject.html#isDisposed()">isDisposed</a>, <a href="../../../com/myscript/engine/EngineObject.html#isSame(com.myscript.engine.EngineObject)">isSame</a>, <a href="../../../com/myscript/engine/EngineObject.html#load(com.myscript.engine.Engine,%20java.nio.channels.ReadableByteChannel)">load</a>, <a href="../../../com/myscript/engine/EngineObject.html#load(com.myscript.engine.Engine,%20java.lang.String)">load</a>, <a href="../../../com/myscript/engine/EngineObject.html#load(com.myscript.engine.Engine,%20java.lang.String,%20java.lang.String)">load</a>, <a href="../../../com/myscript/engine/EngineObject.html#resetUserLimit(com.myscript.engine.Engine)">resetUserLimit</a>, <a href="../../../com/myscript/engine/EngineObject.html#setUserLimit(com.myscript.engine.Engine,%20int)">setUserLimit</a>, <a href="../../../com/myscript/engine/EngineObject.html#store(java.lang.String)">store</a>, <a href="../../../com/myscript/engine/EngineObject.html#store(java.lang.String,%20java.lang.String)">store</a>, <a href="../../../com/myscript/engine/EngineObject.html#store(java.nio.channels.WritableByteChannel)">store</a>, <a href="../../../com/myscript/engine/EngineObject.html#toString()">toString</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>equals, getClass, hashCode, notify, notifyAll, wait, wait, wait</code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.myscript.engine.IEngineObject">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;com.myscript.engine.<a href="../../../com/myscript/engine/IEngineObject.html" title="interface in com.myscript.engine">IEngineObject</a></h3>
+<code><a href="../../../com/myscript/engine/IEngineObject.html#getEngine()">getEngine</a>, <a href="../../../com/myscript/engine/IEngineObject.html#getNativeReference()">getNativeReference</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.myscript.engine.IDisposable">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;com.myscript.engine.<a href="../../../com/myscript/engine/IDisposable.html" title="interface in com.myscript.engine">IDisposable</a></h3>
+<code><a href="../../../com/myscript/engine/IDisposable.html#dispose()">dispose</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="create(com.myscript.engine.Engine)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>create</h4>
+<pre>public static final&nbsp;<a href="../../../com/myscript/ink/Ink.html" title="class in com.myscript.ink">Ink</a>&nbsp;create(<a href="../../../com/myscript/engine/Engine.html" title="class in com.myscript.engine">Engine</a>&nbsp;engine)
+                        throws java.lang.NullPointerException,
+                               java.lang.IllegalStateException,
+                               <a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a>,
+                               <a href="../../../com/myscript/engine/OutOfMemoryException.html" title="class in com.myscript.engine">OutOfMemoryException</a></pre>
+<div class="block">Static factory method that creates a new <code>Ink</code> object whose
+ parent is the specified <code>Engine</code> object.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>engine</code> - the parent <code>Engine</code> object.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new <code>Ink</code> object.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.NullPointerException</code> - when <code>engine</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>engine</code> has been disposed
+           of.</dd>
+<dd><code><a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></code> - when the object user limit has been reached.</dd>
+<dd><code><a href="../../../com/myscript/engine/OutOfMemoryException.html" title="class in com.myscript.engine">OutOfMemoryException</a></code> - when the MyScript Engine failed to allocate
+           memory.</dd></dl>
+</li>
+</ul>
+<a name="create(com.myscript.engine.Engine, com.myscript.ink.InkStrokeFormat)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>create</h4>
+<pre>public static final&nbsp;<a href="../../../com/myscript/ink/Ink.html" title="class in com.myscript.ink">Ink</a>&nbsp;create(<a href="../../../com/myscript/engine/Engine.html" title="class in com.myscript.engine">Engine</a>&nbsp;engine,
+         <a href="../../../com/myscript/ink/InkStrokeFormat.html" title="class in com.myscript.ink">InkStrokeFormat</a>&nbsp;strokeFormat)
+                        throws java.lang.NullPointerException,
+                               java.lang.IllegalStateException,
+                               <a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a>,
+                               <a href="../../../com/myscript/engine/OutOfMemoryException.html" title="class in com.myscript.engine">OutOfMemoryException</a></pre>
+<div class="block">Static factory method that creates a new <code>Ink</code> object whose
+ parent is the specified <code>Engine</code> object and whose strokes 
+ will be stored as described by <code>strokeFormat</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>engine</code> - the parent <code>Engine</code> object.</dd><dd><code>strokeFormat</code> - the default stroke format to use for strokes.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new <code>Ink</code> object.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.NullPointerException</code> - when <code>engine</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>engine</code> has been disposed
+           of.</dd>
+<dd><code><a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></code> - when the object user limit has been reached.</dd>
+<dd><code><a href="../../../com/myscript/engine/OutOfMemoryException.html" title="class in com.myscript.engine">OutOfMemoryException</a></code> - when the MyScript Engine failed to allocate
+           memory.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>strokeFormat</code> has been disposed
+           of.</dd></dl>
+</li>
+</ul>
+<a name="getHistoryManager()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getHistoryManager</h4>
+<pre>public&nbsp;<a href="../../../com/myscript/engine/HistoryManager.html" title="class in com.myscript.engine">HistoryManager</a>&nbsp;getHistoryManager()
+                                 throws java.lang.IllegalStateException</pre>
+<div class="block">Returns the history manager that controls this object's history of changes.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/engine/IVersionable.html#getHistoryManager()">getHistoryManager</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/engine/IVersionable.html" title="interface in com.myscript.engine">IVersionable</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the history manager.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this versionable object has been disposed
+           of.</dd></dl>
+</li>
+</ul>
+<a name="lock()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>lock</h4>
+<pre>public&nbsp;void&nbsp;lock()
+          throws java.lang.IllegalStateException</pre>
+<div class="block">Acquires exclusive access to the target object by the current thread. This
+ should be used whenever a versionable object is accessed from several
+ threads, to ensure modifications do not collide.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/engine/IVersionable.html#lock()">lock</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/engine/IVersionable.html" title="interface in com.myscript.engine">IVersionable</a></code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this versionable object has been
+           disposed of.</dd></dl>
+</li>
+</ul>
+<a name="unlock()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>unlock</h4>
+<pre>public&nbsp;void&nbsp;unlock()
+            throws java.lang.IllegalStateException</pre>
+<div class="block">Releases exclusive access to the target object by the current thread. This
+ should be used whenever a versionable object is accessed from several
+ threads, to ensure modifications do not collide.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/engine/IVersionable.html#unlock()">unlock</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/engine/IVersionable.html" title="interface in com.myscript.engine">IVersionable</a></code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - when this versionable object has been
+           disposed of.</dd></dl>
+</li>
+</ul>
+<a name="addListener(com.myscript.ink.InkUpdateListener)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addListener</h4>
+<pre>public&nbsp;void&nbsp;addListener(<a href="../../../com/myscript/ink/InkUpdateListener.html" title="class in com.myscript.ink">InkUpdateListener</a>&nbsp;listener)</pre>
+<div class="block">Adds an update listener to this <code>Ink</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>listener</code> - the listener to add.</dd></dl>
+</li>
+</ul>
+<a name="removeListener(com.myscript.ink.InkUpdateListener)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeListener</h4>
+<pre>public&nbsp;void&nbsp;removeListener(<a href="../../../com/myscript/ink/InkUpdateListener.html" title="class in com.myscript.ink">InkUpdateListener</a>&nbsp;listener)</pre>
+<div class="block">Removes an update listener from this <code>Ink</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>listener</code> - the listener to remove.</dd></dl>
+</li>
+</ul>
+<a name="getStrokeCount()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStrokeCount</h4>
+<pre>public&nbsp;int&nbsp;getStrokeCount()</pre>
+<div class="block">Retrieves the number of strokes in this stroke set.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/ink/IInkStrokeSet.html#getStrokeCount()">getStrokeCount</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/ink/IInkStrokeSet.html" title="interface in com.myscript.ink">IInkStrokeSet</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the number of strokes.</dd></dl>
+</li>
+</ul>
+<a name="getStrokeAt(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStrokeAt</h4>
+<pre>public&nbsp;<a href="../../../com/myscript/ink/InkStroke.html" title="class in com.myscript.ink">InkStroke</a>&nbsp;getStrokeAt(int&nbsp;index)
+                      throws java.lang.IndexOutOfBoundsException</pre>
+<div class="block">Retrieves the stroke at the specified index in this stroke set.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/ink/IInkStrokeSet.html#getStrokeAt(int)">getStrokeAt</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/ink/IInkStrokeSet.html" title="interface in com.myscript.ink">IInkStrokeSet</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>index</code> - the index of the stroke to retrieve.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the requested stroke.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IndexOutOfBoundsException</code> - if
+           <code>(index &lt; 0 || index &gt;= getStrokeCount())</code>.</dd></dl>
+</li>
+</ul>
+<a name="addStroke(com.myscript.ink.InkStroke)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addStroke</h4>
+<pre>public&nbsp;void&nbsp;addStroke(<a href="../../../com/myscript/ink/InkStroke.html" title="class in com.myscript.ink">InkStroke</a>&nbsp;stroke)</pre>
+<div class="block">Adds a stroke to this ink.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>stroke</code> - the stroke to add</dd></dl>
+</li>
+</ul>
+<a name="addStroke(com.myscript.ink.InkStroke, long[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addStroke</h4>
+<pre>public&nbsp;void&nbsp;addStroke(<a href="../../../com/myscript/ink/InkStroke.html" title="class in com.myscript.ink">InkStroke</a>&nbsp;stroke,
+             long[]&nbsp;tags)</pre>
+<div class="block">Adds a stroke to the target ink and also add it to existing tags.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>stroke</code> - the stroke to add.</dd><dd><code>tags</code> - an array of the tags to add the stroke to.</dd></dl>
+</li>
+</ul>
+<a name="paste(com.myscript.ink.IInkStrokeSet)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>paste</h4>
+<pre>public&nbsp;void&nbsp;paste(<a href="../../../com/myscript/ink/IInkStrokeSet.html" title="interface in com.myscript.ink">IInkStrokeSet</a>&nbsp;strokeSet)</pre>
+<div class="block">Adds all the strokes from the specified set into this ink.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>strokeSet</code> - the set of strokes to add.</dd></dl>
+</li>
+</ul>
+<a name="erase(com.myscript.ink.InkIntervals)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>erase</h4>
+<pre>public&nbsp;void&nbsp;erase(<a href="../../../com/myscript/ink/InkIntervals.html" title="class in com.myscript.ink">InkIntervals</a>&nbsp;intervals)</pre>
+<div class="block">Erases the specified portion of ink.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>intervals</code> - the ink intervals that represent the portion to erase.</dd></dl>
+</li>
+</ul>
+<a name="chop(com.myscript.ink.InkIntervals)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>chop</h4>
+<pre>public&nbsp;void&nbsp;chop(<a href="../../../com/myscript/ink/InkIntervals.html" title="class in com.myscript.ink">InkIntervals</a>&nbsp;intervals)</pre>
+<div class="block">Chops the strokes at the lower and upper endpoints of each interval from
+ the given intervals.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>intervals</code> - the ink intervals that represent the strokes to chop.</dd></dl>
+</li>
+</ul>
+<a name="transform(com.myscript.ink.InkIntervals, com.myscript.geometry.Transform)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>transform</h4>
+<pre>public&nbsp;void&nbsp;transform(<a href="../../../com/myscript/ink/InkIntervals.html" title="class in com.myscript.ink">InkIntervals</a>&nbsp;intervals,
+             com.myscript.geometry.Transform&nbsp;transform)</pre>
+<div class="block">Transforms the strokes referenced by the given intervals.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>intervals</code> - the ink intervals that represent the strokes to transform.</dd><dd><code>transform</code> - the transform to apply.</dd></dl>
+</li>
+</ul>
+<a name="getRawStrokes()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRawStrokes</h4>
+<pre>public&nbsp;<a href="../../../com/myscript/ink/IInkStrokeSet.html" title="interface in com.myscript.ink">IInkStrokeSet</a>&nbsp;getRawStrokes()</pre>
+<div class="block">Returns the raw strokes of the target ink as a stroke set. Raw strokes are
+ left unchanged after any of the erase(), chop(), and transform()
+ operations.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the set of raw strokes.</dd></dl>
+</li>
+</ul>
+<a name="getStrokeInterval(com.myscript.ink.InkStroke)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStrokeInterval</h4>
+<pre>public&nbsp;<a href="../../../com/myscript/ink/InkInterval.html" title="class in com.myscript.ink">InkInterval</a>&nbsp;getStrokeInterval(<a href="../../../com/myscript/ink/InkStroke.html" title="class in com.myscript.ink">InkStroke</a>&nbsp;stroke)</pre>
+<div class="block">Returns the interval associated with a given stroke.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>stroke</code> - the stroke to get the interval from.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the interval.</dd></dl>
+</li>
+</ul>
+<a name="addTag(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addTag</h4>
+<pre>public&nbsp;long&nbsp;addTag(java.lang.String&nbsp;name)</pre>
+<div class="block">Adds a new empty tag to this ink.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>name</code> - the name of the tag.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the id of the tag</dd></dl>
+</li>
+</ul>
+<a name="addTag(java.lang.String, com.myscript.ink.InkIntervals)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addTag</h4>
+<pre>public&nbsp;long&nbsp;addTag(java.lang.String&nbsp;name,
+          <a href="../../../com/myscript/ink/InkIntervals.html" title="class in com.myscript.ink">InkIntervals</a>&nbsp;intervals)</pre>
+<div class="block">Adds a new tag to this ink.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>name</code> - the name of the tag.</dd><dd><code>intervals</code> - the intervals that define the segment to be associated
+          with the tag.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the id of the tag.</dd></dl>
+</li>
+</ul>
+<a name="addTag(java.lang.String, com.myscript.ink.InkIntervals, com.myscript.engine.EngineObject)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addTag</h4>
+<pre>public&nbsp;long&nbsp;addTag(java.lang.String&nbsp;name,
+          <a href="../../../com/myscript/ink/InkIntervals.html" title="class in com.myscript.ink">InkIntervals</a>&nbsp;intervals,
+          <a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;data)</pre>
+<div class="block">Adds a new tag to this ink.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>name</code> - the name of the tag.</dd><dd><code>intervals</code> - the intervals that define the segment to be associated
+          with the tag.</dd><dd><code>data</code> - the data to be associated with the tag.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the id of the tag.</dd></dl>
+</li>
+</ul>
+<a name="updateTag(long, com.myscript.ink.InkIntervals)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>updateTag</h4>
+<pre>public&nbsp;void&nbsp;updateTag(long&nbsp;tagId,
+             <a href="../../../com/myscript/ink/InkIntervals.html" title="class in com.myscript.ink">InkIntervals</a>&nbsp;newIntervals)</pre>
+<div class="block">Updates a tag from this ink.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>tagId</code> - the id of the tag.</dd><dd><code>newIntervals</code> - the intervals that define the segment to be associated
+          with the tag.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.NullPointerException</code> - when <code>newIntervals</code> is null.</dd></dl>
+</li>
+</ul>
+<a name="updateTag(long, com.myscript.ink.InkIntervals, com.myscript.engine.EngineObject)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>updateTag</h4>
+<pre>public&nbsp;void&nbsp;updateTag(long&nbsp;tagId,
+             <a href="../../../com/myscript/ink/InkIntervals.html" title="class in com.myscript.ink">InkIntervals</a>&nbsp;newIntervals,
+             <a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>&nbsp;newData)</pre>
+<div class="block">Updates a tag from this ink.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>tagId</code> - the id of the tag.</dd><dd><code>newIntervals</code> - the intervals that define the segment to be associated
+          with the tag.</dd><dd><code>newData</code> - the data to be associated with the tag.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.NullPointerException</code> - when both <code>newIntervals</code> and
+           <code>newData</code> are null.</dd></dl>
+</li>
+</ul>
+<a name="tagLookupCount(com.myscript.ink.InkTagQuery)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>tagLookupCount</h4>
+<pre>public&nbsp;int&nbsp;tagLookupCount(<a href="../../../com/myscript/ink/InkTagQuery.html" title="class in com.myscript.ink">InkTagQuery</a>&nbsp;query)</pre>
+<div class="block">Returns the number of tags selected by the specified query.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>query</code> - the query that defines the selection criteria.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the number of selected tags.</dd></dl>
+</li>
+</ul>
+<a name="tagLookup(com.myscript.ink.InkTagQuery)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>tagLookup</h4>
+<pre>public&nbsp;<a href="../../../com/myscript/ink/InkTagIterator.html" title="class in com.myscript.ink">InkTagIterator</a>&nbsp;tagLookup(<a href="../../../com/myscript/ink/InkTagQuery.html" title="class in com.myscript.ink">InkTagQuery</a>&nbsp;query)</pre>
+<div class="block">Returns an iterator over the tags selected by the specified query.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>query</code> - the query that defines the selection criteria.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>an iterator over the selected tags.</dd></dl>
+</li>
+</ul>
+<a name="getStrokeId(com.myscript.ink.InkStroke)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStrokeId</h4>
+<pre>public&nbsp;long&nbsp;getStrokeId(<a href="../../../com/myscript/ink/InkStroke.html" title="class in com.myscript.ink">InkStroke</a>&nbsp;stroke)
+                 throws java.lang.NullPointerException</pre>
+<div class="block">Returns the id associated with <code>stroke</code>. 
+ If <code>stroke</code> is chopped or erased (even partially), that 
+ id will not be valid anymore. 
+ If <code>stroke</code> is entirely transformed however, id will stay 
+ valid.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>stroke</code> - the stroke to get the id from.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the stroke id.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.NullPointerException</code> - when <code>stroke</code> is null.</dd></dl>
+</li>
+</ul>
+<a name="getStrokeFromId(long)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getStrokeFromId</h4>
+<pre>public&nbsp;<a href="../../../com/myscript/ink/InkStroke.html" title="class in com.myscript.ink">InkStroke</a>&nbsp;getStrokeFromId(long&nbsp;id)</pre>
+<div class="block">Returns the stroke associated with <code>id</code>. Stroke <code>id</code>
+ can be retrieved by calling <code>getStrokeId()</code>. If stroke was
+ chopped or erased (even partially) since <code>id</code> was retrieved,
+ <code>id</code> will not be valid anymore and this function will throw an
+ <code>IllegalArgumentException</code>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>id</code> - the id of the stroke to retrieve.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the stroke corresponding to <code>id</code>.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>id</code> does not correspond
+           to a possible stroke (e.g. it references a deleted stroke).</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/Ink.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../com/myscript/ink/IInkStrokeSet.html" title="interface in com.myscript.ink"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../com/myscript/ink/InkCursor.html" title="class in com.myscript.ink"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/myscript/ink/Ink.html" target="_top">Frames</a></li>
+<li><a href="Ink.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#fields_inherited_from_class_com.myscript.engine.EngineObject">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+</body>
+</html>

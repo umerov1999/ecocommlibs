@@ -1,0 +1,7 @@
+﻿  MyCertificate.c
+  MyScriptEngine-strerror.c
+  common.c
+  StoreMetadata.c
+  Generating Code...
+  document_StoreMetadata.vcxproj -> C:\Users\JYChoi\Desktop\Myscript_P\edk\c\examples\_win-vs14\../bin/win-x86-Debug\08.document.05-StoreMetadata.exe
+  document_StoreMetadata.vcxproj -> ../bin/win-x86-Debug\08.document.05-StoreMetadata.pdb (Full PDB)

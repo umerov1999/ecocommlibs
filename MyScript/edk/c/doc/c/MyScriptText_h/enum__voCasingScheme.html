@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>_voCasingScheme</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="_voCasingScheme";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptText.h</FONT>
+<BR>
+Enumeration _voCasingScheme</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptText.h&gt;</CODE>
+<BR>
+<CODE>enum <B>__voCasingScheme</B></CODE>
+</P>
+<P>Lists the casing scheme values. <P>
+
+<P>
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>4.5_5 </P>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Value_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Value Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_STRICT_CASE">VO_STRICT_CASE</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The recognition process applies conservative casing rules: only the strict content of a  <CODE><A href="../../c/MyScriptText_h/voVocabulary.html">voVocabulary</A></CODE> can be recognized, without allowing case variations. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_LEGACY_CASE">VO_LEGACY_CASE</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The recognition process applies Vision Object's legacy casing rules: </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_LAX_CASE">VO_LAX_CASE</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The recognition process applies relaxed casing rules: any combination of lowercase or uppercase letters is allowed in a  <CODE><A href="../../c/MyScriptText_h/voVocabulary.html">voVocabulary</A></CODE> entry, <emphasis xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">"lIkE THiS"</emphasis>. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#_voCasingScheme_FORCE_INT_SIZE">_voCasingScheme_FORCE_INT_SIZE</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  0x7FFFFFFF</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Value_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Value Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="VO_STRICT_CASE"></A>
+<H3 class="code">VO_STRICT_CASE</H3>
+<PRE>
+<B>VO_STRICT_CASE</B>
+</PRE>
+<DL>
+<DD>The recognition process applies conservative casing rules: only the strict content of a  <CODE><A href="../../c/MyScriptText_h/voVocabulary.html">voVocabulary</A></CODE> can be recognized, without allowing case variations. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_LEGACY_CASE"></A>
+<H3 class="code">VO_LEGACY_CASE</H3>
+<PRE>
+<B>VO_LEGACY_CASE</B>
+</PRE>
+<DL>
+<DD>The recognition process applies Vision Object's legacy casing rules: <P>
+
+<P>
+<PRE>
+[Vocabulary entry] -&gt; [What can be recognized]
+hello              -&gt; hello, Hello, HELLO
+Hello              -&gt; Hello, HELLO
+HELLO              -&gt; HELLO
+</PRE> 
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_LAX_CASE"></A>
+<H3 class="code">VO_LAX_CASE</H3>
+<PRE>
+<B>VO_LAX_CASE</B>
+</PRE>
+<DL>
+<DD>The recognition process applies relaxed casing rules: any combination of lowercase or uppercase letters is allowed in a  <CODE><A href="../../c/MyScriptText_h/voVocabulary.html">voVocabulary</A></CODE> entry, <emphasis>"lIkE THiS"</emphasis>. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="_voCasingScheme_FORCE_INT_SIZE"></A>
+<H3 class="code">_voCasingScheme_FORCE_INT_SIZE</H3>
+<PRE>
+<B>_voCasingScheme_FORCE_INT_SIZE</B>
+</PRE>
+<DL>
+<DD>
+<P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

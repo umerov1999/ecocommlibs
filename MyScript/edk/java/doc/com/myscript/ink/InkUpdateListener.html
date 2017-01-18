@@ -1,0 +1,494 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<title>InkUpdateListener (MyScript SDK Java Reference Documentation)</title>
+<link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="InkUpdateListener (MyScript SDK Java Reference Documentation)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/InkUpdateListener.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../com/myscript/ink/InkTagQuery.html" title="class in com.myscript.ink"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../com/myscript/ink/InkUpdateListener.TagInfo.html" title="class in com.myscript.ink"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/myscript/ink/InkUpdateListener.html" target="_top">Frames</a></li>
+<li><a href="InkUpdateListener.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li><a href="#nested_class_summary">Nested</a>&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">com.myscript.ink</div>
+<h2 title="Class InkUpdateListener" class="title">Class InkUpdateListener</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li>java.lang.Object</li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">com.myscript.engine.EngineObject</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../com/myscript/engine/UserObject.html" title="class in com.myscript.engine">com.myscript.engine.UserObject</a></li>
+<li>
+<ul class="inheritance">
+<li>com.myscript.ink.InkUpdateListener</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../com/myscript/engine/IDisposable.html" title="interface in com.myscript.engine">IDisposable</a>, <a href="../../../com/myscript/engine/IEngineObject.html" title="interface in com.myscript.engine">IEngineObject</a>, java.lang.Cloneable</dd>
+</dl>
+<hr>
+<br>
+<pre>public class <span class="strong">InkUpdateListener</span>
+extends <a href="../../../com/myscript/engine/UserObject.html" title="class in com.myscript.engine">UserObject</a></pre>
+<div class="block">The <code>InkUpdateListener</code> class models an object that will receive
+ notification of changes that occur on an <code>Ink</code> object.</div>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="nested_class_summary">
+<!--   -->
+</a>
+<h3>Nested Class Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Nested Class Summary table, listing nested classes, and an explanation">
+<caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/InkUpdateListener.TagInfo.html" title="class in com.myscript.ink">InkUpdateListener.TagInfo</a></strong></code>
+<div class="block">Represents information about what happened to a tag.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/InkUpdateListener.html#CF_DATA_CHANGED">CF_DATA_CHANGED</a></strong></code>
+<div class="block">Indicates that portions of the tag segment where removed or added.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/InkUpdateListener.html#CF_TRANSFORM_APPLIED">CF_TRANSFORM_APPLIED</a></strong></code>
+<div class="block">Indicates that a transform has been applied to (at least some of) the
+ strokes referenced by the tag segment.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/InkUpdateListener.html#TAG_ADDED">TAG_ADDED</a></strong></code>
+<div class="block">Value of <a href="../../../com/myscript/ink/InkUpdateListener.TagInfo.html#getAction()"><code>InkUpdateListener.TagInfo.getAction()</code></a> when the tag was added.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/InkUpdateListener.html#TAG_DELETED">TAG_DELETED</a></strong></code>
+<div class="block">Value of <a href="../../../com/myscript/ink/InkUpdateListener.TagInfo.html#getAction()"><code>InkUpdateListener.TagInfo.getAction()</code></a> when the tag was deleted.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/InkUpdateListener.html#TAG_UPDATED">TAG_UPDATED</a></strong></code>
+<div class="block">Value of <a href="../../../com/myscript/ink/InkUpdateListener.TagInfo.html#getAction()"><code>InkUpdateListener.TagInfo.getAction()</code></a> when the tag was updated.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_com.myscript.engine.EngineObject">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;com.myscript.engine.<a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></h3>
+<code><a href="../../../com/myscript/engine/EngineObject.html#DEFAULT_USER_LIMIT">DEFAULT_USER_LIMIT</a>, <a href="../../../com/myscript/engine/EngineObject.html#engine">engine</a>, <a href="../../../com/myscript/engine/EngineObject.html#reference">reference</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier</th>
+<th class="colLast" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected </code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/InkUpdateListener.html#InkUpdateListener(com.myscript.engine.Engine)">InkUpdateListener</a></strong>(<a href="../../../com/myscript/engine/Engine.html" title="class in com.myscript.engine">Engine</a>&nbsp;engine)</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/InkUpdateListener.html#added(com.myscript.ink.Ink)">added</a></strong>(<a href="../../../com/myscript/ink/Ink.html" title="class in com.myscript.ink">Ink</a>&nbsp;ink)</code>
+<div class="block">Called when this update listener is added to an ink object.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/InkUpdateListener.html#finalize()">finalize</a></strong>()</code>
+<div class="block">Called by the garbage collector on an <code>EngineObject</code> when
+ garbage collection determines that there are no more references to the
+ object.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/InkUpdateListener.html#onUpdate(com.myscript.ink.Ink,%20com.myscript.geometry.Extent,%20com.myscript.ink.InkUpdateListener.TagInfo[])">onUpdate</a></strong>(<a href="../../../com/myscript/ink/Ink.html" title="class in com.myscript.ink">Ink</a>&nbsp;ink,
+        com.myscript.geometry.Extent&nbsp;extent,
+        <a href="../../../com/myscript/ink/InkUpdateListener.TagInfo.html" title="class in com.myscript.ink">InkUpdateListener.TagInfo</a>[]&nbsp;tagInfos)</code>
+<div class="block">Called when ink has been modified and needs update.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/InkUpdateListener.html#removed(com.myscript.ink.Ink)">removed</a></strong>(<a href="../../../com/myscript/ink/Ink.html" title="class in com.myscript.ink">Ink</a>&nbsp;ink)</code>
+<div class="block">Called when this listener is removed from an ink object.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.myscript.engine.UserObject">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;com.myscript.engine.<a href="../../../com/myscript/engine/UserObject.html" title="class in com.myscript.engine">UserObject</a></h3>
+<code><a href="../../../com/myscript/engine/UserObject.html#init()">init</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.myscript.engine.EngineObject">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;com.myscript.engine.<a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></h3>
+<code><a href="../../../com/myscript/engine/EngineObject.html#acquire()">acquire</a>, <a href="../../../com/myscript/engine/EngineObject.html#checkDisposed()">checkDisposed</a>, <a href="../../../com/myscript/engine/EngineObject.html#clone()">clone</a>, <a href="../../../com/myscript/engine/EngineObject.html#dispose()">dispose</a>, <a href="../../../com/myscript/engine/EngineObject.html#getAttachReferenceCount()">getAttachReferenceCount</a>, <a href="../../../com/myscript/engine/EngineObject.html#getEngine()">getEngine</a>, <a href="../../../com/myscript/engine/EngineObject.html#getMemoryUsage()">getMemoryUsage</a>, <a href="../../../com/myscript/engine/EngineObject.html#getNativeReference()">getNativeReference</a>, <a href="../../../com/myscript/engine/EngineObject.html#getUserCount(com.myscript.engine.Engine)">getUserCount</a>, <a href="../../../com/myscript/engine/EngineObject.html#getUserLimit(com.myscript.engine.Engine)">getUserLimit</a>, <a href="../../../com/myscript/engine/EngineObject.html#getUserReferenceCount()">getUserReferenceCount</a>, <a href="../../../com/myscript/engine/EngineObject.html#isDisposed()">isDisposed</a>, <a href="../../../com/myscript/engine/EngineObject.html#isSame(com.myscript.engine.EngineObject)">isSame</a>, <a href="../../../com/myscript/engine/EngineObject.html#load(com.myscript.engine.Engine,%20java.nio.channels.ReadableByteChannel)">load</a>, <a href="../../../com/myscript/engine/EngineObject.html#load(com.myscript.engine.Engine,%20java.lang.String)">load</a>, <a href="../../../com/myscript/engine/EngineObject.html#load(com.myscript.engine.Engine,%20java.lang.String,%20java.lang.String)">load</a>, <a href="../../../com/myscript/engine/EngineObject.html#resetUserLimit(com.myscript.engine.Engine)">resetUserLimit</a>, <a href="../../../com/myscript/engine/EngineObject.html#setUserLimit(com.myscript.engine.Engine,%20int)">setUserLimit</a>, <a href="../../../com/myscript/engine/EngineObject.html#store(java.lang.String)">store</a>, <a href="../../../com/myscript/engine/EngineObject.html#store(java.lang.String,%20java.lang.String)">store</a>, <a href="../../../com/myscript/engine/EngineObject.html#store(java.nio.channels.WritableByteChannel)">store</a>, <a href="../../../com/myscript/engine/EngineObject.html#toString()">toString</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>equals, getClass, hashCode, notify, notifyAll, wait, wait, wait</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="TAG_ADDED">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>TAG_ADDED</h4>
+<pre>public static final&nbsp;int TAG_ADDED</pre>
+<div class="block">Value of <a href="../../../com/myscript/ink/InkUpdateListener.TagInfo.html#getAction()"><code>InkUpdateListener.TagInfo.getAction()</code></a> when the tag was added.</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../constant-values.html#com.myscript.ink.InkUpdateListener.TAG_ADDED">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="TAG_UPDATED">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>TAG_UPDATED</h4>
+<pre>public static final&nbsp;int TAG_UPDATED</pre>
+<div class="block">Value of <a href="../../../com/myscript/ink/InkUpdateListener.TagInfo.html#getAction()"><code>InkUpdateListener.TagInfo.getAction()</code></a> when the tag was updated.</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../constant-values.html#com.myscript.ink.InkUpdateListener.TAG_UPDATED">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="TAG_DELETED">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>TAG_DELETED</h4>
+<pre>public static final&nbsp;int TAG_DELETED</pre>
+<div class="block">Value of <a href="../../../com/myscript/ink/InkUpdateListener.TagInfo.html#getAction()"><code>InkUpdateListener.TagInfo.getAction()</code></a> when the tag was deleted.</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../constant-values.html#com.myscript.ink.InkUpdateListener.TAG_DELETED">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="CF_DATA_CHANGED">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CF_DATA_CHANGED</h4>
+<pre>public static final&nbsp;int CF_DATA_CHANGED</pre>
+<div class="block">Indicates that portions of the tag segment where removed or added.</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../constant-values.html#com.myscript.ink.InkUpdateListener.CF_DATA_CHANGED">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="CF_TRANSFORM_APPLIED">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>CF_TRANSFORM_APPLIED</h4>
+<pre>public static final&nbsp;int CF_TRANSFORM_APPLIED</pre>
+<div class="block">Indicates that a transform has been applied to (at least some of) the
+ strokes referenced by the tag segment.</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../constant-values.html#com.myscript.ink.InkUpdateListener.CF_TRANSFORM_APPLIED">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="InkUpdateListener(com.myscript.engine.Engine)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>InkUpdateListener</h4>
+<pre>protected&nbsp;InkUpdateListener(<a href="../../../com/myscript/engine/Engine.html" title="class in com.myscript.engine">Engine</a>&nbsp;engine)
+                     throws java.lang.NullPointerException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.NullPointerException</code></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="finalize()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>finalize</h4>
+<pre>protected&nbsp;void&nbsp;finalize()</pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../com/myscript/engine/UserObject.html#finalize()">UserObject</a></code></strong></div>
+<div class="block">Called by the garbage collector on an <code>EngineObject</code> when
+ garbage collection determines that there are no more references to the
+ object.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../com/myscript/engine/UserObject.html#finalize()">finalize</a></code>&nbsp;in class&nbsp;<code><a href="../../../com/myscript/engine/UserObject.html" title="class in com.myscript.engine">UserObject</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="added(com.myscript.ink.Ink)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>added</h4>
+<pre>protected&nbsp;void&nbsp;added(<a href="../../../com/myscript/ink/Ink.html" title="class in com.myscript.ink">Ink</a>&nbsp;ink)</pre>
+<div class="block">Called when this update listener is added to an ink object.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>ink</code> - the ink object to which this listener was added.</dd></dl>
+</li>
+</ul>
+<a name="removed(com.myscript.ink.Ink)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removed</h4>
+<pre>protected&nbsp;void&nbsp;removed(<a href="../../../com/myscript/ink/Ink.html" title="class in com.myscript.ink">Ink</a>&nbsp;ink)</pre>
+<div class="block">Called when this listener is removed from an ink object.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>ink</code> - the ink object from which this listener was removed.</dd></dl>
+</li>
+</ul>
+<a name="onUpdate(com.myscript.ink.Ink, com.myscript.geometry.Extent, com.myscript.ink.InkUpdateListener.TagInfo[])">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>onUpdate</h4>
+<pre>protected&nbsp;void&nbsp;onUpdate(<a href="../../../com/myscript/ink/Ink.html" title="class in com.myscript.ink">Ink</a>&nbsp;ink,
+            com.myscript.geometry.Extent&nbsp;extent,
+            <a href="../../../com/myscript/ink/InkUpdateListener.TagInfo.html" title="class in com.myscript.ink">InkUpdateListener.TagInfo</a>[]&nbsp;tagInfos)</pre>
+<div class="block">Called when ink has been modified and needs update.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>ink</code> - the ink object.</dd><dd><code>extent</code> - the screen area that needs update.</dd><dd><code>tagInfos</code> - an array of information about tag related actions.</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/InkUpdateListener.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../com/myscript/ink/InkTagQuery.html" title="class in com.myscript.ink"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../com/myscript/ink/InkUpdateListener.TagInfo.html" title="class in com.myscript.ink"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/myscript/ink/InkUpdateListener.html" target="_top">Frames</a></li>
+<li><a href="InkUpdateListener.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li><a href="#nested_class_summary">Nested</a>&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+</body>
+</html>

@@ -1,0 +1,8 @@
+﻿  MusicRecognition.c
+  MyCertificate.c
+  MyScriptEngine-strerror.c
+  MyScriptMusic-scoreToMusicXML.c
+  common.c
+  Generating Code...
+  music_MusicRecognition.vcxproj -> C:\Users\JYChoi\Desktop\Myscript_P\edk\c\examples\_win-vs14\../bin/win-x86-Debug\10.music.01-MusicRecognition.exe
+  music_MusicRecognition.vcxproj -> ../bin/win-x86-Debug\10.music.01-MusicRecognition.pdb (Full PDB)

@@ -1,0 +1,172 @@
+# Lexical unit Japanese: date
+# v1.2
+# 2006/02/08
+# Encoding: UTF-8
+
+@set charset UTF-8
+
+
+# Digit year (four or two digits)
+# Boost years beginning by 19 or 20
+digitYear_19_20 / 80 = 19|20
+# Years beginning by something else than 19 or 20
+otherDigitYear / 20 = 1[0-8]|2[1-9]|[3-9][0-9]
+# Years
+# Sometime a two digit year is preceded by a quote
+digitYear = ({digitYear_19_20}|{otherDigitYear}|')?[0-9][0-9]
+
+# Japanese number year
+# Boost year beginning by 一九 or 二〇
+jpNbYear_19_20 / 80 = 一九|二〇
+# Years beginning by something else than 一九 or 二〇
+otherJpNbYear / 20 = [三四五六七八九][〇一二三四五六七八九]
+# Years
+jpNbYear = ({jpNbYear_19_20}|{otherJpNbYear})?[〇一二三四五六七八九][〇一二三四五六七八九]
+
+# Japanese imperial year (refered to the emperor reign)
+# Name of the emperor reign can be abbreviated by only using its first character
+# or using the letters: m, t, s, h. The letters are almost always followed by
+# digits.
+# Meiji era (元 --> 45)
+# Digit
+meijiDigitYear = (m|明治?)(元|0?[2-9]|[1-3][0-9]|4[0-5])
+# Japanese number
+meijiJpNbYear = 明治?([元二三四五六七八九]|[二三]?十[一二三四五六七八九]?|四十[一二三四五]?)
+# Japanese number without numbers below nine
+meijiJpNbYearBelowTen = 明治?([元二三四五六七八九]|[一二三][〇一二三四五六七八九]|四[〇一二三四五])
+# Taishou era (元 --> 15)
+# Digit
+taishouDigitYear = (t|大正?)(元|0?[2-9]|1[0-5])
+# Japanese number
+taishouJpNbYear = 大正?([元二三四五六七八九]|十[一二三四五]?)
+# Japanese number without numbers below nine
+taishouJpNbYearBelowTen = 大正?([元二三四五六七八九]|一[〇一二三四五])
+# Shouwa era (元 --> 64)
+# Digit
+shouwaDigitYear = (s|昭和?)(元|0?[2-9]|[1-5][0-9]|6[0-4])
+# Japanese number
+shouwaJpNbYear = 昭和?([元二三四五六七八九]|[二三四五]?十[一二三四五六七八九]?|六十[一二三四]?)
+# Japanese number without numbers below nine
+shouwaJpNbYearBelowTen = 昭和?([元二三四五六七八九]|[一二三四五][〇一二三四五六七八九]|六[〇一二三四])
+# Heisei era (will work until 平成29)
+# Digit
+heiseiDigitYear = (h|平成?)(元|0?[2-9]|[12][0-9])
+# Japanese number
+heiseiJpNbYear = 平成?([元二三四五六七八九]|二?十[一二三四五六七八九]?)
+# Japanese number without numbers below nine
+heiseiJpNbYearBelowTen = 平成?([元二三四五六七八九]|[一二][〇一二三四五六七八九])
+
+eraDigitYear = {meijiDigitYear}|{taishouDigitYear}|{shouwaDigitYear}|{heiseiDigitYear}
+eraJpNbYear = {meijiJpNbYear}|{taishouJpNbYear}|{shouwaJpNbYear}|{heiseiJpNbYear}
+eraJpNbYearBelowTen = {meijiJpNbYearBelowTen}|{taishouJpNbYearBelowTen}|{shouwaJpNbYearBelowTen}|{heiseiJpNbYearBelowTen}
+
+# Month
+# Digit
+digitMonth = 0?[1-9]|1[012]
+# Japanese number
+jpNbMonth = [一二三四五六七八九]|十[一二]?
+# Japanese number below ten
+jpNbMonthBelowTen = 〇?[一二三四五六七八九]|一[〇一二]
+
+# Day
+# Digit
+digitDay = 0?[1-9]|[12][0-9]|3[01]
+# Japanese number
+jpNbDay = [一二三四五六七八九]|二?十[一二三四五六七八九]?|三十一?
+# Japanese number below ten
+jpNbDayBelowTen = 〇?[一二三四五六七八九]|[一二][〇一二三四五六七八九]|三[〇一]
+
+# English day of the week
+enWeekDay = mon(day|\.)?|tue(sday|\.)?|wed(nesday|\.)?|thu(rsday|\.)?|fri(day|\.)?|sat(urday|\.)?|sun(day|\.)?
+# Japanese day of the week
+jpWeekDay = (月曜?|火曜?|水曜?|木曜?|金曜?|土曜?|日曜?)日?
+
+
+#####################
+# FORMAT DEFINITION #
+#####################
+
+# Full numerical format #
+# (dash separator) #
+# Y + M + D (Name of the day is optional)
+numericalDate = {digitYear}-{digitMonth}-{digitDay}(生|{enWeekDay}|{jpWeekDay}|\(({enWeekDay}|{jpWeekDay})\))?
+# Y + M
+numericalDate = {numericalDate}|{digitYear}-{digitMonth}
+# M + D (Name of the day is optional)
+numericalDate = {numericalDate}|{digitMonth}-{digitDay}(生|{enWeekDay}|{jpWeekDay}|\(({enWeekDay}|{jpWeekDay})\))?
+
+# (slash separator) #
+# Y + M + D (Name of the day is optional)
+numericalDate = {numericalDate}|{digitYear}/{digitMonth}/{digitDay}(生|{enWeekDay}|{jpWeekDay}|\(({enWeekDay}|{jpWeekDay})\))?
+# Y + M
+numericalDate = {numericalDate}|{digitYear}/{digitMonth}
+# M + D (Name of the day is optional)
+numericalDate = {numericalDate}|{digitMonth}/{digitDay}(生|{enWeekDay}|{jpWeekDay}|\(({enWeekDay}|{jpWeekDay})\))?
+
+# (dot separator) #
+# Y + M + D (Name of the day is optional)
+numericalDate = {numericalDate}|{digitYear}\.{digitMonth}\.{digitDay}(生|{enWeekDay}|{jpWeekDay}|\(({enWeekDay}|{jpWeekDay})\))?
+# Y + M
+numericalDate = {numericalDate}|{digitYear}\.{digitMonth}
+# M + D (Name of the day is optional)
+numericalDate = {numericalDate}|{digitMonth}\.{digitDay}(生|{enWeekDay}|{jpWeekDay}|\(({enWeekDay}|{jpWeekDay})\))?
+
+# Full numerical format (no separator) #
+# Y + M + D (Name of the day is optional)
+numericalDate = {numericalDate}|{digitYear}{digitMonth}{digitDay}(生|{enWeekDay}|{jpWeekDay}|\(({enWeekDay}|{jpWeekDay})\))?
+# Y + M
+numericalDate = {numericalDate}|{digitYear}{digitMonth}
+# M + D (Name of the day is optional)
+numericalDate = {numericalDate}|{digitMonth}{digitDay}(生|{enWeekDay}|{jpWeekDay}|\(({enWeekDay}|{jpWeekDay})\))?
+
+# Y
+numericalDate = {numericalDate}|{digitYear}
+# D
+numericalDate = {numericalDate}|{digitDay}(生|{enWeekDay}|{jpWeekDay}|\(({enWeekDay}|{jpWeekDay})\))?
+
+# Years with Japanese specifiers (年月日) #
+# Accept both imperial calendar dates and western calendar dates
+# Accept four or two digits for the year.
+# Digit
+# Y + M + D
+jpDigitDate = ({eraDigitYear}|{digitYear})年{digitMonth}月{digitDay}日(生|{enWeekDay}|{jpWeekDay}|\(({enWeekDay}|{jpWeekDay})\))?
+# Y + M
+jpDigitDate = {jpDigitDate}|({eraDigitYear}|{digitYear})年{digitMonth}月
+# M + D
+jpDigitDate = {jpDigitDate}|{digitMonth}月{digitDay}日(生|{enWeekDay}|{jpWeekDay}|\(({enWeekDay}|{jpWeekDay})\))?
+# Y
+jpDigitDate = {jpDigitDate}|({eraDigitYear}|{digitYear})年
+# M
+jpDigitDate = {jpDigitDate}|{digitMonth}月
+# D
+jpDigitDate = {jpDigitDate}|{digitDay}(生|{enWeekDay}|{jpWeekDay}|\(({enWeekDay}|{jpWeekDay})\))?
+# Japanese numbers
+# Y + M + D
+jpJpNbDate = ({eraJpNbYear}|{jpNbYear})年{jpNbMonth}月{jpNbDay}日(生|{enWeekDay}|{jpWeekDay}|\(({enWeekDay}|{jpWeekDay})\))?
+# Y + M
+jpJpNbDate = {jpJpNbDate}|({eraJpNbYear}|{jpNbYear})年{jpNbMonth}月
+# M + D
+jpJpNbDate = {jpJpNbDate}|{jpNbMonth}月{jpNbDay}日(生|{enWeekDay}|{jpWeekDay}|\(({enWeekDay}|{jpWeekDay})\))?
+# Y
+jpJpNbDate = {jpJpNbDate}|({eraJpNbYear}|{jpNbYear})年
+# M
+jpJpNbDate = {jpJpNbDate}|{jpNbMonth}月
+# D
+jpJpNbDate = {jpJpNbDate}|{jpNbDay}日(生|{enWeekDay}|{jpWeekDay}|\(({enWeekDay}|{jpWeekDay})\))?
+# Japanese number below ten
+# Y + M + D
+jpJpNbDate = {jpJpNbDate}|{eraJpNbYearBelowTen}年{jpNbMonthBelowTen}月{jpNbDayBelowTen}日(生|{enWeekDay}|{jpWeekDay}|\(({enWeekDay}|{jpWeekDay})\))?
+# Y + M
+jpJpNbDate = {jpJpNbDate}|{eraJpNbYearBelowTen}年{jpNbMonthBelowTen}月
+# M + D
+jpJpNbDate = {jpJpNbDate}|{jpNbMonthBelowTen}月{jpNbDayBelowTen}日(生|{enWeekDay}|{jpWeekDay}|\(({enWeekDay}|{jpWeekDay})\))?
+# Y
+jpJpNbDate = {jpJpNbDate}|{eraJpNbYearBelowTen}年
+# M
+jpJpNbDate = {jpJpNbDate}|{jpNbMonthBelowTen}月
+# D
+jpJpNbDate = {jpJpNbDate}|{jpNbDayBelowTen}日(生|{enWeekDay}|{jpWeekDay}|\(({enWeekDay}|{jpWeekDay})\))?
+
+date = {numericalDate}|{jpDigitDate}|{jpJpNbDate}
+
+{date}

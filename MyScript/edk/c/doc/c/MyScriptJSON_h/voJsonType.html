@@ -1,0 +1,192 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>voJsonType</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="voJsonType";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptJSON.h</FONT>
+<BR>
+Type voJsonType</H2>
+<PRE>
+<B>voJsonType</B>
+</PRE>
+<HR>
+<CODE>#include &lt;c/MyScriptJSON.h&gt;</CODE>
+<BR>
+<CODE>typedef  enum _voJsonType  <B>voJsonType</B></CODE>
+<BR>
+<CODE></CODE>
+</P>
+<P>Represents the type of a JSON value. <P>
+        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Value_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Value Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_JSON_ERR">VO_JSON_ERR</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  -1</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Error marker. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_JSON_NULL">VO_JSON_NULL</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The JSON value  <CODE>null</CODE>. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_JSON_STRING">VO_JSON_STRING</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A JSON string value. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_JSON_NUMBER">VO_JSON_NUMBER</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A JSON number value. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_JSON_BOOLEAN">VO_JSON_BOOLEAN</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A JSON boolean value. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_JSON_OBJECT">VO_JSON_OBJECT</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A JSON object value. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_JSON_ARRAY">VO_JSON_ARRAY</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A JSON array value. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#_voJsonType_FORCE_INT_SIZE">_voJsonType_FORCE_INT_SIZE</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  0x7FFFFFFF</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Value_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Value Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="VO_JSON_ERR"></A>
+<H3 class="code">VO_JSON_ERR</H3>
+<PRE>
+<B>VO_JSON_ERR</B>
+</PRE>
+<DL>
+<DD>Error marker. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_JSON_NULL"></A>
+<H3 class="code">VO_JSON_NULL</H3>
+<PRE>
+<B>VO_JSON_NULL</B>
+</PRE>
+<DL>
+<DD>The JSON value  <CODE>null</CODE>. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_JSON_STRING"></A>
+<H3 class="code">VO_JSON_STRING</H3>
+<PRE>
+<B>VO_JSON_STRING</B>
+</PRE>
+<DL>
+<DD>A JSON string value. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_JSON_NUMBER"></A>
+<H3 class="code">VO_JSON_NUMBER</H3>
+<PRE>
+<B>VO_JSON_NUMBER</B>
+</PRE>
+<DL>
+<DD>A JSON number value. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_JSON_BOOLEAN"></A>
+<H3 class="code">VO_JSON_BOOLEAN</H3>
+<PRE>
+<B>VO_JSON_BOOLEAN</B>
+</PRE>
+<DL>
+<DD>A JSON boolean value. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_JSON_OBJECT"></A>
+<H3 class="code">VO_JSON_OBJECT</H3>
+<PRE>
+<B>VO_JSON_OBJECT</B>
+</PRE>
+<DL>
+<DD>A JSON object value. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_JSON_ARRAY"></A>
+<H3 class="code">VO_JSON_ARRAY</H3>
+<PRE>
+<B>VO_JSON_ARRAY</B>
+</PRE>
+<DL>
+<DD>A JSON array value. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="_voJsonType_FORCE_INT_SIZE"></A>
+<H3 class="code">_voJsonType_FORCE_INT_SIZE</H3>
+<PRE>
+<B>_voJsonType_FORCE_INT_SIZE</B>
+</PRE>
+<DL>
+<DD>
+<P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

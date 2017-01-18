@@ -1,0 +1,80 @@
+@import ludef "defNUL"
+
+digit / 40 = [0-9]
+upper / 40 = [A-Z]
+lower / 40 = [a-z]
+dash / 40 = -
+underscore / 40 = _
+
+element = ({digit}|{upper}|{lower})+(({dash}|{underscore}|\.)({digit}|{upper}|{lower})+)*
+
+user = {element}
+
+s1 / 50 = com
+s2 / 40 = net
+s3 / 38 = org
+s4 / 36 = edu
+s5 / 34 = us
+s6 / 32 = ca
+s7 / 30 = uk
+s8 / 30 = gov
+s9 / 30 = info
+s10 / 0.0 = [a-zA-Z]+
+suffix = {s1}|{s2}|{s3}|{s4}|{s5}|{s6}|{s7}|{s8}|{s9}|{s10}
+
+d1 / 100 = aol\.com
+d2 / 100 = yahoo\.com
+d3 / 100 = hotmail\.com
+d4 / 100 = verizon\.net
+d5 / 100 = sbcglobal\.net
+d6 / 100 = gmail\.com
+d7 / 100 = msn\.com
+d8 / 100 = bellsouth\.net
+d9 / 100 = cox\.net
+d10 / 100 = earthlink\.net
+d11 / 90 = comcast\.net
+d12 / 90 = cs\.com
+d13 / 90 = wmconnect\.com
+d14 / 90 = netscape\.net
+d15 / 90 = peoplepc\.com
+d16 / 90 = juno\.com
+d17 / 90 = tampabay\.rr\.com
+d18 / 90 = charter\.net
+d19 / 90 = zoominternet\.net
+d20 / 90 = cfl\.rr\.com
+d21 / 80 = webtv\.net
+d22 / 80 = windstream\.net
+d23 / 80 = localnet\.com
+d24 / 80 = rcn\.com
+d25 / 80 = ptd\.net
+d26 / 80 = insightbb\.com
+d27 / 80 = mac\.com
+d28 / 80 = frontiernet\.net
+d29 / 80 = rogers\.com
+d30 / 80 = netscape\.com
+d31 / 70 = adelphia\.net
+d32 / 70 = centurytel\.net
+d33 / 70 = houston\.rr\.com
+d34 / 70 = tds\.net
+d35 / 70 = prodigy\.net
+d36 / 70 = wi\.rr\.com
+d37 / 70 = ntlworld\.com
+d38 / 70 = nc\.rr\.com
+d39 / 70 = telus\.net
+d40 / 70 = aim\.com
+d41 / 60 = hughes\.net
+d42 / 60 = ameritech\.net
+d43 / 60 = rochester\.rr\.com
+d44 / 60 = bigpond\.com
+d45 / 60 = mindspring\.com
+d46 / 60 = netzero\.net
+d47 / 50 = att\.net|charter\.net|clas\.net|comcast\.com|dishmail\.net|excite\.com|flash\.net|gmx\.net|googlemail\.com|home\.com|inbox\.com|juno\.com|live\.com|mail\.com|netzero\.net|nvbell\.net|optonline\.net|pacbell\.net|pctcnet\.net|power-net\.net|psci\.net|rcn\.com|rocketmail\.com|snet\.net|swbell\.net|tranquility\.net|undata\.com|usa\.net|wans\.net|worldnet\.att\.net|ymail\.com
+d48 / 0.0 = {element}\.{suffix}
+domain = {d1}|{d2}|{d3}|{d4}|{d5}|{d6}|{d7}|{d8}|{d9}|{d10}|{d11}|{d12}|{d13}|{d14}|{d15}|{d16}|{d17}|{d18}|{d19}
+domain = {domain}|{d20}|{d21}|{d22}|{d23}|{d24}|{d25}|{d26}|{d27}|{d28}|{d29}
+domain = {domain}|{d30}|{d31}|{d32}|{d33}|{d34}|{d35}|{d36}|{d37}|{d38}|{d39}
+domain = {domain}|{d40}|{d41}|{d42}|{d43}|{d44}|{d45}|{d46}|{d47}|{d48}
+
+email = {user}@{domain}
+
+{email}

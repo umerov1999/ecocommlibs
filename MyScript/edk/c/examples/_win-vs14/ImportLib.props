@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="UserMacros">
+    <BUILD_DIR>build/$(ProjectName)-win-$(ARCH)$(CONF_SUFFIX)-using_import_lib</BUILD_DIR>
+    <BIN_DIR>../bin/win-$(ARCH)$(CONF_SUFFIX)-using_import_lib</BIN_DIR>
+    <LIB_DIR>lib/win-$(ARCH)-vs14</LIB_DIR>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>MyScriptEngine.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(LIB_DIR);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="BUILD_DIR">
+      <Value>$(BUILD_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="BIN_DIR">
+      <Value>$(BIN_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="LIB_DIR">
+      <Value>$(LIB_DIR)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

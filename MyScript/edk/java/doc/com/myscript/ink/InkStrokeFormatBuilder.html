@@ -1,0 +1,798 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<title>InkStrokeFormatBuilder (MyScript SDK Java Reference Documentation)</title>
+<link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="InkStrokeFormatBuilder (MyScript SDK Java Reference Documentation)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/InkStrokeFormatBuilder.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../com/myscript/ink/InkStrokeFormat.html" title="class in com.myscript.ink"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../com/myscript/ink/InkTagIterator.html" title="class in com.myscript.ink"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/myscript/ink/InkStrokeFormatBuilder.html" target="_top">Frames</a></li>
+<li><a href="InkStrokeFormatBuilder.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#fields_inherited_from_class_com.myscript.engine.EngineObject">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">com.myscript.ink</div>
+<h2 title="Class InkStrokeFormatBuilder" class="title">Class InkStrokeFormatBuilder</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li>java.lang.Object</li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">com.myscript.engine.EngineObject</a></li>
+<li>
+<ul class="inheritance">
+<li>com.myscript.ink.InkStrokeFormatBuilder</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../com/myscript/engine/IDisposable.html" title="interface in com.myscript.engine">IDisposable</a>, <a href="../../../com/myscript/engine/IEngineObject.html" title="interface in com.myscript.engine">IEngineObject</a>, <a href="../../../com/myscript/ink/IInkStrokeFormat.html" title="interface in com.myscript.ink">IInkStrokeFormat</a>, java.lang.Cloneable</dd>
+</dl>
+<hr>
+<br>
+<pre>public final class <span class="strong">InkStrokeFormatBuilder</span>
+extends <a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a>
+implements <a href="../../../com/myscript/ink/IInkStrokeFormat.html" title="interface in com.myscript.ink">IInkStrokeFormat</a></pre>
+<div class="block">A <code>InkStrokeFormatBuilder</code> is used to build
+ <code>InkStrokeFormat</code> objects by specifying their properties and then
+ invoking <a href="../../../com/myscript/ink/InkStrokeFormatBuilder.html#createStrokeFormat()"><code>createStrokeFormat()</code></a>. A <code>InkStrokeFormatBuilder</code>
+ can be recycled to create other stroke formats by invoking <a href="../../../com/myscript/ink/InkStrokeFormatBuilder.html#clear()"><code>clear()</code></a>
+ between each. Alternatively you can use the static factory
+ <a href="../../../com/myscript/ink/InkStrokeFormatBuilder.html#parseInkStrokeFormat(com.myscript.engine.Engine,%20java.lang.String)"><code>parseInkStrokeFormat(Engine, String)</code></a> to create a stroke format by
+ parsing its string representation, without the need to create an instance of
+ the <code>InkStrokeFormatBuilder</code> class.
+
+ <p>For example:</p>
+ 
+ <pre>
+ InkStrokeFormatBuilder strokeFormatBuilder = InkStrokeFormatBuilder.create(engine);
+ strokeFormatBuilder.addChannel(&quot;X&quot;);
+ strokeFormatBuilder.addChannel(&quot;Y&quot;);
+ strokeFormat1 = strokeFormatBuilder.createStrokeFormat();
+ strokeFormatBuilder.dispose();
+ </pre>
+ 
+ <p>and</p>
+ 
+ <pre>
+ strokeFormat2 = InkStrokeFormatBuilder.parseInkStrokeFormat(&quot;{\&quot;channels\&quot;:[{\&quot;name\&quot;:\&quot;X\&quot;},{\&quot;name\&quot;:\&quot;Y\&quot;}]}&quot;);
+ </pre>
+ 
+ <p>will both create a stroke format that contains only X and Y channels with all
+ remains parameters left to their default values.</p>
+
+ <p>
+ Note that the native side ensures that two stroke format with the same
+ intrinsic parameters will be returned as the same instance. Therefore,
+ <code>strokeFormat1.isSame(strokeFormat2)</code> will be true from the above
+ examples and we implemented <a href="../../../com/myscript/ink/InkStrokeFormat.html#equals(java.lang.Object)"><code>InkStrokeFormat.equals(Object)</code></a> by using
+ it.
+ </p></div>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_com.myscript.engine.EngineObject">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;com.myscript.engine.<a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></h3>
+<code><a href="../../../com/myscript/engine/EngineObject.html#DEFAULT_USER_LIMIT">DEFAULT_USER_LIMIT</a>, <a href="../../../com/myscript/engine/EngineObject.html#engine">engine</a>, <a href="../../../com/myscript/engine/EngineObject.html#reference">reference</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/InkStrokeFormatBuilder.html#addChannel(java.lang.String)">addChannel</a></strong>(java.lang.String&nbsp;name)</code>
+<div class="block">Adds a new channel to the stroke format to build.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/InkStrokeFormatBuilder.html#clear()">clear</a></strong>()</code>
+<div class="block">Clears this stroke format builder so that we start building a new stroke
+ format.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../com/myscript/ink/InkStrokeFormatBuilder.html" title="class in com.myscript.ink">InkStrokeFormatBuilder</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/InkStrokeFormatBuilder.html#create(com.myscript.engine.Engine)">create</a></strong>(<a href="../../../com/myscript/engine/Engine.html" title="class in com.myscript.engine">Engine</a>&nbsp;engine)</code>
+<div class="block">Static factory method that creates a new
+ <code>InkStrokeFormatBuilder</code> object whose parent is the specified
+ <code>Engine</code> object.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../com/myscript/ink/InkStrokeFormat.html" title="class in com.myscript.ink">InkStrokeFormat</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/InkStrokeFormatBuilder.html#createStrokeFormat()">createStrokeFormat</a></strong>()</code>
+<div class="block">Creates the builded stroke format.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/InkStrokeFormatBuilder.html#getChannelCount()">getChannelCount</a></strong>()</code>
+<div class="block">Returns the number of channels in this stroke format.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>float</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/InkStrokeFormatBuilder.html#getChannelMaxAt(int)">getChannelMaxAt</a></strong>(int&nbsp;index)</code>
+<div class="block">Returns the maximum value of the channel at the specified index.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>float</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/InkStrokeFormatBuilder.html#getChannelMinAt(int)">getChannelMinAt</a></strong>(int&nbsp;index)</code>
+<div class="block">Returns the minimum value of the channel at the specified index.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/InkStrokeFormatBuilder.html#getChannelNameAt(int)">getChannelNameAt</a></strong>(int&nbsp;index)</code>
+<div class="block">Returns the name of the channel at the specified index in this stroke
+ format.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>float</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/InkStrokeFormatBuilder.html#getChannelQuantizationAt(int)">getChannelQuantizationAt</a></strong>(int&nbsp;index)</code>
+<div class="block">Returns the quantization value of the channel at the specified index.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/InkStrokeFormatBuilder.html#getChannelUnitAt(int)">getChannelUnitAt</a></strong>(int&nbsp;index)</code>
+<div class="block">Returns the unit of the channel at the specified index.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>float</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/InkStrokeFormatBuilder.html#getSampleRate()">getSampleRate</a></strong>()</code>
+<div class="block">Returns the nominal sample rate of this stroke format.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/InkStrokeFormatBuilder.html#isSampleRateUniform()">isSampleRateUniform</a></strong>()</code>
+<div class="block">Returns the indication of whether the sample rate is uniform or not.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/InkStrokeFormatBuilder.html#lookupChannel(java.lang.String)">lookupChannel</a></strong>(java.lang.String&nbsp;name)</code>
+<div class="block">Lookups this stroke format for the specified channel.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../com/myscript/ink/InkStrokeFormat.html" title="class in com.myscript.ink">InkStrokeFormat</a></code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/InkStrokeFormatBuilder.html#parseInkStrokeFormat(com.myscript.engine.Engine,%20java.lang.String)">parseInkStrokeFormat</a></strong>(<a href="../../../com/myscript/engine/Engine.html" title="class in com.myscript.engine">Engine</a>&nbsp;engine,
+                    java.lang.String&nbsp;string)</code>
+<div class="block">Static factory method that directly creates a new
+ <code>InkStrokeFormat</code>, without the need to create a
+ <code>InkStrokeFormatBuilder</code>, by parsing its string representation.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/InkStrokeFormatBuilder.html#setChannelMax(java.lang.String,%20float)">setChannelMax</a></strong>(java.lang.String&nbsp;name,
+             float&nbsp;max)</code>
+<div class="block">Sets the maximum value of a channel.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/InkStrokeFormatBuilder.html#setChannelMin(java.lang.String,%20float)">setChannelMin</a></strong>(java.lang.String&nbsp;name,
+             float&nbsp;min)</code>
+<div class="block">Sets the minimum value of a channel.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/InkStrokeFormatBuilder.html#setChannelQuantization(java.lang.String,%20float)">setChannelQuantization</a></strong>(java.lang.String&nbsp;name,
+                      float&nbsp;quantization)</code>
+<div class="block">Sets the quantization of a channel.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/InkStrokeFormatBuilder.html#setChannelUnit(java.lang.String,%20java.lang.String)">setChannelUnit</a></strong>(java.lang.String&nbsp;name,
+              java.lang.String&nbsp;unit)</code>
+<div class="block">Sets the unit of a channel.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/ink/InkStrokeFormatBuilder.html#setSampleRate(float,%20boolean)">setSampleRate</a></strong>(float&nbsp;rate,
+             boolean&nbsp;uniform)</code>
+<div class="block">Sets the sample rate and indicates whether sample rate is uniform, or not.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.myscript.engine.EngineObject">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;com.myscript.engine.<a href="../../../com/myscript/engine/EngineObject.html" title="class in com.myscript.engine">EngineObject</a></h3>
+<code><a href="../../../com/myscript/engine/EngineObject.html#acquire()">acquire</a>, <a href="../../../com/myscript/engine/EngineObject.html#checkDisposed()">checkDisposed</a>, <a href="../../../com/myscript/engine/EngineObject.html#clone()">clone</a>, <a href="../../../com/myscript/engine/EngineObject.html#dispose()">dispose</a>, <a href="../../../com/myscript/engine/EngineObject.html#finalize()">finalize</a>, <a href="../../../com/myscript/engine/EngineObject.html#getAttachReferenceCount()">getAttachReferenceCount</a>, <a href="../../../com/myscript/engine/EngineObject.html#getEngine()">getEngine</a>, <a href="../../../com/myscript/engine/EngineObject.html#getMemoryUsage()">getMemoryUsage</a>, <a href="../../../com/myscript/engine/EngineObject.html#getNativeReference()">getNativeReference</a>, <a href="../../../com/myscript/engine/EngineObject.html#getUserCount(com.myscript.engine.Engine)">getUserCount</a>, <a href="../../../com/myscript/engine/EngineObject.html#getUserLimit(com.myscript.engine.Engine)">getUserLimit</a>, <a href="../../../com/myscript/engine/EngineObject.html#getUserReferenceCount()">getUserReferenceCount</a>, <a href="../../../com/myscript/engine/EngineObject.html#isDisposed()">isDisposed</a>, <a href="../../../com/myscript/engine/EngineObject.html#isSame(com.myscript.engine.EngineObject)">isSame</a>, <a href="../../../com/myscript/engine/EngineObject.html#load(com.myscript.engine.Engine,%20java.nio.channels.ReadableByteChannel)">load</a>, <a href="../../../com/myscript/engine/EngineObject.html#load(com.myscript.engine.Engine,%20java.lang.String)">load</a>, <a href="../../../com/myscript/engine/EngineObject.html#load(com.myscript.engine.Engine,%20java.lang.String,%20java.lang.String)">load</a>, <a href="../../../com/myscript/engine/EngineObject.html#resetUserLimit(com.myscript.engine.Engine)">resetUserLimit</a>, <a href="../../../com/myscript/engine/EngineObject.html#setUserLimit(com.myscript.engine.Engine,%20int)">setUserLimit</a>, <a href="../../../com/myscript/engine/EngineObject.html#store(java.lang.String)">store</a>, <a href="../../../com/myscript/engine/EngineObject.html#store(java.lang.String,%20java.lang.String)">store</a>, <a href="../../../com/myscript/engine/EngineObject.html#store(java.nio.channels.WritableByteChannel)">store</a>, <a href="../../../com/myscript/engine/EngineObject.html#toString()">toString</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>equals, getClass, hashCode, notify, notifyAll, wait, wait, wait</code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.myscript.engine.IEngineObject">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;com.myscript.engine.<a href="../../../com/myscript/engine/IEngineObject.html" title="interface in com.myscript.engine">IEngineObject</a></h3>
+<code><a href="../../../com/myscript/engine/IEngineObject.html#getEngine()">getEngine</a>, <a href="../../../com/myscript/engine/IEngineObject.html#getNativeReference()">getNativeReference</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.myscript.engine.IDisposable">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;com.myscript.engine.<a href="../../../com/myscript/engine/IDisposable.html" title="interface in com.myscript.engine">IDisposable</a></h3>
+<code><a href="../../../com/myscript/engine/IDisposable.html#dispose()">dispose</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="clear()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>clear</h4>
+<pre>public&nbsp;void&nbsp;clear()</pre>
+<div class="block">Clears this stroke format builder so that we start building a new stroke
+ format.</div>
+</li>
+</ul>
+<a name="addChannel(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addChannel</h4>
+<pre>public&nbsp;void&nbsp;addChannel(java.lang.String&nbsp;name)</pre>
+<div class="block">Adds a new channel to the stroke format to build.
+ <p>
+ Here below are the predefined names and their recognized meaning:
+ </p>
+ <table border="1" summary="">
+ <tr>
+ <td>Name</td>
+ <td>Description</td>
+ </tr>
+ <tr>
+ <td>X</td>
+ <td>Horizontal position, increasing to the right.</td>
+ </tr>
+ <tr>
+ <td>Y</td>
+ <td>Vertical position, increasing downward.</td>
+ </tr>
+ <tr>
+ <td>W</td>
+ <td>Stroke width.</td>
+ </tr>
+ <tr>
+ <td>T</td>
+ <td>Sample timestamp.</td>
+ </tr>
+ <tr>
+ <td>F</td>
+ <td>Tip force.</td>
+ </tr>
+ <tr>
+ <td>OTx</td>
+ <td>Tilt along the X axis.</td>
+ </tr>
+ <tr>
+ <td>OTy</td>
+ <td>Tilt along the Y axis.</td>
+ </tr>
+ <tr>
+ <td>OA</td>
+ <td>Azimuth angle (yaw).</td>
+ </tr>
+ <tr>
+ <td>OE</td>
+ <td>Elevation angle (pitch).</td>
+ </tr>
+ <tr>
+ <td>OR</td>
+ <td>Rotation (counter-clockwise rotation around the pen axis).</td>
+ </tr>
+ </table>
+ <p>
+ You can also store application specific values by using a name not found in
+ the table above.
+ </p>
+ <p>
+ Please also note that a stroke format must at least contain X and Y
+ channels.
+ </p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>name</code> - the name of the channel to add.</dd></dl>
+</li>
+</ul>
+<a name="getChannelCount()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getChannelCount</h4>
+<pre>public&nbsp;int&nbsp;getChannelCount()</pre>
+<div class="block">Returns the number of channels in this stroke format.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/ink/IInkStrokeFormat.html#getChannelCount()">getChannelCount</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/ink/IInkStrokeFormat.html" title="interface in com.myscript.ink">IInkStrokeFormat</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the number of channels.</dd></dl>
+</li>
+</ul>
+<a name="getChannelNameAt(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getChannelNameAt</h4>
+<pre>public&nbsp;java.lang.String&nbsp;getChannelNameAt(int&nbsp;index)
+                                  throws java.lang.IndexOutOfBoundsException</pre>
+<div class="block">Returns the name of the channel at the specified index in this stroke
+ format.
+ <p>
+ Refer to <a href="../../../com/myscript/ink/InkStrokeFormatBuilder.html#addChannel(java.lang.String)"><code>addChannel(String)</code></a> for the meaning
+ of channel names.
+ </p></div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/ink/IInkStrokeFormat.html#getChannelNameAt(int)">getChannelNameAt</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/ink/IInkStrokeFormat.html" title="interface in com.myscript.ink">IInkStrokeFormat</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>index</code> - the index of the channel.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the name of the channel.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IndexOutOfBoundsException</code> - if
+           <code>(index &lt; 0 || index &gt;= getChannelCount())</code>.</dd></dl>
+</li>
+</ul>
+<a name="setChannelUnit(java.lang.String, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setChannelUnit</h4>
+<pre>public&nbsp;void&nbsp;setChannelUnit(java.lang.String&nbsp;name,
+                  java.lang.String&nbsp;unit)</pre>
+<div class="block">Sets the unit of a channel.
+ <p>
+ Unit should be expressed as a string and formatted following the SI
+ (International System of Units), for example: <code>mm</code>,
+ <code>s</code>, etc.
+ </p>
+ <p>
+ A dpi resolution can be expressed as the invert of a unit, i.e. a 1000 dpi
+ resolution corresponds to a unit described as `0.001 in`.
+ </p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>name</code> - the name of channel.</dd><dd><code>unit</code> - the unit of channel.</dd></dl>
+</li>
+</ul>
+<a name="getChannelUnitAt(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getChannelUnitAt</h4>
+<pre>public&nbsp;java.lang.String&nbsp;getChannelUnitAt(int&nbsp;index)
+                                  throws java.lang.IndexOutOfBoundsException</pre>
+<div class="block">Returns the unit of the channel at the specified index.
+
+ <p>Unit is expressed as a string and formatted following the SI
+ (International System of Units), for example: `mm`, `s`, etc.</p></div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/ink/IInkStrokeFormat.html#getChannelUnitAt(int)">getChannelUnitAt</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/ink/IInkStrokeFormat.html" title="interface in com.myscript.ink">IInkStrokeFormat</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>index</code> - the index of the channel.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the unit of the channel.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IndexOutOfBoundsException</code> - if
+           <code>(index &lt; 0 || index &gt;= getChannelCount())</code>.</dd></dl>
+</li>
+</ul>
+<a name="setChannelQuantization(java.lang.String, float)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setChannelQuantization</h4>
+<pre>public&nbsp;void&nbsp;setChannelQuantization(java.lang.String&nbsp;name,
+                          float&nbsp;quantization)</pre>
+<div class="block">Sets the quantization of a channel. This quantization value is typically
+ used together with minimum and maximum value to enable optimum integer
+ quantization.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>name</code> - the name of channel.</dd><dd><code>quantization</code> - the channel quantization.</dd></dl>
+</li>
+</ul>
+<a name="getChannelQuantizationAt(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getChannelQuantizationAt</h4>
+<pre>public&nbsp;float&nbsp;getChannelQuantizationAt(int&nbsp;index)
+                               throws java.lang.IndexOutOfBoundsException</pre>
+<div class="block">Returns the quantization value of the channel at the specified index.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/ink/IInkStrokeFormat.html#getChannelQuantizationAt(int)">getChannelQuantizationAt</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/ink/IInkStrokeFormat.html" title="interface in com.myscript.ink">IInkStrokeFormat</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>index</code> - the index of the channel.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the quantization value of the channel.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IndexOutOfBoundsException</code> - if
+           <code>(index &lt; 0 || index &gt;= getChannelCount())</code>.</dd></dl>
+</li>
+</ul>
+<a name="setChannelMin(java.lang.String, float)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setChannelMin</h4>
+<pre>public&nbsp;void&nbsp;setChannelMin(java.lang.String&nbsp;name,
+                 float&nbsp;min)</pre>
+<div class="block">Sets the minimum value of a channel. This minimum value is typically used
+ together with quantization and maximum value to enable optimum integer
+ quantization.
+ <p>
+ Note that the values stored in the channel will not be checked against this
+ minimum, so values below minimum may be stored in the channel.
+ </p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>name</code> - the name of channel.</dd><dd><code>min</code> - the minimum value in the channel.</dd></dl>
+</li>
+</ul>
+<a name="getChannelMinAt(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getChannelMinAt</h4>
+<pre>public&nbsp;float&nbsp;getChannelMinAt(int&nbsp;index)
+                      throws java.lang.IndexOutOfBoundsException</pre>
+<div class="block">Returns the minimum value of the channel at the specified index.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/ink/IInkStrokeFormat.html#getChannelMinAt(int)">getChannelMinAt</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/ink/IInkStrokeFormat.html" title="interface in com.myscript.ink">IInkStrokeFormat</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>index</code> - the index of the channel.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the minimum value of the channel.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IndexOutOfBoundsException</code> - if
+           <code>(index &lt; 0 || index &gt;= getChannelCount())</code>.</dd></dl>
+</li>
+</ul>
+<a name="setChannelMax(java.lang.String, float)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setChannelMax</h4>
+<pre>public&nbsp;void&nbsp;setChannelMax(java.lang.String&nbsp;name,
+                 float&nbsp;max)</pre>
+<div class="block">Sets the maximum value of a channel. This maximum value is typically used
+ together with quantization and minimum value to enable optimum integer
+ quantization.
+ <p>
+ Note that the values stored in the channel will not be checked against this
+ maximum, so values above maximum may be stored in the channel.
+ </p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>name</code> - the name of channel.</dd><dd><code>max</code> - the maximum value in the channel.</dd></dl>
+</li>
+</ul>
+<a name="getChannelMaxAt(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getChannelMaxAt</h4>
+<pre>public&nbsp;float&nbsp;getChannelMaxAt(int&nbsp;index)
+                      throws java.lang.IndexOutOfBoundsException</pre>
+<div class="block">Returns the maximum value of the channel at the specified index.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/ink/IInkStrokeFormat.html#getChannelMaxAt(int)">getChannelMaxAt</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/ink/IInkStrokeFormat.html" title="interface in com.myscript.ink">IInkStrokeFormat</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>index</code> - the index of the channel.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the maximum value of the channel.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IndexOutOfBoundsException</code> - if
+           <code>(index &lt; 0 || index &gt;= getChannelCount())</code>.</dd></dl>
+</li>
+</ul>
+<a name="setSampleRate(float, boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setSampleRate</h4>
+<pre>public&nbsp;void&nbsp;setSampleRate(float&nbsp;rate,
+                 boolean&nbsp;uniform)</pre>
+<div class="block">Sets the sample rate and indicates whether sample rate is uniform, or not.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>rate</code> - the nominal sample rate.</dd><dd><code>uniform</code> - indicates whether the sample rate is uniform.</dd></dl>
+</li>
+</ul>
+<a name="getSampleRate()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSampleRate</h4>
+<pre>public&nbsp;float&nbsp;getSampleRate()</pre>
+<div class="block">Returns the nominal sample rate of this stroke format.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/ink/IInkStrokeFormat.html#getSampleRate()">getSampleRate</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/ink/IInkStrokeFormat.html" title="interface in com.myscript.ink">IInkStrokeFormat</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the nominal sample rate.</dd></dl>
+</li>
+</ul>
+<a name="isSampleRateUniform()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isSampleRateUniform</h4>
+<pre>public&nbsp;boolean&nbsp;isSampleRateUniform()</pre>
+<div class="block">Returns the indication of whether the sample rate is uniform or not.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/ink/IInkStrokeFormat.html#isSampleRateUniform()">isSampleRateUniform</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/ink/IInkStrokeFormat.html" title="interface in com.myscript.ink">IInkStrokeFormat</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>true if the sample rate is uniform.</dd></dl>
+</li>
+</ul>
+<a name="lookupChannel(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>lookupChannel</h4>
+<pre>public&nbsp;int&nbsp;lookupChannel(java.lang.String&nbsp;name)</pre>
+<div class="block">Lookups this stroke format for the specified channel.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../com/myscript/ink/IInkStrokeFormat.html#lookupChannel(java.lang.String)">lookupChannel</a></code>&nbsp;in interface&nbsp;<code><a href="../../../com/myscript/ink/IInkStrokeFormat.html" title="interface in com.myscript.ink">IInkStrokeFormat</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>name</code> - the name of the channel to look for.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the index of the channel if found, otherwise <code>-1</code>.</dd></dl>
+</li>
+</ul>
+<a name="createStrokeFormat()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createStrokeFormat</h4>
+<pre>public&nbsp;<a href="../../../com/myscript/ink/InkStrokeFormat.html" title="class in com.myscript.ink">InkStrokeFormat</a>&nbsp;createStrokeFormat()</pre>
+<div class="block">Creates the builded stroke format.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the newly created <code>InkStrokeFormat</code>.</dd></dl>
+</li>
+</ul>
+<a name="parseInkStrokeFormat(com.myscript.engine.Engine, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>parseInkStrokeFormat</h4>
+<pre>public static final&nbsp;<a href="../../../com/myscript/ink/InkStrokeFormat.html" title="class in com.myscript.ink">InkStrokeFormat</a>&nbsp;parseInkStrokeFormat(<a href="../../../com/myscript/engine/Engine.html" title="class in com.myscript.engine">Engine</a>&nbsp;engine,
+                                   java.lang.String&nbsp;string)
+                                                  throws java.lang.NullPointerException,
+                                                         java.lang.IllegalStateException,
+                                                         java.lang.IllegalArgumentException</pre>
+<div class="block">Static factory method that directly creates a new
+ <code>InkStrokeFormat</code>, without the need to create a
+ <code>InkStrokeFormatBuilder</code>, by parsing its string representation.
+ The format of the string representation is that of
+ <a href="../../../com/myscript/engine/EngineObject.html#toString()"><code>EngineObject.toString()</code></a>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>engine</code> - the parent <code>Engine</code> object.</dd><dd><code>string</code> - the string representation of the stroke format to create.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new <code>InkStrokeFormat</code> object.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.NullPointerException</code> - when <code>engine</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>engine</code> has been disposed
+           of.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>string</code> has syntax
+           error(s).</dd></dl>
+</li>
+</ul>
+<a name="create(com.myscript.engine.Engine)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>create</h4>
+<pre>public static final&nbsp;<a href="../../../com/myscript/ink/InkStrokeFormatBuilder.html" title="class in com.myscript.ink">InkStrokeFormatBuilder</a>&nbsp;create(<a href="../../../com/myscript/engine/Engine.html" title="class in com.myscript.engine">Engine</a>&nbsp;engine)
+                                           throws java.lang.NullPointerException,
+                                                  java.lang.IllegalStateException,
+                                                  <a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a>,
+                                                  <a href="../../../com/myscript/engine/OutOfMemoryException.html" title="class in com.myscript.engine">OutOfMemoryException</a></pre>
+<div class="block">Static factory method that creates a new
+ <code>InkStrokeFormatBuilder</code> object whose parent is the specified
+ <code>Engine</code> object.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>engine</code> - the parent <code>Engine</code> object.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new <code>Ink</code> object.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.NullPointerException</code> - when <code>engine</code> is <code>null</code>.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>engine</code> has been disposed
+           of.</dd>
+<dd><code><a href="../../../com/myscript/engine/LimitExceededException.html" title="class in com.myscript.engine">LimitExceededException</a></code> - when the object user limit has been reached.</dd>
+<dd><code><a href="../../../com/myscript/engine/OutOfMemoryException.html" title="class in com.myscript.engine">OutOfMemoryException</a></code> - when the MyScript Engine failed to allocate
+           memory.</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/InkStrokeFormatBuilder.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../index-files/index-1.html">Index</a></li>
+<li><a href="../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../com/myscript/ink/InkStrokeFormat.html" title="class in com.myscript.ink"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../com/myscript/ink/InkTagIterator.html" title="class in com.myscript.ink"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../index.html?com/myscript/ink/InkStrokeFormatBuilder.html" target="_top">Frames</a></li>
+<li><a href="InkStrokeFormatBuilder.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#fields_inherited_from_class_com.myscript.engine.EngineObject">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+</body>
+</html>

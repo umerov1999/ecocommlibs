@@ -1,0 +1,9 @@
+﻿  Transliteration.c
+..\text\Transliteration.c : error C2220: warning treated as error - no 'object' file generated
+..\text\Transliteration.c : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+..\text\Transliteration.c(52): error C2001: newline in constant
+..\text\Transliteration.c(52): fatal error C1057: unexpected end of file in macro expansion
+  MyCertificate.c
+  MyScriptEngine-strerror.c
+  common.c
+  Generating Code...

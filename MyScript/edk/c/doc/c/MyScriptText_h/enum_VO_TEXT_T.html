@@ -1,0 +1,849 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>VO_TEXT_T</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="VO_TEXT_T";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptText.h</FONT>
+<BR>
+Enumeration VO_TEXT_T</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptText.h&gt;</CODE>
+<BR>
+<CODE>enum <B>_VO_TEXT_T</B></CODE>
+</P>
+<P>Lists the MyScript Text types. <P>
+        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Value_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Value Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_HandwritingContext">VO_HandwritingContext</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  300</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voHandwritingContext.html">voHandwritingContext</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_Recognizer">VO_Recognizer</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voRecognizer.html">voRecognizer</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_StructuredInputRecognizer">VO_StructuredInputRecognizer</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  303</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voStructuredInputRecognizer.html">voStructuredInputRecognizer</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_TextRecognizer">VO_TextRecognizer</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voTextRecognizer.html">voTextRecognizer</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_DigitalTextMatcher">VO_DigitalTextMatcher</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  VO_TextRecognizer + 2</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voDigitalTextMatcher.html">voDigitalTextMatcher</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_Resource">VO_Resource</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voResource.html">voResource</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_AlphabetKnowledge">VO_AlphabetKnowledge</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voAlphabetKnowledge.html">voAlphabetKnowledge</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_CursiveAlphabetKnowledge">VO_CursiveAlphabetKnowledge</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voCursiveAlphabetKnowledge.html">voCursiveAlphabetKnowledge</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_HandPrintedAlphabetKnowledge">VO_HandPrintedAlphabetKnowledge</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voHandPrintedAlphabetKnowledge.html">voHandPrintedAlphabetKnowledge</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IsolatedAlphabetKnowledge">VO_IsolatedAlphabetKnowledge</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voIsolatedAlphabetKnowledge.html">voIsolatedAlphabetKnowledge</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_LinguisticKnowledge">VO_LinguisticKnowledge</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voLinguisticKnowledge.html">voLinguisticKnowledge</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_Vocabulary">VO_Vocabulary</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voVocabulary.html">voVocabulary</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_LexicalUnit">VO_LexicalUnit</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voLexicalUnit.html">voLexicalUnit</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_Lexicon">VO_Lexicon</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voLexicon.html">voLexicon</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_Grammar">VO_Grammar</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  317</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voGrammar.html">voGrammar</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_SubsetKnowledge">VO_SubsetKnowledge</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voSubsetKnowledge.html">voSubsetKnowledge</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_Archive">VO_Archive</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voArchive.html">voArchive</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_WordIterator">VO_WordIterator</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voWordIterator.html">voWordIterator</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_RecognitionResult">VO_RecognitionResult</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voRecognitionResult.html">voRecognitionResult</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_CandidateIterator">VO_CandidateIterator</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voCandidateIterator.html">voCandidateIterator</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_SegmentIterator">VO_SegmentIterator</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voSegmentIterator.html">voSegmentIterator</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_DigitalInkTagger">VO_DigitalInkTagger</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voDigitalInkTagger.html">voDigitalInkTagger</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_TagList">VO_TagList</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voTagList.html">voTagList</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_TagIterator">VO_TagIterator</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voTagIterator.html">voTagIterator</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_TextSegmenter">VO_TextSegmenter</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voTextSegmenter.html">voTextSegmenter</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_LinguisticKnowledgeBuilder">VO_LinguisticKnowledgeBuilder</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptText_h/voLinguisticKnowledgeBuilder.html">voLinguisticKnowledgeBuilder</A></CODE> type identifier. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Value_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Value Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="VO_HandwritingContext"></A>
+<H3 class="code">VO_HandwritingContext</H3>
+<PRE>
+<B>VO_HandwritingContext</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voHandwritingContext.html">voHandwritingContext</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voHandwritingContext.html">voHandwritingContext</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_Recognizer"></A>
+<H3 class="code">VO_Recognizer</H3>
+<PRE>
+<B>VO_Recognizer</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voRecognizer.html">voRecognizer</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voRecognizer.html">voRecognizer</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_StructuredInputRecognizer"></A>
+<H3 class="code">VO_StructuredInputRecognizer</H3>
+<PRE>
+<B>VO_StructuredInputRecognizer</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voStructuredInputRecognizer.html">voStructuredInputRecognizer</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voStructuredInputRecognizer.html">voStructuredInputRecognizer</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_TextRecognizer"></A>
+<H3 class="code">VO_TextRecognizer</H3>
+<PRE>
+<B>VO_TextRecognizer</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voTextRecognizer.html">voTextRecognizer</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voTextRecognizer.html">voTextRecognizer</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_DigitalTextMatcher"></A>
+<H3 class="code">VO_DigitalTextMatcher</H3>
+<PRE>
+<B>VO_DigitalTextMatcher</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voDigitalTextMatcher.html">voDigitalTextMatcher</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voDigitalTextMatcher.html">voDigitalTextMatcher</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_Resource"></A>
+<H3 class="code">VO_Resource</H3>
+<PRE>
+<B>VO_Resource</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voResource.html">voResource</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voResource.html">voResource</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_AlphabetKnowledge"></A>
+<H3 class="code">VO_AlphabetKnowledge</H3>
+<PRE>
+<B>VO_AlphabetKnowledge</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voAlphabetKnowledge.html">voAlphabetKnowledge</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voAlphabetKnowledge.html">voAlphabetKnowledge</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_CursiveAlphabetKnowledge"></A>
+<H3 class="code">VO_CursiveAlphabetKnowledge</H3>
+<PRE>
+<B>VO_CursiveAlphabetKnowledge</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voCursiveAlphabetKnowledge.html">voCursiveAlphabetKnowledge</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voCursiveAlphabetKnowledge.html">voCursiveAlphabetKnowledge</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_HandPrintedAlphabetKnowledge"></A>
+<H3 class="code">VO_HandPrintedAlphabetKnowledge</H3>
+<PRE>
+<B>VO_HandPrintedAlphabetKnowledge</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voHandPrintedAlphabetKnowledge.html">voHandPrintedAlphabetKnowledge</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voHandPrintedAlphabetKnowledge.html">voHandPrintedAlphabetKnowledge</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IsolatedAlphabetKnowledge"></A>
+<H3 class="code">VO_IsolatedAlphabetKnowledge</H3>
+<PRE>
+<B>VO_IsolatedAlphabetKnowledge</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voIsolatedAlphabetKnowledge.html">voIsolatedAlphabetKnowledge</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voIsolatedAlphabetKnowledge.html">voIsolatedAlphabetKnowledge</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_LinguisticKnowledge"></A>
+<H3 class="code">VO_LinguisticKnowledge</H3>
+<PRE>
+<B>VO_LinguisticKnowledge</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voLinguisticKnowledge.html">voLinguisticKnowledge</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voLinguisticKnowledge.html">voLinguisticKnowledge</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_Vocabulary"></A>
+<H3 class="code">VO_Vocabulary</H3>
+<PRE>
+<B>VO_Vocabulary</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voVocabulary.html">voVocabulary</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voVocabulary.html">voVocabulary</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_LexicalUnit"></A>
+<H3 class="code">VO_LexicalUnit</H3>
+<PRE>
+<B>VO_LexicalUnit</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voLexicalUnit.html">voLexicalUnit</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voLexicalUnit.html">voLexicalUnit</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_Lexicon"></A>
+<H3 class="code">VO_Lexicon</H3>
+<PRE>
+<B>VO_Lexicon</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voLexicon.html">voLexicon</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voLexicon.html">voLexicon</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_Grammar"></A>
+<H3 class="code">VO_Grammar</H3>
+<PRE>
+<B>VO_Grammar</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voGrammar.html">voGrammar</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voGrammar.html">voGrammar</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_SubsetKnowledge"></A>
+<H3 class="code">VO_SubsetKnowledge</H3>
+<PRE>
+<B>VO_SubsetKnowledge</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voSubsetKnowledge.html">voSubsetKnowledge</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voSubsetKnowledge.html">voSubsetKnowledge</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_Archive"></A>
+<H3 class="code">VO_Archive</H3>
+<PRE>
+<B>VO_Archive</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voArchive.html">voArchive</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voArchive.html">voArchive</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_WordIterator"></A>
+<H3 class="code">VO_WordIterator</H3>
+<PRE>
+<B>VO_WordIterator</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voWordIterator.html">voWordIterator</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voWordIterator.html">voWordIterator</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_RecognitionResult"></A>
+<H3 class="code">VO_RecognitionResult</H3>
+<PRE>
+<B>VO_RecognitionResult</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voRecognitionResult.html">voRecognitionResult</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voRecognitionResult.html">voRecognitionResult</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_CandidateIterator"></A>
+<H3 class="code">VO_CandidateIterator</H3>
+<PRE>
+<B>VO_CandidateIterator</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voCandidateIterator.html">voCandidateIterator</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voCandidateIterator.html">voCandidateIterator</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_SegmentIterator"></A>
+<H3 class="code">VO_SegmentIterator</H3>
+<PRE>
+<B>VO_SegmentIterator</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voSegmentIterator.html">voSegmentIterator</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voSegmentIterator.html">voSegmentIterator</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_DigitalInkTagger"></A>
+<H3 class="code">VO_DigitalInkTagger</H3>
+<PRE>
+<B>VO_DigitalInkTagger</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voDigitalInkTagger.html">voDigitalInkTagger</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voDigitalInkTagger.html">voDigitalInkTagger</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>4.4_4 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_TagList"></A>
+<H3 class="code">VO_TagList</H3>
+<PRE>
+<B>VO_TagList</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voTagList.html">voTagList</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voTagList.html">voTagList</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>4.4_4 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_TagIterator"></A>
+<H3 class="code">VO_TagIterator</H3>
+<PRE>
+<B>VO_TagIterator</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voTagIterator.html">voTagIterator</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voTagIterator.html">voTagIterator</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>4.4_4 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_TextSegmenter"></A>
+<H3 class="code">VO_TextSegmenter</H3>
+<PRE>
+<B>VO_TextSegmenter</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voTextSegmenter.html">voTextSegmenter</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voTextSegmenter.html">voTextSegmenter</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>7.4_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_LinguisticKnowledgeBuilder"></A>
+<H3 class="code">VO_LinguisticKnowledgeBuilder</H3>
+<PRE>
+<B>VO_LinguisticKnowledgeBuilder</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptText_h/voLinguisticKnowledgeBuilder.html">voLinguisticKnowledgeBuilder</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/voLinguisticKnowledgeBuilder.html">voLinguisticKnowledgeBuilder</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>7.4_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

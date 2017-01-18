@@ -1,0 +1,7 @@
+﻿  MyScriptEngine-strerror.c
+  MyCertificate.c
+  common.c
+  ScratchOutDetection.c
+  Generating Code...
+  shape_ScratchOutDetection.vcxproj -> C:\Users\JYChoi\Desktop\Myscript_P\edk\c\examples\_win-vs14\../bin/win-x86-Debug\03.shape.04-ScratchOutDetection.exe
+  shape_ScratchOutDetection.vcxproj -> ../bin/win-x86-Debug\03.shape.04-ScratchOutDetection.pdb (Full PDB)

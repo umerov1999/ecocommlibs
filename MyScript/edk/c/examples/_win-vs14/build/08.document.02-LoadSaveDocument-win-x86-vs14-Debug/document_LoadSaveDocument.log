@@ -1,0 +1,7 @@
+﻿  MyCertificate.c
+  MyScriptEngine-strerror.c
+  common.c
+  LoadSaveDocument.c
+  Generating Code...
+  document_LoadSaveDocument.vcxproj -> C:\Users\JYChoi\Desktop\Myscript_P\edk\c\examples\_win-vs14\../bin/win-x86-Debug\08.document.02-LoadSaveDocument.exe
+  document_LoadSaveDocument.vcxproj -> ../bin/win-x86-Debug\08.document.02-LoadSaveDocument.pdb (Full PDB)

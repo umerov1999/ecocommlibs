@@ -1,0 +1,169 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>voArcPrimitiveInitializer</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="voArcPrimitiveInitializer";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptInk.h</FONT>
+<BR>
+Type voArcPrimitiveInitializer</H2>
+<PRE>
+<B>voArcPrimitiveInitializer</B>
+</PRE>
+<HR>
+<CODE>#include &lt;c/MyScriptInk.h&gt;</CODE>
+<BR>
+<CODE>typedef  struct <A href="../../c/MyScriptInk_h/struct__voArcPrimitiveInitializer.html">_voArcPrimitiveInitializer</A>  <B>voArcPrimitiveInitializer</B></CODE>
+<BR>
+<CODE></CODE>
+</P>
+<P>Holds the parameters required to create a new  <CODE><A href="../../c/MyScriptInk_h/voArcPrimitive.html">voArcPrimitive</A></CODE> instance, using center parameterization. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptInk_h/voArcPrimitive.html">voArcPrimitive</a>, <a href="../../c/MyScriptInk_h/voCreateArcPrimitiveFromCenterParametrization.html">voCreateArcPrimitiveFromCenterParametrization</a>
+</DD>
+</DT>
+</DL>
+
+</P>    
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Member_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="3"><FONT SIZE="+2"><B>Member Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voCharset</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE></CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#charset">charset</A></CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              The charset used to encode  <CODE>unit</CODE>, or  <CODE>NULL</CODE> to use the default charset. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voCenterEllipticArc</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE></CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#data">data</A></CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              The geometric parametrization of the primitive. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voInkDecorationType</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE></CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#firstDecoration">firstDecoration</A></CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              The type of decoration at the first point of the primitive,  <CODE><A href="../../c/MyScriptInk_h/enum__voInkDecorationType.html#VO_INK_DECORATION_NONE">VO_INK_DECORATION_NONE</A></CODE> by default. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voInkDecorationType</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE></CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#lastDecoration">lastDecoration</A></CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              The type of decoration at the last point of the primitive,  <CODE><A href="../../c/MyScriptInk_h/enum__voInkDecorationType.html#VO_INK_DECORATION_NONE">VO_INK_DECORATION_NONE</A></CODE> by default. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voString</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE></CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#unit">unit</A></CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              The unit in which  <CODE>data</CODE> is expressed, formatted following the SI (International System of Units), for example:  <CODE>mm</CODE>,  <CODE>s</CODE>, etc. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Member_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Member Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="charset"></A>
+<H3 class="code">charset</H3>
+<PRE>
+<A href="../../c/MyScriptEngine_h/voCharset.html">voCharset</A> <B>charset</B>
+</PRE>
+<DL>
+<DD>The charset used to encode  <CODE>unit</CODE>, or  <CODE>NULL</CODE> to use the default charset. <P>
+        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="data"></A>
+<H3 class="code">data</H3>
+<PRE>
+<A href="../../c/MyScriptInk_h/voCenterEllipticArc.html">voCenterEllipticArc</A> <B>data</B>
+</PRE>
+<DL>
+<DD>The geometric parametrization of the primitive. <P>
+
+<P>The angle parameters can be modified internally so that the  <CODE>phi</CODE> angle belongs to the interval  <CODE>]-pi/2 ; pi/2]</CODE>. </P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="firstDecoration"></A>
+<H3 class="code">firstDecoration</H3>
+<PRE>
+<A href="../../c/MyScriptInk_h/voInkDecorationType.html">voInkDecorationType</A> <B>firstDecoration</B>
+</PRE>
+<DL>
+<DD>The type of decoration at the first point of the primitive,  <CODE><A href="../../c/MyScriptInk_h/enum__voInkDecorationType.html#VO_INK_DECORATION_NONE">VO_INK_DECORATION_NONE</A></CODE> by default. <P>
+        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="lastDecoration"></A>
+<H3 class="code">lastDecoration</H3>
+<PRE>
+<A href="../../c/MyScriptInk_h/voInkDecorationType.html">voInkDecorationType</A> <B>lastDecoration</B>
+</PRE>
+<DL>
+<DD>The type of decoration at the last point of the primitive,  <CODE><A href="../../c/MyScriptInk_h/enum__voInkDecorationType.html#VO_INK_DECORATION_NONE">VO_INK_DECORATION_NONE</A></CODE> by default. <P>
+        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="unit"></A>
+<H3 class="code">unit</H3>
+<PRE>
+<A href="../../c/MyScriptEngine_h/voString.html">voString</A> <B>unit</B>
+</PRE>
+<DL>
+<DD>The unit in which  <CODE>data</CODE> is expressed, formatted following the SI (International System of Units), for example:  <CODE>mm</CODE>,  <CODE>s</CODE>, etc. <P>
+
+<P>
+<DL>
+<DT>
+<B>Note:</B>
+<DD>
+<P> 
+<CODE>unit</CODE> may be left empty, which indicates that no unit is specified. </P>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

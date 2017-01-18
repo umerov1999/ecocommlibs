@@ -1,0 +1,8 @@
+﻿  MyCertificate.c
+  MyScriptEngine-strerror.c
+  common.c
+  parseInk.c
+  ConjointRecognitionAndAdaptation.c
+  Generating Code...
+  writeradaptation_ConjointRecognitionAndAdaptation.vcxproj -> C:\Users\JYChoi\Desktop\Myscript_P\edk\c\examples\_win-vs14\../bin/win-x86-Debug\09.writeradaptation.01-ConjointRecognitionAndAdaptation.exe
+  writeradaptation_ConjointRecognitionAndAdaptation.vcxproj -> ../bin/win-x86-Debug\09.writeradaptation.01-ConjointRecognitionAndAdaptation.pdb (Full PDB)

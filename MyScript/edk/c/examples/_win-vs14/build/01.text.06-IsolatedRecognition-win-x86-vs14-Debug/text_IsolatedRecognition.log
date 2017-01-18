@@ -1,0 +1,7 @@
+﻿  IsolatedRecognition.c
+  MyCertificate.c
+  MyScriptEngine-strerror.c
+  common.c
+  Generating Code...
+  text_IsolatedRecognition.vcxproj -> C:\Users\JYChoi\Desktop\Myscript_P\edk\c\examples\_win-vs14\../bin/win-x86-Debug\01.text.06-IsolatedRecognition.exe
+  text_IsolatedRecognition.vcxproj -> ../bin/win-x86-Debug\01.text.06-IsolatedRecognition.pdb (Full PDB)

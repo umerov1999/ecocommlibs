@@ -1,0 +1,27 @@
+# Lexical unit traditional Chinese: phone_number
+#
+# 2006/06/01
+# v1.0
+
+# Separators
+sep = [- ]
+
+# Phone number format definition
+phone_number = (0[2-8]{sep})?[0-9][0-9][0-9][0-9]{sep}[0-9][0-9][0-9][0-9]
+phone_number = {phone_number}|(0[2-8]{sep})?[0-9][0-9][0-9]{sep}[0-9][0-9][0-9][0-9]
+phone_number = {phone_number}|(0[2-8]{sep}?)?[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]
+phone_number = {phone_number}|(0[2-8]{sep}?)?[0-9][0-9][0-9][0-9][0-9][0-9][0-9]
+phone_number = {phone_number}|\(0[2-8]\)[0-9][0-9][0-9][0-9]{sep}[0-9][0-9][0-9][0-9]
+phone_number = {phone_number}|\(0[2-8]\)[0-9][0-9][0-9]{sep}[0-9][0-9][0-9][0-9]
+phone_number = {phone_number}|\(0[2-8]\)[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]
+phone_number = {phone_number}|\(0[2-8]\)[0-9][0-9][0-9][0-9][0-9][0-9][0-9]
+
+# Mobile phone number format defintion
+mobile_phone_number = 09[0-9][0-9]{sep}[0-9][0-9][0-9]{sep}[0-9][0-9][0-9]
+mobile_phone_number = {mobile_phone_number}|09[0-9][0-9]{sep}?[0-9][0-9][0-9][0-9][0-9][0-9]
+mobile_phone_number = {mobile_phone_number}|\(09[0-9][0-9]\)[0-9][0-9][0-9]{sep}[0-9][0-9][0-9]
+mobile_phone_number = {mobile_phone_number}|\(09[0-9][0-9]\)[0-9][0-9][0-9][0-9][0-9][0-9]
+
+full_phone_number = {phone_number}|{mobile_phone_number}
+
+{full_phone_number}

@@ -1,0 +1,6 @@
+--engine-directory=${origin}/../../../../engine/bin/mac-x86+x64
+--certificate=${origin}/../../../../engine/certificates/MyCertificate.bin
+-R .
+${command-line-options}
+-R ${origin}/../../../../resources
+-R ${origin}/../../../../resources/*

@@ -1,0 +1,39 @@
+# Lexical unit Korean: date
+#
+# 2007/04/27
+# v1.1
+
+@set charset UTF-8
+
+# Forced numbers for years
+nineTeen / 80 = 19
+twenty / 80 = 20
+other / 20 = 1[0-8]|2[1-9]|[3-9][0-9]
+# Year
+yearNb = ({nineTeen}|{twenty}|{other})?[0-9][0-9]
+
+# Month
+monthNb = 0?[1-9]|1[012]
+
+# Day
+dayNb = 0?[1-9]|[12][0-9]|3[01]
+
+# Date (Korean format)
+korDate = {yearNb}년 ?{monthNb}월( ?{dayNb}일?)?
+korDate = {korDate}|{yearNb}년( ?{monthNb}월)?|{monthNb}월( ?{dayNb}일?)?|{dayNb}일
+
+# Date (Chinese format)
+chDate = {yearNb}年 ?{monthNb}月( ?{dayNb}日?)?
+chDate = {chDate}|{yearNb}年( ?{monthNb}月)?|{monthNb}月( ?{dayNb}日?)?|{dayNb}日
+
+# Date (Western format)
+westDate = {yearNb}/{monthNb}/{dayNb}
+westDate = {westDate}|{yearNb}-{monthNb}-{dayNb}
+westDate = {westDate}|{yearNb}\.{monthNb}\.{dayNb}\.?
+westDate = {westDate}|{yearNb} {monthNb} {dayNb}
+westDate = {westDate}|{yearNb}{monthNb}{dayNb}
+westDate = {westDate}|{yearNb}([-/. ]?{monthNb})?|{monthNb}([-/. ]?{dayNb})?|{dayNb}
+
+date = {korDate}|{chDate}|{westDate}
+
+{date}

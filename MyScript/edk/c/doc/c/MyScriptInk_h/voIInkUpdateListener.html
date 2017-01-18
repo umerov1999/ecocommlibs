@@ -1,0 +1,282 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>voIInkUpdateListener</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="voIInkUpdateListener";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptInk.h</FONT>
+<BR>
+Type voIInkUpdateListener</H2>
+<PRE>
+<B>voIInkUpdateListener</B>
+</PRE>
+<HR>
+<CODE>#include &lt;c/MyScriptInk.h&gt;</CODE>
+<BR>
+<CODE>typedef  struct <A href="../../c/MyScriptInk_h/struct__voIInkUpdateListener.html">_voIInkUpdateListener</A>  <B>voIInkUpdateListener</B></CODE>
+<BR>
+<CODE></CODE>
+</P>
+<P>Functions composing the  <CODE><A href="../../c/MyScriptInk_h/voIInkUpdateListener.html">voIInkUpdateListener</A></CODE> interface. <P>
+
+<P>
+<DL>
+<DT>
+<B>Note:</B>
+<DD>
+<P>This interface is implementable by user objects. User code is not allowed to invoke this interface directly: as a consequence  <CODE>voGetInterface()</CODE> returns  <CODE>NULL</CODE>. </P>
+</DD>
+</DT>
+</DL>
+
+</P>    
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Member_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="3"><FONT SIZE="+2"><B>Member Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>void</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#added">added</A>)(voEngine engine, voUserObject target, voInk ink)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Called when the target change listener is added to an ink object. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>void</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#onUpdate">onUpdate</A>)(voEngine engine, voUserObject target, voInk ink, const voExtent *extent, const voInkUpdateTagInfo *tagInfos, int32_t tagInfoCount)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Called when the ink has been updated. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>void</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#removed">removed</A>)(voEngine engine, voUserObject target, voInk ink)</CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Called when the target change listener is removed from an ink object. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Member_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Member Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="added"></A>
+<H3 class="code">added</H3>
+<PRE>void <B>added</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voUserObject.html">voUserObject</A> target, <A href="../../c/MyScriptInk_h/voInk.html">voInk</A> ink)</PRE>
+<DL>
+<DD>Called when the target change listener is added to an ink object. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target change listener. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+ink
+</B>
+<DD>
+<parameterdescription>
+
+<P>the ink to which the change listener was added. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="onUpdate"></A>
+<H3 class="code">onUpdate</H3>
+<PRE>void <B>onUpdate</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voUserObject.html">voUserObject</A> target, <A href="../../c/MyScriptInk_h/voInk.html">voInk</A> ink, const <A href="../../c/MyScriptInk_h/voExtent.html">voExtent</A> *extent, const <A href="../../c/MyScriptInk_h/voInkUpdateTagInfo.html">voInkUpdateTagInfo</A> *tagInfos, <A href="../../c/std/stdint_h/int32_t.html">int32_t</A> tagInfoCount)</PRE>
+<DL>
+<DD>Called when the ink has been updated. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target change listener. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+ink
+</B>
+<DD>
+<parameterdescription>
+
+<P>the ink that has been updated. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+extent
+</B>
+<DD>
+<parameterdescription>
+
+<P>the extent of updates on the X and Y axes. Note that you should add half the pen width to compute screen update rectangle. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+tagInfos
+</B>
+<DD>
+<parameterdescription>
+
+<P>an array of information about tag related actions. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+tagInfoCount
+</B>
+<DD>
+<parameterdescription>
+
+<P>the number of items in the above array. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="removed"></A>
+<H3 class="code">removed</H3>
+<PRE>void <B>removed</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptEngine_h/voUserObject.html">voUserObject</A> target, <A href="../../c/MyScriptInk_h/voInk.html">voInk</A> ink)</PRE>
+<DL>
+<DD>Called when the target change listener is removed from an ink object. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+engine
+</B>
+<DD>
+<parameterdescription>
+
+<P>the engine. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+target
+</B>
+<DD>
+<parameterdescription>
+
+<P>the target change listener. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+ink
+</B>
+<DD>
+<parameterdescription>
+
+<P>the ink from which the change listener was removed. </P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

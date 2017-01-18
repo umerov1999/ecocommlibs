@@ -1,0 +1,315 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>voDocumentAsyncCommand</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="voDocumentAsyncCommand";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptDocument.h</FONT>
+<BR>
+Type voDocumentAsyncCommand</H2>
+<PRE>
+<B>voDocumentAsyncCommand</B>
+</PRE>
+<HR>
+<CODE>#include &lt;c/MyScriptDocument.h&gt;</CODE>
+<BR>
+<CODE>typedef  enum _voDocumentAsyncCommand  <B>voDocumentAsyncCommand</B></CODE>
+<BR>
+<CODE></CODE>
+</P>
+<P>DEPRECATED. <P>
+
+<P>Lists the asynchronous commands of  <CODE><A href="../../c/MyScriptDocument_h/voDocument.html">voDocument</A></CODE> and  <CODE><A href="../../c/MyScriptDocument_h/voPage.html">voPage</A></CODE>.</P>
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voDocumentAsyncCommandCompletionCallback.html">voDocumentAsyncCommandCompletionCallback</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>deprecated as of 8.0.0</B>
+<DD>
+<P></P>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Value_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Value Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_CMD_SAVE">VO_CMD_SAVE</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indicates completion of  <CODE>voDocument.save()</CODE> or  <CODE>voPage.save()</CODE>. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_CMD_SAVE_AS">VO_CMD_SAVE_AS</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indicates completion of  <CODE>voDocument.saveAs()</CODE>. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_CMD_SAVE_TO_TEMP">VO_CMD_SAVE_TO_TEMP</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indicates completion of  <CODE>voPage.saveToTemp()</CODE>. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_CMD_DISCARD_CHANGES">VO_CMD_DISCARD_CHANGES</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indicates completion of  <CODE>voDocument.discardChanges()</CODE> or  <CODE>voPage.discardChanges()</CODE>. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_CMD_GET_METADATA">VO_CMD_GET_METADATA</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indicates completion of  <CODE>voDocument.getMetadata()</CODE> or  <CODE>voPage.getMetadata()</CODE>. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_CMD_SET_METADATA">VO_CMD_SET_METADATA</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indicates completion of  <CODE>voDocument.setMetadata()</CODE> or  <CODE>voPage.setMetadata()</CODE>. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_CMD_GET_INK">VO_CMD_GET_INK</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indicates completion of  <CODE>voPage.getInk()</CODE>. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_CMD_GET_LAYOUT">VO_CMD_GET_LAYOUT</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indicates completion of  <CODE>voPage.getLayout()</CODE>. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_CMD_GET_CONTENT">VO_CMD_GET_CONTENT</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indicates completion of  <CODE>voPage.getContent()</CODE>. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_CMD_PASTE">VO_CMD_PASTE</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indicates completion of  <CODE>voPage.paste()</CODE>. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_CMD_ADD_OBJECT">VO_CMD_ADD_OBJECT</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indicates completion of  <CODE>voDocument.addObject()</CODE>. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_CMD_EXTRACT_OBJECT_TO">VO_CMD_EXTRACT_OBJECT_TO</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indicates completion of  <CODE>voDocument.extractObjectTo()</CODE>. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_CMD_IMPORT_PAGE">VO_CMD_IMPORT_PAGE</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indicates completion of  <CODE>voDocument.importPage()</CODE>. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#_voDocumentAsyncCommand_FORCE_INT_SIZE">_voDocumentAsyncCommand_FORCE_INT_SIZE</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  0x7FFFFFFF</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Value_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Value Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="VO_CMD_SAVE"></A>
+<H3 class="code">VO_CMD_SAVE</H3>
+<PRE>
+<B>VO_CMD_SAVE</B>
+</PRE>
+<DL>
+<DD>Indicates completion of  <CODE>voDocument.save()</CODE> or  <CODE>voPage.save()</CODE>. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_CMD_SAVE_AS"></A>
+<H3 class="code">VO_CMD_SAVE_AS</H3>
+<PRE>
+<B>VO_CMD_SAVE_AS</B>
+</PRE>
+<DL>
+<DD>Indicates completion of  <CODE>voDocument.saveAs()</CODE>. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_CMD_SAVE_TO_TEMP"></A>
+<H3 class="code">VO_CMD_SAVE_TO_TEMP</H3>
+<PRE>
+<B>VO_CMD_SAVE_TO_TEMP</B>
+</PRE>
+<DL>
+<DD>Indicates completion of  <CODE>voPage.saveToTemp()</CODE>. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_CMD_DISCARD_CHANGES"></A>
+<H3 class="code">VO_CMD_DISCARD_CHANGES</H3>
+<PRE>
+<B>VO_CMD_DISCARD_CHANGES</B>
+</PRE>
+<DL>
+<DD>Indicates completion of  <CODE>voDocument.discardChanges()</CODE> or  <CODE>voPage.discardChanges()</CODE>. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_CMD_GET_METADATA"></A>
+<H3 class="code">VO_CMD_GET_METADATA</H3>
+<PRE>
+<B>VO_CMD_GET_METADATA</B>
+</PRE>
+<DL>
+<DD>Indicates completion of  <CODE>voDocument.getMetadata()</CODE> or  <CODE>voPage.getMetadata()</CODE>. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_CMD_SET_METADATA"></A>
+<H3 class="code">VO_CMD_SET_METADATA</H3>
+<PRE>
+<B>VO_CMD_SET_METADATA</B>
+</PRE>
+<DL>
+<DD>Indicates completion of  <CODE>voDocument.setMetadata()</CODE> or  <CODE>voPage.setMetadata()</CODE>. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_CMD_GET_INK"></A>
+<H3 class="code">VO_CMD_GET_INK</H3>
+<PRE>
+<B>VO_CMD_GET_INK</B>
+</PRE>
+<DL>
+<DD>Indicates completion of  <CODE>voPage.getInk()</CODE>. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_CMD_GET_LAYOUT"></A>
+<H3 class="code">VO_CMD_GET_LAYOUT</H3>
+<PRE>
+<B>VO_CMD_GET_LAYOUT</B>
+</PRE>
+<DL>
+<DD>Indicates completion of  <CODE>voPage.getLayout()</CODE>. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_CMD_GET_CONTENT"></A>
+<H3 class="code">VO_CMD_GET_CONTENT</H3>
+<PRE>
+<B>VO_CMD_GET_CONTENT</B>
+</PRE>
+<DL>
+<DD>Indicates completion of  <CODE>voPage.getContent()</CODE>. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_CMD_PASTE"></A>
+<H3 class="code">VO_CMD_PASTE</H3>
+<PRE>
+<B>VO_CMD_PASTE</B>
+</PRE>
+<DL>
+<DD>Indicates completion of  <CODE>voPage.paste()</CODE>. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_CMD_ADD_OBJECT"></A>
+<H3 class="code">VO_CMD_ADD_OBJECT</H3>
+<PRE>
+<B>VO_CMD_ADD_OBJECT</B>
+</PRE>
+<DL>
+<DD>Indicates completion of  <CODE>voDocument.addObject()</CODE>. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_CMD_EXTRACT_OBJECT_TO"></A>
+<H3 class="code">VO_CMD_EXTRACT_OBJECT_TO</H3>
+<PRE>
+<B>VO_CMD_EXTRACT_OBJECT_TO</B>
+</PRE>
+<DL>
+<DD>Indicates completion of  <CODE>voDocument.extractObjectTo()</CODE>. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_CMD_IMPORT_PAGE"></A>
+<H3 class="code">VO_CMD_IMPORT_PAGE</H3>
+<PRE>
+<B>VO_CMD_IMPORT_PAGE</B>
+</PRE>
+<DL>
+<DD>Indicates completion of  <CODE>voDocument.importPage()</CODE>. <P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="_voDocumentAsyncCommand_FORCE_INT_SIZE"></A>
+<H3 class="code">_voDocumentAsyncCommand_FORCE_INT_SIZE</H3>
+<PRE>
+<B>_voDocumentAsyncCommand_FORCE_INT_SIZE</B>
+</PRE>
+<DL>
+<DD>
+<P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

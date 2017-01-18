@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug using import lib|Win32">
+      <Configuration>Debug using import lib</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug using import lib|x64">
+      <Configuration>Debug using import lib</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release using import lib|Win32">
+      <Configuration>Release using import lib</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release using import lib|x64">
+      <Configuration>Release using import lib</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FF16AB98-A4F3-4C2D-82C4-44BD1C7FE225}</ProjectGuid>
+    <ProjectName>01.text.07-SuperimposedRecognition</ProjectName>
+    <RootNamespace>text_SuperimposedRecognition</RootNamespace>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="x86.props" Condition="'$(Platform)'=='Win32'" />
+    <Import Project="x64.props" Condition="'$(Platform)'=='x64'" />
+    <Import Project="Release.props" Condition="$([System.Text.RegularExpressions.Regex]::IsMatch('$(Configuration)', 'Release'))" />
+    <Import Project="Debug.props" Condition="$([System.Text.RegularExpressions.Regex]::IsMatch('$(Configuration)', 'Debug'))" />
+    <Import Project="Common.props" />
+    <Import Project="DlHelper.props" Condition="!$([System.Text.RegularExpressions.Regex]::IsMatch('$(Configuration)', 'using import lib'))" />
+    <Import Project="ImportLib.props" Condition="$([System.Text.RegularExpressions.Regex]::IsMatch('$(Configuration)', 'using import lib'))" />
+  </ImportGroup>
+  <ItemGroup>
+    <ClCompile Include="..\text\SuperimposedRecognition.c" />
+    <ClCompile Include="..\certificates\MyCertificate.c" />
+    <ClCompile Include="..\..\src\MyScriptEngine-strerror.c" />
+    <ClCompile Include="..\common\common.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\certificates\MyCertificate.h" />
+    <ClInclude Include="..\..\include\c\MyScriptEngine.h" />
+    <ClInclude Include="..\..\include\c\MyScriptText.h" />
+    <ClInclude Include="..\..\include\c\std\stdbool.h" />
+    <ClInclude Include="..\..\include\c\std\stdint.h" />
+    <ClInclude Include="..\..\src\MyScriptEngine-strerror.h" />
+    <ClInclude Include="..\common\common.h" />
+    <ClInclude Include="..\common\config.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="generate_launcher_batch_file.txt">
+      <Message Condition="$([System.Text.RegularExpressions.Regex]::IsMatch('$(Configuration)', 'using import lib'))">Generating Launcher Batch File</Message>
+      <Command Condition="$([System.Text.RegularExpressions.Regex]::IsMatch('$(Configuration)', 'using import lib'))">echo %40echo off &gt; $(TargetDir)$(TargetName).bat
+echo set PATH=%%~d0%%~p0\..\..\..\..\..\engine\bin\win-$(ARCH)%3b%%PATH%% &gt;&gt; $(TargetDir)$(TargetName).bat
+echo "%%~d0%%~p0\$(TargetName).exe" &gt;&gt; $(TargetDir)$(TargetName).bat
+echo pause &gt;&gt; $(TargetDir)$(TargetName).bat
+</Command>
+      <Outputs Condition="$([System.Text.RegularExpressions.Regex]::IsMatch('$(Configuration)', 'using import lib'))">$(TargetDir)$(TargetName).bat;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

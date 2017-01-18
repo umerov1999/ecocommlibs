@@ -1,0 +1,532 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>VO_INKSEARCH_T</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="VO_INKSEARCH_T";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptInkSearch.h</FONT>
+<BR>
+Enumeration VO_INKSEARCH_T</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptInkSearch.h&gt;</CODE>
+<BR>
+<CODE>enum <B>_VO_INKSEARCH_T</B></CODE>
+</P>
+<P>Lists the MyScript InkSearch types. <P>
+        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Value_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Value Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_Indexer">VO_Indexer</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  800</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptInkSearch_h/voIndexer.html">voIndexer</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_StructuredInputIndexer">VO_StructuredInputIndexer</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  802</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptInkSearch_h/voStructuredInputIndexer.html">voStructuredInputIndexer</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_StructuredInputSlimIndexer">VO_StructuredInputSlimIndexer</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  804</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptInkSearch_h/voStructuredInputSlimIndexer.html">voStructuredInputSlimIndexer</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_Index">VO_Index</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptInkSearch_h/voIndex.html">voIndex</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_Query">VO_Query</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptInkSearch_h/voQuery.html">voQuery</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_VocabularyQuery">VO_VocabularyQuery</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptInkSearch_h/voVocabularyQuery.html">voVocabularyQuery</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_StringQuery">VO_StringQuery</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptInkSearch_h/voStringQuery.html">voStringQuery</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_OrQuery">VO_OrQuery</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptInkSearch_h/voOrQuery.html">voOrQuery</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_AndQuery">VO_AndQuery</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptInkSearch_h/voAndQuery.html">voAndQuery</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_AndNotQuery">VO_AndNotQuery</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptInkSearch_h/voAndNotQuery.html">voAndNotQuery</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_NearQuery">VO_NearQuery</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptInkSearch_h/voNearQuery.html">voNearQuery</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_Finder">VO_Finder</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptInkSearch_h/voFinder.html">voFinder</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_FindResult">VO_FindResult</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptInkSearch_h/voFindResult.html">voFindResult</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_OccurrenceIterator">VO_OccurrenceIterator</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptInkSearch_h/voOccurrenceIterator.html">voOccurrenceIterator</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_OccurrenceCharacterIterator">VO_OccurrenceCharacterIterator</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptInkSearch_h/voOccurrenceCharacterIterator.html">voOccurrenceCharacterIterator</A></CODE> type identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_TextIndexer">VO_TextIndexer</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptInkSearch_h/voTextIndexer.html">voTextIndexer</A></CODE> type identifier. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Value_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Value Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="VO_Indexer"></A>
+<H3 class="code">VO_Indexer</H3>
+<PRE>
+<B>VO_Indexer</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptInkSearch_h/voIndexer.html">voIndexer</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptInkSearch_h/voIndexer.html">voIndexer</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_StructuredInputIndexer"></A>
+<H3 class="code">VO_StructuredInputIndexer</H3>
+<PRE>
+<B>VO_StructuredInputIndexer</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptInkSearch_h/voStructuredInputIndexer.html">voStructuredInputIndexer</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptInkSearch_h/voStructuredInputIndexer.html">voStructuredInputIndexer</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_StructuredInputSlimIndexer"></A>
+<H3 class="code">VO_StructuredInputSlimIndexer</H3>
+<PRE>
+<B>VO_StructuredInputSlimIndexer</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptInkSearch_h/voStructuredInputSlimIndexer.html">voStructuredInputSlimIndexer</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptInkSearch_h/voStructuredInputSlimIndexer.html">voStructuredInputSlimIndexer</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_Index"></A>
+<H3 class="code">VO_Index</H3>
+<PRE>
+<B>VO_Index</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptInkSearch_h/voIndex.html">voIndex</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptInkSearch_h/voIndex.html">voIndex</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_Query"></A>
+<H3 class="code">VO_Query</H3>
+<PRE>
+<B>VO_Query</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptInkSearch_h/voQuery.html">voQuery</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptInkSearch_h/voQuery.html">voQuery</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_VocabularyQuery"></A>
+<H3 class="code">VO_VocabularyQuery</H3>
+<PRE>
+<B>VO_VocabularyQuery</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptInkSearch_h/voVocabularyQuery.html">voVocabularyQuery</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptInkSearch_h/voVocabularyQuery.html">voVocabularyQuery</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_StringQuery"></A>
+<H3 class="code">VO_StringQuery</H3>
+<PRE>
+<B>VO_StringQuery</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptInkSearch_h/voStringQuery.html">voStringQuery</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptInkSearch_h/voStringQuery.html">voStringQuery</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_OrQuery"></A>
+<H3 class="code">VO_OrQuery</H3>
+<PRE>
+<B>VO_OrQuery</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptInkSearch_h/voOrQuery.html">voOrQuery</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptInkSearch_h/voOrQuery.html">voOrQuery</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_AndQuery"></A>
+<H3 class="code">VO_AndQuery</H3>
+<PRE>
+<B>VO_AndQuery</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptInkSearch_h/voAndQuery.html">voAndQuery</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptInkSearch_h/voAndQuery.html">voAndQuery</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_AndNotQuery"></A>
+<H3 class="code">VO_AndNotQuery</H3>
+<PRE>
+<B>VO_AndNotQuery</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptInkSearch_h/voAndNotQuery.html">voAndNotQuery</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptInkSearch_h/voAndNotQuery.html">voAndNotQuery</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_NearQuery"></A>
+<H3 class="code">VO_NearQuery</H3>
+<PRE>
+<B>VO_NearQuery</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptInkSearch_h/voNearQuery.html">voNearQuery</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptInkSearch_h/voNearQuery.html">voNearQuery</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_Finder"></A>
+<H3 class="code">VO_Finder</H3>
+<PRE>
+<B>VO_Finder</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptInkSearch_h/voFinder.html">voFinder</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptInkSearch_h/voFinder.html">voFinder</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_FindResult"></A>
+<H3 class="code">VO_FindResult</H3>
+<PRE>
+<B>VO_FindResult</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptInkSearch_h/voFindResult.html">voFindResult</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptInkSearch_h/voFindResult.html">voFindResult</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_OccurrenceIterator"></A>
+<H3 class="code">VO_OccurrenceIterator</H3>
+<PRE>
+<B>VO_OccurrenceIterator</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptInkSearch_h/voOccurrenceIterator.html">voOccurrenceIterator</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptInkSearch_h/voOccurrenceIterator.html">voOccurrenceIterator</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_OccurrenceCharacterIterator"></A>
+<H3 class="code">VO_OccurrenceCharacterIterator</H3>
+<PRE>
+<B>VO_OccurrenceCharacterIterator</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptInkSearch_h/voOccurrenceCharacterIterator.html">voOccurrenceCharacterIterator</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptInkSearch_h/voOccurrenceCharacterIterator.html">voOccurrenceCharacterIterator</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>4.1_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_TextIndexer"></A>
+<H3 class="code">VO_TextIndexer</H3>
+<PRE>
+<B>VO_TextIndexer</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptInkSearch_h/voTextIndexer.html">voTextIndexer</A></CODE> type identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptInkSearch_h/voTextIndexer.html">voTextIndexer</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>6.0_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

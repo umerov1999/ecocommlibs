@@ -1,0 +1,68 @@
+@import ludef "defNUL"
+
+#
+# literal month
+#
+
+lit_month = (j|J)an(uary|\.)?|(m|M)ar(ch|\.)?|(m|M)ay|(j|J)ul(y|\.)?|(a|A)ug(ust|\.)?|(o|O)ct(ober|\.)?|(d|D)ec(ember|\.)?
+lit_month = {lit_month}|(a|A)pr(il|\.)?|(j|J)un(e|\.)?|(s|S)ep(tember|\.)?|(n|N)ov(ember|\.)?
+lit_month = {lit_month}|(f|F)eb(ruary|\.)?
+
+#
+# numerical month
+#
+num_month = 0?[1-9]|1[012]
+
+#
+# day of week
+#
+day_of_week = (m|M)on(day|\.)?|(t|T)ue(sday|\.)?|(t|T)ues\.?|(w|W)ed(nesday|\.)?|(t|T)hu(rsday|\.)?|(t|T)hurs\.?|(f|F)ri(day|\.)?|(s|S)at(urday|\.)?|(s|S)un(day|\.)?
+
+#
+# day
+#
+day = 0?[1-9]|[1-2][0-9]|3[01]
+
+#
+# year
+#
+
+year_2 = {NUL}[0-9][0-9]
+year_4_pref_1 / 80 = 19|20
+year_4_pref_2 / 20 = {NUL}[0-9][0-9]
+year_4_pref = {year_4_pref_1}|{year_4_pref_2}
+
+year = {year_4_pref}?{year_2}
+
+#
+# basic date formats
+#
+
+date_fmt1 = ({day}( ?th)?|([23])?1 ?st|2?2 ?nd|2?3 ?rd)\.? (of )?{lit_month}(,? {year})?
+date_fmt1 = ({day_of_week},?( the)? )?{date_fmt1}
+
+date_fmt2 = {lit_month},? ({day}( ?th)?|([23])?1 ?st|2?2 ?nd|2?3 ?rd)(,? ?{year})?
+date_fmt2 = ({day_of_week},? ?)?{date_fmt2}|({date_fmt2},? )?{day_of_week}
+date_fmt3 = ({day_of_week} )?{num_month}/{day}(/{year})?
+date_fmt4 = ({day_of_week} )?{num_month}-{day}(-{year})?
+date_fmt5 = ({day_of_week} )?{num_month}{day}({year})?
+date_fmt6 = ({day_of_week} )?{num_month}\.{day}(\.{year})?
+date_fmt7 = ({day_of_week} )?{num_month} {day}( {year})?
+date_fmt8 = ({day_of_week} )?{day}-{lit_month}(-{year})?
+
+#
+# date from the basic formats
+#
+
+date / 10 = {date_fmt1}
+date / 30 = {date}|{date_fmt2}
+date / 60 = {date}|{date_fmt3}
+date / 30 = {date}|{date_fmt4}
+date / 60 = {date}|{date_fmt5}
+date / 30 = {date}|{date_fmt6}
+date / 30 = {date}|{date_fmt7}
+date / 10 = {date}|{date_fmt8}
+
+##############################################################################
+
+{date}

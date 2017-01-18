@@ -1,0 +1,12 @@
+# Data format Korean: numbers
+#
+# 2006/09/25
+# v1.0
+
+d = [0-9]
+
+integer = [+\-]?({d}+|{d}?{d}?{d}(\,{d}{d}{d})*)
+
+number = {integer}(\.{d}+)?
+
+{number}

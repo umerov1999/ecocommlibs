@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>_voDocumentInitializer</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="_voDocumentInitializer";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptDocument.h</FONT>
+<BR>
+Structure _voDocumentInitializer</H2>
+<PRE>
+<B></B>
+</PRE>
+<HR>
+<CODE>#include &lt;c/MyScriptDocument.h&gt;</CODE>
+<BR>
+<CODE>struct <B>_voDocumentInitializer</B></CODE>
+<BR>
+<CODE></CODE>
+</P>
+<P></P>Holds the parameters required to create a new  <CODE><A href="../../c/MyScriptDocument_h/voDocument.html">voDocument</A></CODE> instance. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptDocument_h/voDocument.html">voDocument</a>, <a href="../../c/MyScriptDocument_h/voCreateDocument.html">voCreateDocument</a>
+</DD>
+</DT>
+</DL>
+
+</P>    
+</P>
+<HR>
+<P>
+<A NAME="Member_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="3"><FONT SIZE="+2"><B>Member Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voCharset</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE></CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#charset">charset</A></CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              The charset used to encode pathnames. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE></CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#createDirectory">createDirectory</A></CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              When  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>, document creation will fail when  <CODE>fileName</CODE> points to a non existing directory. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voString</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE></CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#fileName">fileName</A></CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              The pathname of the document. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE></CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#overwrite">overwrite</A></CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              When  <CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE>, a new document will be created, whether  <CODE>fileName</CODE> points to an existing document or not. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voString</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE></CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#temporaryDirectoryName">temporaryDirectoryName</A></CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              The pathname of the temporary directory to use. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<P>
+<A NAME="Member_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Member Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="charset"></A>
+<H3 class="code">charset</H3>
+<PRE>
+<A href="../../c/MyScriptEngine_h/voCharset.html">voCharset</A> <B>charset</B>
+</PRE>
+<DL>
+<DD>The charset used to encode pathnames. <P>
+        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="createDirectory"></A>
+<H3 class="code">createDirectory</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B>createDirectory</B>
+</PRE>
+<DL>
+<DD>When  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE>, document creation will fail when  <CODE>fileName</CODE> points to a non existing directory. <P>
+
+<P>When  <CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE>,  <CODE>fileName</CODE> parent will be created if it does not exist. </P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="fileName"></A>
+<H3 class="code">fileName</H3>
+<PRE>
+<A href="../../c/MyScriptEngine_h/voString.html">voString</A> <B>fileName</B>
+</PRE>
+<DL>
+<DD>The pathname of the document. <P>
+        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="overwrite"></A>
+<H3 class="code">overwrite</H3>
+<PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B>overwrite</B>
+</PRE>
+<DL>
+<DD>When  <CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE>, a new document will be created, whether  <CODE>fileName</CODE> points to an existing document or not. <P>
+        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="temporaryDirectoryName"></A>
+<H3 class="code">temporaryDirectoryName</H3>
+<PRE>
+<A href="../../c/MyScriptEngine_h/voString.html">voString</A> <B>temporaryDirectoryName</B>
+</PRE>
+<DL>
+<DD>The pathname of the temporary directory to use. <P>
+
+<P>When empty, temporary directories and files may be created next to the document file.</P>
+<P>Temporary directories and files are removed upon saving or discarding of the document's modifications (call to  <CODE>save()</CODE> or  <CODE>saveAs()</CODE> or  <CODE>discardChanges()</CODE>). </P>        
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</P>
+</BODY>
+</HTML>

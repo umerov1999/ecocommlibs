@@ -1,0 +1,572 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>VO_RECOGNIZER_PROP</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="VO_RECOGNIZER_PROP";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptText.h</FONT>
+<BR>
+Enumeration VO_RECOGNIZER_PROP</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptText.h&gt;</CODE>
+<BR>
+<CODE>enum <B>_VO_RECOGNIZER_PROP</B></CODE>
+</P>
+<P> 
+Lists the properties that apply to the instances of the Recognizer type.
+   <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/enum_VO_TEXT_T.html#VO_Recognizer">VO_Recognizer</a>, <a href="../../c/MyScriptText_h/voRecognizer.html">voRecognizer</a>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Value_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Value Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_CHAR_CANDIDATE_LIST_SIZE">VO_CHAR_CANDIDATE_LIST_SIZE</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  (VO_Recognizer &lt;&lt; 16) + 1</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies the size of the candidate lists that will be provided at the character level in the recognition result. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_WORD_CANDIDATE_LIST_SIZE">VO_WORD_CANDIDATE_LIST_SIZE</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies the size of the candidate lists that will be provided at the word level in the recognition result. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_TEXT_CANDIDATE_LIST_SIZE">VO_TEXT_CANDIDATE_LIST_SIZE</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies the size of the candidate lists that will be provided at the text level in the recognition result. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_DISCARD_CASE_VARIATIONS">VO_DISCARD_CASE_VARIATIONS</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tells the recognizer to detect the candidates that differ only in case and return the best candidate of that lot. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_OVERRIDE_CASING_SCHEME">VO_OVERRIDE_CASING_SCHEME</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  19726342</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Overrides the casing scheme specified by every  <CODE><A href="../../c/MyScriptText_h/voVocabulary.html">voVocabulary</A></CODE> resource attached to a recognizer. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_OVERRIDE_ACCENTUATION_SCHEME">VO_OVERRIDE_ACCENTUATION_SCHEME</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Overrides the accentuation scheme specified by every  <CODE><A href="../../c/MyScriptText_h/voVocabulary.html">voVocabulary</A></CODE> resource attached to a recognizer. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_DISCARD_ACCENTUATION_VARIATIONS">VO_DISCARD_ACCENTUATION_VARIATIONS</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tells the recognizer to detect the candidates that differ only in accentuation and return the best candidate of that lot. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_GLYPH_DISTORTION">VO_GLYPH_DISTORTION</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies the amount of glyph distortion. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_SPELLING_DISTORTION">VO_SPELLING_DISTORTION</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies the amount of spelling distortion. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ENABLE_OUT_OF_LEXICON">VO_ENABLE_OUT_OF_LEXICON</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enables out of lexicon matches. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ENABLE_ROTATED_TEXT">VO_ENABLE_ROTATED_TEXT</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enables recognition of rotated text. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ENABLE_TRANSLITERATION">VO_ENABLE_TRANSLITERATION</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enables transliteration. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_HALF_WIDTH_FULL_WIDTH_SCHEME">VO_HALF_WIDTH_FULL_WIDTH_SCHEME</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies the half width / full width character conversion scheme. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ENABLE_ALIEN_CHARACTERS">VO_ENABLE_ALIEN_CHARACTERS</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enables the support of alien characters. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_FUZZY_PINYIN_FLAGS">VO_FUZZY_PINYIN_FLAGS</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_SUPERIMPOSED_SCHEME">VO_SUPERIMPOSED_SCHEME</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Disables superimposed handwriting recognition mode when using a cursive-superimposed AlphabetKnowledge resource. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Value_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Value Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="VO_CHAR_CANDIDATE_LIST_SIZE"></A>
+<H3 class="code">VO_CHAR_CANDIDATE_LIST_SIZE</H3>
+<PRE>
+<B>VO_CHAR_CANDIDATE_LIST_SIZE</B>
+</PRE>
+<DL>
+<DD>Specifies the size of the candidate lists that will be provided at the character level in the recognition result. <P>
+
+<P>This value must be between  <CODE>1</CODE> and  <CODE>20</CODE>.</P>
+<P> 
+<DL>
+<DT>
+<B>Usage:</B>
+<DD>
+<PRE>uint32_t value;
+voGetProperty(engine, object, VO_CHAR_CANDIDATE_LIST_SIZE, &amp;value, sizeof(value));
+voSetProperty(engine, object, VO_CHAR_CANDIDATE_LIST_SIZE, &amp;value, sizeof(value));</PRE>
+</DD>
+</DT>
+</DL> 
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_WORD_CANDIDATE_LIST_SIZE"></A>
+<H3 class="code">VO_WORD_CANDIDATE_LIST_SIZE</H3>
+<PRE>
+<B>VO_WORD_CANDIDATE_LIST_SIZE</B>
+</PRE>
+<DL>
+<DD>Specifies the size of the candidate lists that will be provided at the word level in the recognition result. <P>
+
+<P>This value must be between  <CODE>1</CODE> and  <CODE>20</CODE>.</P>
+<P> 
+<DL>
+<DT>
+<B>Usage:</B>
+<DD>
+<PRE>uint32_t value;
+voGetProperty(engine, object, VO_WORD_CANDIDATE_LIST_SIZE, &amp;value, sizeof(value));
+voSetProperty(engine, object, VO_WORD_CANDIDATE_LIST_SIZE, &amp;value, sizeof(value));</PRE>
+</DD>
+</DT>
+</DL> 
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_TEXT_CANDIDATE_LIST_SIZE"></A>
+<H3 class="code">VO_TEXT_CANDIDATE_LIST_SIZE</H3>
+<PRE>
+<B>VO_TEXT_CANDIDATE_LIST_SIZE</B>
+</PRE>
+<DL>
+<DD>Specifies the size of the candidate lists that will be provided at the text level in the recognition result. <P>
+
+<P>This value must be between  <CODE>1</CODE> and  <CODE>20</CODE>.</P>
+<P> 
+<DL>
+<DT>
+<B>Usage:</B>
+<DD>
+<PRE>uint32_t value;
+voGetProperty(engine, object, VO_TEXT_CANDIDATE_LIST_SIZE, &amp;value, sizeof(value));
+voSetProperty(engine, object, VO_TEXT_CANDIDATE_LIST_SIZE, &amp;value, sizeof(value));</PRE>
+</DD>
+</DT>
+</DL> 
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_DISCARD_CASE_VARIATIONS"></A>
+<H3 class="code">VO_DISCARD_CASE_VARIATIONS</H3>
+<PRE>
+<B>VO_DISCARD_CASE_VARIATIONS</B>
+</PRE>
+<DL>
+<DD>Tells the recognizer to detect the candidates that differ only in case and return the best candidate of that lot. <P>
+
+<P> 
+<DL>
+<DT>
+<B>Usage:</B>
+<DD>
+<PRE>bool value;
+voGetProperty(engine, object, VO_DISCARD_CASE_VARIATIONS, &amp;value, sizeof(value));
+voSetProperty(engine, object, VO_DISCARD_CASE_VARIATIONS, &amp;value, sizeof(value));</PRE>
+</DD>
+</DT>
+</DL> 
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_OVERRIDE_CASING_SCHEME"></A>
+<H3 class="code">VO_OVERRIDE_CASING_SCHEME</H3>
+<PRE>
+<B>VO_OVERRIDE_CASING_SCHEME</B>
+</PRE>
+<DL>
+<DD>Overrides the casing scheme specified by every  <CODE><A href="../../c/MyScriptText_h/voVocabulary.html">voVocabulary</A></CODE> resource attached to a recognizer. <P>
+
+<P>
+<verbatim xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">                                                                       @xmlonly &lt;property type="Recognizer" read-only="no"&gt;\endxmlonly\ref voCasingScheme@xmlonly &lt;/property&gt;\endxmlonly
+</verbatim>
+</P>
+<P>
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>4.5_5 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_OVERRIDE_ACCENTUATION_SCHEME"></A>
+<H3 class="code">VO_OVERRIDE_ACCENTUATION_SCHEME</H3>
+<PRE>
+<B>VO_OVERRIDE_ACCENTUATION_SCHEME</B>
+</PRE>
+<DL>
+<DD>Overrides the accentuation scheme specified by every  <CODE><A href="../../c/MyScriptText_h/voVocabulary.html">voVocabulary</A></CODE> resource attached to a recognizer. <P>
+
+<P>
+<verbatim>                                                                       @xmlonly &lt;property type="Recognizer" read-only="no"&gt;\endxmlonly\ref voAccentuationScheme@xmlonly &lt;/property&gt;\endxmlonly
+</verbatim>
+</P>
+<P>
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>4.5_5 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_DISCARD_ACCENTUATION_VARIATIONS"></A>
+<H3 class="code">VO_DISCARD_ACCENTUATION_VARIATIONS</H3>
+<PRE>
+<B>VO_DISCARD_ACCENTUATION_VARIATIONS</B>
+</PRE>
+<DL>
+<DD>Tells the recognizer to detect the candidates that differ only in accentuation and return the best candidate of that lot. <P>
+
+<P>
+<verbatim>                                                                       @xmlonly &lt;property type="Recognizer" read-only="no"&gt;\endxmlonly\ref bool@xmlonly &lt;/property&gt;\endxmlonly
+</verbatim>
+</P>
+<P>
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>4.5_5 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_GLYPH_DISTORTION"></A>
+<H3 class="code">VO_GLYPH_DISTORTION</H3>
+<PRE>
+<B>VO_GLYPH_DISTORTION</B>
+</PRE>
+<DL>
+<DD>Specifies the amount of glyph distortion. <P>
+
+<P> 
+<CODE>0</CODE> means no distortion.  <CODE>255</CODE> means maximum supported distortion.</P>
+<P> 
+<DL>
+<DT>
+<B>Usage:</B>
+<DD>
+<PRE>uint8_t value;
+voGetProperty(engine, object, VO_GLYPH_DISTORTION, &amp;value, sizeof(value));
+voSetProperty(engine, object, VO_GLYPH_DISTORTION, &amp;value, sizeof(value));</PRE>
+</DD>
+</DT>
+</DL>
+</P>
+<P>
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>4.5_5 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_SPELLING_DISTORTION"></A>
+<H3 class="code">VO_SPELLING_DISTORTION</H3>
+<PRE>
+<B>VO_SPELLING_DISTORTION</B>
+</PRE>
+<DL>
+<DD>Specifies the amount of spelling distortion. <P>
+
+<P> 
+<CODE>0</CODE> means no distortion.  <CODE>255</CODE> means maximum supported distortion.</P>
+<P> 
+<DL>
+<DT>
+<B>Usage:</B>
+<DD>
+<PRE>uint8_t value;
+voGetProperty(engine, object, VO_SPELLING_DISTORTION, &amp;value, sizeof(value));
+voSetProperty(engine, object, VO_SPELLING_DISTORTION, &amp;value, sizeof(value));</PRE>
+</DD>
+</DT>
+</DL>
+</P>
+<P>
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>4.5_5 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ENABLE_OUT_OF_LEXICON"></A>
+<H3 class="code">VO_ENABLE_OUT_OF_LEXICON</H3>
+<PRE>
+<B>VO_ENABLE_OUT_OF_LEXICON</B>
+</PRE>
+<DL>
+<DD>Enables out of lexicon matches. <P>
+
+<P>
+<verbatim>                                                                       @xmlonly &lt;property type="Recognizer" read-only="no"&gt;\endxmlonly\ref bool@xmlonly &lt;/property&gt;\endxmlonly
+</verbatim>
+</P>
+<P>
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>4.5_5 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ENABLE_ROTATED_TEXT"></A>
+<H3 class="code">VO_ENABLE_ROTATED_TEXT</H3>
+<PRE>
+<B>VO_ENABLE_ROTATED_TEXT</B>
+</PRE>
+<DL>
+<DD>Enables recognition of rotated text. <P>
+
+<P>
+<verbatim>                                                                       @xmlonly &lt;property type="Recognizer" read-only="no"&gt;\endxmlonly\ref bool@xmlonly &lt;/property&gt;\endxmlonly
+</verbatim>
+</P>
+<P>
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>6.4 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ENABLE_TRANSLITERATION"></A>
+<H3 class="code">VO_ENABLE_TRANSLITERATION</H3>
+<PRE>
+<B>VO_ENABLE_TRANSLITERATION</B>
+</PRE>
+<DL>
+<DD>Enables transliteration. <P>
+
+<P>
+<verbatim>                                                                       @xmlonly &lt;property type="Recognizer" read-only="no"&gt;\endxmlonly\ref bool@xmlonly &lt;/property&gt;\endxmlonly
+</verbatim>
+</P>
+<P>
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>7.0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_HALF_WIDTH_FULL_WIDTH_SCHEME"></A>
+<H3 class="code">VO_HALF_WIDTH_FULL_WIDTH_SCHEME</H3>
+<PRE>
+<B>VO_HALF_WIDTH_FULL_WIDTH_SCHEME</B>
+</PRE>
+<DL>
+<DD>Specifies the half width / full width character conversion scheme. <P>
+
+<P>
+<verbatim>                                                                       @xmlonly &lt;property type="Recognizer" read-only="no"&gt;\endxmlonly\ref voHalfWidthFullWidthScheme@xmlonly &lt;/property&gt;\endxmlonly
+</verbatim>
+</P>
+<P>
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>7.3_5 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ENABLE_ALIEN_CHARACTERS"></A>
+<H3 class="code">VO_ENABLE_ALIEN_CHARACTERS</H3>
+<PRE>
+<B>VO_ENABLE_ALIEN_CHARACTERS</B>
+</PRE>
+<DL>
+<DD>Enables the support of alien characters. <P>
+
+<P>
+<verbatim>                                                                       @xmlonly &lt;property type="Recognizer" read-only="no"&gt;\endxmlonly\ref bool@xmlonly &lt;/property&gt;\endxmlonly
+</verbatim>
+</P>
+<P>
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>7.3_5 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_FUZZY_PINYIN_FLAGS"></A>
+<H3 class="code">VO_FUZZY_PINYIN_FLAGS</H3>
+<PRE>
+<B>VO_FUZZY_PINYIN_FLAGS</B>
+</PRE>
+<DL>
+<DD>
+<P>
+          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_SUPERIMPOSED_SCHEME"></A>
+<H3 class="code">VO_SUPERIMPOSED_SCHEME</H3>
+<PRE>
+<B>VO_SUPERIMPOSED_SCHEME</B>
+</PRE>
+<DL>
+<DD>Disables superimposed handwriting recognition mode when using a cursive-superimposed AlphabetKnowledge resource. <P>
+
+<P>
+<verbatim>                                                                        @xmlonly &lt;property type="Recognizer" read-only="no"&gt;\endxmlonly\ref voSuperimposedScheme@xmlonly &lt;/property&gt;\endxmlonly
+</verbatim>
+</P>
+<P>
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>8.0_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

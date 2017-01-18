@@ -1,0 +1,263 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>VO_VOCABULARY_PROP</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="VO_VOCABULARY_PROP";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptText.h</FONT>
+<BR>
+Enumeration VO_VOCABULARY_PROP</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptText.h&gt;</CODE>
+<BR>
+<CODE>enum <B>_VO_VOCABULARY_PROP</B></CODE>
+</P>
+<P> 
+Lists the properties that apply to the instances of the Vocabulary type.
+   <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/enum_VO_TEXT_T.html#VO_Vocabulary">VO_Vocabulary</a>, <a href="../../c/MyScriptText_h/voVocabulary.html">voVocabulary</a>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Value_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Value Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_FREQUENCY_SCALE">VO_FREQUENCY_SCALE</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  (VO_Vocabulary &lt;&lt; 16)</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scales the frequency values of a  <CODE><A href="../../c/MyScriptText_h/voVocabulary.html">voVocabulary</A></CODE> resource so that their associated probabilities are given more or less importance against other probabilities in the recognition process. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_RESERVED_RECOGNITION_PATHS">VO_RESERVED_RECOGNITION_PATHS</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets aside a certain percentage (expressed by a value between  <CODE>0</CODE> and  <CODE>1</CODE>) of the paths that the recognizer explores for one particular resource. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_RECOGNITION_PATH_LIMIT">VO_RECOGNITION_PATH_LIMIT</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  VO_RESERVED_RECOGNITION_PATHS + 2</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets aside a maximum percentage (expressed as a value between  <CODE>0</CODE> and  <CODE>1</CODE>) of the paths that the recognizer explores for one particular resource. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_CASING_SCHEME">VO_CASING_SCHEME</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Controls the way character case variations are being handled by the recognition process. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_ACCENTUATION_SCHEME">VO_ACCENTUATION_SCHEME</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Controls the way character accentuation variations are being handled by the recognition process. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Value_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Value Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="VO_FREQUENCY_SCALE"></A>
+<H3 class="code">VO_FREQUENCY_SCALE</H3>
+<PRE>
+<B>VO_FREQUENCY_SCALE</B>
+</PRE>
+<DL>
+<DD>Scales the frequency values of a  <CODE><A href="../../c/MyScriptText_h/voVocabulary.html">voVocabulary</A></CODE> resource so that their associated probabilities are given more or less importance against other probabilities in the recognition process. <P>
+
+<P>The default value is  <CODE>1</CODE>.</P>
+<P> 
+<DL>
+<DT>
+<B>Usage:</B>
+<DD>
+<PRE> value;
+voGetProperty(engine, object, VO_FREQUENCY_SCALE, &amp;value, sizeof(value));
+voSetProperty(engine, object, VO_FREQUENCY_SCALE, &amp;value, sizeof(value));</PRE>
+</DD>
+</DT>
+</DL> 
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_RESERVED_RECOGNITION_PATHS"></A>
+<H3 class="code">VO_RESERVED_RECOGNITION_PATHS</H3>
+<PRE>
+<B>VO_RESERVED_RECOGNITION_PATHS</B>
+</PRE>
+<DL>
+<DD>Sets aside a certain percentage (expressed by a value between  <CODE>0</CODE> and  <CODE>1</CODE>) of the paths that the recognizer explores for one particular resource. <P>
+
+<P>By doing this, the vocabulary resource can supply a recognition candidate even if the scores from its paths are noticeably lower than the other scores.</P>
+<P>For example you could use  <CODE><A href="../../c/MyScriptText_h/enum_VO_VOCABULARY_PROP.html#VO_FREQUENCY_SCALE">VO_FREQUENCY_SCALE</A></CODE> in conjunction with  <CODE><A href="../../c/MyScriptText_h/enum_VO_VOCABULARY_PROP.html#VO_RESERVED_RECOGNITION_PATHS">VO_RESERVED_RECOGNITION_PATHS</A></CODE> to give precedence to a resource but reserve some paths for another resource in order to provide a safety net in case of a nil match with the first one.</P>
+<P> 
+<DL>
+<DT>
+<B>Usage:</B>
+<DD>
+<PRE> value;
+voGetProperty(engine, object, VO_RESERVED_RECOGNITION_PATHS, &amp;value, sizeof(value));
+voSetProperty(engine, object, VO_RESERVED_RECOGNITION_PATHS, &amp;value, sizeof(value));</PRE>
+</DD>
+</DT>
+</DL> 
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_RECOGNITION_PATH_LIMIT"></A>
+<H3 class="code">VO_RECOGNITION_PATH_LIMIT</H3>
+<PRE>
+<B>VO_RECOGNITION_PATH_LIMIT</B>
+</PRE>
+<DL>
+<DD>Sets aside a maximum percentage (expressed as a value between  <CODE>0</CODE> and  <CODE>1</CODE>) of the paths that the recognizer explores for one particular resource. <P>
+
+<P>By doing this, the vocabulary resource will not populate the whole recognition path bandwidth. Using this property in conjunction with the  <CODE><A href="../../c/MyScriptText_h/enum_VO_VOCABULARY_PROP.html#VO_RESERVED_RECOGNITION_PATHS">VO_RESERVED_RECOGNITION_PATHS</A></CODE> property gives complete control over the bandwidth for the vocabulary resource.</P>
+<P> 
+<DL>
+<DT>
+<B>Usage:</B>
+<DD>
+<PRE> value;
+voGetProperty(engine, object, VO_RECOGNITION_PATH_LIMIT, &amp;value, sizeof(value));
+voSetProperty(engine, object, VO_RECOGNITION_PATH_LIMIT, &amp;value, sizeof(value));</PRE>
+</DD>
+</DT>
+</DL> 
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>4.0_1 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_CASING_SCHEME"></A>
+<H3 class="code">VO_CASING_SCHEME</H3>
+<PRE>
+<B>VO_CASING_SCHEME</B>
+</PRE>
+<DL>
+<DD>Controls the way character case variations are being handled by the recognition process. <P>
+
+<P>By default,  <CODE><A href="../../c/MyScriptText_h/voLexicon.html">voLexicon</A></CODE> and  <CODE><A href="../../c/MyScriptText_h/voLexicalUnit.html">voLexicalUnit</A></CODE> resources use legacy casing rules (<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/enum__voCasingScheme.html#VO_LEGACY_CASE">VO_LEGACY_CASE</a>
+</DD>
+</DT>
+</DL>
+
+<PRE>
+[Vocabulary entry] -&gt; [What can be recognized]
+hello              -&gt; hello, Hello, HELLO
+Hello              -&gt; Hello, HELLO
+HELLO              -&gt; HELLO
+</PRE>
+</P>
+<P> 
+<DL>
+<DT>
+<B>Usage:</B>
+<DD>
+<PRE>voCasingScheme value;
+voGetProperty(engine, object, VO_CASING_SCHEME, &amp;value, sizeof(value));
+voSetProperty(engine, object, VO_CASING_SCHEME, &amp;value, sizeof(value));</PRE>
+</DD>
+</DT>
+</DL> 
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>4.5_5 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_ACCENTUATION_SCHEME"></A>
+<H3 class="code">VO_ACCENTUATION_SCHEME</H3>
+<PRE>
+<B>VO_ACCENTUATION_SCHEME</B>
+</PRE>
+<DL>
+<DD>Controls the way character accentuation variations are being handled by the recognition process. <P>
+
+<P>By default, all  <CODE><A href="../../c/MyScriptText_h/voVocabulary.html">voVocabulary</A></CODE> resources use strict accentuation rules (<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptText_h/enum__voAccentuationScheme.html#VO_STRICT_ACCENTUATION">VO_STRICT_ACCENTUATION</a>
+</DD>
+</DT>
+</DL>
+ 
+<DL>
+<DT>
+<B>Usage:</B>
+<DD>
+<PRE>voAccentuationScheme value;
+voGetProperty(engine, object, VO_ACCENTUATION_SCHEME, &amp;value, sizeof(value));
+voSetProperty(engine, object, VO_ACCENTUATION_SCHEME, &amp;value, sizeof(value));</PRE>
+</DD>
+</DT>
+</DL> 
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>4.5_5 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

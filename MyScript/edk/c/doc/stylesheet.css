@@ -1,0 +1,182 @@
+/* MyScript Javadoc style sheet */
+
+body
+{
+  background-color: #FFFFFF;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: small;
+  line-height: normal;
+  text-decoration: none;
+}
+
+
+td, li, br, div, p
+{
+  font-family : verdana, arial, helvetica, sans-serif;
+  font-size: small;
+}
+
+code, pre
+{
+  font-size: small;
+  line-height: normal;
+}
+
+a
+{
+  color: #5b6770;
+  text-decoration: underline;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+a:active
+{
+  color: #3388ff;
+  text-decoration: none;
+}
+
+a:visited
+{
+  color: #606060;
+  text-decoration:underline;
+}
+
+a:hover
+{
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: #5b6770;
+}
+
+h1
+{
+  font-size: 145%
+}
+
+h2
+{
+  color: #000000;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+h3
+{
+  color: #00afd9;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+h3.code
+{
+  font-family: Monospace;
+}
+
+h4
+{
+  font-weight: bold;
+  color: #980000;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+h5, h6
+{
+  color: #CE6600;
+}
+
+ul.docContent {
+}
+ul.docContent > li {
+}
+
+table.docContent {
+  border-collapse: collapse;
+}
+table.docContent th, table.docContent td {
+  border: 1px solid black;
+}
+table.docContent th {
+  background-color: #5b6770;
+  color: #FFFFFF;
+}
+table.docContent th, table.docContent td {
+  padding: 4px 10px;
+}
+
+.TableHeadingColor
+{
+  background-color: #00afd9;
+  color: #FFFFFF;
+}
+
+.TableSubHeadingColor
+{
+  background-color: #FFFFFF;
+  color: #5b6770;
+}
+
+.TableRowColor
+{
+  background-color: #FFFFFF
+}
+
+.FrameTitleFont
+{
+  font-size: 100%;
+  font-family: Verdana, Arial, Helvetica, sans-serif
+}
+
+.FrameHeadingFont
+{
+  font-size:  90%;
+  font-family: Verdana, Arial, Helvetica, sans-serif
+}
+
+.FrameItemFont
+{
+  font-size:  90%; font-family: Verdana, Arial, Helvetica, sans-serif
+}
+
+UL.FrameItemFont
+{
+  list-style-type: none;
+  padding: 0;
+}
+
+LI.IncludeFile, TR.IncludeFile
+{
+  display: none;
+}
+
+.NavBarCell1
+{
+  background-color:#5b6770;
+}
+
+.NavBarCell1Rev
+{
+  background-color:#B60000;
+}
+
+.NavBarFont1
+{
+  color:#FFFFFF;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.NavBarFont1Rev
+{
+  color:#FFFFFF;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.NavBarCell2
+{
+  background-color:#FFFFFF;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.NavBarCell3
+{
+  background-color:#FFFFFF;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}

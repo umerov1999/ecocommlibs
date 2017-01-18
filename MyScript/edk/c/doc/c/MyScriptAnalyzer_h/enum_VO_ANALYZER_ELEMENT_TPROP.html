@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>VO_ANALYZER_ELEMENT_TPROP</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="VO_ANALYZER_ELEMENT_TPROP";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptAnalyzer.h</FONT>
+<BR>
+Enumeration VO_ANALYZER_ELEMENT_TPROP</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptAnalyzer.h&gt;</CODE>
+<BR>
+<CODE>enum <B>_VO_ANALYZER_ELEMENT_TPROP</B></CODE>
+</P>
+<P> 
+Lists the type properties that apply to the AnalyzerElement type.
+   <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptAnalyzer_h/enum_VO_ANALYZER_T.html#VO_AnalyzerElement">VO_AnalyzerElement</a>, <a href="../../c/MyScriptAnalyzer_h/voAnalyzerElement.html">voAnalyzerElement</a>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Value_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Value Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_USER_ANALYZER_ELEMENT_LIMIT">VO_USER_ANALYZER_ELEMENT_LIMIT</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  VO_USER_OBJ_LIMIT</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Represents the maximum number of  <CODE><A href="../../c/MyScriptAnalyzer_h/voAnalyzerElement.html">voAnalyzerElement</A></CODE> instances that can exist at the same time in the user side of a MyScript enabled application. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_USER_ANALYZER_ELEMENT_COUNT">VO_USER_ANALYZER_ELEMENT_COUNT</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  VO_USER_OBJ_COUNT</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gives the number of  <CODE><A href="../../c/MyScriptAnalyzer_h/voAnalyzerElement.html">voAnalyzerElement</A></CODE> instances that currently exist in the user side of a MyScript enabled application. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Value_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Value Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="VO_USER_ANALYZER_ELEMENT_LIMIT"></A>
+<H3 class="code">VO_USER_ANALYZER_ELEMENT_LIMIT</H3>
+<PRE>
+<B>VO_USER_ANALYZER_ELEMENT_LIMIT</B>
+</PRE>
+<DL>
+<DD>Represents the maximum number of  <CODE><A href="../../c/MyScriptAnalyzer_h/voAnalyzerElement.html">voAnalyzerElement</A></CODE> instances that can exist at the same time in the user side of a MyScript enabled application. <P>
+
+<P>The special value zero means no limit. Other values are adjusted to the next multiple of 16. A value under the current count is permitted and will constrain future resource creations.</P>
+<P> 
+<DL>
+<DT>
+<B>Usage:</B>
+<DD>
+<PRE>uint32_t value;
+voGetTypeProperty(engine, VO_AnalyzerElement, VO_USER_ANALYZER_ELEMENT_LIMIT, &amp;value, sizeof(value));
+voSetTypeProperty(engine, VO_AnalyzerElement, VO_USER_ANALYZER_ELEMENT_LIMIT, &amp;value, sizeof(value));</PRE>
+</DD>
+</DT>
+</DL> 
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_USER_ANALYZER_ELEMENT_COUNT"></A>
+<H3 class="code">VO_USER_ANALYZER_ELEMENT_COUNT</H3>
+<PRE>
+<B>VO_USER_ANALYZER_ELEMENT_COUNT</B>
+</PRE>
+<DL>
+<DD>Gives the number of  <CODE><A href="../../c/MyScriptAnalyzer_h/voAnalyzerElement.html">voAnalyzerElement</A></CODE> instances that currently exist in the user side of a MyScript enabled application. <P>
+
+<P> 
+<DL>
+<DT>
+<B>Usage:</B>
+<DD>
+<PRE>uint32_t value;
+voGetTypeProperty(engine, VO_AnalyzerElement, VO_USER_ANALYZER_ELEMENT_COUNT, &amp;value, sizeof(value));</PRE>
+</DD>
+</DT>
+</DL> 
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>voReadFunc</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="voReadFunc";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptEngine.h</FONT>
+<BR>
+Type voReadFunc</H2>
+<PRE>
+<B>voReadFunc</B>
+</PRE>
+<HR>
+<CODE>#include &lt;c/MyScriptEngine.h&gt;</CODE>
+<BR>
+<CODE>typedef  size_t  (*<B>voReadFunc</B>)(void *buffer, size_t bufferLength, void *userParam)</CODE>
+<BR>
+<CODE></CODE>
+</P>
+<P>Defines an application supplied function that performs read operations triggered by the  <CODE>voLoadObject()</CODE> function. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+buffer
+</B>
+<DD>
+<parameterdescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<P>a pointer to the destination/source buffer. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+bufferLength
+</B>
+<DD>
+<parameterdescription>
+
+<P>the length of the buffer in bytes. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+userParam
+</B>
+<DD>
+<parameterdescription>
+
+<P>an optional user defined parameter passed to the callback.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P>the number of bytes actually read, or  <CODE><A href="../../c/MyScriptEngine_h/VO_INVALID_SIZE_T.html">VO_INVALID_SIZE_T</A></CODE> on failure.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Note:</B>
+<DD>
+<P>When your implementation of the read function returns  <CODE>0</CODE> on failure instead of the magic  <CODE><A href="../../c/MyScriptEngine_h/VO_INVALID_SIZE_T.html">VO_INVALID_SIZE_T</A></CODE> value, the  <CODE>voGetError()</CODE> function will report the  <CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_PREMATURE_END_OF_DATA">VO_PREMATURE_END_OF_DATA</A></CODE> error instead of the  <CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_IO_FAILURE">VO_IO_FAILURE</A></CODE> error.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>See also:</B>
+<DD></DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P></P>
+</BODY>
+</HTML>

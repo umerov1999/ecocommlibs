@@ -1,0 +1,68 @@
+# Lexical unit chinese: time
+#
+# 18/03/2005
+# v1.01
+
+@set charset UTF-8
+
+# Hours' scale
+# Arabian numbers
+hourScale = 0?[0-9]|1[0-9]|2[0-4]
+# Chinese numbers
+cnHourScale = 零|一|二|三|四|五|六|七|八|九|十(一|二|三|四|五|六|七|八|九)?|二十(一|二|三|四)?
+
+# Minutes and seconds' scale
+# Arabian numbers
+mn_n_scScale = 0?[0-9]|[1-5][0-9]
+# Chinese numbers
+cn_mn_n_scScale = 零?(一|二|三|四|五|六|七|八|九)|(二|三|四|五)?十(一|二|三|四|五|六|七|八|九)?
+
+##############################
+# Time using chinese characters and/or arabian characters with chinese specifier
+# Hours (arabian + chinese specifier)
+mixedHours = {hourScale}点钟?
+# Hours (full Chinese)
+cnHours = {cnHourScale}点钟?
+mixedCnHours = {mixedHours}|{cnHours}
+# Hours before minutes and/or seconds
+# Arabian + chinese before specifier
+mixedHoursBeforeMnSc = {hourScale}点
+# Full Chinese before specifier
+cnHoursBeforeMnSc = {cnHourScale}点
+mixedCnHoursBeforeMnSc = {mixedHoursBeforeMnSc}|{cnHoursBeforeMnSc}
+# Chinese hour using 半
+cnHoursBan = (一|二|三|四|五|六|七|八|九|十(一|二|三|四|五|六|七|八|九)?|二十(一|二|三|四)?)点半
+
+# Minutes (arabian + chinese specifier)
+mixedMinutes = {mn_n_scScale}分
+# Minutes (full Chinese)
+cnMinutes = {cn_mn_n_scScale}分
+mixedCnMinutes = {mixedMinutes}|{cnMinutes}
+
+# Seconds (arabian + chinese specifier)
+mixedSeconds = {mn_n_scScale}秒
+# Seconds (full Chinese)
+cnSeconds = {cn_mn_n_scScale}秒
+mixedCnSeconds = {mixedSeconds}|{cnSeconds}
+
+cnTime = {mixedCnHours}|{cnHoursBan}|{mixedCnHoursBeforeMnSc}{mixedCnMinutes}{mixedCnSeconds}?
+
+###############################
+# Time using western style
+# hh:mm:ss
+
+# Hours
+hh = (0|1)?[0-9]|2[0-4]
+
+# Minutes
+mm = [0-5][0-9]
+
+# Seconds
+ss = {mm}
+
+westTime = {hh}:{mm}(:{ss})?
+
+###############################
+
+time = {cnTime}|{westTime}
+{time}

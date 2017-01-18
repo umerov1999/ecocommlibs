@@ -1,0 +1,7 @@
+d = [0-9]
+
+integer = [+\-]?({d}+|{d}?{d}?{d}(\,{d}{d}{d})*)
+
+number = {integer}(\.{d}+)?
+
+{number}

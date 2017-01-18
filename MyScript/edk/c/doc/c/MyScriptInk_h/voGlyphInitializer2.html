@@ -1,0 +1,150 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>voGlyphInitializer2</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="voGlyphInitializer2";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptInk.h</FONT>
+<BR>
+Type voGlyphInitializer2</H2>
+<PRE>
+<B>voGlyphInitializer2</B>
+</PRE>
+<HR>
+<CODE>#include &lt;c/MyScriptInk.h&gt;</CODE>
+<BR>
+<CODE>typedef  struct <A href="../../c/MyScriptInk_h/struct__voGlyphInitializer2.html">_voGlyphInitializer2</A>  <B>voGlyphInitializer2</B></CODE>
+<BR>
+<CODE></CODE>
+</P>
+<P>Holds the parameters required to create a new  <CODE><A href="../../c/MyScriptInk_h/voGlyph.html">voGlyph</A></CODE> instance. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptInk_h/voGlyph.html">voGlyph</a>, <a href="../../c/MyScriptInk_h/voCreateGlyph2.html">voCreateGlyph2</a>
+</DD>
+</DT>
+</DL>
+
+</P>    
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Member_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="3"><FONT SIZE="+2"><B>Member Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voInputCharacter</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE></CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#character">character</A></CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              The input character describing the glyph. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voCharset</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE></CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#charset">charset</A></CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              The charset used to encode  <CODE>unit</CODE>, or  <CODE>NULL</CODE> to use the default charset. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voParallelogram</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE></CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#parallelogram">parallelogram</A></CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              The glyph bounding parallelogram, the origin point being the top left point for a straight glyph, and u, the vector on top of the glyph. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>voString</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE></CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#unit">unit</A></CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              The unit in which  <CODE>parallelogram</CODE> is expressed, formatted following the SI (International System of Units), for example:  <CODE>mm</CODE>,  <CODE>s</CODE>, etc. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Member_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Member Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="character"></A>
+<H3 class="code">character</H3>
+<PRE>
+<A href="../../c/MyScriptEngine_h/voInputCharacter.html">voInputCharacter</A> <B>character</B>
+</PRE>
+<DL>
+<DD>The input character describing the glyph. <P>
+        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="charset"></A>
+<H3 class="code">charset</H3>
+<PRE>
+<A href="../../c/MyScriptEngine_h/voCharset.html">voCharset</A> <B>charset</B>
+</PRE>
+<DL>
+<DD>The charset used to encode  <CODE>unit</CODE>, or  <CODE>NULL</CODE> to use the default charset. <P>
+        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="parallelogram"></A>
+<H3 class="code">parallelogram</H3>
+<PRE>
+<A href="../../c/MyScriptInk_h/voParallelogram.html">voParallelogram</A> <B>parallelogram</B>
+</PRE>
+<DL>
+<DD>The glyph bounding parallelogram, the origin point being the top left point for a straight glyph, and u, the vector on top of the glyph. <P>
+        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="unit"></A>
+<H3 class="code">unit</H3>
+<PRE>
+<A href="../../c/MyScriptEngine_h/voString.html">voString</A> <B>unit</B>
+</PRE>
+<DL>
+<DD>The unit in which  <CODE>parallelogram</CODE> is expressed, formatted following the SI (International System of Units), for example:  <CODE>mm</CODE>,  <CODE>s</CODE>, etc. <P>
+
+<P>
+<DL>
+<DT>
+<B>Note:</B>
+<DD>
+<P> 
+<CODE>unit</CODE> may be left empty, which indicates that no unit is specified. </P>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

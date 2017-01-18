@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>_voGlyphLines</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="_voGlyphLines";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptInk.h</FONT>
+<BR>
+Structure _voGlyphLines</H2>
+<PRE>
+<B></B>
+</PRE>
+<HR>
+<CODE>#include &lt;c/MyScriptInk.h&gt;</CODE>
+<BR>
+<CODE>struct <B>_voGlyphLines</B></CODE>
+<BR>
+<CODE></CODE>
+</P>
+<P></P>Represents the typography lines of a glyph. <P>
+    
+</P>
+<HR>
+<P>
+<A NAME="Member_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="3"><FONT SIZE="+2"><B>Member Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>float</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE></CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#baseline">baseline</A></CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              The ratio between the distance from the top side of the glyph to the baseline, and the height of the glyph:  <CODE>baseline = (baseline_position - top_of_glyph) / glyph_height</CODE>. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE>float</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE></CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#x_height">x_height</A></CODE>
+<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              The positive ratio between the height of the letter 'x', and the height of the glyph :  <CODE>x_height = height_of_the_letter_x / glyph_height</CODE>. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<P>
+<A NAME="Member_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Member Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="baseline"></A>
+<H3 class="code">baseline</H3>
+<PRE>float <B>baseline</B>
+</PRE>
+<DL>
+<DD>The ratio between the distance from the top side of the glyph to the baseline, and the height of the glyph:  <CODE>baseline = (baseline_position - top_of_glyph) / glyph_height</CODE>. <P>
+
+<P>This ratio can be greater than  <CODE>1</CODE> or negative if this glyph is not properly placed on a long text line. </P>        
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="x_height"></A>
+<H3 class="code">x_height</H3>
+<PRE>float <B>x_height</B>
+</PRE>
+<DL>
+<DD>The positive ratio between the height of the letter 'x', and the height of the glyph :  <CODE>x_height = height_of_the_letter_x / glyph_height</CODE>. <P>
+
+<P>
+<DL>
+<DT>
+<B>Note:</B>
+<DD>
+<P> 
+<CODE>0</CODE> means unspecified. </P>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</P>
+</BODY>
+</HTML>

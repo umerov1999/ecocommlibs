@@ -1,0 +1,7 @@
+﻿  MyCertificate.c
+  MyScriptEngine-strerror.c
+  common.c
+  EditInk.c
+  Generating Code...
+  ink_EditInk.vcxproj -> C:\Users\JYChoi\Desktop\Myscript_P\edk\c\examples\_win-vs14\../bin/win-x86-Debug\07.ink.02-EditInk.exe
+  ink_EditInk.vcxproj -> ../bin/win-x86-Debug\07.ink.02-EditInk.pdb (Full PDB)

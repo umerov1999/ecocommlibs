@@ -1,0 +1,14 @@
+#
+# surrounding.ludef
+# This short example shows how to define a surrounded text (circled characters/text)
+# by using regular expressions.
+#
+
+# import the definition of OPEN_SURROUNDING and CLOSE_SURROUNDING
+@import ludef defSURROUNDING
+
+# define expr to be surrounded "expr" or "expr." or "expression"
+expr = {OPEN_SURROUNDING}expr(ession|\.)?{CLOSE_SURROUNDING}
+
+# define expr as the main regular expression
+{expr}

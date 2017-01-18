@@ -1,0 +1,99 @@
+# Lexical unit chinese: phone number
+#
+# 31/01/2005
+# v1.0
+
+@set charset UTF-8
+
+separators = [- ]
+
+#################################################
+#
+# Fixed network numbering
+#
+
+extension = (\*|x|X|转|分机|内线)
+
+# Area codes
+areaCodes_4D = @import string-list "area_phone_code_4D.lex"
+areaCodes_7D = @import string-list "area_phone_code_7D.lex"
+areaCodes_8D = @import string-list "area_phone_code_8D.lex"
+
+# International prefix + area codes
+
+# 4 digits
+# (86 + area code)
+intAreaCodes_4D = \(\+?\+?86{separators}?{areaCodes_4D}\)
+# (86) + (area code)
+intAreaCodes_4D = {intAreaCodes_4D}|\(86\) ?\({areaCodes_4D}\)
+# 86 + (area code)
+intAreaCodes_4D = {intAreaCodes_4D}|(\+\+?|00{separators})?86{separators}?\({areaCodes_4D}\)
+# 86 + area code
+intAreaCodes_4D = {intAreaCodes_4D}|(\+\+? ?|00{separators}?)?86{separators}(\(0\))?{areaCodes_4D}
+
+# 7 digits
+# (86 + area code)
+intAreaCodes_7D = \(\+?\+?86{separators}?{areaCodes_7D}\)
+# (86) + (area code)
+intAreaCodes_7D = {intAreaCodes_7D}|\(86\) ?\({areaCodes_7D}\)
+# 86 + (area code)
+intAreaCodes_7D = {intAreaCodes_7D}|(\+\+?|00{separators})?86{separators}?\({areaCodes_7D}\)
+# 86 + area code
+intAreaCodes_7D = {intAreaCodes_7D}|(\+\+? ?|00{separators}?)?86{separators}(\(0\))?{areaCodes_7D}
+
+# 8 digits
+# (86 + area code)
+intAreaCodes_8D = \(\+?\+?86{separators}?{areaCodes_8D}\)
+# (86) + (area code)
+intAreaCodes_8D = {intAreaCodes_8D}|\(86\) ?\({areaCodes_8D}\)
+# 86 + (area code)
+intAreaCodes_8D = {intAreaCodes_8D}|(\+\+?|00{separators})?86{separators}?\({areaCodes_8D}\)
+# 86 + area code
+intAreaCodes_8D = {intAreaCodes_8D}|(\+\+? ?|00{separators}?)?86{separators}(\(0\))?{areaCodes_8D}
+
+# Area prefix (without international designation)
+
+# 4 digits
+# (area code)
+areaPre_4D = \(0?{areaCodes_4D}\)
+# area code
+areaPre_4D = {areaPre_4D}|(0|\(0\))?{areaCodes_4D}
+
+# 7 digits
+# (area code)
+areaPre_7D = \(0?{areaCodes_7D}\)
+# area code
+areaPre_7D = {areaPre_7D}|(0|\(0\))?{areaCodes_7D}
+
+# 8 digits
+# (area code)
+areaPre_8D = \(0?{areaCodes_8D}\)
+# area code
+areaPre_8D = {areaPre_8D}|(0|\(0\))?{areaCodes_8D}
+
+# Prefix
+# 4 digits
+prefix_4D = {intAreaCodes_4D}|{areaPre_4D}
+# 7 digits
+prefix_7D = {intAreaCodes_7D}|{areaPre_7D}
+# 8 digits
+prefix_8D = {intAreaCodes_8D}|{areaPre_8D}
+
+fourDigitPhoneNb = ({prefix_4D}{separators}?)?[1-9][0-9][0-9][0-9]
+sevenDigitPhoneNb = ({prefix_7D}{separators}?)?[1-9][0-9][0-9]{separators}?[0-9][0-9][0-9][0-9]
+eightDigitPhoneNb = ({prefix_8D}{separators}?)?[1-9][0-9][0-9][0-9]{separators}?[0-9][0-9][0-9][0-9]
+
+fixedPhoneNb = ({fourDigitPhoneNb}|{sevenDigitPhoneNb}|{eightDigitPhoneNb})( ?{extension} ?[1-9][0-9][0-9]?[0-9]?)?
+
+# Mobile numbering
+# International prefix
+intPre = \+\+?86|(\+\+?86)|\+\+?(86)|00{separators}86|(00{separators}86)|00{separators}(86)
+
+# Mobile networks' codes
+mobileNetCodes = @import string-list "mobile_net_codes.lex"
+
+mobilePhoneNumber = {intPre}?{mobileNetCodes}{separators}?[0-9][0-9][0-9][0-9]{separators}?[0-9][0-9][0-9][0-9]
+
+# Phone Number
+phoneNumber = {fixedPhoneNb}|{mobilePhoneNumber}
+{phoneNumber}

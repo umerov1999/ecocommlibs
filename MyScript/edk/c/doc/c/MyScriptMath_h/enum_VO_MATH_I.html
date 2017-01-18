@@ -1,0 +1,405 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>VO_MATH_I</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="VO_MATH_I";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptMath.h</FONT>
+<BR>
+Enumeration VO_MATH_I</H2>
+<HR>
+<CODE>#include &lt;c/MyScriptMath.h&gt;</CODE>
+<BR>
+<CODE>enum <B>_VO_MATH_I</B></CODE>
+</P>
+<P>Lists the MyScript Math interfaces. <P>
+        
+</P>
+</P>
+<HR>
+<P>
+<A NAME="Value_Summary"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2"><B>Value Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IMathDocument">VO_IMathDocument</A></CODE></TD><TD ALIGN="left" VALIGN="top"><CODE>=  5100</CODE>
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMath_h/voIMathDocument.html">voIMathDocument</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IMathAlphabet">VO_IMathAlphabet</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMath_h/voIMathAlphabet.html">voIMathAlphabet</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IMathGrammar">VO_IMathGrammar</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMath_h/voIMathGrammar.html">voIMathGrammar</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IMathRecognizer">VO_IMathRecognizer</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMath_h/voIMathRecognizer.html">voIMathRecognizer</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IMathTerminalNode">VO_IMathTerminalNode</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMath_h/voIMathTerminalNode.html">voIMathTerminalNode</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IMathNonTerminalNode">VO_IMathNonTerminalNode</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMath_h/voIMathNonTerminalNode.html">voIMathNonTerminalNode</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IMathRuleNode">VO_IMathRuleNode</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMath_h/voIMathRuleNode.html">voIMathRuleNode</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IMathScratchOut">VO_IMathScratchOut</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMath_h/voIMathScratchOut.html">voIMathScratchOut</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IMathCellNode">VO_IMathCellNode</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMath_h/voIMathCellNode.html">voIMathCellNode</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IMathBorderNode">VO_IMathBorderNode</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMath_h/voIMathBorderNode.html">voIMathBorderNode</A></CODE> interface identifier. </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top"><CODE><A HREF="#VO_IMathTableNode">VO_IMathTableNode</A></CODE></TD><TD ALIGN="left" VALIGN="top">
+<BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CODE><A href="../../c/MyScriptMath_h/voIMathTableNode.html">voIMathTableNode</A></CODE> interface identifier. </TD>
+</TR>
+</TABLE>
+</P>
+<P>
+<A NAME="Value_Detail"></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2"><B>Value Detail</B></FONT></TH>
+</TR>
+</TABLE>
+<DL>
+<A NAME="VO_IMathDocument"></A>
+<H3 class="code">VO_IMathDocument</H3>
+<PRE>
+<B>VO_IMathDocument</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMath_h/voIMathDocument.html">voIMathDocument</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMath_h/voIMathDocument.html">voIMathDocument</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IMathAlphabet"></A>
+<H3 class="code">VO_IMathAlphabet</H3>
+<PRE>
+<B>VO_IMathAlphabet</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMath_h/voIMathAlphabet.html">voIMathAlphabet</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMath_h/voIMathAlphabet.html">voIMathAlphabet</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IMathGrammar"></A>
+<H3 class="code">VO_IMathGrammar</H3>
+<PRE>
+<B>VO_IMathGrammar</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMath_h/voIMathGrammar.html">voIMathGrammar</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMath_h/voIMathGrammar.html">voIMathGrammar</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IMathRecognizer"></A>
+<H3 class="code">VO_IMathRecognizer</H3>
+<PRE>
+<B>VO_IMathRecognizer</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMath_h/voIMathRecognizer.html">voIMathRecognizer</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMath_h/voIMathRecognizer.html">voIMathRecognizer</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IMathTerminalNode"></A>
+<H3 class="code">VO_IMathTerminalNode</H3>
+<PRE>
+<B>VO_IMathTerminalNode</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMath_h/voIMathTerminalNode.html">voIMathTerminalNode</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMath_h/voIMathTerminalNode.html">voIMathTerminalNode</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IMathNonTerminalNode"></A>
+<H3 class="code">VO_IMathNonTerminalNode</H3>
+<PRE>
+<B>VO_IMathNonTerminalNode</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMath_h/voIMathNonTerminalNode.html">voIMathNonTerminalNode</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMath_h/voIMathNonTerminalNode.html">voIMathNonTerminalNode</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IMathRuleNode"></A>
+<H3 class="code">VO_IMathRuleNode</H3>
+<PRE>
+<B>VO_IMathRuleNode</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMath_h/voIMathRuleNode.html">voIMathRuleNode</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMath_h/voIMathRuleNode.html">voIMathRuleNode</a>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IMathScratchOut"></A>
+<H3 class="code">VO_IMathScratchOut</H3>
+<PRE>
+<B>VO_IMathScratchOut</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMath_h/voIMathScratchOut.html">voIMathScratchOut</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMath_h/voIMathScratchOut.html">voIMathScratchOut</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>6.1_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IMathCellNode"></A>
+<H3 class="code">VO_IMathCellNode</H3>
+<PRE>
+<B>VO_IMathCellNode</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMath_h/voIMathCellNode.html">voIMathCellNode</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMath_h/voIMathCellNode.html">voIMathCellNode</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>6.4_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IMathBorderNode"></A>
+<H3 class="code">VO_IMathBorderNode</H3>
+<PRE>
+<B>VO_IMathBorderNode</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMath_h/voIMathBorderNode.html">voIMathBorderNode</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMath_h/voIMathBorderNode.html">voIMathBorderNode</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>6.4_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+<A NAME="VO_IMathTableNode"></A>
+<H3 class="code">VO_IMathTableNode</H3>
+<PRE>
+<B>VO_IMathTableNode</B>
+</PRE>
+<DL>
+<DD> 
+<CODE><A href="../../c/MyScriptMath_h/voIMathTableNode.html">voIMathTableNode</A></CODE> interface identifier. <P>
+
+<P>
+<DL>
+<DT>
+<B>See also:</B>
+<DD>
+<a href="../../c/MyScriptMath_h/voIMathTableNode.html">voIMathTableNode</a>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Since:</B>
+<DD>
+<P>6.4_0 </P>
+</DD>
+</DT>
+</DL>
+
+</P>          
+</P>
+</DD>
+</DL>
+<HR>
+</DL>
+</P>
+</BODY>
+</HTML>

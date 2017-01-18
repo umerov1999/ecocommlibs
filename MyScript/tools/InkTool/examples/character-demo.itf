@@ -1,0 +1,376 @@
+StartPage
+SetPageBox -500.000000 -500.000000 10000.000000 10000.000000
+StartField English GB
+AddActiveBox -500 -500 10000 10000
+AddResource latin\latin-ak-large.res
+AddResource latin\latin-cfk-en_GB.res
+
+#StartField Arabic
+#AddActiveBox -500 -500 10000 10000
+#AddResource arabic\arabic-ak-large.res
+#AddResource arabic\arabic-cfk-ar.res
+
+#StartField Farsi
+#AddActiveBox -500 -500 10000 10000
+#AddResource arabic\arabic-ak-large.res
+#AddResource arabic\arabic-cfk-fa_IR.res
+
+#StartField Urdu
+#AddActiveBox -500 -500 10000 10000
+#AddResource arabic\arabic-ak-large.res
+#AddResource arabic\arabic-cfk-ur_PK.res
+
+#StartField Chinese CN
+#AddActiveBox -500 -500 10000 10000
+#AddResource chinese\chinese_gb18030_hkscs-ak-large.res
+#AddResource chinese\chinese_gb18030_hkscs-cfk-zh_CN.res
+
+#StartField Chinese HK
+#AddActiveBox -500 -500 10000 10000
+#AddResource chinese\chinese_gb18030_hkscs-ak-large.res
+#AddResource chinese\chinese_gb18030_hkscs-cfk-zh_HK.res
+
+#StartField Chinese TW
+#AddActiveBox -500 -500 10000 10000
+#AddResource chinese\chinese_gb18030_hkscs-ak-large.res
+#AddResource chinese\chinese_gb18030_hkscs-cfk-zh_TW.res
+
+#StartField Russian
+#AddActiveBox -500 -500 10000 10000
+#AddResource cyrillic\cyrillic-ak-large.res
+#AddResource cyrillic\cyrillic-cfk-ru_RU.res
+
+#StartField Belarusian
+#AddActiveBox -500 -500 10000 10000
+#AddResource cyrillic\cyrillic-ak-large.res
+#AddResource cyrillic\cyrillic-cfk-be_BY.res
+
+#StartField Bulgarian
+#AddActiveBox -500 -500 10000 10000
+#AddResource cyrillic\cyrillic-ak-large.res
+#AddResource cyrillic\cyrillic-cfk-bg_BG.res
+
+#StartField Kazakh
+#AddActiveBox -500 -500 10000 10000
+#AddResource cyrillic\cyrillic-ak-large.res
+#AddResource cyrillic\cyrillic-cfk-kk_KZ.res
+
+#StartField Macedonian
+#AddActiveBox -500 -500 10000 10000
+#AddResource cyrillic\cyrillic-ak-large.res
+#AddResource cyrillic\cyrillic-cfk-mk_MK.res
+
+#StartField Mongolian
+#AddActiveBox -500 -500 10000 10000
+#AddResource cyrillic\cyrillic-ak-large.res
+#AddResource cyrillic\cyrillic-cfk-mk_MK.res
+
+#StartField Serbian
+#AddActiveBox -500 -500 10000 10000
+#AddResource cyrillic\cyrillic-ak-large.res
+#AddResource cyrillic\cyrillic-cfk-sr_Cyrl_RS.res
+
+#StartField Tatar
+#AddActiveBox -500 -500 10000 10000
+#AddResource cyrillic\cyrillic-ak-large.res
+#AddResource cyrillic\cyrillic-cfk-uk_UA.res
+
+#StartField Greek
+#AddActiveBox -500 -500 10000 10000
+#AddResource greek\greek-ak-large.res
+#AddResource greek\greek-cfk-el_GR.res
+
+#StartField Hebrew
+#AddActiveBox -500 -500 10000 10000
+#AddResource hebrew\hebrew-ak-large.res
+#AddResource hebrew\hebrew-cfk-he_IL.res
+
+#StartField Japanese (jisx02013)
+#AddActiveBox -500 -500 10000 10000
+#AddResource japanese\japanese_jisx0213-ak-medium.res
+#AddResource japanese\japanese_jisx0213-cfk-ja_JP.res
+
+#StartField Japanese (jisx0208)
+#AddActiveBox -500 -500 10000 10000
+#AddResource japanese\japanese_jisx0208-ak-medium.res
+#AddResource japanese\japanese_jisx0208-cfk-ja_JP.res
+
+#StartField Korean (with hanja)
+#AddActiveBox -500 -500 10000 10000
+#AddResource korean\korean_johab_hanja-ak-large.res
+#AddResource korean\korean_johab_hanja-cfk-ko_KR.res
+
+#StartField Korean (no hanja)
+#AddActiveBox -500 -500 10000 10000
+#AddResource korean\korean_johab-ak-large.res
+#AddResource korean\korean_johab-cfk-ko_KR.res
+
+#StartField Africaans
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-af_ZA.res
+
+#StartField  Azerbaijani
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-az_AZ.res
+
+#StartField Catalan
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-ca_ES.res
+
+#StartField Czech
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-cs_CZ.res
+
+#StartField Danish
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-da_DK.res
+
+#StartField English US
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-en_US.res
+
+#StartField German AT
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-de_AT.res
+
+#StartField German DE
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-de_DE.res
+
+#StartField English CA
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-en_CA.res
+
+#StartField Spanish ES
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-es_ES.res
+
+#StartField Spanish MX
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-es_MX.res
+
+#StartField Estonian
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-et_EE.res
+
+#StartField Basque
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-et_EE.res
+
+#StartField Finnish
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-fi_FI.res
+
+#StartField French FR
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-fr_FR.res
+
+#StartField French CA
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-fr_CA.res
+
+#StartField Irish
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-ga_IE.res
+
+#StartField Galician
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-gl_ES.res
+
+#StartField Croatian
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-hr_HR.res
+
+#StartField Hungarian
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-hu_HU.res
+
+#StartField Indonesian
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-id_ID.res
+
+#StartField Icelandic
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-is_IS.res
+
+#StartField Italian
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-it_IT.res
+
+#StartField Lithuanian
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-lt_LT.res
+
+#StartField Latvian
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-lv_LV.res
+
+#StartField Malay
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-ms_MY.res
+
+#StartField Dutch BE
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-nl_BE.res
+
+#StartField Dutch NL
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-nl_NL.res
+
+#StartField Norwegian
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-no_NO.res
+
+#StartField Polish
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-pl_PL.res
+
+#StartField Portuguese BR
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-pt_BR.res
+
+#StartField Portuguese PT
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-pt_PT.res
+
+#StartField Romanian
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-ro_RO.res
+
+#StartField Slovak
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-sk_SK.res
+
+#StartField Slovenian
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-sl_SI.res
+
+#StartField Albanian
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-sq_AL.res
+
+#StartField Serbian
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-sr_Latn_RS.res
+
+#StartField Swedish
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-sv_SE.res
+
+#StartField Turkish
+#AddActiveBox -500 -500 10000 10000
+#AddResource latin\latin-ak-large.res
+#AddResource latin\latin-cfk-tr_TR.res
+
+#StartField Vietnamese
+#AddActiveBox -500 -500 10000 10000
+#AddResource vietnamese\vietnamese-ak-large.res
+#AddResource vietnamese\vietnamese-cfk-vi_VN.res
+
+AddStroke
+316.000000 262.000000
+317.000000 262.000000
+318.000000 262.000000
+320.000000 257.000000
+323.000000 248.000000
+326.000000 238.000000
+330.000000 226.000000
+334.000000 210.000000
+339.000000 193.000000
+346.000000 172.000000
+350.000000 152.000000
+356.000000 135.000000
+364.000000 116.000000
+370.000000 101.000000
+377.000000 85.000000
+382.000000 73.000000
+389.000000 62.000000
+392.000000 57.000000
+394.000000 52.000000
+397.000000 49.000000
+398.000000 48.000000
+399.000000 50.000000
+399.000000 53.000000
+400.000000 60.000000
+401.000000 67.000000
+402.000000 77.000000
+404.000000 87.000000
+405.000000 97.000000
+405.000000 109.000000
+406.000000 122.000000
+408.000000 136.000000
+408.000000 152.000000
+409.000000 167.000000
+410.000000 182.000000
+413.000000 198.000000
+414.000000 209.000000
+416.000000 220.000000
+417.000000 228.000000
+418.000000 235.000000
+419.000000 239.000000
+419.000000 243.000000
+420.000000 245.000000
+420.000000 246.000000
+420.000000 247.000000
+420.000000 248.000000
+421.000000 248.000000
+AddStroke
+303.000000 162.000000
+303.000000 163.000000
+305.000000 164.000000
+308.000000 164.000000
+311.000000 165.000000
+313.000000 165.000000
+317.000000 165.000000
+324.000000 165.000000
+332.000000 166.000000
+342.000000 167.000000
+354.000000 170.000000
+369.000000 171.000000
+384.000000 171.000000
+399.000000 171.000000
+414.000000 171.000000
+426.000000 171.000000
+434.000000 171.000000
+439.000000 171.000000
+442.000000 171.000000
+443.000000 171.000000
+444.000000 172.000000

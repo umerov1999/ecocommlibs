@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>voNotifyProgressFunc</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../..//stylesheet.css" TITLE="Style">
+<SCRIPT type="text/javascript">
+          function windowTitle()
+          {
+          parent.document.title="voNotifyProgressFunc";
+          }
+        </SCRIPT>
+<NOSCRIPT></NOSCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="windowTitle();">
+<P>
+<H2>
+<FONT SIZE="-1">c/MyScriptEngine.h</FONT>
+<BR>
+Type voNotifyProgressFunc</H2>
+<PRE>
+<B>voNotifyProgressFunc</B>
+</PRE>
+<HR>
+<CODE>#include &lt;c/MyScriptEngine.h&gt;</CODE>
+<BR>
+<CODE>typedef  <A href="../../c/std/stdbool_h/bool.html">bool</A>  (*<B>voNotifyProgressFunc</B>)(<A href="../../c/std/stdint_h/uint32_t.html">uint32_t</A> amountDone, <A href="../../c/std/stdint_h/uint32_t.html">uint32_t</A> amountTodo, void *userParam)</CODE>
+<BR>
+<CODE></CODE>
+</P>
+<P>Defines an application supplied function that will receive progress notifications from a time consuming task. <P>
+
+<P>
+<DL>
+<DT>
+<B>Parameters:</B>
+<DD>
+<DL>
+<DT>
+<B>
+amountDone
+</B>
+<DD>
+<parameterdescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<P>the amount of work done since the beginning of the task. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+amountTodo
+</B>
+<DD>
+<parameterdescription>
+
+<P>the total amount of work to do to complete the task. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B>
+userParam
+</B>
+<DD>
+<parameterdescription>
+
+<P>an optional user defined parameter passed to the callback.</P>
+</parameterdescription>
+</DD>
+</DT>
+</DL>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Returns:</B>
+<DD>
+<P> 
+<CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE> to continue the task,  <CODE><A href="../../c/std/stdbool_h/false.html">false</A></CODE> to request its cancelation.</P>
+</DD>
+</DT>
+</DL>
+
+<DL>
+<DT>
+<B>Note:</B>
+<DD>
+<P>a particular operation may not be cancelable or cancelable only up till some point in the progress, in which case it will continue as if you returned  <CODE><A href="../../c/std/stdbool_h/true.html">true</A></CODE>. </P>
+</DD>
+</DT>
+</DL>
+
+</P>        
+</P>
+</P>
+<HR>
+<P></P>
+</BODY>
+</HTML>

@@ -1,0 +1,7 @@
+﻿  MyCertificate.c
+  MyScriptEngine-strerror.c
+  common.c
+  EditMetadata.c
+  Generating Code...
+  document_EditMetadata.vcxproj -> C:\Users\JYChoi\Desktop\Myscript_P\edk\c\examples\_win-vs14\../bin/win-x86-Debug\08.document.04-EditMetadata.exe
+  document_EditMetadata.vcxproj -> ../bin/win-x86-Debug\08.document.04-EditMetadata.pdb (Full PDB)

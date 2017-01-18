@@ -1,0 +1,43 @@
+# Lexical unit Korean: phone_number
+# v1.0
+# 2006/09/18
+
+@set charset UTF-8
+
+
+# Numbers
+number = [0-9]
+
+# International prefix
+intPref = (\+?\+)?82
+
+# National prefix
+natPref = {number}({number}{number}?)?
+
+# Local phone number
+localPhoneNumber = {number}{number}{number}{number}?(\.|-| )?{number}{number}{number}{number}
+
+# National phone number
+# Dash separator
+natPhoneNumber = 0{natPref}(-|\) ?){number}{number}{number}{number}?-{number}{number}{number}{number}
+natPhoneNumber = {natPhoneNumber}|\(0{natPref}\)-?{number}{number}{number}{number}?-{number}{number}{number}{number}
+# Space separator
+natPhoneNumber = {natPhoneNumber}|0{natPref} {number}{number}{number}{number}? {number}{number}{number}{number}
+natPhoneNumber = {natPhoneNumber}|\(0{natPref}\){number}{number}{number}{number}? {number}{number}{number}{number}
+# Dot separator
+natPhoneNumber = {natPhoneNumber}|0{natPref}\.{number}{number}{number}{number}?\.{number}{number}{number}{number}
+natPhoneNumber = {natPhoneNumber}|\(0{natPref}\){number}{number}{number}{number}?\.{number}{number}{number}{number}
+# Without separator
+natPhoneNumber = {natPhoneNumber}|0{natPref}{number}{number}{number}{number}?{number}{number}{number}{number}
+natPhoneNumber = {natPhoneNumber}|\(0{natPref}\){number}{number}{number}{number}?{number}{number}{number}{number}
+
+# International phone number
+interPhoneNumber = {intPref}(-| )?(\(0\))?{natPref}-{number}{number}{number}{number}?-{number}{number}{number}{number}
+interPhoneNumber = {interPhoneNumber}|{intPref}(-| )?(\(0\))?{natPref}-{number}{number}{number}{number}?-{number}{number}{number}{number}
+interPhoneNumber = {interPhoneNumber}|{intPref}(-| )?(\(0\))?{natPref} {number}{number}{number}{number}? {number}{number}{number}{number}
+interPhoneNumber = {interPhoneNumber}|{intPref}(\.|-| )?(\(0\))?{natPref}\.{number}{number}{number}{number}?\.{number}{number}{number}{number}
+interPhoneNumber = {interPhoneNumber}|{intPref}(\(0\))?{natPref}{number}{number}{number}{number}?{number}{number}{number}{number}
+
+phoneNumber = {localPhoneNumber}|{natPhoneNumber}|{interPhoneNumber}
+
+{phoneNumber}
