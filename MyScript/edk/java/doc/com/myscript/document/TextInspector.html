@@ -390,7 +390,8 @@ extends <a href="../../../com/myscript/engine/EngineObject.html" title="class in
                      <a href="../../../com/myscript/document/ContentField.html" title="class in com.myscript.document">ContentField</a>&nbsp;field)
                              throws java.lang.NullPointerException,
                                     java.lang.IllegalStateException,
-                                    <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></pre>
+                                    <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a>,
+                                    java.lang.IllegalArgumentException</pre>
 <div class="block">Returns a <code>TextInterval</code> that corresponds to the closest
  character boundary from the specified <code>position</code>, within a given
  <code>ContentField</code>. The returned <code>TextInterval</code> is a
@@ -409,8 +410,8 @@ extends <a href="../../../com/myscript/engine/EngineObject.html" title="class in
 <dd><code>java.lang.IllegalStateException</code> - when <code>field</code> has been disposed of.</dd>
 <dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not a
            <code>ContentField</code> of type <code>TEXT</code>.</dd>
-<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not on the page
-           associated with this <code>TextInspector</code>.</dd></dl>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>field</code> comes from a
+           different page.</dd></dl>
 </li>
 </ul>
 <a name="hitCursor(com.myscript.geometry.Point)">
@@ -446,7 +447,8 @@ extends <a href="../../../com/myscript/engine/EngineObject.html" title="class in
                    <a href="../../../com/myscript/document/ContentField.html" title="class in com.myscript.document">ContentField</a>&nbsp;field)
                            throws java.lang.NullPointerException,
                                   java.lang.IllegalStateException,
-                                  <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></pre>
+                                  <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a>,
+                                  java.lang.IllegalArgumentException</pre>
 <div class="block">Returns a <code>TextInterval</code> that corresponds to to the character
  under the specified <code>position</code>, within a given
  <code>ContentField</code>. The returned <code>TextInterval</code> surrounds
@@ -462,8 +464,8 @@ extends <a href="../../../com/myscript/engine/EngineObject.html" title="class in
 <dd><code>java.lang.IllegalStateException</code> - when <code>field</code> has been disposed of.</dd>
 <dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not a
            <code>ContentField</code> of type <code>TEXT</code>.</dd>
-<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not on the page
-           associated with the target <code>TextInspector</code>.</dd></dl>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>field</code> comes from a
+           different page.</dd></dl>
 </li>
 </ul>
 <a name="hitChar(com.myscript.geometry.Point)">
@@ -498,7 +500,8 @@ extends <a href="../../../com/myscript/engine/EngineObject.html" title="class in
 <pre>public final&nbsp;<a href="../../../com/myscript/document/TextInterval.html" title="class in com.myscript.document">TextInterval</a>&nbsp;fromField(<a href="../../../com/myscript/document/ContentField.html" title="class in com.myscript.document">ContentField</a>&nbsp;field)
                              throws java.lang.NullPointerException,
                                     java.lang.IllegalStateException,
-                                    <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></pre>
+                                    <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a>,
+                                    java.lang.IllegalArgumentException</pre>
 <div class="block">Returns a <code>TextInterval</code> that corresponds to the specified text
  <code>ContentField</code>. The <code>TextInterval</code> surrounds the
  whole field so the begin position is zero and the end position is the
@@ -512,8 +515,8 @@ extends <a href="../../../com/myscript/engine/EngineObject.html" title="class in
 <dd><code>java.lang.IllegalStateException</code> - when <code>field</code> has been disposed of.</dd>
 <dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not a
            <code>ContentField</code> of type <code>TEXT</code>.</dd>
-<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not on the page
-           associated with the target <code>TextInspector</code>.</dd></dl>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>field</code> comes from a
+           different page.</dd></dl>
 </li>
 </ul>
 <a name="fromSelection(com.myscript.document.PageSelection)">
@@ -570,7 +573,8 @@ extends <a href="../../../com/myscript/engine/EngineObject.html" title="class in
                          <a href="../../../com/myscript/document/ContentField.html" title="class in com.myscript.document">ContentField</a>&nbsp;field)
                                  throws java.lang.NullPointerException,
                                         java.lang.IllegalStateException,
-                                        <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></pre>
+                                        <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a>,
+                                        java.lang.IllegalArgumentException</pre>
 <div class="block">Returns a <code>TextInterval</code> that corresponds to the specified
  <code>selection</code> and within the specified text
  <code>ContentField</code>. Passing <code>null</code> as the
@@ -589,8 +593,8 @@ extends <a href="../../../com/myscript/engine/EngineObject.html" title="class in
 <dd><code>java.lang.IllegalStateException</code> - when <code>field</code> has been disposed of.</dd>
 <dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not a
            <code>ContentField</code> of type <code>TEXT</code>.</dd>
-<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not on the page
-           associated with the target <code>TextInspector</code>.</dd></dl>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>field</code> comes from a
+           different page.</dd></dl>
 </li>
 </ul>
 <a name="fromSelection(com.myscript.ink.InkSelection, com.myscript.document.ContentField)">
@@ -603,7 +607,8 @@ extends <a href="../../../com/myscript/engine/EngineObject.html" title="class in
                          <a href="../../../com/myscript/document/ContentField.html" title="class in com.myscript.document">ContentField</a>&nbsp;field)
                                  throws java.lang.NullPointerException,
                                         java.lang.IllegalStateException,
-                                        <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></pre>
+                                        <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a>,
+                                        java.lang.IllegalArgumentException</pre>
 <div class="block">Returns a <code>TextInterval</code> that corresponds to the specified
  <code>selection</code> and within the specified text
  <code>ContentField</code>. Passing <code>null</code> as the
@@ -622,8 +627,8 @@ extends <a href="../../../com/myscript/engine/EngineObject.html" title="class in
 <dd><code>java.lang.IllegalStateException</code> - when <code>field</code> has been disposed of.</dd>
 <dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not a
            <code>ContentField</code> of type <code>TEXT</code>.</dd>
-<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not on the page
-           associated with the target <code>TextInspector</code>.</dd></dl>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>field</code> comes from a
+           different page.</dd></dl>
 </li>
 </ul>
 <a name="expand(com.myscript.document.TextInterval, com.myscript.document.TextBoundary, com.myscript.document.TextBoundary)">
@@ -666,6 +671,7 @@ extends <a href="../../../com/myscript/engine/EngineObject.html" title="class in
           <a href="../../../com/myscript/ink/SelectionModifier.html" title="class in com.myscript.ink">SelectionModifier</a>&nbsp;modifier)
                   throws java.lang.NullPointerException,
                          java.lang.IllegalStateException,
+                         java.lang.IllegalArgumentException,
                          java.lang.IndexOutOfBoundsException</pre>
 <div class="block">Updates a <code>PageSelection</code> based on a <code>TextInterval</code>.</div>
 <dl><dt><span class="strong">Parameters:</span></dt><dd><code>interval</code> - the <code>TextInterval</code> to modify the selection with.</dd><dd><code>selection</code> - the <code>PageSelection</code> to modify.</dd><dd><code>modifier</code> - the way the <code>PageSelection</code> should be combined
@@ -681,8 +687,8 @@ extends <a href="../../../com/myscript/engine/EngineObject.html" title="class in
            <code>null</code>.</dd>
 <dd><code>java.lang.IllegalStateException</code> - when <code>selection</code> has been disposed
            of.</dd>
-<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>selection</code> is not on the
-           page associated with this <code>TextInspector</code>.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>selection</code> comes from
+           a different page.</dd>
 <dd><code>java.lang.IndexOutOfBoundsException</code> - when <code>interval</code> begin or end
            position is invalid.</dd></dl>
 </li>
@@ -768,7 +774,8 @@ extends <a href="../../../com/myscript/engine/EngineObject.html" title="class in
 <pre>public final&nbsp;int&nbsp;getCharCount(<a href="../../../com/myscript/document/ContentField.html" title="class in com.myscript.document">ContentField</a>&nbsp;field)
                        throws java.lang.NullPointerException,
                               java.lang.IllegalStateException,
-                              <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></pre>
+                              <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a>,
+                              java.lang.IllegalArgumentException</pre>
 <div class="block">Returns the number of characters recognized in a <code>ContentField</code>.</div>
 <dl><dt><span class="strong">Parameters:</span></dt><dd><code>field</code> - a text <code>ContentField</code>.</dd>
 <dt><span class="strong">Returns:</span></dt><dd>the number of characters in <code>field</code>.</dd>
@@ -779,8 +786,8 @@ extends <a href="../../../com/myscript/engine/EngineObject.html" title="class in
 <dd><code>java.lang.IllegalStateException</code> - when <code>field</code> has been disposed of.</dd>
 <dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not a
            <code>ContentField</code> of type <code>TEXT</code>.</dd>
-<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not on the page
-           associated with the target <code>TextInspector</code>.</dd></dl>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>field</code> comes from a
+           different page.</dd></dl>
 </li>
 </ul>
 <a name="getCharAt(com.myscript.document.ContentField, int)">
@@ -794,6 +801,7 @@ extends <a href="../../../com/myscript/engine/EngineObject.html" title="class in
                          throws java.lang.NullPointerException,
                                 java.lang.IllegalStateException,
                                 <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a>,
+                                java.lang.IllegalArgumentException,
                                 java.lang.IndexOutOfBoundsException</pre>
 <div class="block">Returns information about a character from a <code>ContentField</code>.</div>
 <dl><dt><span class="strong">Parameters:</span></dt><dd><code>field</code> - a text <code>ContentField</code>.</dd><dd><code>index</code> - the index of the character in <code>field</code>.</dd>
@@ -805,8 +813,8 @@ extends <a href="../../../com/myscript/engine/EngineObject.html" title="class in
 <dd><code>java.lang.IllegalStateException</code> - when <code>field</code> has been disposed of.</dd>
 <dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not a
            <code>ContentField</code> of type <code>TEXT</code>.</dd>
-<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not on the page
-           associated with the target <code>TextInspector</code>.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>field</code> comes from a
+           different page.</dd>
 <dd><code>java.lang.IndexOutOfBoundsException</code> - when <code>index</code> is out of bounds
            (should be <code>&gt;= 0</code> and
            <code>&lt; <a href="../../../com/myscript/document/TextInspector.html#getCharCount(com.myscript.document.ContentField)"><code>getCharCount(ContentField)</code></a></code>.</dd></dl>
@@ -821,7 +829,8 @@ extends <a href="../../../com/myscript/engine/EngineObject.html" title="class in
 <pre>public final&nbsp;int&nbsp;getWordCount(<a href="../../../com/myscript/document/ContentField.html" title="class in com.myscript.document">ContentField</a>&nbsp;field)
                        throws java.lang.NullPointerException,
                               java.lang.IllegalStateException,
-                              <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></pre>
+                              <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a>,
+                              java.lang.IllegalArgumentException</pre>
 <div class="block">Returns the number of words recognized in a <code>ContentField</code>.</div>
 <dl><dt><span class="strong">Parameters:</span></dt><dd><code>field</code> - a text <code>ContentField</code>.</dd>
 <dt><span class="strong">Returns:</span></dt><dd>the number of words in <code>field</code>.</dd>
@@ -832,8 +841,8 @@ extends <a href="../../../com/myscript/engine/EngineObject.html" title="class in
 <dd><code>java.lang.IllegalStateException</code> - when <code>field</code> has been disposed of.</dd>
 <dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not a
            <code>ContentField</code> of type <code>TEXT</code>.</dd>
-<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not on the page
-           associated with the target <code>TextInspector</code>.</dd></dl>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>field</code> comes from a
+           different page.</dd></dl>
 </li>
 </ul>
 <a name="getWordAt(com.myscript.document.ContentField, int)">
@@ -847,6 +856,7 @@ extends <a href="../../../com/myscript/engine/EngineObject.html" title="class in
                          throws java.lang.NullPointerException,
                                 java.lang.IllegalStateException,
                                 <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a>,
+                                java.lang.IllegalArgumentException,
                                 java.lang.IndexOutOfBoundsException</pre>
 <div class="block">Returns information about a word from a <code>ContentField</code>.</div>
 <dl><dt><span class="strong">Parameters:</span></dt><dd><code>field</code> - a text <code>ContentField</code>.</dd><dd><code>index</code> - the index of the word in <code>field</code>.</dd>
@@ -858,8 +868,8 @@ extends <a href="../../../com/myscript/engine/EngineObject.html" title="class in
 <dd><code>java.lang.IllegalStateException</code> - when <code>field</code> has been disposed of.</dd>
 <dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not a
            <code>ContentField</code> of type <code>TEXT</code>.</dd>
-<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not on the page
-           associated with the target <code>TextInspector</code>.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>field</code> comes from a
+           different page.</dd>
 <dd><code>java.lang.IndexOutOfBoundsException</code> - when <code>index</code> is out of bounds
            (should be <code>&gt;= 0</code> and
            <code>&lt; <a href="../../../com/myscript/document/TextInspector.html#getWordCount(com.myscript.document.ContentField)"><code>getWordCount(ContentField)</code></a></code>.</dd></dl>
@@ -874,7 +884,8 @@ extends <a href="../../../com/myscript/engine/EngineObject.html" title="class in
 <pre>public final&nbsp;int&nbsp;getLineCount(<a href="../../../com/myscript/document/ContentField.html" title="class in com.myscript.document">ContentField</a>&nbsp;field)
                        throws java.lang.NullPointerException,
                               java.lang.IllegalStateException,
-                              <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></pre>
+                              <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a>,
+                              java.lang.IllegalArgumentException</pre>
 <div class="block">Returns the number of lines recognized in a <code>ContentField</code>.</div>
 <dl><dt><span class="strong">Parameters:</span></dt><dd><code>field</code> - a text <code>ContentField</code>.</dd>
 <dt><span class="strong">Returns:</span></dt><dd>the number of lines in <code>field</code>.</dd>
@@ -885,8 +896,8 @@ extends <a href="../../../com/myscript/engine/EngineObject.html" title="class in
 <dd><code>java.lang.IllegalStateException</code> - when <code>field</code> has been disposed of.</dd>
 <dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not a
            <code>ContentField</code> of type <code>TEXT</code>.</dd>
-<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not on the page
-           associated with the target <code>TextInspector</code>.</dd></dl>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>field</code> comes from a
+           different page.</dd></dl>
 </li>
 </ul>
 <a name="getLineAt(com.myscript.document.ContentField, int)">
@@ -900,6 +911,7 @@ extends <a href="../../../com/myscript/engine/EngineObject.html" title="class in
                          throws java.lang.NullPointerException,
                                 java.lang.IllegalStateException,
                                 <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a>,
+                                java.lang.IllegalArgumentException,
                                 java.lang.IndexOutOfBoundsException</pre>
 <div class="block">Returns information about a line from a <code>ContentField</code>.</div>
 <dl><dt><span class="strong">Parameters:</span></dt><dd><code>field</code> - a text <code>ContentField</code>.</dd><dd><code>index</code> - the index of the line in <code>field</code>.</dd>
@@ -911,8 +923,8 @@ extends <a href="../../../com/myscript/engine/EngineObject.html" title="class in
 <dd><code>java.lang.IllegalStateException</code> - when <code>field</code> has been disposed of.</dd>
 <dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not a
            <code>ContentField</code> of type <code>TEXT</code>.</dd>
-<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>field</code> is not on the page
-           associated with the target <code>TextInspector</code>.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - when <code>field</code> comes from a
+           different page.</dd>
 <dd><code>java.lang.IndexOutOfBoundsException</code> - when <code>index</code> is out of bounds
            (should be <code>&gt;= 0</code> and
            <code>&lt; <a href="../../../com/myscript/document/TextInspector.html#getLineCount(com.myscript.document.ContentField)"><code>getLineCount(ContentField)</code></a></code>.</dd></dl>

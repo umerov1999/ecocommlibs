@@ -66,10 +66,10 @@ Type voRecognitionResult</H2>
               Returns an iterator over the different candidates. </TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
-<TD ALIGN="right" VALIGN="top"><CODE>float</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIRecognitionResult::getResemblanceScore">voIRecognitionResult::getResemblanceScore</A>(voEngine engine, voRecognitionResult target)</CODE>
+<TD ALIGN="right" VALIGN="top"><CODE>float</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voIRecognitionResult::getObservationScore">voIRecognitionResult::getObservationScore</A>(voEngine engine, voRecognitionResult target)</CODE>
 <BR>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              Returns the resemblance score of the best candidate. </TD>
+              Returns the observation score of the best candidate. </TD>
 </TR>
 </TABLE>
 </P>
@@ -181,11 +181,11 @@ target
 </DD>
 </DL>
 <HR>
-<A NAME="voIRecognitionResult::getResemblanceScore"></A>
-<H3 class="code">getResemblanceScore</H3>
-<PRE>float <B><A href="../../c/MyScriptText_h/voIRecognitionResult.html">voIRecognitionResult</A>::getResemblanceScore</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptText_h/voRecognitionResult.html">voRecognitionResult</A> target)</PRE>
+<A NAME="voIRecognitionResult::getObservationScore"></A>
+<H3 class="code">getObservationScore</H3>
+<PRE>float <B><A href="../../c/MyScriptText_h/voIRecognitionResult.html">voIRecognitionResult</A>::getObservationScore</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptText_h/voRecognitionResult.html">voRecognitionResult</A> target)</PRE>
 <DL>
-<DD>Returns the resemblance score of the best candidate. <P>
+<DD>Returns the observation score of the best candidate. <P>
 
 <P>
 <DL>
@@ -224,7 +224,7 @@ target
 <DT>
 <B>Returns:</B>
 <DD>
-<P>the resemblance score of the best candidate on success, otherwise  <CODE>-1</CODE>.</P>
+<P>the observation score of the best candidate on success, otherwise  <CODE>-1</CODE>.</P>
 </DD>
 </DT>
 </DL>
@@ -277,9 +277,9 @@ target
 
 <DL>
 <DT>
-<B>deprecated as of 8.0.0</B>
+<B>Since:</B>
 <DD>
-<P></P>
+<P>8.1_0 </P>
 </DD>
 </DT>
 </DL>

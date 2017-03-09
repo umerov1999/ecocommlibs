@@ -116,7 +116,7 @@ extends <a href="../../../com/myscript/engine/EngineObject.html" title="class in
 <dl><dt><span class="strong">Since:</span></dt>
   <dd>4.0.0</dd>
 <dt><span class="strong">Version:</span></dt>
-  <dd>1.1</dd>
+  <dd>1.2</dd>
 <dt><span class="strong">See Also:</span></dt><dd><a href="../../../com/myscript/text/IRecognitionResultProvider.html" title="interface in com.myscript.text"><code>IRecognitionResultProvider</code></a></dd></dl>
 </li>
 </ul>
@@ -160,8 +160,8 @@ extends <a href="../../../com/myscript/engine/EngineObject.html" title="class in
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>float</code></td>
-<td class="colLast"><code><strong><a href="../../../com/myscript/text/RecognitionResult.html#getResemblanceScore()">getResemblanceScore</a></strong>()</code>
-<div class="block">Returns the resemblance score of the best candidate of this
+<td class="colLast"><code><strong><a href="../../../com/myscript/text/RecognitionResult.html#getObservationScore()">getObservationScore</a></strong>()</code>
+<div class="block">Returns the observation score of the best candidate of this
  <code>RecognitionResult</code> object.</div>
 </td>
 </tr>
@@ -194,17 +194,17 @@ extends <a href="../../../com/myscript/engine/EngineObject.html" title="class in
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="getResemblanceScore()">
+<a name="getObservationScore()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getResemblanceScore</h4>
-<pre>public final&nbsp;float&nbsp;getResemblanceScore()
+<h4>getObservationScore</h4>
+<pre>public final&nbsp;float&nbsp;getObservationScore()
                                 throws java.lang.IllegalStateException</pre>
-<div class="block">Returns the resemblance score of the best candidate of this
+<div class="block">Returns the observation score of the best candidate of this
  <code>RecognitionResult</code> object.</div>
-<dl><dt><span class="strong">Returns:</span></dt><dd>the resemblance score of the best candidate of this
+<dl><dt><span class="strong">Returns:</span></dt><dd>the observation score of the best candidate of this
  <code>RecognitionResult</code> object.</dd>
 <dt><span class="strong">Throws:</span></dt>
 <dd><code>java.lang.IllegalStateException</code> - when this <code>RecognitionResult</code>
@@ -212,7 +212,7 @@ extends <a href="../../../com/myscript/engine/EngineObject.html" title="class in
 <dd><code>java.lang.IllegalStateException</code> - when there are no recognition candidates
  available.
 
--  * @deprecated as of 8.0.0</dd></dl>
+-  * @since 8.1.0</dd></dl>
 </li>
 </ul>
 <a name="getCandidates()">

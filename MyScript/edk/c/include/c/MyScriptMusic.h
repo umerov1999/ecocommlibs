@@ -1,5 +1,5 @@
 #ifndef C_MYSCRIPTMUSIC_H
-#define C_MYSCRIPTMUSIC_H 0x08000000
+#define C_MYSCRIPTMUSIC_H 0x08010000
 /**
  * @file c/MyScriptMusic.h
  * Native interface to the MyScript Music service.

@@ -85,5 +85,10 @@ echo pause &gt;&gt; $(TargetDir)$(TargetName).bat
       <Outputs Condition="$([System.Text.RegularExpressions.Regex]::IsMatch('$(Configuration)', 'using import lib'))">$(TargetDir)$(TargetName).bat;%(Outputs)</Outputs>
     </CustomBuild>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="common.vcxproj">
+      <Project>{80566fa5-2c4d-4d69-8b9f-d6e81d7d5a2f}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
 </Project>

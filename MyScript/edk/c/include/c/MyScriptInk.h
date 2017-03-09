@@ -1,5 +1,5 @@
 #ifndef C_MYSCRIPTINK_H
-#define C_MYSCRIPTINK_H 0x08000000
+#define C_MYSCRIPTINK_H 0x08010000
 /**
  * @file c/MyScriptInk.h
  * Native interface to the MyScript Ink service.
@@ -483,6 +483,9 @@ voVerticalLineSet;
  * [  y' ] = [ d  e  f ] * [ y ] = [ d * x + e * y + f ]
  * [  1  ]   [ 0  0  1 ]   [ 1 ]   [         1         ]
  * </pre>
+ *
+ * A `voTransform` is invalid if a value is infinite or not a number, or if the
+ * matrix is not invertible (when its determinant `(a * e - b * d)` is zero).
  */
 typedef struct _voTransform
 {
@@ -2454,6 +2457,7 @@ typedef struct _voIInkStrokeBuilder
    * @throws VO_INVALID_OPERATION when `target` is not a `voInkStrokeBuilder`.
    * @throws VO_INVALID_USER_BUFFER when `signature` is not readable.
    * @throws VO_LIMIT_EXCEEDED when the sample count exceeds `32767`.
+   * @throws VO_INVALID_ARGUMENT when one of the sample values is invalid.
    */
   bool (VO_MSE_CALL *addSample)(voEngine engine, voInkStrokeBuilder target, const char* signature, ...);
 
@@ -2475,6 +2479,7 @@ typedef struct _voIInkStrokeBuilder
    * @throws VO_INVALID_OPERATION when `target` is not a `voInkStrokeBuilder`.
    * @throws VO_INVALID_USER_BUFFER when `signature` is not readable.
    * @throws VO_LIMIT_EXCEEDED when the sample count exceeds `32767`.
+   * @throws VO_INVALID_ARGUMENT when one of the sample values is invalid.
    */
   bool (VO_MSE_CALL *addSampleV)(voEngine engine, voInkStrokeBuilder target, const char* signature, va_list args);
 
@@ -2495,6 +2500,7 @@ typedef struct _voIInkStrokeBuilder
    * @throws VO_INVALID_ARGUMENT when `count <= 0` or `count` is greater than
    *   the number of channels.
    * @throws VO_LIMIT_EXCEEDED when the sample count exceeds `32767`.
+   * @throws VO_INVALID_ARGUMENT when one of the sample values is invalid.
    */
   bool (VO_MSE_CALL *addSampleA_f)(voEngine engine, voInkStrokeBuilder target, const float values[], int32_t count);
 
@@ -2907,6 +2913,8 @@ typedef struct _voIInk
    * @throws VO_INVALID_OBJECT when `intervals` is not a `voInkIntervals`.
    * @throws VO_INVALID_ARGUMENT when `intervals` does not refer to this ink.
    * @throws VO_INVALID_USER_BUFFER when `transform` is not readable.
+   * @throws VO_INVALID_ARGUMENT when `transform` contains invalid values or is
+   *   not invertible.
    */
   bool (VO_MSE_CALL *transform)(voEngine engine, voInk target, voInkIntervals intervals, const voTransform* transform);
 
@@ -3373,7 +3381,7 @@ typedef struct _voISelection
    *
    * @param engine the engine.
    * @param target the target selection.
-   * @param other the other selection, must be of the same type as `selection`.
+   * @param other the other selection, must be of the same type as `target`.
    * @param modifier the way the new selection should be combined with the
    *   existing selection.
    *
@@ -3759,6 +3767,8 @@ typedef struct _voIGeometry
    *
    * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
    * @throws VO_INVALID_USER_BUFFER when `transform` is not writable.
+   * @throws VO_INVALID_ARGUMENT when `transform` contains invalid values or is
+   *   not invertible.
    */
   bool (VO_MSE_CALL *translate)(voEngine engine, voTransform* transform, float tx, float ty);
 
@@ -3782,6 +3792,8 @@ typedef struct _voIGeometry
    *
    * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
    * @throws VO_INVALID_USER_BUFFER when `transform` is not writable.
+   * @throws VO_INVALID_ARGUMENT when `transform` contains invalid values or is
+   *   not invertible.
    */
   bool (VO_MSE_CALL *scale)(voEngine engine, voTransform* transform, float sx, float sy);
 
@@ -3806,6 +3818,8 @@ typedef struct _voIGeometry
    *
    * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
    * @throws VO_INVALID_USER_BUFFER when `transform` is not writable.
+   * @throws VO_INVALID_ARGUMENT when `transform` contains invalid values or is
+   *   not invertible.
    */
   bool (VO_MSE_CALL *rotate)(voEngine engine, voTransform* transform, float a, float x0, float y0);
 
@@ -3829,6 +3843,8 @@ typedef struct _voIGeometry
    *
    * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
    * @throws VO_INVALID_USER_BUFFER when `transform` is not writable.
+   * @throws VO_INVALID_ARGUMENT when `transform` contains invalid values or is
+   *   not invertible.
    */
   bool (VO_MSE_CALL *shearX)(voEngine engine, voTransform* transform, float a, float y0);
 
@@ -3853,6 +3869,8 @@ typedef struct _voIGeometry
    *
    * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
    * @throws VO_INVALID_USER_BUFFER when `transform` is not writable.
+   * @throws VO_INVALID_ARGUMENT when `transform` contains invalid values or is
+   *   not invertible.
    */
   bool (VO_MSE_CALL *shearY)(voEngine engine, voTransform* transform, float a, float x0);
 
@@ -3868,8 +3886,10 @@ typedef struct _voIGeometry
    * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
    * @throws VO_INVALID_USER_BUFFER when `transform1` is not writable.
    * @throws VO_INVALID_USER_BUFFER when `transform2` is not writable.
+   * @throws VO_INVALID_ARGUMENT when `transform1` or `transform2` contain
+   *   invalid values or are not invertible.
    */
-  bool (VO_MSE_CALL *multiply)(voEngine engine, voTransform* transform1, voTransform* transform2);
+  bool (VO_MSE_CALL *multiply)(voEngine engine, voTransform* transform1, const voTransform* transform2);
 
   /**
    * Inverts this transform.
@@ -3881,8 +3901,8 @@ typedef struct _voIGeometry
    *
    * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
    * @throws VO_INVALID_USER_BUFFER when `transform` is not writable.
-   * @throws VO_INVALID_STATE when `transform` is not invertible, because its
-   *   determinant `(a * e - b * d)` is zero.
+   * @throws VO_INVALID_ARGUMENT when `transform` contains invalid values or is
+   *   not invertible.
    */
   bool (VO_MSE_CALL *invert)(voEngine engine, voTransform* transform);
 }

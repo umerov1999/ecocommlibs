@@ -1,5 +1,5 @@
 #ifndef C_MYSCRIPTANALYZER_H
-#define C_MYSCRIPTANALYZER_H 0x08000000
+#define C_MYSCRIPTANALYZER_H 0x08010000
 /**
  * @file c/MyScriptAnalyzer.h
  * Native interface to the MyScript Analyzer service.

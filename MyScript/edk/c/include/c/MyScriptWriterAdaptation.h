@@ -1,5 +1,5 @@
 #ifndef C_MYSCRIPTWRITERADAPTATION_H
-#define C_MYSCRIPTWRITERADAPTATION_H 0x08000000
+#define C_MYSCRIPTWRITERADAPTATION_H 0x08010000
 /**
  * @file c/MyScriptWriterAdaptation.h
  * Native interface to the MyScript WriterAdaptation service.

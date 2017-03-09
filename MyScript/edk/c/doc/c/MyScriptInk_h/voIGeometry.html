@@ -46,7 +46,7 @@ Type voIGeometry</H2>
               Inverts this transform. </TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
-<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#multiply">multiply</A>)(voEngine engine, voTransform *transform1, voTransform *transform2)</CODE>
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="right" VALIGN="top" STYLE="border-right:0px none; padding-right: 0px"><CODE>(*</CODE></TD><TD ALIGN="left" VALIGN="top" STYLE="border-left:0px none; padding-left: 0px"><CODE><A HREF="#multiply">multiply</A>)(voEngine engine, voTransform *transform1, const voTransform *transform2)</CODE>
 <BR>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               Multiplies this transform by the second transform. </TD>
@@ -171,11 +171,11 @@ transform
 </DD>
 </DT>
 <DT>
-<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_STATE">VO_INVALID_STATE</A></CODE></B>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_ARGUMENT">VO_INVALID_ARGUMENT</A></CODE></B>
 <DD>
 <parameterdescription>
 
-<P>when  <CODE>transform</CODE> is not invertible, because its determinant  <CODE>(a * e - b * d)</CODE> is zero. </P>
+<P>when  <CODE>transform</CODE> contains invalid values or is not invertible. </P>
 </parameterdescription>
 </DD>
 </DT>
@@ -192,7 +192,7 @@ transform
 <A NAME="multiply"></A>
 <H3 class="code">multiply</H3>
 <PRE>
-<A href="../../c/std/stdbool_h/bool.html">bool</A> <B>multiply</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptInk_h/voTransform.html">voTransform</A> *transform1, <A href="../../c/MyScriptInk_h/voTransform.html">voTransform</A> *transform2)</PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B>multiply</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptInk_h/voTransform.html">voTransform</A> *transform1, const <A href="../../c/MyScriptInk_h/voTransform.html">voTransform</A> *transform2)</PRE>
 <DL>
 <DD>Multiplies this transform by the second transform. <P>
 
@@ -279,6 +279,15 @@ transform2
 <parameterdescription>
 
 <P>when  <CODE>transform2</CODE> is not writable. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_ARGUMENT">VO_INVALID_ARGUMENT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>transform1</CODE> or  <CODE>transform2</CODE> contain invalid values or are not invertible. </P>
 </parameterdescription>
 </DD>
 </DT>
@@ -406,6 +415,15 @@ y0
 </parameterdescription>
 </DD>
 </DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_ARGUMENT">VO_INVALID_ARGUMENT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>transform</CODE> contains invalid values or is not invertible. </P>
+</parameterdescription>
+</DD>
+</DT>
 </DL>
 </DD>
 </DT>
@@ -516,6 +534,15 @@ sy
 <parameterdescription>
 
 <P>when  <CODE>transform</CODE> is not writable. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_ARGUMENT">VO_INVALID_ARGUMENT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>transform</CODE> contains invalid values or is not invertible. </P>
 </parameterdescription>
 </DD>
 </DT>
@@ -715,6 +742,15 @@ y0
 </parameterdescription>
 </DD>
 </DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_ARGUMENT">VO_INVALID_ARGUMENT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>transform</CODE> contains invalid values or is not invertible. </P>
+</parameterdescription>
+</DD>
+</DT>
 </DL>
 </DD>
 </DT>
@@ -828,6 +864,15 @@ x0
 </parameterdescription>
 </DD>
 </DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_ARGUMENT">VO_INVALID_ARGUMENT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>transform</CODE> contains invalid values or is not invertible. </P>
+</parameterdescription>
+</DD>
+</DT>
 </DL>
 </DD>
 </DT>
@@ -938,6 +983,15 @@ ty
 <parameterdescription>
 
 <P>when  <CODE>transform</CODE> is not writable. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_ARGUMENT">VO_INVALID_ARGUMENT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>transform</CODE> contains invalid values or is not invertible. </P>
 </parameterdescription>
 </DD>
 </DT>

@@ -9,7 +9,7 @@
 // -- path to the MyScript SDK directory ---------------------------------------
 
 #ifndef SDK_DIR
-  #define SDK_DIR "./MyScript" //${executable}/../../../../.."
+  #define SDK_DIR "${executable}/../../../../.."
 #endif // #ifndef SDK_DIR
 
 
@@ -33,13 +33,11 @@
 
 // -- language -----------------------------------------------------------------
 
-
 // TODO: set this, e.g.: "en_GB" for English (United Kingdom).
-/*
 #ifndef LANG
-  #define LANG "en_US"
+  #define LANG ""
 #endif // #ifndef LANG
-*/  
+
 
 // -- handwriting style  -------------------------------------------------------
 
@@ -50,7 +48,7 @@
 
 
 // -- resources ----------------------------------------------------------------
-/*
+
 #ifndef AK_ISO_RES
   #define AK_ISO_RES RESOURCE_DIR "/" LANG "/" LANG "-ak-iso.res"
 #endif // #ifndef AK_ISO_RES
@@ -74,8 +72,6 @@
 #ifndef LK_TEXT_RES
   #define LK_TEXT_RES RESOURCE_DIR "/" LANG "/" LANG "-lk-text.res"
 #endif // #ifndef LK_TEXT_RES
- */
-
 
 #ifndef LK_ENGLISH_SECONDARY_1_RES
   #define LK_ENGLISH_SECONDARY_1_RES RESOURCE_DIR "/mul/mul-lk-english_secondary_1.res"

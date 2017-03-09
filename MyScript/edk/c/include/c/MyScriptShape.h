@@ -1,5 +1,5 @@
 #ifndef C_MYSCRIPTSHAPE_H
-#define C_MYSCRIPTSHAPE_H 0x08000000
+#define C_MYSCRIPTSHAPE_H 0x08010000
 /**
  * @file c/MyScriptShape.h
  * Native interface to the MyScript Shape service.

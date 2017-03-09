@@ -116,6 +116,7 @@ const char* strMyScriptType(voTypeId typeId)
   __CASE_FROM_TYPE(InputCharacter);
   __CASE_FROM_TYPE(HistoryManager);
   __CASE_FROM_TYPE(UserObject);
+  __CASE_FROM_TYPE(InputString);
   __CASE_FROM_TYPE(IIterator);
   __CASE_FROM_TYPE(ICharset);
   __CASE_FROM_TYPE(IAttachTarget);
@@ -129,6 +130,7 @@ const char* strMyScriptType(voTypeId typeId)
   __CASE_FROM_TYPE(IHistoryManager);
   __CASE_FROM_TYPE(IVersionable);
   __CASE_FROM_TYPE(IUserObject);
+  __CASE_FROM_TYPE(IInputString);
 #endif // end of: #ifdef C_MYSCRIPTENGINE_H
 
 #ifdef C_MYSCRIPTGESTURE_H
@@ -360,6 +362,8 @@ const char* strMyScriptType(voTypeId typeId)
   __CASE_FROM_TYPE(TagIterator);
   __CASE_FROM_TYPE(TextSegmenter);
   __CASE_FROM_TYPE(LinguisticKnowledgeBuilder);
+  __CASE_FROM_TYPE(TextResultSegmentIterator);
+  __CASE_FROM_TYPE(TextResultCandidateIterator);
   __CASE_FROM_TYPE(ILexicalUnit);
   __CASE_FROM_TYPE(ILexicon);
   __CASE_FROM_TYPE(ISubsetKnowledge);
@@ -375,6 +379,8 @@ const char* strMyScriptType(voTypeId typeId)
   __CASE_FROM_TYPE(ITagIterator);
   __CASE_FROM_TYPE(ITextSegmenter);
   __CASE_FROM_TYPE(ILinguisticKnowledgeBuilder);
+  __CASE_FROM_TYPE(ITextResultSegmentIterator);
+  __CASE_FROM_TYPE(ITextResultCandidateIterator);
 #endif // end of: #ifdef C_MYSCRIPTTEXT_H
 
 #ifdef C_MYSCRIPTWRITERADAPTATION_H

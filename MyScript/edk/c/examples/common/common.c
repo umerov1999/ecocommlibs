@@ -194,9 +194,7 @@ FILE* fileOpen(const char* path, const char* mode)
 
   resolvePath(path_, sizeof(path_), path);
 
-  FILE* fp;
-  fopen_s(&fp, path_, mode);
-  return fp;
+  return fopen(path_, mode);
 }
 
 

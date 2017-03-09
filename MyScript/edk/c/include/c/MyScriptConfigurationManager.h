@@ -1,5 +1,5 @@
 #ifndef C_MYSCRIPTCONFIGURATIONMANAGER_H
-#define C_MYSCRIPTCONFIGURATIONMANAGER_H 0x08000000
+#define C_MYSCRIPTCONFIGURATIONMANAGER_H 0x08010000
 /**
  * @file c/MyScriptConfigurationManager.h
  * Native interface to the MyScript Configuration Manager service. Please note

@@ -1,5 +1,5 @@
 #ifndef C_MYSCRIPTENGINE_H
-#define C_MYSCRIPTENGINE_H 0x08000000
+#define C_MYSCRIPTENGINE_H 0x08010000
 /**
  * @file c/MyScriptEngine.h
  * Native interface to the MyScript Engine. This is the interface through which
@@ -545,7 +545,16 @@ enum VO_ENGINE_T
    *
    * @see voUserObject
    */
-  VO_UserObject
+  VO_UserObject,
+
+  /**
+  * `voInputString` type identifier.
+  *
+  * @see voInputString
+  *
+  * @since 8.1_0
+  */
+  VO_InputString
 };
 
 
@@ -643,7 +652,16 @@ enum VO_ENGINE_I
    *
    * @see voIUserObject
    */
-  VO_IUserObject
+  VO_IUserObject,
+
+  /**
+   * `voIInputString` interface identifier.
+   *
+   * @see voIInputString
+   *
+   * @since 8.1_0
+   */
+  VO_IInputString = 171
 };
 
 
@@ -1902,6 +1920,90 @@ VO_INLINE voInputCharacter voCreateInputCharacter(voEngine engine)
 #endif // end of: #ifndef VO_NO_FUNCTIONS
 
 
+// -- InputString --------------------------------------------------------------
+
+/**
+ * `voInputString` reference type. This is a string with alternates and
+ * associated probabilities taking part in the input to a recognizer.
+ *
+ * {@extends voEngineObject}
+ * {@implements voIInputString}
+ * @since 8.1_0
+ */
+typedef voEngineObject voInputString;
+
+/**
+ * Functions composing the `voIInputString` interface.
+ *
+ * This interface exposes the public methods of the `voInputString` type.
+ *
+ * {@implementingTypes voInputString}
+ * @see VO_IInputString, VO_InputString.
+ * @since 8.1_0
+ */
+typedef struct _voIInputString
+{
+  /**
+   * Clears this input string.
+   *
+   * @param engine the engine.
+   * @param target the target input string.
+   *
+   * @return `true` on success, otherwise `false`.
+   *
+   * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
+   * @throws VO_NO_SUCH_OBJECT when the `target` reference is invalid.
+   * @throws VO_INVALID_OPERATION when `target` is not a `voInputString`.
+   */
+  bool (VO_MSE_CALL *clear)(voEngine engine, voInputString target);
+
+  /**
+   * Adds an alternate to this input string.
+   *
+   * @param engine the engine.
+   * @param target the target input string.
+   * @param charset the charset used to encode the alternate string.
+   * @param string the alternate string.
+   * @param probability the probability associated with the alternate.
+   *
+   * @return `true` on success, otherwise `false`.
+   *
+   * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
+   * @throws VO_NO_SUCH_OBJECT when the `target` reference is invalid.
+   * @throws VO_INVALID_OPERATION when `target` is not a `voInputString`.
+   * @throws VO_NO_SUCH_OBJECT when the `charset` reference is invalid.
+   * @throws VO_NO_SUCH_OBJECT when the `charset` reference is `NULL` and no
+   *   default charset was set.
+   * @throws VO_INVALID_OBJECT when `charset` is not a `voCharset`.
+   * @throws VO_INVALID_USER_BUFFER when `string` or its `bytes` member is not
+   *   readable.
+   * @throws VO_INVALID_ARGUMENT when `string` is the empty string.
+   * @throws VO_INVALID_ARGUMENT when `probability` is not in the valid
+   *   `[0.0, 1.0]` range.
+   */
+  bool (VO_MSE_CALL *addAlternate)(voEngine engine, voInputString target, voCharset charset, const voString* alternateString, float alternateProbability);
+}
+voIInputString;
+
+#ifndef VO_NO_FUNCTIONS
+/**
+ * Creates a new `voInputString` instance.
+ *
+ * @param engine the engine.
+ *
+ * @return the newly created `voInputString` instance on success, otherwise
+ *   `NULL`.
+ *
+ * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
+ * @throws VO_LIMIT_EXCEEDED when the number of `voInputString` instances
+ *   would exceed the allowed limit (please remember that the limit can be
+ *   shared by several types).
+ */
+VO_INLINE voInputString voCreateInputString(voEngine engine)
+{
+  return voCreateObject(engine, VO_InputString);
+}
+#endif // end of: #ifndef VO_NO_FUNCTIONS
 
 
 // -- StructuredInput ----------------------------------------------------------
@@ -2288,6 +2390,8 @@ typedef struct _voIFloatStructuredInput
    * @param width the width of the character bounding box.
    * @param height the height of the character bounding box.
    *
+   * @return `true` on success, otherwise `false`.
+   *
    * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
    * @throws VO_NO_SUCH_OBJECT when the `target` reference is invalid.
    * @throws VO_INVALID_OPERATION when `target` is not a
@@ -2310,6 +2414,26 @@ typedef struct _voIFloatStructuredInput
    * @since 4.5_4
    */
   bool (VO_MSE_CALL *addCharacter)(voEngine engine, voFloatStructuredInput target, voInputCharacter character, float x, float y, float width, float height);
+
+  /**
+   * Adds a text string to the current input unit.
+   *
+   * @param engine the engine.
+   * @param target the target structured input.
+   * @param string the string to be added.
+   *
+   * @return `true` on success, otherwise `false`.
+   *
+   * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
+   * @throws VO_NO_SUCH_OBJECT when the `target` reference is invalid.
+   * @throws VO_INVALID_OPERATION when `target` is not a `voStructuredInput`.
+   * @throws VO_NO_SUCH_OBJECT when the `string` reference is invalid.
+   * @throws VO_INVALID_OBJECT when `string` is not a `voInputString`.
+   * @throws VO_INVALID_ARGUMENT when `string` contains no alternate.
+   *
+   * @since 8.1_0
+   */
+  bool (VO_MSE_CALL *addString2)(voEngine engine, voFloatStructuredInput target, voInputString string);
 }
 voIFloatStructuredInput;
 

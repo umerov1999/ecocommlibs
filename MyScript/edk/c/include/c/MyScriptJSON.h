@@ -1,5 +1,5 @@
 #ifndef C_MYSCRIPTJSON_H
-#define C_MYSCRIPTJSON_H 0x08000000
+#define C_MYSCRIPTJSON_H 0x08010000
 /**
  * @file c/MyScriptJSON.h
  * Native interface to the MyScript JSON service. Please note that the

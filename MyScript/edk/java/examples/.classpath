@@ -9,6 +9,7 @@
 	<classpathentry kind="lib" path="../bin/com.myscript.gesture.jar"/>
 	<classpathentry kind="lib" path="../bin/com.myscript.ink.jar"/>
 	<classpathentry kind="lib" path="../bin/com.myscript.inksearch.jar"/>
+	<classpathentry kind="lib" path="../bin/com.myscript.keyboard.jar"/>
 	<classpathentry kind="lib" path="../bin/com.myscript.math.jar"/>
 	<classpathentry kind="lib" path="../bin/com.myscript.music.jar"/>
 	<classpathentry kind="lib" path="../bin/com.myscript.prediction.jar"/>

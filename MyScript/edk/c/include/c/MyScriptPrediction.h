@@ -1,5 +1,5 @@
 #ifndef C_MYSCRIPTPREDICTION_H
-#define C_MYSCRIPTPREDICTION_H 0x08000000
+#define C_MYSCRIPTPREDICTION_H 0x08010000
 /**
  * @file c/MyScriptPrediction.h
  * Native interface to the MyScript Prediction service.

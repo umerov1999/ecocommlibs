@@ -1,5 +1,5 @@
 #ifndef C_MYSCRIPTMATH_H
-#define C_MYSCRIPTMATH_H 0x08000000
+#define C_MYSCRIPTMATH_H 0x08010000
 /**
  * @file c/MyScriptMath.h
  * Native interface to the MyScript Math service.

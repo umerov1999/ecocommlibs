@@ -1,5 +1,5 @@
 #ifndef C_MYSCRIPTINKSEARCH_H
-#define C_MYSCRIPTINKSEARCH_H 0x08000000
+#define C_MYSCRIPTINKSEARCH_H 0x08010000
 /**
  * @file c/MyScriptInkSearch.h
  * Native interface to the MyScript InkSearch service.

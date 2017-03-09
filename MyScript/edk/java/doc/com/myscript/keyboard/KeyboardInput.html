@@ -171,35 +171,41 @@ extends <a href="../../../com/myscript/engine/Input.html" title="class in com.my
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><strong><a href="../../../com/myscript/keyboard/KeyboardInput.html#addString(com.myscript.engine.Charset,%20byte[])">addString</a></strong>(<a href="../../../com/myscript/engine/Charset.html" title="class in com.myscript.engine">Charset</a>&nbsp;charset,
          byte[]&nbsp;text)</code>
-<div class="block">Adds text string to this input.</div>
+<div class="block">Adds a text string to this input.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><strong><a href="../../../com/myscript/keyboard/KeyboardInput.html#addString(java.lang.String)">addString</a></strong>(java.lang.String&nbsp;text)</code>
+<td class="colLast"><code><strong><a href="../../../com/myscript/keyboard/KeyboardInput.html#addString(com.myscript.engine.InputString)">addString</a></strong>(<a href="../../../com/myscript/engine/InputString.html" title="class in com.myscript.engine">InputString</a>&nbsp;string)</code>
 <div class="block">Adds a text string to this input.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../com/myscript/keyboard/KeyboardInput.html#addString(java.lang.String)">addString</a></strong>(java.lang.String&nbsp;text)</code>
+<div class="block">Adds a text string to this input.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><strong><a href="../../../com/myscript/keyboard/KeyboardInput.html#addTransliterationBreak()">addTransliterationBreak</a></strong>()</code>
 <div class="block">Ends the transliteration sequence for the current symbol.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><strong><a href="../../../com/myscript/keyboard/KeyboardInput.html#clear()">clear</a></strong>()</code>
 <div class="block">Clears this input.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../../../com/myscript/keyboard/KeyboardInput.html" title="class in com.myscript.keyboard">KeyboardInput</a></code></td>
 <td class="colLast"><code><strong><a href="../../../com/myscript/keyboard/KeyboardInput.html#create(com.myscript.engine.Engine)">create</a></strong>(<a href="../../../com/myscript/engine/Engine.html" title="class in com.myscript.engine">Engine</a>&nbsp;engine)</code>
 <div class="block">Static factory method that creates a new <code>KeyboardInput</code> object
  whose parent is the specified <code>Engine</code> object.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><strong><a href="../../../com/myscript/keyboard/KeyboardInput.html#pointerDown(float,%20float,%20long,%20com.myscript.keyboard.KeyboardInputCapitalization)">pointerDown</a></strong>(float&nbsp;x,
            float&nbsp;y,
@@ -208,7 +214,7 @@ extends <a href="../../../com/myscript/engine/Input.html" title="class in com.my
 <div class="block">Sends a pointer down event to this input.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><strong><a href="../../../com/myscript/keyboard/KeyboardInput.html#pointerMove(float,%20float,%20long)">pointerMove</a></strong>(float&nbsp;x,
            float&nbsp;y,
@@ -216,7 +222,7 @@ extends <a href="../../../com/myscript/engine/Input.html" title="class in com.my
 <div class="block">Sends a pointer move event to this input.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><strong><a href="../../../com/myscript/keyboard/KeyboardInput.html#pointerUp(float,%20float,%20long)">pointerUp</a></strong>(float&nbsp;x,
          float&nbsp;y,
@@ -432,7 +438,7 @@ extends <a href="../../../com/myscript/engine/Input.html" title="class in com.my
                             java.lang.NullPointerException,
                             <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a>,
                             java.lang.IllegalArgumentException</pre>
-<div class="block">Adds text string to this input.</div>
+<div class="block">Adds a text string to this input.</div>
 <dl><dt><span class="strong">Parameters:</span></dt><dd><code>charset</code> - a <code>Charset</code> object.</dd><dd><code>text</code> - the text string encoded using the specified
           <code>Charset</code> object.</dd>
 <dt><span class="strong">Throws:</span></dt>
@@ -498,7 +504,7 @@ extends <a href="../../../com/myscript/engine/Input.html" title="class in com.my
 <a name="addAnyKey()">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>addAnyKey</h4>
 <pre>public final&nbsp;void&nbsp;addAnyKey()
@@ -512,6 +518,31 @@ extends <a href="../../../com/myscript/engine/Input.html" title="class in com.my
 <dl><dt><span class="strong">Throws:</span></dt>
 <dd><code>java.lang.IllegalStateException</code> - when this <code>KeyboardInput</code> has been
            disposed of.</dd></dl>
+</li>
+</ul>
+<a name="addString(com.myscript.engine.InputString)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>addString</h4>
+<pre>public final&nbsp;void&nbsp;addString(<a href="../../../com/myscript/engine/InputString.html" title="class in com.myscript.engine">InputString</a>&nbsp;string)
+                     throws java.lang.NullPointerException,
+                            <a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a>,
+                            java.lang.IllegalStateException</pre>
+<div class="block">Adds a text string to this input.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>string</code> - an <code>InputString</code> object.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.NullPointerException</code> - when <code>string</code> is <code>null</code>.</dd>
+<dd><code>java.lang.NullPointerException</code> - when <code>string</code> contains no
+           alternate.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when <code>string</code> has been disposed
+           of.</dd>
+<dd><code><a href="../../../com/myscript/engine/InvalidObjectException.html" title="class in com.myscript.engine">InvalidObjectException</a></code> - when <code>string</code> does not have the
+           same parent <code>Engine</code> object as the input.</dd>
+<dd><code>java.lang.IllegalStateException</code> - when this <code>KeyboardInput</code> has been
+           disposed of.</dd><dt><span class="strong">Since:</span></dt>
+  <dd>8.1.0</dd></dl>
 </li>
 </ul>
 </li>

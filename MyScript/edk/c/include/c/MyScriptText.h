@@ -1,5 +1,5 @@
 #ifndef C_MYSCRIPTTEXT_H
-#define C_MYSCRIPTTEXT_H 0x08000000
+#define C_MYSCRIPTTEXT_H 0x08010000
 /**
  * @file c/MyScriptText.h
  * Native interface to the MyScript HandWriting Recognition (Text) service.
@@ -338,7 +338,23 @@ enum VO_TEXT_T
    * @see voLinguisticKnowledgeBuilder
    * @since 7.4_0
    */
-  VO_LinguisticKnowledgeBuilder
+  VO_LinguisticKnowledgeBuilder,
+  
+  /**
+   * `voTextResultSegmentIterator` type identifier.
+   *
+   * @see voTextResultSegmentIterator
+   * @since 8.0_0
+   */
+  VO_TextResultSegmentIterator = 734,
+  
+  /**
+   * `voTextResultCandidateIterator` type identifier.
+   *
+   * @see voTextResultCandidateIterator
+   * @since 8.0_0
+   */
+  VO_TextResultCandidateIterator = 735,
 };
 
 
@@ -455,7 +471,23 @@ enum VO_TEXT_I
    * @see voILinguisticKnowledgeBuilder
    * @since 7.4_0
    */
-  VO_ILinguisticKnowledgeBuilder
+  VO_ILinguisticKnowledgeBuilder,
+  
+  /**
+   * `voITextResultSegmentIterator` type identifier.
+   *
+   * @see voITextResultSegmentIterator
+   * @since 8.0_0
+   */
+  VO_ITextResultSegmentIterator,
+  
+  /**
+   * `voITextResultCandidateIterator` type identifier.
+   *
+   * @see voITextResultCandidateIterator
+   * @since 8.0_0
+   */
+  VO_ITextResultCandidateIterator,
 };
 
 
@@ -1860,13 +1892,13 @@ typedef voIterator voSegmentIterator;
 typedef struct _voIRecognitionResult
 {
   /**
-   * Returns the resemblance score of the best candidate.
+   * Returns the observation score of the best candidate.
    *
    * @param engine the engine.
    * @param target the target recognition result.
    *
-   * @return the resemblance score of the best candidate on success, otherwise
-   *   `-1`.
+   * @return the observation score of the best candidate on success,
+   *   otherwise `-1`.
    *
    * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
    * @throws VO_NO_SUCH_OBJECT when the `target` reference is invalid.
@@ -1874,9 +1906,9 @@ typedef struct _voIRecognitionResult
    * @throws VO_INVALID_STATE when there are no recognition candidates
    *   available.
    *
-   * @par deprecated as of 8.0.0
+   * @since 8.1_0
    */
-  float (VO_MSE_CALL *getResemblanceScore)(voEngine engine, voRecognitionResult target);
+  float (VO_MSE_CALL *getObservationScore)(voEngine engine, voRecognitionResult target);
 
   /**
    * Returns an iterator over the different candidates.
@@ -2060,13 +2092,13 @@ typedef struct _voICandidateIterator
   voSegmentIterator (VO_MSE_CALL *getSegments)(voEngine engine, voCandidateIterator target);
 
   /**
-   * Returns the resemblance score of the current candidate.
+   * Returns the observation score of the current candidate.
    *
    * @param engine the engine.
    * @param target the target iterator.
    *
-   * @return the resemblance score of the best candidate on success, otherwise
-   *   `-1`.
+   * @return the observation score of the current candidate on success,
+   *   otherwise `-1`.
    *
    * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
    * @throws VO_NO_SUCH_OBJECT when the `target` reference is invalid.
@@ -2074,11 +2106,9 @@ typedef struct _voICandidateIterator
    * @throws VO_NO_SUCH_ELEMENT when `target` is positioned at the end of the
    *   iteration.
    *
-   * @since 4.5_5
-   *
-   * @par deprecated as of 8.0.0
+   * @since 8.1_0
    */
-  float (VO_MSE_CALL *getResemblanceScore)(voEngine engine, voCandidateIterator target);
+  float (VO_MSE_CALL *getObservationScore)(voEngine engine, voCandidateIterator target);
 
   /**
    * Returns the flags of the current candidate.
@@ -2353,13 +2383,13 @@ typedef struct _voISegmentIterator
   int32_t (VO_MSE_CALL *getSelectedCandidateIndex)(voEngine engine, voSegmentIterator target);
 
   /**
-   * Returns the resemblance score of the best candidate for this segment.
+   * Returns the observation score of the selected candidate for this segment.
    *
    * @param engine the engine.
    * @param target the target iterator.
    *
-   * @return the resemblance score of the best candidate for this segment on
-   *   success, otherwise `-1`.
+   * @return the observation score of the selected candidate on success,
+   *   otherwise `-1`.
    *
    * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
    * @throws VO_NO_SUCH_OBJECT when the `target` reference is invalid.
@@ -2367,9 +2397,9 @@ typedef struct _voISegmentIterator
    * @throws VO_NO_SUCH_ELEMENT when `target` is positioned at the end of the
    *   iteration.
    *
-   * @par deprecated as of 8.0.0
+   * @since 8.1_0
    */
-  float (VO_MSE_CALL *getResemblanceScore)(voEngine engine, voSegmentIterator target);
+  float (VO_MSE_CALL *getObservationScore)(voEngine engine, voSegmentIterator target);
 
   /**
    * Returns an iterator over the candidates of this segment.
@@ -3057,5 +3087,470 @@ VO_INLINE voLinguisticKnowledgeBuilder voCreateLinguisticKnowledgeBuilder(voEngi
   return voCreateObjectEx(engine, VO_LinguisticKnowledgeBuilder, &initializer, sizeof(initializer));
 }
 #endif // end of: #ifndef VO_NO_FUNCTIONS
+
+// -- Text result iterators ----------------------------------------------------
+
+/**
+ * `voTextResultSegmentIterator` reference type.
+ *
+ * {@extends voIterator}
+ * {@implements voITextResultSegmentIterator}
+ */
+typedef voIterator voTextResultSegmentIterator;
+
+/**
+ * `voTextResultCandidateIterator` reference type.
+ *
+ * {@extends voIterator}
+ * {@implements voITextResultCandidateIterator}
+ */
+typedef voIterator voTextResultCandidateIterator;
+
+/**
+ * Functions composing the `voITextResultSegmentIterator` interface.
+ *
+ * This interface exposes the public methods of the `voTextResultSegmentIterator` type.
+ *
+ * @note As the C language does not provide any mechanism that could be used to
+ *   simulate inheritance, inherited members are simply copied from the base
+ *   structure.
+ *
+ * {@extends voIIterator}
+ * {@implementingTypes voTextResultSegmentIterator}
+ */
+typedef struct _voITextResultSegmentIterator
+{
+  /** {@inheritDoc} */
+  voYesNo (VO_MSE_CALL *isAtEnd)(voEngine engine, voIterator target);
+  /** {@inheritDoc} */
+  bool (VO_MSE_CALL *next)(voEngine engine, voIterator target);
+  /** {@inheritDoc} */
+  voYesNo (VO_MSE_CALL *equals)(voEngine engine, voIterator target, voIterator other);
+  
+  /**
+   * Returns an iterator over the candidates of the current segment.
+   *
+   * @param engine the engine.
+   * @param target the target iterator.
+   *
+   * @return a candidate iterator on success, otherwise `NULL`.
+   *
+   * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
+   * @throws VO_NO_SUCH_OBJECT when the `target` reference is invalid.
+   * @throws VO_INVALID_OPERATION when `target` is not a `voTextResultSegmentIterator`.
+   * @throws VO_NO_SUCH_ELEMENT when `target` is positioned at the end of the
+   *   iteration.
+   * @throws VO_LIMIT_EXCEEDED when the number of `voTextResultCandidateIterator`
+   *   instances would exceed the allowed limit (please remember that the limit
+   *   can be shared by several types).
+   */
+  voTextResultCandidateIterator (VO_MSE_CALL *getCandidates)(voEngine engine, voTextResultSegmentIterator target);
+  
+  /**
+   * Returns an iterator containing a single item, that is the selected candidate
+   * for the current segment.
+   *
+   * @param engine the engine.
+   * @param target the target iterator.
+   * @param isFrozen boolean output variable set to `true` if the selected
+   *   candidate is frozen, `false` otherwise. Can be `NULL`.
+   *
+   * @return a candidate iterator on success, otherwise `NULL`.
+   *
+   * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
+   * @throws VO_NO_SUCH_OBJECT when the `target` reference is invalid.
+   * @throws VO_INVALID_OPERATION when `target` is not a `voTextResultSegmentIterator`.
+   * @throws VO_NO_SUCH_ELEMENT when `target` is positioned at the end of the
+   *   iteration.
+   * @throws VO_LIMIT_EXCEEDED when the number of `voTextResultCandidateIterator`
+   *   instances would exceed the allowed limit (please remember that the limit
+   *   can be shared by several types).
+   */
+  voTextResultCandidateIterator (VO_MSE_CALL *getSelectedCandidate)(voEngine engine, voTextResultSegmentIterator target, bool* isFrozen);
+  
+  /**
+   * Returns the index of the currently selected candidate
+   * for the current segment.
+   *
+   * @param engine the engine.
+   * @param target the target iterator.
+   * @param isFrozen boolean output variable set to `true` if the selected
+   *   candidate is frozen, `false` otherwise. Can be `NULL`.
+   *
+   * @return the candidate index on success, otherwise `-1`.
+   *
+   * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
+   * @throws VO_NO_SUCH_OBJECT when the `target` reference is invalid.
+   * @throws VO_INVALID_OPERATION when `target` is not a `voTextResultSegmentIterator`.
+   * @throws VO_NO_SUCH_ELEMENT when `target` is positioned at the end of the
+   *   iteration.
+   */
+  int (VO_MSE_CALL *getSelectedCandidateIndex)(voEngine engine, voTextResultSegmentIterator target, bool* isFrozen);
+  
+  /**
+   * Sets the index of the currently selected candidate
+   * for the current segment.
+   *
+   * @param engine the engine.
+   * @param target the target iterator.
+   * @param index the index of the new selected candidate.
+   * @param inkSelectionToTypeset an optional selection that will receive the
+   *   ink that needs to be typeset again.
+   *
+   * @return `true` on success, otherwise `false`.
+   *
+   * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
+   * @throws VO_NO_SUCH_OBJECT when the `target` reference is invalid.
+   * @throws VO_INVALID_OPERATION when `target` is not a `voTextResultSegmentIterator`.
+   * @throws VO_NO_SUCH_ELEMENT when `target` is positioned at the end of the
+   *   iteration.
+   * @throws VO_INVALID_ARGUMENT when `id` is invalid.
+   * @throws VO_INVALID_OBJECT when `inkSelectionToTypeset` is not a
+   *   `voInkSelection`.
+   */
+  bool (VO_MSE_CALL *setSelectedCandidateIndex)(voEngine engine, voTextResultSegmentIterator target, int newIndex, voEngineObject inkSelectionToTypeset);
+}
+voITextResultSegmentIterator;
+
+/**
+ * Functions composing the `voITextResultCandidateIterator` interface.
+ *
+ * This interface exposes the public methods of the `voTextResultCandidateIterator` type.
+ *
+ * @note As the C language does not provide any mechanism that could be used to
+ *   simulate inheritance, inherited members are simply copied from the base
+ *   structure.
+ *
+ * {@extends voIIterator}
+ * {@implementingTypes voTextResultCandidateIterator}
+ */
+typedef struct _voITextResultCandidateIterator
+{
+  /** {@inheritDoc} */
+  voYesNo (VO_MSE_CALL *isAtEnd)(voEngine engine, voIterator target);
+  /** {@inheritDoc} */
+  bool (VO_MSE_CALL *next)(voEngine engine, voIterator target);
+  /** {@inheritDoc} */
+  voYesNo (VO_MSE_CALL *equals)(voEngine engine, voIterator target, voIterator other);
+  
+  /**
+   * Returns an iterator over the segments of the current candidate.
+   *
+   * @note A segment iterator iterates over the pieces of input that define the
+   *   candidate's segmentation.
+   *
+   * @param engine the engine.
+   * @param target the target iterator.
+   *
+   * @return a segment iterator on success, otherwise `NULL`.
+   *
+   * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
+   * @throws VO_NO_SUCH_OBJECT when the `target` reference is invalid.
+   * @throws VO_INVALID_OPERATION when `target` is not a `voTextResultCandidateIterator`.
+   * @throws VO_NO_SUCH_ELEMENT when `target` is positioned at the end of the
+   *   iteration.
+   * @throws VO_LIMIT_EXCEEDED when the number of `voTextResultSegmentIterator` instances
+   *   would exceed the allowed limit (please remember that the limit can be
+   *   shared by several types).
+   */
+  voTextResultSegmentIterator (VO_MSE_CALL *getSegments)(voEngine engine, voTextResultCandidateIterator target);
+  
+  /**
+   * Returns the index of the current candidate within the list of candidates
+   * of the parent segment.
+   *
+   * @param engine the engine.
+   * @param target the target iterator.
+   *
+   * @return the candidate index on success, otherwise `-1`.
+   *
+   * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
+   * @throws VO_NO_SUCH_OBJECT when the `target` reference is invalid.
+   * @throws VO_INVALID_OPERATION when `target` is not a `voTextResultCandidateIterator`.
+   * @throws VO_NO_SUCH_ELEMENT when `target` is positioned at the end of the
+   *   iteration.
+   */
+  int (VO_MSE_CALL *getIndex)(voEngine engine, voTextResultCandidateIterator target);
+  
+  /**
+   * Returns the label of the current candidate.
+   *
+   * @param engine the engine.
+   * @param target the target iterator.
+   * @param charset the charset used to encode parameter strings.
+   * @param label the recipient for the label.
+   *
+   * @return `true` on success, otherwise `false`.
+   *
+   * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
+   * @throws VO_NO_SUCH_OBJECT when the `target` reference is invalid.
+   * @throws VO_INVALID_OPERATION when `target` is not a `voTextResultCandidateIterator`.
+   * @throws VO_NO_SUCH_ELEMENT when `target` is positioned at the end of the
+   *   iteration.
+   * @throws VO_NO_SUCH_OBJECT when the `charset` reference is invalid.
+   * @throws VO_NO_SUCH_OBJECT when the `charset` reference is `NULL` and no
+   *   default charset was set.
+   * @throws VO_INVALID_OBJECT when `charset` is not a `voCharset`.
+   * @throws VO_INVALID_USER_BUFFER when `label` or its `bytes` member is not
+   *   writable.
+   */
+  bool (VO_MSE_CALL *getLabel)(voEngine engine, voTextResultCandidateIterator target, voCharset charset, voString* label);
+  
+  /**
+   * Returns the label of the current candidate along with begin positions
+   * of the completion and prediction parts of the label.
+   *
+   * @param engine the engine.
+   * @param target the target iterator.
+   * @param charset the charset used to encode parameter strings.
+   * @param label the recipient for the label.
+   * @param completionOffset the offset of the beginning of the completion
+   *   part of the label.
+   * @param predictionOffset the offset of the beginning of the prediction
+   *   part of the label.
+   *
+   * @return `true` on success, otherwise `false`.
+   *
+   * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
+   * @throws VO_NO_SUCH_OBJECT when the `target` reference is invalid.
+   * @throws VO_INVALID_OPERATION when `target` is not a `voTextResultCandidateIterator`.
+   * @throws VO_NO_SUCH_ELEMENT when `target` is positioned at the end of the
+   *   iteration.
+   * @throws VO_NO_SUCH_OBJECT when the `charset` reference is invalid.
+   * @throws VO_NO_SUCH_OBJECT when the `charset` reference is `NULL` and no
+   *   default charset was set.
+   * @throws VO_INVALID_OBJECT when `charset` is not a `voCharset`.
+   * @throws VO_INVALID_USER_BUFFER when `label` or its `bytes` member,
+   *   or `completionOffset` or `predictionOffset` is not writable.
+   */
+  bool (VO_MSE_CALL *getLabelEx)(voEngine engine, voTextResultCandidateIterator target, voCharset charset, voString* label, uint32_t* completionOffset, uint32_t* predictionOffset);
+  
+  /**
+   * Returns the normalized recognition score of the current candidate.
+   *
+   * @param engine the engine.
+   * @param target the target iterator.
+   *
+   * @return the normalized recognition score of this candidate on success,
+   *   otherwise `-1`.
+   *
+   * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
+   * @throws VO_NO_SUCH_OBJECT when the `target` reference is invalid.
+   * @throws VO_INVALID_OPERATION when `target` is not a `voTextResultCandidateIterator`.
+   * @throws VO_NO_SUCH_ELEMENT when `target` is positioned at the end of the
+   *   iteration.
+   */
+  float (VO_MSE_CALL *getNormalizedRecognitionScore)(voEngine engine, voTextResultCandidateIterator target);
+  
+  /**
+   * Returns the resemblance score of the current candidate.
+   *
+   * @param engine the engine.
+   * @param target the target iterator.
+   *
+   * @return the resemblance score of the best candidate on success, otherwise
+   *   `-1`.
+   *
+   * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
+   * @throws VO_NO_SUCH_OBJECT when the `target` reference is invalid.
+   * @throws VO_INVALID_OPERATION when `target` is not a `voTextResultCandidateIterator`.
+   * @throws VO_NO_SUCH_ELEMENT when `target` is positioned at the end of the
+   *   iteration.
+   *
+   * @since 8.1_0
+   */
+  float (VO_MSE_CALL *getObservationScore)(voEngine engine, voTextResultCandidateIterator target);
+  
+  /**
+   * Returns the flags of the current candidate.
+   *
+   * @param engine the engine.
+   * @param target the target iterator.
+   *
+   * @return the combination of flags on success, otherwise `VO_INVALID_FLAGS`.
+   *
+   * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
+   * @throws VO_NO_SUCH_OBJECT when the `target` reference is invalid.
+   * @throws VO_INVALID_OPERATION when `target` is not a `voTextResultCandidateIterator`.
+   * @throws VO_NO_SUCH_ELEMENT when `target` is positioned at the end of the
+   *   iteration.
+   */
+  VO_FLAGS_T(voCandidateFlag) (VO_MSE_CALL *getFlags)(voEngine engine, voTextResultCandidateIterator target);
+  
+  /**
+   * Returns the name of the linguistic knowledge used to generate the current
+   * word-level candidate.
+   *
+   * @note In case the linguistic knowledge name is unknown, an empty string
+   *   is returned.
+   *
+   * @param engine the engine.
+   * @param target the target iterator.
+   * @param charset the charset used to encode parameter strings.
+   * @param name the recipient for the linguistic knowledge name.
+   *
+   * @return `true` on success, otherwise `false`.
+   *
+   * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
+   * @throws VO_NO_SUCH_OBJECT when the `target` reference is invalid.
+   * @throws VO_INVALID_OPERATION when `target` is not a `voTextResultCandidateIterator`.
+   * @throws VO_NO_SUCH_ELEMENT when `target` is positioned at the end of the
+   *   iteration.
+   * @throws VO_INVALID_OPERATION when `target` is not a word-level iterator.
+   * @throws VO_NO_SUCH_OBJECT when the `charset` reference is invalid.
+   * @throws VO_NO_SUCH_OBJECT when the `charset` reference is `NULL` and no
+   *   default charset was set.
+   * @throws VO_INVALID_OBJECT when `charset` is not a `voCharset`.
+   * @throws VO_INVALID_USER_BUFFER when `name` or its `bytes` member is not
+   *   writable.
+   * @throws VO_INVALID_STATE when there was no attached linguistic knowledge at
+   *   recognition time.
+   */
+  bool (VO_MSE_CALL *getSourceLinguisticKnowledgeName)(voEngine engine, voTextResultCandidateIterator target, voCharset charset, voString* name);
+  
+  /**
+   * Returns an iterator over the transliteration candidates of the current
+   * candidate.
+   *
+   * @note Transliteration candidates are only available at word level.
+   *
+   * @note This iterator runs through a filtered subset of all the candidates
+   * of the parent segment. If you want to select one of these transliteration
+   * candidates, you need to call the getIndex() API of this iterator to
+   * retrieve the actual absolute index of the candidate within the list of
+   * candidates. Then you can use this absolute index to set the selected
+   * candidate of the parent segment.
+   *
+   * @param engine the engine.
+   * @param target the target iterator.
+   *
+   * @return an iterator over the transliteration candidates of the current
+   *   candidate on success, otherwise `NULL`.
+   *   When `NULL`, use `voGetError()` to figure out whether an error occurred.
+   *
+   * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
+   * @throws VO_NO_SUCH_OBJECT when the `target` reference is invalid.
+   * @throws VO_INVALID_OPERATION when `target` is not a `voTextResultCandidateIterator`.
+   * @throws VO_INVALID_STATE when there is no transliteration available.
+   * @throws VO_NO_SUCH_ELEMENT when `target` is positioned at the end of the
+   *   iteration.
+   * @throws VO_LIMIT_EXCEEDED when the number of `voTextResultCandidateIterator`
+   *   instances would exceed the allowed limit (please remember that the limit
+   *   can be shared by several types).
+   */
+  voTextResultCandidateIterator (VO_MSE_CALL *getTransliterationCandidates)(voEngine engine, voTextResultCandidateIterator target);
+  
+  /**
+   * Returns an iterator containing a single item, that is the selected transliteration
+   * for the current candidate.
+   *
+   * @note Transliteration candidates are only available at word level.
+   *
+   * @param engine the engine.
+   * @param target the target iterator.
+   *
+   * @return an iterator pointing to the selected transliteration candidate of the
+   *   current candidate on success, otherwise `NULL`.
+   *   When `NULL`, use `voGetError()` to figure out whether an error occurred.
+   *
+   * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
+   * @throws VO_NO_SUCH_OBJECT when the `target` reference is invalid.
+   * @throws VO_INVALID_OPERATION when `target` is not a `voTextResultCandidateIterator`.
+   * @throws VO_INVALID_STATE when there is no transliteration available.
+   * @throws VO_NO_SUCH_ELEMENT when `target` is positioned at the end of the
+   *   iteration.
+   * @throws VO_LIMIT_EXCEEDED when the number of `voTextResultCandidateIterator`
+   *   instances would exceed the allowed limit (please remember that the limit
+   *   can be shared by several types).
+   */
+  voTextResultCandidateIterator (VO_MSE_CALL *getSelectedTransliterationCandidate)(voEngine engine, voTextResultCandidateIterator target);
+
+  /**
+   * Returns an iterator containing a single item, that corresponds to the user input
+   * of the current transliteration candidate.
+   *
+   * @note In case the current candidate is not a transliteration candidate, an
+   *   error is returned.
+   *
+   * @param engine the engine.
+   * @param target the target iterator.
+   *
+   * @return an iterator pointing to the user input of the current transliteration
+   *   candidate on success, otherwise `NULL`.
+   *   When `NULL`, use `voGetError()` to figure out whether an error occurred.
+   *
+   * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
+   * @throws VO_NO_SUCH_OBJECT when the `target` reference is invalid.
+   * @throws VO_INVALID_OPERATION when `target` is not a `voTextResultCandidateIterator`.
+   * @throws VO_INVALID_STATE when the current candidate is not a transliteration candidate.
+   * @throws VO_NO_SUCH_ELEMENT when `target` is positioned at the end of the
+   *   iteration.
+   * @throws VO_LIMIT_EXCEEDED when the number of `voTextResultCandidateIterator`
+   *   instances would exceed the allowed limit (please remember that the limit
+   *   can be shared by several types).
+   */
+  voTextResultCandidateIterator (VO_MSE_CALL *getInputCandidate)(voEngine, voTextResultCandidateIterator target);
+
+  /**
+   * Returns the label of the user input of the current transliteration candidate.
+   *
+   * @note This method can be used at word and character levels.
+   *
+   * @note In case the current candidate is not a transliteration candidate, an
+   *   error is returned.
+   *
+   * @param engine the engine.
+   * @param target the target iterator.
+   * @param charset the charset used to encode parameter strings.
+   * @param label the recipient for the label.
+   *
+   * @return `true` on success, otherwise `false`.
+   *
+   * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
+   * @throws VO_NO_SUCH_OBJECT when the `target` reference is invalid.
+   * @throws VO_INVALID_OPERATION when `target` is not a `voTextResultCandidateIterator`.
+   * @throws VO_INVALID_STATE when the current candidate is not a transliteration candidate.
+   * @throws VO_NO_SUCH_ELEMENT when `target` is positioned at the end of the
+   *   iteration.
+   * @throws VO_NO_SUCH_OBJECT when the `charset` reference is invalid.
+   * @throws VO_NO_SUCH_OBJECT when the `charset` reference is `NULL` and no
+   *   default charset was set.
+   * @throws VO_INVALID_OBJECT when `charset` is not a `voCharset`.
+   * @throws VO_INVALID_USER_BUFFER when `label` or its `bytes` member is not
+   *   writable.
+   */
+  bool (VO_MSE_CALL *getInputLabel)(voEngine engine, voTextResultCandidateIterator target, voCharset charset, voString* label);
+
+  /**
+   * Returns the label of the user input of the current transliteration candidate
+   * along with begin positions of the completion and prediction parts of the label.
+   *
+   * @param engine the engine.
+   * @param target the target iterator.
+   * @param charset the charset used to encode parameter strings.
+   * @param label the recipient for the label.
+   * @param completionOffset the offset of the beginning of the completion
+   *   part of the label.
+   * @param predictionOffset the offset of the beginning of the prediction
+   *   part of the label.
+   *
+   * @return `true` on success, otherwise `false`.
+   *
+   * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
+   * @throws VO_NO_SUCH_OBJECT when the `target` reference is invalid.
+   * @throws VO_INVALID_OPERATION when `target` is not a `voTextResultCandidateIterator`.
+   * @throws VO_INVALID_STATE when the current candidate is not a transliteration candidate.
+   * @throws VO_NO_SUCH_ELEMENT when `target` is positioned at the end of the
+   *   iteration.
+   * @throws VO_NO_SUCH_OBJECT when the `charset` reference is invalid.
+   * @throws VO_NO_SUCH_OBJECT when the `charset` reference is `NULL` and no
+   *   default charset was set.
+   * @throws VO_INVALID_OBJECT when `charset` is not a `voCharset`.
+   * @throws VO_INVALID_USER_BUFFER when `label` or its `bytes` member,
+   *   or `completionOffset` or `predictionOffset` is not writable.
+   */
+  bool (VO_MSE_CALL *getInputLabelEx)(voEngine engine, voTextResultCandidateIterator target, voCharset charset, voString* label, uint32_t* completionOffset, uint32_t* predictionOffset);
+}
+voITextResultCandidateIterator;
 
 #endif // end of: #ifndef C_MYSCRIPTTEXT_H

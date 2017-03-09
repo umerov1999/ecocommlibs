@@ -122,7 +122,7 @@ extends <a href="../../../com/myscript/engine/Iterator.html" title="class in com
 <dl><dt><span class="strong">Since:</span></dt>
   <dd>4.0.0</dd>
 <dt><span class="strong">Version:</span></dt>
-  <dd>1.1</dd></dl>
+  <dd>1.2</dd></dl>
 </li>
 </ul>
 </div>
@@ -170,8 +170,8 @@ extends <a href="../../../com/myscript/engine/Iterator.html" title="class in com
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>float</code></td>
-<td class="colLast"><code><strong><a href="../../../com/myscript/text/SegmentIterator.html#getResemblanceScore()">getResemblanceScore</a></strong>()</code>
-<div class="block">Returns the resemblance score of the best candidate for this segment.</div>
+<td class="colLast"><code><strong><a href="../../../com/myscript/text/SegmentIterator.html#getObservationScore()">getObservationScore</a></strong>()</code>
+<div class="block">Returns the observation score of the selected candidate for this segment.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -258,24 +258,24 @@ extends <a href="../../../com/myscript/engine/Iterator.html" title="class in com
  positioned at the end of the iteration.</dd></dl>
 </li>
 </ul>
-<a name="getResemblanceScore()">
+<a name="getObservationScore()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getResemblanceScore</h4>
-<pre>public final&nbsp;float&nbsp;getResemblanceScore()
+<h4>getObservationScore</h4>
+<pre>public final&nbsp;float&nbsp;getObservationScore()
                                 throws java.lang.IllegalStateException,
                                        java.util.NoSuchElementException</pre>
-<div class="block">Returns the resemblance score of the best candidate for this segment.</div>
-<dl><dt><span class="strong">Returns:</span></dt><dd>the resemblance score of the best candidate for this segment.</dd>
+<div class="block">Returns the observation score of the selected candidate for this segment.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the observation score of the selected candidate for this segment.</dd>
 <dt><span class="strong">Throws:</span></dt>
 <dd><code>java.lang.IllegalStateException</code> - when this <code>SegmentIterator</code>
  object has been disposed of.</dd>
 <dd><code>java.util.NoSuchElementException</code> - when this <code>SegmentIterator</code> is
  positioned at the end of the iteration.
 
--  * @deprecated as of 8.0.0</dd></dl>
+-  * @since 8.1.0</dd></dl>
 </li>
 </ul>
 <a name="getCandidates()">

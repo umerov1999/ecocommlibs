@@ -1,5 +1,5 @@
 #ifndef C_MYSCRIPTKEYBOARD_H
-#define C_MYSCRIPTKEYBOARD_H 0x08000000
+#define C_MYSCRIPTKEYBOARD_H 0x08010000
 /**
  * @file c/MyScriptKeyboard.h
  * Native interface to the MyScript Keyboard service.
@@ -179,6 +179,8 @@ typedef struct _voIKeyboardInput
    * @param charset the charset used to encode the string.
    * @param string the string data.
    *
+   * @return `true` on success, otherwise `false`.
+   *
    * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
    * @throws VO_NO_SUCH_OBJECT when the `target` reference is invalid.
    * @throws VO_INVALID_OPERATION when `target` is not a `voKeyboardInput`.
@@ -199,6 +201,8 @@ typedef struct _voIKeyboardInput
    * @param target the target input.
    * @param character the character to be added.
    *
+   * @return `true` on success, otherwise `false`.
+   *
    * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
    * @throws VO_NO_SUCH_OBJECT when the `target` reference is invalid.
    * @throws VO_INVALID_OPERATION when `target` is not a `voKeyboardInput`.
@@ -218,6 +222,8 @@ typedef struct _voIKeyboardInput
    * @param engine the engine.
    * @param target the target input.
    *
+   * @return `true` on success, otherwise `false`.
+   *
    * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
    * @throws VO_NO_SUCH_OBJECT when the `target` reference is invalid.
    * @throws VO_INVALID_OPERATION when `target` is not a `voKeyboardInput`.
@@ -233,11 +239,31 @@ typedef struct _voIKeyboardInput
    * @param engine the engine.
    * @param target the target input.
    *
+   * @return `true` on success, otherwise `false`.
+   *
    * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
    * @throws VO_NO_SUCH_OBJECT when the `target` reference is invalid.
    * @throws VO_INVALID_OPERATION when `target` is not a `voKeyboardInput`.
    */
   bool (VO_MSE_CALL *addAnyKey)(voEngine engine, voKeyboardInput target);
+
+  /**
+  * Adds a text string to this input.
+  *
+  * @param engine the engine.
+  * @param target the target input.
+  * @param string the string to be added.
+  *
+  * @return `true` on success, otherwise `false`.
+  *
+  * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
+  * @throws VO_NO_SUCH_OBJECT when the `target` reference is invalid.
+  * @throws VO_INVALID_OPERATION when `target` is not a `voKeyboardInput`.
+  * @throws VO_NO_SUCH_OBJECT when the `string` reference is invalid.
+  * @throws VO_INVALID_OBJECT when `string` is not a `voInputString`.
+  * @throws VO_INVALID_ARGUMENT when `string` contains no alternate.
+  */
+  bool (VO_MSE_CALL *addString2)(voEngine engine, voKeyboardInput target, voInputString string);
 }
 voIKeyboardInput;
 
@@ -286,6 +312,15 @@ typedef struct _voIKeyboardLayout
    * @param width the width of the key bounding box.
    * @param height the height of the key bounding box.
    * @param flags flags controlling the behavior of the key.
+   *
+   * @return `true` on success, otherwise `false`.
+   *
+   * @throws VO_NO_SUCH_ENGINE when the `engine` reference is invalid.
+   * @throws VO_NO_SUCH_OBJECT when the `target` reference is invalid.
+   * @throws VO_INVALID_OPERATION when `target` is not a `voKeyboardInput`.
+   * @throws VO_NO_SUCH_OBJECT when the `character` reference is invalid.
+   * @throws VO_INVALID_OBJECT when `character` is not a `voInputCharacter`.
+   * @throws VO_INVALID_ARGUMENT when `character` contains no alternate.
    */
   bool (VO_MSE_CALL *addKey)(voEngine engine, voKeyboardLayout target, voInputCharacter character, float x, float y, float width, float height, VO_FLAGS_T(voKeyFlag) flags);
 }

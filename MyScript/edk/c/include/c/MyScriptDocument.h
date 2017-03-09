@@ -1,5 +1,5 @@
 #ifndef C_MYSCRIPTDOCUMENT_H
-#define C_MYSCRIPTDOCUMENT_H 0x08000000
+#define C_MYSCRIPTDOCUMENT_H 0x08010000
 
 #include "MyScriptEngine.h"
 #include "MyScriptConfigurationManager.h"
@@ -165,7 +165,7 @@ enum VO_DOCUMENT_T
    * @see voFontIterator
    * @since 7.0_0
    */
-  VO_FontIterator = 3260
+  VO_FontIterator = 3260,
 };
 
 
@@ -355,7 +355,7 @@ enum VO_DOCUMENT_I
    * @see voIFontIterator
    * @since 7.0_0
    */
-  VO_IFontIterator
+  VO_IFontIterator,
 };
 
 
@@ -1772,6 +1772,8 @@ typedef struct _voIPage
    * @throws VO_INVALID_OBJECT when `selection` is not a `voPageSelection`.
    * @throws VO_INVALID_ARGUMENT when `selection` was not created from `target`.
    * @throws VO_INVALID_USER_BUFFER when `transform` is not readable.
+   * @throws VO_INVALID_ARGUMENT when `transform` contains invalid values or is
+   *   not invertible.
    */
   bool (VO_MSE_CALL *transform)(voEngine engine, voPage target, voPageSelection selection, const voTransform* transform);
 
@@ -5180,8 +5182,7 @@ typedef struct _voITextInspector
    * @throws VO_NO_SUCH_OBJECT when the `field` reference is invalid.
    * @throws VO_INVALID_OBJECT when `field` is not a `voContentField` of type
    *   `VO_CONTENT_FIELD_TEXT`.
-   * @throws VO_INVALID_ARGUMENT when `field` is not on the same page as
-   *   `target`.
+   * @throws VO_INVALID_ARGUMENT when `field` comes from a different page.
    * @throws VO_INVALID_ARGUMENT when `field` refers to a content field that has
    *   been removed.
    * @throws VO_LIMIT_EXCEEDED when the number of `voTextInterval` instances
@@ -5215,8 +5216,7 @@ typedef struct _voITextInspector
    * @throws VO_NO_SUCH_OBJECT when the `field` reference is invalid.
    * @throws VO_INVALID_OBJECT when `field` is not a `voContentField` of type
    *   `VO_CONTENT_FIELD_TEXT`.
-   * @throws VO_INVALID_ARGUMENT when `field` is not on the same page as
-   *   `target`.
+   * @throws VO_INVALID_ARGUMENT when `field` comes from a different page.
    * @throws VO_INVALID_ARGUMENT when `field` refers to a content field that has
    *   been removed.
    * @throws VO_LIMIT_EXCEEDED when the number of `voTextInterval` instances
@@ -5246,8 +5246,7 @@ typedef struct _voITextInspector
    * @throws VO_NO_SUCH_OBJECT when the `field` reference is invalid.
    * @throws VO_INVALID_OBJECT when `field` is not a `voContentField` of type
    *   `VO_CONTENT_FIELD_TEXT`.
-   * @throws VO_INVALID_ARGUMENT when `field` is not on the same page as
-   *   `target`.
+   * @throws VO_INVALID_ARGUMENT when `field` comes from a different page.
    * @throws VO_INVALID_ARGUMENT when `field` refers to a content field that has
    *   been removed.
    * @throws VO_LIMIT_EXCEEDED when the number of `voTextInterval` instances
@@ -5275,13 +5274,13 @@ typedef struct _voITextInspector
    * @throws VO_NO_SUCH_OBJECT when the `target` reference is invalid.
    * @throws VO_INVALID_OPERATION when `target` is not a `voTextInspector`.
    * @throws VO_NO_SUCH_OBJECT when the `selection` reference is invalid.
-   * @throws VO_INVALID_OBJECT when `selection` is not a `voInkSelection` or a
-   *   `voPageSelection`.
+   * @throws VO_INVALID_OBJECT when `selection` is not a `voPageSelection`
+   *   or a `voInkSelection`.
+   * @throws VO_INVALID_ARGUMENT when `selection` comes from a different page.
    * @throws VO_NO_SUCH_OBJECT when the `field` reference is invalid.
    * @throws VO_INVALID_OBJECT when `field` is not a `voContentField` of type
    *   `VO_CONTENT_FIELD_TEXT`.
-   * @throws VO_INVALID_ARGUMENT when `field` is not on the same page as
-   *   `target`.
+   * @throws VO_INVALID_ARGUMENT when `field` comes from a different page.
    * @throws VO_INVALID_ARGUMENT when `field` refers to a content field that has
    *   been removed.
    * @throws VO_LIMIT_EXCEEDED when the number of `voTextInterval` instances
@@ -5337,15 +5336,15 @@ typedef struct _voITextInspector
    * @throws VO_INVALID_ARGUMENT when `interval` refers to a content field that
    *   has been removed.
    * @throws VO_NO_SUCH_OBJECT when the `selection` reference is invalid.
-   * @throws VO_INVALID_OBJECT when `selection` is not a `voPageSelection`.
-   * @throws VO_INVALID_OBJECT when `selection` is not on the same page as
-   *   `target`.
+   * @throws VO_INVALID_OBJECT when `selection` is not a `voPageSelection`
+   *   or a `voInkSelection`.
+   * @throws VO_INVALID_ARGUMENT when `selection` comes from a different page.
    * @throws VO_INDEX_OUT_OF_BOUNDS when the `interval` begin or end position is
    *   out of bounds.
    * @throws VO_INVALID_ARGUMENT when `modifier` is invalid.
    */
   bool (VO_MSE_CALL *select)(voEngine engine, voTextInspector target,
-                             voTextInterval interval, voPageSelection selection,
+                             voTextInterval interval, voEngineObject selection,
                              voSelectionModifier modifier);
 
   /**
@@ -5449,8 +5448,7 @@ typedef struct _voITextInspector
    * @throws VO_NO_SUCH_OBJECT when the `field` reference is invalid.
    * @throws VO_INVALID_OBJECT when `field` is not a `voContentField` of type
    *   `VO_CONTENT_FIELD_TEXT`.
-   * @throws VO_INVALID_ARGUMENT when `field` is not on the same page as
-   *   `target`.
+   * @throws VO_INVALID_ARGUMENT when `field` comes from a different page.
    * @throws VO_INVALID_ARGUMENT when `field` refers to a content field that has
    *   been removed.
    */
@@ -5474,8 +5472,7 @@ typedef struct _voITextInspector
    * @throws VO_NO_SUCH_OBJECT when the `field` reference is invalid.
    * @throws VO_INVALID_OBJECT when `field` is not a `voContentField` of type
    *   `VO_CONTENT_FIELD_TEXT`.
-   * @throws VO_INVALID_ARGUMENT when `field` is not on the same page as
-   *   `target`.
+   * @throws VO_INVALID_ARGUMENT when `field` comes from a different page.
    * @throws VO_INVALID_ARGUMENT when `field` refers to a content field that has
    *   been removed.
    * @throws VO_INDEX_OUT_OF_BOUNDS when `index` is out of bounds.
@@ -5499,8 +5496,7 @@ typedef struct _voITextInspector
    * @throws VO_NO_SUCH_OBJECT when the `field` reference is invalid.
    * @throws VO_INVALID_OBJECT when `field` is not a `voContentField` of type
    *   `VO_CONTENT_FIELD_TEXT`.
-   * @throws VO_INVALID_ARGUMENT when `field` is not on the same page as
-   *   `target`.
+   * @throws VO_INVALID_ARGUMENT when `field` comes from a different page.
    * @throws VO_INVALID_ARGUMENT when `field` refers to a content field that has
    *   been removed.
    */
@@ -5524,8 +5520,7 @@ typedef struct _voITextInspector
    * @throws VO_NO_SUCH_OBJECT when the `field` reference is invalid.
    * @throws VO_INVALID_OBJECT when `field` is not a `voContentField` of type
    *   `VO_CONTENT_FIELD_TEXT`.
-   * @throws VO_INVALID_ARGUMENT when `field` is not on the same page as
-   *   `target`.
+   * @throws VO_INVALID_ARGUMENT when `field` comes from a different page.
    * @throws VO_INDEX_OUT_OF_BOUNDS when `index` is out of bounds.
    * @throws VO_INVALID_USER_BUFFER when `wordInfo` is not writable.
    * @throws VO_INVALID_ARGUMENT when `field` refers to a content field that has
@@ -5549,8 +5544,7 @@ typedef struct _voITextInspector
    * @throws VO_NO_SUCH_OBJECT when the `field` reference is invalid.
    * @throws VO_INVALID_OBJECT when `field` is not a `voContentField` of type
    *   `VO_CONTENT_FIELD_TEXT`.
-   * @throws VO_INVALID_ARGUMENT when `field` is not on the same page as
-   *   `target`.
+   * @throws VO_INVALID_ARGUMENT when `field` comes from a different page.
    * @throws VO_INVALID_ARGUMENT when `field` refers to a content field that has
    *   been removed.
    */
@@ -5574,8 +5568,7 @@ typedef struct _voITextInspector
    * @throws VO_NO_SUCH_OBJECT when the `field` reference is invalid.
    * @throws VO_INVALID_OBJECT when `field` is not a `voContentField` of type
    *   `VO_CONTENT_FIELD_TEXT`.
-   * @throws VO_INVALID_ARGUMENT when `field` is not on the same page as
-   *   `target`.
+   * @throws VO_INVALID_ARGUMENT when `field` comes from a different page.
    * @throws VO_INVALID_ARGUMENT when `field` refers to a content field that has
    *   been removed.
    * @throws VO_INDEX_OUT_OF_BOUNDS when `index` is out of bounds.

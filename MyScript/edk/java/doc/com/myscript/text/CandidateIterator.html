@@ -122,7 +122,7 @@ extends <a href="../../../com/myscript/engine/Iterator.html" title="class in com
 <dl><dt><span class="strong">Since:</span></dt>
   <dd>4.0.0</dd>
 <dt><span class="strong">Version:</span></dt>
-  <dd>1.3</dd></dl>
+  <dd>1.4</dd></dl>
 </li>
 </ul>
 </div>
@@ -191,8 +191,8 @@ extends <a href="../../../com/myscript/engine/Iterator.html" title="class in com
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>float</code></td>
-<td class="colLast"><code><strong><a href="../../../com/myscript/text/CandidateIterator.html#getResemblanceScore()">getResemblanceScore</a></strong>()</code>
-<div class="block">Returns the resemblance score of the current candidate.</div>
+<td class="colLast"><code><strong><a href="../../../com/myscript/text/CandidateIterator.html#getObservationScore()">getObservationScore</a></strong>()</code>
+<div class="block">Returns the observation score of the current candidate.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -407,25 +407,23 @@ extends <a href="../../../com/myscript/engine/Iterator.html" title="class in com
            limit has been reached.</dd></dl>
 </li>
 </ul>
-<a name="getResemblanceScore()">
+<a name="getObservationScore()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getResemblanceScore</h4>
-<pre>public final&nbsp;float&nbsp;getResemblanceScore()
+<h4>getObservationScore</h4>
+<pre>public final&nbsp;float&nbsp;getObservationScore()
                                 throws java.lang.IllegalStateException,
                                        java.util.NoSuchElementException</pre>
-<div class="block">Returns the resemblance score of the current candidate.</div>
-<dl><dt><span class="strong">Returns:</span></dt><dd>the resemblance score of the current candidate.</dd>
+<div class="block">Returns the observation score of the current candidate.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the observation score of the current candidate.</dd>
 <dt><span class="strong">Throws:</span></dt>
 <dd><code>java.lang.IllegalStateException</code> - when this <code>CandidateIterator</code>
            object has been disposed of.</dd>
 <dd><code>java.util.NoSuchElementException</code> - when this <code>CandidateIterator</code> is
            positioned at the end of the iteration.</dd><dt><span class="strong">Since:</span></dt>
-  <dd>4.5.6
-
--  * @deprecated as of 8.0.0</dd></dl>
+  <dd>8.1.0</dd></dl>
 </li>
 </ul>
 <a name="getFlags()">

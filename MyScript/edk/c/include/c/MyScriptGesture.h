@@ -1,5 +1,5 @@
 #ifndef C_MYSCRIPTGESTURE_H
-#define C_MYSCRIPTGESTURE_H 0x08000000
+#define C_MYSCRIPTGESTURE_H 0x08010000
 /**
  * @file c/MyScriptGesture.h
  * Native interface to the MyScript Gesture service.
@@ -291,7 +291,8 @@ enum VO_INKSAMPLER_PROP
    * You should update this property whenever your application changes its view
    * transform, especially for zooming operations.
    *
-   * The default value is the identity matrix.
+   * The default value is the identity matrix. The transform must contain valid
+   * values and be invertible.
    *
    * {@property voTransform}
    */

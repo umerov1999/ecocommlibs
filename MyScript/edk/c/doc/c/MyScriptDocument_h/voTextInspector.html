@@ -150,7 +150,7 @@ Type voTextInspector</H2>
               Returns a text interval that corresponds to the closest character boundary from the specified position. </TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
-<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voITextInspector::select">voITextInspector::select</A>(voEngine engine, voTextInspector target, voTextInterval interval, voPageSelection selection, voSelectionModifier modifier)</CODE>
+<TD ALIGN="right" VALIGN="top"><CODE>bool</CODE></TD><TD ALIGN="left" VALIGN="top"><CODE><A HREF="#voITextInspector::select">voITextInspector::select</A>(voEngine engine, voTextInspector target, voTextInterval interval, voEngineObject selection, voSelectionModifier modifier)</CODE>
 <BR>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               Updates the specified page selection based on the specified text interval. </TD>
@@ -442,7 +442,7 @@ field
 <DD>
 <parameterdescription>
 
-<P>when  <CODE>field</CODE> is not on the same page as  <CODE>target</CODE>. </P>
+<P>when  <CODE>field</CODE> comes from a different page. </P>
 </parameterdescription>
 </DD>
 </DT>
@@ -600,7 +600,16 @@ field
 <DD>
 <parameterdescription>
 
-<P>when  <CODE>selection</CODE> is not a  <CODE><A href="../../c/MyScriptInk_h/voInkSelection.html">voInkSelection</A></CODE> or a  <CODE><A href="../../c/MyScriptDocument_h/voPageSelection.html">voPageSelection</A></CODE>. </P>
+<P>when  <CODE>selection</CODE> is not a  <CODE><A href="../../c/MyScriptDocument_h/voPageSelection.html">voPageSelection</A></CODE> or a  <CODE><A href="../../c/MyScriptInk_h/voInkSelection.html">voInkSelection</A></CODE>. </P>
+</parameterdescription>
+</DD>
+</DT>
+<DT>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_ARGUMENT">VO_INVALID_ARGUMENT</A></CODE></B>
+<DD>
+<parameterdescription>
+
+<P>when  <CODE>selection</CODE> comes from a different page. </P>
 </parameterdescription>
 </DD>
 </DT>
@@ -627,7 +636,7 @@ field
 <DD>
 <parameterdescription>
 
-<P>when  <CODE>field</CODE> is not on the same page as  <CODE>target</CODE>. </P>
+<P>when  <CODE>field</CODE> comes from a different page. </P>
 </parameterdescription>
 </DD>
 </DT>
@@ -797,7 +806,7 @@ charInfo
 <DD>
 <parameterdescription>
 
-<P>when  <CODE>field</CODE> is not on the same page as  <CODE>target</CODE>. </P>
+<P>when  <CODE>field</CODE> comes from a different page. </P>
 </parameterdescription>
 </DD>
 </DT>
@@ -953,7 +962,7 @@ field
 <DD>
 <parameterdescription>
 
-<P>when  <CODE>field</CODE> is not on the same page as  <CODE>target</CODE>. </P>
+<P>when  <CODE>field</CODE> comes from a different page. </P>
 </parameterdescription>
 </DD>
 </DT>
@@ -1458,7 +1467,7 @@ lineInfo
 <DD>
 <parameterdescription>
 
-<P>when  <CODE>field</CODE> is not on the same page as  <CODE>target</CODE>. </P>
+<P>when  <CODE>field</CODE> comes from a different page. </P>
 </parameterdescription>
 </DD>
 </DT>
@@ -1614,7 +1623,7 @@ field
 <DD>
 <parameterdescription>
 
-<P>when  <CODE>field</CODE> is not on the same page as  <CODE>target</CODE>. </P>
+<P>when  <CODE>field</CODE> comes from a different page. </P>
 </parameterdescription>
 </DD>
 </DT>
@@ -1875,7 +1884,7 @@ wordInfo
 <DD>
 <parameterdescription>
 
-<P>when  <CODE>field</CODE> is not on the same page as  <CODE>target</CODE>. </P>
+<P>when  <CODE>field</CODE> comes from a different page. </P>
 </parameterdescription>
 </DD>
 </DT>
@@ -2031,7 +2040,7 @@ field
 <DD>
 <parameterdescription>
 
-<P>when  <CODE>field</CODE> is not on the same page as  <CODE>target</CODE>. </P>
+<P>when  <CODE>field</CODE> comes from a different page. </P>
 </parameterdescription>
 </DD>
 </DT>
@@ -2346,7 +2355,7 @@ field
 <DD>
 <parameterdescription>
 
-<P>when  <CODE>field</CODE> is not on the same page as  <CODE>target</CODE>. </P>
+<P>when  <CODE>field</CODE> comes from a different page. </P>
 </parameterdescription>
 </DD>
 </DT>
@@ -2523,7 +2532,7 @@ field
 <DD>
 <parameterdescription>
 
-<P>when  <CODE>field</CODE> is not on the same page as  <CODE>target</CODE>. </P>
+<P>when  <CODE>field</CODE> comes from a different page. </P>
 </parameterdescription>
 </DD>
 </DT>
@@ -2558,7 +2567,7 @@ field
 <A NAME="voITextInspector::select"></A>
 <H3 class="code">select</H3>
 <PRE>
-<A href="../../c/std/stdbool_h/bool.html">bool</A> <B><A href="../../c/MyScriptDocument_h/voITextInspector.html">voITextInspector</A>::select</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptDocument_h/voTextInspector.html">voTextInspector</A> target, <A href="../../c/MyScriptDocument_h/voTextInterval.html">voTextInterval</A> interval, <A href="../../c/MyScriptDocument_h/voPageSelection.html">voPageSelection</A> selection, <A href="../../c/MyScriptInk_h/voSelectionModifier.html">voSelectionModifier</A> modifier)</PRE>
+<A href="../../c/std/stdbool_h/bool.html">bool</A> <B><A href="../../c/MyScriptDocument_h/voITextInspector.html">voITextInspector</A>::select</B>(<A href="../../c/MyScriptEngine_h/voEngine.html">voEngine</A> engine, <A href="../../c/MyScriptDocument_h/voTextInspector.html">voTextInspector</A> target, <A href="../../c/MyScriptDocument_h/voTextInterval.html">voTextInterval</A> interval, <A href="../../c/MyScriptEngine_h/voEngineObject.html">voEngineObject</A> selection, <A href="../../c/MyScriptInk_h/voSelectionModifier.html">voSelectionModifier</A> modifier)</PRE>
 <DL>
 <DD>Updates the specified page selection based on the specified text interval. <P>
 
@@ -2711,16 +2720,16 @@ modifier
 <DD>
 <parameterdescription>
 
-<P>when  <CODE>selection</CODE> is not a  <CODE><A href="../../c/MyScriptDocument_h/voPageSelection.html">voPageSelection</A></CODE>. </P>
+<P>when  <CODE>selection</CODE> is not a  <CODE><A href="../../c/MyScriptDocument_h/voPageSelection.html">voPageSelection</A></CODE> or a  <CODE><A href="../../c/MyScriptInk_h/voInkSelection.html">voInkSelection</A></CODE>. </P>
 </parameterdescription>
 </DD>
 </DT>
 <DT>
-<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_OBJECT">VO_INVALID_OBJECT</A></CODE></B>
+<B><CODE><A href="../../c/MyScriptEngine_h/enum_VO_ERR.html#VO_INVALID_ARGUMENT">VO_INVALID_ARGUMENT</A></CODE></B>
 <DD>
 <parameterdescription>
 
-<P>when  <CODE>selection</CODE> is not on the same page as  <CODE>target</CODE>. </P>
+<P>when  <CODE>selection</CODE> comes from a different page. </P>
 </parameterdescription>
 </DD>
 </DT>
