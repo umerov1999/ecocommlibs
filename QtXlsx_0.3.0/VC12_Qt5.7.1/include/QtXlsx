@@ -1,6 +1,6 @@
 #ifndef QT_QTXLSX_MODULE_H
 #define QT_QTXLSX_MODULE_H
-#include <QtXlsx/QtXlsxDepends>
+#include <QtXlsxDepends>
 #include "xlsxabstractooxmlfile.h"
 #include "xlsxabstractsheet.h"
 #include "xlsxcell.h"
