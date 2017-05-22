@@ -34,6 +34,11 @@ enum AssemTreeComposition
 	ATC_MASTER = 1, ATC_GROUP, ATC_SHIPNO, ATC_BLOCK
 };
 
+enum ProgramPermiStatus
+{
+	PPS_NO = -1, PPS_OWN = 0, PPS_YES = 1
+};
+
 /*
 * Project Types
 */

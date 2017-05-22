@@ -12,7 +12,6 @@
 
 #include "SISProjectInfo.h"
 
-
 #include "SISAssemBlockProp.h"
 #include "SISProjectProp.h"
 
@@ -35,6 +34,8 @@
 #include "SISNotification.h"
 #include "SISFieldValue.h"
 #include "SISTime.h"
+
+#include "SISMesMsrData.h"
 
 
 
@@ -64,6 +65,8 @@ Define Error Codes
 #define	ECO_CAN_NOT_DELETE 0x0014
 
 #define	ECO_EXIST_FILE 0x0015
+
+#define	ECO_EXIST_USER 0x0016
 
 /**************************************************
 Extern Class...
@@ -402,6 +405,19 @@ public:
 	@remark
 	*/
 	LONG SIS_GetLinkedProjectID(CString strGroup, CString strShipNo, CArray<UINT, UINT>& arrLinkedPjtID);
+
+	/**
+	@brief Get Linked project presence or absence
+	@param strGroup [in]Group of ship number
+	@param strShipNo [in]Ship number
+	@param strAssemLevel [in]Assembly level
+	@param strAssemBlock [in]Assembly block
+	@param strMsrName [in]Measurement data name
+	@param arrMesMsrData [out]Measurement data information
+	@return Error code
+	@remark
+	*/
+	LONG SIS_GetMesMsrDataInfo(CString strGroup, CString strShipNo, CString strAssemLevel, CString strAssemBlock, CString strMsrName, CArray<SISMesMsrData, SISMesMsrData&>& arrMesMsrData);
 
 //치수조회
 public:
@@ -1676,6 +1692,28 @@ public:
 	LONG SIS_GetBlockPermission(SISShipNoInfo shipNoInfo, CString strBlockName, CArray<SISBlockPermission, SISBlockPermission&>& arrBlockPermi);
 
 	/**
+	@brief Get permissioned block
+	@param shipNoInfo [in]Ship number
+	@param userAffiliationType [in]Affiliation type
+	@param strAffiliationName [in]Affiliation name
+	@param arrAssemBlockInfo [out]Block information list
+	@return Error code
+	@remark
+	*/
+	LONG SIS_GetPermissionedBlock(SISShipNoInfo shipNoInfo, UserAffiliation userAffiliationType, CString strAffiliationName, CArray<SISAssemBlockInfo, SISAssemBlockInfo&>& arrAssemBlockInfo);
+
+	/**
+	@brief Verify exist presence or absence of block permission
+	@param shipNoInfo [in]Ship number
+	@param userAffiliationType [in]Affiliation type
+	@param strAffiliationName [in]Affiliation name
+	@param bExist [out]The presence or absence
+	@return Error code
+	@remark
+	*/
+	LONG SIS_ExistBlockPermission(SISShipNoInfo shipNoInfo, UserAffiliation userAffiliationType, CString strAffiliationName, BOOL& bExist);
+
+	/**
 	@brief Remove block permission
 	@param shipNoInfo [in]Ship number
 	@param strBlockName [in]Block name
@@ -1716,6 +1754,16 @@ public:
 	AssemTreeComposition::ATC_SHIPNO - Set NULL to strGroup parameter
 	*/
 	LONG SIS_GetShipNoPermission(AssemTreeComposition shipNoType, CString strGroup, CString strShipNo, CArray<SISShipNoPermission, SISShipNoPermission&>& arrShipNoPermi);
+
+	/**
+	@brief Get permissioned ship nuber
+	@param userAffiliationType [in]Affiliation type
+	@param strAffiliationName [in]Affiliation name
+	@param arrShipNoInfo [out]Ship number information list
+	@return Error code
+	@remark
+	*/
+	LONG SIS_GetPermissionedShipNo(UserAffiliation userAffiliationType, CString strAffiliationName, CArray<SISShipNoInfo, SISShipNoInfo&>& arrShipNoInfo);
 
 	/**
 	@brief Remove ship number permission
@@ -1849,5 +1897,32 @@ public:
 	@remark
 	*/
 	LONG SIS_RemoveImageProject(CString strGroup, CString strShipNo, CString strAssemLevel, CString strAssemBlock, UINT nWorkID);
+
+	/**
+	@brief Get program permission for one user
+	@param strUserID [in]User ID
+	@param programPermi [out]Program permission
+	@return Error code
+	@remark
+	*/
+	LONG SIS_GetProgramPermission(CString strUserID, SISProgramPermission& programPermi);
+
+	/**
+	@brief Get program permission for all user
+	@param strUserID [in]User ID
+	@param arrProgramPermi [out]Program permission list
+	@return Error code
+	@remark
+	*/
+	LONG SIS_GetProgramPermission(CArray<SISProgramPermission, SISProgramPermission&>& arrProgramPermi);
+
+	/**
+	@brief Set program permission for one user
+	@param strUserID [in]User ID
+	@param programPermi [in]Program permission
+	@return Error code
+	@remark
+	*/
+	LONG SIS_SetProgramPermission(CString strUserID, SISProgramPermission programPermi);
 };
 

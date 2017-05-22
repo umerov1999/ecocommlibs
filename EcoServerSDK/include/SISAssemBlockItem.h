@@ -36,6 +36,20 @@ public:
 	}
 
 	/**
+	@brief Default Operator
+	@param
+	@return
+	@remark
+	*/
+	BOOL operator == (const SISAssemBlockItem &other)
+	{
+		if (m_strAssemLevel == other.m_strAssemLevel && m_strAssemBlock == other.m_strAssemBlock)
+			return TRUE;
+
+		return FALSE;
+	}
+
+	/**
 	@brief Set assembly level
 	@param strAssemLevel [in]Assembly level
 	@return

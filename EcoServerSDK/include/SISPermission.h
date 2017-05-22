@@ -531,11 +531,23 @@ public:
 		return *this;
 	}
 
+	/**
+	@brief Set status name
+	@param strStatus [in]Status name
+	@return
+	@remark
+	*/
 	void SetStatus(CString strStatus)
 	{
 		m_strStatus = strStatus;
 	}
 
+	/**
+	@brief Get status name
+	@param 
+	@return Status name
+	@remark
+	*/
 	CString GetStatus()
 	{
 		return m_strStatus;
@@ -833,5 +845,245 @@ public:
 	CString GetPermissionGroup()
 	{
 		return m_strPermissionGroup;
+	}
+};
+
+
+class SISProgramPermission
+{
+public:
+	CString m_strUserID;
+	ProgramPermiStatus m_nPjtCreate;
+	ProgramPermiStatus m_nPjtDownload;
+	ProgramPermiStatus m_nPjtModify;
+	ProgramPermiStatus m_nPjtDelete;
+	ProgramPermiStatus m_nTplCreate;
+	ProgramPermiStatus m_nTplModify;
+	ProgramPermiStatus m_nTplDelete;
+
+public:
+	/**
+	@brief Creator
+	@param
+	@return
+	@remark Initialize member variable
+	*/
+	SISProgramPermission()
+	{
+		m_strUserID = _T("");
+		m_nPjtCreate = ProgramPermiStatus::PPS_NO;
+		m_nPjtDownload = ProgramPermiStatus::PPS_NO;
+		m_nPjtModify = ProgramPermiStatus::PPS_NO;
+		m_nPjtDelete = ProgramPermiStatus::PPS_NO;
+		m_nTplCreate = ProgramPermiStatus::PPS_NO;
+		m_nTplModify = ProgramPermiStatus::PPS_NO;
+		m_nTplDelete = ProgramPermiStatus::PPS_NO;
+	}
+
+	/**
+	@brief Creator
+	@param c [in]Object of SISProgramPermission
+	@return
+	@remark Initialize member variable using value of input object
+	*/
+	SISProgramPermission(const SISProgramPermission& c)
+	{
+		*this = c;
+	}
+
+	/**
+	@brief Default Operator
+	@param
+	@return
+	@remark
+	*/
+	SISProgramPermission& operator = (const SISProgramPermission &other)
+	{
+		m_strUserID = other.m_strUserID;
+		m_nPjtCreate = other.m_nPjtCreate;
+		m_nPjtDownload = other.m_nPjtDownload;
+		m_nPjtModify = other.m_nPjtModify;
+		m_nPjtDelete = other.m_nPjtDelete;
+		m_nTplCreate = other.m_nTplCreate;
+		m_nTplModify = other.m_nTplModify;
+		m_nTplDelete = other.m_nTplDelete;
+
+		return *this;
+	}
+
+	/**
+	@brief Set user ID
+	@param strUserID [in]User ID
+	@return
+	@remark
+	*/
+	void SetUserID(CString strUserID)
+	{
+		m_strUserID = strUserID;
+	}
+
+	/**
+	@brief Get user ID
+	@param 
+	@return User ID
+	@remark
+	*/
+	CString GetUserID()
+	{
+		return m_strUserID;
+	}
+
+	/**
+	@brief Set project create permission
+	@param permiStatus [in]Permission status(PPS_YES or PPS_NO)
+	@return
+	@remark 
+	*/
+	void SetProjectCreatePermi(ProgramPermiStatus permiStatus)
+	{
+		m_nPjtCreate = permiStatus;
+	}
+
+	/**
+	@brief Get project create permission
+	@param
+	@return Permission status(PPS_YES or PPS_NO)
+	@remark 
+	*/
+	ProgramPermiStatus GetProjectCreatePermi()
+	{
+		return m_nPjtCreate;
+	}
+
+	/**
+	@brief Set project download permission
+	@param bDownload [in]Permission status(PPS_YES or PPS_NO)
+	@return
+	@remark 
+	*/
+	void SetProjectDownloadPermi(ProgramPermiStatus permiStatus)
+	{
+		m_nPjtDownload = permiStatus;
+	}
+
+	/**
+	@brief Get project download permission
+	@param
+	@return Permission status(PPS_YES or PPS_NO)
+	@remark 
+	*/
+	ProgramPermiStatus GetProjectDownloadPermi()
+	{
+		return m_nPjtDownload;
+	}
+
+	/**
+	@brief Set project modify permission
+	@param permiStatus [in]Permission status(PPS_YES or PPS_NO or PPS_OWN)
+	@return
+	@remark
+	*/
+	void SetProjectModifyPermi(ProgramPermiStatus permiStatus)
+	{
+		m_nPjtModify = permiStatus;
+	}
+
+	/**
+	@brief Get project modify permission
+	@param
+	@return Permission status(PPS_YES or PPS_NO or PPS_OWN)
+	@remark
+	*/
+	ProgramPermiStatus GetProjectModifyPermi()
+	{
+		return m_nPjtModify;
+	}
+
+	/**
+	@brief Set project delete permission
+	@param permiStatus [in]Permission status(PPS_YES or PPS_NO or PPS_OWN)
+	@return
+	@remark
+	*/
+	void SetProjectDeletePermi(ProgramPermiStatus permiStatus)
+	{
+		m_nPjtDelete = permiStatus;
+	}
+
+	/**
+	@brief Get project delete permission
+	@param
+	@return Permission status(PPS_YES or PPS_NO or PPS_OWN)
+	@remark
+	*/
+	ProgramPermiStatus GetProjectDeletePermi()
+	{
+		return m_nPjtDelete;
+	}
+
+	/**
+	@brief Set template create permission
+	@param permiStatus [in]Permission status(PPS_YES or PPS_NO)
+	@return
+	@remark
+	*/
+	void SetTemplateCreatePermi(ProgramPermiStatus permiStatus)
+	{
+		m_nTplCreate = permiStatus;
+	}
+
+	/**
+	@brief Get template create permission
+	@param
+	@return Permission status(PPS_YES or PPS_NO)
+	@remark
+	*/
+	ProgramPermiStatus GetTemplateCreatePermi()
+	{
+		return m_nTplCreate;
+	}
+
+	/**
+	@brief Set template modify permission
+	@param permiStatus [in]Permission status(PPS_YES or PPS_NO)
+	@return
+	@remark
+	*/
+	void SetTemplateModifyPermi(ProgramPermiStatus permiStatus)
+	{
+		m_nTplModify = permiStatus;
+	}
+
+	/**
+	@brief Get template modify permission
+	@param
+	@return Permission status(PPS_YES or PPS_NO)
+	@remark
+	*/
+	ProgramPermiStatus GetTemplateModifyPermi()
+	{
+		return m_nTplModify;
+	}
+
+	/**
+	@brief Set template delete permission
+	@param permiStatus [in]Permission status(PPS_YES or PPS_NO)
+	@return
+	@remark
+	*/
+	void SetTemplateDeletePermi(ProgramPermiStatus permiStatus)
+	{
+		m_nTplDelete = permiStatus;
+	}
+
+	/**
+	@brief Get template delete permission
+	@param
+	@return Permission status(PPS_YES or PPS_NO)
+	@remark
+	*/
+	ProgramPermiStatus GetTemplateDeletePermi()
+	{
+		return m_nTplDelete;
 	}
 };
