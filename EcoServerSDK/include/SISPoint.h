@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISPoint_H
+#define _SISPoint_H
+
 class SISPoint 
 { 
 public:
@@ -242,3 +246,5 @@ public:
 	};
 
 };
+
+#endif 
