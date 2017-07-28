@@ -1,7 +1,6 @@
 ﻿#pragma once
 
 #include "SISPointStr.h"
-
 #include "SISUserInfo.h"
 #include "SISShipNoInfo.h"
 #include "SISAssemLevel.h"
@@ -9,20 +8,15 @@
 #include "SISVariableGroup.h"
 #include "SISUserVariable.h"
 #include "SISUserVariableOfGroup.h"
-
 #include "SISProjectInfo.h"
-
 #include "SISAssemBlockProp.h"
 #include "SISProjectProp.h"
-
 #include "SISObjNameSearchOption.h"
 #include "SISVariableSearchOption.h"
 #include "SISProductionSearchOption.h"
 #include "SISAssemBlockSearchOption.h"
 #include "SISProjectSearchOption.h"
-
 #include "SISAnalysisInfo.h"
-
 #include "SISDefines.h"
 #include "SISAlarmInfo.h"
 #include "SISPermission.h"
@@ -34,10 +28,7 @@
 #include "SISNotification.h"
 #include "SISFieldValue.h"
 #include "SISTime.h"
-
 #include "SISMesMsrData.h"
-
-
 
 
 /**************************************************
@@ -48,25 +39,19 @@ Define Error Codes
 #define	ECO_DUPLICATE_HWND		0x0002
 #define	ECO_DB_NOT_CONNECT		0x0003
 #define	ECO_NOT_FOUND_SHIPNO_INFO 0x0004
-
 #define	ECO_PARAMETER_ERROR 0x0005
-
 #define	ECO_INVALID_COORD 0x0006
-
 #define	ECO_VAR_SEARCH_OPT_ERROR 0x0007
 #define	ECO_PJT_SEARCH_OPT_ERROR 0x0008
-
 #define	ECO_NOT_FOUND_PROJECT 0x0009
 #define	ECO_NOT_EXIST_DRAFT 0x0010
 #define	ECO_NOT_EXIST_ATTACH_FILE 0x0011
-
 #define	ECO_NOT_FOUND_DATA 0x0012
 #define	ECO_EXIST_DATA 0x0013
 #define	ECO_CAN_NOT_DELETE 0x0014
-
 #define	ECO_EXIST_FILE 0x0015
-
 #define	ECO_EXIST_USER 0x0016
+#define ECO_UNLOCK_FAIL 0x0017
 
 /**************************************************
 Extern Class...
@@ -90,6 +75,14 @@ public:
 	BOOL m_bDBConnect;
 
 public:
+	/**
+	@brief Unlock product
+	@param strUnlock [in]NULL or license string
+	@return Error code
+	@remark
+	*/
+	LONG SIS_UnlockProduct(const char* strUnlock = NULL);
+
 	/**
 	@brief Login to EcoDB
 	@param strHost [in]IP Address
