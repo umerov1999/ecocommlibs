@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISFieldInfo_H
+#define _SISFieldInfo_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -168,3 +172,5 @@ public:
 		return m_strComment;
 	}
 };
+
+#endif

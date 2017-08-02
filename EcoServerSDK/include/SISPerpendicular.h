@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISPerpendicular_H
+#define _SISPerpendicular_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -79,3 +83,5 @@ public:
 		dXY = m_dXY;
 	}
 };
+
+#endif

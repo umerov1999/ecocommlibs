@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISAlarmInfo_H
+#define _SISAlarmInfo_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -519,3 +523,5 @@ public:
 		return TRUE;
 	}
 };
+
+#endif

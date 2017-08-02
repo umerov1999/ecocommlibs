@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISLength_H
+#define _SISLength_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -93,3 +97,5 @@ public:
 		dXYZ = m_dXYZ;
 	}
 };
+
+#endif

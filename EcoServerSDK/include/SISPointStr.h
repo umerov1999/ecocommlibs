@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISPointStr_H
+#define _SISPointStr_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -120,3 +124,5 @@ public:
 	}
 
 };
+
+#endif

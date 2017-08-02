@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISTime_H
+#define _SISTime_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -88,3 +92,5 @@ public:
 		return strTmp;
 	}
 };
+
+#endif

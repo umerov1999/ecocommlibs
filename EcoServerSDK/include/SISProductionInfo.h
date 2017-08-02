@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISProductionInfo_H
+#define _SISProductionInfo_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -108,3 +112,5 @@ public:
 		return m_strVarGroup;
 	}
 };
+
+#endif

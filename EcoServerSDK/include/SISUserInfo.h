@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISUserInfo_H
+#define _SISUserInfo_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -340,3 +344,5 @@ public:
 		return m_bApprovalAdmin;
 	}
 };
+
+#endif

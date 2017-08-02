@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISUserVariable_H
+#define _SISUserVariable_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -259,3 +263,5 @@ public:
 		return m_bUsePjtID;
 	}
 };
+
+#endif

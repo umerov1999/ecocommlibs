@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISMesMsrData_H
+#define _SISMesMsrData_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -265,3 +269,5 @@ public:
 		return m_dtUpdateDate;
 	}
 };
+
+#endif

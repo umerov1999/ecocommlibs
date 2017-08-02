@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISVariableGroup_H
+#define _SISVariableGroup_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -105,3 +109,5 @@ public:
 		arrChildVarGroup.Copy(m_arrChildVariableGroup);
 	}
 };
+
+#endif

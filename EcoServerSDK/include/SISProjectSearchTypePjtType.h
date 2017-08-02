@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISProjectSearchTypePjtType_H
+#define _SISProjectSearchTypePjtType_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -44,3 +48,5 @@ private:
 	void SetVariableName(CString strVarName);
 
 };
+
+#endif

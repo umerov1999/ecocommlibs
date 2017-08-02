@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISAssemBlockSearchOption_H
+#define _SISAssemBlockSearchOption_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -131,3 +135,4 @@ public:
 
 
 
+#endif

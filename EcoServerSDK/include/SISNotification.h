@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISNotification_H
+#define _SISNotification_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -190,3 +194,5 @@ public:
 		return m_notificationState;
 	}
 };
+
+#endif

@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISAssemLevel_H
+#define _SISAssemLevel_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -95,3 +99,5 @@ public:
 	}
 
 };
+
+#endif

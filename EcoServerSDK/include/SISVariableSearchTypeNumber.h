@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISVariableSearchTypeNumber_H
+#define _SISVariableSearchTypeNumber_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -68,3 +72,5 @@ public:
 	*/
 	CString AddCondition(double dblNum, CString strInequality);
 };
+
+#endif

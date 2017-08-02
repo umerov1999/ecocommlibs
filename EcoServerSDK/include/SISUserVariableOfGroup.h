@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISUserVariableOfGroup_H
+#define _SISUserVariableOfGroup_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -82,3 +86,5 @@ public:
 		return m_strVariableGroup;
 	}
 };
+
+#endif

@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISProjectProp_H
+#define _SISProjectProp_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -237,3 +241,5 @@ public:
 		}
 	}
 };
+
+#endif

@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISAnalysisMngPoint_H
+#define _SISAnalysisMngPoint_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -58,3 +62,5 @@ public:
 	}
 
 };
+
+#endif

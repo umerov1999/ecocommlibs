@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISVariableSearchOption_H
+#define _SISVariableSearchOption_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -83,3 +87,5 @@ public:
 
 
 
+
+#endif

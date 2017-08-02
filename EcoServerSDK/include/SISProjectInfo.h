@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISProjectInfo_H
+#define _SISProjectInfo_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -260,3 +264,5 @@ public:
 		arrAttachedFile.Copy(m_arrAttachedFile);
 	}
 };
+
+#endif

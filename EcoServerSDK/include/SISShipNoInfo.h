@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISShipNoInfo_H
+#define _SISShipNoInfo_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -117,3 +121,5 @@ public:
 		return m_strShipNo;
 	}
 };
+
+#endif

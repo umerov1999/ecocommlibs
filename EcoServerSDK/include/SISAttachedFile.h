@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISAttachedFile_H
+#define _SISAttachedFile_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -90,3 +94,5 @@ public:
 		return m_strFileName;
 	}
 };
+
+#endif

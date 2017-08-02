@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISModelProp_H
+#define _SISModelProp_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -105,3 +109,5 @@ public:
 		}
 	}
 };
+
+#endif

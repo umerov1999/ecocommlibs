@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISObjNameSearchOption_H
+#define _SISObjNameSearchOption_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -181,3 +185,5 @@ public:
 
 
 };
+
+#endif

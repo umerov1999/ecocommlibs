@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISVariableSearchTypeDate_H
+#define _SISVariableSearchTypeDate_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -78,3 +82,4 @@ public:
 	CString AddCondition(COleDateTime dtDate, CString strInequality);
 };
 
+#endif

@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISVariableSearchTypeText_H
+#define _SISVariableSearchTypeText_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -57,3 +61,5 @@ public:
 	*/
 	CString AddCondition(CString strCond);
 };
+
+#endif

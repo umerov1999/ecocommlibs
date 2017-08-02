@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISAnalysisMngAngle_H
+#define _SISAnalysisMngAngle_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -83,3 +87,5 @@ public:
 		return m_dblDevAngle;
 	}
 };
+
+#endif

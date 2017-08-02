@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISAnalysisMngLength_H
+#define _SISAnalysisMngLength_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -85,3 +89,5 @@ public:
 	}
 
 };
+
+#endif

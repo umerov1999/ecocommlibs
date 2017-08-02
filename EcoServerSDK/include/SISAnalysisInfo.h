@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISAnalysisInfo_H
+#define _SISAnalysisInfo_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -161,3 +165,5 @@ public:
 		arrAnalMngPerp.Copy(m_arrMngPerp);
 	}
 };
+
+#endif

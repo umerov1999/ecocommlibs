@@ -1,4 +1,9 @@
 #pragma once
+
+#ifndef _SISWorkFlow_H
+#define _SISWorkFlow_H
+
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -418,3 +423,5 @@ public:
 		m_arrStatusPos.RemoveAll();
 	}
 };
+
+#endif

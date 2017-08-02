@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISFieldType_H
+#define _SISFieldType_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -117,3 +121,5 @@ public:
 		arrFieldType.Copy(m_arrFieldType);
 	}
 };
+
+#endif

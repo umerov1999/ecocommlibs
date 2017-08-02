@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISPermission_H
+#define _SISPermission_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -1087,3 +1091,5 @@ public:
 		return m_nTplDelete;
 	}
 };
+
+#endif

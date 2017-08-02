@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISObjectPoint_H
+#define _SISObjectPoint_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -68,3 +72,5 @@ public:
 		return m_strObjName;
 	}
 };
+
+#endif

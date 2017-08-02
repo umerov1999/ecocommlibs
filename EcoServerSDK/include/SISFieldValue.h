@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISFileValue_H
+#define _SISFileValue_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -989,3 +993,5 @@ public:
 		return TRUE;
 	}
 };
+
+#endif

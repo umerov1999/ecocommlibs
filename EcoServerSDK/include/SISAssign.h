@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISAssign_H
+#define _SISAssign_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -343,3 +347,5 @@ public:
 	}
 
 };
+
+#endif

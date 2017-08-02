@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISProjectSearchOption_H
+#define _SISProjectSearchOption_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -88,3 +92,5 @@ public:
 	*/
 	CString AddUpdateDateCondition(SISProjectSearchTypeUpdateDate updateDateType);
 };
+
+#endif

@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISAnalysisLength_H
+#define _SISAnalysisLength_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -178,3 +182,5 @@ public:
 		return m_bConnect;
 	}
 };
+
+#endif

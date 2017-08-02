@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef _SISAssemBlockInfo_H
+#define _SISAssemBlockInfo_H
+
 #include <afxwin.h>  
 #include <afxext.h>
 
@@ -120,3 +124,5 @@ public:
 		childAssemBlockItem.Copy(m_arrChildAssemBlockItem);
 	}
 };
+
+#endif
