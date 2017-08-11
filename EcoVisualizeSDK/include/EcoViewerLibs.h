@@ -65,7 +65,8 @@ public:
 	LONG SIS_CreateDistance(UINT iViewID);
 	LONG SIS_CreateAngle3Pt(UINT iViewID);
 	LONG SIS_SaveProject(UINT iViewID, LPCTSTR strPath);
-	LONG SIS_LoadProject(UINT iViewID, LPCTSTR strPath);
+	LONG SIS_SaveDraft(UINT iViewID, LPCTSTR strPath);
+	LONG SIS_LoadProject(UINT iViewID, BOOL bLoad3D, BOOL bLoad2D, LPCTSTR strPath);
 	LONG SIS_WriteEBM(UINT iViewID, LPCTSTR strPath);
 	LONG SIS_CreateMovePoint(UINT iViewID);
 	LONG SIS_Trans1Pt(UINT iViewID, LPCTSTR strTransObject, LPCTSTR strPcdObjectName, SISPoint pPosBase, SISPoint pPosTrans);
