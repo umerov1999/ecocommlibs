@@ -170,5 +170,7 @@ public:
 	LONG SIS_ZoomModelObjectByAssemName(UINT iViewID, LPCTSTR strAssemblyName);
 	LONG SIS_DeleteModel(UINT iViewID, UINT nAssemblyCnt, SISAssembly* pAssembly);
 	LONG SIS_HighlightModel(UINT iViewID, UINT nAssemblyCnt, SISAssembly* pAssembly);
+	LONG SIS_HideSelectedObject(UINT iViewID);
+	LONG SIS_ShowPerpendicular(UINT iViewID, BOOL bShow);
 };
 
