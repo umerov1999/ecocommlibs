@@ -172,5 +172,15 @@ public:
 	LONG SIS_HighlightModel(UINT iViewID, UINT nAssemblyCnt, SISAssembly* pAssembly);
 	LONG SIS_HideSelectedObject(UINT iViewID);
 	LONG SIS_ShowPerpendicular(UINT iViewID, BOOL bShow);
+	LONG SIS_PrintDraft(UINT iViewID);
+	LONG SIS_SetFocus(UINT iViewID);
+	LONG SIS_OnSize(UINT iViewID);
+	LONG SIS_OnPrint(UINT iViewID, CDC* pDC, CPrintInfo* pInfo);
+	LONG SIS_CaptureToFileDraft(UINT iViewID);
+	LONG SIS_CaptureToClipboardDraft(UINT iViewID);
+	LONG SIS_CaptureToFile3D(UINT iViewID);
+	LONG SIS_CaptureToClipboard3D(UINT iViewID);
+	LONG SIS_Print3D(UINT iViewID);
+	LONG SIS_GetCurrentOperator(UINT iViewID, LPTSTR strOp);
 };
 
