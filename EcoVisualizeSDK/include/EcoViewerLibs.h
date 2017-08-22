@@ -147,6 +147,7 @@ public:
 	LONG SIS_Login(UINT iViewID, LPCTSTR strHost, LPCTSTR strUser, LPCTSTR strPwd);
 	LONG SIS_Logout(UINT iViewID);
 	LONG SIS_LoadProjectFromServer(UINT iViewID);
+	LONG SIS_LoadProjectFromServer(UINT iViewID, LPCTSTR strShipNoGroup, LPCTSTR strShipNo, UINT nProjectID);
 	LONG SIS_ReadDesignModelFromServer(UINT iViewID, BOOL bInit);
 	LONG SIS_ReadDesignModelFromTribon(UINT iViewID, BOOL bInit);
 	LONG SIS_LoadDraftFromServer(UINT iViewID);
