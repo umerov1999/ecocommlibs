@@ -52,6 +52,7 @@ Define Error Codes
 #define	ECO_EXIST_FILE 0x0015
 #define	ECO_EXIST_USER 0x0016
 #define ECO_UNLOCK_FAIL 0x0017
+#define	ECO_CANCEL 0x0018
 
 /**************************************************
 Extern Class...
