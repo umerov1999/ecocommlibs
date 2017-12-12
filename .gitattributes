@@ -1,0 +1,3 @@
+PCL 1.7.2_vs2013/x64/3rdParty/boost/libs/libboost_log_setup-vc120-mt-gd-1_55.lib filter=lfs -text
+PCL 1.7.2_vs2013/x64/3rdParty/boost/libs/libboost_wave-vc120-mt-gd-1_55.lib filter=lfs -text
+boost_1_56_0/lib/x64/libboost_wave-vc100-mt-gd-1_56.lib filter=lfs -text
