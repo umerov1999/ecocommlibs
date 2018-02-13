@@ -233,12 +233,6 @@
 #if _MSC_VER == 1600
 #define _XTPLIB_VISUALSTUDIO_VERSION "vc100"
 #endif
-#if _MSC_VER == 1700
-#define _XTPLIB_VISUALSTUDIO_VERSION "vc110"
-#endif
-#if _MSC_VER == 1800
-#define _XTPLIB_VISUALSTUDIO_VERSION "vc120"
-#endif
 
 #ifndef _XTPLIB_VISUALSTUDIO_VERSION
 #error "Unknown Visual Studio version"
